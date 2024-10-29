@@ -52,8 +52,8 @@ const Cgpatogpa = () => {
             <Navbar />
             <Nav setGpa={setGpa} setCgpa={setCgpa} setError={setError} />
 
-            <div className="container flex-col w-full p-2 border-r-8 justify-center">
-                <div className="max-w-full p-5 mx-auto bg-white text-black shadow-md rounded-lg dark:bg-gray-800 mt-8">
+            <div className="container flex-col w-full p-2 border-r-8 justify-center dark:bg-gray-800">
+                <div className="max-w-full p-5 mx-auto  text-black shadow-md rounded-lg  mt-8">
                     <h2 className="text-4xl font-bold mb-4 text-center text-[#105045] drop-shadow-lg">CGPA to GPA Calculator</h2>
 
                     <div className="flex mb-4 justify-center items-center flex-col">

@@ -29,10 +29,7 @@ const Navbar = () => {
      
         <div className="flex items-center ml-auto space-x-4">
           <div className="flex items-center ml-auto space-x-2">
-            <Link href='/' className="block px-4 py-2 text-black dark:text-white hover:bg-transparent hover:text-[#009688]">Home</Link>
-            
-            <Link href='/educational-calculator/' className="block px-4 py-2 text-black dark:text-white hover:bg-transparent hover:text-[#009688]">Educational Calculator</Link> 
-            </div>
+            <Link href='/' className="block px-4 py-2 text-black dark:text-white hover:bg-transparent hover:text-[#009688]">Home</Link>            </div>
           <div className="relative">
             <button
               onClick={() => setIsCategoryOpen(!isCategoryOpen)}
@@ -57,17 +54,14 @@ const Navbar = () => {
                 isCategoryOpen ? "transform scale-100 opacity-100" : "transform scale-95 opacity-0 pointer-events-none"
               }`}
             >
-              <Link href="/educational-calculator/percentage-to-cgpa-calculator/" className="block px-4 py-2 text-black dark:text-white hover:bg-transparent hover:text-[#009688]">
-                Percentage to CGPA
+             <Link href="/educational-calculator" className="block px-4 py-2 text-black dark:text-white hover:bg-transparent hover:text-[#009688]">
+                Educational Calculator
               </Link>
-              <Link href="/educational-calculator/cgpa-to-percentage-calculator/" className="block px-4 py-2 text-black dark:text-white hover:bg-transparent hover:text-[#009688]">
-               CGPA to Percentage
+              <Link href="/scientific-calculator" className="block px-4 py-2 text-black dark:text-white hover:bg-transparent hover:text-[#009688]">
+               Scientific Calculator
               </Link>
-              <Link href="/educational-calculator/gpa-to-cgpa-calculator/" className="block px-4 py-2 text-black dark:text-white hover:bg-transparent hover:text-[#009688]">
-                GPA to CGPA
-              </Link>
-              <Link href="/educational-calculator/cgpa-to-gpa-calculator/" className="block px-4 py-2 text-black dark:text-white hover:bg-transparent hover:text-[#009688]">
-                 CGPA to GPA
+              <Link href="/Women's-calculator" className="block px-4 py-2 text-black dark:text-white hover:bg-transparent hover:text-[#009688]">
+                Women's Calculator
               </Link>
             </div>
           </div>

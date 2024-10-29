@@ -51,8 +51,8 @@ const Cgpatopercentage = () => {
     return (
         <div className={`transition-all duration-300 mb-4 bg-[#fafafc] ease-in-out ${theme === "dark" ? "dark" : "light"}`}>
             <Navbar />
-            <div className="container flex-col w-full p-2 border-r-8 justify-center  mt-8 py-4">
-                <div className="max-w-full p-5 mx-auto  bg-white text-black shadow-md rounded-lg dark:bg-gray-800 mt-8 ">
+            <div className="container flex-col w-full p-2 border-r-8 justify-center dark:bg-gray-800 mt-8 py-4">
+                <div className="max-w-full p-5 mx-auto  text-black shadow-md rounded-lg  mt-8 ">
                     <h2 className="text-4xl font-bold mb-4 text-center text-[#105045] drop-shadow-lg py-4">CGPA to Percentage Calculator</h2>
 
 

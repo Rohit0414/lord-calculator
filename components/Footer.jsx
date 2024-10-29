@@ -34,18 +34,18 @@ const Footer = () => {
                 </h5>
                 <ul className="list-none ">
                   <li className="">
-                    <Link href="/calculators/math">
-                      <i className="fas fa-calculator mr-2" /> Math Calculators
+                    <Link href="/educational-calculator">
+                      <i className="fas fa-calculator mr-2" /> Educational Calculators
                     </Link>
                   </li>
                   <li className="">
-                    <Link href="/calculators/science">
-                      <i className="fas fa-flask mr-2" /> Science Calculators
+                    <Link href="/scientific-calculator">
+                      <i className="fas fa-flask mr-2" /> Scientific Calculators
                     </Link>
                   </li>
                   <li className="">
-                    <Link href="/calculators/finance">
-                      <i className="fas fa-dollar-sign mr-2" /> Finance Calculators
+                    <Link href="/womens-calculator">
+                      <i className="fas fa-dollar-sign mr-2" /> Women's Calculators
                     </Link>
                   </li>
                 </ul>
@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
         </div>
         <footer className='flex justify-center bg-[#F6F5F2] dark:bg-gray-900 text-gray-700 dark:text-white mt-8 p-4 '>
-          <p className='mr-4'>&copy; 2024 Your Company Name. All rights reserved.</p>
+          <p className='mr-4'>&copy; 2024 Lord Calculator. All rights reserved.</p>
           <ul className='flex flex-row '>
             <li className='p-1'>
               <Link href="#" target="_blank">

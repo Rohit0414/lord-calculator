@@ -2,33 +2,28 @@ import { useTheme } from '@/context/ThemeContext';
 import { FcCalculator } from "react-icons/fc";
 import Link from 'next/link';
 
-const TimelineItem = () => {
+const Educationalcalculators = () => {
     const { theme } = useTheme();
     const calculatorCards = [
         {
-            title: "CGPA to Percentage Calculator",
+            title: "CGPA Calculator",
             description: "Calculate your CGPA effortlessly with accurate results.",
             backgroundColor: theme === "dark" ? "bg-[#20a971]" : "bg-[#20a971]",
-            href: "/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage"
+            href: "/educational-calculator/"
         },
         {
-            title: "Percentage to CGPA Calculator",
+            title: "SGPA Calculator",
             description: "Easily access a variety of educational calculators for learning and homework.",
             backgroundColor: theme === "dark" ? "bg-[#4285f4]" : "bg-[#4285f4]",
-            href: "/educational-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA"
+            href: "/educational-calculator/"
         },
         {
-            title: "GPA to CGPA Calculator",
+            title: "Scientific Calculator",
             description: "Simplify complex financial calculations in seconds.",
             backgroundColor: theme === "dark" ? "bg-[#cf8408]" : "bg-[#cf8408]",
-            href: "/educational-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA "
+            href: "/educational-calculator"
         },
-        {
-            title: "CGPA to GPA Calculator",
-            description: "Quickly calculate your Body Mass Index for health insights.",
-            backgroundColor: theme === "dark" ? "bg-[#5865f2]" : "bg-[#5865f2]",
-            href: "/educational-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA"
-        },
+      
     ];
 
     return (
@@ -95,4 +90,4 @@ const TimelineItem = () => {
     );
 };
 
-export default TimelineItem;
+export default Educationalcalculators;

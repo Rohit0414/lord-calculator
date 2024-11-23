@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { MdOutlineFacebook } from 'react-icons/md';
-import { FaInstagram, FaTwitter } from 'react-icons/fa';
+import { WhatsappIcon,FacebookIcon,InstagramIcon,TwitterIcon } from 'next-share';
+
 
 const Footer = () => {
   return (
@@ -19,8 +19,8 @@ const Footer = () => {
                   </h5>
                 </div>
                 <div className=" ">
-                  <h5 className="uppercase  font-bold ">
-                    Contact Us:
+                  <h5 className=" font-light">
+                    Contact Us:bhushanthakur04@gmail.com
                   </h5>
                 </div>
               </div>
@@ -79,18 +79,23 @@ const Footer = () => {
           <p className='mr-4'>&copy; 2024 Lord Calculator. All rights reserved.</p>
           <ul className='flex flex-row '>
             <li className='p-1'>
-              <Link href="#" target="_blank">
-                <MdOutlineFacebook />
+              <Link href="/" target="_blank">
+                <FacebookIcon size={15} round />
               </Link>
             </li>
             <li className='p-1'>
               <Link href="#" target="_blank">
-                <FaInstagram />
+                <InstagramIcon size={16} round  />
               </Link>
             </li>
             <li className='p-1'>
               <Link href="#" target="_blank">
-                <FaTwitter />
+                <TwitterIcon size={16} round />
+              </Link>
+            </li>
+            <li className='p-1'>
+              <Link href="#" target="_blank">
+                <WhatsappIcon size={15} round />
               </Link>
             </li>
           </ul>

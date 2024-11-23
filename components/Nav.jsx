@@ -1,48 +1,85 @@
-import Link from "next/link";
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useRouter } from 'next/router';
 
-function Nav({ setCgpa, setPercentage, setError }) {
-    const changeCalculator = (calculatorName) => {
-        // Reset CGPA input and percentage output
-        setCgpa(''); 
-        setPercentage(''); 
-        setError(''); 
 
-        // Logic to switch calculator states can be added here if needed
-        console.log(`Switched to calculator: ${calculatorName}`);
+
+function Nav() {
+    
+    const router = useRouter();
+    const { filter } = router.query; 
+    const [filters, SetFilters] = useState(''); 
+
+    useEffect(() => {
+        
+        if (filter) {
+            SetFilters(filter);
+        }
+    }, [filter]);
+
+    const handleNavigation = (filter, path) => {
+        SetFilters(filter);
+        router.push({
+            pathname: path,
+            query: { filter }, 
+        });
     };
 
     return (
-        <nav className="bg-white shadow-sm">
-            <div className="w-full mt-2 ">
-                {/* Upper border that touches the edges */}
-                <div className="border-t-4 border-[#105045] w-full"></div>
-                <ul className="flex justify-center mt-0">
-                    {/** Loop through calculator options */}
-                    {[
-                        { name: 'percentagetocgpa', label: 'Percentage to CGPA' },
-                        { name: 'cgpatopercentage', label: 'CGPA to Percentage' },
-                        { name: 'gpatocgpa', label: 'GPA to CGPA' },
-                        { name: 'cgpatogpa', label: 'CGPA to GPA' },
-                    ].map((calc, index) => (
-                        <li key={calc.name} className="flex items-center">
-                            <Link href={`/educational-calculator/cgpatopercentage/${calc.name}`}>
-                                <button 
-                                    onClick={() => changeCalculator(calc.name)}
-                                    className="relative py-2 px-4 text-[#105045] font-bold rounded-md drop-shadow-lg transition duration-300 ease-in-out hover:bg-[#eef1f0]"
-                                >
-                                    {calc.label}
-                                </button>
-                            </Link>
-                            {/* Add vertical lines between buttons */}
-                            {index < 3 && (
-                                <div className="h-10 w-1 bg-[#105045]"></div> // Vertical line
-                            )}
-                        </li>
-                    ))}
-                </ul>
+        <div className="flex flex-col items-center w-full mt-12 dark:bg-gray-900 px-5">
+            <div className="w-full border-b mb-5"></div>
+
+            <div className="flex justify-center">
+               
+                <div
+                    onClick={() => handleNavigation('CGPA to percentage', '/educational-calculator/cgpa-to-percentage-calculator')}
+                    className={`border px-4 py-2 cursor-pointer font-semibold text-center transition-all duration-300 ease-in-out ${
+                        filters === 'CGPA to percentage'
+                            ? 'rounded-t-sm text-[#009688] border-b-0'
+                            : 'rounded-sm dark:text-white border-t-0 border-l-0 border-r-0 hover:border-[#009688] hover:text-[#009688]'
+                    }`}
+                >
+                    CGPA to Percentage
+                </div>
+
+               
+                <div
+                    onClick={() => handleNavigation('Percentage to CGPA', '/educational-calculator/percentage-to-cgpa-calculator')}
+                    className={`border px-4 py-2 cursor-pointer font-semibold text-center transition-all duration-300 ease-in-out ${
+                        filters === 'Percentage to CGPA'
+                            ? 'rounded-t-sm text-[#009688] border-b-0'
+                            : 'rounded-sm dark:text-white border-t-0 border-l-0 border-r-0 hover:border-[#009688] hover:text-[#009688]'
+                    }`}
+                >
+                    Percentage To CGPA
+                </div>
+
+               
+                <div
+                    onClick={() => handleNavigation('GPA to CGPA', '/educational-calculator/gpa-to-cgpa-calculator')}
+                    className={`border px-4 py-2 cursor-pointer font-semibold text-center transition-all duration-300 ease-in-out ${
+                        filters === 'GPA to CGPA'
+                            ? 'rounded-t-sm text-[#009688] border-b-0'
+                            : 'rounded-sm dark:text-white border-t-0 border-l-0 border-r-0 hover:border-[#009688] hover:text-[#009688]'
+                    }`}
+                >
+                    GPA To CGPA
+                </div>
+
+               
+                <div
+                    onClick={() => handleNavigation('CGPA to GPA', '/educational-calculator/cgpa-to-gpa-calculator')}
+                    className={`border px-4 py-2 cursor-pointer font-semibold text-center transition-all duration-300 ease-in-out ${
+                        filters === 'CGPA to GPA'
+                            ? 'rounded-t-sm text-[#009688] border-b-0'
+                            : 'rounded-sm dark:text-white border-t-0 border-l-0 border-r-0 hover:border-[#009688] hover:text-[#009688]'
+                    }`}
+                >
+                    CGPA to GPA
+                </div>
             </div>
-        </nav>
+
+            <div className="w-full border-b mt-5"></div>
+        </div>
     );
 }
 

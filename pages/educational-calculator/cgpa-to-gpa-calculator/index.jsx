@@ -1,26 +1,30 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Meter from '@/components/Meter';
 import Nav from '@/components/Nav';
 import { useTheme } from '@/context/ThemeContext';
 import Footer from '@/components/Footer';
+import Router, { useRouter } from 'next/router';
+import { PDFDocument, rgb } from 'pdf-lib';
+import CgpaContent from '@/components/CgpaContent';
 
 const Cgpatogpa = () => {
     const { theme } = useTheme();
-    const [cgpaPointScale, setCgpaPointScale] = useState(''); // CGPA Point Scale
-    const [gpaScale, setGpaScale] = useState(''); // GPA Scale
+    const [cgpaPointScale, setCgpaPointScale] = useState('');
+    const [gpaScale, setGpaScale] = useState('');
     const [cgpa, setCgpa] = useState('');
     const [gpa, setGpa] = useState('');
     const [error, setError] = useState('');
     const [history, setHistory] = useState([]);
     const resultRef = useRef(null);
+    const router = useRouter();
 
     const convertCGPAtoGPA = () => {
         setError('');
         setGpa('');
 
         const cgpaValue = parseFloat(cgpa);
-        
+
         if (isNaN(cgpaValue) || cgpaValue < 0) {
             setError('Enter a valid CGPA');
             return;
@@ -47,13 +51,81 @@ const Cgpatogpa = () => {
         setGpaScale(parseFloat(e.target.value) || 0);
     };
 
+    const downloadHistoryAsPDF = async () => {
+        if (router.query) {
+            router.push({
+                pathname: router.pathname,
+                query: {
+                    cgpa: cgpa,
+                    cgpapointscale: cgpaPointScale,
+                    gpascale: gpaScale
+                }
+            }, undefined, { shallow: true });
+
+            await new Promise((resolve) => setTimeout(resolve, 500));
+
+            const pdfDoc = await PDFDocument.create();
+            const page = pdfDoc.addPage([600, 400]);
+            page.drawText('Calculation History', { x: 50, y: 350, size: 24, color: rgb(0, 0.53, 0.71) });
+
+            history.forEach((entry, index) => {
+                page.drawText(`${index + 1}: CGPA: ${entry.cgpa}, GPA: ${entry.gpa}`, { x: 50, y: 330 - index * 20 });
+            });
+
+            const pdfBytes = await pdfDoc.save();
+            const blob = new Blob([pdfBytes], { type: 'application/pdf' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'calculation_history.pdf';
+            link.click();
+        }
+    };
+
+    const shareOnWhatsApp = () => {
+        const currentURL = window.location.href;
+        const message = `Check out my GPA calculation: CGPA: ${cgpa}, GPA: ${gpa}. You can view it here: ${currentURL}`;
+        window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
+    };
+
+    useEffect(() => {
+        if (router.query) {
+            const { query } = router;
+            const generateAndDownloadPDF = async () => {
+                try {
+                    const pdfDoc = await PDFDocument.create();
+                    const page = pdfDoc.addPage([600, 400]);
+                    setCgpa(query.cgpa);
+                    setCgpaPointScale(query.cgpapointscale);
+                    setGpaScale(query.gpascale);
+
+                    const gpaValue = (query.cgpa / query.cgpapointscale) * query.gpascale;
+                    page.drawText('Calculation History', { x: 50, y: 350, size: 24, color: rgb(0, 0.53, 0.71) });
+                    page.drawText(`CGPA: ${query.cgpa}, GPA: ${gpaValue.toFixed(2)}`, { x: 50, y: 330 });
+
+                    const pdfBytes = await pdfDoc.save();
+                    const blob = new Blob([pdfBytes], { type: 'application/pdf' });
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.download = 'calculation_history.pdf';
+                    link.click();
+                    URL.revokeObjectURL(link.href);
+                } catch (error) {
+                    console.error("Error creating or downloading the PDF:", error);
+                }
+            };
+
+            if (Object.keys(query).length > 0 && query.cgpa && query.cgpapointscale && query.gpascale) {
+                generateAndDownloadPDF();
+            }
+        }
+    }, [router.query]);
+
     return (
         <div className={`transition-all duration-300 bg-[#fafafc] ease-in-out ${theme === "dark" ? "dark" : "light"}`}>
             <Navbar />
-            <Nav setGpa={setGpa} setCgpa={setCgpa} setError={setError} />
-
+            <Nav />
             <div className="container flex-col w-full p-2 border-r-8 justify-center dark:bg-gray-800">
-                <div className="max-w-full p-5 mx-auto  text-black shadow-md rounded-lg  mt-8">
+                <div className="max-w-full p-5 mx-auto text-black shadow-md rounded-lg">
                     <h2 className="text-4xl font-bold mb-4 text-center text-[#105045] drop-shadow-lg">CGPA to GPA Calculator</h2>
 
                     <div className="flex mb-4 justify-center items-center flex-col">
@@ -116,14 +188,17 @@ const Cgpatogpa = () => {
                         <button onClick={resetFields} className="bg-[#105045] text-white w-32 py-2 rounded hover:bg-[#29582b]">Reset</button>
                     </div>
 
-                    <div ref={resultRef} className=''>
+                    <div ref={resultRef}>
                         <Meter percentage={gpa ? parseFloat(gpa) : 0} />
-                        <div className="flex justify-center items-center mb-4">
-                            <label className="text-3xl font-bold mb-2 text-[#105045] drop-shadow-lg mt-2">Your Calculated GPA = </label>
-                            <input type="text" value={gpa} placeholder="GPA:" readOnly className="w-2/5 p-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center ml-2" />
+                        <div className=" flex flex-col justify-center items-center mb-4">
+                            <label className="text-3xl font-bold mb-2 text-[#105045] drop-shadow-lg ">Your Calculated GPA </label>
+                            <input type="text" value={gpa} placeholder="GPA:" readOnly className="w-3/4 p-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center ml-2" />
                         </div>
                     </div>
-
+                    <div className="mt-4 flex justify-center space-x-32 mb-4">
+                        <button onClick={downloadHistoryAsPDF} className="bg-[#105045] text-white w-32 py-2 rounded hover:bg-[#29582b]">Download</button>
+                        <button onClick={shareOnWhatsApp} className="bg-green-500 text-white w-32 py-2 rounded">WhatsApp</button>
+                    </div>
                     <div className="flex justify-center">
                         <div className="history-container mb-4 text-center w-60">
                             <b>Calculation History</b>
@@ -148,6 +223,7 @@ const Cgpatogpa = () => {
                         </div>
                     </div>
                 </div>
+                <CgpaContent/>
             </div>
             <Footer />
         </div>

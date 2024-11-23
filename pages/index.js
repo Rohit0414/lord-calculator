@@ -4,9 +4,7 @@ import { FcCalculator } from "react-icons/fc";
 import Footer from "@/components/Footer";
 import { useTheme } from "../context/ThemeContext";
 import Link from "next/link";
-
-
-
+ 
 export default function Home() {
   const { theme } = useTheme();
   const calculatorCards = [
@@ -17,28 +15,28 @@ export default function Home() {
       href: "/educational-calculator"
     },
     {
-      title: "SGPA Calculator",
+      title: "CGPA To Percentage Calculator",
       description: "Calculate your CGPA effortlessly with accurate results.",
       backgroundColor: theme === "dark" ? "bg-[#20a971]" : "bg-[#20a971]",
-      href: "/cgpa"
+      href: "/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage"
     },
     {
-      title: "Finance Calculator",
+      title: "Percentage To CGPA Calculator",
       description: "Simplify complex financial calculations in seconds.",
       backgroundColor: theme === "dark" ? "bg-[#cf8408]" : "bg-[#cf8408]",
-      href: "/finance"
+      href: "/educational-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA"
     },
     {
-      title: "BMI Calculator",
+      title: "GPA To CGPA Calculator",
       description: "Quickly calculate your Body Mass Index for health insights.",
       backgroundColor: theme === "dark" ? "bg-[#5865f2]" : "bg-[#5865f2]",
-      href: "/bmi"
+      href: "/educational-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA"
     },
     {
-      title: "Scientific Calculator",
+      title: "CGPA To GPA Calculator",
       description: "Perform advanced calculations with our scientific calculator.",
       backgroundColor: theme === "dark" ? "bg-green-600" : "bg-green-600",
-      href: "/scientific"
+      href: "/educational-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA"
     }
   ];
 

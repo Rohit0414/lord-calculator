@@ -34,3 +34,35 @@ body.dark {
     text-wrap: balance;
   }
 }
+
+/* Add this in your styles/globals.css */
+.scroll-container {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.blur-section {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.6); /* Optional: Gives background color */
+  backdrop-filter: blur(10px); /* Apply blur */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  pointer-events: none; /* Prevent interaction */
+}
+
+.top-blur {
+  top: 20;
+}
+
+.bottom-blur {
+  bottom: 20;
+}
+
+.content {
+  position: relative;
+  padding: 8rem 2rem; /* You can adjust based on your layout */
+  transition: opacity 0.3s ease;
+  z-index: 10; /* Ensure content is above blur */
+}

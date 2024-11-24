@@ -112,7 +112,7 @@ const CgpaContent = () => {
                                     </li>
                                 ))}
                                 {!isMainExpanded && (
-                                    <div className="absolute bottom-20 left-0 right-0 h-60 bg-gradient-to-t from-white to-transparent"></div>
+                                    <div className="absolute bottom-20 left-0 right-0 h-96 bg-gradient-to-t from-white to-transparent"></div>
                                 )}
                             </ol>
 
@@ -2569,12 +2569,45 @@ const CgpaContent = () => {
                 )}
             </div>
 
-            <div className="text-center mt-4">
+            <div className="text-center translate-y-[-250px]">
                 <button
                     onClick={toggleMainExpand}
-                    className="text-blue-600 hover:text-blue-800 mt-4 dark:text-gray-400 text-4xl dark:hover:text-blue-600 animate-bounce transition-all duration-300 focus:outline-none"
+                    className="text-blue-600 hover:text-blue-800   mt-4  dark:text-gray-400 text-4xl dark:hover:text-blue-600 animate-bounce transition-all duration-300 focus:outline-none"
                 >
-                    {isMainExpanded ? '▲' : '▼'}
+                    {isMainExpanded ? (
+                        <div className="flex justify-center items-center w-14 h-14 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="h-8 w-8 text-white transform rotate-180 transition-all duration-300 ease-in-out"
+                                viewBox="0 0 255 255"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <path d="M12 17V7" /> 
+                                <path d="M9 10L12 7L15 10" />
+                            </svg>
+                        </div>
+                    ) : (
+                      
+                        <div className="flex justify-center items-center w-8 h-8 mr-4 rounded-full bg-gradient-to-r from-gray-400 to-green-700 hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="h-8 w-8 text-white transform transition-all duration-300 ease-in-out"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="4"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <path d="M12 7V17" /> 
+                                <path d="M9 14L12 17L15 14" /> 
+                            </svg>
+                        </div>
+                    )}
                 </button>
             </div>
         </div >

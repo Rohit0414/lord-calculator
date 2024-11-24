@@ -287,7 +287,7 @@ const Cgpatopercentage = () => {
                                 <li>
                                     <Link
                                         href="/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage"
-                                        className="block text-lg font-medium text-blue-500 hover:text-blue-900 transition-colors duration-200 dark:text-blue-300 dark:hover:text-blue-500"
+                                        className="block text-lg font-medium text-gray-500 hover:text-blue-900 transition-colors duration-200 dark:text-blue-300 dark:hover:text-blue-500"
                                     >
                                         CGPA to Percentage Calculator
                                     </Link>
@@ -295,7 +295,7 @@ const Cgpatopercentage = () => {
                                 <li>
                                     <Link
                                         href="/educational-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA"
-                                        className="block text-lg font-medium text-blue-500 hover:text-blue-900 transition-colors duration-200 dark:text-blue-300 dark:hover:text-blue-500"
+                                        className="block text-lg font-medium text-gray-500 hover:text-blue-900 transition-colors duration-200 dark:text-blue-300 dark:hover:text-blue-500"
                                     >
                                         Percentage to CGPA Calculator
                                     </Link>
@@ -303,7 +303,7 @@ const Cgpatopercentage = () => {
                                 <li>
                                     <Link
                                         href="/educational-calculator/gpa-to-cgpa-calculator/"
-                                        className="block text-lg font-medium text-blue-500 hover:text-blue-900 transition-colors duration-200 dark:text-blue-300 dark:hover:text-blue-500"
+                                        className="block text-lg font-medium text-gray-500 hover:text-blue-900 transition-colors duration-200 dark:text-blue-300 dark:hover:text-blue-500"
                                     >
                                         GPA to CGPA Calculator
                                     </Link>
@@ -311,7 +311,7 @@ const Cgpatopercentage = () => {
                                 <li>
                                     <Link
                                         href="/educational-calculator/cgpa-to-gpa-calculator/"
-                                        className="block text-lg font-medium text-blue-500 hover:text-blue-900 transition-colors duration-200 dark:text-blue-300 dark:hover:text-blue-500"
+                                        className="block text-lg font-medium text-gray-500 hover:text-blue-900 transition-colors duration-200 dark:text-blue-300 dark:hover:text-blue-500"
                                     >
                                         CGPA to GPA Calculator
                                     </Link>

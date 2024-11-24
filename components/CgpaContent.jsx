@@ -32,7 +32,12 @@ const CgpaContent = () => {
             element.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
     };
-
+    useEffect(() => {
+        if (isMainExpanded !== null) {
+          scrollToSection(`section${isMainExpanded}`);
+        }
+      }, [isMainExpanded]); 
+    
 
 
     return (
@@ -83,7 +88,10 @@ const CgpaContent = () => {
                                 ].map((item, index) => (
                                     <li key={index + 1}>
                                         <button
-                                            onClick={() => scrollToSection(`section${index + 1}`)}
+                                           onClick={() => {
+                                            scrollToSection(`section${index + 1}`);
+                                            setIsMainExpanded(isMainExpanded === index + 1 ? null : index + 1); 
+                                        }}
                                             className="w-full text-left text-blue-600 hover:text-blue-800 focus:outline-none transition-all hover:scale-95  duration-300 dark:text-blue-400 dark:hover:text-blue-600"
                                         >
                                             {index + 1}. {item}
@@ -104,7 +112,9 @@ const CgpaContent = () => {
                                 ].map((item, index) => (
                                     <li key={index + 10}>
                                         <button
-                                            onClick={() => scrollToSection(`section${index + 10}`)}
+                                            onClick={() => {scrollToSection(`section${index + 10}`)
+                                            setIsMainExpanded(isMainExpanded === index + 10 ? null : index + 10); 
+                                        }}
                                             className="w-full text-left text-blue-600 hover:text-blue-800 focus:outline-none transition-all hover:scale-95 duration-300 dark:text-blue-400 dark:hover:text-blue-600"
                                         >
                                             {index + 10}. {item}
@@ -2569,45 +2579,45 @@ const CgpaContent = () => {
                 )}
             </div>
 
-            <div className="text-center translate-y-[-250px]">
+            <div className="text-center translate-y-[-250px] translate-x-[-5px]">
                 <button
                     onClick={toggleMainExpand}
                     className="text-blue-600 hover:text-blue-800   mt-4  dark:text-gray-400 text-4xl dark:hover:text-blue-600 animate-bounce transition-all duration-300 focus:outline-none"
                 >
                     {isMainExpanded ? (
-                        <div className="flex justify-center items-center w-14 h-14 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">
+                        <div className="flex justify-center items-center w-8 h-14 rounded-full bg-gradient-to-b from-indigo-600 to-blue-500 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-8 w-8 text-white transform rotate-180 transition-all duration-300 ease-in-out"
-                                viewBox="0 0 255 255"
+                                className="h-6 w-6 text-white transform rotate-180"
+                                viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
-                                strokeWidth="2"
+                                strokeWidth="3"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                             >
                                 <path d="M12 17V7" /> 
-                                <path d="M9 10L12 7L15 10" />
+                                <path d="M9 10L12 7L15 10" /> 
                             </svg>
                         </div>
                     ) : (
-                      
-                        <div className="flex justify-center items-center w-8 h-8 mr-4 rounded-full bg-gradient-to-r from-gray-400 to-green-700 hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">
+                        <div className="flex justify-center items-center w-8 h-14  rounded-full bg-gradient-to-b from-indigo-600 to-blue-500 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-8 w-8 text-white transform transition-all duration-300 ease-in-out"
+                                className="h-6 w-6 text-white"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
-                                strokeWidth="4"
+                                strokeWidth="3"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                             >
                                 <path d="M12 7V17" /> 
-                                <path d="M9 14L12 17L15 14" /> 
+                                <path d="M9 14L12 17L15 14" />
                             </svg>
                         </div>
                     )}
+
                 </button>
             </div>
         </div >

@@ -34,10 +34,10 @@ const CgpaContent = () => {
     };
     useEffect(() => {
         if (isMainExpanded !== null) {
-          scrollToSection(`section${isMainExpanded}`);
+            scrollToSection(`section${isMainExpanded}`);
         }
-      }, [isMainExpanded]); 
-    
+    }, [isMainExpanded]);
+
 
 
     return (
@@ -88,10 +88,10 @@ const CgpaContent = () => {
                                 ].map((item, index) => (
                                     <li key={index + 1}>
                                         <button
-                                           onClick={() => {
-                                            scrollToSection(`section${index + 1}`);
-                                            setIsMainExpanded(isMainExpanded === index + 1 ? null : index + 1); 
-                                        }}
+                                            onClick={() => {
+                                                scrollToSection(`section${index + 1}`);
+                                                setIsMainExpanded(isMainExpanded === index + 1 ? null : index + 1);
+                                            }}
                                             className="w-full text-left text-blue-600 hover:text-blue-800 focus:outline-none transition-all hover:scale-95  duration-300 dark:text-blue-400 dark:hover:text-blue-600"
                                         >
                                             {index + 1}. {item}
@@ -112,9 +112,10 @@ const CgpaContent = () => {
                                 ].map((item, index) => (
                                     <li key={index + 10}>
                                         <button
-                                            onClick={() => {scrollToSection(`section${index + 10}`)
-                                            setIsMainExpanded(isMainExpanded === index + 10 ? null : index + 10); 
-                                        }}
+                                            onClick={() => {
+                                                scrollToSection(`section${index + 10}`)
+                                                setIsMainExpanded(isMainExpanded === index + 10 ? null : index + 10);
+                                            }}
                                             className="w-full text-left text-blue-600 hover:text-blue-800 focus:outline-none transition-all hover:scale-95 duration-300 dark:text-blue-400 dark:hover:text-blue-600"
                                         >
                                             {index + 10}. {item}
@@ -220,13 +221,13 @@ const CgpaContent = () => {
                                             One method of calculating CGPA is by finding the average. Then, the CGPA calculation formula would be the sum of Grade Points in all the semesters divided by the number of semesters. Mathematically, the CGPA formula can be represented as;
                                         </p>
                                         <div className="text-center mb-6">
-                                            <p className="text-xl font-semibold">
+                                            <p className="text-md font-semibold">
                                                 CGPA =
                                                 <span className="inline-block ml-2 align-middle">
-                                                    <div className="border-b  border-gray-500 dark:border-gray-400 pb-1 text-xl">
-                                                        SGPA
+                                                    <div className="border-b  border-gray-500 dark:border-gray-400 pb-1">
+                                                        SGPA of sem.1 + SGPA of sem.2 + SGPA of sem.3 +.........+ SGPA of sem. "N"
                                                     </div>
-                                                    <span>Number of Semesters</span>
+                                                    <span>Total Number of Semesters</span>
                                                 </span>
                                             </p>
                                         </div>
@@ -234,31 +235,41 @@ const CgpaContent = () => {
                                             Example: Ram, our friend from My Best Friend essay, has finally passed from school and joined college. There he achieved an SGPA in 4 semesters: 6+8.5+7+9.5, then his CGPA would be:
                                         </p>
                                         <div className="text-center mb-6">
-                                            <p className="text-xl font-semibold">
+                                            <p className="text-md font-semibold">
                                                 CGPA =
                                                 <div className="inline-block ml-2 align-middle">
-                                                    <div className="border-b border-gray-500 dark:border-gray-400 pb-1 text-xl">
+                                                    <div className="border-b border-gray-500 dark:border-gray-400 pb-1 t">
                                                         (6 + 8.5 + 7 + 9.5)
                                                     </div>
                                                     <spans> 4 </spans>
                                                 </div>
-                                                <span className='ml-2'>
-                                                    = 7.75
-                                                </span>
+                                                <div className="text-center mb-6">
+                                                    <p className="text-md font-semibold">
+                                                        CGPA =
+                                                        <div className="inline-block ml-2 align-middle">
+                                                            <div className="border-b border-gray-500 dark:border-gray-400 pb-1 ">
+                                                                31
+                                                            </div>
+                                                            <span> 4 </span>
+                                                        </div>
+                                                        <span>  =  7.75</span>
+                                                    </p>
+                                                </div>
                                             </p>
                                         </div>
+
                                         <p className="text-lg font-semibold mb-2">CGPA Calculation Formula Method 2:</p>
                                         <p className="mb-4">
                                             Now another CGPA formula, which is also in practice, is to find the sum of the product of SGPA and credits earned divided by the number of credits earned. Mathematically, this CGPA calculation formula can be represented as;
                                         </p>
                                         <div className="text-center mb-6">
-                                            <p className="text-xl font-semibold">
+                                            <p className="text-[10px] font-semibold">
                                                 CGPA =
-                                                <span className="inline-block ml-2 align-middle">
-                                                    <div className="border-b border-gray-500 dark:border-gray-400 pb-1 text-xl">
-                                                        (SGPA × Credits)
+                                                <span className="inline-block ml-2 align-middle ">
+                                                    <div className="border-b border-gray-500 dark:border-gray-400 pb-1 ">
+                                                        (SGPA of sem.1 × Credits Earned in sem.1) +  (SGPA of sem.2 × Credits Earned in sem.2) + ...... +  (SGPA of sem."N" × Credits Earned in sem."N")
                                                     </div>
-                                                    <span>  Credits</span>
+                                                    <span>Total Numbers of Credits Earned</span>
                                                 </span>
                                             </p>
                                         </div>
@@ -266,19 +277,31 @@ const CgpaContent = () => {
                                             Example: Shyam, another friend from the My Best Friend essay, also joined a different college. And there he achieved SGPA in 4 semesters: 7.2+6.5+8.9+9.6 with credits earned 4+3+3+5, then his CGPA would be:
                                         </p>
                                         <div className="text-center ">
-                                            <p className="text-xl font-semibold mr-2">
+                                            <p className="text-md font-semibold mr-2">
                                                 CGPA =
                                                 <div className="inline-block ml-2 align-middle">
-                                                    <div className="border-b border-gray-500 dark:border-gray-400 pb-1 text-xl">
+                                                    <div className="border-b border-gray-500 dark:border-gray-400 pb-1">
                                                         (7.2×4 + 6.5×3 + 8.9×3 + 9.6×5)
                                                     </div>
                                                     <span>(4 + 3 + 3 + 5)</span>
                                                 </div>
-                                                <span className='ml-4'>
-                                                    = 8.2
-                                                </span>
+
                                             </p>
                                         </div>
+                                        <div className="text-center mt-4">
+                                            <p className='text-md font-semibold mr-2'>
+                                                CGPA =
+                                                <div className="inline-block ml-4  align-middle ">
+                                                    <span className="border-b border-gray-500 dark:border-gray-400 pb-1">
+                                                        28.8 + 19.5 + 26.7 + 48
+                                                    </span>
+                                                    <div className='font-semibold text-center'>15</div>
+                                                </div>
+                                            </p>
+                                           
+                                        </div>
+                                        <div className='text-center font-semibold mt-4 text-md'>CGPA = 8.2 </div>
+                                        
                                     </div>
 
                                 </div>
@@ -2282,7 +2305,7 @@ const CgpaContent = () => {
                                 >
                                     CGPA to Percentage Conversion for Different Boards and Universities
                                 </h3>
-                                <table className="table-auto w-full border-collapse border-blue-400 border p-2 text-left mb-6">
+                                <table className="table-auto w-full border-collapse border-blue-400 border p-2 mb-6 text-center">
                                     <thead>
                                         <tr className="bg-blue-100 dark:bg-blue-800">
                                             <th className="border border-blue-400 p-2">Board/University</th>
@@ -2579,7 +2602,7 @@ const CgpaContent = () => {
                 )}
             </div>
 
-            <div className="text-center translate-y-[-250px] translate-x-[-5px]">
+            <div className="text-center translate-y-[-80px] translate-x-[-5px]">
                 <button
                     onClick={toggleMainExpand}
                     className="text-blue-600 hover:text-blue-800   mt-4  dark:text-gray-400 text-4xl dark:hover:text-blue-600 animate-bounce transition-all duration-300 focus:outline-none"
@@ -2596,8 +2619,8 @@ const CgpaContent = () => {
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                             >
-                                <path d="M12 17V7" /> 
-                                <path d="M9 10L12 7L15 10" /> 
+                                <path d="M12 17V7" />
+                                <path d="M9 10L12 7L15 10" />
                             </svg>
                         </div>
                     ) : (
@@ -2612,7 +2635,7 @@ const CgpaContent = () => {
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                             >
-                                <path d="M12 7V17" /> 
+                                <path d="M12 7V17" />
                                 <path d="M9 14L12 17L15 14" />
                             </svg>
                         </div>

@@ -55,7 +55,7 @@ function Nav() {
 
                
                 <div
-                    onClick={() => handleNavigation('GPA to CGPA', '/educational-calculator/gpa-to-cgpa-calculator')}
+                    onClick={() => handleNavigation('GPA to CGPA', '/educational-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA')}
                     className={`border px-4 py-2 cursor-pointer font-semibold text-center transition-all duration-300 ease-in-out ${
                         filters === 'GPA to CGPA'
                             ? 'rounded-t-sm text-[#009688] border-b-0'

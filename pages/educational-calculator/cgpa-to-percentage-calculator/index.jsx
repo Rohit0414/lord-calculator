@@ -66,7 +66,6 @@ const Cgpatopercentage = () => {
 
     useEffect(() => {
         if (!isClient) return;
-
         const { query } = router;
         const generateAndDownloadPDF = async () => {
             if (isDownloading) return; 

@@ -5,27 +5,17 @@ import { useTheme } from '@/context/ThemeContext';
 
 
 const CgpaContent = () => {
-    const [headings, setHeadings] = useState([]);
+    
     const [isExpanded, setIsExpanded] = useState(true);
     const [isMainExpanded, setIsMainExpanded] = useState(false);
-    const theme = useTheme
+    const theme = useTheme();
 
 
     const toggleMainExpand = () => {
         setIsMainExpanded(!isMainExpanded);
     };
 
-    useEffect(() => {
-        const headingElements = Array.from(document.querySelectorAll('.heading'));
-        const headingData = headingElements.map((heading) => ({
-            id: heading.id,
-            text: heading.innerText,
-            element: heading,
-        }));
-
-        setHeadings(headingData);
-    }, []);
-
+ 
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
@@ -92,7 +82,7 @@ const CgpaContent = () => {
                                                 scrollToSection(`section${index + 1}`);
                                                 setIsMainExpanded(isMainExpanded === index + 1 ? null : index + 1);
                                             }}
-                                            className="w-full text-left text-blue-600 hover:text-blue-800 focus:outline-none transition-all hover:scale-95  duration-300 dark:text-blue-400 dark:hover:text-blue-600"
+                                            className="w-full text-left text-blue-600 hover:text-blue-800 focus:outline-none transition-all hover:scale-[102%] duration-300 dark:text-blue-400 dark:hover:text-blue-600"
                                         >
                                             {index + 1}. {item}
                                         </button>
@@ -107,7 +97,7 @@ const CgpaContent = () => {
                                     'What is a Grading Scale & How do Universities Choose Their Standard Scale?',
                                     'What is a Multiplication Factor and How Does it Work?',
                                     'CGPA to Percentage Conversion for different Boards and Universities.',
-                                    'CGPA to Percentage Conversion for different Boards and Universities.',
+                                    ' What are the Impacts of Different Grading Scales on Students?',
                                     'FAQs related to CGPA Calculator',
                                 ].map((item, index) => (
                                     <li key={index + 10}>
@@ -139,7 +129,7 @@ const CgpaContent = () => {
 
 
                             <div className=''>
-                                <h2 id='section3' className="text-2xl text-blue-500 drop-shadow-sm mt-6 mb-4">Lord Calculator's CGPA to Percentage Calculator</h2>
+                                <h2 id='section3' className="text-2xl text-blue-600 drop-shadow-sm mt-6 mb-6">Lord Calculator's CGPA to Percentage Calculator</h2>
                                 <p>
                                     <img
                                         src="/Lord-Calculator_s-CGPA-to-Percentage-Calculator.jpg"
@@ -161,7 +151,7 @@ const CgpaContent = () => {
                                 </p>
 
                                 <div>
-                                    <h3 id='section4' className="text-2xl font-semibold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent mt-8 mb-4 dark:text-white">
+                                    <h3 id='section4' className="text-2xl font-semibold text-blue-600 mt-8 mb-4 dark:text-white">
                                         How to Use Lord Calculator's CGPA to Percentage Calculator
                                     </h3>
 
@@ -185,7 +175,7 @@ const CgpaContent = () => {
                                     </ol>
                                 </div>
                                 <div className=''>
-                                    <h3 className="text-2xl font-semibold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent  mb-4 dark:text-white">
+                                    <h3 className="text-2xl font-semibold text-blue-600  mb-4 dark:text-white">
                                         Tip for CGPA to Percentage Calculation
                                     </h3>
 
@@ -298,10 +288,10 @@ const CgpaContent = () => {
                                                     <div className='font-semibold text-center'>15</div>
                                                 </div>
                                             </p>
-                                           
+
                                         </div>
                                         <div className='text-center font-semibold mt-4 text-md'>CGPA = 8.2 </div>
-                                        
+
                                     </div>
 
                                 </div>
@@ -310,7 +300,7 @@ const CgpaContent = () => {
 
                         </div>
                         <div className=''>
-                            <h2 id='section6' className="text-2xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mb-4">Definition of Important Terms You Need to Know</h2>
+                            <h2 id='section6' className="text-2xl font-semibold text-blue-600 mb-4">Definition of Important Terms You Need to Know</h2>
                             <p className="text-lg mb-4">
                                 While going through an official document, form, or even your certificate you see certain terms and abbreviations that are repeatedly used. Let us go over them quickly before proceeding to how different boards/universities set their conversion formula.
 
@@ -1860,11 +1850,11 @@ const CgpaContent = () => {
                         </div>
 
 
-                        <div id='section12' className="container mx-auto p-4">
+                        <div  className="container mx-auto p-4">
                             <div>
-                                <h1 class="text-xl font-bold text-blue-400 mb-4">
+                                <h2 id="section12" class="text-xl font-bold text-blue-400 mb-4">
                                     CGPA to Percentage in 4 Grade Scale
-                                </h1>
+                                </h2>
                                 <div class="grid grid-cols-1 sm:grid-cols-3 border-blue-400 border">
                                     <div class="border p-2 rounded">1.00 CGPA in Percentage 25.00%</div>
                                     <div class="border p-2 rounded">1.01 CGPA in Percentage 25.25%</div>
@@ -2236,9 +2226,9 @@ const CgpaContent = () => {
                             </div>
                         </div>
 
-                        <section id='section13' className="grading-scale-info p-6 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+                        <section  className="grading-scale-info p-6 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
                             <div>
-                                <h2 className="text-2xl font-semibold text-blue-400 mb-4">
+                                <h2 id = "section13" className="text-2xl font-semibold text-blue-400 mb-4">
                                     What is a Grading Scale & How do Universities Choose Their Standard Scale?
                                 </h2>
                                 <p className="mb-4">
@@ -2479,7 +2469,7 @@ const CgpaContent = () => {
                                 </table>
                             </div >
                             <div>
-                                <h3 id='section16' className="text-xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mt-6 mb-4">
+                                <h3 id="section16" className="text-xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mt-6 mb-4">
                                     What are the Impacts of Different Grading Scales on Students?
                                 </h3>
                                 <p className="mb-4">
@@ -2602,42 +2592,57 @@ const CgpaContent = () => {
                 )}
             </div>
 
-            <div className="text-center translate-y-[-80px] translate-x-[-5px]">
+            <div className="text-center  ">
                 <button
                     onClick={toggleMainExpand}
-                    className="text-blue-600 hover:text-blue-800   mt-4  dark:text-gray-400 text-4xl dark:hover:text-blue-600 animate-bounce transition-all duration-300 focus:outline-none"
+                    className="text-blue-600 hover:text-blue-800   dark:text-gray-400 text-4xl dark:hover:text-blue-600 animate-bounce transition-all duration-300 focus:outline-none"
                 >
                     {isMainExpanded ? (
-                        <div className="flex justify-center items-center w-8 h-14 rounded-full bg-gradient-to-b from-indigo-600 to-blue-500 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-6 w-6 text-white transform rotate-180"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="3"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
+                        <div className='translate-x-8 translate-y-[90px]'>
+                            <div
+                                style={{
+                                    position: "fixed",
+                                    bottom: "80px",
+                                    right: "20px",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    width: "50px",
+                                    height: "50px",
+                                    color: "#000",
+                                    border: "1px solid #ccc",
+                                    borderRadius: "50%",
+                                    cursor: "pointer",
+                                    boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.3)",
+                                    zIndex: 1000,
+                                }}
+                                className="animate-bounce bg-blue-200"
                             >
-                                <path d="M12 17V7" />
-                                <path d="M9 10L12 7L15 10" />
-                            </svg>
+                                <span style={{ fontSize: "20px", fontWeight: "bold" }}>↑</span>
+                            </div>
                         </div>
                     ) : (
-                        <div className="flex justify-center items-center w-8 h-14  rounded-full bg-gradient-to-b from-indigo-600 to-blue-500 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-6 w-6 text-white"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="3"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
+                        <div className="translate-x-8 translate-y-[-12px]">
+                            <div
+                                style={{
+                                    display: "flex",
+                                    position: "fixed",
+                                    bottom: "20px",
+                                    right: "20px",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    width: "50px",
+                                    height: "50px",
+                                    color: "#000",
+                                    border: "1px solid #ccc",
+                                    borderRadius: "50%",
+                                    cursor: "pointer",
+                                    boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.3)",
+                                    zIndex: 1000,
+                                }}
+                                className="animate-bounce bg-blue-200"
                             >
-                                <path d="M12 7V17" />
-                                <path d="M9 14L12 17L15 14" />
-                            </svg>
+                                <span style={{ fontSize: "20px", fontWeight: "bold" }}>↓</span>
+                            </div>
                         </div>
                     )}
 

@@ -29,7 +29,6 @@ function Nav() {
             <div className="w-full border-b mb-5"></div>
 
             <div className="flex justify-center">
-               
                 <div
                     onClick={() => handleNavigation('CGPA to percentage', '/educational-calculator/cgpa-to-percentage-calculator')}
                     className={`border px-4 py-2 cursor-pointer font-semibold text-center transition-all duration-300 ease-in-out ${
@@ -43,7 +42,7 @@ function Nav() {
 
                
                 <div
-                    onClick={() => handleNavigation('Percentage to CGPA', '/educational-calculator/percentage-to-cgpa-calculator')}
+                    onClick={() => handleNavigation('Percentage to CGPA', '/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator')}
                     className={`border px-4 py-2 cursor-pointer font-semibold text-center transition-all duration-300 ease-in-out ${
                         filters === 'Percentage to CGPA'
                             ? 'rounded-t-sm text-[#009688] border-b-0'
@@ -55,7 +54,7 @@ function Nav() {
 
                
                 <div
-                    onClick={() => handleNavigation('GPA to CGPA', '/educational-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA')}
+                    onClick={() => handleNavigation('GPA to CGPA', '/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator')}
                     className={`border px-4 py-2 cursor-pointer font-semibold text-center transition-all duration-300 ease-in-out ${
                         filters === 'GPA to CGPA'
                             ? 'rounded-t-sm text-[#009688] border-b-0'
@@ -67,7 +66,7 @@ function Nav() {
 
                
                 <div
-                    onClick={() => handleNavigation('CGPA to GPA', '/educational-calculator/cgpa-to-gpa-calculator')}
+                    onClick={() => handleNavigation('CGPA to GPA', '/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator')}
                     className={`border px-4 py-2 cursor-pointer font-semibold text-center transition-all duration-300 ease-in-out ${
                         filters === 'CGPA to GPA'
                             ? 'rounded-t-sm text-[#009688] border-b-0'

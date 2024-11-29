@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const PercentageContent = () => {
+    const [isExpanded, setIsExpanded] = useState(true);
     const [isMainExpanded, setIsMainExpanded] = useState(false);
 
 
@@ -8,45 +9,127 @@ const PercentageContent = () => {
         setIsMainExpanded(!isMainExpanded);
     };
 
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    };
+    useEffect(() => {
+        if (isMainExpanded !== null) {
+            scrollToSection(`section${isMainExpanded}`);
+        }
+    }, [isMainExpanded]);
 
 
     return (
         <div className=" relative p-6 max-w-screen-lg mx-auto bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
-            <h1 className="text-3xl font-bold mb-4 text-blue-600">
+            <h2 id='section1' className="text-3xl font-bold mb-4 text-blue-600">
                 Percentage To CGPA Calculator
-            </h1>
+            </h2>
             <p className="mb-6 text-lg leading-relaxed">
                 Welcome fellow learners and academicians! As you all know, CGPAs and Percentages play important roles in the educational system. We often get into situations where we need to use them interchangeably, so{" "}
                 <span className="font-bold">Lord Calculator</span> presents you with the most reliable and blazing-fast Percentage to CGPA Calculator to help you calculate your percentage on the go! Here is a detailed guide on how our Percentage to CGPA Calculator works, methods of converting Percentage to CGPA, and various Percentage to CGPA formulae.
             </p>
 
-            <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+            <h2 id='section2' className="text-2xl font-semibold mb-4 text-blue-500">
                 Percentage to CGPA Formula
             </h2>
-            <div className="bg-blue-50 dark:bg-gray-700 p-4 rounded-lg mb-6">
-                <p className="font-semibold">CGPA = Percentage achieved / Multiplication Factor given by University</p>
-                <p className="italic mt-2">
-                    Example: Let’s say you have achieved a handsome percentage of over 92.4%. And, now you want to convert it into CGPA. The Grading Scale that your university follows is the 10-grading scale with a multiplication factor of 9.5. Then your CGPA would be calculated as:
-                </p>
-                <div className="mt-4 text-center">
-                    <div className="text-blue-600 font-bold mb-8 inline-block align-middle mr-2">CGPA = </div>
-                    <div className="inline-block align-middle">
-                        <span className="text-black font-bold">92.4</span>
-                        <hr className="w-full border-t-2 border-blue-600" />
-                        <span className="text-black font-bold">9.5</span>
-                        <div className="text-green-600 font-bold mt-2">= 9.72</div>
-                    </div>
+            <div className="bg-white  rounded-lg shadow-lg max-w-4xl mx-auto border-t-4 mt-8 mb-4 dark:bg-gray-800 dark:border lue-400">
+                <div className="flex justify-between items-center">
+                    <h2 className="text-xl p-4 font-semibold text-blue-600 dark:text-blue-400">Table of Contents</h2>
+                    <button
+                        onClick={() => setIsExpanded(!isExpanded)}
+                        className="text-blue-600 hover:text-blue-800 font-medium focus:outline-none transition-all duration-300 dark:text-blue-400"
+                    >
+                        {isExpanded ? (
+                            <span className="mr-4">&#9650;</span>
+                        ) : (
+                            <span className="mr-4">&#9660;</span>
+                        )}
+                    </button>
                 </div>
+                {isExpanded && (
+                    <div className="grid grid-cols-2 gap-x-6 mb-4">
+                        <ol className="space-y-3 p-4">
+                            {[
+                                'Percentage to CGPA Calculator',
+                                ' Percentage to CGPA Formula',
+                                ' Lord Calculator’s Percentage to CGPA Calculator & Why Use It?',
+                                ' How to Use Lord Calculator’s Percentage to CGPA Calculator?',
+                                ' What is Percentage & How It is Different from CGPA?',
+                                'What is CGPA & How It is Calculated?',
+                                'When to use Lord Calculator’s Percentage to CGPA Calculator?',
 
+                            ].map((item, index) => (
+                                <li key={index + 1}>
+                                    <button
+                                        onClick={() => {
+                                            scrollToSection(`section${index + 1}`);
+                                            setIsMainExpanded(isMainExpanded === index + 1 ? null : index + 1);
+                                        }}
+                                        className="w-full text-left text-blue-600 hover:text-blue-800 focus:outline-none transition-all hover:scale-[102%] duration-300 dark:text-blue-400 dark:hover:text-blue-600"
+                                    >
+                                        {index + 1}. {item}
+                                    </button>
+                                </li>
+                            ))}
+                        </ol>
+                        <ol className="space-y-3 p-4">
+                            {[
+
+                                'Common Mistakes to Avoid While Calculating Percentage to CGPA Accurately',
+                                'Why Do Various Institutions Follow Different Grading Scales & Conversion Formulae',
+                                'Percentage to CGPA Conversion for different Boards and Universities.',
+                                'Pros. & Cons. of Using Percentage to CGPA Online Calculators',
+                                'Frequently Asked Questions (FAQs)',
+
+                            ].map((item, index) => (
+                                <li key={index + 8}>
+                                    <button
+                                        onClick={() => {
+                                            scrollToSection(`section${index + 8}`)
+                                            setIsMainExpanded(isMainExpanded === index + 8 ? null : index + 8);
+                                        }}
+                                        className="w-full text-left text-blue-600 hover:text-blue-800 focus:outline-none transition-all hover:scale-95 duration-300 dark:text-blue-400 dark:hover:text-blue-600"
+                                    >
+                                        {index + 8}. {item}
+                                    </button>
+                                </li>
+                            ))}
+                            {!isMainExpanded && (
+                                <div className="absolute bottom-20 left-0 right-0 h-72 bg-gradient-to-t from-white to-transparent"></div>
+                            )}
+                        </ol>
+
+                    </div>
+                )}
 
             </div>
-            {!isMainExpanded && (
-                <div className="absolute bottom-20 left-0 right-0 h-56 bg-gradient-to-t from-white to-transparent"></div>
-            )}
+
             {isMainExpanded && (
                 <>
+                    <div className="bg-blue-50 dark:bg-gray-700 p-4 mt-8 rounded-lg mb-6">
+                        <p className="font-semibold">CGPA = Percentage achieved / Multiplication Factor given by University</p>
+                        <p className="italic mt-2">
+                            Example: Let’s say you have achieved a handsome percentage of over 92.4%. And, now you want to convert it into CGPA. The Grading Scale that your university follows is the 10-grading scale with a multiplication factor of 9.5. Then your CGPA would be calculated as:
+                        </p>
 
-                    <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+                        <div className="mt-4 text-center">
+                            <div className="text-blue-600 font-bold mb-8 inline-block align-middle mr-2">CGPA = </div>
+                            <div className="inline-block align-middle">
+                                <span className="text-black font-bold">92.4</span>
+                                <hr className="w-full border-t-2 border-blue-600" />
+                                <span className="text-black font-bold">9.5</span>
+                                <div className="text-green-600 font-bold mt-2">= 9.72</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <h2 id='section3' className="text-2xl font-semibold mb-4 text-blue-500">
                         Lord Calculator’s Percentage to CGPA Calculator & Why Use It?
                     </h2>
                     <p className="mb-6">
@@ -64,7 +147,7 @@ const PercentageContent = () => {
                     </ul>
                     <p className="mb-6"><strong className="italic">Please note that </strong>your institution may follow a standard grading scale i.e. 10 Grading Scale but with a different multiplication factor. For example: CBSE, ICSE, and JNTU (Jawahar Lal Nehru Technical University) follow a common 10-grading Scale but use different multiplication factors. CBSE considers 9.5 as the multiplication factor for all the conversion calculations, while ICSE uses 9.8 as their multiplication factor, and JNTU uses 10 as the multiplication factor for their CGPA to percentage or Percentage to CGPA calculations.</p>
 
-                    <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+                    <h2 id='section4' className="text-2xl font-semibold mb-4 text-blue-500">
                         How to Use Lord Calculator’s Percentage to CGPA Calculator?
                     </h2>
                     <p className="mt-2 mb-4">Before we start digging into key concepts that you should be aware of about the grading system and the grade conversion let me guide you on how to use Lord Calculator’s Percentage to CGPA calculator for accurate results.</p>
@@ -84,7 +167,7 @@ const PercentageContent = () => {
                     </ol>
                     <p className="mb-4">Once you have all the information filled in, hit the “calculate” button. You will have your percentage converted to CGPA in front of your screen.</p>
 
-                    <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+                    <h2 id='section5' className="text-2xl font-semibold mb-4 text-blue-500">
                         What is Percentage & How It is Different from CGPA?
                     </h2>
                     <div className="grid md:grid-cols-2 gap-4 mb-6">
@@ -99,7 +182,7 @@ const PercentageContent = () => {
                     </div>
 
                     <div className="bg-blue-50 dark:bg-gray-700 p-4 rounded-lg mb-6">
-                        <h2 className="font-semibold text-xl text-blue-500">What is CGPA & How It is Calculated?</h2>
+                        <h2 id='section6' className="font-semibold text-xl text-blue-500">What is CGPA & How It is Calculated?</h2>
                         <p className="italic mt-2">
                             CGPA (Cumulative Grade Point Average) is an overall assessment of a student's academic performance over a defined academic period. Some universities calculate it as the average of all semester grade points, while others also include credits in the calculation.
                         </p>
@@ -180,11 +263,11 @@ const PercentageContent = () => {
                             <div className="text-blue-600 font-bold mb-8 inline-block align-middle mr-2">Percentage = </div>
                             <div className="inline-block align-middle">
                                 <div className=" items-center">
-                                   
+
                                     <span className="text-black font-bold">Sum of Marks Achieved in all Subjects/Semesters</span>
                                     <span className="text-black font-bold">* 100</span>
 
-                                   
+
                                     <div className="w-full border-t-2 border-blue-600 mt-2 mb-2"></div>
 
                                     <div className=" justify-center items-center">
@@ -235,7 +318,7 @@ const PercentageContent = () => {
                         Lord Calculator’s Percentage to CGPA Calculator is useful in scenarios where you need to convert your grades between formats quickly and accurately. It helps eliminate confusion from complex decimal calculations and ensures precise conversions every time. So, when do you need to use this tool?
                     </p>
 
-                    <h2 className="text-2xl font-semibold mb-4 text-[#010A3B]">When to use Lord Calculator’s Percentage to CGPA Calculator?</h2>
+                    <h2 id='section7' className="text-2xl font-semibold mb-4 text-[#010A3B]">When to use Lord Calculator’s Percentage to CGPA Calculator?</h2>
 
                     <p className="mb-4">
                         This tool is perfect for any situation where you need to switch between grades in different formats seamlessly. Let’s explore a few common scenarios:
@@ -265,7 +348,7 @@ const PercentageContent = () => {
 
 
 
-                    <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+                    <h2 id='section8' className="text-2xl font-semibold mb-4 text-blue-500">
                         Common Mistakes to Avoid While Calculating Percentage to CGPA Accurately
                     </h2>
                     <p>Although the Percentage to CGPA conversion formula looks pretty simple, still many students get the wrong results. One of the most common mistakes is not knowing the accurate multiplication factor. Well, we will talk about the multiplication factor in detail in the upcoming sub-heading. First, take a look at all the common mistakes that you should avoid while calculating the Percentage to CGPA accurately.
@@ -276,7 +359,7 @@ const PercentageContent = () => {
                         <li className="mb-2">Got your multiplication factor right but still getting inaccurate conversion? In this case, you need to check your institution’s conversion formula. Many universities such as the University of Mumbai have their own conversion formula which are different from the standard conversion formula. For example, the University of Mumbai’s CGPA calculation formula is, Percentage = (CGPA  7.25) + 11
                             Thus you need to ensure these factors especially if you are doing the Percentage to CGPA calculation. There are other pitfalls as well, but those are related to other conversions such as [SGPA to CGPA] and [GPA to CGPA] conversions. We have discussed them in their respective sections.</li>
                     </ul>
-                    <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+                    <h2 id='section9' className="text-2xl font-semibold mb-4 text-blue-500">
                         Why Do Various Institutions Follow Different Grading Scales & Conversion Formulae
                     </h2>
                     <p>We have talked multiple times with the example that several institutions follow different grading scales. But why is it so? The reasons could be many! Let us take a look at each of them one by one:</p>
@@ -287,7 +370,7 @@ const PercentageContent = () => {
                         <li className="mb-2"><strong>Difficulty in achieving Universal Grading Standard:</strong>Although following a universal grading standard seems a fair and easy concept it is practically difficult. And since institutions follow different grading scales, they need to have a standard conversion formula to have an unbiased idea of student’s academic performance coming from different universities/schools.</li>
                     </ul>
 
-                    <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+                    <h2 id='section10' className="text-2xl font-semibold mb-4 text-blue-500">
                         Percentage to CGPA Conversion for different Boards and Universities.
                     </h2>
                     <table className="table-auto w-full border-collapse border border-blue-400 text-left mb-6">
@@ -460,7 +543,7 @@ const PercentageContent = () => {
                         </tbody>
                     </table>
                     <section className="py-8 px-4">
-                        <h2 className="text-xl font-semibold text-center mb-4">Pros. & Cons. of Using Percentage to CGPA Online Calculators</h2>
+                        <h2 id='section11' className="text-xl font-semibold text-center mb-4">Pros. & Cons. of Using Percentage to CGPA Online Calculators</h2>
                         <div className="pro-con-container">
                             <h3 className="text-lg font-semibold mb-4">Pros. of Percentage to CGPA Calculators</h3>
                             <ul className="list-disc pl-6">
@@ -486,7 +569,7 @@ const PercentageContent = () => {
                         </div>
                     </section>
                     <section className="py-4 px-4">
-                        <h2 className="text-2xl font-semibold text-left mb-6 text-blue-500">Frequently Asked Questions (FAQs)</h2>
+                        <h2 id='section12' className="text-2xl font-semibold text-left mb-6 text-blue-500">Frequently Asked Questions (FAQs)</h2>
 
                         <div className="faq-container">
                             <div className="faq-item mb-6">
@@ -603,42 +686,57 @@ const PercentageContent = () => {
                     </p>
                 </>
             )}
-            <div className="text-center translate-y-[-80px] translate-x-[-5px]">
+            <div className="text-center  ">
                 <button
                     onClick={toggleMainExpand}
-                    className="text-blue-600 hover:text-blue-800   mt-4  dark:text-gray-400 text-4xl dark:hover:text-blue-600 animate-bounce transition-all duration-300 focus:outline-none"
+                    className="text-blue-600 hover:text-blue-800   dark:text-gray-400 text-4xl dark:hover:text-blue-600 animate-bounce transition-all duration-300 focus:outline-none"
                 >
                     {isMainExpanded ? (
-                        <div className="flex justify-center items-center w-8 h-14 rounded-full bg-gradient-to-b from-indigo-600 to-blue-500 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-6 w-6 text-white transform rotate-180"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="3"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
+                        <div className='translate-x-10 mt-4 translate-y-[130px]'>
+                            <div
+                                style={{
+                                    position: "fixed",
+                                    bottom: "80px",
+                                    right: "20px",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    width: "50px",
+                                    height: "50px",
+                                    color: "#000",
+                                    border: "1px solid #ccc",
+                                    borderRadius: "50%",
+                                    cursor: "pointer",
+                                    boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.3)",
+                                    zIndex: 1000,
+                                }}
+                                className="animate-bounce bg-blue-200 "
                             >
-                                <path d="M12 17V7" />
-                                <path d="M9 10L12 7L15 10" />
-                            </svg>
+                                <span style={{ fontSize: "20px", fontWeight: "bold" }}>↑</span>
+                            </div>
                         </div>
                     ) : (
-                        <div className="flex justify-center items-center w-8 h-14  rounded-full bg-gradient-to-b from-indigo-600 to-blue-500 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-6 w-6 text-white"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="3"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
+                        <div className='translate-x-10 translate-y-[-10px]'>
+                            <div
+                                style={{
+                                    display: "flex",
+                                    position: "fixed",
+                                    bottom: "20px",
+                                    right: "20px",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    width: "50px",
+                                    height: "50px",
+                                    color: "#000",
+                                    border: "1px solid #ccc",
+                                    borderRadius: "50%",
+                                    cursor: "pointer",
+                                    boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.3)",
+                                    zIndex: 1000,
+                                }}
+                                className="animate-bounce bg-blue-200 "
                             >
-                                <path d="M12 7V17" />
-                                <path d="M9 14L12 17L15 14" />
-                            </svg>
+                                <span style={{ fontSize: "20px", fontWeight: "bold" }}>↓</span>
+                            </div>
                         </div>
                     )}
 

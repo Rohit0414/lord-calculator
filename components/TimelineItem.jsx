@@ -15,19 +15,19 @@ const TimelineItem = () => {
             title: "Percentage to CGPA Calculator",
             description: "Easily access a variety of educational calculators for learning and homework.",
             backgroundColor: theme === "dark" ? "bg-[#4285f4]" : "bg-[#4285f4]",
-            href: "/educational-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA"
+            href: "/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA"
         },
         {
             title: "GPA to CGPA Calculator",
             description: "Simplify complex financial calculations in seconds.",
             backgroundColor: theme === "dark" ? "bg-[#cf8408]" : "bg-[#cf8408]",
-            href: "/educational-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA "
+            href: "/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA "
         },
         {
             title: "CGPA to GPA Calculator",
             description: "Quickly calculate your Body Mass Index for health insights.",
             backgroundColor: theme === "dark" ? "bg-[#5865f2]" : "bg-[#5865f2]",
-            href: "/educational-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA"
+            href: "/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA"
         },
     ];
 

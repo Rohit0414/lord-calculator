@@ -1,18 +1,20 @@
 import Link from "next/link";
 import { useTheme } from "../context/ThemeContext";
 import { useState, useEffect, useRef } from "react";
-import { FaGlobe, FaSun, FaMoon, FaUserCircle, FaChevronDown } from "react-icons/fa";
+import { FaGlobe, FaSun, FaMoon, FaChevronDown } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import Image from "next/image";
 import calculatorImage from "../public/png calci.png";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("English");
-  const [isProfileOpen, setIsProfileOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState(""); // State for search query
+  const [searchInput, setSearchInput] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+  const router = useRouter();
 
   const categoryRef = useRef(null);
   const profileRef = useRef(null);
@@ -48,41 +50,93 @@ const Navbar = () => {
     };
   }, []);
 
-  const handleSearchChange = (e) => {
-    setSearchQuery(e.target.value);
+  useEffect(() => {
+    if (searchInput.trim()) {
+      const results = [
+        { id: 1, title: "CGPA to Percentage Calculator", link: "/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage" },
+        { id: 2, title: "Percentage to CGPA Calculator", link: "/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA" },
+        { id: 3, title: "Scientific Calculator", link: "/educational-calculator/scientific-calculator" },
+        { id: 4, title: "Educational Calculator", link: "/educational-calculator/" },
+        { id: 5, title: "Lord calulator,Home", link: "/" },
+        { id: 6, title: "Privacy policy", link: "/privacy-policy" },
+        { id: 7, title: "Terms of use", link: "/terms-of-use" },
+        { id: 8, title: "About us", link: "/about-us" },
+        { id: 9, title: "GPA to CGPA Calculator", link: "/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA" },
+        { id: 10, title: "CGPA to GPA Calculator", link: "/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA" }
+      ].filter((item) =>
+        item.title.toLowerCase().includes(searchInput.toLowerCase())
+      );
+      setSearchResults(results);
+    } else {
+      setSearchResults([]);
+    }
+  }, [searchInput]);
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchInput.trim()) {
+      router.push(`/search?query=${encodeURIComponent(searchInput)}`);
+    }
+  };
+
+  const handleSearchInputChange = (e) => {
+    setSearchInput(e.target.value);
   };
 
   return (
     <nav className="dark:bg-gray-800 dark:border-gray-700 shadow-lg">
       <div className="flex w-full h-[60px] z-[9999] fixed top-0 items-center px-5 justify-between bg-[#F6F5F2] dark:bg-gray-900">
+        {/* Logo Section */}
         <Link href="/" className="flex items-center">
           <Image
             src={calculatorImage}
             alt="Calculator Logo"
-            width={120}
-            height={120}
-            className="mr-inset-4"
+            width={100}
+            height={80}
+            className="mr-2"
           />
-          <span className="self-center text-2xl font-bold whitespace-nowrap bg-clip-text bg-gradient-to-r from-blue-700 to-purple-600 text-transparent drop-shadow-lg">
+          <span className=" translate-x-[-34px] self-center text-2xl font-bold whitespace-nowrap bg-clip-text bg-gradient-to-r from-blue-700 to-purple-600 text-transparent drop-shadow-lg">
             Lord Calculator
           </span>
         </Link>
 
+        {/* Navigation Links */}
         <div className="flex items-center ml-auto space-x-2">
-          <div className="relative flex items-center">
+          {/* Search Bar */}
+          <form onSubmit={handleSearch} className="flex dark:text-white dark:bg-gray-800 items-center space-x-2 relative">
             <input
               type="text"
-              value={searchQuery}
-              onChange={handleSearchChange}
+              value={searchInput}
+              onChange={handleSearchInputChange}
               placeholder="Search..."
-              className="px-2 py-2 rounded-md border border-gray-300 dark:border-gray-600 text-black dark:text-white bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#009688] transition duration-300"
+              className="border px-3 py-1 rounded-l-md w-full dark:bg-gray-700 dark:text-white"
             />
-          </div>
+            <button
+              type="submit"
+              className="bg-blue-500 text-white px-3 py-1 rounded-r-md hover:bg-blue-600"
+            >
+              Search
+            </button>
+
+            {/* Show search results dropdown */}
+            {searchResults.length > 0 && searchInput && (
+              <ul className="absolute top-7 right-[1.5px] bg-white dark:text-white dark:bg-gray-800 rounded-2xl  shadow-lg w-full mt-2 z-10">
+                {searchResults.map((result) => (
+                  <li key={result.id} className="px-4 py-2 rounded-2xl hover:bg-gray-200 dark:hover:[#000]">
+                    <Link href={result.link} className="block">{result.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </form>
+
+
 
           <Link href="/" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
             Home
           </Link>
 
+          {/* Categories Dropdown */}
           <div className="relative" ref={categoryRef}>
             <button
               onClick={() => setIsCategoryOpen(!isCategoryOpen)}
@@ -103,12 +157,13 @@ const Navbar = () => {
               <Link href="/scientific-calculator" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
                 Scientific Calculator
               </Link>
-              <Link href="/Women's-calculator" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
+              <Link href="/womens-calculator" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
                 Women's Calculator
               </Link>
             </div>
           </div>
 
+          {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
             className="p-2 rounded-md transition duration-300 text-black dark:text-white"
@@ -116,6 +171,7 @@ const Navbar = () => {
             {theme === "light" ? <FaSun size={20} /> : <FaMoon size={20} />}
           </button>
 
+          {/* Language Dropdown */}
           <div className="relative">
             <button
               onClick={() => setIsLanguageOpen(!isLanguageOpen)}
@@ -135,18 +191,8 @@ const Navbar = () => {
                   <h3 className="text-lg font-bold mb-4">Select Language</h3>
                   <div className="grid grid-cols-2 gap-3">
                     {[
-                      "English",
-                      "Español",
-                      "Français",
-                      "Italiano",
-                      "Deutsch",
-                      "Português",
-                      "বাংলা",
-                      "한국어",
-                      "हिन्दी",
-                      "Русский",
-                      "தமிழ்",
-                      "മലയാളം",
+                      "English", "Español", "Français", "Italiano", "Deutsch", "Português",
+                      "বাংলা", "한국어", "हिन्दी", "Русский", "தமிழ்", "മലയാളം",
                     ].map((language) => (
                       <button
                         key={language}
@@ -160,26 +206,6 @@ const Navbar = () => {
                 </div>
               </div>
             )}
-          </div>
-
-          <div className="relative" ref={profileRef}>
-            <button
-              onClick={() => setIsProfileOpen(!isProfileOpen)}
-              className="p-2 rounded-md text-black dark:text-white transition duration-300"
-            >
-              <FaUserCircle size={22} />
-            </button>
-            <div
-              className={`absolute right-0 mt-2 w-[180px] bg-white dark:bg-gray-800 rounded-md shadow-lg py-2 text-center ${isProfileOpen ? "block" : "hidden"
-                }`}
-            >
-              <Link href="/" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
-                Profile
-              </Link>
-              <Link href="/settings" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
-                Settings
-              </Link>
-            </div>
           </div>
         </div>
       </div>

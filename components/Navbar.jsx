@@ -6,18 +6,21 @@ import { IoClose } from "react-icons/io5";
 import Image from "next/image";
 import calculatorImage from "../public/png calci.png";
 import { useRouter } from "next/router";
+import { useTranslation } from 'react-i18next';
+
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("English");
+  const [selectedLanguage, setSelectedLanguage] = useState("english");
   const [searchInput, setSearchInput] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const router = useRouter();
-
   const categoryRef = useRef(null);
   const profileRef = useRef(null);
+  const { t } = useTranslation();
+
 
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
@@ -86,7 +89,7 @@ const Navbar = () => {
   return (
     <nav className="dark:bg-gray-800 dark:border-gray-700 shadow-lg">
       <div className="flex w-full h-[60px] z-[9999] fixed top-0 items-center px-5 justify-between bg-[#F6F5F2] dark:bg-gray-900">
-        {/* Logo Section */}
+    
         <Link href="/" className="flex items-center">
           <Image
             src={calculatorImage}
@@ -100,9 +103,8 @@ const Navbar = () => {
           </span>
         </Link>
 
-        {/* Navigation Links */}
         <div className="flex items-center ml-auto space-x-2">
-          {/* Search Bar */}
+        
           <form onSubmit={handleSearch} className="flex dark:text-white dark:bg-gray-800 items-center space-x-2 relative">
             <input
               type="text"
@@ -118,7 +120,7 @@ const Navbar = () => {
               Search
             </button>
 
-            {/* Show search results dropdown */}
+          
             {searchResults.length > 0 && searchInput && (
               <ul className="absolute top-7 right-[1.5px] bg-white dark:text-white dark:bg-gray-800 rounded-2xl  shadow-lg w-full mt-2 z-10">
                 {searchResults.map((result) => (
@@ -136,7 +138,7 @@ const Navbar = () => {
             Home
           </Link>
 
-          {/* Categories Dropdown */}
+         
           <div className="relative" ref={categoryRef}>
             <button
               onClick={() => setIsCategoryOpen(!isCategoryOpen)}
@@ -163,7 +165,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Theme Toggle */}
+         
           <button
             onClick={toggleTheme}
             className="p-2 rounded-md transition duration-300 text-black dark:text-white"
@@ -171,42 +173,39 @@ const Navbar = () => {
             {theme === "light" ? <FaSun size={20} /> : <FaMoon size={20} />}
           </button>
 
-          {/* Language Dropdown */}
+         
           <div className="relative">
-            <button
-              onClick={() => setIsLanguageOpen(!isLanguageOpen)}
-              className="flex items-center px-4 py-2 text-black dark:text-white rounded-md transition duration-300"
-            >
-              <FaGlobe size={20} />
-            </button>
-            {isLanguageOpen && (
-              <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[9999]">
-                <div className="relative bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 w-[420px] h-[340px] text-center">
-                  <button
-                    onClick={() => setIsLanguageOpen(false)}
-                    className="absolute top-2 right-2 text-gray-600 dark:text-gray-300 hover:text-red-500"
-                  >
-                    <IoClose size={24} />
-                  </button>
-                  <h3 className="text-lg font-bold mb-4">Select Language</h3>
-                  <div className="grid grid-cols-2 gap-3">
-                    {[
-                      "English", "Español", "Français", "Italiano", "Deutsch", "Português",
-                      "বাংলা", "한국어", "हिन्दी", "Русский", "தமிழ்", "മലയാളം",
-                    ].map((language) => (
-                      <button
-                        key={language}
-                        onClick={() => handleLanguageChange(language)}
-                        className="text-black dark:text-white hover:text-[#009688] transition text-lg"
-                      >
-                        {language}
-                      </button>
-                    ))}
-                  </div>
+          <button
+            onClick={() => setIsLanguageOpen(!isLanguageOpen)}
+            className="flex items-center px-4 py-2 text-black dark:text-white rounded-md transition duration-300"
+          >
+            <FaGlobe size={20} />
+          </button>
+          {isLanguageOpen && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[9999]">
+              <div className="relative bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 w-[420px] h-[340px] text-center">
+                <button
+                  onClick={() => setIsLanguageOpen(false)}
+                  className="absolute top-2 right-2 text-gray-600 dark:text-gray-300 hover:text-red-500"
+                >
+                  <IoClose size={24} />
+                </button>
+                <h3 className="text-lg font-bold mb-4">{t("navbar.selectLanguage")}</h3> 
+                <div className="grid grid-cols-2 gap-3">
+                  {['English', 'Español', 'Français', 'Italiano', 'Deutsch', 'Português', 'বাংলা', '한국어', 'हिन्दी', 'Русский', 'தமிழ்', 'മലയാളം'].map((language) => (
+                    <button
+                      key={language}
+                      onClick={() => handleLanguageChange(language)}
+                      className="text-black dark:text-white hover:text-[#009688] transition text-lg"
+                    >
+                      {language}
+                    </button>
+                  ))}
                 </div>
               </div>
-            )}
-          </div>
+            </div>
+          )}
+        </div>
         </div>
       </div>
     </nav>

@@ -1,0 +1,202 @@
+{
+    "title": "Calculadora de GPA a CGPA",
+    "enter_gpa": "Ingresar GPA",
+    "choose_gpa_scale": "Elegir escala de GPA",
+    "calculate": "Calcular",
+    "reset": "Restablecer",
+    "calculated_cgpa": "Tu CGPA calculado",
+    "calculation_history": "Historial de cálculos",
+    "download": "Descargar",
+    "whatsapp": "WhatsApp",
+    "copy_link": "Copiar enlace",
+
+    "gpa_to_cgpa_calculator": "Calculadora de GPA a CGPA",
+    "welcome_message": "¡Bienvenido a otra calculadora educativa! En las calculadoras correspondientes, calculamos",
+    "cgpa_to_percentage_link": "CGPA a Porcentaje",
+    "additional_message": " (y viceversa). Además, exploramos ciertos conceptos relacionados con estas escalas de calificación y escenarios donde se aplican conversiones.",
+    "letter_grading_link": "Calificación con Letras",
+    "conversion_scenario_message": "Cuando migras de una institución a otra, tener una calculadora confiable de conversión de calificaciones es crucial.",
+    "guide_message": "En esta guía, revisaremos la fórmula utilizada para la conversión de GPA a CGPA y las precauciones a considerar.",
+    "table_of_contents": "Tabla de Contenidos",
+    "section1_title": "Calculadora de GPA a CGPA",
+    "section2_title": "Fórmula de Cálculo de GPA a CGPA",
+    "section3_title": "¿Cómo usar la calculadora GPA a CGPA?",
+    "section4_title": "¿Cómo se diferencian CGPA y GPA?",
+    "section5_title": "Normas Internacionales y Certificaciones",
+    "section6_title": "Escenarios comunes de conversión de GPA a CGPA",
+    "section7_title": "Resumen",
+    "section8_title": "Preguntas Frecuentes (FAQs)",
+    "cgpa_formula": "CGPA Equivalente",
+    "gpa_obtained": "GPA obtenido",
+    "max_gpa": "GPA Máximo",
+    "max_cgpa": "CGPA Máximo",
+
+
+    
+        "gpa_title": "¿Cómo calcular el GPA?",
+        "gpa_formula": "GPA =",
+        "quality_points": "Puntos de calidad totales para todos los términos.",
+        "credit_hours": "Horas de crédito totales para todos los términos.",
+        "quality_points_for_term": "Donde, los puntos de calidad para un término = Valor del punto de la calificación * Número de horas de crédito.",
+        "gpa_to_cgpa_title": "¿Cómo usar la calculadora de GPA a CGPA de Lord Calculator?",
+        "steps": {
+          "step1": "Paso 1: Abre la calculadora de GPA a CGPA en Lord Calculator.",
+          "step2": "Paso 2: En el primer campo, titulado 'Introduce el GPA', ingresa tu GPA obtenido con precisión.",
+          "step3": "Paso 3: Ahora elige tu escala de GPA.",
+          "step4": "Paso 4: Haz clic en el botón 'Calcular'. ¡Y eso es todo!"
+        },
+        "cgpa_vs_gpa_title": "¿Cómo se diferencian el CGPA y el GPA?",
+        "cgpa_usage": "El CGPA se usa principalmente para determinar el rendimiento académico general de un estudiante.",
+        "gpa_usage": "El GPA se usa principalmente para evaluar el rendimiento de un estudiante en un semestre específico.",
+        "denomination": "Denominación",
+        "cgpa_denomination": "El CGPA (Promedio de Puntos de Grado Acumulados) representa el rendimiento acumulado de un estudiante durante su sesión académica.",
+        "gpa_denomination": "El GPA (Promedio de Puntos de Grado) representa el rendimiento académico de un semestre específico.",
+        "usage": "Uso",
+        "cgpa_usage_full": "El CGPA se considera el rendimiento académico general de un estudiante, mientras que el GPA se usa para un semestre específico.",
+        "gpa_usage_full": "El GPA se utiliza principalmente para evaluar cómo está rindiendo un estudiante en un semestre o término específico.",
+        "comparison_table": {
+          "scope": "Ámbito",
+          "gpa_scope": "Un solo semestre / término",
+          "cgpa_scope": "Toda la sesión académica",
+          "calculation": "Cálculo",
+          "gpa_calculation": "Puntos de grado para un semestre.",
+          "cgpa_calculation": "Promedio acumulado de todos los semestres.",
+          "purpose": "Propósito",
+          "gpa_purpose": "Ayuda a hacer un seguimiento del rendimiento de un estudiante.",
+          "cgpa_purpose": "Determina el rendimiento general de un estudiante."
+        },
+      
+      
+        
+            "international_standards_title": "Normas Internacionales y Certificaciones",
+            "international_standards_description": "Como se discutió anteriormente, las escalas de calificación como el GPA son predominantemente parte de los sistemas educativos occidentales. Sin embargo, los estudiantes que planean estudiar en el extranjero deben estar al tanto de varias normas internacionales y certificaciones que son ampliamente reconocidas en diferentes marcos educativos. Comprender estas normas puede ayudar a los estudiantes a navegar por diferentes sistemas de calificación y asegurar transiciones suaves al postularse a escuelas o universidades en el extranjero.",
+            "sections": {
+              "ib_title": "1. Bachillerato Internacional (IB)",
+              "ib_description": "El Bachillerato Internacional (IB) es un marco educativo reconocido internacionalmente diseñado para estudiantes de 3 a 19 años. Su objetivo es fomentar el pensamiento crítico, la comprensión intercultural y la compatibilidad global. El marco del IB se divide en cuatro programas principales:",
+              "ib_programs": {
+                "pyp": "Programa de Años Primarios (PYP): Para estudiantes de 3 a 12 años, enfocado en desarrollar habilidades académicas y personales.",
+                "myp": "Programa de Años Intermedios (MYP): Para estudiantes de 11 a 16 años, preparándolos para estudios posteriores.",
+                "dp": "Programa de Diploma (DP): Para estudiantes de 16 a 19 años, un programa riguroso con una escala de calificación de 1 a 7.",
+                "cp": "Programa Relacionado con la Carrera (CP): Combina estudios académicos con aprendizaje relacionado con la carrera para estudiantes de 16 a 19 años."
+              },
+              "ccss_title": "2. Normas Estatales Básicas Comunes (CCSS)",
+              "ccss_description": "Las Normas Estatales Básicas Comunes (CCSS) fueron desarrolladas en los Estados Unidos para estandarizar la educación K-12 en Artes del Lenguaje en Inglés y Matemáticas. Este marco se implementa principalmente en las escuelas de EE. UU. y se enfoca en proporcionar puntos de referencia claros y consistentes para el logro académico. El objetivo es asegurar que los estudiantes estén preparados para la universidad, las carreras y la competitividad global, al enfatizar habilidades de pensamiento crítico y resolución de problemas.",
+              "bologna_title": "3. Proceso de Bolonia y Sistema Europeo de Transferencia y Acumulación de Créditos (ECTS)",
+              "bologna_description": "El Proceso de Bolonia es un acuerdo entre países europeos para estandarizar la educación superior. Su objetivo es hacer que las calificaciones académicas y los períodos de estudio sean fácilmente comparables y compatibles en toda Europa. Este proceso facilita el movimiento de estudiantes entre universidades de diferentes países, asegurando que las calificaciones de los estudiantes sean reconocidas internacionalmente.",
+              "ects_description": "El Sistema Europeo de Transferencia y Acumulación de Créditos (ECTS) asigna créditos a los cursos en función de la cantidad de trabajo requerido (generalmente 25-30 horas de estudio por crédito). El ECTS utiliza un sistema de calificación con letras que va de la A a la F, siendo la F la que representa el fracaso.",
+              "ap_title": "4. Programa de Colocación Avanzada (AP)",
+              "ap_description": "El Programa de Colocación Avanzada (AP) es una iniciativa de EE. UU. ofrecida por el College Board, que permite a los estudiantes de secundaria tomar cursos y exámenes a nivel universitario. Estos cursos son equivalentes a los de primer año de universidad y son reconocidos internacionalmente. La escala de calificación de los exámenes AP va de 1 a 5, y se considera aprobado un puntaje de 3. AP es ampliamente aceptado por universidades de todo el mundo, lo que da a los estudiantes la oportunidad de obtener créditos universitarios antes de completar la secundaria.",
+              "igcse_title": "5. Certificado Internacional General de Educación Secundaria (IGCSE)",
+              "igcse_description": "El IGCSE es una calificación reconocida globalmente ofrecida por Cambridge Assessment International Education. Utiliza una escala de calificación que va de la A a la G, con U (no calificado) que representa el fracaso. El IGCSE es ampliamente utilizado por escuelas internacionales y es conocido por su flexibilidad, permitiendo a los estudiantes elegir asignaturas que coincidan con sus intereses académicos y metas profesionales.",
+              "teqsa_title": "6. Agencia de Calidad y Normas de la Educación Terciaria (TEQSA)",
+              "teqsa_description": "El marco TEQSA se sigue principalmente en Australia. Regula las instituciones de educación superior y asegura que cumplan con los estándares nacionales. Se alinea con el Marco de Cualificaciones Australiano (AQF), que describe las calificaciones y cursos ofrecidos por las instituciones en Australia. Aunque TEQSA se sigue principalmente en Australia, su reconocimiento es global, asegurando que los títulos australianos sean respetados internacionalmente y mejorando la movilidad de los estudiantes.",
+              "pisa_title": "7. Programa para la Evaluación Internacional de los Estudiantes (PISA)",
+              "pisa_description": "El Programa para la Evaluación Internacional de los Estudiantes (PISA) es una encuesta internacional realizada por la OCDE. A diferencia de otros marcos, PISA no proporciona una escala de calificación, sino que evalúa la efectividad de los sistemas educativos a nivel mundial al medir el rendimiento académico de los estudiantes de 15 años. Los datos recopilados ayudan a los responsables políticos a identificar fortalezas y debilidades en sus sistemas educativos y tomar decisiones informadas para mejorar los estándares y alinear los marcos educativos globalmente."
+            },
+            "common_conversion_title": "Escenarios Comunes de Conversión de GPA a CGPA",
+            "us_gpa_to_cgpa_title": "1. Conversión de GPA de EE. UU. a CGPA (Escala 4.0)",
+            "us_gpa_to_cgpa_formula": "CGPA = GPA × 2.5",
+            "us_gpa_to_cgpa_examples": {
+              "4.0": "4.0 GPA en CGPA es 10.0",
+              "3.5": "3.5 GPA en CGPA es 8.75",
+              "3.0": "3.0 GPA en CGPA es 7.5",
+              "2.0": "2.0 GPA en CGPA es 5.0"
+            },
+            "indian_gpa_to_cgpa_title": "2. Conversión de GPA de EE. UU. a CGPA (India)",
+            "indian_gpa_to_cgpa_formula": "CGPA = GPA × 2 + 1",
+            "indian_gpa_to_cgpa_examples": {
+              "4.0": "4.0 GPA en CGPA es 9.0",
+              "3.5": "3.5 GPA en CGPA es 8.0",
+              "3.0": "3.0 GPA en CGPA es 7.0",
+              "2.0": "2.0 GPA en CGPA es 5.0"
+            },
+          
+            
+                "conversion": {
+                  "indian_percentage_to_gpa": "Conversión de porcentaje indio a GPA de EE. UU. (Escala 4.0)",
+                  "formula_description": "La fórmula utilizada es:",
+                  "gpa": "GPA =",
+                  "formula_part_1": "Porcentaje - 50",
+                  "formula_part_2": "10",
+                  "formula_part_3": "2",
+                  "conversions_label": "Por lo tanto, las conversiones serían las siguientes:",
+                  "conversion_90": "90% a GPA es 4.0",
+                  "conversion_75": "75% a GPA es 3.5",
+                  "conversion_60": "60% a GPA es 3.0",
+                  "conversion_50": "50% a GPA es 2.0",
+                  "ects_grading_title": "Grading ECTS a GPA/CGPA",
+                  "ects_description": "Dado que ECTS sigue un sistema de calificación por letras, su conversión equivalente es la siguiente:",
+                  "grade_a": "A (Top 10%) → 4.0 GPA / 9.0-10.0 CGPA",
+                  "grade_b": "B (Siguiente 25%) → 3.5 GPA / 7.5-8.9 CGPA",
+                  "grade_c": "C (Siguiente 30%) → 3.0 GPA / 6.0-7.4 CGPA",
+                  "grade_d": "D (Siguiente 25%) → 2.5 GPA / 5.0-5.9 CGPA",
+                  "grade_e": "E (Calificación mínima aprobatoria) → 2.0 GPA / 4.0-4.9 CGPA",
+                  "note_title": "Nota:",
+                  "note_description": "Estos son estudios de caso generales de conversión y pueden no aplicarse de manera universal. Siempre consulte las pautas específicas de la institución antes de utilizar estas conversiones.",
+                  "summary_title": "Resumen",
+                  "summary_content_1": "En esta sección, discutimos las conversiones de GPA y CGPA, cómo se diferencian entre sí, y algunos de los estándares y marcos internacionales seguidos en todo el mundo. Si bien hemos tratado de cubrir los marcos más importantes, no es posible incluir la fórmula y conversión de cada institución.",
+                  "summary_content_2": "Por lo tanto, siempre le recomendamos que consulte el documento oficial de una institución específica antes de realizar la conversión de sus calificaciones."
+                },
+              
+                
+                
+                
+                    "faq_title": "Preguntas Frecuentes",
+                    "faq_q1_title": "¿Cómo se calcula el CGPA?",
+                    "faq_q1_answer": "El CGPA se calcula utilizando la siguiente fórmula:",
+                    "faq_q1_formula_gpa": "GPA",
+                    "faq_q1_formula_cgpa_obtained": "CGPA obtenido",
+                    "faq_q1_formula_max_cgpa": "CGPA máximo",
+                    "faq_q1_formula_max_gpa": "GPA máximo",
+                    
+                    "faq_q2_title": "¿Cómo se convierte CGPA a GPA?",
+                    "faq_q2_answer": "Para convertir CGPA a GPA, utiliza la fórmula siguiente:",
+                    "faq_q2_cgpa_to_gpa": "CGPA a GPA",
+                    "faq_q2_gpa_formula": "GPA = ",
+                    "faq_q2_formula_cgpa_obtained": "CGPA obtenido",
+                    "faq_q2_formula_max_cgpa": "CGPA máximo",
+                    "faq_q2_formula_percentage_obtained": "Porcentaje obtenido",
+                  
+                    "faq_q3_title": "¿Cómo se convierte porcentaje a GPA?",
+                    "faq_q3_answer": "Para convertir porcentaje a GPA, utiliza la fórmula siguiente:",
+                    "faq_q3_percentage_to_gpa": "Porcentaje a GPA",
+                    "faq_q3_gpa_formula": "GPA = ",
+                    
+                    "faq_q4_title": "¿Cómo se convierte porcentaje a GPA en escala 4.3?",
+                    "faq_q4_answer": "Para convertir porcentaje a GPA en una escala de 4.3, usa la fórmula siguiente:",
+                    "faq_q4_percentage_to_gpa_4_3": "Porcentaje a GPA 4.3",
+                    "faq_q4_gpa_formula": "GPA = ",
+                    
+                    "faq_q5_title": "¿Cómo se convierte porcentaje a GPA en escala 5.0?",
+                    "faq_q5_answer": "Para convertir porcentaje a GPA en una escala de 5.0, usa la fórmula siguiente:",
+                    "faq_q5_percentage_to_gpa_5_0": "Porcentaje a GPA 5.0",
+                    "faq_q5_gpa_formula": "GPA = ",
+                    
+                    "faq_q6_title": "¿Cómo se calcula el porcentaje a partir de CGPA?",
+                    "faq_q6_answer": "Para convertir CGPA a porcentaje, utiliza esta fórmula:",
+                    "faq_q6_cgpa_to_percentage": "CGPA a Porcentaje",
+                    
+                    "faq_q7_title": "¿Cómo se convierte GPA a porcentaje?",
+                    "faq_q7_answer": "Para convertir GPA a porcentaje, utiliza la fórmula siguiente:",
+                    "faq_q7_gpa_to_percentage": "GPA a Porcentaje",
+                    
+                    "faq_q8_title": "¿Cómo se calcula el GPA?",
+                    "faq_q8_answer": "El GPA se calcula tomando el promedio ponderado de las calificaciones de tus asignaturas.",
+                    
+                    "faq_q9_title": "¿Qué es la escala de GPA?",
+                    "faq_q9_answer": "La escala de GPA es una forma de medir tu rendimiento académico en una escala numérica.",
+                    
+                    "faq_q10_title": "¿Qué es la escala de CGPA?",
+                    "faq_q10_answer": "La escala de CGPA mide el rendimiento académico en un formato acumulado durante varios semestres.",
+                    
+                    "faq_q11_title": "¿Cómo se determina el valor de GPA máximo?",
+                    "faq_q11_answer": "El valor de GPA máximo varía según el sistema de calificación de la institución educativa.",
+                    
+                    "faq_q12_title": "¿Cuál es la relación entre GPA y CGPA?",
+                    "faq_q12_answer": "El GPA es un cálculo de las calificaciones de un semestre individual, mientras que el CGPA es un cálculo acumulado de los GPA de todos los semestres."
+                  
+                  
+                  
+                  
+                            
+}

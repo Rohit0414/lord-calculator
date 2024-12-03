@@ -8,6 +8,7 @@ import Router, { useRouter } from 'next/router';
 import { PDFDocument, rgb } from 'pdf-lib';
 import GpaContent from '@/components/GpaContent';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 
 
 const Gpatocgpa = () => {
@@ -24,6 +25,7 @@ const Gpatocgpa = () => {
     const router = useRouter();
     const [copied, setCopied] = useState(false);
     const [showScroll, setShowScroll] = useState(false);
+    const { t } = useTranslation();
 
     const checkScrollTop = () => {
         if (!showScroll && window.pageYOffset > 300) {
@@ -333,21 +335,21 @@ const Gpatocgpa = () => {
                     <div className="flex  w-full">
 
                         <div className=" p-5 mx-auto text-black  w-full">
-                            <h2 className="text-4xl font-bold mb-4 text-center text-[#308d46] bg-clip-text bg-transparent dark:bg-teal-950 drop-shadow-lg">GPA to CGPA Calculator</h2>
+                            <h2 className="text-4xl font-bold mb-4 text-center text-[#308d46] bg-clip-text bg-transparent dark:bg-teal-950 drop-shadow-lg">{t('title')}</h2>
 
                             <div className="flex mb-4 justify-center items-center flex-col">
-                                <h3 className="text-2xl font-bold mb-4 text-[#105045] drop-shadow-lg mt-2 dark:text-[#b3e0e6]">Enter GPA</h3>
+                                <h3 className="text-2xl font-bold mb-4 text-[#105045] drop-shadow-lg mt-2 dark:text-[#b3e0e6]">{t('enter_gpa')}</h3>
                                 <input
                                     type="number"
                                     value={gpa}
                                     onChange={(e) => setGpa(e.target.value)}
-                                    placeholder="Enter Your GPA"
+                                    placeholder={t('enter_gpa')}
                                     className="w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] dark:bg-[#3a4a52] dark:border-[#7d8d95] rounded text-center"
                                 />
                             </div>
 
                             <div className="flex mb-4 justify-center items-center flex-col">
-                                <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">Choose GPA Scale</label>
+                                <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">{t('choose_gpa_scale')}</label>
                                 <div className="flex justify-center w-1/2 mb-4 p-2">
                                     <button
                                         onClick={() => setGradingScale(4.0)}
@@ -372,18 +374,18 @@ const Gpatocgpa = () => {
                                     type="number"
                                     value={gradingScale || ''}
                                     onChange={(e) => setGradingScale(parseFloat(e.target.value) || 0)}
-                                    placeholder="Enter Custom GPA Scale"
+                                    placeholder={t('choose_gpa_scale')}
                                     className="w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] dark:bg-[#3a4a52] dark:border-[#7d8d95] rounded text-center"
                                 />
                             </div>
 
                             <div className="flex mb-4 justify-center items-center flex-col">
-                            <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">CGPA Point Scale</label>
+                            <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">{t('choose_gpa_scale')}</label>
                                 <input
                                     type="number"
                                     value={cgpaPointScale}
                                     onChange={(e) => setCgpaPointScale(parseFloat(e.target.value))}
-                                    placeholder="Enter CGPA Point Scale"
+                                    placeholder={t('choose_gpa_scale')}
                                     className="w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] dark:bg-[#3a4a52] dark:border-[#7d8d95] rounded text-center"
                                 />
                             </div>
@@ -391,15 +393,15 @@ const Gpatocgpa = () => {
                             {error && <div className="text-red-500 mb-2 text-center">{error}</div>}
 
                             <div className="flex justify-center space-x-32 mb-4">
-                                <button onClick={convertGPAtoCGPA} className="bg-[#105045] text-white w-32 py-2 rounded hover:bg-[#29582b]">Calculate</button>
-                                <button onClick={resetFields} className="bg-[#105045] text-white w-32 py-2 rounded hover:bg-[#29582b]">Reset</button>
+                                <button onClick={convertGPAtoCGPA} className="bg-[#105045] text-white w-32 py-2 rounded hover:bg-[#29582b]">{t('calculate')}</button>
+                                <button onClick={resetFields} className="bg-[#105045] text-white w-32 py-2 rounded hover:bg-[#29582b]">{t('reset')}</button>
                             </div>
 
                             <div ref={resultRef}>
                                 <Meter percentage={cgpa ? parseFloat(cgpa) : 0} />
                                 <div className="flex flex-col justify-center items-center mb-4">
                                 <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">
-                                        Your Calculated CGPA
+                                {t("calculated_cgpa")}
                                     </label>
                                     <input
                                         type="text"
@@ -414,8 +416,8 @@ const Gpatocgpa = () => {
 
 
                             <div className="mt-4 flex justify-center space-x-32 mb-4">
-                                <button onClick={downloadHistoryAsPDF} className="bg-[#105045] text-white w-32 py-2 rounded hover:bg-[#29582b]">Download</button>
-                                <button onClick={shareOnWhatsApp} className="bg-green-500 text-white w-32 py-2 rounded">WhatsApp</button>
+                                <button onClick={downloadHistoryAsPDF} className="bg-[#105045] text-white w-32 py-2 rounded hover:bg-[#29582b]">{t("download")}</button>
+                                <button onClick={shareOnWhatsApp} className="bg-green-500 text-white w-32 py-2 rounded">{t("whatsapp")}</button>
                                 <button
                                     onClick={handleCopyLink}
                                     className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded dark:bg-blue-600 dark:hover:bg-blue-700"
@@ -426,7 +428,7 @@ const Gpatocgpa = () => {
 
                             <div className="flex justify-center">
                                 <div className="history-container mb-4 text-center w-60">
-                                    <b className='dark:text-white'>Calculation History</b>
+                                    <b className='dark:text-white'>{t("calculation_history")}</b>
                                     <table className="min-w-full border border-gray-300 mt-2 mx-auto">
                                         <thead>
                                             <tr className="bg-gray-100">

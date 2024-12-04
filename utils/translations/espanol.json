@@ -140,61 +140,81 @@
               
                 
                 
+                  "faq": "Preguntas Frecuentes",
+                  "q1": {
+                    "question": "¿Cómo puedo convertir GPA a CGPA?",
+                    "answer": "Puedes convertir GPA a CGPA usando la fórmula: GPA = (CGPA obtenido / CGPA máximo) × GPA máximo"
+                  },
+                  "q2": {
+                    "question": "¿Qué es el calculador de CGPA a GPA de India?",
+                    "answer": "El calculador de CGPA a GPA de India incluye la conversión de GPA a partir de CGPA y porcentaje. Consulta la siguiente tabla:"
+                  },
+                  "conversionTable": {
+                    "headers": {
+                      "type": "Tipo de Conversión",
+                      "formula": "Fórmula"
+                    },
+                    "rows": [
+                      {
+                        "type": "CGPA a GPA de 4 puntos",
+                        "formula": "GPA = (CGPA obtenido / CGPA máximo) × 2.5"
+                      },
+                      {
+                        "type": "Porcentaje a GPA de 4 puntos",
+                        "formula": "GPA = (Porcentaje obtenido / 100) × 4"
+                      },
+                      {
+                        "type": "Porcentaje a GPA (4.3)",
+                        "formula": "GPA = (Porcentaje obtenido / 100) × 4.3"
+                      },
+                      {
+                        "type": "Porcentaje a GPA (5.0)",
+                        "formula": "GPA = (Porcentaje obtenido / 100) × 5"
+                      }
+                    ]
+                  },
+                  "q3": {
+                    "question": "¿Cómo calcular CGPA a partir de GPA?",
+                    "answer": "Para calcular el CGPA a partir de GPA, divide el GPA obtenido por el GPA máximo y luego multiplícalo por la escala objetivo de CGPA."
+                  },
+                  "q4": {
+                    "question": "¿Cuál es la fórmula del calculador de CGPA a GPA de 10 puntos a 4?",
+                    "answer": "Para convertir CGPA de 10 puntos a GPA de 4 puntos, divide el CGPA por 2.5."
+                  },
+                  "q5": {
+                    "question": "¿Cuál es la fórmula del calculador de GPA a CGPA de la Universidad Anna?",
+                    "answer": "El calculador de GPA a CGPA de la Universidad Anna incluye las calificaciones de créditos y se calcula como: GPA = (Nota en la asignatura 1 × Créditos obtenidos + Nota en la asignatura 2 × Créditos obtenidos) / Suma de todos los créditos obtenidos."
+                  },
+                  "q6": {
+                    "question": "¿Cómo calcular CGPA a partir de GPA en la Universidad Anna?",
+                    "answer": "CGPA = (GPA obtenido / GPA máximo) × Escala de CGPA objetivo"
+                  },
+                  "q7": {
+                    "question": "¿En qué se diferencia el calculador de GPA a CGPA de SRM?",
+                    "answer": "La Universidad SRM utiliza una fórmula específica que incluye un promedio ponderado de créditos para calcular el GPA."
+                  },
+                  "q8": {
+                    "question": "¿Es diferente el calculador de GPA a CGPA para ingeniería?",
+                    "answer": "Algunas universidades de ingeniería asignan más créditos a los cursos principales que a los cursos electivos o generales, por lo que las asignaturas principales podrían tener un valor ponderado mayor."
+                  },
+                  "q9": {
+                    "question": "¿Es confiable el calculador de CGPA a GPA en línea?",
+                    "answer": "Sí, nuestro calculador de CGPA a GPA es matemáticamente confiable. Sin embargo, las universidades pueden usar métodos de conversión específicos, por lo que es mejor consultar las pautas oficiales."
+                  },
+                  "q10": {
+                    "question": "Convierte GPA a CGPA sobre 4.",
+                    "answer": "Para convertir GPA a CGPA sobre 4, usa la fórmula: CGPA (sobre 4) = (GPA obtenido / GPA máximo en tu escala) × 4"
+                  },
+                  "q11": {
+                    "question": "¿Qué es 3 GPA en CGPA?",
+                    "answer": "En una escala de GPA de 4 puntos, tu CGPA es 3. Pero en una escala de GPA de 10 puntos, tu CGPA es 1.2."
+                  },
+                  "q12": {
+                    "question": "¿Qué es 3.5 GPA en CGPA?",
+                    "answer": "En una escala de GPA de 4 puntos, tu CGPA es 3.5. Pero en una escala de GPA de 10 puntos, tu CGPA es 1.4."
+                  }
                 
-                    "faq_title": "Preguntas Frecuentes",
-                    "faq_q1_title": "¿Cómo se calcula el CGPA?",
-                    "faq_q1_answer": "El CGPA se calcula utilizando la siguiente fórmula:",
-                    "faq_q1_formula_gpa": "GPA",
-                    "faq_q1_formula_cgpa_obtained": "CGPA obtenido",
-                    "faq_q1_formula_max_cgpa": "CGPA máximo",
-                    "faq_q1_formula_max_gpa": "GPA máximo",
-                    
-                    "faq_q2_title": "¿Cómo se convierte CGPA a GPA?",
-                    "faq_q2_answer": "Para convertir CGPA a GPA, utiliza la fórmula siguiente:",
-                    "faq_q2_cgpa_to_gpa": "CGPA a GPA",
-                    "faq_q2_gpa_formula": "GPA = ",
-                    "faq_q2_formula_cgpa_obtained": "CGPA obtenido",
-                    "faq_q2_formula_max_cgpa": "CGPA máximo",
-                    "faq_q2_formula_percentage_obtained": "Porcentaje obtenido",
-                  
-                    "faq_q3_title": "¿Cómo se convierte porcentaje a GPA?",
-                    "faq_q3_answer": "Para convertir porcentaje a GPA, utiliza la fórmula siguiente:",
-                    "faq_q3_percentage_to_gpa": "Porcentaje a GPA",
-                    "faq_q3_gpa_formula": "GPA = ",
-                    
-                    "faq_q4_title": "¿Cómo se convierte porcentaje a GPA en escala 4.3?",
-                    "faq_q4_answer": "Para convertir porcentaje a GPA en una escala de 4.3, usa la fórmula siguiente:",
-                    "faq_q4_percentage_to_gpa_4_3": "Porcentaje a GPA 4.3",
-                    "faq_q4_gpa_formula": "GPA = ",
-                    
-                    "faq_q5_title": "¿Cómo se convierte porcentaje a GPA en escala 5.0?",
-                    "faq_q5_answer": "Para convertir porcentaje a GPA en una escala de 5.0, usa la fórmula siguiente:",
-                    "faq_q5_percentage_to_gpa_5_0": "Porcentaje a GPA 5.0",
-                    "faq_q5_gpa_formula": "GPA = ",
-                    
-                    "faq_q6_title": "¿Cómo se calcula el porcentaje a partir de CGPA?",
-                    "faq_q6_answer": "Para convertir CGPA a porcentaje, utiliza esta fórmula:",
-                    "faq_q6_cgpa_to_percentage": "CGPA a Porcentaje",
-                    
-                    "faq_q7_title": "¿Cómo se convierte GPA a porcentaje?",
-                    "faq_q7_answer": "Para convertir GPA a porcentaje, utiliza la fórmula siguiente:",
-                    "faq_q7_gpa_to_percentage": "GPA a Porcentaje",
-                    
-                    "faq_q8_title": "¿Cómo se calcula el GPA?",
-                    "faq_q8_answer": "El GPA se calcula tomando el promedio ponderado de las calificaciones de tus asignaturas.",
-                    
-                    "faq_q9_title": "¿Qué es la escala de GPA?",
-                    "faq_q9_answer": "La escala de GPA es una forma de medir tu rendimiento académico en una escala numérica.",
-                    
-                    "faq_q10_title": "¿Qué es la escala de CGPA?",
-                    "faq_q10_answer": "La escala de CGPA mide el rendimiento académico en un formato acumulado durante varios semestres.",
-                    
-                    "faq_q11_title": "¿Cómo se determina el valor de GPA máximo?",
-                    "faq_q11_answer": "El valor de GPA máximo varía según el sistema de calificación de la institución educativa.",
-                    
-                    "faq_q12_title": "¿Cuál es la relación entre GPA y CGPA?",
-                    "faq_q12_answer": "El GPA es un cálculo de las calificaciones de un semestre individual, mientras que el CGPA es un cálculo acumulado de los GPA de todos los semestres."
-                  
+                
                   
                   
                   

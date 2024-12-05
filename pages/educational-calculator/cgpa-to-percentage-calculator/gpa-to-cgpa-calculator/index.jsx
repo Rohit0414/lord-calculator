@@ -335,7 +335,7 @@ const Gpatocgpa = () => {
                     <div className="flex  w-full">
 
                         <div className=" p-5 mx-auto text-black  w-full">
-                            <h2 className="text-4xl font-bold mb-4 text-center text-[#308d46] bg-clip-text bg-transparent dark:bg-teal-950 drop-shadow-lg">{t('title')}</h2>
+                            <h2 className="text-4xl font-bold mb-4 text-center text-[#308d46] bg-clip-text bg-transparent dark:bg-teal-950 drop-shadow-lg">{t("title")}</h2>
 
                             <div className="flex mb-4 justify-center items-center flex-col">
                                 <h3 className="text-2xl font-bold mb-4 text-[#105045] drop-shadow-lg mt-2 dark:text-[#b3e0e6]">{t('enter_gpa')}</h3>

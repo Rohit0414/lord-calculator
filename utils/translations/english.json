@@ -1,214 +1,207 @@
 {
-    "title": "GPA to CGPA Calculator",
-    "enter_gpa": "Enter GPA",
-    "choose_gpa_scale": "Choose GPA Scale",
-    "calculate": "Calculate",
-    "reset": "Reset",
-    "calculated_cgpa": "Your Calculated CGPA",
-    "calculation_history": "Calculation History",
-    "download": "Download",
-    "whatsapp": "WhatsApp",
-    "copy_link": "Copy Link",
-    "gpa_to_cgpa_calculator": "GPA to CGPA Calculator",
-    "welcome_message": "Welcome to another educational calculator! In the corresponding calculators, we calculated",
-    "cgpa_to_percentage_link": "CGPA to Percentage",
-    "additional_message": " (and vice-versa). Additionally, we explored certain concepts related to these grading scales and scenarios where conversions are applied.",
-    "letter_grading_link": "Letter Grading",
-    "conversion_scenario_message": "When you migrate from one institution to another, having a reliable Grade conversion calculator becomes crucial.",
-    "guide_message": "In this guide, we will walk through the formula used for GPA to CGPA conversion and precautions to consider.",
-    "table_of_contents": "Table of Contents",
-    "section1_title": "GPA to CGPA Calculator",
-    "section2_title": "GPA To CGPA Calculation Formula",
-    "section3_title": "How to Use Lord Calculator’s GPA to CGPA Calculator?",
-    "section4_title": "How CGPA & GPA Are Different?",
-    "section5_title": "International Standards and Certifications",
-    "section6_title": "Most Common GPA to CGPA Conversion Scenarios",
-    "section7_title": "Summary",
-    "section8_title": "FAQs (Frequently Asked Questions)",
-    "cgpa_formula": "Equivalent CGPA",
-    "gpa_obtained": "GPA obtained",
-    "max_gpa": "Max GPA",
-    "max_cgpa": "Max CGPA",
-    "gpa_title": "How to calculate GPA?",
-    "gpa_formula": "GPA =",
-    "quality_points": "Total quality points for all terms.",
-    "credit_hours": "Total credit hours for all terms.",
-    "quality_points_for_term": "Where, quality points for a term = Grade point value * Credit hours for the term.",
-    "gpa_to_cgpa_title": "How to use the GPA to CGPA Calculator on Lord Calculator?",
-    "steps": {
-        "step1": "Step 1: Open the GPA to CGPA calculator on Lord Calculator.",
-        "step2": "Step 2: In the first field, titled 'Enter your GPA', enter your GPA with accuracy.",
-        "step3": "Step 3: Now, select your GPA scale.",
-        "step4": "Step 4: Click on the 'Calculate' button. That's it!"
+  "title": "GPA to CGPA Calculator",
+  "enter_gpa": "Enter GPA",
+  "choose_gpa_scale": "Choose GPA Scale",
+  "calculate": "Calculate",
+  "reset": "Reset",
+  "calculated_cgpa": "Your Calculated CGPA",
+  "calculation_history": "Calculation History",
+  "download": "Download",
+  "whatsapp": "WhatsApp",
+  "copy_link": "Copy Link",
+  "gpa_to_cgpa_calculator": "GPA to CGPA Calculator",
+  "welcome_message": "Welcome to another educational calculator! In the corresponding calculators, we calculated",
+  "cgpa_to_percentage_link": "CGPA to Percentage",
+  "additional_message": " (and vice-versa). Additionally, we explored certain concepts related to these grading scales and scenarios where conversions are applied.",
+  "letter_grading_link": "Letter Grading",
+  "conversion_scenario_message": "When you migrate from one institution to another, having a reliable Grade conversion calculator becomes crucial.",
+  "guide_message": "In this guide, we will walk through the formula used for GPA to CGPA conversion and precautions to consider.",
+  "table_of_contents": "Table of Contents",
+  "section1_title": "GPA to CGPA Calculator",
+  "section2_title": "GPA To CGPA Calculation Formula",
+  "section3_title": "How to Use Lord Calculator’s GPA to CGPA Calculator?",
+  "section4_title": "How CGPA & GPA Are Different?",
+  "section5_title": "International Standards and Certifications",
+  "section6_title": "Most Common GPA to CGPA Conversion Scenarios",
+  "section7_title": "Summary",
+  "section8_title": "FAQs (Frequently Asked Questions)",
+  "cgpa_formula": "Equivalent CGPA",
+  "gpa_obtained": "GPA obtained",
+  "max_gpa": "Max GPA",
+  "max_cgpa": "Max CGPA",
+  "gpa_title": "How to calculate GPA?",
+  "gpa_formula": "GPA =",
+  "quality_points": "Total quality points for all terms.",
+  "credit_hours": "Total credit hours for all terms.",
+  "quality_points_for_term": "Where, quality points for a term = Grade point value * Credit hours for the term.",
+  "gpa_to_cgpa_title": "How to use the GPA to CGPA Calculator on Lord Calculator?",
+  "steps": {
+    "step1": "Step 1: Open the GPA to CGPA calculator on Lord Calculator.",
+    "step2": "Step 2: In the first field, titled 'Enter your GPA', enter your GPA with accuracy.",
+    "step3": "Step 3: Now, select your GPA scale.",
+    "step4": "Step 4: Click on the 'Calculate' button. That's it!"
+  },
+  "cgpa_vs_gpa_title": "What is the difference between CGPA and GPA?",
+  "cgpa_usage": "CGPA is used mainly to determine the overall academic performance of a student.",
+  "gpa_usage": "GPA is used mainly to assess the student's performance in a specific semester.",
+  "denomination": "Denomination",
+  "cgpa_denomination": "CGPA (Cumulative Grade Point Average) represents a student's overall performance during their academic session.",
+  "gpa_denomination": "GPA (Grade Point Average) represents a student's academic performance for a specific semester.",
+  "usage": "Usage",
+  "cgpa_usage_full": "CGPA is considered the overall academic performance of a student, while GPA is used for a specific semester.",
+  "gpa_usage_full": "GPA is mainly used to assess how a student is performing in a specific semester or term.",
+  "comparison_table": {
+    "scope": "Scope",
+    "gpa_scope": "One single semester/term",
+    "cgpa_scope": "Entire academic session",
+    "calculation": "Calculation",
+    "gpa_calculation": "Grade points for a semester.",
+    "cgpa_calculation": "Cumulative average of all semesters.",
+    "purpose": "Purpose",
+    "gpa_purpose": "Helps track the student's performance.",
+    "cgpa_purpose": "Determines the overall performance of a student."
+  },
+  "international_standards_title": "International Standards and Certifications",
+  "international_standards_description": "As we discussed earlier, grading scales such as GPA are predominantly a part of Western education systems. However, students planning to study abroad need to be aware of various international standards and certifications that are widely recognized across different educational frameworks. Understanding these can help students navigate different grading systems and ensure smooth transitions when applying to schools or universities abroad.",
+  "sections": {
+    "ib_title": "1. International Baccalaureate (IB)",
+    "ib_description": "The International Baccalaureate (IB) is an internationally recognized educational framework designed for students aged 3 to 19. Its goal is to foster critical thinking, intercultural understanding, and global compatibility. The IB framework is divided into four main programs:",
+    "ib_programs": {
+      "pyp": "Primary Years Programme (PYP): For students aged 3 to 12, focusing on developing academic and personal skills.",
+      "myp": "Middle Years Programme (MYP): For students aged 11 to 16, preparing them for further study.",
+      "dp": "Diploma Programme (DP): For students aged 16 to 19, a rigorous program with a 1-7 grading scale.",
+      "cp": "Career-related Programme (CP): Combines academic study with career-related learning for students aged 16 to 19."
     },
-    "cgpa_vs_gpa_title": "What is the difference between CGPA and GPA?",
-    "cgpa_usage": "CGPA is used mainly to determine the overall academic performance of a student.",
-    "gpa_usage": "GPA is used mainly to assess the student's performance in a specific semester.",
-    "denomination": "Denomination",
-    "cgpa_denomination": "CGPA (Cumulative Grade Point Average) represents a student's overall performance during their academic session.",
-    "gpa_denomination": "GPA (Grade Point Average) represents a student's academic performance for a specific semester.",
-    "usage": "Usage",
-    "cgpa_usage_full": "CGPA is considered the overall academic performance of a student, while GPA is used for a specific semester.",
-    "gpa_usage_full": "GPA is mainly used to assess how a student is performing in a specific semester or term.",
-    "comparison_table": {
-        "scope": "Scope",
-        "gpa_scope": "One single semester/term",
-        "cgpa_scope": "Entire academic session",
-        "calculation": "Calculation",
-        "gpa_calculation": "Grade points for a semester.",
-        "cgpa_calculation": "Cumulative average of all semesters.",
-        "purpose": "Purpose",
-        "gpa_purpose": "Helps track the student's performance.",
-        "cgpa_purpose": "Determines the overall performance of a student."
+    "ccss_title": "2. Common Core State Standards (CCSS)",
+    "ccss_description": "The Common Core State Standards (CCSS) were developed in the United States to standardize K-12 education in English Language Arts and Mathematics. This framework is primarily implemented in U.S. schools and focuses on providing clear and consistent benchmarks for academic achievement. The goal is to ensure students are prepared for college, careers, and global competitiveness by emphasizing critical thinking and problem-solving skills.",
+    "bologna_title": "3. Bologna Process and European Credit Transfer and Accumulation System (ECTS)",
+    "bologna_description": "The Bologna Process is an agreement among European countries to standardize higher education. Its aim is to make academic qualifications and periods of study easily comparable and compatible across Europe. This process facilitates the movement of students between universities in different countries, ensuring that students' qualifications are recognized internationally.",
+    "ects_description": "The European Credit Transfer and Accumulation System (ECTS) assigns credits to courses based on the amount of work required (usually 25-30 hours of study per credit). ECTS uses a letter grading system ranging from A to F, with F representing failure.",
+    "ap_title": "4. Advanced Placement (AP) Program",
+    "ap_description": "The Advanced Placement (AP) Program is a U.S.-based initiative offered by the College Board, enabling high school students to take college-level courses and exams. These courses are equivalent to first-year college courses and are recognized internationally. The grading scale for AP exams ranges from 1 to 5, with a score of 3 being considered passing. AP is widely accepted by universities around the world, giving students the opportunity to earn college credits before completing high school.",
+    "igcse_title": "5. International General Certificate of Secondary Education (IGCSE)",
+    "igcse_description": "The IGCSE is a globally recognized qualification offered by Cambridge Assessment International Education. It uses a grading scale ranging from A to G, with U (ungraded) representing failure. IGCSE is widely used by international schools and is known for its flexibility, allowing students to choose subjects that match their academic interests and career goals.",
+    "teqsa_title": "6. Tertiary Education Quality and Standards Agency (TEQSA)",
+    "teqsa_description": "The TEQSA framework is primarily followed in Australia. It regulates higher education institutions and ensures that they meet national standards. It aligns with the Australian Qualifications Framework (AQF), which describes the qualifications and courses offered by institutions in Australia. While TEQSA is mainly followed in Australia, its recognition is global, ensuring that Australian degrees are respected internationally and enhancing students' mobility.",
+    "pisa_title": "7. Programme for International Student Assessment (PISA)",
+    "pisa_description": "The Programme for International Student Assessment (PISA) is an international survey conducted by the OECD. Unlike the other frameworks, PISA does not provide a grading scale, but instead evaluates the effectiveness of education systems worldwide by assessing the academic performance of 15-year-old students. The data gathered helps policymakers identify strengths and weaknesses in their education systems and make informed decisions to improve standards and align educational frameworks globally."
+  },
+  "common_conversion_title": "Most Common GPA to CGPA Conversion Scenarios",
+  "us_gpa_to_cgpa_title": "1. U.S. GPA to CGPA Conversion (4.0 Scale)",
+  "us_gpa_to_cgpa_formula": "CGPA = GPA × 2.5",
+  "us_gpa_to_cgpa_examples": {
+    "4.0": "4.0 GPA in CGPA is 10.0",
+    "3.5": "3.5 GPA in CGPA is 8.75",
+    "3.0": "3.0 GPA in CGPA is 7.5",
+    "2.0": "2.0 GPA in CGPA is 5.0"
+  },
+  "indian_gpa_to_cgpa_title": "2. U.S. GPA to CGPA (Indian) Conversion",
+  "indian_gpa_to_cgpa_formula": "CGPA = GPA × 2 + 1",
+  "indian_gpa_to_cgpa_examples": {
+    "4.0": "4.0 GPA in CGPA is 9.0",
+    "3.5": "3.5 GPA in CGPA is 8.0",
+    "3.0": "3.0 GPA in CGPA is 7.0",
+    "2.0": "2.0 GPA in CGPA is 5.0"
+  },
+  "conversion": {
+    "indian_percentage_to_gpa": "Indian Percentage to U.S. GPA Conversion (4.0 Scale)",
+    "formula_description": "The formula used is:",
+    "gpa": "GPA =",
+    "formula_part_1": "Percentage - 50",
+    "formula_part_2": "10",
+    "formula_part_3": "2",
+    "conversions_label": "Therefore, the conversions would look like:",
+    "conversion_90": "90% to GPA is 4.0",
+    "conversion_75": "75% to GPA is 3.5",
+    "conversion_60": "60% to GPA is 3.0",
+    "conversion_50": "50% to GPA is 2.0",
+    "ects_grading_title": "ECTS Grading to GPA/CGPA",
+    "ects_description": "Since the ECTS follows a letter grading system, their equivalent conversion looks like this:",
+    "grade_a": "A (Top 10%) → 4.0 GPA / 9.0-10.0 CGPA",
+    "grade_b": "B (Next 25%) → 3.5 GPA / 7.5-8.9 CGPA",
+    "grade_c": "C (Next 30%) → 3.0 GPA / 6.0-7.4 CGPA",
+    "grade_d": "D (Next 25%) → 2.5 GPA / 5.0-5.9 CGPA",
+    "grade_e": "E (Minimum Passing Grade) → 2.0 GPA / 4.0-4.9 CGPA",
+    "note_title": "Please Note:",
+    "note_description": "These are general conversion case studies and may not apply universally. Always refer to specific institutional guidelines before using these conversions.",
+    "summary_title": "Summary",
+    "summary_content_1": "In this section, we discussed GPA and CGPA conversions, how they both differ from each other, and some of the international standards and frameworks followed around the globe. While we have tried to cover all the major frameworks, it is not possible to include the formula and conversion of each and every institution.",
+    "summary_content_2": "Therefore, we always advise you to check the official document of a specific institution before doing the conversion of your grades."
+  },
+  "faq": "FAQs (Frequently Asked Questions)",
+  "q1": {
+    "question": "How can I convert GPA to CGPA?",
+    "answer": "You can convert GPA to CGPA using the formula; GPA = (CGPA Obtained / Maximum CGPA) × Max GPA"
+  },
+  "q2": {
+    "question": "What is Indian CGPA to GPA calculator?",
+    "answer": "Indian CGPA to GPA calculator includes GPA conversion from CGPA and percentage. Please refer to the below table:"
+  },
+  "conversionTable": {
+    "headers": {
+      "type": "Conversion Type",
+      "formula": "Formula"
     },
-
-    
-        "international_standards_title": "International Standards and Certifications",
-        "international_standards_description": "As we discussed earlier, grading scales such as GPA are predominantly a part of Western education systems. However, students planning to study abroad need to be aware of various international standards and certifications that are widely recognized across different educational frameworks. Understanding these can help students navigate different grading systems and ensure smooth transitions when applying to schools or universities abroad.",
-        "sections": {
-          "ib_title": "1. International Baccalaureate (IB)",
-          "ib_description": "The International Baccalaureate (IB) is an internationally recognized educational framework designed for students aged 3 to 19. Its goal is to foster critical thinking, intercultural understanding, and global compatibility. The IB framework is divided into four main programs:",
-          "ib_programs": {
-            "pyp": "Primary Years Programme (PYP): For students aged 3 to 12, focusing on developing academic and personal skills.",
-            "myp": "Middle Years Programme (MYP): For students aged 11 to 16, preparing them for further study.",
-            "dp": "Diploma Programme (DP): For students aged 16 to 19, a rigorous program with a 1-7 grading scale.",
-            "cp": "Career-related Programme (CP): Combines academic study with career-related learning for students aged 16 to 19."
-          },
-          "ccss_title": "2. Common Core State Standards (CCSS)",
-          "ccss_description": "The Common Core State Standards (CCSS) were developed in the United States to standardize K-12 education in English Language Arts and Mathematics. This framework is primarily implemented in U.S. schools and focuses on providing clear and consistent benchmarks for academic achievement. The goal is to ensure students are prepared for college, careers, and global competitiveness by emphasizing critical thinking and problem-solving skills.",
-          "bologna_title": "3. Bologna Process and European Credit Transfer and Accumulation System (ECTS)",
-          "bologna_description": "The Bologna Process is an agreement among European countries to standardize higher education. Its aim is to make academic qualifications and periods of study easily comparable and compatible across Europe. This process facilitates the movement of students between universities in different countries, ensuring that students' qualifications are recognized internationally.",
-          "ects_description": "The European Credit Transfer and Accumulation System (ECTS) assigns credits to courses based on the amount of work required (usually 25-30 hours of study per credit). ECTS uses a letter grading system ranging from A to F, with F representing failure.",
-          "ap_title": "4. Advanced Placement (AP) Program",
-          "ap_description": "The Advanced Placement (AP) Program is a U.S.-based initiative offered by the College Board, enabling high school students to take college-level courses and exams. These courses are equivalent to first-year college courses and are recognized internationally. The grading scale for AP exams ranges from 1 to 5, with a score of 3 being considered passing. AP is widely accepted by universities around the world, giving students the opportunity to earn college credits before completing high school.",
-          "igcse_title": "5. International General Certificate of Secondary Education (IGCSE)",
-          "igcse_description": "The IGCSE is a globally recognized qualification offered by Cambridge Assessment International Education. It uses a grading scale ranging from A to G, with U (ungraded) representing failure. IGCSE is widely used by international schools and is known for its flexibility, allowing students to choose subjects that match their academic interests and career goals.",
-          "teqsa_title": "6. Tertiary Education Quality and Standards Agency (TEQSA)",
-          "teqsa_description": "The TEQSA framework is primarily followed in Australia. It regulates higher education institutions and ensures that they meet national standards. It aligns with the Australian Qualifications Framework (AQF), which describes the qualifications and courses offered by institutions in Australia. While TEQSA is mainly followed in Australia, its recognition is global, ensuring that Australian degrees are respected internationally and enhancing students' mobility.",
-          "pisa_title": "7. Programme for International Student Assessment (PISA)",
-          "pisa_description": "The Programme for International Student Assessment (PISA) is an international survey conducted by the OECD. Unlike the other frameworks, PISA does not provide a grading scale, but instead evaluates the effectiveness of education systems worldwide by assessing the academic performance of 15-year-old students. The data gathered helps policymakers identify strengths and weaknesses in their education systems and make informed decisions to improve standards and align educational frameworks globally."
-        },
-        "common_conversion_title": "Most Common GPA to CGPA Conversion Scenarios",
-        "us_gpa_to_cgpa_title": "1. U.S. GPA to CGPA Conversion (4.0 Scale)",
-        "us_gpa_to_cgpa_formula": "CGPA = GPA × 2.5",
-        "us_gpa_to_cgpa_examples": {
-          "4.0": "4.0 GPA in CGPA is 10.0",
-          "3.5": "3.5 GPA in CGPA is 8.75",
-          "3.0": "3.0 GPA in CGPA is 7.5",
-          "2.0": "2.0 GPA in CGPA is 5.0"
-        },
-        "indian_gpa_to_cgpa_title": "2. U.S. GPA to CGPA (Indian) Conversion",
-        "indian_gpa_to_cgpa_formula": "CGPA = GPA × 2 + 1",
-        "indian_gpa_to_cgpa_examples": {
-          "4.0": "4.0 GPA in CGPA is 9.0",
-          "3.5": "3.5 GPA in CGPA is 8.0",
-          "3.0": "3.0 GPA in CGPA is 7.0",
-          "2.0": "2.0 GPA in CGPA is 5.0"
-        },
-      
-      
-        
-            "conversion": {
-              "indian_percentage_to_gpa": "Indian Percentage to U.S. GPA Conversion (4.0 Scale)",
-              "formula_description": "The formula used is:",
-              "gpa": "GPA =",
-              "formula_part_1": "Percentage - 50",
-              "formula_part_2": "10",
-              "formula_part_3": "2",
-              "conversions_label": "Therefore, the conversions would look like:",
-              "conversion_90": "90% to GPA is 4.0",
-              "conversion_75": "75% to GPA is 3.5",
-              "conversion_60": "60% to GPA is 3.0",
-              "conversion_50": "50% to GPA is 2.0",
-              "ects_grading_title": "ECTS Grading to GPA/CGPA",
-              "ects_description": "Since the ECTS follows a letter grading system, their equivalent conversion looks like this:",
-              "grade_a": "A (Top 10%) → 4.0 GPA / 9.0-10.0 CGPA",
-              "grade_b": "B (Next 25%) → 3.5 GPA / 7.5-8.9 CGPA",
-              "grade_c": "C (Next 30%) → 3.0 GPA / 6.0-7.4 CGPA",
-              "grade_d": "D (Next 25%) → 2.5 GPA / 5.0-5.9 CGPA",
-              "grade_e": "E (Minimum Passing Grade) → 2.0 GPA / 4.0-4.9 CGPA",
-              "note_title": "Please Note:",
-              "note_description": "These are general conversion case studies and may not apply universally. Always refer to specific institutional guidelines before using these conversions.",
-              "summary_title": "Summary",
-              "summary_content_1": "In this section, we discussed GPA and CGPA conversions, how they both differ from each other, and some of the international standards and frameworks followed around the globe. While we have tried to cover all the major frameworks, it is not possible to include the formula and conversion of each and every institution.",
-              "summary_content_2": "Therefore, we always advise you to check the official document of a specific institution before doing the conversion of your grades."
-            },
-          
-            
-            "faq": "FAQs (Frequently Asked Questions)",
-            "q1": {
-              "question": "How can I convert GPA to CGPA?",
-              "answer": "You can convert GPA to CGPA using the formula; GPA = (CGPA Obtained / Maximum CGPA) × Max GPA"
-            },
-            "q2": {
-              "question": "What is Indian CGPA to GPA calculator?",
-              "answer": "Indian CGPA to GPA calculator includes GPA conversion from CGPA and percentage. Please refer to the below table:"
-            },
-            "conversionTable": {
-              "headers": {
-                "type": "Conversion Type",
-                "formula": "Formula"
-              },
-              "rows": [
-                {
-                  "type": "CGPA to 4-point GPA",
-                  "formula": "GPA = (CGPA Obtained / Maximum CGPA) × 2.5"
-                },
-                {
-                  "type": "Percentage to 4-point GPA",
-                  "formula": "GPA = (Percentage Obtained / 100) × 4"
-                },
-                {
-                  "type": "Percentage to GPA (4.3)",
-                  "formula": "GPA = (Percentage Obtained / 100) × 4.3"
-                },
-                {
-                  "type": "Percentage to GPA (5.0)",
-                  "formula": "GPA = (Percentage Obtained / 100) × 5"
-                }
-              ]
-            },
-            "q3": {
-              "question": "How to calculate CGPA from GPA?",
-              "answer": "To calculate CGPA from GPA, divide the GPA obtained by max. GPA and then multiply by the target CGPA scale."
-            },
-            "q4": {
-              "question": "What is 10 point CGPA to 4 GPA calculator formula?",
-              "answer": "To convert 10-point CGPA to 4-point GPA, divide the CGPA by 2.5."
-            },
-            "q5": {
-              "question": "What is the GPA to CGPA calculator Anna University Formula?",
-              "answer": "GPA to CGPA calculator for Anna University includes credit scores and is calculated as: GPA = (Grade in Subject 1 × Credits Earned + Grade in Subject 2 × Credits Earned) / Sum of All Credits Earned."
-            },
-            "q6": {
-              "question": "How to calculate CGPA from GPA in Anna University?",
-              "answer": "CGPA = (GPA Obtained / Maximum GPA) × Target CGPA Scale"
-            },
-            "q7": {
-              "question": "How SRM GPA to CGPA calculator is different?",
-              "answer": "SRM University uses a specific formula that includes a credit-weighted average to calculate GPA."
-            },
-            "q8": {
-              "question": "Is the GPA to CGPA calculator for engineering different?",
-              "answer": "Certain engineering colleges assign higher credits to core courses than elective or general courses, so core subjects might have higher weighted values."
-            },
-            "q9": {
-              "question": "Is CGPA to GPA calculator online reliable?",
-              "answer": "Yes, our CGPA to GPA calculator is mathematically reliable. However, universities may use specific conversion methods, so it's best to check the official guidelines."
-            },
-            "q10": {
-              "question": "Convert GPA to CGPA out of 4.",
-              "answer": "To convert GPA to CGPA out of 4, use the formula: CGPA (out of 4) = (GPA Obtained / Maximum GPA on your Scale) × 4"
-            },
-            "q11": {
-              "question": "What is 3 GPA to CGPA?",
-              "answer": "On a 4-point GPA scale, your CGPA is 3. But on a 10-point GPA scale, your CGPA is 1.2."
-            },
-            "q12": {
-              "question": "What is 3.5 GPA to CGPA?",
-              "answer": "On a 4-point GPA scale, your CGPA is 3.5. But on a 10-point GPA scale, your CGPA is 1.4."
-            }
-          
-                 
-
+    "rows": [
+      {
+        "type": "CGPA to 4-point GPA",
+        "formula": "GPA = (CGPA Obtained / Maximum CGPA) × 2.5"
+      },
+      {
+        "type": "Percentage to 4-point GPA",
+        "formula": "GPA = (Percentage Obtained / 100) × 4"
+      },
+      {
+        "type": "Percentage to GPA (4.3)",
+        "formula": "GPA = (Percentage Obtained / 100) × 4.3"
+      },
+      {
+        "type": "Percentage to GPA (5.0)",
+        "formula": "GPA = (Percentage Obtained / 100) × 5"
+      }
+    ]
+  },
+  "q3": {
+    "question": "How to calculate CGPA from GPA?",
+    "answer": "To calculate CGPA from GPA, divide the GPA obtained by max. GPA and then multiply by the target CGPA scale."
+  },
+  "q4": {
+    "question": "What is 10 point CGPA to 4 GPA calculator formula?",
+    "answer": "To convert 10-point CGPA to 4-point GPA, divide the CGPA by 2.5."
+  },
+  "q5": {
+    "question": "What is the GPA to CGPA calculator Anna University Formula?",
+    "answer": "GPA to CGPA calculator for Anna University includes credit scores and is calculated as: GPA = (Grade in Subject 1 × Credits Earned + Grade in Subject 2 × Credits Earned) / Sum of All Credits Earned."
+  },
+  "q6": {
+    "question": "How to calculate CGPA from GPA in Anna University?",
+    "answer": "CGPA = (GPA Obtained / Maximum GPA) × Target CGPA Scale"
+  },
+  "q7": {
+    "question": "How SRM GPA to CGPA calculator is different?",
+    "answer": "SRM University uses a specific formula that includes a credit-weighted average to calculate GPA."
+  },
+  "q8": {
+    "question": "Is the GPA to CGPA calculator for engineering different?",
+    "answer": "Certain engineering colleges assign higher credits to core courses than elective or general courses, so core subjects might have higher weighted values."
+  },
+  "q9": {
+    "question": "Is CGPA to GPA calculator online reliable?",
+    "answer": "Yes, our CGPA to GPA calculator is mathematically reliable. However, universities may use specific conversion methods, so it's best to check the official guidelines."
+  },
+  "q10": {
+    "question": "Convert GPA to CGPA out of 4.",
+    "answer": "To convert GPA to CGPA out of 4, use the formula: CGPA (out of 4) = (GPA Obtained / Maximum GPA on your Scale) × 4"
+  },
+  "q11": {
+    "question": "What is 3 GPA to CGPA?",
+    "answer": "On a 4-point GPA scale, your CGPA is 3. But on a 10-point GPA scale, your CGPA is 1.2."
+  },
+  "q12": {
+    "question": "What is 3.5 GPA to CGPA?",
+    "answer": "On a 4-point GPA scale, your CGPA is 3.5. But on a 10-point GPA scale, your CGPA is 1.4."
+  },
+  "navbar": {
+    "selectLanguage": "Select Language"
+  }
 }

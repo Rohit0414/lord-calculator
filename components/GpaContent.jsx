@@ -23,7 +23,6 @@ const GpaContent = () => {
         }
     }, [isMainExpanded]);
 
-
     return (
         <div className={`mx-auto relative bg-white text-justify p-6  leading-relaxed ${theme === "dark" ? "dark" : "light"} dark:bg-gray-900 dark:text-white  `}>
             <div className="gpa-content p-4">

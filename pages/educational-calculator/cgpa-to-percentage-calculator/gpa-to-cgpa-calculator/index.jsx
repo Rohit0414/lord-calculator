@@ -380,7 +380,7 @@ const Gpatocgpa = () => {
                             </div>
 
                             <div className="flex mb-4 justify-center items-center flex-col">
-                            <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">{t('choose_gpa_scale')}</label>
+                                <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">{t('choose_gpa_scale')}</label>
                                 <input
                                     type="number"
                                     value={cgpaPointScale}
@@ -400,8 +400,8 @@ const Gpatocgpa = () => {
                             <div ref={resultRef}>
                                 <Meter percentage={cgpa ? parseFloat(cgpa) : 0} />
                                 <div className="flex flex-col justify-center items-center mb-4">
-                                <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">
-                                {t("calculated_cgpa")}
+                                    <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">
+                                        {t("calculated_cgpa")}
                                     </label>
                                     <input
                                         type="text"

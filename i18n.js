@@ -7,7 +7,7 @@ import englishTranslations from "./utils/translations/english.json"
 const resources = {
   en: {
     translation: englishTranslations,
-   
+  
   },
   es: {
     translation: espanolTranslations,

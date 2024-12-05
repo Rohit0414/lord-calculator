@@ -37,7 +37,7 @@ const GpaContent = () => {
                 </p>
 
                 <p className="text-lg mb-6 text-gray-800 dark:text-gray-200">
-                    When you migrate from one institution to another, especially when both institutions follow different grading systems, having a reliable Grade conversion calculator becomes crucial. You can count on Lord Calculator's GPA to CGPA calculator, which uses the most commonly accepted international formula for conversion.
+                    When you migrate from one institution to another, especially when both institutions follow different grading systems, having a reliable Grade conversion calculator becomes crucial. You can count on Lord Calculator GPA to CGPA calculator, which uses the most commonly accepted international formula for conversion.
                 </p>
 
                 <p className="text-lg mb-6 text-gray-800 dark:text-gray-200">
@@ -149,7 +149,7 @@ const GpaContent = () => {
                         <p className="text-md mb-4">Although we have made our calculator easy to use, still here is a guide to make the best out of it without losing yourself in the numerators and denominators of the grades calculations. To convert your GPA into an equivalent CGPA, follow below given steps:</p>
                         <ol className="list-decimal pl-5 mb-6">
                             <li>Step 1: Open GPA to CGPA calculator on Lord Calculator.</li>
-                            <li>Step 2: In the very first field, titled "Enter GPA", please enter your obtained GPA accurately. Do ensure to include decimal points for accurate conversion.</li>
+                            <li>Step 2: In the very first field, titled Enter GPA, please enter your obtained GPA accurately. Do ensure to include decimal points for accurate conversion.</li>
                             <li>Step 3: Now choose your GPA Scale. This scale also indicates what could be the maximum GPA.</li>
                             <li>Step 4: Once you have entered all the values correctly, hit the “Calculate” button. And, that is all! Now you have an equivalent CGPA in front of view, also visualized by the CGPA meter.</li>
                         </ol>
@@ -219,7 +219,7 @@ const GpaContent = () => {
 
                             <section class="mb-8">
                                 <h3 class="text-2xl font-semibold mb-4">3. Bologna Process and European Credit Transfer and Accumulation System (ECTS)</h3>
-                                <p class="text-lg mb-4">The <strong>Bologna Process</strong> is an agreement among European countries to standardize higher education. Its aim is to make academic qualifications and periods of study easily comparable and compatible across Europe. This process facilitates the movement of students between universities in different countries, ensuring that students' qualifications are recognized internationally.</p>
+                                <p class="text-lg mb-4">The <strong>Bologna Process</strong> is an agreement among European countries to standardize higher education. Its aim is to make academic qualifications and periods of study easily comparable and compatible across Europe. This process facilitates the movement of students between universities in different countries, ensuring that students qualifications are recognized internationally.</p>
                                 <p class="text-lg mb-4">The <strong>European Credit Transfer and Accumulation System (ECTS)</strong> assigns credits to courses based on the amount of work required (usually 25-30 hours of study per credit). ECTS uses a letter grading system ranging from A to F, with F representing failure.</p>
                             </section>
 
@@ -235,7 +235,7 @@ const GpaContent = () => {
 
                             <section class="mb-8">
                                 <h3 class="text-2xl font-semibold mb-4">6. Tertiary Education Quality and Standards Agency (TEQSA)</h3>
-                                <p class="text-lg mb-4">The <strong>TEQSA</strong> framework is primarily followed in Australia. It regulates higher education institutions and ensures that they meet national standards. It aligns with the <strong>Australian Qualifications Framework (AQF)</strong>, which describes the qualifications and courses offered by institutions in Australia. While TEQSA is mainly followed in Australia, its recognition is global, ensuring that Australian degrees are respected internationally and enhancing students' mobility.</p>
+                                <p class="text-lg mb-4">The <strong>TEQSA</strong> framework is primarily followed in Australia. It regulates higher education institutions and ensures that they meet national standards. It aligns with the <strong>Australian Qualifications Framework (AQF)</strong>, which describes the qualifications and courses offered by institutions in Australia. While TEQSA is mainly followed in Australia, its recognition is global, ensuring that Australian degrees are respected internationally and enhancing students mobility.</p>
                             </section>
 
                             <section class="mb-8">

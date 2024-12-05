@@ -15,24 +15,26 @@ const Navbar = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("english");
   const [searchInput, setSearchInput] = useState("");
   const [searchResults, setSearchResults] = useState([]);
+  const [isProfileOpen, setIsProfileOpen] = useState(false);
   const router = useRouter();
   const categoryRef = useRef(null);
   const profileRef = useRef(null);
   const { t, i18n } = useTranslation();
 
+
   const handleLanguageChange = (language) => {
+    i18n.changeLanguage(language.toLowerCase());
     setSelectedLanguage(language);
-    i18n.changeLanguage(language.toLowerCase());  
     setIsLanguageOpen(false);
     console.log('Language changed to', language);
   };
-
+  
   const closeDropdowns = (event) => {
     if (categoryRef.current && !categoryRef.current.contains(event.target)) {
       setIsCategoryOpen(false);
     }
     if (profileRef.current && !profileRef.current.contains(event.target)) {
-      setIsProfileOpen(false);
+      setIsProfileOpen(false); // This will work now
     }
   };
 
@@ -119,8 +121,9 @@ const Navbar = () => {
               Search
             </button>
 
+
             {searchResults.length > 0 && searchInput && (
-              <ul className="absolute top-7 right-[1.5px] bg-white dark:text-white dark:bg-gray-800 rounded-2xl shadow-lg w-full mt-2 z-10">
+              <ul className="absolute top-7 right-[1.5px] bg-white dark:text-white dark:bg-gray-800 rounded-2xl  shadow-lg w-full mt-2 z-10">
                 {searchResults.map((result) => (
                   <li key={result.id} className="px-4 py-2 rounded-2xl hover:bg-gray-200 dark:hover:[#000]">
                     <Link href={result.link} className="block">{result.title}</Link>
@@ -130,9 +133,12 @@ const Navbar = () => {
             )}
           </form>
 
+
+
           <Link href="/" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
             Home
           </Link>
+
 
           <div className="relative" ref={categoryRef}>
             <button
@@ -145,7 +151,8 @@ const Navbar = () => {
               />
             </button>
             <div
-              className={`absolute mt-2 bg-[#fafafc] dark:bg-gray-700 shadow-lg rounded-md w-[180px] transition-all duration-300 ease-out ${isCategoryOpen ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none"}`}
+              className={`absolute mt-2 bg-[#fafafc] dark:bg-gray-700 shadow-lg rounded-md w-[180px] transition-all duration-300 ease-out ${isCategoryOpen ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none"
+                }`}
             >
               <Link href="/educational-calculator" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
                 Educational Calculator
@@ -159,12 +166,14 @@ const Navbar = () => {
             </div>
           </div>
 
+
           <button
             onClick={toggleTheme}
             className="p-2 rounded-md transition duration-300 text-black dark:text-white"
           >
             {theme === "light" ? <FaSun size={20} /> : <FaMoon size={20} />}
           </button>
+
 
           <div className="relative">
             <button
@@ -188,7 +197,7 @@ const Navbar = () => {
                       <button
                         key={language}
                         onClick={() => handleLanguageChange(language)}
-                        className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md"
+                        className="text-black dark:text-white hover:text-[#009688] transition text-lg"
                       >
                         {language}
                       </button>
@@ -198,7 +207,6 @@ const Navbar = () => {
               </div>
             )}
           </div>
-
         </div>
       </div>
     </nav>

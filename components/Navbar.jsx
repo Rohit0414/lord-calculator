@@ -28,13 +28,13 @@ const Navbar = () => {
     setIsLanguageOpen(false);
     console.log('Language changed to', language);
   };
-  
+
   const closeDropdowns = (event) => {
     if (categoryRef.current && !categoryRef.current.contains(event.target)) {
       setIsCategoryOpen(false);
     }
     if (profileRef.current && !profileRef.current.contains(event.target)) {
-      setIsProfileOpen(false); // This will work now
+      setIsProfileOpen(false); 
     }
   };
 

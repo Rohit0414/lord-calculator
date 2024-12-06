@@ -1,11 +1,13 @@
 import { useState,useEffect } from "react";
 import { useTheme } from '../context/ThemeContext';
+import { useTranslation } from "react-i18next";
 
 
 const CgpaToGpaContent = () => {
     const [isExpanded, setIsExpanded] = useState(true);
     const theme = useTheme();
     const [isMainExpanded, setIsMainExpanded] = useState(false);
+    const { t } = useTranslation();
 
     const toggleMainExpand = () => {
         setIsMainExpanded(!isMainExpanded);
@@ -26,32 +28,32 @@ const CgpaToGpaContent = () => {
     return (
         <div className={`mx-auto relative bg-white text-justify p-6  leading-relaxed ${theme === "dark" ? "dark" : "light"} dark:bg-gray-900 dark:text-white  `}>
             <div className="space-y-6 mb-4 p-4">
-                <h2 id="section1" className="text-3xl font-bold  dark:text-white mb-6 text-blue-500">CGPA to GPA Calculator</h2>
+                <h2 id="section1" className="text-3xl font-bold  dark:text-white mb-6 text-blue-500">{t("Heading")}</h2>
 
                 <p className="text-lg text-gray-800 dark:text-gray-200">
-                    We often encounter situations where we need to convert our grades into a different format. Whether you're dealing with student grade databases or need to convert your grades to meet specific requirements, having a reliable tool makes the process much easier.
+                {t("Paragraph1")}
                 </p>
 
                 <p className="text-lg text-gray-800 dark:text-gray-200">
-                    Lord Calculator’s CGPA to GPA calculator is designed to help you quickly and accurately convert your CGPA grades into the GPA format, so you can focus on what truly matters—your performance!
+                {t("Paragraph2")}
                 </p>
 
                 <p className="text-lg text-gray-800 dark:text-gray-200">
-                    Our calculator is optimized for speed and precision, ensuring zero errors in your results. You can also use the custom Grade Scale option to convert your grades to any target grading scale of your choice.
+                {t("Paragraph3")}
                 </p>
 
                 <p className="text-lg text-gray-800 dark:text-gray-200">
-                    In this guide, we'll cover the key factors you need to know about CGPA to GPA conversion, including basic concepts and international standards.
+                {t("Paragraph4")}
                 </p>
 
-                <h2 id="section2" className="text-2xl font-semibold text-blue-500 dark:text-white mt-8 mb-6">CGPA to GPA Converter Formula</h2>
+                <h2 id="section2" className="text-2xl font-semibold text-blue-500 dark:text-white mt-8 mb-6">{t("section2")}</h2>
                 <p className="text-lg text-gray-800 dark:text-gray-200 text-center mb-6">
-                    <span className="font-semibold">Equivalent GPA =</span>
+                    <span className="font-semibold"> {t("title")}</span>
                     <span className="inline-block ml-2">
-                        <div className="border-b border-gray-600 dark:border-gray-400 pb-2">CGPA Obtained</div>
-                        <span className="block text-sm text-gray-600 dark:text-gray-400">Max CGPA</span>
+                        <div className="border-b border-gray-600 dark:border-gray-400 pb-2"> {t("numerator")}</div>
+                        <span className="block text-sm text-gray-600 dark:text-gray-400">{t("denominator")}</span>
                     </span>
-                    <span className="inline-block ml-4">× Max GPA</span>
+                    <span className="inline-block ml-4">{t("multiplier")}</span>
                 </p>
             </div>
 

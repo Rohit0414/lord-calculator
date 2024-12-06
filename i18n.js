@@ -16,7 +16,6 @@ console.log(resources);
 console.log("Detected language:", i18n.language);
 console.log(i18n.t('your.translation.key')); 
 
-
 if (!i18n.isInitialized) {
   i18n
     .use(LanguageDetector)

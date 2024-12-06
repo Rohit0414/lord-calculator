@@ -23,10 +23,11 @@ const Navbar = () => {
 
 
   const handleLanguageChange = (language) => {
-    i18n.changeLanguage(language.toLowerCase());
+    i18n.changeLanguage(language);
     setSelectedLanguage(language);
     setIsLanguageOpen(false);
     console.log('Language changed to', language);
+    console.log(selectedLanguage);
   };
 
   const closeDropdowns = (event) => {
@@ -34,7 +35,7 @@ const Navbar = () => {
       setIsCategoryOpen(false);
     }
     if (profileRef.current && !profileRef.current.contains(event.target)) {
-      setIsProfileOpen(false); 
+      setIsProfileOpen(false);
     }
   };
 
@@ -181,6 +182,7 @@ const Navbar = () => {
               className="flex items-center px-4 py-2 text-black dark:text-white rounded-md transition duration-300"
             >
               <FaGlobe size={20} />
+              <span className="ml-2">{selectedLanguage}</span>
             </button>
             {isLanguageOpen && (
               <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[9999]">
@@ -192,16 +194,333 @@ const Navbar = () => {
                     <IoClose size={24} />
                   </button>
                   <h3 className="text-lg font-bold mb-4">{t('navbar.selectLanguage')}</h3>
-                  <div className="grid grid-cols-2 gap-3">
-                    {['English', 'Español', 'Français', 'Italiano', 'Deutsch', 'Português', 'বাংলা', '한국어', 'हिन्दी', 'Русский', 'தமிழ்', 'മലയാളം'].map((language) => (
-                      <button
-                        key={language}
-                        onClick={() => handleLanguageChange(language)}
-                        className="text-black dark:text-white hover:text-[#009688] transition text-lg"
-                      >
-                        {language}
-                      </button>
-                    ))}
+                  <div class="grid grid-cols-2 gap-4 text-[15px]">
+                    <div
+                      class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 false text-left"
+                      onClick={() => {  handleLanguageChange('en') }}
+                    >
+                      English
+                      {
+                        i18n.language === 'en' &&
+                        <div class="ml-16">
+                          <svg
+                            width="20"
+                            height="14"
+                            viewBox="0 0 20 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 0.998386L7.22492 14L0 6.64696L0.980991 5.64858L7.22492 12.0032L19.019 0L20 0.998386Z"
+                              class="fill-black dark:fill-white"
+                            ></path>
+                          </svg>
+                        </div>
+                      }
+
+                    </div>
+                    <div
+                      class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
+                      onClick={() => {  handleLanguageChange('es') }}
+                    >
+                      Español
+                      {
+                        i18n.language === 'es' &&
+                        <div class="ml-16">
+                          <svg
+                            width="20"
+                            height="14"
+                            viewBox="0 0 20 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 0.998386L7.22492 14L0 6.64696L0.980991 5.64858L7.22492 12.0032L19.019 0L20 0.998386Z"
+                              class="fill-black dark:fill-white"
+                            ></path>
+                          </svg>
+                        </div>
+                      }
+                    </div>
+                    <div
+                      class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
+                      onClick={() => {  handleLanguageChange('fr') }}
+                    >
+                      Français
+                      {
+                        i18n.language === 'fr' &&
+                        <div class="ml-16">
+                          <svg
+                            width="20"
+                            height="14"
+                            viewBox="0 0 20 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 0.998386L7.22492 14L0 6.64696L0.980991 5.64858L7.22492 12.0032L19.019 0L20 0.998386Z"
+                              class="fill-black dark:fill-white"
+                            ></path>
+                          </svg>
+                        </div>
+                      }
+                    </div>
+                    <div
+                      class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
+                      onClick={() => {  handleLanguageChange('it') }}
+                    >
+                      Italiano
+                      {
+                        i18n.language === 'it' &&
+                        <div class="ml-16">
+                          <svg
+                            width="20"
+                            height="14"
+                            viewBox="0 0 20 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 0.998386L7.22492 14L0 6.64696L0.980991 5.64858L7.22492 12.0032L19.019 0L20 0.998386Z"
+                              class="fill-black dark:fill-white"
+                            ></path>
+                          </svg>
+                        </div>
+                      }
+                    </div>
+                    <div
+                      class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
+                      onClick={() => {  handleLanguageChange('de') }}
+                    >
+                      Deutsch
+                      {
+                        i18n.language === 'de' &&
+                        <div class="ml-16">
+                          <svg
+                            width="20"
+                            height="14"
+                            viewBox="0 0 20 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 0.998386L7.22492 14L0 6.64696L0.980991 5.64858L7.22492 12.0032L19.019 0L20 0.998386Z"
+                              class="fill-black dark:fill-white"
+                            ></path>
+                          </svg>
+                        </div>
+                      }
+                    </div>
+                    <div
+                      class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
+                      onClick={() => {  handleLanguageChange('pt') }}
+                    >
+                      Português
+                      {
+                        i18n.language === 'pt' &&
+                        <div class="ml-16">
+                          <svg
+                            width="20"
+                            height="14"
+                            viewBox="0 0 20 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 0.998386L7.22492 14L0 6.64696L0.980991 5.64858L7.22492 12.0032L19.019 0L20 0.998386Z"
+                              class="fill-black dark:fill-white"
+                            ></path>
+                          </svg>
+                        </div>
+                      }
+                    </div>
+                    <div
+                      class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
+                      onClick={() => {  handleLanguageChange('bn') }}
+                    >
+                      বাংলা
+                      {
+                        i18n.language === 'bn' &&
+                        <div class="ml-16">
+                          <svg
+                            width="20"
+                            height="14"
+                            viewBox="0 0 20 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 0.998386L7.22492 14L0 6.64696L0.980991 5.64858L7.22492 12.0032L19.019 0L20 0.998386Z"
+                              class="fill-black dark:fill-white"
+                            ></path>
+                          </svg>
+                        </div>
+                      }
+                    </div>
+                    <div
+                      class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
+                      onClick={() => {  handleLanguageChange('ko') }}
+                    >
+                      한국어
+                      {
+                        i18n.language === 'ko' &&
+                        <div class="ml-16">
+                          <svg
+                            width="20"
+                            height="14"
+                            viewBox="0 0 20 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 0.998386L7.22492 14L0 6.64696L0.980991 5.64858L7.22492 12.0032L19.019 0L20 0.998386Z"
+                              class="fill-black dark:fill-white"
+                            ></path>
+                          </svg>
+                        </div>
+                      }
+                    </div>
+                    <div
+                      class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
+                      onClick={() => {  handleLanguageChange('hi') }}
+                    >
+                      हिन्दी
+                      {
+                        i18n.language === 'hi' &&
+                        <div class="ml-16">
+                          <svg
+                            width="20"
+                            height="14"
+                            viewBox="0 0 20 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 0.998386L7.22492 14L0 6.64696L0.980991 5.64858L7.22492 12.0032L19.019 0L20 0.998386Z"
+                              class="fill-black dark:fill-white"
+                            ></path>
+                          </svg>
+                        </div>
+                      }
+                    </div>
+                    <div
+                      class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
+                      onClick={() => {  handleLanguageChange('ru') }}
+                    >
+                      Русский
+                      {
+                        i18n.language === 'ru' &&
+                        <div class="ml-16">
+                          <svg
+                            width="20"
+                            height="14"
+                            viewBox="0 0 20 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 0.998386L7.22492 14L0 6.64696L0.980991 5.64858L7.22492 12.0032L19.019 0L20 0.998386Z"
+                              class="fill-black dark:fill-white"
+                            ></path>
+                          </svg>
+                        </div>
+                      }
+                    </div>
+                    <div
+                      class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
+                      onClick={() => {  handleLanguageChange('ta') }}
+                    >
+                      தமிழ்
+                      {
+                        i18n.language === 'ta' &&
+                        <div class="ml-16">
+                          <svg
+                            width="20"
+                            height="14"
+                            viewBox="0 0 20 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 0.998386L7.22492 14L0 6.64696L0.980991 5.64858L7.22492 12.0032L19.019 0L20 0.998386Z"
+                              class="fill-black dark:fill-white"
+                            ></path>
+                          </svg>
+                        </div>
+                      }
+                    </div>
+                    <div
+                      class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
+                      onClick={() => {  handleLanguageChange('ml') }}
+                    >
+                      മലയാളം
+                      {
+                        i18n.language === 'ml' &&
+                        <div class="ml-16">
+                          <svg
+                            width="20"
+                            height="14"
+                            viewBox="0 0 20 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 0.998386L7.22492 14L0 6.64696L0.980991 5.64858L7.22492 12.0032L19.019 0L20 0.998386Z"
+                              class="fill-black dark:fill-white"
+                            ></path>
+                          </svg>
+                        </div>
+                      }
+                    </div>
+                    <div
+                      class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
+                      onClick={() => {  handleLanguageChange('ja') }}
+                    >
+                      日本語
+                      {
+                        i18n.language === 'ja' &&
+                        <div class="ml-16">
+                          <svg
+                            width="20"
+                            height="14"
+                            viewBox="0 0 20 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 0.998386L7.22492 14L0 6.64696L0.980991 5.64858L7.22492 12.0032L19.019 0L20 0.998386Z"
+                              class="fill-black dark:fill-white"
+                            ></path>
+                          </svg>
+                        </div>
+                      }
+                    </div>
                   </div>
                 </div>
               </div>

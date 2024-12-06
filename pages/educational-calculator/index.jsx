@@ -2,6 +2,7 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import TimelineItem from '@/components/TimelineItem';
 import React from 'react';
+import Link from 'next/link';
 
 export default function EducationalCalculator() {
     return (
@@ -15,40 +16,52 @@ export default function EducationalCalculator() {
                             Educational <span className="bg-clip-text bg-gradient-to-tl from-blue-600 to-violet-600 text-transparent">Calculator</span>
                         </h1>
                     </div>
-                    <div className="mt-5 max-w-3xl text-center mx-auto">
-                        <p className="text-lg text-gray-600 dark:text-neutral-400">
-                            Every tool you need to calculate effectively, at your fingertips—all 100% FREE and easy to use! Split, compress, convert, rotate, and more with just a few clicks.
+                    <div className="mt-5 max-w-3xl mx-auto text-center">
+                        <p className="text-lg text-gray-600 dark:text-neutral-400 leading-relaxed">
+                            Solving simple conversions like
+                            <span className="font-semibold text-gray-800 dark:text-neutral-200"> CGPA to Percentage </span>
+                            using the CGPA calculator or advanced math with a
+                            <span className="font-semibold text-gray-800 dark:text-neutral-200"> Scientific Calculator </span> ?
+                            <Link
+                                href="/"
+                                className="text-blue-500 dark:text-blue-400 underline hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+                            >
+                                &nbsp; Lord Calculator &nbsp;
+                            </Link>
+                            will help you tackle tedious and,<br/> daunting calculations with ease. Let the finest technology supercharge your<br/> educational journey—because you deserve nothing but the
+                            <span className="font-semibold text-gray-800 dark:text-neutral-200"> BEST</span>.
                         </p>
                     </div>
+
                 </div>
 
-                <div className="relative mx-auto py-10 px-4 sm:px-6 lg:px-8 bg-transparent max-w-6xl z-10">
+                <div className="relative mx-auto py-10 px-4 sm:px-6 lg:px-8 bg-transparent max-w-6xl z-10 mt-4 mb-6">
                     <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-neutral-400 mb-8">
-                        Why Use Our Calculators?
+                    Why Choose Lord Calculator?
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-4">
                         <div className="p-6 bg-blue-50 rounded-lg shadow-md">
-                            <h3 className="font-semibold text-lg text-indigo-600">User-Friendly Interface</h3>
+                            <h3 className="font-semibold text-lg text-indigo-600">Blinking Fast & Super Reliable</h3>
                             <p className="text-gray-700 mt-2">
-                                Our calculators are designed with a simple and intuitive interface that makes calculations easy for everyone.
+                            Yes, we have ensured both! Solve even the most complex calculations accurately within a blink of an eye. No room for errors!
                             </p>
                         </div>
                         <div className="p-6 bg-blue-50 rounded-lg shadow-md">
-                            <h3 className="font-semibold text-lg text-indigo-600">Accurate Results</h3>
+                            <h3 className="font-semibold text-lg text-indigo-600">Simple & Easy</h3>
                             <p className="text-gray-700 mt-2">
-                                Get accurate calculations every time, helping you track your academic performance effectively.
+                            The only complex part will be your equations. With intuitive buttons and meters, navigation here is super-easy.
                             </p>
                         </div>
                         <div className="p-6 bg-blue-50 rounded-lg shadow-md">
-                            <h3 className="font-semibold text-lg text-indigo-600">100% Free</h3>
+                            <h3 className="font-semibold text-lg text-indigo-600">Download, Save, or Share</h3>
                             <p className="text-gray-700 mt-2">
-                                Enjoy all our tools and resources completely free of charge—no hidden fees or subscriptions!
+                            Need to save solved equation? Worry not, solve once then share or save your calculations for life-long offline use.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <TimelineItem/>
+                <TimelineItem />
             </div>
             <Footer />
         </div>

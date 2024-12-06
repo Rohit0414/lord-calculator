@@ -1,21 +1,18 @@
-
-  {
-    "navbar": {
-      "selectLanguage": "Seleccionar idioma"
-    },
-    "title": "Calculadora de GPA a CGPA",
-    "enter_gpa": "Ingresa el GPA",
-    "choose_gpa_scale": "Selecciona la escala de GPA",
-    "calculate": "Calcular",
-    "reset": "Restablecer",
-    "calculated_cgpa": "Tu CGPA Calculado",
-    "calculation_history": "Historial de Cálculos",
-    "download": "Descargar",
-    "whatsapp": "WhatsApp",
-    "copy_link": "Copiar Enlace",
-    "gpa_to_cgpa_calculator": "Calculadora de GPA a CGPA",
-    "welcome_message": "¡Bienvenido a otra calculadora educativa! En las calculadoras correspondientes, calculamos",
-    "cgpa_to_percentage_link": "CGPA a Porcentaje"
-   
-  }
-
+{
+  "navbar": {
+    "selectLanguage": "Seleccionar idioma"
+  },
+  "title": "Calculadora de GPA a CGPA",
+  "enter_gpa": "Ingresa el GPA",
+  "choose_gpa_scale": "Selecciona la escala de GPA",
+  "calculate": "Calcular",
+  "reset": "Restablecer",
+  "calculated_cgpa": "Tu CGPA Calculado",
+  "calculation_history": "Historial de Cálculos",
+  "download": "Descargar",
+  "whatsapp": "WhatsApp",
+  "copy_link": "Copiar Enlace",
+  "gpa_to_cgpa_calculator": "Calculadora de GPA a CGPA",
+  "welcome_message": "¡Bienvenido a otra calculadora educativa! En las calculadoras correspondientes, calculamos",
+  "cgpa_to_percentage_link": "CGPA a Porcentaje"
+}

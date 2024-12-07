@@ -8,6 +8,7 @@ import Router, { useRouter } from 'next/router';
 import { PDFDocument, rgb } from 'pdf-lib';
 import Link from 'next/link';
 import CgpaToGpaContent from '@/components/CgpaToGpaContent';
+import { useTranslation } from 'react-i18next';
 
 const Cgpatogpa = () => {
     const { theme } = useTheme();
@@ -23,6 +24,7 @@ const Cgpatogpa = () => {
     const router = useRouter();
     const [copied, setCopied] = useState(false);
     const [showScroll, setShowScroll] = useState(false);
+    const {t} = useTranslation();
 
     const checkScrollTop = () => {
         if (!showScroll && window.pageYOffset > 300) {
@@ -376,57 +378,57 @@ const Cgpatogpa = () => {
                     <div className="flex  w-full">
 
                         <div className="p-5 mx-auto text-black w-full  dark:text-white">
-                            <h1 className="text-4xl font-bold mb-4 text-center text-[#308d46] drop-shadow-lg dark:bg-teal-950  bg-transparent bg-clip-text">CGPA to GPA Calculator</h1>
+                            <h1 className="text-4xl font-bold mb-4 text-center text-[#308d46] drop-shadow-lg dark:bg-teal-950  bg-transparent bg-clip-text">{t("-title")}</h1>
 
                             <div className="flex mb-4 justify-center items-center flex-col">
-                                <h3 className="text-2xl font-bold mb-4 text-[#105045] drop-shadow-lg mt-2 dark:text-[#b3e0e6]">Enter CGPA</h3>
+                                <h3 className="text-2xl font-bold mb-4 text-[#105045] drop-shadow-lg mt-2 dark:text-[#b3e0e6]">{t("enterCGPA")}</h3>
                                 <input
                                     type="number"
                                     value={cgpa}
                                     onChange={(e) => setCgpa(e.target.value)}
-                                    placeholder="Enter Your CGPA"
+                                    placeholder={t("cgpaPlaceholder")}
                                     className="w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white"
                                 />
                             </div>
 
                             <div className="flex mb-4 justify-center items-center flex-col">
-                                <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">Choose GPA Scale</label>
+                                <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">{t("chooseGPAScale")}</label>
                                 <div className="flex justify-center w-1/2 mb-4 p-2">
                                     <button
                                         onClick={() => setGpaScale(4.0)}
                                         className={`${gpaScale === 4.0 ? 'bg-[#29582b]' : 'bg-[#105045] dark:bg-[#4f5b56]'} text-white w-3/4 py-2 mr-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]`}
                                     >
-                                        4.0 Scale
+                                        {t("gpaScale4")}
                                     </button>
                                     <button
                                         onClick={() => setGpaScale(5.0)}
                                         className={`${gpaScale === 5.0 ? 'bg-[#29582b]' : 'bg-[#105045] dark:bg-[#4f5b56]'} text-white w-3/4 py-2 mr-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]`}
                                     >
-                                        5.0 Scale
+                                    {t("gpaScale5")}
                                     </button>
                                     <button
                                         onClick={() => setGpaScale(10.0)}
                                         className={`${gpaScale === 10.0 ? 'bg-[#29582b]' : 'bg-[#105045] dark:bg-[#4f5b56]'} text-white w-3/4 py-2 mr-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]`}
                                     >
-                                        10.0 Scale
+                                        {t("gpaScale10")}
                                     </button>
                                 </div>
                                 <input
                                     type="number"
                                     value={gpaScale}
                                     onChange={handleCustomGpaScaleChange}
-                                    placeholder="Enter Custom GPA Scale"
+                                    placeholder={t("customGpaScalePlaceholder")}
                                     className="w-3/4 p-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white"
                                 />
                             </div>
 
                             <div className="flex mb-4 justify-center items-center flex-col">
-                                <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">CGPA Point Scale</label>
+                                <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">{t("cgpaPointScale")}</label>
                                 <input
                                     type="number"
                                     value={cgpaPointScale}
                                     onChange={(e) => setCgpaPointScale(parseFloat(e.target.value))}
-                                    placeholder="Enter CGPA Point Scale"
+                                    placeholder={t("cgpaPointScalePlaceholder")}
                                     className="w-3/4 p-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white"
                                 />
                             </div>
@@ -434,36 +436,36 @@ const Cgpatogpa = () => {
                             {error && <div className="text-red-500 mb-2 text-center">{error}</div>}
 
                             <div className="flex justify-center space-x-32 mb-4">
-                                <button onClick={convertCGPAtoGPA} className="bg-[#105045] dark:bg-[#4f5b56] text-white w-32 py-2 rounded hover:bg-[#29582b]  dark:hover:bg-[#29582b]">Calculate</button>
-                                <button onClick={resetFields} className="bg-[#105045] dark:bg-[#4f5b56] text-white w-32 py-2 rounded hover:bg-[#29582b]  dark:hover:bg-[#29582b]">Reset</button>
+                                <button onClick={convertCGPAtoGPA} className="bg-[#105045] dark:bg-[#4f5b56] text-white w-32 py-2 rounded hover:bg-[#29582b]  dark:hover:bg-[#29582b]">{t("calculateButton")}</button>
+                                <button onClick={resetFields} className="bg-[#105045] dark:bg-[#4f5b56] text-white w-32 py-2 rounded hover:bg-[#29582b]  dark:hover:bg-[#29582b]">{t("resetButton")}</button>
                             </div>
 
                             <div ref={resultRef}>
                                 <Meter percentage={gpa ? parseFloat(gpa) : 0} />
                                 <div className=" flex flex-col justify-center items-center mb-4">
-                                    <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">Your Calculated GPA </label>
-                                    <input type="text" value={gpa} placeholder="GPA:" readOnly className="w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white" />
+                                    <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">{t("yourGPA")}</label>
+                                    <input type="text" value={gpa} placeholder={t("gpaPlaceholder")} readOnly className="w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white" />
                                 </div>
                             </div>
                             <div className="mt-4 flex justify-center space-x-32 mb-4">
-                                <button onClick={downloadHistoryAsPDF} className="bg-[#105045] text-white w-32 py-2 rounded hover:bg-[#29582b]">Download</button>
-                                <button onClick={shareOnWhatsApp} className="bg-green-500 text-white w-32 py-2 rounded">WhatsApp</button> <button
+                                <button onClick={downloadHistoryAsPDF} className="bg-[#105045] text-white w-32 py-2 rounded hover:bg-[#29582b]">{t("downloadButton")}</button>
+                                <button onClick={shareOnWhatsApp} className="bg-green-500 text-white w-32 py-2 rounded">{t("whatsappButton")}</button> <button
                                     onClick={handleCopyLink}
                                     className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded dark:bg-blue-600 dark:hover:bg-blue-700"
                                 >
-                                    {copied ? "Link Copied!" : "Copy Link"}
+                                    {copied ? "Link Copied!" : "Copy link"}
                                 </button>
 
                             </div>
                             <div className="flex justify-center">
                                 <div className="history-container mb-4 text-center w-60">
-                                    <b className=''>Calculation History</b>
+                                    <b className=''>{t("calculationHistory")}</b>
                                     <table className="min-w-full border text-black  border-gray-300 mt-2 mx-auto">
                                         <thead>
                                             <tr className="bg-gray-100">
-                                                <th className="border dark:border-black border-gray-300 p-2">S.NO</th>
-                                                <th className="border dark:border-black border-gray-300 p-2">CGPA</th>
-                                                <th className="border dark:border-black border-gray-300 p-2">GPA</th>
+                                                <th className="border dark:border-black border-gray-300 p-2">{t("sNo")}</th>
+                                                <th className="border dark:border-black border-gray-300 p-2">{t("cgpa")}</th>
+                                                <th className="border dark:border-black border-gray-300 p-2">{t("gpa")}</th>
                                             </tr>
                                         </thead>
                                         <tbody>

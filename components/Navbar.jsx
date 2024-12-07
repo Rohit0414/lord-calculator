@@ -186,7 +186,7 @@ const Navbar = () => {
             </button>
             {isLanguageOpen && (
               <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[9999]">
-                <div className="relative bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 w-[420px] h-[340px] text-center">
+                <div className="relative bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 w-[550px] h-[450px] text-center">
                   <button
                     onClick={() => setIsLanguageOpen(false)}
                     className="absolute top-2 right-2 text-gray-600 dark:text-gray-300 hover:text-red-500"

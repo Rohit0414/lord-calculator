@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useTheme } from '../context/ThemeContext';
 import { useTranslation } from "react-i18next";
 
@@ -31,35 +31,35 @@ const CgpaToGpaContent = () => {
                 <h2 id="section1" className="text-3xl font-bold  dark:text-white mb-6 text-blue-500">{t("Heading")}</h2>
 
                 <p className="text-lg text-gray-800 dark:text-gray-200">
-                {t("Paragraph1")}
+                    {t("Paragraph1")}
                 </p>
 
                 <p className="text-lg text-gray-800 dark:text-gray-200">
-                {t("Paragraph2")}
+                    {t("Paragraph2")}
                 </p>
 
                 <p className="text-lg text-gray-800 dark:text-gray-200">
-                {t("Paragraph3")}
+                    {t("Paragraph3")}
                 </p>
 
                 <p className="text-lg text-gray-800 dark:text-gray-200">
-                {t("Paragraph4")}
+                    {t("Paragraph4")}
                 </p>
 
                 <h2 id="section2" className="text-2xl font-semibold text-blue-500 dark:text-white mt-8 mb-6">{t("section2")}</h2>
                 <p className="text-lg text-gray-800 dark:text-gray-200 text-center mb-6">
-                    <span className="font-semibold"> {t("title")}</span>
-                    <span className="inline-block ml-2">
+                    <span className="font-semibold"> {t("title")} =</span>
+                    <span className="inline-block ml-2 translate-y-2">
                         <div className="border-b border-gray-600 dark:border-gray-400 pb-2"> {t("numerator")}</div>
                         <span className="block text-sm text-gray-600 dark:text-gray-400">{t("denominator")}</span>
                     </span>
-                    <span className="inline-block ml-4">{t("multiplier")}</span>
+                    <span className="inline-block ml-4">× {t("multiplier")}</span>
                 </p>
             </div>
 
             <div className="bg-white  rounded-lg shadow-lg max-w-4xl mx-auto border-t-4 mt-8 mb-4 dark:bg-gray-800 dark:border lue-400">
                 <div className="flex justify-between items-center">
-                    <h2 className="text-xl p-4 font-semibold text-blue-600 dark:text-blue-400">Table of Contents</h2>
+                    <h2 className="text-xl p-4 font-semibold text-blue-600 dark:text-blue-400">{t("tableOfContents")}</h2>
                     <button
                         onClick={() => setIsExpanded(!isExpanded)}
                         className="text-blue-600 hover:text-blue-800 font-medium focus:outline-none transition-all duration-300 dark:text-blue-400"
@@ -75,15 +75,12 @@ const CgpaToGpaContent = () => {
                     <div className="grid grid-cols-2 gap-x-6 mb-4">
                         <ol className="space-y-3 p-4">
                             {[
-                                'CGPA to GPA Calculator',
-                                'CGPA to GPA Converter Formula',
-                                'How CGPA Differs from GPA & Why Do We Need Conversion?',
-                                'Why Do We Need CGPA to GPA Conversions?',
-                                'How Does Lord Calculator’s CGPA to GPA Calculator Stand Out?',
-                                'How to Use CGPA to GPA Calculator',
-                               
-                                
-
+                                t("1"),
+                                t("2"),
+                                t("3"),
+                                t("4"),
+                                t("5"),
+                                t("6"),
                             ].map((item, index) => (
                                 <li key={index + 1}>
                                     <button
@@ -100,14 +97,14 @@ const CgpaToGpaContent = () => {
                         </ol>
                         <ol className="space-y-3 p-4">
                             {[
-                                'Methods of Converting CGPA to GPA',
-                                'University Specific Conversions',
-                                'Normalization Factor',
-                                'CGPA To GPA Detailed Conversion Table',
-                                'Limitations of CGPA to GPA Converter',
-                                'Tips to Get Accurate CGPA to GPA Calculation',
-                                'Conclusion',
-                                'FAQs for CGPA to GPA Converter',
+                                t("7"),
+                                t("8"),
+                                t("9"),
+                                t("10"),
+                                t("11"),
+                                t("12"),
+                                t("13"),
+                                t("14"),
 
                             ].map((item, index) => (
                                 <li key={index + 7}>
@@ -116,7 +113,7 @@ const CgpaToGpaContent = () => {
                                             scrollToSection(`section${index + 7}`)
                                             setIsMainExpanded(isMainExpanded === index + 7 ? null : index + 7);
                                         }}
-                                        className="w-full text-left text-blue-600 hover:text-blue-800 focus:outline-none transition-all hover:scale-95 duration-300 dark:text-blue-400 dark:hover:text-blue-600"
+                                        className="w-full text-left text-blue-600 hover:text-blue-800 focus:outline-none transition-all hover:scale-[102%] duration-300 dark:text-blue-400 dark:hover:text-blue-600"
                                     >
                                         {index + 7}. {item}
                                     </button>
@@ -137,57 +134,61 @@ const CgpaToGpaContent = () => {
 
                     <div className="space-y-6 mb-4 p-4">
                         <p className="text-lg text-gray-800 dark:text-gray-200 mb-6">
-                            Please note that this formula is the most commonly used for CGPA to GPA conversion. However, some institutions may follow a different formula, so it’s always a good idea to check the official guidelines provided by your institution or board.
+                            {t('cgpaToGpaNote')}
                         </p>
 
-                        <h2 id="section3" className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-6">How CGPA Differs from GPA & Why Do We Need Conversion?</h2>
+                        <h2
+                            id="section3"
+                            className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-6"
+                        >
+                            {t('section3Title')}
+                        </h2>
 
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            Before diving deeper into the conversion process, let's first understand the difference between CGPA and GPA, and why conversion might be necessary even if both grading scales are widely recognized.
+                            {t('section3Content')}
                         </p>
-
-                        <h4 className="text-lg font-semibold text-gray-900 dark:text-white mt-4 mb-4">Understanding CGPA & GPA</h4>
-
+                        <h4 className="text-lg font-semibold text-gray-900 dark:text-white mt-4 mb-4">
+                            {t('understandingCGPAGPA')}
+                        </h4>
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            CGPA (Cumulative Grade Point Average) is a comprehensive reflection of a student’s academic performance across all semesters and subjects over a specific period. It provides a holistic view of the student’s consistent performance throughout their course.
+                            {t('cgpaDefinition')}
                         </p>
-
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            On the other hand, GPA (Grade Point Average) is a more concise metric that evaluates a student’s performance in individual courses or subjects, often focusing on semester-specific achievements. GPA helps institutions track performance on a per-term basis.
+                            {t('gpaDefinition')}
                         </p>
-
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            While CGPA is more commonly used in Asian countries, GPA is widely practiced in Western countries such as the United States and Europe. This difference in grading systems is why the CGPA to GPA conversion is often required, especially for international students or academic transfers.
+                            {t('regionalUsage')}
+                        </p>
+                        <p className="text-lg text-gray-800 dark:text-gray-200 mt-4">
+                            {t('learnMoreGradingSystems')}
+                            <a href="/grading-systems" className="text-blue-600 hover:text-blue-800 transition duration-300">
+                                {t('clickHere')}
+                            </a>.
                         </p>
 
-                        <p className="text-lg text-gray-800 dark:text-gray-200 mt-4 ">
-                            If you'd like to learn more about the terminology used in various grading systems,
-                            <a href="/grading-systems" className="text-blue-600 hover:text-blue-800 transition duration-300"> click here</a>.
-                        </p>
                     </div>
                     <div className="space-y-6 m-4 ">
-                        <h2 id="section4" className="text-3xl font-bold text-blue-500 dark:text-white mb-6">Why Do We Need CGPA to GPA Conversions?</h2>
-
+                        <h2 id="section4" className="text-3xl font-bold text-blue-500 dark:text-white mb-6">
+                            {t('whyNeedConversion')}
+                        </h2>
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            The simple answer to this question lies in opportunities. Whenever a student plans to study abroad or apply for a job, they often need their grades in a specific format—one that might differ from their own. In such cases, grade conversions are essential.
+                            {t('conversionReason1')}
                         </p>
-
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            Imagine this: you've carefully applied the formulas and written out the entire mathematical equation, but due to a small decimal point error or a minor mistake, you end up having to redo the process. This is where online tools become invaluable. You can instantly visit a website and convert your grades on the go—no need to download any third-party apps!
+                            {t('conversionReason2')}
                         </p>
-
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            Another reason conversions are necessary is the differences between grading scales. To help you understand how these grading systems vary, here’s a brief table comparing CGPA, GPA, and other grading systems:
+                            {t('conversionReason3')}
                         </p>
 
                         <table className="min-w-full text-center table-auto border ">
                             <thead className="border-b border-blue-500 dark:border-blue-600 bg-blue-500 text-white">
                                 <tr>
-                                    <th className="px-4 py-2 text-sm font-medium border dark:text-white">CGPA (10-Point Scale)</th>
-                                    <th className="px-4 py-2 text-sm font-medium border dark:text-white">US GPA (4-Point Scale)</th>
-                                    <th className="px-4 py-2 text-sm font-medium border dark:text-white">Letter Grade (US)</th>
-                                    <th className="px-4 py-2 text-sm font-medium border dark:text-white">Percentage (100%)</th>
-                                    <th className="px-4 py-2 text-sm font-medium border dark:text-white">Grade (UK)</th>
+                                    <th className="px-4 py-2 text-sm font-medium border dark:text-white"> {t("cgpaScale")}</th>
+                                    <th className="px-4 py-2 text-sm font-medium border dark:text-white">{t("usGpaScale")}</th>
+                                    <th className="px-4 py-2 text-sm font-medium border dark:text-white">{t("usLetterGrade")}</th>
+                                    <th className="px-4 py-2 text-sm font-medium border dark:text-white">{t("percentageScale")}</th>
+                                    <th className="px-4 py-2 text-sm font-medium border dark:text-white">{t("ukGrade")}</th>
                                 </tr>
                             </thead>
                             <tbody className="text-sm text-gray-700 dark:text-gray-300">
@@ -196,90 +197,88 @@ const CgpaToGpaContent = () => {
                                     <td className="px-4 border py-2">4.0</td>
                                     <td className="px-4 border py-2">A+</td>
                                     <td className="px-4 border py-2">95-100</td>
-                                    <td className="px-4 border py-2">First-Class (Distinction)</td>
+                                    <td className="px-4 border py-2">{t("ukGrade1")}</td>
                                 </tr>
                                 <tr>
                                     <td className="px-4 border py-2">9.0 - 9.4</td>
                                     <td className="px-4 border py-2">3.9</td>
                                     <td className="px-4 border py-2">A</td>
                                     <td className="px-4 border py-2">90-94</td>
-                                    <td className="px-4 border py-2">First-Class (Upper)</td>
+                                    <td className="px-4 border py-2">{t("ukGrade2")}</td>
                                 </tr>
                                 <tr>
                                     <td className="px-4 border py-2">8.5 - 8.9</td>
                                     <td className="px-4 border py-2">3.7</td>
                                     <td className="px-4 border py-2">A-</td>
                                     <td className="px-4 border py-2">85-89</td>
-                                    <td className="px-4 border py-2">First-Class (Upper)</td>
+                                    <td className="px-4 border py-2">{t("ukGrade3")}</td>
                                 </tr>
                                 <tr>
                                     <td className="px-4 border py-2">8.0 - 8.4</td>
                                     <td className="px-4 border py-2">3.5</td>
                                     <td className="px-4 border py-2">B+</td>
                                     <td className="px-4 border py-2">80-84</td>
-                                    <td className="px-4 border py-2">Upper Second (2:1)</td>
+                                    <td className="px-4 border py-2">{t("ukGrade4")}</td>
                                 </tr>
                                 <tr>
                                     <td className="px-4 border py-2">7.5 - 7.9</td>
                                     <td className="px-4 border py-2">3.3</td>
                                     <td className="px-4 border py-2">B</td>
                                     <td className="px-4 border py-2">75-79</td>
-                                    <td className="px-4 border py-2">Upper Second (2:1)</td>
+                                    <td className="px-4 border py-2">{t("ukGrade5")}</td>
                                 </tr>
                                 <tr>
                                     <td className="px-4 border py-2">7.0 - 7.4</td>
                                     <td className="px-4 border py-2">3.0</td>
                                     <td className="px-4 border py-2">B-</td>
                                     <td className="px-4 border py-2">70-74</td>
-                                    <td className="px-4 border py-2">Lower Second (2:2)</td>
+                                    <td className="px-4 border py-2">{t("ukGrade6")}</td>
                                 </tr>
                                 <tr>
                                     <td className="px-4 border py-2">6.5 - 6.9</td>
                                     <td className="px-4 border py-2">2.7</td>
                                     <td className="px-4 border py-2">C+</td>
                                     <td className="px-4 border py-2">65-69</td>
-                                    <td className="px-4 border py-2">Lower Second (2:2)</td>
+                                    <td className="px-4 border py-2">{t("ukGrade7")}</td>
                                 </tr>
                                 <tr>
                                     <td className="px-4 border py-2">6.0 - 6.4</td>
                                     <td className="px-4 border py-2">2.5</td>
                                     <td className="px-4 border py-2">C</td>
                                     <td className="px-4 border py-2">60-64</td>
-                                    <td className="px-4 border py-2">Third-Class</td>
+                                    <td className="px-4 border py-2">{t("ukGrade8")}</td>
                                 </tr>
                                 <tr>
                                     <td className="px-4 border py-2">5.5 - 5.9</td>
                                     <td className="px-4 border py-2">2.0</td>
                                     <td className="px-4 border py-2">D</td>
                                     <td className="px-4 border py-2">55-59</td>
-                                    <td className="px-4 border py-2">Pass</td>
+                                    <td className="px-4 border py-2">{t("ukGrade9")}</td>
                                 </tr>
                                 <tr>
-                                    <td className="px-4 border py-2">Below 5.5</td>
-                                    <td className="px-4 border py-2">Below 2.0</td>
+                                    <td className="px-4 border py-2">{t("below_5_5")}</td>
+                                    <td className="px-4 border py-2">{t("below_2_0")}</td>
                                     <td className="px-4 border py-2">F</td>
-                                    <td className="px-4 border py-2">Below 55</td>
-                                    <td className="px-4 border py-2">Fail</td>
+                                    <td className="px-4 border py-2">{t("below")}</td>
+                                    <td className="px-4 border py-2">{t("ukGrade10")}</td>
                                 </tr>
                             </tbody>
                         </table>
 
-                        <h2 id="section5" className="text-2xl font-semibold  dark:text-white mt-8 mb-6 text-blue-500">How Does Lord Calculator’s CGPA to GPA Calculator Stand Out?</h2>
-
+                        <h2 id="section5" className="text-2xl font-semibold dark:text-white mt-8 mb-6 text-blue-500">
+                            {t('section5_title')}
+                        </h2>
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            Lord Calculator’s CGPA to GPA calculator stands out for its advanced features and lightning-fast performance. Thanks to the latest web framework, our calculator performs conversions with remarkable speed—even on weaker networks.
+                            {t('feature_1')}
                         </p>
-
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            The user interface is designed for easy navigation, ensuring that you can quickly input your values and get results without any hassle. We also offer features like Metric Representation, which helps visualize the converted grades more effectively.
+                            {t('feature_2')}
                         </p>
-
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            Additionally, you can save your conversion history as a PDF or share it on social media, making it easy to keep track of your results and share them with others.
+                            {t('feature_3')}
                         </p>
-
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            Our calculator also supports custom formulas. For instance, in the <a href="/cgpa-to-percentage" className="text-blue-600 hover:text-blue-800 transition duration-300">CGPA to Percentage calculator</a>, you can choose a custom <a href="/multiplication-factor" className="text-blue-600 hover:text-blue-800 transition duration-300">Multiplication Factor</a> to match the specific grading scale of your institution.
+                            {t('feature_4')}
                         </p>
                     </div>
                     <div className="space-y-6 p-4">

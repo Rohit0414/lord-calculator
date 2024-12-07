@@ -282,57 +282,66 @@ const CgpaToGpaContent = () => {
                         </p>
                     </div>
                     <div className="space-y-6 p-4">
-                        <h2 id="section6" className="text-3xl font-bold  dark:text-white mb-6 text-blue-500">How to Use CGPA to GPA Calculator</h2>
+                        <h2 id="section6" className="text-3xl font-bold dark:text-white mb-6 text-blue-500">
+                            {t('section6_title')}
+                        </h2>
 
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            Using our CGPA to GPA Calculator is easier than solving any calculus problem! Just follow these simple steps:
+                            {t('instruction_1')}
                         </p>
 
                         <ol className="list-decimal list-inside text-lg text-gray-800 dark:text-gray-200 space-y-2">
-                            <li>Head over to <strong>Lord Calculator</strong>  <strong>Educational Calculators</strong>  <strong>CGPA to GPA Calculator</strong>.</li>
-                            <li>In the first field, enter your CGPA. Make sure to include accurate numbers, including the decimal points!</li>
-                            <li>Select the GPA scale to which you are converting your grades.</li>
-                            <li>Enter the maximum CGPA that your grading system allows (this is the CGPA scale value).</li>
-                            <li>After filling in all the fields correctly, hit the <strong>Calculate</strong> button, and voilà! Your GPA conversion is done.</li>
-                            <li>You can also share your results with friends or save them as a PDF for future reference!</li>
+                            <li>{t('step_1')}</li>
+                            <li>{t('step_2')}</li>
+                            <li>{t('step_3')}</li>
+                            <li>{t('step_4')}</li>
+                            <li>{t('step_5')}</li>
+                            <li>{t('step_6')}</li>
                         </ol>
 
-                        <h2 id="section7" className="text-2xl font-semibold text-gray-900 dark:text-white mt-8 mb-6">Methods of Converting CGPA to GPA</h2>
+                        <h2 id="section7" className="text-2xl font-semibold text-gray-900 dark:text-white mt-8 mb-6">
+                            {t('section7_title')}
+                        </h2>
 
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            Converting CGPA to GPA is not a one-size-fits-all process. Different institutions follow various grading systems, and even those that use the same scale might apply different multiplication factors. Therefore, it’s essential to use the right method for your institution.
+                            {t('paragraph_1')}
                         </p>
 
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            In our calculator, we’ve used the most common formula to convert CGPA to GPA. However, it’s always a good idea to check the official documents provided by your institution for specific conversion guidelines.
+                            {t('paragraph_2')}
                         </p>
 
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            The widely-used CGPA to GPA conversion formula is as follows:
+                            {t('paragraph_3')}
                         </p>
 
                         <p className="text-lg text-gray-800 dark:text-gray-200 text-center mb-6">
-                            <span className="font-semibold">Equivalent GPA =</span>
+                            <span className="font-semibold">{t('formula_title')}</span>
                             <span className="inline-block ml-2">
-                                <div className="border-b border-gray-600 dark:border-gray-400 pb-2 translate-y-2">CGPA Obtained</div>
-                                <span className="block text-sm text-gray-600 dark:text-gray-400 translate-y-3">Max CGPA</span>
+                                <div className="border-b border-gray-600 dark:border-gray-400 pb-2 translate-y-2">
+                                    {t('formula_1')}
+                                </div>
+                                <span className="block text-sm text-gray-600 dark:text-gray-400 translate-y-3">
+                                    {t('formula_2')}
+                                </span>
                             </span>
-                            <span className="inline-block ml-4">× Max GPA</span>
+                            <span className="inline-block ml-4">{t('formula_3')}</span>
                         </p>
-
-                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-6 mb-4">Example:</h3>
+                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-6 mb-4">
+                            {t('example_title')}
+                        </h3>
 
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            Let’s say:
+                            {t('example_description')}
                         </p>
 
                         <ul className="list-disc pl-6 text-lg text-gray-800 dark:text-gray-200">
-                            <li>The student’s CGPA is <strong>8.5</strong> (out of 10)</li>
-                            <li>The target GPA scale is <strong>4.0</strong></li>
+                            <li>{t('example_list_item_1')}<b>{t("bold")}</b></li>
+                            <li>{t('example_list_item_2')}<b>{t("bold1")}</b></li>
                         </ul>
 
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            The conversion would look like this:
+                            {t('conversion_description')}
                         </p>
 
                         <div className="text-lg text-gray-800 dark:text-gray-200 text-center mb-6">
@@ -340,9 +349,9 @@ const CgpaToGpaContent = () => {
                                 <span className="font-semibold"> GPA =</span>
                                 <div className="inline-block ml-2">
                                     <div className="border-b border-gray-600 dark:border-gray-400 pb-2 translate-y-2">CGPA</div>
-                                    <span className="block text-sm text-gray-600 dark:text-gray-400 translate-y-2">Maximum CGPA</span>
+                                    <span className="block text-sm text-gray-600 dark:text-gray-400 translate-y-2">{t("maxcgpa")}</span>
                                 </div>
-                                <span className="inline-block ml-4">× Maximum GPA</span>
+                                <span className="inline-block ml-4">× {t("maxgpa")}</span>
                             </p></span>
                             <span className="font-semibold">GPA =</span>
                             <div className="inline-block ml-2">
@@ -353,54 +362,52 @@ const CgpaToGpaContent = () => {
                         </div>
 
 
-                        <h2 id="section8" className="text-2xl font-semibold  dark:text-white mt-8 mb-6 text-blue-500">University Specific Conversions</h2>
+                        <h2 id="section8" className="text-2xl font-semibold  dark:text-white mt-8 mb-6 text-blue-500">{t("university_specific_conversions")}</h2>
 
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            Your institution may follow a different conversion standard. In that case, you need to refer to your university's specific formula. This scenario usually arises when a particular institution assigns varying weightage for individual subjects. The conversion formula must then be adjusted accordingly.
+                            {t("university_specific_paragraph1")}
                         </p>
 
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            A common example is Harvard University, which requests a detailed grade distribution chart along with the converted GPA to account for grading difficulty. As a result, a CGPA of 8.5, as discussed in the above example, may be equal to 3.7 instead of 3.4.
+                            {t("university_specific_paragraph2")}
                         </p>
 
-                        <h2 id="section9" className="text-2xl font-semibold text-gray-900 dark:text-white mt-8 mb-6">Normalization Factor</h2>
+                        <h2 id="section9" className="text-2xl font-semibold text-gray-900 dark:text-white mt-8 mb-6"> {t("normalization_factor")}</h2>
 
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            When students apply for study programs abroad, their previous performance must be evaluated fairly. To achieve fairness, universities often add a normalization factor to ensure everyone has the same level playing field.
+                            {t("normalization_factor_paragraph1")}
                         </p>
 
                         <p className="text-lg text-gray-800 dark:text-gray-200">
-                            For example, consider a student evaluated based on a percentage while another student’s performance is determined using a 5.0 CGPA grading scale. To eliminate such differences, boards ensure maximum scientific accuracy by adjusting their scales. One common practice is proportional conversion.
+                            {t("normalization_factor_paragraph2")}
                         </p>
                     </div>
                     <div className=" py-6 px-4 dark:bg-gray-800 rounded-md text-gray-800 dark:text-gray-200">
 
                         <h2 id="section10" className="text-2xl font-semibold mb-4 text-blue-500">
-                            CGPA To GPA Detailed Conversion Table
+                            {t("cgpa_to_gpa_table_title")}
                         </h2>
                         <p className="text-lg mb-6">
-                            Here you can find the corresponding values for your CGPA grades on
-                            different GPA scales. You can quickly get the converted grades without
-                            calculating them.
+                            {t("cgpa_to_gpa_table_paragraph")}
                         </p>
                         <div className="overflow-x-auto">
                             <table className="table-auto w-full border-collapse border text-center dark:border-blue-600">
                                 <thead className=" dark:bg-blue-500 bg-blue-500 text-white">
                                     <tr>
                                         <th className="border border-gray-300 dark:border-gray-600 px-4 py-2">
-                                            CGPA
+                                            {t("cgpa_column")}
                                         </th>
                                         <th className="border border-gray-300 dark:border-gray-600 px-4 py-2">
-                                            US GPA (4.0 Scale)
+                                            {t("us_gpa_column")}
                                         </th>
                                         <th className="border border-gray-300 dark:border-gray-600 px-4 py-2">
-                                            GPA (4.3 Scale)
+                                            {t("gpa_4_3_column")}
                                         </th>
                                         <th className="border border-gray-300 dark:border-gray-600 px-4 py-2">
-                                            GPA (5.0 Scale)
+                                            {t("gpa_5_0_column")}
                                         </th>
                                         <th className="border border-gray-300 dark:border-gray-600 px-4 py-2">
-                                            GPA (7.0 Scale)
+                                            {t("gpa_7_0_column")}
                                         </th>
                                     </tr>
                                 </thead>
@@ -759,122 +766,140 @@ const CgpaToGpaContent = () => {
                                     </tr>
                                     <tr>
                                         <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">5.4</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 2.0</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 2.5</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 3.0</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 3.5</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">{t("below-2_0")}</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2"> {t("below_2_5")}</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">{t("below_3_0")}</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">{t("below_3_5")}</td>
                                     </tr>
                                     <tr>
                                         <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">5.3</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 2.0</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 2.5</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 3.0</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 3.5</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">{t("below-2_0")}</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2"> {t("below_2_5")}</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">{t("below_3_0")}</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">{t("below_3_5")}</td>
                                     </tr>
                                     <tr>
                                         <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">5.2</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 2.0</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 2.5</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 3.0</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 3.5</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">{t("below-2_0")}</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2"> {t("below_2_5")}</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">{t("below_3_0")}</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">{t("below_3_5")}</td>
                                     </tr>
                                     <tr>
                                         <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">5.1</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 2.0</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 2.5</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 3.0</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 3.5</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">{t("below-2_0")}</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2"> {t("below_2_5")}</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">{t("below_3_0")}</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">{t("below_3_5")}</td>
                                     </tr>
                                     <tr>
                                         <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">5.0</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 2.0</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 2.5</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 3.0</td>
-                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">Below 3.5</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">{t("below-2_0")}</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2"> {t("below_2_5")}</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">{t("below_3_0")}</td>
+                                        <td className="border border-gray-300 dark:border-gray-600 px-4 py-2">{t("below_3_5")}</td>
                                     </tr>
 
                                 </tbody>
                             </table>
                         </div>
                         <div className="max-w-4xl mx-auto mt-8 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200">
-                            <h2 id="section11" className="text-2xl font-semibold mb-4 text-blue-500">Limitations of CGPA to GPA Converter</h2>
+                            <h2 id="section11" className="text-2xl font-semibold mb-4 text-blue-500">{t("title-")}</h2>
                             <p className="text-lg mb-4">
-                                While online grade conversion calculators are convenient tools, they come with certain limitations. Let’s explore these limitations and the factors you should consider when using such calculators.
+                                {t("description.")}
                             </p>
 
                             <section className="mb-6">
-                                <h3 className="text-xl font-semibold mb-2">1. Weighted GPA Systems</h3>
+                                <h3 className="text-xl font-semibold mb-2"> {t("title.")}</h3>
                                 <p>
-                                    Many universities use a weighted GPA system where extra points are awarded for honors and advanced placement courses. In such cases, a more detailed conversion formula is necessary to maintain proportional conversions across all subjects.
+                                    {t("description-")}
                                 </p>
                             </section>
 
                             <section className="mb-6">
-                                <h3 className="text-xl font-semibold mb-2">2. Grade Caps</h3>
+                                <h3 className="text-xl font-semibold mb-2">{t(".title")}</h3>
                                 <p>
-                                    Some institutions impose a grade cap. For example, on a 10 CGPA scale, a student can only achieve a maximum CGPA of 9.5. In such cases, online calculators might not be accurate or applicable, as they don't account for these limitations.
+                                    {t("-description")}
                                 </p>
                             </section>
 
                             <section className="mb-6">
-                                <h3 className="text-xl font-semibold mb-2">3. Assumptions of Universality</h3>
+                                <h3 className="text-xl font-semibold mb-2">
+                                    {t("section3.title")}
+                                </h3>
                                 <p>
-                                    Online calculators often generate results that users assume are universally accepted. However, it's important to note that different institutions may have their own conversion standards. Always consult official documents or your academic institution before proceeding with the conversion.
+                                    {t("section3.description")}
                                 </p>
                             </section>
 
                             <section>
-                                <h3 className="text-xl font-semibold mb-2">Key Takeaways</h3>
+                                <h3 className="text-xl font-semibold mb-2">
+                                    {t("keyTakeaways.title")}
+                                </h3>
                                 <p>
-                                    These are typical constraints when using CGPA to GPA calculators and other similar tools. However, with careful attention to the details, you can ensure more accurate conversions. Remember, online tools are only meant to assist you in the calculation process — human supervision is always necessary.
+                                    {t("keyTakeaways.description")}
                                 </p>
                             </section>
+
                         </div>
                         <div className="max-w-4xl mx-auto p-4 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200">
-                            <h2 id="section12" className="text-2xl font-semibold mb-4 text-blue-500">Tips to Get Accurate CGPA to GPA Calculation</h2>
+                            <h2 id="section12" className="text-2xl font-semibold mb-4 text-blue-500">
+                                {t("section12.title")}
+                            </h2>
                             <p className="text-lg mb-4">
-                                To present academic performance effectively, make sure you are aware of these tips even if you are using online CGPA to GPA calculators:
+                                {t("section12.description")}
                             </p>
 
                             <section className="mb-6">
-                                <h3 className="text-xl font-semibold mb-2">1. Understanding Target Grading Scales</h3>
+                                <h3 className="text-xl font-semibold mb-2">
+                                    {t("section12.subsection1.title")}
+                                </h3>
                                 <p>
-                                    Always cross-check the target grading scale representation from official documents. While some institutions use a 4.0 scale, others may use a 4.3 or 5.0 scale. The CGPA calculation needs to be adjusted accordingly to fit the target grading scale.
+                                    {t("section12.subsection1.description")}
                                 </p>
                             </section>
 
                             <section className="mb-6">
-                                <h3 className="text-xl font-semibold mb-2">2. Considering Grading Rigor</h3>
+                                <h3 className="text-xl font-semibold mb-2">
+                                    {t("section12.subsection2.title")}
+                                </h3>
                                 <p>
-                                    If your institution is known for stricter grading standards, make sure to mention it in your application form. Universities, such as Harvard University, often consider this a crucial factor in evaluating academic performance.
+                                    {t("section12.subsection2.description")}
+                                </p>
+                            </section>
+                            <section className="mb-6">
+                                <h3 className="text-xl font-semibold mb-2">
+                                    {t("section13.subsection1.title")}
+                                </h3>
+                                <p>
+                                    {t("section13.subsection1.description")}
                                 </p>
                             </section>
 
                             <section className="mb-6">
-                                <h3 className="text-xl font-semibold mb-2">3. Verifying Conversion Formula</h3>
+                                <h3 className="text-xl font-semibold mb-2">
+                                    {t("section13.subsection2.title")}
+                                </h3>
                                 <p>
-                                    If you cannot find the conversion formula in official documents, do not hesitate to consult academic counselors for further assistance. They can help ensure that the conversion is accurate.
+                                    {t("section13.subsection2.description")}
                                 </p>
                             </section>
 
                             <section className="mb-6">
-                                <h3 className="text-xl font-semibold mb-2">4. Taking Account of Subject-Specific Performance</h3>
+                                <h3 className="text-xl font-semibold mb-2">
+                                    {t("section13.subsection3.title")}
+                                </h3>
                                 <p>
-                                    Some institutions differentiate between major and minor subjects, with major subjects often earning extra points. Keep this in mind when filling out application forms where converted grades are required.
-                                </p>
-                            </section>
-
-                            <section className="mb-6">
-                                <h3 className="text-xl font-semibold mb-2">5. Staying Updated with the Evolving Standards</h3>
-                                <p>
-                                    Universities frequently update grading standards and conversion formulas to improve synchronization with international standards. Ensure you are following the latest guidelines to avoid outdated methods.
+                                    {t("section13.subsection3.description")}
                                 </p>
                             </section>
 
                             <section>
-                                <h2 id="section13" className="text-2xl text-blue-600 font-semibold mb-2">Conclusion</h2>
+                                <h2 id="section13" className="text-2xl text-blue-600 font-semibold mb-2">
+                                    {t("section13.conclusion.title")}
+                                </h2>
                                 <p>
-                                    As global educational mobility increases, it is essential to be well-versed in both the basics and international standards we've discussed. While the conversion process may seem simple, there are many hidden factors. By following the tips for accurate conversion, we assure you that you'll achieve a reliable CGPA to GPA conversion.
+                                    {t("section13.conclusion.description")}
                                 </p>
                             </section>
                         </div>

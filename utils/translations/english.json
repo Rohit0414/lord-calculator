@@ -294,5 +294,91 @@
   "feature_1": "Lord Calculator’s CGPA to GPA calculator stands out for its advanced features and lightning-fast performance. Thanks to the latest web framework, our calculator performs conversions with remarkable speed—even on weaker networks.",
   "feature_2": "The user interface is designed for easy navigation, ensuring that you can quickly input your values and get results without any hassle. We also offer features like Metric Representation, which helps visualize the converted grades more effectively.",
   "feature_3": "Additionally, you can save your conversion history as a PDF or share it on social media, making it easy to keep track of your results and share them with others.",
-  "feature_4": "Our calculator also supports custom formulas. For instance, in the CGPA to Percentage calculator, you can choose a custom Multiplication Factor to match the specific grading scale of your institution."
+  "feature_4": "Our calculator also supports custom formulas. For instance, in the CGPA to Percentage calculator, you can choose a custom Multiplication Factor to match the specific grading scale of your institution.",
+  "section6_title": "How to Use CGPA to GPA Calculator",
+  "instruction_1": "Using our CGPA to GPA Calculator is easier than solving any calculus problem! Just follow these simple steps:",
+  "step_1": "Head over to Lord Calculator Educational Calculators CGPA to GPA Calculator.",
+  "step_2": "In the first field, enter your CGPA. Make sure to include accurate numbers, including the decimal points!",
+  "step_3": "Select the GPA scale to which you are converting your grades.",
+  "step_4": "Enter the maximum CGPA that your grading system allows (this is the CGPA scale value).",
+  "step_5": "After filling in all the fields correctly, hit the Calculate button, and voilà! Your GPA conversion is done.",
+  "step_6": "You can also share your results with friends or save them as a PDF for future reference!",
+  "section7_title": "Methods of Converting CGPA to GPA",
+  "paragraph_1": "Converting CGPA to GPA is not a one-size-fits-all process. Different institutions follow various grading systems, and even those that use the same scale might apply different multiplication factors. Therefore, it’s essential to use the right method for your institution.",
+  "paragraph_2": "In our calculator, we’ve used the most common formula to convert CGPA to GPA. However, it’s always a good idea to check the official documents provided by your institution for specific conversion guidelines.",
+  "paragraph_3": "The widely-used CGPA to GPA conversion formula is as follows:",
+  "formula_title": "Equivalent GPA =",
+  "formula_1": "CGPA Obtained",
+  "formula_2": "Max CGPA",
+  "formula_3": "× Max GPA",
+  "example_title": "Example:",
+  "example_description": "Let’s say:",
+  "example_list_item_1": "The student’s CGPA is ",
+  "bold": "8.5 (out of 10)",
+  "example_list_item_2": "The target GPA scale is ",
+  "bold1": "4.0",
+  "conversion_description": "The conversion would look like this:",
+  "maxcgpa": "Maximum CGPA",
+  "maxgpa": "Maximum GPA",
+  "university_specific_conversions": "University Specific Conversions",
+  "university_specific_paragraph1": "Your institution may follow a different conversion standard. In that case, you need to refer to your university's specific formula. This scenario usually arises when a particular institution assigns varying weightage for individual subjects. The conversion formula must then be adjusted accordingly.",
+  "university_specific_paragraph2": "A common example is Harvard University, which requests a detailed grade distribution chart along with the converted GPA to account for grading difficulty. As a result, a CGPA of 8.5, as discussed in the above example, may be equal to 3.7 instead of 3.4.",
+  "normalization_factor": "Normalization Factor",
+  "normalization_factor_paragraph1": "When students apply for study programs abroad, their previous performance must be evaluated fairly. To achieve fairness, universities often add a normalization factor to ensure everyone has the same level playing field.",
+  "normalization_factor_paragraph2": "For example, consider a student evaluated based on a percentage while another student’s performance is determined using a 5.0 CGPA grading scale. To eliminate such differences, boards ensure maximum scientific accuracy by adjusting their scales. One common practice is proportional conversion.",
+  "cgpa_to_gpa_table_title": "CGPA To GPA Detailed Conversion Table",
+  "cgpa_to_gpa_table_paragraph": "Here you can find the corresponding values for your CGPA grades on different GPA scales. You can quickly get the converted grades without calculating them.",
+  "cgpa_column": "CGPA",
+  "us_gpa_column": "US GPA (4.0 Scale)",
+  "gpa_4_3_column": "GPA (4.3 Scale)",
+  "gpa_5_0_column": "GPA (5.0 Scale)",
+  "gpa_7_0_column": "GPA (7.0 Scale)",
+  "below-2_0": "Below 2.0",
+  "below_2_5": "Below 2.5",
+  "below_3_0": "Below 3.0",
+  "below_3_5": "Below 3.5",
+  "title-": "Limitations of CGPA to GPA Converter",
+  "description.": "While online grade conversion calculators are convenient tools, they come with certain limitations. Let’s explore these limitations and the factors you should consider when using such calculators.",
+  "title.": "1. Weighted GPA Systems",
+  "description-": "Many universities use a weighted GPA system where extra points are awarded for honors and advanced placement courses. In such cases, a more detailed conversion formula is necessary to maintain proportional conversions across all subjects.",
+  ".title": "2. Grade Caps",
+  "-description": "Some institutions impose a grade cap. For example, on a 10 CGPA scale, a student can only achieve a maximum CGPA of 9.5. In such cases, online calculators might not be accurate or applicable, as they don't account for these limitations.",
+  "section3": {
+    "title": "3. Assumptions of Universality",
+    "description": "Online calculators often generate results that users assume are universally accepted. However, it's important to note that different institutions may have their own conversion standards. Always consult official documents or your academic institution before proceeding with the conversion."
+  },
+  "keyTakeaways": {
+    "title": "Key Takeaways",
+    "description": "These are typical constraints when using CGPA to GPA calculators and other similar tools. However, with careful attention to the details, you can ensure more accurate conversions. Remember, online tools are only meant to assist you in the calculation process — human supervision is always necessary."
+  },
+  "section12": {
+    "title": "Tips to Get Accurate CGPA to GPA Calculation",
+    "description": "To present academic performance effectively, make sure you are aware of these tips even if you are using online CGPA to GPA calculators:",
+    "subsection1": {
+      "title": "1. Understanding Target Grading Scales",
+      "description": "Always cross-check the target grading scale representation from official documents. While some institutions use a 4.0 scale, others may use a 4.3 or 5.0 scale. The CGPA calculation needs to be adjusted accordingly to fit the target grading scale."
+    },
+    "subsection2": {
+      "title": "2. Considering Grading Rigor",
+      "description": "If your institution is known for stricter grading standards, make sure to mention it in your application form. Universities, such as Harvard University, often consider this a crucial factor in evaluating academic performance."
+    }
+  },
+  "section13": {
+    "subsection1": {
+      "title": "3. Verifying Conversion Formula",
+      "description": "If you cannot find the conversion formula in official documents, do not hesitate to consult academic counselors for further assistance. They can help ensure that the conversion is accurate."
+    },
+    "subsection2": {
+      "title": "4. Taking Account of Subject-Specific Performance",
+      "description": "Some institutions differentiate between major and minor subjects, with major subjects often earning extra points. Keep this in mind when filling out application forms where converted grades are required."
+    },
+    "subsection3": {
+      "title": "5. Staying Updated with the Evolving Standards",
+      "description": "Universities frequently update grading standards and conversion formulas to improve synchronization with international standards. Ensure you are following the latest guidelines to avoid outdated methods."
+    },
+    "conclusion": {
+      "title": "Conclusion",
+      "description": "As global educational mobility increases, it is essential to be well-versed in both the basics and international standards we've discussed. While the conversion process may seem simple, there are many hidden factors. By following the tips for accurate conversion, we assure you that you'll achieve a reliable CGPA to GPA conversion."
+    }
+  }
 }

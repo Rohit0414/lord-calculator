@@ -904,136 +904,188 @@ const CgpaToGpaContent = () => {
                             </section>
                         </div>
                         <div className="max-w-4xl mx-auto p-6 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 ">
-                            <h2 id="section14" className="text-2xl font-semibold text-blue-500 mb-6">FAQs for CGPA to GPA Converter</h2>
+                            <h2 id="section14" className="text-2xl font-semibold text-blue-500 mb-6">
+                                {t("faq.title")}
+                            </h2>
 
                             <div className="mb-6">
-                                <h3 className="text-xl font-semibold text-blue-500 mb-2">Q: How to convert CGPA to GPA?</h3>
+                                <h3 className="text-xl font-semibold text-blue-500 mb-2">
+                                    {t("faq.q1")}
+                                </h3>
                                 <p className="text-lg mb-4">
-                                    <span className="font-semibold">A:</span> To convert CGPA to GPA, the commonly used formula is CGPA obtained by you upon Maximum CGPA value by university, multiplied by Maximum GPA value by university.
-
+                                    <span className="font-semibold">{t("faq.a1.label")}</span> {t("faq.a1.text")}
                                 </p>
                             </div>
 
                             <div className="mb-6">
-                                <h3 className="text-xl font-semibold text-blue-500 mb-2">Q: Indian CGPA to GPA calculator?</h3>
+                                <h3 className="text-xl font-semibold text-blue-500 mb-2">
+                                    {t("faq.q2")}
+                                </h3>
                                 <p className="text-lg mb-4">
-                                    <span className="font-semibold">A:</span> To convert Indian CGPA to USA GPA, use a multiplication factor of 4/10 with your scored CGPA.
+                                    <span className="font-semibold">{t("faq.a2.label")}</span> {t("faq.a2.text")}
                                 </p>
                             </div>
 
                             <div className="mb-6">
-                                <h3 className="text-xl font-semibold text-blue-500 mb-2">Q: How to convert CGPA to GPA​?</h3>
+                                <h3 className="text-xl font-semibold text-blue-500 mb-2">
+                                    {t("faq1.q1")}
+                                </h3>
                                 <p className="text-lg mb-4">
-                                    <span className="font-semibold">A:</span> The standard formula for converting CGPA to GPA is:
+                                    <span className="font-semibold">{t("faq.a1.label")}</span> {t("faq1.a1.text")}
                                 </p>
                                 <p className="text-lg text-gray-800 dark:text-gray-200 text-center mb-6">
-                                    <span className="font-semibold"> GPA =</span>
+                                    <span className="font-semibold">{t("faq1.formula.gpa")}</span>
                                     <span className="inline-block ml-2">
-                                        <div className="border-b border-gray-600 dark:border-gray-400 pb-2 translate-y-2">CGPA Obtained</div>
-                                        <span className="block text-sm text-gray-600 dark:text-gray-400 translate-y-3">Max CGPA</span>
+                                        <div className="border-b border-gray-600 dark:border-gray-400 pb-2 translate-y-2">
+                                            {t("faq1.formula.cgpaObtained")}
+                                        </div>
+                                        <span className="block text-sm text-gray-600 dark:text-gray-400 translate-y-3">
+                                            {t("faq1.formula.maxCgpa")}
+                                        </span>
                                     </span>
-                                    <span className="inline-block ml-4">× Max GPA</span>
+                                    <span className="inline-block ml-4">{t("faq1.formula.maxGpa")}</span>
                                 </p>
                             </div>
 
+
                             <div className="mb-6">
-                                <h3 className="text-xl font-semibold text-blue-500 mb-2">Q: How to calculate CGPA from GPA?</h3>
+                                <h3 className="text-xl font-semibold text-blue-500 mb-2">
+                                    {t("faq2.q2")}
+                                </h3>
                                 <p className="text-lg mb-4">
-                                    <span className="font-semibold">A:</span> For calculating CGPA from GPA formula is:
+                                    <span className="font-semibold">{t("faq2.a2.label")}</span> {t("faq2.a2.text")}
                                 </p>
                                 <p className="text-lg text-gray-800 dark:text-gray-200 text-center mb-6">
-                                    <span className="font-semibold"> CGPA =</span>
+                                    <span className="font-semibold">{t("faq2.formula.cgpa")}</span>
                                     <span className="inline-block ml-2">
-                                        <div className="border-b border-gray-600 dark:border-gray-400 pb-2 translate-y-2">GPA Obtained</div>
-                                        <span className="block text-sm text-gray-600 dark:text-gray-400 translate-y-3">Max GPA</span>
+                                        <div className="border-b border-gray-600 dark:border-gray-400 pb-2 translate-y-2">
+                                            {t("faq2.formula.gpaObtained")}
+                                        </div>
+                                        <span className="block text-sm text-gray-600 dark:text-gray-400 translate-y-3">
+                                            {t("faq2.formula.maxGpa")}
+                                        </span>
                                     </span>
-                                    <span className="inline-block ml-4">× Max CGPA</span>
+                                    <span className="inline-block ml-4">{t("faq2.formula.maxCgpa")}</span>
                                 </p>
                             </div>
 
                             <div className="mb-6">
-                                <h3 className="text-xl font-semibold text-blue-500 mb-2">Q: How to convert GPA to CGPA?</h3>
+                                <h3 className="text-xl font-semibold text-blue-500 mb-2">
+                                    {t("faq3.q3")}
+                                </h3>
                                 <p className="text-lg mb-4">
-                                    <span className="font-semibold">A:</span> Converting GPA to CGPA is inverse process of CGPA to GPA, if you know your GPA and wants to calculate your CGPA then formula is:
-                                </p>
-                                <p className="text-lg text-gray-800 dark:text-gray-200 text-center mb-6">
-
-                                    <span className="inline-block ml-2">
-                                        <div className="border-b border-gray-600 dark:border-gray-400 pb-2 translate-y-2">GPA Obtained</div>
-                                        <span className="block text-sm text-gray-600 dark:text-gray-400 translate-y-3">Max GPA</span>
-                                    </span>
-                                    <span className="inline-block ml-4">× Max CGPA</span>
-                                </p>
-                            </div>
-
-                            <div className="mb-6">
-                                <h3 className="text-xl font-semibold text-blue-500 mb-2">Q: Indian CGPA to US GPA?</h3>
-                                <p className="text-lg mb-4">
-                                    <span className="font-semibold">A:</span> US universities use a 4.0 GPA scale, while Indian universities use a 10-point scale. To convert Indian CGPA to US GPA, use a multiplication factor of 4/10 with your scored CGPA.
-                                </p>
-                            </div>
-
-                            <div className="mb-6">
-                                <h3 className="text-xl font-semibold text-blue-500 mb-2">Q: Indian CGPA to German GPA?</h3>
-                                <p className="text-lg mb-4">
-                                    <span className="font-semibold">A:</span> German institutes use the Modified Bavarian Formula for conversion. The formula for calculating German GPA is:
+                                    <span className="font-semibold">{t("faq3.a3.label")}</span> {t("faq3.a3.text")}
                                 </p>
                                 <p className="text-lg text-gray-800 dark:text-gray-200 text-center mb-6">
                                     <span className="inline-block ml-2">
-                                        <div className="border-b border-gray-600 dark:border-gray-400 pb-2 ">1 + 3 × (Max Grade - Obtained CGPA) / (Max Grade - Minimum Passing Grade)</div>
+                                        <div className="border-b border-gray-600 dark:border-gray-400 pb-2 translate-y-2">
+                                            {t("faq3.formula.gpaObtained")}
+                                        </div>
+                                        <span className="block text-sm text-gray-600 dark:text-gray-400 translate-y-3">
+                                            {t("faq3.formula.maxGpa")}
+                                        </span>
                                     </span>
+                                    <span className="inline-block ml-4">{t("faq3.formula.maxCgpa")}</span>
                                 </p>
                             </div>
 
+
                             <div className="mb-6">
-                                <h3 className="text-xl font-semibold text-blue-500 mb-2">Q: GPA to CGPA calculator ANNA University?</h3>
+                                <h3 className="text-xl font-semibold text-blue-500 mb-2">
+                                    {t("faq4.q4")}
+                                </h3>
                                 <p className="text-lg mb-4">
-                                    <span className="font-semibold">A:</span> The formula for converting GPA to CGPA is:
+                                    <span className="font-semibold">{t("faq4.a4.label")}</span> {t("faq4.a4.text")}
+                                </p>
+                            </div>
+
+
+                            <div className="mb-6">
+                                <h3 className="text-xl font-semibold text-blue-500 mb-2">
+                                    {t("faq5.q5")}
+                                </h3>
+                                <p className="text-lg mb-4">
+                                    <span className="font-semibold">{t("faq5.a5.label")}</span> {t("faq5.a5.text")}
                                 </p>
                                 <p className="text-lg text-gray-800 dark:text-gray-200 text-center mb-6">
                                     <span className="inline-block ml-2">
-                                        <div className="border-b border-gray-600 dark:border-gray-400 pb-2 translate-y-2">GPA Obtained</div>
-                                        <span className="block text-sm text-gray-600 dark:text-gray-400 translate-y-3">Max GPA</span>
+                                        <div className="border-b border-gray-600 dark:border-gray-400 pb-2">
+                                            {t("faq5.a5.formula")}
+                                        </div>
                                     </span>
-                                    <span className="inline-block ml-4">× Max CGPA</span>
                                 </p>
                             </div>
 
-                            <div className="mb-6">
-                                <h3 className="text-xl font-semibold text-blue-500 mb-2">Q: VIT CGPA to US GPA?</h3>
-                                <p className="text-lg mb-4">
-                                    <span className="font-semibold">A:</span> VIT follows a 10-point grading scale. To convert it into US GPA, use a 2.5 or 4/10 scaling for approximation.
-                                </p>
-                            </div>
 
                             <div className="mb-6">
-                                <h3 className="text-xl font-semibold text-blue-500 mb-2">Q: Indian CGPA to UK GPA?</h3>
+                                <h3 className="text-xl font-semibold text-blue-500 mb-2">
+                                    {t("faq6.q6")}
+                                </h3>
                                 <p className="text-lg mb-4">
-                                    <span className="font-semibold">A:</span> To convert Indian CGPA to UK GPA, refer to the specific university’s guidelines, as UK institutions convert Indian CGPA to their Class Honors System (First, Second, Third, and more).
-                                </p>
-                            </div>
-
-                            <div className="mb-6">
-                                <h3 className="text-xl font-semibold text-blue-500 mb-2">Q: SRM GPA to CGPA calculator?</h3>
-                                <p className="text-lg mb-4">
-                                    <span className="font-semibold">A:</span> For calculating SRM GPA to CGPA, you need the total credit hours and total grade points earned. However, you can use the standard formula for conversion:
+                                    <span className="font-semibold">{t("faq6.a6.label")}</span> {t("faq6.a6.text")}
                                 </p>
                                 <p className="text-lg text-gray-800 dark:text-gray-200 text-center mb-6">
-
                                     <span className="inline-block ml-2">
-                                        <div className="border-b border-gray-600 dark:border-gray-400 pb-2 translate-y-2">GPA Obtained</div>
-                                        <span className="block text-sm text-gray-600 dark:text-gray-400 translate-y-3">Max GPA</span>
+                                        <div className="border-b border-gray-600 dark:border-gray-400 pb-2 translate-y-2">
+                                            {t("faq6.a6.formula1")}
+                                        </div>
+                                        <span className="block text-sm text-gray-600 dark:text-gray-400 translate-y-3">
+                                            {t("faq6.a6.formula2")}
+                                        </span>
                                     </span>
-                                    <span className="inline-block ml-4">× Max CGPA</span>
+                                    <span className="inline-block ml-4">{t("faq6.a6.formula3")}</span>
+                                </p>
+                            </div>
+
+
+                            <div className="mb-6">
+                                <h3 className="text-xl font-semibold text-blue-500 mb-2">
+                                    {t("faq7.q7")}
+                                </h3>
+                                <p className="text-lg mb-4">
+                                    <span className="font-semibold">{t("faq7.a7.label")}</span> {t("faq7.a7.text")}
                                 </p>
                             </div>
 
                             <div className="mb-6">
-                                <h3 className="text-xl font-semibold text-blue-500 mb-2">Q: WES CGPA to GPA calculator?</h3>
+                                <h3 className="text-xl font-semibold text-blue-500 mb-2">
+                                    {t("faq7.q8")}
+                                </h3>
                                 <p className="text-lg mb-4">
-                                    <span className="font-semibold">A:</span> WES (World Education Services) evaluates academic transcripts, and GPA is assigned for credential verification by considering the grading scale and absolute scores in individual courses.
+                                    <span className="font-semibold">{t("faq7.a8.label")}</span> {t("faq7.a8.text")}
                                 </p>
                             </div>
+
+                            <div className="mb-6">
+                                <h3 className="text-xl font-semibold text-blue-500 mb-2">
+                                    {t("faq8.q9")}
+                                </h3>
+                                <p className="text-lg mb-4">
+                                    <span className="font-semibold">{t("faq8.a9.label")}</span> {t("faq8.a9.text")}
+                                </p>
+                                <p className="text-lg text-gray-800 dark:text-gray-200 text-center mb-6">
+                                    <span className="inline-block ml-2">
+                                        <div className="border-b border-gray-600 dark:border-gray-400 pb-2 translate-y-2">
+                                            {t("faq8.a9.formula.gpa")}
+                                        </div>
+                                        <span className="block text-sm text-gray-600 dark:text-gray-400 translate-y-3">
+                                            {t("faq8.a9.formula.maxGpa")}
+                                        </span>
+                                    </span>
+                                    <span className="inline-block ml-4">{t("faq8.a9.formula.maxCgpa")}</span>
+                                </p>
+                            </div>
+
+
+                            <div className="mb-6">
+                                <h3 className="text-xl font-semibold text-blue-500 mb-2">
+                                    {t("faq9.q10")}
+                                </h3>
+                                <p className="text-lg mb-4">
+                                    <span className="font-semibold">{t("faq9.a10.label")}</span> {t("faq9.a10.text")}
+                                </p>
+                            </div>
+
                         </div>
                     </div>
                 </>

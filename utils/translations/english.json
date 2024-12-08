@@ -380,5 +380,112 @@
       "title": "Conclusion",
       "description": "As global educational mobility increases, it is essential to be well-versed in both the basics and international standards we've discussed. While the conversion process may seem simple, there are many hidden factors. By following the tips for accurate conversion, we assure you that you'll achieve a reliable CGPA to GPA conversion."
     }
+  },
+  "faq": {
+    "title": "FAQs for CGPA to GPA Converter",
+    "q1": "Q: How to convert CGPA to GPA?",
+    "a1": {
+      "label": "A:",
+      "text": "To convert CGPA to GPA, the commonly used formula is CGPA obtained by you upon Maximum CGPA value by university, multiplied by Maximum GPA value by university."
+    },
+    "q2": "Q: Indian CGPA to GPA calculator?",
+    "a2": {
+      "label": "A:",
+      "text": "To convert Indian CGPA to USA GPA, use a multiplication factor of 4/10 with your scored CGPA."
+    }
+  },
+  "faq1": {
+    "q1": "Q: How to convert CGPA to GPA​?",
+    "a1": {
+      "label": "A:",
+      "text": "The standard formula for converting CGPA to GPA is:"
+    },
+    "formula": {
+      "gpa": "GPA =",
+      "cgpaObtained": "CGPA Obtained",
+      "maxCgpa": "Max CGPA",
+      "maxGpa": "× Max GPA"
+    }
+  },
+  "faq2": {
+    "q2": "Q: How to calculate CGPA from GPA?",
+    "a2": {
+      "label": "A:",
+      "text": "For calculating CGPA from GPA formula is:"
+    },
+    "formula": {
+      "cgpa": "CGPA =",
+      "gpaObtained": "GPA Obtained",
+      "maxGpa": "Max GPA",
+      "maxCgpa": "× Max CGPA"
+    }
+  },
+  "faq3": {
+    "q3": "Q: How to convert GPA to CGPA?",
+    "a3": {
+      "label": "A:",
+      "text": "Converting GPA to CGPA is inverse process of CGPA to GPA, if you know your GPA and want to calculate your CGPA, then the formula is:"
+    },
+    "formula": {
+      "gpaObtained": "GPA Obtained",
+      "maxGpa": "Max GPA",
+      "maxCgpa": "× Max CGPA"
+    }
+  },
+  "faq4": {
+    "q4": "Q: Indian CGPA to US GPA?",
+    "a4": {
+      "label": "A:",
+      "text": "US universities use a 4.0 GPA scale, while Indian universities use a 10-point scale. To convert Indian CGPA to US GPA, use a multiplication factor of 4/10 with your scored CGPA."
+    }
+  },
+  "faq5": {
+    "q5": "Q: Indian CGPA to German GPA?",
+    "a5": {
+      "label": "A:",
+      "text": "German institutes use the Modified Bavarian Formula for conversion. The formula for calculating German GPA is:",
+      "formula": "1 + 3 × (Max Grade - Obtained CGPA) / (Max Grade - Minimum Passing Grade)"
+    }
+  },
+  "faq6": {
+    "q6": "Q: GPA to CGPA calculator ANNA University?",
+    "a6": {
+      "label": "A:",
+      "text": "The formula for converting GPA to CGPA is:",
+      "formula1": "GPA Obtained",
+      "formula2": "Max GPA",
+      "formula3": "× Max CGPA"
+    }
+  },
+  "faq7": {
+    "q7": "Q: VIT CGPA to US GPA?",
+    "a7": {
+      "label": "A:",
+      "text": "VIT follows a 10-point grading scale. To convert it into US GPA, use a 2.5 or 4/10 scaling for approximation."
+    },
+    "q8": "Q: Indian CGPA to UK GPA?",
+    "a8": {
+      "label": "A:",
+      "text": "To convert Indian CGPA to UK GPA, refer to the specific university’s guidelines, as UK institutions convert Indian CGPA to their Class Honors System (First, Second, Third, and more)."
+    }
+  },
+  "faq8": {
+    "q9": "Q: SRM GPA to CGPA calculator?",
+    "a9": {
+      "label": "A:",
+      "text": "For calculating SRM GPA to CGPA, you need the total credit hours and total grade points earned. However, you can use the standard formula for conversion:",
+      "formula": {
+        "gpa": "GPA Obtained",
+        "maxGpa": "Max GPA",
+        "maxCgpa": "× Max CGPA"
+      }
+    }
+  },
+  "faq9": {
+    "q10": "Q: WES CGPA to GPA calculator?",
+    "a10": {
+      "label": "A:",
+      "text": "WES (World Education Services) evaluates academic transcripts, and GPA is assigned for credential verification by considering the grading scale and absolute scores in individual courses."
+    }
   }
 }

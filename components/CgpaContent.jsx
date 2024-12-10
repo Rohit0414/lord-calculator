@@ -295,127 +295,146 @@ const CgpaContent = () => {
                             <p className="text-lg mb-4">
                                 {t("important_terms_description")}
                             </p>
-                            <ul className="list-disc pl-6 ">
-                                <li><strong>Grade Points:</strong>Grade Points are the corresponding numerical values assigned to a particular Letter Grade. Different universities adjust the range of Grade Points as per their Letter Grades. For example, a certain university might have 10 Grade Points for an A grade while another might use an O (Outstanding) for 10 Grade Points.
+                            <ul className="list-disc pl-6">
+                                <li>
+                                    <strong>{t("grade_points.title")}:</strong> {t("grade_points.description")}
                                 </li>
-                                <li><strong>GPA:</strong> Abbreviated for Grade Point Average. It represents the average of grade points attained by a student in one semester or academic session.
+                                <li>
+                                    <strong>{t("gpa.title")}:</strong> {t("gpa.description")}
                                 </li>
-                                <li><strong>CGPA:</strong>CGPA represents the cumulative average of grade points attained in all the subjects or semesters in a specified academic session. CGPA scale varies between 0 to 4, 0 to 5, or 0 to 10. However, to get a CGPA in other formats institutions let students to convert CGPA  to percentage or in any desired format.
+                                <li>
+                                    <strong>{t("cgpa.title")}:</strong> {t("cgpa.description")}
                                 </li>
-                                <li><strong>SGPA:</strong> - SGPA is abbreviated for Semester Grade Point Average. It denominates the average grade points of all subjects in a particular semester. Credits earned and Credit hours play a significant role in calculating SGPA.
+                                <li>
+                                    <strong>{t("sgpa.title")}:</strong> {t("sgpa.description")}
                                 </li>
-                                <li><strong>Letter Grade:</strong>- These are the grade Letters assigned to the corresponding numerical value of a percentage or marks scored, or CGPA. The different educational system follows various letter grade formats. For example, the USA follows traditional A-F letter grading while Scottish, and even certain Indian educational systems follow other depictions such as "O" for outstanding, "S" for Superior, and so on!
+                                <li>
+                                    <strong>{t("letter_grade.title")}:</strong> {t("letter_grade.description")}
                                 </li>
-                                <li><strong>Credit Hours:</strong>- Credit Hours are the number of hours a student spends in a particular class per week/semester. These hours might vary depending on the subjects. Primary subjects may have more credit hours while optional may have fewer hours.</li>
-                                <li><strong>Credit Points:</strong>- Credit Points are calculated by multiplying Grade Points with the Credit Hours i.e. Credit Points = Grade Points x Credit History.
+                                <li>
+                                    <strong>{t("credit_hours.title")}:</strong> {t("credit_hours.description")}
                                 </li>
-                                <li><strong>Weighted Average:</strong>- Weighted Average depicts the overall academic performance of a student. In the weighted average, all the assessments are assigned values as per their weightage, and then weighted grades are used to calculate the final grade.
+                                <li>
+                                    <strong>{t("credit_points.title")}:</strong> {t("credit_points.description")}
                                 </li>
-                                <li><strong>Normalization:</strong>Normalization is the process of adjusting scores to counter the difference in difficulty among various exams or subjects. The impact of normalization can be seen while comparing GPA or CGPA between different universities.
+                                <li>
+                                    <strong>{t("weighted_average.title")}:</strong> {t("weighted_average.description")}
                                 </li>
-                                <li><strong>Cumulative Average:</strong>It is the average of all grade points or GPAs earned over the academic sessions till now.
+                                <li>
+                                    <strong>{t("normalization.title")}:</strong> {t("normalization.description")}
+                                </li>
+                                <li>
+                                    <strong>{t("cumulative_average.title")}:</strong> {t("cumulative_average.description")}
                                 </li>
                             </ul>
                         </div>
-                        <div className=''>
-                            <h2 id='section7' className="text-2xl font-semibold text-blue-400 mt-6 mb-4">Why Convert CGPA to Percentage or Percentage to CGPA?</h2>
+                        <div className='mb-4'>
+                            <h2 id="section7" className="text-2xl font-semibold text-blue-400 mt-6 mb-4">
+                                {t('whyConvertTitle')}
+                            </h2>
+
                             <img
                                 src="/CGPA-to-Percentage-Conversion-for-different-Boards-and-Universities.jpg"
                                 alt="CGPA to Percentage Calculator"
                                 className="mx-auto mb-6"
                             />
-                            <p className="text-lg text-gray-700  dark:text-gray-300">
-                                Now that you know all the related terms, the question arises: why do we need conversions or calculations like CGPA to percentage, or even percentage to CGPA? Well, the reasons might vary from person to person.
+                            <p className="text-lg text-gray-700 dark:text-gray-300">
+                                {t('whyConvertExplanation')}
+                            </p>
+
+                        </div>
+
+                        <div className=" mb-4 ">
+                            <h4 className="text-xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mb-2 dark:text-white">
+                                {t('boardsUniversitiesTitle')}
+                            </h4>
+                            <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
+                                {t('boardsUniversitiesText1')}
+                            </p>
+                            <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
+                                {t('boardsUniversitiesText2')}
+                            </p>
+                            <p className="text-lg text-gray-700 dark:text-gray-300">
+                                {t('boardsUniversitiesText3')}
                             </p>
                         </div>
 
-                        <div className=" ">
+
+                        <div className="mb-4">
                             <h4 className="text-xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mb-2 dark:text-white">
-                                Boards/Universities Requirement
+                                {t('internationalRelevanceTitle')}
                             </h4>
                             <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
-                                Certain academic forms and procedures require students to submit percentages along with their CGPA. In that case, you have no option but to quickly head over to websites like Lord Calculator that can give your grades in any required format within fractions of a second. You can convert CGPA to percentage with just a few clicks.
+                                {t('internationalRelevanceText1')}
                             </p>
-                            <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
-                                Additionally, when changing your board/university, you may be required to fill in your previous grades as per the new board/university format.
-                            </p>
-                            <p className="text-lg text-gray-700  dark:text-gray-300">
-                                Another reason is while filling out forms for competitive exams such as GATE, CAT, or UPSC, candidates are required to submit their grades in a universal format, such as a percentage. And we all know that one minor mistake can lead to the rejection of your form. In such cases, a credible tool that can accurately convert your CGPA into the requested format comes in handy and saves you time and effort.
+                            <p className="text-lg text-gray-700 dark:text-gray-300">
+                                {t('internationalRelevanceText2')}
                             </p>
                         </div>
 
-                        <div className="">
-                            <h4 className="text-xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mb-2 dark:text-white">
-                                International Relevance
-                            </h4>
-                            <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
-                                Another common real-life situation for using a CGPA calculator is when you are applying for overseas courses. For example, if you are an Indian student planning to study abroad, grading systems within India vary widely. The grade calculation at Delhi University differs from that at IIT. Different universities/boards use different multiplication factors. In such scenarios, overseas universities set up a universal parameter, such as percentage, to have a fair and unbiased view of an applicant's academic performance. Thus, you are required to convert your grades, such as percentage to CGPA or CGPA to percentage, using the established method by your university.
-                            </p>
-                            <p className="text-lg text-gray-700  dark:text-gray-300">
-                                The same applies to schooling boards like CBSE, ICSE, state boards, and the standards followed in the US or European Union.
-                            </p>
-                        </div>
 
                         <div className=''>
                             <h2 id='section8' className="text-2xl font-semibold text-blue-500 mt-6 mb-4 dark:text-white">
-                                How to Calculate Percentage from CGPA
+                                {t('howToCalculatePercentageTitle')}
                             </h2>
                             <p className="text-lg mb-4 text-gray-700 dark:text-gray-300">
-                                Now that you understand the importance and relevance of converting CGPA to percentage, let’s explore how you can accurately determine your percentage from CGPA.
-                                There are two methods to do this: the manual method or using an online CGPA calculator. The manual method involves writing out an equation and calculating step by step, while an online calculator can instantly convert your grades with minimal effort!
-                                Don't worry, we’ll discuss both methods so you can choose the one that suits you best.
+                                {t('howToCalculatePercentageText1')}
                             </p>
 
-                            <h3 className="text-xl font-semibold mt-4 mb-2 dark:text-white">Manual Method</h3>
+                            <h3 className="text-xl font-semibold mt-4 mb-2 dark:text-white">{t('manualMethodTitle')}</h3>
                             <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
-                                To convert CGPA to percentage (or vice versa), you’ll need to understand the grading scale, credit scores, and multiplication factor used by your board/university.
-                                Once you have this information, you can apply the following formula:
+                                {t('manualMethodText1')}
                             </p>
                             <p className="text-lg mb-4 dark:text-white">
-                                <strong>Percentage = CGPA × Multiplication Factor</strong>
+                                <strong>{t('percentageFormula')}</strong>
                             </p>
                             <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
-                                After applying the formula, you're one-fourth of the way done. If you have a knack for calculations or are familiar with Vedic math, it should be easy to divide and multiply with accurate decimal points to get the correct conversion. However, to avoid mistakes, using a calculator is highly recommended.
+                                {t('manualMethodText2')}
                             </p>
                             <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
-                                But why not save yourself some time and effort by using an automatic method, especially if you're already using a calculator? It’ll make the whole process quicker and more accurate.
+                                {t('manualMethodText3')}
                             </p>
 
-                            <h3 className="text-xl font-semibold mt-4 mb-2 dark:text-white">Automatic Method</h3>
+
+                            <h3 className="text-xl font-semibold mt-4 mb-2 dark:text-white">{t('automaticMethodTitle')}</h3>
                             <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
-                                The automatic method is simple and error-free. To convert CGPA to percentage (or vice versa) using the automatic method, just enter the required values in the appropriate fields of the CGPA calculator.
-                                Select your grading scale or manually enter the multiplication factor, then hit the "Calculate" button. That’s it! Your conversion is done in an instant.
+                                {t('automaticMethodText1')}
                             </p>
                             <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
-                                If you're using LordCalculator’s CGPA calculator, you can even export your conversion history as a PDF and save it for future reference. We also offer a customized CGPA to Percentage conversion certificate.
+                                {t('automaticMethodText2')}
                             </p>
-                            <p className="text-lg text-gray-700  dark:text-gray-300">
-                                By using the automatic method, you eliminate the possibility of errors, like accidentally entering incorrect values during manual calculation. This is especially helpful when using basic calculators, which can sometimes lead to mistakes in multiplication and division.
+                            <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
+                                {t('automaticMethodText3')}
                             </p>
+
                         </div>
 
-                        <div className=''>
-                            <h2 id='section9' className="text-2xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mt-6 mb-4 dark:text-white">
-                                Common Pitfalls during CGPA to Percentage Conversion
+                        <div className="">
+                            <h2 id="section9" className="text-2xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mt-6 mb-4 dark:text-white">
+                                {t('commonPitfallsTitle')}
                             </h2>
                             <p className="text-lg mb-4 text-gray-700 dark:text-gray-300">
-                                Now that you know how to convert CGPA to percentage, there are a few things you should carefully consider to ensure accurate results. Below are the most common errors that students make while calculating their percentage from CGPA (or vice-versa). Make sure you avoid these common mistakes.
+                                {t('commonPitfallsIntro')}
                             </p>
                             <ul className="list-decimal pl-6 mb-6">
-                                <li className='text-gray-700 dark:text-gray-300'>
-                                    <strong>Misinterpreting the Formula:</strong> Some students mistakenly interpret the formula by using the wrong multiplier, for example, using 10 instead of 9.5. It’s crucial to understand that even though various universities may use the same grading scale, they might apply different multiplication factors for CGPA to percentage or percentage to CGPA conversion. For example, CBSE, ICSE, Jawaharlal Nehru Technological University (JNTU), and Savitribai Phule University (SPPU) all use a 10-point grading scale, but each has its own multiplication factor. CBSE uses 9.5, ICSE uses 9.8, JNTU uses 10, and SPPU uses 6.3. So, it's important to know the exact multiplication factor for your board or university to avoid errors, even when using online CGPA calculators.
+                                <li className="text-gray-700 dark:text-gray-300">
+                                    <strong>{t('misinterpretingFormula')}</strong> {t('misinterpretingFormulaDesc')}
                                 </li>
-                                <li className='text-gray-700 dark:text-gray-300'>
-                                    <strong>Not Knowing the Board's Formula:</strong> Another common pitfall is being unaware that different universities use different formulas. As mentioned earlier, JNTU or SPPU apply multiplication factors directly to convert CGPA to percentage. However, universities like the University of Mumbai or Gujarat Technological University (GTU) use a different approach. They first multiply the CGPA by a specific multiplication factor (7.25 for Mumbai University or 7.1 for GTU) and then add a fixed value (11 for Mumbai University or 12 for GTU) to the product to determine the percentage. We will discuss these conversion factors for different universities and boards in a later section of this article.
+                                <li className="text-gray-700 dark:text-gray-300">
+                                    <strong>{t('notKnowingBoardsFormula')}</strong> {t('notKnowingBoardsFormulaDesc')}
                                 </li>
-                                <li className='text-gray-700 dark:text-gray-300'>
-                                    <strong>Over-reliance on Online CGPA Calculators:</strong> While online calculators offer a quick and reliable solution for grade conversion, they are not always 100% accurate. Online calculators may not account for all the special cases we discussed, such as those for Mumbai University or GTU. While LordCalculator strives to include all possible parameters, it’s not recommended to rely solely on online calculators for conversions. It’s always a good idea to double-check your values and the method used by your university or board.
+                                <li className="text-gray-700 dark:text-gray-300">
+                                    <strong>{t('overRelianceOnCalculators')}</strong> {t('overRelianceOnCalculatorsDesc')}
                                 </li>
                             </ul>
                         </div>
 
+
                         <div class="container mx-auto p-4">
-                            <h2 id='section10' className="text-2xl font-semibold text-blue-400 mt-6 mb-4">CGPA to Percentage in 10 Grade Points System</h2>
+                            <h2 id="section10" className="text-2xl font-semibold text-blue-400 mt-6 mb-4">
+                                {t('cgpaToPercentage10GradePoints')}
+                            </h2>
+
                             <div class="grid grid-cols-1 sm:grid-cols-3 border border-blue-400">
                                 <span className='border p-2 rounded'>3 CGPA to Percentage 28.5%</span>
 
@@ -1431,9 +1450,10 @@ const CgpaContent = () => {
 
 
                         <div class="container mx-auto p-4">
-                            <h1 id='section11' class="text-xl font-bold text-left text-blue-400 mb-4">
-                                CGPA to Percentage in 5 Grade Scale
-                            </h1>
+                            <h2 id="section11" className="text-xl font-bold text-left text-blue-400 mb-4">
+                                {t('cgpaToPercentage5GradeScale')}
+                            </h2>
+
                             <div class="grid grid-cols-1 sm:grid-cols-3 border border-blue-400">
                                 <div class="border p-2 rounded">1.00 CGPA in Percentage 20.00%</div>
                                 <div class="border p-2 rounded">1.01 CGPA in Percentage 20.25%</div>
@@ -1842,9 +1862,10 @@ const CgpaContent = () => {
 
                         <div className="container mx-auto p-4">
                             <div>
-                                <h2 id="section12" class="text-xl font-bold text-blue-400 mb-4">
-                                    CGPA to Percentage in 4 Grade Scale
+                                <h2 id="section12" className="text-xl font-bold text-blue-400 mb-4">
+                                    {t('cgpaToPercentage4GradeScale')}
                                 </h2>
+
                                 <div class="grid grid-cols-1 sm:grid-cols-3 border-blue-400 border">
                                     <div class="border p-2 rounded">1.00 CGPA in Percentage 25.00%</div>
                                     <div class="border p-2 rounded">1.01 CGPA in Percentage 25.25%</div>

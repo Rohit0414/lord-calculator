@@ -835,10 +835,77 @@
   "cgpa_examplefinal_numerator": "28.8 + 19.5 + 26.7 + 48",
   "cgpa_examplefinal_denominator": "15",
   "cgpa_examplefinal_result": "CGPA = 8.2",
-
-  
-    "important_terms_title": "Definition of Important Terms You Need to Know",
-    "important_terms_description": "While going through an official document, form, or even your certificate you see certain terms and abbreviations that are repeatedly used. Let us go over them quickly before proceeding to how different boards/universities set their conversion formula."
-  
-  
+  "important_terms_title": "Definition of Important Terms You Need to Know",
+  "important_terms_description": "While going through an official document, form, or even your certificate you see certain terms and abbreviations that are repeatedly used. Let us go over them quickly before proceeding to how different boards/universities set their conversion formula.",
+  "grade_points": {
+    "title": "Grade Points",
+    "description": "Grade Points are the corresponding numerical values assigned to a particular Letter Grade. Different universities adjust the range of Grade Points as per their Letter Grades. For example, a certain university might have 10 Grade Points for an A grade while another might use an O (Outstanding) for 10 Grade Points."
+  },
+  "gpa": {
+    "title": "GPA",
+    "description": "Abbreviated for Grade Point Average. It represents the average of grade points attained by a student in one semester or academic session."
+  },
+  "cgpa": {
+    "title": "CGPA",
+    "description": "CGPA represents the cumulative average of grade points attained in all the subjects or semesters in a specified academic session. CGPA scale varies between 0 to 4, 0 to 5, or 0 to 10. However, to get a CGPA in other formats institutions let students convert CGPA to percentage or in any desired format."
+  },
+  "sgpa": {
+    "title": "SGPA",
+    "description": "SGPA is abbreviated for Semester Grade Point Average. It denotes the average grade points of all subjects in a particular semester. Credits earned and Credit hours play a significant role in calculating SGPA."
+  },
+  "letter_grade": {
+    "title": "Letter Grade",
+    "description": "These are the grade Letters assigned to the corresponding numerical value of a percentage or marks scored, or CGPA. The different educational system follows various letter grade formats. For example, the USA follows traditional A-F letter grading while Scottish, and even certain Indian educational systems follow other depictions such as 'O' for outstanding, 'S' for Superior, and so on!"
+  },
+  "credit_hours": {
+    "title": "Credit Hours",
+    "description": "Credit Hours are the number of hours a student spends in a particular class per week/semester. These hours might vary depending on the subjects. Primary subjects may have more credit hours while optional may have fewer hours."
+  },
+  "credit_points": {
+    "title": "Credit Points",
+    "description": "Credit Points are calculated by multiplying Grade Points with the Credit Hours i.e. Credit Points = Grade Points x Credit Hours."
+  },
+  "weighted_average": {
+    "title": "Weighted Average",
+    "description": "Weighted Average depicts the overall academic performance of a student. In the weighted average, all the assessments are assigned values as per their weightage, and then weighted grades are used to calculate the final grade."
+  },
+  "normalization": {
+    "title": "Normalization",
+    "description": "Normalization is the process of adjusting scores to counter the difference in difficulty among various exams or subjects. The impact of normalization can be seen while comparing GPA or CGPA between different universities."
+  },
+  "cumulative_average": {
+    "title": "Cumulative Average",
+    "description": "It is the average of all grade points or GPAs earned over the academic sessions till now."
+  },
+  "whyConvertTitle": "Why Convert CGPA to Percentage or Percentage to CGPA?",
+  "whyConvertExplanation": "Now that you know all the related terms, the question arises: why do we need conversions or calculations like CGPA to percentage, or even percentage to CGPA? Well, the reasons might vary from person to person.",
+  "boardsUniversitiesTitle": "Boards/Universities Requirement",
+  "boardsUniversitiesText1": "Certain academic forms and procedures require students to submit percentages along with their CGPA. In that case, you have no option but to quickly head over to websites like Lord Calculator that can give your grades in any required format within fractions of a second. You can convert CGPA to percentage with just a few clicks.",
+  "boardsUniversitiesText2": "Additionally, when changing your board/university, you may be required to fill in your previous grades as per the new board/university format.",
+  "boardsUniversitiesText3": "Another reason is while filling out forms for competitive exams such as GATE, CAT, or UPSC, candidates are required to submit their grades in a universal format, such as a percentage. And we all know that one minor mistake can lead to the rejection of your form. In such cases, a credible tool that can accurately convert your CGPA into the requested format comes in handy and saves you time and effort.",
+  "internationalRelevanceTitle": "International Relevance",
+  "internationalRelevanceText1": "Another common real-life situation for using a CGPA calculator is when you are applying for overseas courses. For example, if you are an Indian student planning to study abroad, grading systems within India vary widely. The grade calculation at Delhi University differs from that at IIT. Different universities/boards use different multiplication factors. In such scenarios, overseas universities set up a universal parameter, such as percentage, to have a fair and unbiased view of an applicant's academic performance. Thus, you are required to convert your grades, such as percentage to CGPA or CGPA to percentage, using the established method by your university.",
+  "internationalRelevanceText2": "The same applies to schooling boards like CBSE, ICSE, state boards, and the standards followed in the US or European Union.",
+  "howToCalculatePercentageTitle": "How to Calculate Percentage from CGPA",
+  "howToCalculatePercentageText1": "Now that you understand the importance and relevance of converting CGPA to percentage, let’s explore how you can accurately determine your percentage from CGPA. There are two methods to do this: the manual method or using an online CGPA calculator. The manual method involves writing out an equation and calculating step by step, while an online calculator can instantly convert your grades with minimal effort! Don't worry, we’ll discuss both methods so you can choose the one that suits you best.",
+  "manualMethodTitle": "Manual Method",
+  "manualMethodText1": "To convert CGPA to percentage (or vice versa), you’ll need to understand the grading scale, credit scores, and multiplication factor used by your board/university. Once you have this information, you can apply the following formula:",
+  "percentageFormula": "Percentage = CGPA × Multiplication Factor",
+  "manualMethodText2": "After applying the formula, you're one-fourth of the way done. If you have a knack for calculations or are familiar with Vedic math, it should be easy to divide and multiply with accurate decimal points to get the correct conversion. However, to avoid mistakes, using a calculator is highly recommended.",
+  "manualMethodText3": "But why not save yourself some time and effort by using an automatic method, especially if you're already using a calculator? It’ll make the whole process quicker and more accurate.",
+  "automaticMethodTitle": "Automatic Method",
+  "automaticMethodText1": "The automatic method is simple and error-free. To convert CGPA to percentage (or vice versa) using the automatic method, just enter the required values in the appropriate fields of the CGPA calculator. Select your grading scale or manually enter the multiplication factor, then hit the 'Calculate' button. That’s it! Your conversion is done in an instant.",
+  "automaticMethodText2": "If you're using LordCalculator’s CGPA calculator, you can even export your conversion history as a PDF and save it for future reference. We also offer a customized CGPA to Percentage conversion certificate.",
+  "automaticMethodText3": "By using the automatic method, you eliminate the possibility of errors, like accidentally entering incorrect values during manual calculation. This is especially helpful when using basic calculators, which can sometimes lead to mistakes in multiplication and division.",
+  "commonPitfallsTitle": "Common Pitfalls during CGPA to Percentage Conversion",
+  "commonPitfallsIntro": "Now that you know how to convert CGPA to percentage, there are a few things you should carefully consider to ensure accurate results. Below are the most common errors that students make while calculating their percentage from CGPA (or vice-versa). Make sure you avoid these common mistakes.",
+  "misinterpretingFormula": "Misinterpreting the Formula:",
+  "misinterpretingFormulaDesc": "Some students mistakenly interpret the formula by using the wrong multiplier, for example, using 10 instead of 9.5. It’s crucial to understand that even though various universities may use the same grading scale, they might apply different multiplication factors for CGPA to percentage or percentage to CGPA conversion. For example, CBSE, ICSE, Jawaharlal Nehru Technological University (JNTU), and Savitribai Phule University (SPPU) all use a 10-point grading scale, but each has its own multiplication factor. CBSE uses 9.5, ICSE uses 9.8, JNTU uses 10, and SPPU uses 6.3. So, it's important to know the exact multiplication factor for your board or university to avoid errors, even when using online CGPA calculators.",
+  "notKnowingBoardsFormula": "Not Knowing the Board's Formula:",
+  "notKnowingBoardsFormulaDesc": "Another common pitfall is being unaware that different universities use different formulas. As mentioned earlier, JNTU or SPPU apply multiplication factors directly to convert CGPA to percentage. However, universities like the University of Mumbai or Gujarat Technological University (GTU) use a different approach. They first multiply the CGPA by a specific multiplication factor (7.25 for Mumbai University or 7.1 for GTU) and then add a fixed value (11 for Mumbai University or 12 for GTU) to the product to determine the percentage. We will discuss these conversion factors for different universities and boards in a later section of this article.",
+  "overRelianceOnCalculators": "Over-reliance on Online CGPA Calculators:",
+  "overRelianceOnCalculatorsDesc": "While online calculators offer a quick and reliable solution for grade conversion, they are not always 100% accurate. Online calculators may not account for all the special cases we discussed, such as those for Mumbai University or GTU. While LordCalculator strives to include all possible parameters, it’s not recommended to rely solely on online calculators for conversions. It’s always a good idea to double-check your values and the method used by your university or board.",
+  "cgpaToPercentage10GradePoints": "CGPA to Percentage in 10 Grade Points System",
+  "cgpaToPercentage5GradeScale": "CGPA to Percentage in 5 Grade Scale",
+  "cgpaToPercentage4GradeScale": "CGPA to Percentage in 4 Grade Scale"
 }

@@ -1,21 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useTheme } from '@/context/ThemeContext';
+import { useTranslation } from 'react-i18next';
 
 
 
 const CgpaContent = () => {
-    
+
     const [isExpanded, setIsExpanded] = useState(true);
     const [isMainExpanded, setIsMainExpanded] = useState(false);
     const theme = useTheme();
+    const { t } = useTranslation();
 
 
     const toggleMainExpand = () => {
         setIsMainExpanded(!isMainExpanded);
     };
 
- 
+
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
@@ -33,48 +35,45 @@ const CgpaContent = () => {
     return (
         <div className={`mx-auto relative bg-white text-justify p-6  leading-relaxed ${theme === "dark" ? "dark" : "light"} dark:bg-gray-900 dark:text-white  `}>
             <div className="">
-                <div className='dark:bg-gray-900'>
-                    <h1 id='section1' className="text-4xl  font-bold  text-blue-500 drop-shadow-md mt-4 mb-4">
-                        CGPA to Percentage Calculator
+                <div className="dark:bg-gray-900">
+                    <h1 id="section1" className="text-4xl font-bold text-blue-500 drop-shadow-md mt-4 mb-4">
+                        {t("section1")}
                     </h1>
-
-                    <p className="text-lg mb-4 text-gray-700 leading-snug  dark:text-gray-300">
-                        Welcome fellow learners and academicians! As you all know, CGPAs and Percentages play important roles in the entire educational system. We often get into situations where we need to use them interchangeably, so Lord Calculator presents you with the most reliable and blazing-fast CGPA to Percentage Calculator to help you calculate the grades on the go! Here's a detailed guide on how our CGPA calculator works followed by an explanation of the Grading System used by various universities. We also have listed the CGPA to Percentage formula as per various grading systems followed.
+                    <p className="text-lg mb-4 text-gray-700 leading-snug dark:text-gray-300">
+                        {t("intro_paragraph")}
                     </p>
-                    <h2 id='section2' className="text-2xl font-bold mb-2 text-blue-500 drop-shadow-sm">
-                        CGPA to Percentage Conversion Formula
+                    <h2 id="section2" className="text-2xl font-bold mb-2 text-blue-500 drop-shadow-sm">
+                        {t("-section2")}
                     </h2>
                     <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
-                        <strong>Percentage = CGPA × Multiplication Factor</strong>
+                        <strong>{t("-formula")}</strong>
                     </p>
                 </div>
-                <div className="bg-white  rounded-lg shadow-lg max-w-4xl mx-auto border-t-4 mt-8 mb-4 dark:bg-gray-800 dark:border lue-400">
+                <div className="bg-white rounded-lg shadow-lg max-w-4xl mx-auto border-t-4 mt-8 mb-4 dark:bg-gray-800 dark:border-blue-400">
                     <div className="flex justify-between items-center">
-                        <h3 className="text-xl p-4 font-semibold text-blue-600 dark:text-blue-400">Table of Contents</h3>
+                        <h3 className="text-xl p-4 font-semibold text-blue-600 dark:text-blue-400">
+                            {t("-table_of_contents")}
+                        </h3>
                         <button
                             onClick={() => setIsExpanded(!isExpanded)}
                             className="text-blue-600 hover:text-blue-800 font-medium focus:outline-none transition-all duration-300 dark:text-blue-400"
                         >
-                            {isExpanded ? (
-                                <span className="mr-4">&#9650;</span>
-                            ) : (
-                                <span className="mr-4">&#9660;</span>
-                            )}
+                            {isExpanded ? <span className="mr-4">&#9650;</span> : <span className="mr-4">&#9660;</span>}
                         </button>
                     </div>
                     {isExpanded && (
                         <div className="grid grid-cols-2 gap-x-6">
                             <ol className="space-y-3 p-4">
                                 {[
-                                    'CGPA to Percentage Calculator',
-                                    'CGPA to Percentage Conversion Formula',
-                                    'Lord Calculators CGPA to Percentage Calculator',
-                                    'How to Use Lord Calculator CGPA to Percentage Calculator',
-                                    'What is CGPA and How Is It Calculated?',
-                                    'Definition of Important Terms You Need to Know',
-                                    'Why Convert CGPA to Percentage or Percentage to CGPA?',
-                                    'How to Calculate Percentage from CGPA',
-                                    'Common Pitfalls during CGPA to Percentage Conversion',
+                                    t("cgpa_to_percentage_calculator"),
+                                    t("cgpa_to_percentage_formula"),
+                                    t("lord_calculator_tool"),
+                                    t("how_to_use_tool"),
+                                    t("-what_is_cgpa"),
+                                    t("important_terms"),
+                                    t("why_convert_cgpa"),
+                                    t("calculate_percentage"),
+                                    t("common_pitfalls"),
                                 ].map((item, index) => (
                                     <li key={index + 1}>
                                         <button
@@ -91,22 +90,22 @@ const CgpaContent = () => {
                             </ol>
                             <ol className="space-y-3 p-4">
                                 {[
-                                    'CGPA to Percentage in 10 Grade Points System',
-                                    'CGPA to Percentage in 5 Grade Scale',
-                                    'CGPA to Percentage in 4 Grade Scale',
-                                    'What is a Grading Scale & How do Universities Choose Their Standard Scale?',
-                                    'What is a Multiplication Factor and How Does it Work?',
-                                    'CGPA to Percentage Conversion for different Boards and Universities.',
-                                    ' What are the Impacts of Different Grading Scales on Students?',
-                                    'FAQs related to CGPA Calculator',
+                                    t("cgpa_in_10_point"),
+                                    t("cgpa_in_5_point"),
+                                    t("cgpa_in_4_point"),
+                                    t("grading_scale"),
+                                    t("-multiplication_factor"),
+                                    t("different_boards"),
+                                    t("grading_scale_impacts"),
+                                    t("-faqs"),
                                 ].map((item, index) => (
                                     <li key={index + 10}>
                                         <button
                                             onClick={() => {
-                                                scrollToSection(`section${index + 10}`)
+                                                scrollToSection(`section${index + 10}`);
                                                 setIsMainExpanded(isMainExpanded === index + 10 ? null : index + 10);
                                             }}
-                                            className="w-full text-left text-blue-600 hover:text-blue-800 focus:outline-none transition-all hover:scale-95 duration-300 dark:text-blue-400 dark:hover:text-blue-600"
+                                            className="w-full text-left text-blue-600 hover:text-blue-800 focus:outline-none transition-all hover:scale-[102%] duration-300 dark:text-blue-400 dark:hover:text-blue-600"
                                         >
                                             {index + 10}. {item}
                                         </button>
@@ -116,12 +115,9 @@ const CgpaContent = () => {
                                     <div className="absolute bottom-20 left-0 right-0 h-96 bg-gradient-to-t from-white to-transparent"></div>
                                 )}
                             </ol>
-
                         </div>
                     )}
-
                 </div>
-
 
                 {isMainExpanded && (
                     <>
@@ -129,7 +125,9 @@ const CgpaContent = () => {
 
 
                             <div className=''>
-                                <h2 id='section3' className="text-2xl text-blue-600 drop-shadow-sm mt-6 mb-6">Lord Calculator's CGPA to Percentage Calculator</h2>
+                                <h2 id="section3" className="text-2xl text-blue-600 drop-shadow-sm mt-6 mb-6">
+                                    {t("lord_calculator_cgpa_calculator")}
+                                </h2>
                                 <p>
                                     <img
                                         src="/Lord-Calculator_s-CGPA-to-Percentage-Calculator.jpg"
@@ -139,64 +137,66 @@ const CgpaContent = () => {
                                 </p>
 
                                 <p className="text-lg text-gray-700 mb-6 leading-relaxed dark:text-gray-300">
-                                    Our CGPA calculator is designed with two main factors in mind: ease of use and lightning-fast calculations.
+                                    {t("cgpa_calculator_description")}
                                     {!isMainExpanded && (
                                         <span className="text-gray-600 dark:text-gray-400">... </span>
                                     )}
                                     {isMainExpanded && (
                                         <>
-                                            While grade calculations involve various factors, we've incorporated all the essential components to calculate your grades or percentages accurately. Different universities use different grading scales and multiplication factors (don’t worry, we'll explain these terms below). For your convenience, we’ve included both the Grade Scale and the manual Multiplication Factor.
+                                            {t("cgpa_calculator_description_expanded")}
                                         </>
                                     )}
                                 </p>
 
                                 <div>
-                                    <h3 id='section4' className="text-2xl font-semibold text-blue-600 mt-8 mb-4 dark:text-white">
-                                        How to Use Lord Calculator's CGPA to Percentage Calculator
+                                    <h3 id="section4" className="text-2xl font-semibold text-blue-600 mt-8 mb-4 dark:text-white">
+                                        {t("how_to_use_heading")}
                                     </h3>
 
                                     <p className="text-lg text-gray-700 mb-6 leading-relaxed dark:text-gray-300">
-                                        Simply enter the required fields in our CGPA calculator, hit "Calculate," and voilà! Your percentage will be displayed along with our grade meter. It’s that simple. However, let me quickly explain the fields and data we need from you to calculate your grades and percentages accurately.
+                                        {t("how_to_use_description")}
                                     </p>
 
                                     <ol className="list-decimal list-inside pl-6 text-lg text-gray-700 mb-8 space-y-4 dark:text-gray-300">
                                         <li>
-                                            Head over to{" "}
-                                            <Link href="/" className="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-500">
-                                                https://lordcalculator.com/educational-calculator/cgpa-to-percentage-calculator
+                                            {t("how_to_use_step1")}
+                                            <Link
+                                                href={t("how_to_use_step1_link")}
+                                                className="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-500"
+                                            >
+                                                {t("how_to_use_step1_link")}
                                             </Link>
                                         </li>
-                                        <li>
-                                            In the first field, enter your CGPA. Make sure to input it accurately, including any decimal points.
-                                        </li>
-                                        <li>
-                                            Choose the Grading Scale used by your university. Common grading scales are 4, 5, and 10. Alternatively, you can enter the multiplication factor manually and hit the calculate button. Once you've entered all the values, click "Calculate" to get your percentage. You’ll also be able to check your performance on the grading meter. Additionally, you can get a CGPA to percentage conversion certificate from us (note that this is a representational certificate).
-                                        </li>
+                                        <li>{t("how_to_use_step2")}</li>
+                                        <li>{t("how_to_use_step3")}</li>
                                     </ol>
                                 </div>
-                                <div className=''>
-                                    <h3 className="text-2xl font-semibold text-blue-600  mb-4 dark:text-white">
-                                        Tip for CGPA to Percentage Calculation
+                                <div className='mb-6'>
+                                    <h3 className="text-2xl font-semibold text-blue-600 mb-4 dark:text-white">
+                                        {t("tip_heading")}
                                     </h3>
 
                                     <p className="text-lg text-gray-700 mb-6 leading-relaxed dark:text-gray-300">
-                                        Different universities may use varying multiplication factors (also known as conversion factors), even under the same grading scale. For instance, University X might use a 1-point grading scale with a standard multiplication factor of 9.5, while another university could use a factor of 9.7 or 9.8. So, it's important to double-check the multiplication factor you enter into the CGPA to percentage calculator before hitting the "Calculate" button.
+                                        {t("tip_description1")}
                                     </p>
 
                                     <p className="text-lg text-gray-700 mb-6 leading-relaxed dark:text-gray-300">
-                                        If you're unsure about your university's Grade Scale or multiplication factor, don’t worry! We’ve listed{" "}
-                                        <Link href="#internal-link-to-conversion-section" className="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-500">
-                                            CGPA to percentage conversion for different Boards and Universities
-                                        </Link>{" "}
-                                        for your reference.
+                                        {t("tip_description2")}
+                                        <Link
+                                            href="#internal-link-to-conversion-section"
+                                            className="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-500"
+                                        >
+                                            {t("tip_description2_link")}
+                                        </Link>
+                                        .
                                     </p>
 
                                     <p className="text-lg text-gray-700 leading-relaxed dark:text-gray-300">
-                                        Unsure about your university’s grading scale or multiplication factor? No worries! We've provided CGPA to percentage conversion tables for various boards and universities right here to make your calculation easier.
+                                        {t("tip_description3")}
                                     </p>
                                 </div>
-                                <h3 id='section5' className="text-2xl font-semibold text-blue-500  dark:text-white">
-                                    What is CGPA and How Is It Calculated?
+                                <h3 id="section5" className="text-2xl mb-6 font-semibold text-blue-500 dark:text-white">
+                                    {t("what_is_cgpa_heading")}
                                 </h3>
 
                                 <div className="text-lg text-gray-700 leading-relaxed dark:text-gray-300 ">
@@ -206,91 +206,80 @@ const CgpaContent = () => {
                                     </p>
 
                                     <div className="mt-4 text-md text-gray-800 dark:text-gray-200">
-                                        <p className="text-lg font-semibold mb-2">CGPA Calculation Formula Method 1:</p>
-                                        <p className="mb-4">
-                                            One method of calculating CGPA is by finding the average. Then, the CGPA calculation formula would be the sum of Grade Points in all the semesters divided by the number of semesters. Mathematically, the CGPA formula can be represented as;
-                                        </p>
+                                        <p className="text-lg font-semibold mb-2">{t("cgpa_formula_method_1_title")}</p>
+                                        <p className="mb-4">{t("cgpa_formula_method_1_description")}</p>
                                         <div className="text-center mb-6">
                                             <p className="text-md font-semibold">
-                                                CGPA =
+                                                {t("cgpa_formula_method_1_formula")}
                                                 <span className="inline-block ml-2 align-middle">
-                                                    <div className="border-b  border-gray-500 dark:border-gray-400 pb-1">
-                                                        SGPA of sem.1 + SGPA of sem.2 + SGPA of sem.3 +.........+ SGPA of sem. "N"
+                                                    <div className="border-b border-gray-500 dark:border-gray-400 pb-1">
+                                                        {t("cgpa_formula_method_1_numerator")}
                                                     </div>
-                                                    <span>Total Number of Semesters</span>
+                                                    <span>{t("cgpa_formula_method_1_denominator")}</span>
                                                 </span>
                                             </p>
                                         </div>
-                                        <p className="mb-4">
-                                            Example: Ram, our friend from My Best Friend essay, has finally passed from school and joined college. There he achieved an SGPA in 4 semesters: 6+8.5+7+9.5, then his CGPA would be:
-                                        </p>
+                                        <p className="mb-4">{t("cgpa_example_description")}</p>
                                         <div className="text-center mb-6">
                                             <p className="text-md font-semibold">
-                                                CGPA =
-                                                <div className="inline-block ml-2 align-middle">
-                                                    <div className="border-b border-gray-500 dark:border-gray-400 pb-1 t">
-                                                        (6 + 8.5 + 7 + 9.5)
-                                                    </div>
-                                                    <spans> 4 </spans>
-                                                </div>
-                                                <div className="text-center mb-6">
-                                                    <p className="text-md font-semibold">
-                                                        CGPA =
-                                                        <div className="inline-block ml-2 align-middle">
-                                                            <div className="border-b border-gray-500 dark:border-gray-400 pb-1 ">
-                                                                31
-                                                            </div>
-                                                            <span> 4 </span>
-                                                        </div>
-                                                        <span>  =  7.75</span>
-                                                    </p>
-                                                </div>
-                                            </p>
-                                        </div>
-
-                                        <p className="text-lg font-semibold mb-2">CGPA Calculation Formula Method 2:</p>
-                                        <p className="mb-4">
-                                            Now another CGPA formula, which is also in practice, is to find the sum of the product of SGPA and credits earned divided by the number of credits earned. Mathematically, this CGPA calculation formula can be represented as;
-                                        </p>
-                                        <div className="text-center mb-6">
-                                            <p className="text-[10px] font-semibold">
-                                                CGPA =
-                                                <span className="inline-block ml-2 align-middle ">
-                                                    <div className="border-b border-gray-500 dark:border-gray-400 pb-1 ">
-                                                        (SGPA of sem.1 × Credits Earned in sem.1) +  (SGPA of sem.2 × Credits Earned in sem.2) + ...... +  (SGPA of sem."N" × Credits Earned in sem."N")
-                                                    </div>
-                                                    <span>Total Numbers of Credits Earned</span>
-                                                </span>
-                                            </p>
-                                        </div>
-                                        <p className="mb-4">
-                                            Example: Shyam, another friend from the My Best Friend essay, also joined a different college. And there he achieved SGPA in 4 semesters: 7.2+6.5+8.9+9.6 with credits earned 4+3+3+5, then his CGPA would be:
-                                        </p>
-                                        <div className="text-center ">
-                                            <p className="text-md font-semibold mr-2">
-                                                CGPA =
+                                                {t("cgpa_example_formula_1")}
                                                 <div className="inline-block ml-2 align-middle">
                                                     <div className="border-b border-gray-500 dark:border-gray-400 pb-1">
-                                                        (7.2×4 + 6.5×3 + 8.9×3 + 9.6×5)
+                                                        {t("cgpa_example_numerator")}
                                                     </div>
-                                                    <span>(4 + 3 + 3 + 5)</span>
+                                                    <span>{t("cgpa_example_denominator")}</span>
                                                 </div>
+                                            </p>
+                                            <p className="text-md font-semibold mt-4">
+                                                {t("cgpa_example_result")}
+                                                <div className="inline-block ml-2 align-middle">
+                                                    <div className="border-b border-gray-500 dark:border-gray-400 pb-1">
+                                                        {t("cgpa_example_final_numerator")}
+                                                    </div>
+                                                    <span>{t("cgpa_example_final_denominator")}</span>
+                                                </div>
+                                                <span>{t("cgpa_example_final_result")}</span>
+                                            </p>
+                                        </div>
 
+                                        <p className="text-lg font-semibold mb-2">{t("cgpa_formula_method_2_title")}</p>
+                                        <p className="mb-4">{t("cgpa_formula_method_2_description")}</p>
+                                        <div className="text-center mb-6">
+                                            <p className="text-[10px] font-semibold">
+                                                {t("cgpa_formula_method_2_formula")}
+                                                <div className="inline-block ml-2 align-middle">
+                                                    <div className="border-b border-gray-500 dark:border-gray-400 pb-1">
+                                                        {t("cgpa_formula_method_2_numerator")}
+                                                    </div>
+                                                    <span>{t("cgpa_formula_method_2_denominator")}</span>
+                                                </div>
+                                            </p>
+                                        </div>
+                                        <p className="mb-4">{t("cgpa_example_title")}</p>
+                                        <p className="mb-4">{t("cgpa_exampledescription")}</p>
+                                        <div className="text-center">
+                                            <p className="text-md font-semibold mr-2">
+                                                {t("cgpa_example_calculation")}
+                                                <div className="inline-block ml-2 align-middle">
+                                                    <div className="border-b border-gray-500 dark:border-gray-400 pb-1">
+                                                        {t("cgpa_examplenumerator")}
+                                                    </div>
+                                                    <span>{t("cgpa_exampledenominator")}</span>
+                                                </div>
                                             </p>
                                         </div>
                                         <div className="text-center mt-4">
-                                            <p className='text-md font-semibold mr-2'>
-                                                CGPA =
-                                                <div className="inline-block ml-4  align-middle ">
+                                            <p className="text-md font-semibold mr-2">
+                                                {t("cgpa_example_calculation")}
+                                                <div className="inline-block ml-4 align-middle">
                                                     <span className="border-b border-gray-500 dark:border-gray-400 pb-1">
-                                                        28.8 + 19.5 + 26.7 + 48
+                                                        {t("cgpa_examplefinal_numerator")}
                                                     </span>
-                                                    <div className='font-semibold text-center'>15</div>
+                                                    <div className="font-semibold text-center">{t("cgpa_examplefinal_denominator")}</div>
                                                 </div>
                                             </p>
-
                                         </div>
-                                        <div className='text-center font-semibold mt-4 text-md'>CGPA = 8.2 </div>
+                                        <div className="text-center font-semibold mt-4 text-md">{t("cgpa_examplefinal_result")}</div>
 
                                     </div>
 
@@ -300,10 +289,11 @@ const CgpaContent = () => {
 
                         </div>
                         <div className=''>
-                            <h2 id='section6' className="text-2xl font-semibold text-blue-600 mb-4">Definition of Important Terms You Need to Know</h2>
+                            <h2 id="section6" className="text-2xl font-semibold text-blue-600 mb-4">
+                                {t("important_terms_title")}
+                            </h2>
                             <p className="text-lg mb-4">
-                                While going through an official document, form, or even your certificate you see certain terms and abbreviations that are repeatedly used. Let us go over them quickly before proceeding to how different boards/universities set their conversion formula.
-
+                                {t("important_terms_description")}
                             </p>
                             <ul className="list-disc pl-6 ">
                                 <li><strong>Grade Points:</strong>Grade Points are the corresponding numerical values assigned to a particular Letter Grade. Different universities adjust the range of Grade Points as per their Letter Grades. For example, a certain university might have 10 Grade Points for an A grade while another might use an O (Outstanding) for 10 Grade Points.
@@ -1850,7 +1840,7 @@ const CgpaContent = () => {
                         </div>
 
 
-                        <div  className="container mx-auto p-4">
+                        <div className="container mx-auto p-4">
                             <div>
                                 <h2 id="section12" class="text-xl font-bold text-blue-400 mb-4">
                                     CGPA to Percentage in 4 Grade Scale
@@ -2226,9 +2216,9 @@ const CgpaContent = () => {
                             </div>
                         </div>
 
-                        <section  className="grading-scale-info p-6 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+                        <section className="grading-scale-info p-6 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
                             <div>
-                                <h2 id = "section13" className="text-2xl font-semibold text-blue-400 mb-4">
+                                <h2 id="section13" className="text-2xl font-semibold text-blue-400 mb-4">
                                     What is a Grading Scale & How do Universities Choose Their Standard Scale?
                                 </h2>
                                 <p className="mb-4">

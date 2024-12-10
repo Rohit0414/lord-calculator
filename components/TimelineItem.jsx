@@ -1,39 +1,38 @@
 import { useTheme } from '@/context/ThemeContext';
 import { FcCalculator } from "react-icons/fc";
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 
 const TimelineItem = () => {
     const { theme } = useTheme();
+    const {t} =useTranslation();
     const calculatorCards = [
         {
-            title: "CGPA to Percentage Calculator",
-            description: "Convert your grades on the go using the CGPA to Percentage calculator! You can even download or share your report for free.",
-            backgroundColor: theme === "dark" ? "bg-[#20a971]" : "bg-[#20a971]",
-            href: "/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage",
-            emoji: "➗",
+          title: t('calculatorCards.0.title'),
+          description: t('calculatorCards.0.description'),
+          emoji: "➗",
+          href: "/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage",
         },
         {
-            title: "Percentage to CGPA Calculator",
-            description: "CGPA conversion might be tedious but not with Percentage to CGPA calculator. Compatible with most institutions all over the world.",
-            backgroundColor: theme === "dark" ? "bg-[#4285f4]" : "bg-[#4285f4]",
-            href: "/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA",
-            emoji: "🔢",
+          title: t('calculatorCards.1.title'),
+          description: t('calculatorCards.1.description'),
+          emoji: "🔢",
+          href: "/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA",
         },
         {
-            title: "GPA to CGPA Calculator",
-            description: "With a minimalist design, this GPA to CGPA converter will help you to save time. Useful for students and educators alike!",
-            backgroundColor: theme === "dark" ? "bg-[#cf8408]" : "bg-[#cf8408]",
-            href: "/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA ",
-            emoji: "💡",
+          title: t('calculatorCards.2.title'),
+          description: t('calculatorCards.2.description'),
+          emoji: "💡",
+          href: "/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA",
         },
         {
-            title: "CGPA to GPA Calculator",
-            description: "Checking eligibility for your favorite university abroad? Quickly convert your grades with CGPA to GPA converter and share the happy news!",
-            backgroundColor: theme === "dark" ? "bg-[#5865f2]" : "bg-[#5865f2]",
-            href: "/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA",
-            emoji: "📚",
+          title: t('calculatorCards.3.title'),
+          description: t('calculatorCards.3.description'),
+          emoji: "📚",
+          href: "/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA",
         },
-    ];
+      ];
+    
 
     return (
         <div className={`relative transition-all duration-300 ease-in-out ${theme === "dark" ? "dark" : "light"}`}>

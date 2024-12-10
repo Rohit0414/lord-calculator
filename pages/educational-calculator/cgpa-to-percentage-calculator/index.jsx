@@ -8,6 +8,7 @@ import Router, { useRouter } from 'next/router';
 import { PDFDocument, rgb } from 'pdf-lib';
 import CgpaContent from '@/components/CgpaContent';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 
 
 
@@ -25,6 +26,7 @@ const Cgpatopercentage = () => {
     const router = useRouter();
     const [copied, setCopied] = useState(false);
     const [showScroll, setShowScroll] = useState(false);
+    const {t} = useTranslation();
 
     const checkScrollTop = () => {
         if (!showScroll && window.pageYOffset > 300) {
@@ -338,52 +340,52 @@ const Cgpatopercentage = () => {
 
                         <div className="p-5 mx-auto text-black w-full  dark:text-white">
                             <h1 className="text-4xl font-bold mb-4 text-center text-[#308d46] drop-shadow-lg dark:bg-teal-950  bg-transparent bg-clip-text">
-                                CGPA to Percentage Calculator
+                            {t("title3")}
                             </h1>
                             <div className="flex mb-4 justify-center items-center flex-col">
                                 <h3 className="text-2xl font-bold mb-4 text-[#105045] drop-shadow-lg mt-2 dark:text-[#b3e0e6]">
-                                    Enter CGPA
+                                {t("enterCGPA3")}
                                 </h3>
                                 <input id='cgpa'
                                     type="number"
                                     value={cgpa}
                                     onChange={(e) => setCgpa(e.target.value)}
-                                    placeholder="Enter Your CGPA"
+                                    placeholder={t("cgpaPlaceholder3")}
                                     className="w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white"
                                 />
                             </div>
 
                             <div className="flex mb-4 justify-center items-center flex-col">
-                                <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">Choose Grade Scale</label>
+                                <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">{t("chooseGradeScale3")}</label>
                                 <div className="flex justify-center w-1/2 mb-4 p-2">
                                     <button
                                         onClick={() => handleScaleChange(4.0)}
                                         className={`${gradingScale === 4.0 ? 'bg-[#29582b]' : 'bg-[#105045] dark:bg-[#4f5b56]'} text-white w-3/4 py-2 mr-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]`}
                                     >
-                                        4.0 Scale
+                                        {t("scale4")}
                                     </button>
                                     <button
                                         onClick={() => handleScaleChange(5.0)}
                                         className={`${gradingScale === 5.0 ? 'bg-[#29582b]' : 'bg-[#105045] dark:bg-[#4f5b56]'} text-white w-3/4 py-2 mr-2 rounded hover:bg-[#29582b]  dark:hover:bg-[#29582b]`}
                                     >
-                                        5.0 Scale
+                                       {t("scale5")}
                                     </button>
                                     <button
                                         onClick={() => handleScaleChange(10.0)}
                                         className={`${gradingScale === 10.0 ? 'bg-[#29582b]' : 'bg-[#105045] dark:bg-[#4f5b56]'} text-white w-3/4 py-2 rounded hover:bg-[#29582b]  dark:hover:bg-[#29582b]`}
                                     >
-                                        10.0 Scale
+                                       {t("scale10")}
                                     </button>
                                 </div>
                             </div>
 
                             <div className="flex mb-4 justify-center items-center flex-col">
-                                <label className="text-2xl font-bold mb-4 text-[#105045] drop-shadow-lg mt-2 dark:text-[#b3e0e6]">Multiplication Factor</label>
+                                <label className="text-2xl font-bold mb-4 text-[#105045] drop-shadow-lg mt-2 dark:text-[#b3e0e6]">{t("multiplicationFactor")}</label>
                                 <input
                                     type="number"
                                     value={multiplicationFactor}
                                     onChange={(e) => setMultiplicationFactor(parseFloat(e.target.value))}
-                                    placeholder="Enter Multiplication Factor"
+                                    placeholder={t("multiplicationFactorPlaceholder")}
                                     className="w-3/4 p-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white"
                                 />
                             </div>
@@ -392,10 +394,10 @@ const Cgpatopercentage = () => {
 
                             <div className="flex justify-center space-x-32 mb-4">
                                 <button onClick={convertCGPAtoPercentage} className="bg-[#105045] dark:bg-[#4f5b56] text-white w-32 py-2 rounded hover:bg-[#29582b]  dark:hover:bg-[#29582b]">
-                                    Calculate
+                                {t("calculateButton3")}
                                 </button>
                                 <button onClick={resetFields} className="bg-[#105045] text-white w-32 py-2 rounded hover:bg-[#29582b] dark:bg-[#4f5b56] dark:hover:bg-[#29582b]">
-                                    Reset
+                                {t("resetButton3")}
                                 </button>
                             </div>
 
@@ -403,15 +405,15 @@ const Cgpatopercentage = () => {
                                 <Meter percentage={percentage ? parseFloat(percentage) : 0 } />
                                 <div className="flex flex-col justify-center items-center mb-4">
                                     <label className="text-3xl font-bold mb-2 text-[#105045] drop-shadow-lg mt-2 dark:text-[#b3e0e6]">
-                                        Your Calculated Percentage
+                                    {t("calculatedPercentage")}
                                     </label>
-                                    <input type="text" value={percentage} placeholder="Percentage:" readOnly className="w-3/4 p-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center ml-2 dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white" />
+                                    <input type="text" value={percentage} placeholder={t("percentagePlaceholder")} readOnly className="w-3/4 p-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center ml-2 dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white" />
                                 </div>
                             </div>
 
                             <div className="mt-4 flex justify-center space-x-32 mb-4">
                                 <button onClick={downloadHistoryAsPDF} className="bg-[#105045] text-white w-32 py-2 rounded hover:bg-[#29582b] dark:bg-[#4f5b56] dark:hover:bg-[#29582b]">
-                                    Download
+                                {t("downloadButton3")}
                                 </button>
                                 <button onClick={shareOnWhatsApp} className="bg-green-500 text-white w-32 py-2 rounded dark:bg-green-600 dark:hover:bg-green-500">
                                     WhatsApp
@@ -426,13 +428,13 @@ const Cgpatopercentage = () => {
 
                             <div className="flex justify-center">
                                 <div className="history-container mb-4 text-center w-60">
-                                    <b>Calculation History</b>
+                                    <b>{t("calculationHistory3")}</b>
                                     <table className="min-w-full border border-gray-300 mt-2 mx-auto dark:border-gray-700">
                                         <thead>
                                             <tr className="bg-gray-100 dark:bg-gray-800">
-                                                <th className="border border-gray-300 p-2 dark:border-gray-700">S.NO</th>
-                                                <th className="border border-gray-300 p-2 dark:border-gray-700">CGPA</th>
-                                                <th className="border border-gray-300 p-2 dark:border-gray-700">Percentage</th>
+                                                <th className="border border-gray-300 p-2 dark:border-gray-700"> {t("sno")}</th>
+                                                <th className="border border-gray-300 p-2 dark:border-gray-700">{t("cgpa")}</th>
+                                                <th className="border border-gray-300 p-2 dark:border-gray-700">{t("percentage")}</th>
                                             </tr>
                                         </thead>
                                         <tbody>

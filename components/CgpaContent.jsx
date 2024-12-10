@@ -201,8 +201,7 @@ const CgpaContent = () => {
 
                                 <div className="text-lg text-gray-700 leading-relaxed dark:text-gray-300 ">
                                     <p>
-                                        CGPA abbreviated for Cumulative Grade Point Average is an overall assessment of a student's academic performance over a defined academic period.
-                                        While some universities and boards consider it as the average of all the semester grade points attained by a student throughout the course, others might include an additional factor which is Credits, in the calculation.
+                                        {t("cgpa-Description")}
                                     </p>
 
                                     <div className="mt-4 text-md text-gray-800 dark:text-gray-200">
@@ -2240,63 +2239,64 @@ const CgpaContent = () => {
                         <section className="grading-scale-info p-6 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
                             <div>
                                 <h2 id="section13" className="text-2xl font-semibold text-blue-400 mb-4">
-                                    What is a Grading Scale & How do Universities Choose Their Standard Scale?
+                                    {t('gradingScaleAndUniversitiesChoice')}
                                 </h2>
                                 <p className="mb-4">
-                                    A grading scale is an evaluative factor of a student's academic performance. Think of it like a percentage—it gives a general understanding of academic performance. Grading scales categorize students' achievements in an easy-to-understand format, like letter grades (A, B, C…), GPA, or percentage.
+                                    {t('gradingScaleDescription')}
                                 </p>
 
                                 <p className="mb-4">
-                                    Some of the most common grading scales include:
-                                </p>
-
-                                <ul className="list-disc pl-6 mb-4">
-                                    <li><strong>Percentage:</strong> Used worldwide, ranging from 0 to 100%.</li>
-                                    <li><strong>GPA (Grade Point Average):</strong> Primarily used in the USA, ranging from 0 to 4.0, 5.0, or 10.0.</li>
-                                    <li><strong>CGPA (Cumulative Grade Point Average):</strong> Used in India, Singapore, and CBSE boards; provides a holistic evaluation.</li>
-                                    <li><strong>Letter Grades:</strong> Used in the USA and Canada, based on percentage ranges.</li>
-                                    <li><strong>Numerical Scale:</strong> Used in parts of Russia and Latin America, ranging from 1 to 10 or 1 to 5.</li>
-                                </ul>
-
-                                <p className="mb-4">
-                                    Grading scales are standardized evaluations to categorize academic performance in symbols or numbers, such as letter grades or GPA scores. This helps compare students' academic reports consistently. Some of the most common grading scales are:
+                                    {t('commonGradingScales')}
                                 </p>
 
                                 <ul className="list-disc pl-6 mb-4">
-                                    <li><strong>Percentage:</strong> Widely used globally, ranging from 0 to 100%, providing precise academic performance insights.</li>
-                                    <li><strong>GPA:</strong> Used in the USA and other countries, ranging from 0 to 4.0, 5.0, or 10.0, showing cumulative performance.</li>
-                                    <li><strong>CGPA:</strong> Mostly in India, Singapore, and CBSE boards, offering a holistic view including factors like credit scores.</li>
-                                    <li><strong>Letter Grades:</strong> Practiced in the USA and Canada, with each letter representing a percentage range.</li>
-                                    <li><strong>Numerical Scale:</strong> Used in Russia and Latin America, with scales like 1-10 or 1-5 to fragment academic performance evaluations.</li>
+                                    <li><strong>{t('percentage')}</strong>: {t('usedWorldwide')}</li>
+                                    <li><strong>{t('gpa-')}</strong>: {t('primarilyInUSA')}</li>
+                                    <li><strong>{t('cgpa-')}</strong>: {t('usedInIndia')}</li>
+                                    <li><strong>{t('letterGrades')}</strong>: {t('usedInUSAndCanada')}</li>
+                                    <li><strong>{t('numericalScale')}</strong>: {t('usedInRussiaLatinAmerica')}</li>
                                 </ul>
 
                                 <p className="mb-4">
-                                    Universities choose grading scales based on factors like regional norms, historical significance, and globalization. The UK honors system or US GPA system, for instance, gained momentum in the early 20th century as standardized systems.
+                                    {t('gradingScalesIntro')}
+                                </p>
+
+                                <ul className="list-disc pl-6 mb-4">
+                                    <li><strong>{t('percentage-')}</strong>: {t('percentageDescription')}</li>
+                                    <li><strong>{t('-gpa')}</strong>: {t('gpaDescription')}</li>
+                                    <li><strong>{t('-cgpa')}</strong>: {t('cgpaDescription')}</li>
+                                    <li><strong>{t('-letterGrades')}</strong>: {t('letterGradesDescription')}</li>
+                                    <li><strong>{t('-numericalScale')}</strong>: {t('numericalScaleDescription')}</li>
+                                </ul>
+
+                                <p className="mb-4">
+                                    {t('universitiesChooseGradingScales')}
                                 </p>
 
                                 <p className="mb-4">
-                                    Modern grading systems often include aspects like relative achievement, mastery, or personal growth. Examples are the dual grading system, the Bologna process, and the International Baccalaureate. This approach facilitates international compatibility.
+                                    {t('modernGradingSystems')}
                                 </p>
 
                                 <p className="mb-4">
-                                    It's essential to understand your university's grading pattern and consider services like World Education Services (WES) or NARIC (UK) for accurate international conversions, as these evaluators use detailed equivalency tables.
+                                    {t('understandGradingPattern')}
                                 </p>
 
                                 <h3 id='section14' className="text-xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mt-6 mb-4">
-                                    What is a Multiplication Factor and How Does it Work?
+                                    {t('multiplicationFactorTitle')}
                                 </h3>
 
                                 <p className="mb-4">
-                                    A multiplication factor is a parameter for converting grading scales, such as CGPA or GPA to percentages. This factor is essential for adapting grades to different formats when applying to institutions with different grading systems or for jobs and exams.
+                                    {t('multiplicationFactorIntro')}
                                 </p>
 
                                 <p className="mb-4">
-                                    For example, a factor of 9.5 is widely used in some universities to convert CGPA to percentage, developed to reflect students' academic performance accurately.
+                                    {t('multiplicationFactorExample')}
                                 </p>
 
                                 <p className="mb-4">
-                                    To understand grading conversions better, international students should refer to official services like WES or NARIC.
+                                    {t('multiplicationFactorReference')}
                                 </p>
+
                             </div>
 
                             <div>
@@ -2304,176 +2304,155 @@ const CgpaContent = () => {
                                     id="section15"
                                     className="text-xl font-semibold text-blue-400 mt-6 mb-4"
                                 >
-                                    CGPA to Percentage Conversion for Different Boards and Universities
+                                    {t('cgpaToPercentageConversionTitle')}
                                 </h3>
                                 <table className="table-auto w-full border-collapse border-blue-400 border p-2 mb-6 text-center">
                                     <thead>
                                         <tr className="bg-blue-100 dark:bg-blue-800">
-                                            <th className="border border-blue-400 p-2">Board/University</th>
-                                            <th className="border border-blue-400 p-2">Conversion Formula</th>
+                                            <th className="border border-blue-400 p-2">{t('boardUniversity')}</th>
+                                            <th className="border border-blue-400 p-2">{t('conversionFormula')}</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">CBSE (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 9.5</td>
+                                            <td className="border border-blue-400 p-2">{t('cbseIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '9.5' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">ICSE (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 9.8 (may vary by school)</td>
+                                            <td className="border border-blue-400 p-2">{t('icseIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '9.8 (may vary by school)' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Maharashtra State Board (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 9.5</td>
+                                            <td className="border border-blue-400 p-2">{t('maharashtraStateBoardIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '9.5' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Anna University (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 10</td>
+                                            <td className="border border-blue-400 p-2">{t('annaUniversityIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '10' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Jawaharlal Nehru Technological University (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 10</td>
+                                            <td className="border border-blue-400 p-2">{t('jawaharlalNehruTechnologicalUniversityIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '10' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Visvesvaraya Technological University (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 9.1 (may vary by department)</td>
+                                            <td className="border border-blue-400 p-2">{t('visvesvarayaTechnologicalUniversityIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '9.1 (may vary by department)' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Gujarat Technological University (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = (CGPA * 7.1) + 12</td>
+                                            <td className="border border-blue-400 p-2">{t('gujaratTechnologicalUniversityIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '(7.1) + 12' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">University of Mumbai (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = (CGPA * 7.25) + 11</td>
+                                            <td className="border border-blue-400 p-2">{t('universityOfMumbaiIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '(7.25) + 11' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Manipal Academy of Higher Education (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 10</td>
+                                            <td className="border border-blue-400 p-2">{t('manipalAcademyOfHigherEducationIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '10' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Amity University (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 9</td>
+                                            <td className="border border-blue-400 p-2">{t('amityUniversityIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '9' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Vellore Institute of Technology (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 9.5 (varies by program)</td>
+                                            <td className="border border-blue-400 p-2">{t('velloreInstituteOfTechnologyIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '9.5 (varies by program)' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Savitribai Phule Pune University (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 6.3</td>
+                                            <td className="border border-blue-400 p-2">{t('savitribaiPhulePuneUniversityIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '6.3' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">IITs (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 10</td>
+                                            <td className="border border-blue-400 p-2">{t('iitsIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '10' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">NITs (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 10</td>
+                                            <td className="border border-blue-400 p-2">{t('nitsIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '10' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">BITS Pilani (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 10</td>
+                                            <td className="border border-blue-400 p-2">{t('bitsPilaniIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '10' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Delhi University (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 9.5 (may vary by program)</td>
+                                            <td className="border border-blue-400 p-2">{t('delhiUniversityIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '9.5 (may vary by program)' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Banaras Hindu University (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 10</td>
+                                            <td className="border border-blue-400 p-2">{t('banarasHinduUniversityIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '10' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Osmania University (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 10</td>
+                                            <td className="border border-blue-400 p-2">{t('osmaniaUniversityIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '10' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Punjab University (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 9.5</td>
+                                            <td className="border border-blue-400 p-2">{t('punjabUniversityIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula', { factor: '9.5' })}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">SRM Institute of Science and Technology (India)</td>
-                                            <td className="border border-blue-400 p-2">Percentage = CGPA * 10</td>
+                                            <td className="border border-blue-400 p-2">{t('srmInstituteOfScienceAndTechnologyIndia')}</td>
+                                            <td className="border border-blue-400 p-2">{t('percentageFormula-', { factor: '10' })}</td>
                                         </tr>
+
                                         <tr className="bg-blue-100 dark:bg-blue-800">
-                                            <th colSpan="2" className="text-center p-2">International Institutions</th>
+                                            <th colSpan="2" className="text-center p-2">{t("international_institutions")}</th>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">University of Toronto (Canada)</td>
-                                            <td className="border border-blue-400 p-2">GPA scale (4.0), no direct conversion</td>
+                                            <td className="border border-blue-400 p-2">{t("university_of_toronto")}</td>
+                                            <td className="border border-blue-400 p-2">{t("university_of_toronto_details")}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">University of British Columbia (Canada)</td>
-                                            <td className="border border-blue-400 p-2">GPA scale: 4.33; conversion guidance available</td>
+                                            <td className="border border-blue-400 p-2">{t("university_of_british_columbia")}</td>
+                                            <td className="border border-blue-400 p-2">{t("university_of_british_columbia_details")}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Australian National University (Australia)</td>
-                                            <td className="border border-blue-400 p-2">Conversion: CGPA * 7.1 for equivalency</td>
+                                            <td className="border border-blue-400 p-2">{t("australian_national_university")}</td>
+                                            <td className="border border-blue-400 p-2">{t("australian_national_university_details")}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">University of Sydney (Australia)</td>
-                                            <td className="border border-blue-400 p-2">
-                                                Typically requires credential evaluation
-                                            </td>
+                                            <td className="border border-blue-400 p-2">{t("university_of_sydney")}</td>
+                                            <td className="border border-blue-400 p-2">{t("university_of_sydney_details")}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">University of California (USA)</td>
-                                            <td className="border border-blue-400 p-2">
-                                                GPA scale: 4.0; use WES conversion guidance
-                                            </td>
+                                            <td className="border border-blue-400 p-2">{t("university_of_california")}</td>
+                                            <td className="border border-blue-400 p-2">{t("university_of_california_details")}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Harvard University (USA)</td>
-                                            <td className="border border-blue-400 p-2">
-                                                Uses WES for CGPA/GPA conversion
-                                            </td>
+                                            <td className="border border-blue-400 p-2">{t("harvard_university")}</td>
+                                            <td className="border border-blue-400 p-2">{t("harvard_university_details")}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">University of Oxford (UK)</td>
-                                            <td className="border border-blue-400 p-2">
-                                                UK Honours classification; conversion through GPA bands
-                                            </td>
+                                            <td className="border border-blue-400 p-2">{t("university_of_oxford")}</td>
+                                            <td className="border border-blue-400 p-2">{t("university_of_oxford_details")}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">ETH Zurich (Switzerland)</td>
-                                            <td className="border border-blue-400 p-2">
-                                                Swiss 6-point scale; CGPA = 8.5 is competitive
-                                            </td>
+                                            <td className="border border-blue-400 p-2">{t("eth-zurich")}</td>
+                                            <td className="border border-blue-400 p-2">{t("eth_zurich_details")}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Auckland University of Technology (AUT), New Zealand</td>
-                                            <td className="border border-blue-400 p-2">
-                                                4.3-point scale; GPA = : Requires international CGPA evaluation; typically expects
-                                            </td>
+                                            <td className="border border-blue-400 p-2">{t("auckland_university_of_technology")}</td>
+                                            <td className="border border-blue-400 p-2">{t("auckland_university_of_technology_details")}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">National Taiwan University (NTU), Taiwan</td>
-                                            <td className="border border-blue-400 p-2">
-                                                9-point scale; CGPA = : For Indian CGPA, often uses the conversion factor of 7.1 to align with local standards.
-                                            </td>
+                                            <td className="border border-blue-400 p-2">{t("national_taiwan_university")}</td>
+                                            <td className="border border-blue-400 p-2">{t("national_taiwan_university_details")}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">Peking University, China</td>
-                                            <td className="border border-blue-400 p-2">
-                                                4.0-point scale; GPA = : May request CGPA conversion through services like
-                                            </td>
+                                            <td className="border border-blue-400 p-2">{t("peking_university")}</td>
+                                            <td className="border border-blue-400 p-2">{t("peking_university_details")}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">McGill University, Canada</td>
-                                            <td className="border border-blue-400 p-2">
-                                                4.0-point scale; GPA = : McGill uses WES or similar services for CGPA conversions and generally considers 80%+ as competitive.
-                                            </td>
+                                            <td className="border border-blue-400 p-2">{t("mcgill_university")}</td>
+                                            <td className="border border-blue-400 p-2">{t("mcgill_university_details")}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2">University of Cape Town, South Africa</td>
-                                            <td className="border border-blue-400 p-2">
-                                                Percentage and GPA = :Uses a 4-point GPA scale for international students and may request CGPA conversion to align with South African standards.
-                                            </td>
+                                            <td className="border border-blue-400 p-2">{t("university_of_cape_town")}</td>
+                                            <td className="border border-blue-400 p-2">{t("university_of_cape_town_details")}</td>
                                         </tr>
                                         <tr>
-                                            <td className="border border-blue-400 p-2"> University of Tokyo, Japan</td>
-                                            <td className="border border-blue-400 p-2">
-                                                Japanese 4.0 GPA scale = :Converts CGPA to Japanese GPA with guidance from the admissions department. Often expects a CGPA above 8.0 for competitive programs.
-                                            </td>
+                                            <td className="border border-blue-400 p-2">{t("university_of_tokyo")}</td>
+                                            <td className="border border-blue-400 p-2">{t("university_of_tokyo_details")}</td>
                                         </tr>
                                         {/* Add more rows for additional institutions as needed */}
                                     </tbody>
@@ -2481,120 +2460,107 @@ const CgpaContent = () => {
                             </div >
                             <div>
                                 <h3 id="section16" className="text-xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mt-6 mb-4">
-                                    What are the Impacts of Different Grading Scales on Students?
+                                    {t('section_title')}
                                 </h3>
                                 <p className="mb-4">
-                                    Having different grading scales can have varying impacts on students. It can affect students' academic mindset, career prospects, and even social dynamics.
+                                    {t('content_paragraph')}
                                 </p>
                                 <ul className="list-disc pl-6 mb-4">
                                     <li>
-                                        <strong>Increased Peer/Social Pressure:</strong> Precise scales such as percentages can increase peer or social pressure among students, while broader scales such as Letter Grading can result in reduced pressure. This is also one of many reasons that several institutions follow broader scales, especially for lower classes.
+                                        <strong>{t('list_items.0.title')}:</strong> {t('list_items.0.description')}
                                     </li>
                                     <li>
-                                        <strong>Career Opportunities:</strong> Career opportunities might also be affected. Varying grading scales can increase difficulties for students to get their applications passed for scholarships, admissions, and even jobs. Recently, there was a case with a friend of mine where his job application was put on hold because the board from which he had done matriculation did not provide any additional certificate mentioning the percentage. Instead, they only provide a marksheet with precise marks. However, the candidate was alleged to have the passing certificate lost even though he didn't have any in the first case.
+                                        <strong>{t('list_items.1.title')}:</strong> {t('list_items.1.description')}
                                     </li>
                                     <li>
-                                        <strong>Academic Prospect:</strong> Varying grading scales can also impact the prospects of students in academic life. One student studying under a precise grading system will have a different mindset about the examinations than a student studying under a broader grading system. Former students might focus more on exams, while later students might prioritize working on practical projects over exams, thus having better practical knowledge. Such variations can fuel unnecessary pressure on the students.
+                                        <strong>{t('list_items.2.title')}:</strong> {t('list_items.2.description')}
                                     </li>
                                     <li>
-                                        <strong>Closing Remarks:</strong> We have tried to cover all the essential information that you should know about the grading system, grade conversion, CGPA to percentage calculation, percentage to CGPA, and CGPA calculator. Also, we have designed our CGPA calculator to work accurately for any grading scale or multiplication factor. However, if you feel you need clarification regarding any of the topics or want to give suggestions about this particular calculator, then please contact us.
+                                        <strong>{t('list_items.3.title')}:</strong> {t('list_items.3.description')}
                                     </li>
                                 </ul>
                             </div>
 
 
+
                             <div>
-                                <h3 id='section17' className="text-xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mt-6 mb-4">FAQs related to CGPA Calculator</h3>
+                                <h3 id="section17" className="text-xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mt-6 mb-4">
+                                    {t('faq.title')}
+                                </h3>
+
                                 <div className="mb-4">
-                                    <strong>Q1. Is there a difference between CGPA & GPA?</strong>
-                                    <p className="ml-4">
-                                        Yes, CGPA and GPA differ in scope. While GPA represents your performance in a single semester, CGPA averages the GPA scores across multiple semesters, showing an overall academic performance. Use a CGPA calculator to see the difference in values, and try converting GPA to CGPA if your institution supports that.
-                                    </p>
-                                </div>
-                                <div className="mb-4">
-                                    <strong>Q2. Does the CGPA conversion formula vary by institution?</strong>
-                                    <p className="ml-4">
-                                        Absolutely. Many institutions have unique CGPA conversion formulas. For instance, some use a factor of 9.5 to convert CGPA to percentage, while others apply different multipliers. Checking the formula used by your institution is important for an accurate CGPA to percentage conversion. A CGPA calculator can be tailored to specific university requirements.
-                                    </p>
-                                </div>
-                                <div className="mb-4">
-                                    <strong>Q3. Why am I not getting an accurate percentage from CGPA?</strong>
-                                    <p className="ml-4">
-                                        An inaccurate CGPA to percentage result could stem from using the wrong conversion factor or formula. Different institutions have different methods, so it’s essential to use a CGPA to percentage calculator designed for your institution or verify the multiplier applied. Calculating the percentage accurately may require a specialized CGPA calculator.
-                                    </p>
-                                </div>
-                                <div className="mb-4">
-                                    <strong>Q4. How to convert CGPA into percentage?</strong>
-                                    <p className="ml-4">
-                                        To convert CGPA into percentage, multiply your CGPA by the institution-specific factor (often 9.5). This straightforward method works for many, but a CGPA to percentage calculator simplifies it. If you need to reverse the process, try a percentage to CGPA calculator.
-                                    </p>
-                                </div>
-                                <div className="mb-4">
-                                    <strong>Q5. How do you convert a 7.6 CGPA to percentage?</strong>
-                                    <p className="ml-4">
-                                        To convert a 7.6 CGPA to percentage, multiply 7.6 by the conversion factor (typically 9.5). This gives a result of 72.2%. A CGPA to percentage calculator automates this and ensures accuracy.
-                                    </p>
-                                </div>
-                                <div className="mb-4">
-                                    <strong>Q6. What is 7.8 CGPA in Percentage?</strong>
-                                    <p className="ml-4">
-                                        Using the common factor of 9.5, 7.8 CGPA translates to 74.1% in percentage. You can double-check with a CGPA to percentage calculator for quick results.
-                                    </p>
-                                </div>
-                                <div className="mb-4">
-                                    <strong>Q7. What is CGPA to Percentage Calculator out of 4?</strong>
-                                    <p className="ml-4">
-                                        Some universities operate on a 4-point scale. To convert CGPA to percentage out of 4, find your GPA on a scale of 4, then use an appropriate conversion factor. Specialized calculators, such as a CGPA to percentage calculator out of 4, can handle this conversion for you.
-                                    </p>
-                                </div>
-                                <div className="mb-4">
-                                    <strong>Q8. What is VTU CGPA to percentage formula?</strong>
-                                    <p className="ml-4">
-                                        CGPA to percentage VTU formula is Percentage = CGPA * 9.1 (may vary by department).
-                                    </p>
-                                </div>
-                                <div className="mb-4">
-                                    <strong>Q9. How to convert CGPA into percentage for Engineering?</strong>
-                                    <p className="ml-4">
-                                        Engineering colleges may use different formulas or conversion factors. Engineering students should verify their college’s method or use an engineering-specific CGPA calculator to convert CGPA to percentage accurately.
-                                    </p>
-                                </div>
-                                <div className="mb-4">
-                                    <strong>Q10. Is CGPA to Percentage Calculator DU different?</strong>
-                                    <p className="ml-4">
-                                        Yes, Delhi University (DU) uses its own formula. DU students should use a DU-specific CGPA to percentage calculator for accurate results and align with DU's grading standards.
-                                    </p>
-                                </div>
-                                <div className="mb-4">
-                                    <strong>Q11. How to calculate percentage from CGPA?</strong>
-                                    <p className="ml-4">
-                                        To calculate the percentage from CGPA, multiply the CGPA by a conversion factor (often 9.5). A CGPA calculator simplifies this, or you can try a percentage to CGPA calculator if you need the reverse.
-                                    </p>
-                                </div>
-                                <div className="mb-4">
-                                    <strong>Q12. What is SPPU CGPA to Percentage calculation formula?</strong>
-                                    <p className="ml-4">
-                                        Savitribai Phule Pune University (SPPU) has a unique CGPA to percentage calculation method. You can use an SPPU-specific CGPA calculator or consult their guidelines for accurate conversion.
-                                    </p>
-                                </div>
-                                <div className="mb-4">
-                                    <strong>Q13. What is Makaut CGPA to Percentage calculator formula?</strong>
-                                    <p className="ml-4"> Makaut is an online platform.
-                                        Makaut CGPA to Percentage calculator’s formula is Percentage = (CGPA – 0.75) * 10.
-                                    </p>
+                                    <strong>Q1. {t('faq.q1.question')}</strong>
+                                    <p className="ml-4">{t('faq.q1.answer')}</p>
                                 </div>
 
                                 <div className="mb-4">
-                                    <strong>Q14. What is CGPA to Percentage GTU Formula?</strong>
-                                    <p className="ml-4">
-                                        CGPA to Percentage GTU formula is Percentage = (CGPA * 7.1) + 12.
-                                    </p>
+                                    <strong>Q2. {t('faq.q2.question')}</strong>
+                                    <p className="ml-4">{t('faq.q2.answer')}</p>
                                 </div>
+
                                 <div className="mb-4">
-                                    <strong>Q15. How to find percentage from CGPA?</strong>
-                                    <p className="ml-4">
-                                        You can either manually calculate using the formula given above or use this calculator to find your percentage.
-                                    </p>
+                                    <strong>Q3. {t('faq.q3.question')}</strong>
+                                    <p className="ml-4">{t('faq.q3.answer')}</p>
+                                </div>
+
+                                <div className="mb-4">
+                                    <strong>Q4. {t('faq.q4.question')}</strong>
+                                    <p className="ml-4">{t('faq.q4.answer')}</p>
+                                </div>
+
+                                <div className="mb-4">
+                                    <strong>Q5. {t('faq.q5.question')}</strong>
+                                    <p className="ml-4">{t('faq.q5.answer')}</p>
+                                </div>
+
+                                <div className="mb-4">
+                                    <strong>Q6. {t('faq.q6.question')}</strong>
+                                    <p className="ml-4">{t('faq.q6.answer')}</p>
+                                </div>
+
+                                <div className="mb-4">
+                                    <strong>Q7. {t('faq.q7.question')}</strong>
+                                    <p className="ml-4">{t('faq.q7.answer')}</p>
+                                </div>
+
+                                <div className="mb-4">
+                                    <strong>Q8. {t('faq.q8.question')}</strong>
+                                    <p className="ml-4">{t('faq.q8.answer')}</p>
+                                </div>
+
+                                <div className="mb-4">
+                                    <strong>Q9. {t('faq.q9.question')}</strong>
+                                    <p className="ml-4">{t('faq.q9.answer')}</p>
+                                </div>
+
+                                <div className="mb-4">
+                                    <strong>Q10. {t('faq.q10.question')}</strong>
+                                    <p className="ml-4">{t('faq.q10.answer')}</p>
+                                </div>
+
+                                <div className="mb-4">
+                                    <strong>Q11. {t('faq.q11.question')}</strong>
+                                    <p className="ml-4">{t('faq.q11.answer')}</p>
+                                </div>
+
+                                <div className="mb-4">
+                                    <strong>Q12. {t('faq.q12.question')}</strong>
+                                    <p className="ml-4">{t('faq.q12.answer')}</p>
+                                </div>
+
+                                <div className="mb-4">
+                                    <strong>Q13. {t('faq.q13.question')}</strong>
+                                    <p className="ml-4">{t('faq.q13.answer')}</p>
+                                </div>
+
+                                <div className="mb-4">
+                                    <strong>Q14. {t('faq.q14.question')}</strong>
+                                    <p className="ml-4">{t('faq.q14.answer')}</p>
+                                </div>
+
+                                <div className="mb-4">
+                                    <strong>Q15. {t('faq.q15.question')}</strong>
+                                    <p className="ml-4">{t('faq.q15.answer')}</p>
                                 </div>
                             </div>
 

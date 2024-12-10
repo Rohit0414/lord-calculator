@@ -908,5 +908,246 @@
   "overRelianceOnCalculatorsDesc": "Si bien las calculadoras en línea ofrecen una solución rápida y confiable para la conversión de calificaciones, no siempre son 100% precisas. Las calculadoras en línea pueden no tener en cuenta todos los casos especiales que hemos discutido, como los de la Universidad de Mumbai o GTU. Aunque LordCalculator se esfuerza por incluir todos los parámetros posibles, no se recomienda confiar únicamente en las calculadoras en línea para las conversiones. Siempre es una buena idea verificar dos veces tus valores y el método utilizado por tu junta o universidad.",
   "cgpaToPercentage10GradePoints": "CGPA a Porcentaje en el Sistema de 10 Puntos de Calificación",
   "cgpaToPercentage5GradeScale": "CGPA a Porcentaje en la Escala de 5 Calificación",
-  "cgpaToPercentage4GradeScale": "CGPA a Porcentaje en la Escala de 4 Calificación"
+  "cgpaToPercentage4GradeScale": "CGPA a Porcentaje en la Escala de 4 Calificación",
+  "gradingScaleAndUniversitiesChoice": "¿Qué es una Escala de Calificación y Cómo Eligen las Universidades su Escala Estándar?",
+  "gradingScaleDescription": "Una escala de calificación es un factor evaluativo del rendimiento académico de un estudiante. Piénsalo como un porcentaje: da una comprensión general del rendimiento académico. Las escalas de calificación categorizan los logros de los estudiantes en un formato fácil de entender, como calificaciones (A, B, C…), GPA o porcentaje.",
+  "commonGradingScales": "Algunas de las escalas de calificación más comunes incluyen:",
+  "percentage": "Porcentaje",
+  "usedWorldwide": "Usado en todo el mundo, que va de 0 a 100%.",
+  "gpa-": "GPA (Promedio de Calificación)",
+  "primarilyInUSA": "Principalmente utilizado en EE. UU., que varía de 0 a 4.0, 5.0 o 10.0.",
+  "cgpa-": "CGPA (Promedio de Calificación Acumulada)",
+  "usedInIndia": "Utilizado en India, Singapur y en las juntas CBSE; proporciona una evaluación integral.",
+  "letterGrades": "Calificaciones con Letras",
+  "usedInUSAndCanada": "Utilizado en EE. UU. y Canadá, basado en rangos de porcentaje.",
+  "numericalScale": "Escala Numérica",
+  "usedInRussiaLatinAmerica": "Utilizado en partes de Rusia y América Latina, que varía de 1 a 10 o de 1 a 5.",
+  "gradingScalesIntro": "Las escalas de calificación son evaluaciones estandarizadas para categorizar el rendimiento académico en símbolos o números, como calificaciones con letras o puntajes GPA. Esto ayuda a comparar de manera consistente los informes académicos de los estudiantes. Algunas de las escalas de calificación más comunes son:",
+  "percentage-": "Porcentaje",
+  "percentageDescription": "Ampliamente utilizado a nivel mundial, que va de 0 a 100%, proporcionando una visión precisa del rendimiento académico.",
+  "-gpa": "GPA",
+  "gpaDescription": "Utilizado en EE. UU. y otros países, que varía de 0 a 4.0, 5.0 o 10.0, mostrando el rendimiento acumulado.",
+  "-cgpa": "CGPA",
+  "cgpaDescription": "Principalmente en India, Singapur y en las juntas CBSE, ofreciendo una visión integral que incluye factores como las calificaciones crediticias.",
+  "-letterGrades": "Calificaciones con Letras",
+  "letterGradesDescription": "Practicado en EE. UU. y Canadá, con cada letra representando un rango de porcentaje.",
+  "-numericalScale": "Escala Numérica",
+  "numericalScaleDescription": "Utilizado en Rusia y América Latina, con escalas como 1-10 o 1-5 para fragmentar las evaluaciones del rendimiento académico.",
+  "universitiesChooseGradingScales": "Las universidades eligen las escalas de calificación en función de factores como las normas regionales, la importancia histórica y la globalización. El sistema de honores del Reino Unido o el sistema GPA de EE. UU., por ejemplo, ganaron popularidad a principios del siglo XX como sistemas estandarizados.",
+  "modernGradingSystems": "Los sistemas de calificación modernos a menudo incluyen aspectos como el logro relativo, la maestría o el crecimiento personal. Ejemplos son el sistema de calificación dual, el proceso de Bolonia y el Bachillerato Internacional. Este enfoque facilita la compatibilidad internacional.",
+  "understandGradingPattern": "Es esencial comprender el patrón de calificación de su universidad y considerar servicios como World Education Services (WES) o NARIC (Reino Unido) para conversiones internacionales precisas, ya que estos evaluadores utilizan tablas de equivalencia detalladas.",
+  "multiplicationFactorTitle": "¿Qué es un Factor de Multiplicación y Cómo Funciona?",
+  "multiplicationFactorIntro": "Un factor de multiplicación es un parámetro para convertir escalas de calificación, como CGPA o GPA, a porcentajes. Este factor es esencial para adaptar las calificaciones a diferentes formatos cuando se solicita en instituciones con sistemas de calificación distintos o para trabajos y exámenes.",
+  "multiplicationFactorExample": "Por ejemplo, un factor de 9.5 se usa ampliamente en algunas universidades para convertir CGPA a porcentaje, desarrollado para reflejar con precisión el rendimiento académico de los estudiantes.",
+  "multiplicationFactorReference": "Para entender mejor las conversiones de calificación, los estudiantes internacionales deben consultar servicios oficiales como WES o NARIC.",
+  "cgpaToPercentageConversionTitle": "Conversión de CGPA a porcentaje para diferentes juntas y universidades",
+  "boardUniversity": "Junta/Universidad",
+  "conversionFormula": "Fórmula de conversión",
+  "cbseIndia": "CBSE (India)",
+  "icseIndia": "ICSE (India)",
+  "maharashtraStateBoardIndia": "Maharashtra State Board (India)",
+  "annaUniversityIndia": "Anna University (India)",
+  "jawaharlalNehruTechnologicalUniversityIndia": "Jawaharlal Nehru Technological University (India)",
+  "visvesvarayaTechnologicalUniversityIndia": "Visvesvaraya Technological University (India)",
+  "gujaratTechnologicalUniversityIndia": "Gujarat Technological University (India)",
+  "universityOfMumbaiIndia": "University of Mumbai (India)",
+  "manipalAcademyOfHigherEducationIndia": "Manipal Academy of Higher Education (India)",
+  "amityUniversityIndia": "Amity University (India)",
+  "velloreInstituteOfTechnologyIndia": "Vellore Institute of Technology (India)",
+  "savitribaiPhulePuneUniversityIndia": "Savitribai Phule Pune University (India)",
+  "iitsIndia": "IITs (India)",
+  "nitsIndia": "NITs (India)",
+  "bitsPilaniIndia": "BITS Pilani (India)",
+  "delhiUniversityIndia": "Delhi University (India)",
+  "banarasHinduUniversityIndia": "Banaras Hindu University (India)",
+  "osmaniaUniversityIndia": "Osmania University (India)",
+  "punjabUniversityIndia": "Punjab University (India)",
+  "srmInstituteOfScienceAndTechnologyIndia": "SRM Institute of Science and Technology (India)",
+  "percentageFormula-": "Porcentaje = CGPA × Factor de Multiplicación",
+  "international_institutions": "Instituciones Internacionales",
+  "university_of_toronto": "Universidad de Toronto (Canadá)",
+  "university_of_toronto_details": "Escala GPA (4.0), no hay conversión directa",
+  "university_of_british_columbia": "Universidad de Columbia Británica (Canadá)",
+  "university_of_british_columbia_details": "Escala GPA: 4.33; orientación para la conversión disponible",
+  "australian_national_university": "Universidad Nacional de Australia (Australia)",
+  "australian_national_university_details": "Conversión: CGPA * 7.1 para equivalencia",
+  "university_of_sydney": "Universidad de Sydney (Australia)",
+  "university_of_sydney_details": "Generalmente requiere evaluación de credenciales",
+  "university_of_california": "Universidad de California (EE. UU.)",
+  "university_of_california_details": "Escala GPA: 4.0; usar la guía de conversión de WES",
+  "harvard_university": "Universidad de Harvard (EE. UU.)",
+  "harvard_university_details": "Utiliza WES para la conversión de CGPA/GPA",
+  "university_of_oxford": "Universidad de Oxford (Reino Unido)",
+  "university_of_oxford_details": "Clasificación de Honores del Reino Unido; conversión a través de bandas GPA",
+  "eth-zurich": "ETH Zurich (Suiza)",
+  "eth_zurich_details": "Escala suiza de 6 puntos; CGPA = 8.5 es competitivo",
+  "auckland_university_of_technology": "Universidad de Tecnología de Auckland (AUT), Nueva Zelanda",
+  "auckland_university_of_technology_details": "Escala de 4.3 puntos; GPA = : Requiere evaluación internacional de CGPA; típicamente espera",
+  "national_taiwan_university": "Universidad Nacional de Taiwán (NTU), Taiwán",
+  "national_taiwan_university_details": "Escala de 9 puntos; CGPA = : Para CGPA de la India, a menudo se utiliza el factor de conversión 7.1 para alinearse con los estándares locales.",
+  "peking_university": "Universidad de Pekín, China",
+  "peking_university_details": "Escala de 4.0 puntos; GPA = : Puede solicitar la conversión de CGPA a través de servicios como",
+  "mcgill_university": "Universidad McGill, Canadá",
+  "mcgill_university_details": "Escala de 4.0 puntos; GPA = : McGill utiliza WES o servicios similares para conversiones de CGPA y generalmente considera que un 80% o más es competitivo.",
+  "university_of_cape_town": "Universidad de Ciudad del Cabo, Sudáfrica",
+  "university_of_cape_town_details": "Porcentaje y GPA = : Utiliza una escala GPA de 4 puntos para estudiantes internacionales y puede solicitar la conversión de CGPA para alinearse con los estándares sudafricanos.",
+  "university_of_tokyo": "Universidad de Tokio, Japón",
+  "university_of_tokyo_details": "Escala de GPA japonesa de 4.0 = : Convierte CGPA a GPA japonés con la orientación del departamento de admisiones. A menudo se espera un CGPA superior a 8.0 para programas competitivos.",
+  "section_title": "¿Cuáles son los impactos de las diferentes escalas de calificación en los estudiantes?",
+  "content_paragraph": "Tener diferentes escalas de calificación puede tener impactos variados en los estudiantes. Puede afectar la mentalidad académica, las perspectivas profesionales e incluso la dinámica social de los estudiantes.",
+  "list_items": [
+    {
+      "title": "Aumento de la presión social/entre compañeros",
+      "description": "Las escalas precisas, como los porcentajes, pueden aumentar la presión social o entre compañeros entre los estudiantes, mientras que las escalas más amplias, como la calificación con letras, pueden reducir esta presión. Esta es también una de las muchas razones por las que varias instituciones siguen escalas más amplias, especialmente para las clases más bajas."
+    },
+    {
+      "title": "Oportunidades profesionales",
+      "description": "Las oportunidades profesionales también pueden verse afectadas. Las diferentes escalas de calificación pueden aumentar las dificultades para que los estudiantes aprueben sus solicitudes para becas, admisiones e incluso empleos. Recientemente, hubo un caso con un amigo mío donde su solicitud de trabajo fue puesta en espera porque la junta de la cual había hecho su matriculación no proporcionó ningún certificado adicional mencionando el porcentaje. En su lugar, solo proporcionan una boleta de calificaciones con calificaciones precisas. Sin embargo, al candidato se le acusó de haber perdido el certificado de aprobación, aunque no lo tenía en primer lugar."
+    },
+    {
+      "title": "Perspectiva académica",
+      "description": "Las diferentes escalas de calificación también pueden afectar las perspectivas académicas de los estudiantes. Un estudiante que estudia bajo un sistema de calificación preciso tendrá una mentalidad diferente sobre los exámenes que un estudiante que estudia bajo un sistema de calificación más amplio. Los primeros estudiantes pueden enfocarse más en los exámenes, mientras que los estudiantes posteriores pueden priorizar trabajar en proyectos prácticos sobre los exámenes, adquiriendo así mejores conocimientos prácticos. Tales variaciones pueden generar presión innecesaria sobre los estudiantes."
+    },
+    {
+      "title": "Comentarios finales",
+      "description": "Hemos intentado cubrir toda la información esencial que debe saber sobre el sistema de calificación, la conversión de calificaciones, el cálculo de CGPA a porcentaje, porcentaje a CGPA y la calculadora de CGPA. Además, hemos diseñado nuestra calculadora de CGPA para que funcione de manera precisa para cualquier escala de calificación o factor de multiplicación. Sin embargo, si siente que necesita aclaraciones sobre alguno de los temas o quiere hacer sugerencias sobre esta calculadora en particular, por favor contáctenos."
+    }
+  ],
+  "faq": {
+    "title": "Preguntas frecuentes sobre el Calculador de CGPA",
+    "q1": {
+      "question": "¿Hay alguna diferencia entre CGPA y GPA?",
+      "answer": "Sí, CGPA y GPA difieren en su alcance. Mientras que GPA representa su rendimiento en un solo semestre, CGPA promedia los puntajes de GPA a lo largo de varios semestres, mostrando un rendimiento académico general. Utilice un calculador de CGPA para ver la diferencia en los valores, e intente convertir GPA a CGPA si su institución lo permite."
+    },
+    "q2": {
+      "question": "¿Varía la fórmula de conversión de CGPA según la institución?",
+      "answer": "Absolutamente. Muchas instituciones tienen fórmulas únicas para la conversión de CGPA. Por ejemplo, algunas utilizan un factor de 9.5 para convertir CGPA en porcentaje, mientras que otras aplican multiplicadores diferentes. Es importante verificar la fórmula utilizada por su institución para una conversión precisa de CGPA a porcentaje. Un calculador de CGPA puede adaptarse a los requisitos específicos de la universidad."
+    },
+    "q3": {
+      "question": "¿Por qué no obtengo un porcentaje preciso a partir de CGPA?",
+      "answer": "Un resultado inexacto de CGPA a porcentaje podría deberse al uso de un factor de conversión o fórmula incorrectos. Diferentes instituciones tienen métodos distintos, por lo que es esencial usar un calculador de CGPA a porcentaje diseñado para su institución o verificar el multiplicador aplicado. Calcular el porcentaje con precisión puede requerir un calculador especializado de CGPA."
+    },
+    "q4": {
+      "question": "¿Cómo convertir CGPA a porcentaje?",
+      "answer": "Para convertir CGPA a porcentaje, multiplica tu CGPA por el factor específico de la institución (a menudo 9.5). Este método sencillo funciona para muchos, pero un calculador de CGPA a porcentaje lo simplifica. Si necesitas invertir el proceso, prueba con un calculador de porcentaje a CGPA."
+    },
+    "q5": {
+      "question": "¿Cómo convertir un CGPA de 7.6 a porcentaje?",
+      "answer": "Para convertir un CGPA de 7.6 a porcentaje, multiplica 7.6 por el factor de conversión (típicamente 9.5). Esto da un resultado de 72.2%. Un calculador de CGPA a porcentaje automatiza esto y asegura precisión."
+    },
+    "q6": {
+      "question": "¿Qué es un CGPA de 7.8 en porcentaje?",
+      "answer": "Usando el factor común de 9.5, un CGPA de 7.8 se traduce en 74.1% en porcentaje. Puedes verificarlo nuevamente con un calculador de CGPA a porcentaje para resultados rápidos."
+    },
+    "q7": {
+      "question": "¿Qué es el Calculador de CGPA a Porcentaje sobre 4?",
+      "answer": "Algunas universidades operan con una escala de 4 puntos. Para convertir CGPA a porcentaje sobre 4, encuentra tu GPA en una escala de 4 y luego utiliza un factor de conversión apropiado. Calculadoras especializadas, como un calculador de CGPA a porcentaje sobre 4, pueden manejar esta conversión por ti."
+    },
+    "q8": {
+      "question": "¿Cuál es la fórmula de CGPA a porcentaje de VTU?",
+      "answer": "La fórmula de CGPA a porcentaje de VTU es: Porcentaje = CGPA * 9.1 (puede variar por departamento)."
+    },
+    "q9": {
+      "question": "¿Cómo convertir CGPA a porcentaje para Ingeniería?",
+      "answer": "Las universidades de ingeniería pueden usar diferentes fórmulas o factores de conversión. Los estudiantes de ingeniería deben verificar el método de su universidad o utilizar un calculador específico para ingeniería para convertir CGPA a porcentaje con precisión."
+    },
+    "q10": {
+      "question": "¿Es diferente el Calculador de CGPA a Porcentaje de DU?",
+      "answer": "Sí, la Universidad de Delhi (DU) tiene su propia fórmula. Los estudiantes de DU deben utilizar un calculador específico de CGPA a porcentaje de DU para obtener resultados precisos y alineados con los estándares de calificación de DU."
+    },
+    "q11": {
+      "question": "¿Cómo calcular el porcentaje a partir de CGPA?",
+      "answer": "Para calcular el porcentaje a partir de CGPA, multiplica el CGPA por un factor de conversión (a menudo 9.5). Un calculador de CGPA lo simplifica, o puedes intentar con un calculador de porcentaje a CGPA si necesitas lo contrario."
+    },
+    "q12": {
+      "question": "¿Cuál es la fórmula de cálculo de CGPA a porcentaje de SPPU?",
+      "answer": "La Universidad Savitribai Phule Pune (SPPU) tiene un método único de cálculo de CGPA a porcentaje. Puedes usar un calculador específico de SPPU o consultar sus directrices para una conversión precisa."
+    },
+    "q13": {
+      "question": "¿Cuál es la fórmula del calculador de CGPA a porcentaje de Makaut?",
+      "answer": "Makaut es una plataforma en línea. La fórmula del calculador de CGPA a porcentaje de Makaut es: Porcentaje = (CGPA – 0.75) * 10."
+    },
+    "q14": {
+      "question": "¿Cuál es la fórmula de CGPA a porcentaje de GTU?",
+      "answer": "La fórmula de CGPA a porcentaje de GTU es: Porcentaje = (CGPA * 7.1) + 12."
+    },
+    "q15": {
+      "question": "¿Cómo encontrar el porcentaje a partir de CGPA?",
+      "answer": "Puedes calcularlo manualmente usando la fórmula mencionada anteriormente o usar este calculador para encontrar tu porcentaje."
+    }
+  },
+  "cgpa-Description": "CGPA, abreviado como Promedio de Puntos de Calificación Acumulativos, es una evaluación general del rendimiento académico de un estudiante durante un período académico definido. Mientras que algunas universidades y juntas lo consideran como el promedio de todos los puntos de calificación del semestre obtenidos por un estudiante a lo largo del curso, otras pueden incluir un factor adicional, que son los Créditos, en el cálculo.",
+  "title3": "Calculadora de CGPA a Porcentaje",
+  "enterCGPA3": "Ingrese CGPA",
+  "cgpaPlaceholder3": "Ingrese su CGPA",
+  "chooseGradeScale3": "Elija la escala de calificación",
+  "multiplicationFactor": "Factor de Multiplicación",
+  "multiplicationFactorPlaceholder": "Ingrese el factor de multiplicación",
+  "error": "Error",
+  "calculateButton3": "Calcular",
+  "resetButton3": "Restablecer",
+  "calculatedPercentage": "Su porcentaje calculado",
+  "percentagePlaceholder": "Porcentaje:",
+  "downloadButton3": "Descargar",
+  "whatsappButton3": "WhatsApp",
+  "copyLinkButton3": "Copiar enlace",
+  "linkCopied3": "¡Enlace copiado!",
+  "calculationHistory3": "Historial de cálculos",
+  "sno": "S.NO",
+  "cgpa": "CGPA",
+  "percentage": "Porcentaje",
+  "scale4": "Escala 4.0",
+  "scale5": "Escala 5.0",
+  "scale10": "Escala 10.0",
+  "header": {
+    "calculator": "Calculadora",
+    "title": " Educativa",
+    "subtitle": "¿Resolviendo conversiones simples como CGPA a Porcentaje usando la calculadora CGPA o matemáticas avanzadas con una Calculadora Científica?",
+    "cgpa_to_percentage": "CGPA a Porcentaje"
+  },
+  "link": {
+    "text": "Lord Calculator",
+    "description": " te ayudará a abordar cálculos tediosos y desafiantes con facilidad. Deja que la mejor tecnología impulse tu viaje educativo, porque no mereces nada menos que lo MEJOR."
+  },
+  "choose_lord_calculator": {
+    "title": "¿Por qué elegir Lord Calculator?",
+    "feature_1": {
+      "title": "Rápido y Súper Confiable",
+      "description": "¡Sí, hemos asegurado ambos! Resuelve incluso los cálculos más complejos con precisión en un abrir y cerrar de ojos. ¡Nada de errores!"
+    },
+    "feature_2": {
+      "title": "Sencillo y Fácil",
+      "description": "La única parte compleja serán tus ecuaciones. Con botones y medidores intuitivos, la navegación aquí es súper fácil."
+    },
+    "feature_3": {
+      "title": "Descargar, Guardar o Compartir",
+      "description": "¿Necesitas guardar la ecuación resuelta? No te preocupes, resuelve una vez y luego comparte o guarda tus cálculos para usarlos sin conexión durante toda la vida."
+    }
+  },
+
+  
+    "calculatorCards": [
+      {
+        "title": "Calculadora de CGPA a Porcentaje",
+        "description": "¡Convierte tus calificaciones rápidamente usando la calculadora de CGPA a Porcentaje! Incluso puedes descargar o compartir tu informe de forma gratuita.",
+        "emoji": "➗"
+      },
+      {
+        "title": "Calculadora de Porcentaje a CGPA",
+        "description": "La conversión de CGPA puede ser tediosa, pero no con la calculadora de Porcentaje a CGPA. Compatible con la mayoría de las instituciones en todo el mundo.",
+        "emoji": "🔢"
+      },
+      {
+        "title": "Calculadora de GPA a CGPA",
+        "description": "Con un diseño minimalista, este conversor de GPA a CGPA te ayudará a ahorrar tiempo. ¡Útil tanto para estudiantes como para educadores!",
+        "emoji": "💡"
+      },
+      {
+        "title": "Calculadora de CGPA a GPA",
+        "description": "¿Estás verificando la elegibilidad para tu universidad favorita en el extranjero? ¡Convierte rápidamente tus calificaciones con el conversor de CGPA a GPA y comparte la buena noticia!",
+        "emoji": "📚"
+      }
+    ]
+  
+  
 }

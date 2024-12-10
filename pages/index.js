@@ -1,52 +1,60 @@
 import Navbar from "../components/Navbar";
 import React from "react";
-import { FcCalculator } from "react-icons/fc";
 import Footer from "@/components/Footer";
 import { useTheme } from "../context/ThemeContext";
 import Link from "next/link";
-import { ImCalculator } from "react-icons/im";
+import { useTranslation } from "react-i18next";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const { theme } = useTheme();
+  const { t } = useTranslation();
   const calculatorCards = [
     {
-
-      title: "Educational Calculator",
-      description: "CGPA, GPA, Percentage, or Scientific Calculator - tell us what you need & enjoy them for free, forever!",
-      backgroundColor: theme === "dark" ? "bg-[#4285f4]" : "bg-[#4285f4]",
-      href: "/educational-calculator",
+      title: t("tit"),
+      description: t('des'),
       emoji: "🧑‍🏫",
-    },
-    {
-      title: "CGPA To Percentage Calculator",
-      description: "Convert your grades on the go using the CGPA to Percentage calculator! You can even download or share your report for free.",
-      backgroundColor: theme === "dark" ? "bg-[#20a971]" : "bg-[#20a971]",
-      href: "/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage",
-      emoji: "➗",
-    },
-    {
-      title: "Percentage to CGPA Calculator",
-      description: "CGPA conversion might be tedious but not with Percentage to CGPA calculator. Compatible with most institutions all over the world.",
+      href: "/educational-calculator",
       backgroundColor: theme === "dark" ? "bg-[#4285f4]" : "bg-[#4285f4]",
-      href: "/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA",
+    },
+    {
+      title: t('calculatorCards.0.title'),
+      description: t('calculatorCards.0.description'),
+      emoji: "➗",
+      href: "/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage",
+      backgroundColor: theme === "dark" ? "bg-[#20a971]" : "bg-[#20a971]",
+    },
+    {
+      title: t('calculatorCards.1.title'),
+      description: t('calculatorCards.1.description'),
       emoji: "🔢",
+      href: "/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA",
+      backgroundColor: theme === "dark" ? "bg-[#4285f4]" : "bg-[#4285f4]",
     },
     {
-      title: "GPA to CGPA Calculator",
-      description: "With a minimalist design, this GPA to CGPA converter will help you to save time. Useful for students and educators alike!",
-      backgroundColor: theme === "dark" ? "bg-[#cf8408]" : "bg-[#cf8408]",
-      href: "/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA",
+      title: t('calculatorCards.2.title'),
+      description: t('calculatorCards.2.description'),
       emoji: "💡",
+      href: "/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA",
+      backgroundColor: theme === "dark" ? "bg-[#cf8408]" : "bg-[#cf8408]",
     },
     {
-      title: "CGPA to GPA Calculator",
-      description: "Checking eligibility for your favorite university abroad? Quickly convert your grades with CGPA to GPA converter and share the happy news!",
-      backgroundColor: theme === "dark" ? "bg-[#5865f2]" : "bg-[#5865f2]",
-      href: "/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA",
+      title: t('calculatorCards.3.title'),
+      description: t('calculatorCards.3.description'),
       emoji: "📚",
+      href: "/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA",
+      backgroundColor: theme === "dark" ? "bg-[#5865f2]" : "bg-[#5865f2]",
     },
   ];
 
+  const [isMounted, setIsMounted] = useState(false);
+
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return null;
 
   return (
     <div className={`transition-all duration-300 ease-in-out ${theme === "dark" ? "dark" : "light"}`}>
@@ -88,18 +96,18 @@ export default function Home() {
       <div className="relative h-64 py-8 mt-4 flex justify-center mx-auto dark:text-white">
         <div className="text-center mt-20 p-5">
           <h1 className="block font-bold text-gray-800 text-3xl md:text-3xl lg:text-3xl dark:text-neutral-200 drop-shadow-md">
-            Education, Finance, or Health—
-            <span className="bg-clip-text bg-gradient-to-tl from-blue-600 to-violet-600 text-transparent"> Lord Calculator&nbsp;</span>
-            Is All You Need!
+            {t('section.title')}
+            <span className="bg-clip-text bg-gradient-to-tl from-blue-600 to-violet-600 text-transparent">
+              {t('section.highlightedText')}
+            </span>
+            {t('section.subtitle')}
           </h1>
           <p className="text-sm my-3 text-gray-500 dark:text-gray-300">
-            From Health to Finance & Construction to Education - One platform for all your tasks. Get every calculator that you’ll ever need.<br />
-            Lightning-fast & Precise - Not even an iota of error!
-
+            {t('section.description')}<br />
+            {t('section.additionalDescription')}
           </p>
         </div>
       </div>
-
       <div className=" py-6 px-4 translate-y-5 ">
         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 justify-center text-center">
           {calculatorCards.map((card, index) => (

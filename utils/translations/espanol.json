@@ -1124,30 +1124,40 @@
       "description": "¿Necesitas guardar la ecuación resuelta? No te preocupes, resuelve una vez y luego comparte o guarda tus cálculos para usarlos sin conexión durante toda la vida."
     }
   },
+  "calculatorCards": [
+    {
+      "title": "Calculadora de CGPA a Porcentaje",
+      "description": "¡Convierte tus calificaciones rápidamente usando la calculadora de CGPA a Porcentaje! Incluso puedes descargar o compartir tu informe de forma gratuita.",
+      "emoji": "➗"
+    },
+    {
+      "title": "Calculadora de Porcentaje a CGPA",
+      "description": "La conversión de CGPA puede ser tediosa, pero no con la calculadora de Porcentaje a CGPA. Compatible con la mayoría de las instituciones en todo el mundo.",
+      "emoji": "🔢"
+    },
+    {
+      "title": "Calculadora de GPA a CGPA",
+      "description": "Con un diseño minimalista, este conversor de GPA a CGPA te ayudará a ahorrar tiempo. ¡Útil tanto para estudiantes como para educadores!",
+      "emoji": "💡"
+    },
+    {
+      "title": "Calculadora de CGPA a GPA",
+      "description": "¿Estás verificando la elegibilidad para tu universidad favorita en el extranjero? ¡Convierte rápidamente tus calificaciones con el conversor de CGPA a GPA y comparte la buena noticia!",
+      "emoji": "📚"
+    }
+  ],
+  "tit": "Calculadora Educativa",
+  "des": "CGPA, GPA, Porcentaje o Calculadora Científica: dime lo que necesitas y disfrútalas gratis, ¡para siempre!",
+  "emoji5": "🧑‍🏫",
 
   
-    "calculatorCards": [
-      {
-        "title": "Calculadora de CGPA a Porcentaje",
-        "description": "¡Convierte tus calificaciones rápidamente usando la calculadora de CGPA a Porcentaje! Incluso puedes descargar o compartir tu informe de forma gratuita.",
-        "emoji": "➗"
-      },
-      {
-        "title": "Calculadora de Porcentaje a CGPA",
-        "description": "La conversión de CGPA puede ser tediosa, pero no con la calculadora de Porcentaje a CGPA. Compatible con la mayoría de las instituciones en todo el mundo.",
-        "emoji": "🔢"
-      },
-      {
-        "title": "Calculadora de GPA a CGPA",
-        "description": "Con un diseño minimalista, este conversor de GPA a CGPA te ayudará a ahorrar tiempo. ¡Útil tanto para estudiantes como para educadores!",
-        "emoji": "💡"
-      },
-      {
-        "title": "Calculadora de CGPA a GPA",
-        "description": "¿Estás verificando la elegibilidad para tu universidad favorita en el extranjero? ¡Convierte rápidamente tus calificaciones con el conversor de CGPA a GPA y comparte la buena noticia!",
-        "emoji": "📚"
-      }
-    ]
+    "section": {
+      "title": "Educación, Finanzas o Salud—",
+      "highlightedText": "Lord Calculator",
+      "subtitle": "¡Es todo lo que necesitas!",
+      "description": "De Salud a Finanzas y Construcción a Educación - Una plataforma para todas tus tareas. Obtén todas las calculadoras que necesitarás.",
+      "additionalDescription": "¡Rápido como un rayo y preciso! ¡Ni un iota de error!"
+    }
   
   
 }

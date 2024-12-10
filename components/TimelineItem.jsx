@@ -12,24 +12,28 @@ const TimelineItem = () => {
           description: t('calculatorCards.0.description'),
           emoji: "➗",
           href: "/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage",
+          backgroundColor: theme === "dark" ? "bg-[#20a971]" : "bg-[#20a971]",
         },
         {
           title: t('calculatorCards.1.title'),
           description: t('calculatorCards.1.description'),
           emoji: "🔢",
           href: "/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA",
+          backgroundColor: theme === "dark" ? "bg-[#4285f4]" : "bg-[#4285f4]",
         },
         {
           title: t('calculatorCards.2.title'),
           description: t('calculatorCards.2.description'),
           emoji: "💡",
           href: "/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA",
+          backgroundColor: theme === "dark" ? "bg-[#cf8408]" : "bg-[#cf8408]",
         },
         {
           title: t('calculatorCards.3.title'),
           description: t('calculatorCards.3.description'),
           emoji: "📚",
           href: "/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA",
+          backgroundColor: theme === "dark" ? "bg-[#5865f2]" : "bg-[#5865f2]",
         },
       ];
     

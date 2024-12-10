@@ -1123,30 +1123,36 @@
       "description": "Need to save solved equation? Worry not, solve once then share or save your calculations for life-long offline use."
     }
   },
-
-  
-    "calculatorCards": [
-      {
-        "title": "CGPA to Percentage Calculator",
-        "description": "Convert your grades on the go using the CGPA to Percentage calculator! You can even download or share your report for free.",
-        "emoji": "➗"
-      },
-      {
-        "title": "Percentage to CGPA Calculator",
-        "description": "CGPA conversion might be tedious but not with Percentage to CGPA calculator. Compatible with most institutions all over the world.",
-        "emoji": "🔢"
-      },
-      {
-        "title": "GPA to CGPA Calculator",
-        "description": "With a minimalist design, this GPA to CGPA converter will help you to save time. Useful for students and educators alike!",
-        "emoji": "💡"
-      },
-      {
-        "title": "CGPA to GPA Calculator",
-        "description": "Checking eligibility for your favorite university abroad? Quickly convert your grades with CGPA to GPA converter and share the happy news!",
-        "emoji": "📚"
-      }
-    ]
-  
-  
+  "calculatorCards": [
+    {
+      "title": "CGPA to Percentage Calculator",
+      "description": "Convert your grades on the go using the CGPA to Percentage calculator! You can even download or share your report for free.",
+      "emoji": "➗"
+    },
+    {
+      "title": "Percentage to CGPA Calculator",
+      "description": "CGPA conversion might be tedious but not with Percentage to CGPA calculator. Compatible with most institutions all over the world.",
+      "emoji": "🔢"
+    },
+    {
+      "title": "GPA to CGPA Calculator",
+      "description": "With a minimalist design, this GPA to CGPA converter will help you to save time. Useful for students and educators alike!",
+      "emoji": "💡"
+    },
+    {
+      "title": "CGPA to GPA Calculator",
+      "description": "Checking eligibility for your favorite university abroad? Quickly convert your grades with CGPA to GPA converter and share the happy news!",
+      "emoji": "📚"
+    }
+  ],
+  "tit": "Educational Calculator",
+  "des": "CGPA, GPA, Percentage, or Scientific Calculator - tell us what you need & enjoy them for free, forever!",
+  "emoji5": "🧑‍🏫",
+  "section": {
+    "title": "Education, Finance, or Health—",
+    "highlightedText": "Lord Calculator ",
+    "subtitle": " Is All You Need!",
+    "description": "From Health to Finance & Construction to Education - One platform for all your tasks. Get every calculator that you’ll ever need.",
+    "additionalDescription": "Lightning-fast & Precise - Not even an iota of error!"
+  }
 }

@@ -4,6 +4,7 @@ import { initReactI18next } from 'react-i18next';
 import espanolTranslations from './utils/translations/espanol.json';
 import englishTranslations from './utils/translations/english.json';
 import hindiTranslations from "./utils/translations/hindi.json";
+import frenchTranslations from "./utils/translations/french.json";
 
 const resources = {
   en: {
@@ -15,6 +16,9 @@ const resources = {
   hi: {
     translation: hindiTranslations,
   },
+  fr: {
+    translation: frenchTranslations,
+  }
 };
 console.log(resources);
 console.log("Detected language:", i18n.language);

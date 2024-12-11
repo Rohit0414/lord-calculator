@@ -459,13 +459,13 @@ const Cgpatogpa = () => {
                             </div>
                             <div className="flex justify-center">
                                 <div className="history-container mb-4 text-center w-60">
-                                    <b className=''>{t("calculationHistory")}</b>
+                                    <b className=''>{t('calculationHistory')}</b>
                                     <table className="min-w-full border text-black  border-gray-300 mt-2 mx-auto">
                                         <thead>
                                             <tr className="bg-gray-100">
                                                 <th className="border dark:border-black border-gray-300 p-2">{t("sNo")}</th>
-                                                <th className="border dark:border-black border-gray-300 p-2">{t("cgpa")}</th>
-                                                <th className="border dark:border-black border-gray-300 p-2">{t("gpa")}</th>
+                                                <th className="border dark:border-black border-gray-300 p-2">{t("cgpa1")}</th>
+                                                <th className="border dark:border-black border-gray-300 p-2">{t('gpa1')}</th>
                                             </tr>
                                         </thead>
                                         <tbody>

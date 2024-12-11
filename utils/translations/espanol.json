@@ -226,11 +226,9 @@
   "copyLinkButton": "Copiar enlace",
   "linkCopied": "¡Enlace copiado!",
   "calculationHistory": "Historial de cálculos",
-  "tableHeaders": {
-    "sNo": "N.º",
-    "cgpa": "CGPA",
-    "gpa": "GPA"
-  },
+  "sNo": "N.º",
+  "cgpa1": "CGPA",
+  "gpa1": "GPA",
   "Heading": "Calculadora de CGPA a GPA",
   "Paragraph1": "A menudo nos encontramos en situaciones donde necesitamos convertir nuestras calificaciones a un formato diferente. Ya sea que estés gestionando bases de datos de calificaciones estudiantiles o necesites convertir tus calificaciones para cumplir con requisitos específicos, tener una herramienta confiable hace que el proceso sea mucho más fácil.",
   "Paragraph2": "La calculadora de CGPA a GPA de Lord Calculator está diseñada para ayudarte a convertir rápidamente y con precisión tus calificaciones CGPA al formato GPA, para que puedas concentrarte en lo que realmente importa: ¡tu desempeño!",

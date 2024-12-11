@@ -226,11 +226,9 @@
   "copyLinkButton": "Copy Link",
   "linkCopied": "Link Copied!",
   "calculationHistory": "Calculation History",
-  "tableHeaders": {
-    "sNo": "S.NO",
-    "cgpa": "CGPA",
-    "gpa": "GPA"
-  },
+  "sNo": "S.NO",
+  "cgpa1": "CGPA",
+  "gpa1": "GPA",
   "Heading": "CGPA to GPA Calculator",
   "Paragraph1": "We often encounter situations where we need to convert our grades into a different format. Whether you're dealing with student grade databases or need to convert your grades to meet specific requirements, having a reliable tool makes the process much easier.",
   "Paragraph2": "Lord Calculator’s CGPA to GPA calculator is designed to help you quickly and accurately convert your CGPA grades into the GPA format, so you can focus on what truly matters—your performance!",

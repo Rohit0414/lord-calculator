@@ -5,6 +5,8 @@ import espanolTranslations from './utils/translations/espanol.json';
 import englishTranslations from './utils/translations/english.json';
 import hindiTranslations from "./utils/translations/hindi.json";
 import frenchTranslations from "./utils/translations/french.json";
+import germanTranslations from "./utils/translations/german.json";
+import italianTranslations from "./utils/translations/italian.json";
 
 const resources = {
   en: {
@@ -18,7 +20,13 @@ const resources = {
   },
   fr: {
     translation: frenchTranslations,
-  }
+  },
+  de:{
+    translation: germanTranslations,
+  },
+  it:{
+    translation: italianTranslations,
+  },
 };
 console.log(resources);
 console.log("Detected language:", i18n.language);

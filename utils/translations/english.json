@@ -1154,5 +1154,25 @@
     "subtitle": " Is All You Need!",
     "description": "From Health to Finance & Construction to Education - One platform for all your tasks. Get every calculator that you’ll ever need.",
     "additionalDescription": "Lightning-fast & Precise - Not even an iota of error!"
+  },
+  "footer": {
+    "title": "Lord Calculator",
+    "location": "Location:",
+    "contact": "Contact Us: bhushanthakur04@gmail.com",
+    "categories": "Categories",
+    "educational_calculators": "Educational Calculators",
+    "scientific_calculators": "Scientific Calculators",
+    "womens_calculators": "Women's Calculators",
+    "pages": "Pages",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_use": "Terms of Use",
+    "about_us": "About Us",
+    "copyright": "© 2024 Lord Calculator. All rights reserved.",
+    "social_links": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter",
+      "whatsapp": "WhatsApp"
+    }
   }
 }

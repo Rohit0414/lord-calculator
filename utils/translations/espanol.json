@@ -1149,15 +1149,31 @@
   "tit": "Calculadora Educativa",
   "des": "CGPA, GPA, Porcentaje o Calculadora Científica: dime lo que necesitas y disfrútalas gratis, ¡para siempre!",
   "emoji5": "🧑‍🏫",
-
-  
-    "section": {
-      "title": "Educación, Finanzas o Salud—",
-      "highlightedText": "Lord Calculator",
-      "subtitle": "¡Es todo lo que necesitas!",
-      "description": "De Salud a Finanzas y Construcción a Educación - Una plataforma para todas tus tareas. Obtén todas las calculadoras que necesitarás.",
-      "additionalDescription": "¡Rápido como un rayo y preciso! ¡Ni un iota de error!"
+  "section": {
+    "title": "Educación, Finanzas o Salud—",
+    "highlightedText": "Lord Calculator",
+    "subtitle": "¡Es todo lo que necesitas!",
+    "description": "De Salud a Finanzas y Construcción a Educación - Una plataforma para todas tus tareas. Obtén todas las calculadoras que necesitarás.",
+    "additionalDescription": "¡Rápido como un rayo y preciso! ¡Ni un iota de error!"
+  },
+  "footer": {
+    "title": "Lord Calculator",
+    "location": "Ubicación:",
+    "contact": "Contáctanos: bhushanthakur04@gmail.com",
+    "categories": "Categorías",
+    "educational_calculators": "Calculadoras Educativas",
+    "scientific_calculators": "Calculadoras Científicas",
+    "womens_calculators": "Calculadoras para Mujeres",
+    "pages": "Páginas",
+    "privacy_policy": "Política de Privacidad",
+    "terms_of_use": "Términos de Uso",
+    "about_us": "Sobre Nosotros",
+    "copyright": "© 2024 Lord Calculator. Todos los derechos reservados.",
+    "social_links": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter",
+      "whatsapp": "WhatsApp"
     }
-  
-  
+  }
 }

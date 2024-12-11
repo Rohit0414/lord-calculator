@@ -3,6 +3,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 import espanolTranslations from './utils/translations/espanol.json';
 import englishTranslations from './utils/translations/english.json';
+import hindiTranslations from "./utils/translations/hindi.json";
 
 const resources = {
   en: {
@@ -11,10 +12,13 @@ const resources = {
   es: {
     translation: espanolTranslations,
   },
+  hi: {
+    translation: hindiTranslations,
+  },
 };
 console.log(resources);
 console.log("Detected language:", i18n.language);
-console.log(i18n.t('your.translation.key')); 
+console.log(i18n.t('your.translation.key'));
 
 if (!i18n.isInitialized) {
   i18n

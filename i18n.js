@@ -11,6 +11,8 @@ import portugueseTranslations from "./utils/translations/portuguese.json";
 import bengaliTranslations from "./utils/translations/bengali.json";
 import koreanTranslations from "./utils/translations/korean.json";
 import russianTranslations from "./utils/translations/russian.json";
+import tamilTranslations from "./utils/translations/tamil.json";
+import malayalamTranslations from "./utils/translations/malayalam.json";
 
 const resources = {
   en: {
@@ -42,6 +44,12 @@ const resources = {
   },
   ko:{
     translation: koreanTranslations,
+  },
+  ta:{
+    translation: tamilTranslations,
+  },
+  ml:{
+    translation: malayalamTranslations,
   },
 };
 console.log(resources);

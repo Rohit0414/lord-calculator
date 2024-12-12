@@ -673,5 +673,504 @@
     "cons_title": "Contras das Calculadoras de Percentual para CGPA",
     "cons_1": "Fator de Multiplicação Variável: Observamos que diferentes universidades seguem fatores de multiplicação diferentes, mesmo sob a mesma escala de avaliação. Assim, em tais cenários, as calculadoras online não podem atender aos requisitos de todas as universidades. Você precisa modificar manualmente o fator de multiplicação para uma conversão precisa.",
     "cons_2": "Fórmulas de Conversão Diferentes: Também vimos universidades como a Universidade de Mumbai, usarem fórmulas completamente diferentes para conversões de CGPA para percentual. Por exemplo, a fórmula de CGPA para percentual da Universidade de Mumbai é, CGPA = (Percentual - 11) / 7.25. Nesses casos, as calculadoras online não podem adicionar operadores adicionais automaticamente ou manualmente. Durante tais conversões, você precisa se referir aos métodos tradicionais de cálculo de notas.",
-    "summary_title": "Para Resumir"
+    "summary_title": "Para Resumir",
+    "summary_1": "Até agora, aprendemos sobre os conceitos de Percentagem & CGPA, como convertê-los e usá-los de forma intercambiável, quais são as situações possíveis em que você precisaria alterar suas notas e como diferentes universidades/educacionais dependem de diferentes escalas de avaliação e fórmulas de conversão.",
+    "summary_2": "Também listamos calculadoras semelhantes, incluindo calculadora de CGPA para Percentagem, calculadora de GPA para CGPA, calculadora de CGPA para GPA e calculadora de SGPA. Se você precisar saber algum conceito específico relacionado a essas calculadoras, leia a descrição da calculadora respectiva. Cobrimos todos os detalhes essenciais em sua descrição.",
+    "faq_title": "Perguntas Frequentes (FAQs)",
+    "faq_1_question": "P1. O que é a calculadora de Percentagem para CGPA?",
+    "faq_1_answer": "A calculadora de Percentagem para CGPA permite converter sua percentagem para CGPA de forma fácil. Tudo o que você precisa fazer é inserir sua Percentagem e o fator de multiplicação.",
+    "faq_2_question": "P2. Como converter percentagem para CGPA?",
+    "faq_2_answer": "Para converter sua percentagem para CGPA, você pode usar uma calculadora online como a Lord Calculator ou calcular manualmente usando a fórmula abaixo:",
+    "faq_2_formula": "CGPA = (Percentagem - 50) / 10",
+    "faq_3_question": "P3. Como usar a calculadora de Percentagem para CGPA da Lord Calculator?",
+    "faq_3_answer": "Para usar a calculadora de Percentagem para CGPA da Lord Calculator, siga estas etapas:",
+    "faq_3_step_1": "Insira sua Percentagem no primeiro campo.",
+    "faq_3_step_2": "Escolha a Escala de Avaliação ou insira manualmente o Fator de Multiplicação.",
+    "faq_3_step_3": "Verifique se você inseriu o fator de multiplicação corretamente.",
+    "faq_3_step_4": "Clique no botão 'Calcular' para ver seu CGPA no campo de resultado.",
+    "faq_4_question": "P4. Como converter CGPA de acordo com universidades internacionais?",
+    "faq_4_answer": "Diferentes universidades internacionais usam vários sistemas de conversão. Para aprender sobre um específico,",
+    "faq_4_link": "clique aqui",
+    "faq_5_question": "P5. Quais são os erros comuns a evitar ao calcular minhas notas?",
+    "faq_5_answer": "Erros comuns incluem:",
+    "faq_5_mistake_1": "Evite arredondar os pontos decimais muito cedo nos cálculos.",
+    "faq_5_mistake_2": "Garanta que você inseriu corretamente o fator de multiplicação da sua instituição.",
+    "faq_5_mistake_3": "Verifique se sua universidade segue o método de cálculo padrão.",
+    "faq_6_question": "P6. A calculadora de Percentagem para CGPA para Engenharia é diferente?",
+    "faq_6_answer": "Muitas universidades de engenharia usam fórmulas de conversão diferentes. Embora possa não variar entre departamentos, diferentes universidades podem seguir suas próprias fórmulas padrão de conversão, que podem não coincidir com as de outras.",
+    "faq_7_question": "P7. Qual é a fórmula da calculadora de Percentagem para CGPA da VTU?",
+    "faq_7_answer": "A fórmula da calculadora de Percentagem para CGPA da VTU (Visvesvaraya Technological University) é diferente de outras fórmulas. Pode ser representada como:",
+    "faq_7_example": "CGPA = (Percentagem - 50) / 10 Exemplo: Se você obteve 80%, seu CGPA respectivo de acordo com a VTU seria: CGPA = 8 + 0.75 = 8.75",
+    "faqs": [
+        {
+            "question": "P8. Qual é a fórmula da calculadora de Percentagem para CGPA da CBSE?",
+            "answer": "R. A fórmula de conversão de Percentagem para CGPA na CBSE é:",
+            "formula": "CGPA = (Percentagem - 50) / 9.5"
+        },
+        {
+            "question": "P9. O que é 70% em CGPA?",
+            "answer": "R. A fórmula de conversão usada é:",
+            "details": [
+                "70% em CGPA = 7.37 (de acordo com o Fator de Multiplicação 9.5)",
+                "70% em CGPA = 3.5 (de acordo com a escala de 5 pontos)",
+                "70% em CGPA = 2.8 (de acordo com a escala de 4 pontos)"
+            ]
+        }
+    ],
+    "faqa": [
+        {
+            "question": "P10. O que é 75% em CGPA?",
+            "answer": "R. Usando a mesma fórmula dada na P9, 75% em CGPA é:",
+            "details": [
+                "75% em CGPA = 7.89 (de acordo com o Fator de Multiplicação 9.5)",
+                "75% em CGPA = 3.75 (de acordo com a escala de 5 pontos)",
+                "75% em CGPA = 3 (de acordo com a escala de 4 pontos)"
+            ]
+        },
+        {
+            "question": "P11. O que é 80% em CGPA?",
+            "answer": "R. Usando a mesma fórmula dada na P9, 80% em CGPA é:",
+            "details": [
+                "80% em CGPA = 8.42 (de acordo com o Fator de Multiplicação 9.5)",
+                "80% em CGPA = 4 (de acordo com a escala de 5 pontos)",
+                "80% em CGPA = 3.2 (de acordo com a escala de 4 pontos)"
+            ]
+        },
+        {
+            "question": "P12. O que é 95,4% em CGPA?",
+            "answer": "R. Usando a mesma fórmula dada na P9, 95,4% em CGPA é:",
+            "details": [
+                "95,4% em CGPA = 10 (de acordo com a Escala de 9.5, note que todas as porcentagens acima de 95% são contadas como 10 CGPA)",
+                "95,4% em CGPA = 4.77 (de acordo com a escala de 5 pontos)",
+                "95,4% em CGPA = 3.81 (de acordo com a escala de 4 pontos)"
+            ]
+        }
+    ],
+    "note": "Nota: As fórmulas de conversão variam entre as instituições.",
+    "--title": "Calculadora de Percentagem para CGPA",
+    "enterPercentage": "Insira a Percentagem",
+    "placeholderPercentage": "Insira Sua Percentagem",
+    "chooseGradeScale": "Escolha a Escala de Avaliação",
+    "scale4": "Escala 4.0",
+    "scale5": "Escala 5.0",
+    "scale10": "Escala 10.0",
+    "setMultiplicationFactor": "Defina o Fator de Multiplicação",
+    "placeholderFactor": "Insira um fator",
+    "-calculateButton": "Calcular",
+    "-resetButton": "Redefinir",
+    "errorMessage": "Erro: Entrada inválida",
+    "calculatedCGPATitle": "Seu CGPA Calculado",
+    "placeholderCGPA": "Percentagem:",
+    "-downloadButton": "Baixar",
+    "-whatsappButton": "WhatsApp",
+    "-copyLinkButton": "Copiar Link",
+    "-linkCopied": "Link Copiado!",
+    "historyTitle": "Histórico de Cálculos",
+    "tableSNo": "Nº",
+    "tablePercentage": "Percentagem",
+    "tableCGPA": "CGPA",
+    "percentageContent": "Conteúdo da Percentagem",
+    "section1": "Calculadora de CGPA para Percentagem",
+    "intro_paragraph": "Bem-vindo, colegas estudantes e acadêmicos! Como todos sabem, os CGPAs e Percentuais desempenham papéis importantes em todo o sistema educacional. Frequentemente nos deparamos com situações em que precisamos usá-los de forma intercambiável, então a Lord Calculator apresenta a calculadora de CGPA para Percentagem mais confiável e rápida para ajudar você a calcular suas notas rapidamente! Aqui está um guia detalhado sobre como nossa calculadora de CGPA funciona, seguido por uma explicação do Sistema de Avaliação utilizado por várias universidades. Também listamos a fórmula de CGPA para Percentagem conforme os diferentes sistemas de avaliação seguidos.",
+    "-section2": "Fórmula de Conversão de CGPA para Percentagem",
+    "-formula": "Percentagem = CGPA × Fator de Multiplicação",
+    "-table_of_contents": "Índice",
+    "cgpa_to_percentage_calculator": "Calculadora de CGPA para Percentagem",
+    "cgpa_to_percentage_formula": "Fórmula de Conversão de CGPA para Percentagem",
+    "lord_calculator_tool": "Calculadora de CGPA para Percentagem da Lord Calculator",
+    "how_to_use_tool": "Como Usar a Calculadora de CGPA para Percentagem da Lord Calculator",
+    "-what_is_cgpa": "O que é CGPA e como é calculado?",
+    "important_terms": "Definição de Termos Importantes que Você Precisa Saber",
+    "why_convert_cgpa": "Por que Converter CGPA para Percentagem ou Percentagem para CGPA?",
+    "calculate_percentage": "Como Calcular Percentagem a partir de CGPA",
+    "common_pitfalls": "Erros Comuns durante a Conversão de CGPA para Percentagem",
+    "cgpa_in_10_point": "CGPA para Percentagem no Sistema de 10 Pontos",
+    "cgpa_in_5_point": "CGPA para Percentagem na Escala de 5 Pontos",
+    "cgpa_in_4_point": "CGPA para Percentagem na Escala de 4 Pontos",
+    "grading_scale": "O que é uma Escala de Avaliação e como as Universidades Escolhem Sua Escala Padrão?",
+    "-multiplication_factor": "O que é um Fator de Multiplicação e como Funciona?",
+    "different_boards": "Conversão de CGPA para Percentagem para diferentes Conselhos e Universidades",
+    "grading_scale_impacts": "Quais são os Impactos das Diferentes Escalas de Avaliação nos Estudantes?",
+    "-faqs": "Perguntas Frequentes relacionadas à Calculadora de CGPA",
+    "lord_calculator_cgpa_calculator": "Calculadora de CGPA para Percentagem da Lord Calculator",
+    "cgpa_calculator_description": "Nossa calculadora de CGPA é projetada com dois fatores principais em mente: facilidade de uso e cálculos super rápidos.",
+    "cgpa_calculator_description_expanded": "Embora o cálculo de notas envolva vários fatores, incorporamos todos os componentes essenciais para calcular suas notas ou percentagens com precisão. Diferentes universidades usam diferentes escalas de avaliação e fatores de multiplicação (não se preocupe, explicaremos esses termos abaixo). Para sua conveniência, incluímos tanto a Escala de Avaliação quanto o Fator de Multiplicação manual.",
+    "how_to_use_heading": "Como Usar a Calculadora de CGPA para Percentagem da Lord Calculator",
+    "how_to_use_description": "Basta inserir os campos necessários em nossa calculadora de CGPA, clicar em \"Calcular\" e voilà! Sua percentagem será exibida junto com nosso medidor de notas. É simples assim. No entanto, deixe-me explicar rapidamente os campos e dados que precisamos de você para calcular suas notas e percentagens com precisão.",
+    "how_to_use_step1": "Acesse ",
+    "how_to_use_step1_link": "https://lordcalculator.com/educational-calculator/cgpa-to-percentage-calculator",
+    "how_to_use_step2": "No primeiro campo, insira seu CGPA. Certifique-se de inseri-lo corretamente, incluindo os pontos decimais.",
+    "how_to_use_step3": "Escolha a Escala de Avaliação usada pela sua universidade. As escalas de avaliação comuns são 4, 5 e 10. Alternativamente, você pode inserir o fator de multiplicação manualmente e clicar no botão de calcular. Após inserir todos os valores, clique em \"Calcular\" para obter sua percentagem. Você também poderá verificar seu desempenho no medidor de avaliação. Além disso, você pode obter um certificado de conversão de CGPA para percentagem (observe que este é um certificado representativo).",
+    "tip_heading": "Dica para Cálculo de CGPA para Percentagem",
+    "tip_description1": "Diferentes universidades podem usar diferentes fatores de multiplicação (também conhecidos como fatores de conversão), mesmo sob a mesma escala de avaliação. Por exemplo, a Universidade X pode usar uma escala de avaliação de 1 ponto com um fator de multiplicação padrão de 9,5, enquanto outra universidade pode usar um fator de 9,7 ou 9,8. Portanto, é importante verificar novamente o fator de multiplicação que você insere na calculadora de CGPA para percentagem antes de clicar no botão \"Calcular\".",
+    "tip_description2": "Se você não tem certeza sobre a escala de avaliação ou o fator de multiplicação da sua universidade, não se preocupe! Nós listamos ",
+    "tip_description2_link": "Conversão de CGPA para Percentagem para diferentes Conselhos e Universidades",
+    "tip_description3": "Não tem certeza sobre a escala de avaliação ou o fator de multiplicação da sua universidade? Não se preocupe! Fornecemos tabelas de conversão de CGPA para percentagem para vários conselhos e universidades aqui para facilitar seu cálculo.",
+    "what_is_cgpa_heading": "O que é CGPA e como é calculado?",
+    "cgpa_formula_method_1_title": "Método 1 da Fórmula de Cálculo de CGPA:",
+    "cgpa_formula_method_1_description": "Um método de cálculo de CGPA é encontrar a média. A fórmula de cálculo de CGPA seria a soma dos pontos de grau de todos os semestres dividida pelo número de semestres. Matematicamente, a fórmula de CGPA pode ser representada como:",
+    "cgpa_formula_method_1_formula": "CGPA =",
+    "cgpa_formula_method_1_numerator": "SGPA do sem.1 + SGPA do sem.2 + SGPA do sem.3 +.........+ SGPA do sem. \"N\"",
+    "cgpa_formula_method_1_denominator": "Número total de semestres",
+    "cgpa_example_description": "Exemplo: Ram, nosso amigo do ensaio 'Meu Melhor Amigo', finalmente se formou na escola e entrou na faculdade. Lá ele obteve um SGPA em 4 semestres: 6+8.5+7+9.5, então seu CGPA seria:",
+    "cgpa_example_formula_1": "CGPA =",
+    "cgpa_example_numerator": "(6 + 8.5 + 7 + 9.5)",
+    "cgpa_example_denominator": "4",
+    "cgpa_example_result": "CGPA =",
+    "cgpa_example_final_numerator": "31",
+    "cgpa_example_final_denominator": "4",
+    "cgpa_example_final_result": "= 7.75",
+    "cgpa_formula_method_2_title": "Método 2 de Fórmula de Cálculo de CGPA:",
+    "cgpa_formula_method_2_description": "Agora, outra fórmula de CGPA, que também é praticada, é encontrar a soma do produto de SGPA e créditos adquiridos dividida pelo número total de créditos adquiridos. Matematicamente, essa fórmula de cálculo de CGPA pode ser representada como:",
+    "cgpa_formula_method_2_formula": "CGPA =",
+    "cgpa_formula_method_2_numerator": "(SGPA do sem.1 × Créditos adquiridos no sem.1) + (SGPA do sem.2 × Créditos adquiridos no sem.2) + ...... + (SGPA do sem.\"N\" × Créditos adquiridos no sem.\"N\")",
+    "cgpa_formula_method_2_denominator": "Total de Créditos Adquiridos",
+    "cgpa_exampletitle": "Exemplo:",
+    "cgpa_exampledescription": "Shyam, outro amigo do ensaio 'Meu Melhor Amigo', também entrou em uma faculdade diferente. E lá ele obteve SGPA em 4 semestres: 7.2+6.5+8.9+9.6 com créditos adquiridos 4+3+3+5, então seu CGPA seria:",
+    "cgpa_examplecalculation": "CGPA =",
+    "cgpa_examplenumerator": "(7.2×4 + 6.5×3 + 8.9×3 + 9.6×5)",
+    "cgpa_exampledenominator": "(4 + 3 + 3 + 5)",
+    "cgpa_examplefinal_numerator": "28.8 + 19.5 + 26.7 + 48",
+    "cgpa_examplefinal_denominator": "15",
+    "cgpa_examplefinal_result": "CGPA = 8.2",
+    "important_terms_title": "Definição dos Termos Importantes que Você Precisa Saber",
+    "important_terms_description": "Ao passar por um documento oficial, formulário ou até mesmo seu certificado, você vê certos termos e abreviações que são usados repetidamente. Vamos revisar rapidamente esses termos antes de prosseguir para como diferentes conselhos/universidades definem sua fórmula de conversão.",
+    "grade_points": {
+        "title": "Pontos de Nota",
+        "description": "Pontos de Nota são os valores numéricos correspondentes atribuídos a uma determinada Nota Letra. Diferentes universidades ajustam a faixa de Pontos de Nota de acordo com suas Notas Letra. Por exemplo, uma certa universidade pode ter 10 Pontos de Nota para um grau A, enquanto outra pode usar um O (Excepcional) para 10 Pontos de Nota."
+    },
+    "gpa": {
+        "title": "GPA",
+        "description": "GPA é a abreviação de Grade Point Average. Representa a média dos pontos de nota obtidos por um aluno em um semestre ou sessão acadêmica."
+    },
+    "cgpa": {
+        "title": "CGPA",
+        "description": "CGPA representa a média acumulada dos pontos de nota obtidos em todas as matérias ou semestres durante uma sessão acadêmica específica. A escala CGPA varia entre 0 a 4, 0 a 5 ou 0 a 10. No entanto, para obter um CGPA em outros formatos, as instituições permitem que os alunos convertam CGPA em porcentagem ou em qualquer formato desejado."
+    },
+    "sgpa": {
+        "title": "SGPA",
+        "description": "SGPA é a abreviação de Semester Grade Point Average. Representa a média dos pontos de nota de todas as matérias de um determinado semestre. Créditos adquiridos e Horas de Crédito desempenham um papel importante no cálculo do SGPA."
+    },
+    "letter_grade": {
+        "title": "Nota Letra",
+        "description": "São as letras de nota atribuídas ao valor numérico correspondente de uma porcentagem ou nota obtida, ou CGPA. O sistema educacional segue diferentes formatos de notas. Por exemplo, os EUA seguem o tradicional sistema de notas A-F, enquanto o sistema educacional escocês, e até mesmo certos sistemas educacionais indianos, seguem outras representações como 'O' para excepcional, 'S' para Superior, e assim por diante!"
+    },
+    "credit_hours": {
+        "title": "Horas de Crédito",
+        "description": "Horas de Crédito são as horas que um aluno passa em uma determinada aula por semana/semestre. Essas horas podem variar dependendo das matérias. As matérias principais podem ter mais horas de crédito, enquanto as opcionais podem ter menos."
+    },
+    "credit_points": {
+        "title": "Pontos de Crédito",
+        "description": "Pontos de Crédito são calculados multiplicando os Pontos de Nota pelas Horas de Crédito, ou seja, Pontos de Crédito = Pontos de Nota × Horas de Crédito."
+    },
+    "weighted_average": {
+        "title": "Média Ponderada",
+        "description": "A Média Ponderada descreve o desempenho acadêmico geral de um aluno. Na média ponderada, todas as avaliações recebem valores conforme seu peso, e então as notas ponderadas são usadas para calcular a nota final."
+    },
+    "normalization": {
+        "title": "Normalização",
+        "description": "A Normalização é o processo de ajustar as notas para contrabalançar a diferença de dificuldade entre vários exames ou matérias. O impacto da normalização pode ser visto ao comparar GPA ou CGPA entre diferentes universidades."
+    },
+    "cumulative_average": {
+        "title": "Média Acumulada",
+        "description": "É a média de todos os pontos de nota ou GPAs obtidos ao longo das sessões acadêmicas até agora."
+    },
+    "whyConvertTitle": "Por que Converter CGPA para Percentagem ou Percentagem para CGPA?",
+    "whyConvertExplanation": "Agora que você conhece todos os termos relacionados, surge a pergunta: por que precisamos de conversões ou cálculos como CGPA para percentagem, ou até mesmo percentagem para CGPA? Bem, as razões podem variar de pessoa para pessoa.",
+    "boardsUniversitiesTitle": "Requisitos de Conselhos/Universidades",
+    "boardsUniversitiesText1": "Certos formulários acadêmicos e procedimentos exigem que os estudantes enviem percentagens juntamente com seu CGPA. Nesse caso, você não tem outra opção senão acessar rapidamente sites como Lord Calculator, que podem fornecer suas notas em qualquer formato necessário em frações de segundo. Você pode converter CGPA para percentagem com apenas alguns cliques.",
+    "boardsUniversitiesText2": "Além disso, ao mudar de conselho/universidade, você pode ser solicitado a preencher suas notas de acordo com o formato do novo conselho/universidade.",
+    "boardsUniversitiesText3": "Outra razão é ao preencher formulários para exames competitivos como GATE, CAT ou UPSC, onde os candidatos devem enviar suas notas em um formato universal, como a percentagem. E todos sabemos que um erro pequeno pode levar ao rejeição do seu formulário. Nesses casos, uma ferramenta confiável que possa converter seu CGPA para o formato solicitado é útil e economiza tempo e esforço.",
+    "internationalRelevanceTitle": "Relevância Internacional",
+    "internationalRelevanceText1": "Outra situação comum para usar um conversor de CGPA é ao se candidatar para cursos no exterior. Por exemplo, se você é um estudante indiano planejando estudar no exterior, os sistemas de notas dentro da Índia variam bastante. O cálculo de notas na Delhi University é diferente daquele no IIT. Diferentes universidades/conselhos usam diferentes fatores de multiplicação. Nessas situações, universidades no exterior estabelecem um parâmetro universal, como a percentagem, para ter uma visão justa e imparcial do desempenho acadêmico do candidato. Assim, você precisará converter suas notas, como percentagem para CGPA ou CGPA para percentagem, usando o método estabelecido pela sua universidade.",
+    "internationalRelevanceText2": "O mesmo se aplica para conselhos escolares como CBSE, ICSE, conselhos estaduais e os padrões seguidos nos Estados Unidos ou na União Europeia.",
+    "howToCalculatePercentageTitle": "Como Calcular Percentagem a partir de CGPA",
+    "howToCalculatePercentageText1": "Agora que você entende a importância e relevância de converter CGPA para percentagem, vamos explorar como você pode determinar com precisão sua percentagem a partir de CGPA. Existem dois métodos para fazer isso: o método manual ou usando um conversor de CGPA online. O método manual envolve escrever uma equação e calcular passo a passo, enquanto um conversor online pode converter suas notas instantaneamente com pouco esforço! Não se preocupe, discutiremos ambos os métodos para que você possa escolher o que mais lhe convier.",
+    "manualMethodTitle": "Método Manual",
+    "manualMethodText1": "Para converter CGPA para percentagem (ou vice-versa), você precisará entender a escala de notas, os créditos e o fator de multiplicação utilizado pelo seu conselho/universidade. Depois de ter essas informações, você pode aplicar a seguinte fórmula:",
+    "percentageFormula": "Percentagem = CGPA × Fator de Multiplicação",
+    "manualMethodText2": "Após aplicar a fórmula, você estará um quarto do caminho. Se você tem facilidade com cálculos ou conhece matemática védica, deve ser fácil dividir e multiplicar com precisão para obter a conversão correta. No entanto, para evitar erros, o uso de uma calculadora é altamente recomendado.",
+    "manualMethodText3": "Mas por que não economizar tempo e esforço usando um método automático, especialmente se você já estiver usando uma calculadora? Isso tornará todo o processo mais rápido e preciso.",
+    "automaticMethodTitle": "Método Automático",
+    "automaticMethodText1": "O método automático é simples e sem erros. Para converter CGPA para percentagem (ou vice-versa) usando o método automático, basta inserir os valores necessários nos campos apropriados da calculadora de CGPA. Selecione sua escala de notas ou insira manualmente o fator de multiplicação, e depois clique no botão 'Calcular'. Isso é tudo! Sua conversão será feita em um instante.",
+    "automaticMethodText2": "Se você estiver usando a calculadora CGPA do LordCalculator, poderá até exportar seu histórico de conversões como um PDF e salvá-lo para referência futura. Também oferecemos um certificado personalizado de conversão de CGPA para Percentagem.",
+    "automaticMethodText3": "Ao usar o método automático, você elimina a possibilidade de erros, como inserir valores incorretos durante o cálculo manual. Isso é especialmente útil ao usar calculadoras simples, que podem, às vezes, levar a erros de multiplicação e divisão.",
+    "commonPitfallsTitle": "Erros Comuns durante a Conversão de CGPA para Percentagem",
+    "commonPitfallsIntro": "Agora que você sabe como converter CGPA para percentagem, há algumas coisas que você deve considerar cuidadosamente para garantir resultados precisos. Abaixo estão os erros mais comuns que os estudantes cometem ao calcular sua percentagem a partir de CGPA (ou vice-versa). Certifique-se de evitar esses erros comuns.",
+    "misinterpretingFormula": "Interpretar Erroneamente a Fórmula:",
+    "misinterpretingFormulaDesc": "Alguns estudantes interpretam erroneamente a fórmula ao usar o multiplicador errado, por exemplo, usando 10 em vez de 9,5. É crucial entender que, embora várias universidades possam usar a mesma escala de notas, elas podem aplicar diferentes fatores de multiplicação para conversão de CGPA para percentagem ou percentagem para CGPA. Por exemplo, CBSE, ICSE, Jawaharlal Nehru Technological University (JNTU) e Savitribai Phule University (SPPU) todos usam uma escala de notas de 10 pontos, mas cada um tem seu próprio fator de multiplicação. CBSE usa 9,5, ICSE usa 9,8, JNTU usa 10 e SPPU usa 6,3. Portanto, é importante saber o fator de multiplicação exato para seu conselho ou universidade para evitar erros, mesmo ao usar conversores online de CGPA.",
+    "notKnowingBoardsFormula": "Não Conhecer a Fórmula do Conselho:",
+    "notKnowingBoardsFormulaDesc": "Outro erro comum é não saber que diferentes universidades usam fórmulas diferentes. Como mencionado anteriormente, JNTU ou SPPU aplicam fatores de multiplicação diretamente para converter CGPA para percentagem. No entanto, universidades como a Universidade de Mumbai ou a Gujarat Technological University (GTU) usam uma abordagem diferente. Elas primeiro multiplicam o CGPA por um fator de multiplicação específico (7,25 para a Universidade de Mumbai ou 7,1 para GTU) e depois adicionam um valor fixo (11 para a Universidade de Mumbai ou 12 para GTU) ao produto para determinar a percentagem. Discutiremos esses fatores de conversão para diferentes universidades e conselhos em uma seção posterior deste artigo.",
+    "overRelianceOnCalculators": "Excesso de Dependência em Calculadoras Online de CGPA:",
+    "overRelianceOnCalculatorsDesc": "Embora as calculadoras online ofereçam uma solução rápida e confiável para conversão de notas, elas nem sempre são 100% precisas. As calculadoras online podem não levar em consideração todos os casos especiais que discutimos, como os de Mumbai University ou GTU. Embora o LordCalculator se esforce para incluir todos os parâmetros possíveis, não é recomendado confiar exclusivamente em calculadoras online para conversões. É sempre uma boa ideia verificar seus valores e o método usado pela sua universidade ou conselho.",
+    "cgpaToPercentage10GradePoints": "CGPA para Percentagem no Sistema de 10 Pontos",
+    "cgpaToPercentage5GradeScale": "CGPA para Percentagem na Escala de 5 Pontos",
+    "cgpaToPercentage4GradeScale": "CGPA para Percentagem na Escala de 4 Pontos",
+    "gradingScaleAndUniversitiesChoice": "O que é uma Escala de Notas & Como as Universidades Escolhem Sua Escala Padrão?",
+    "gradingScaleDescription": "Uma escala de notas é um fator avaliativo do desempenho acadêmico de um aluno. Pense nela como uma percentagem—ela dá uma ideia geral do desempenho acadêmico. As escalas de notas categorizam as conquistas dos alunos de uma maneira fácil de entender, como notas em letras (A, B, C…), GPA ou percentagem.",
+    "commonGradingScales": "Algumas das escalas de notas mais comuns incluem:",
+    "percentage": "Percentagem",
+    "usedWorldwide": "Usada mundialmente, variando de 0 a 100%.",
+    "gpa-": "GPA (Média de Pontuação de Notas)",
+    "primarilyInUSA": "Usada principalmente nos EUA, variando de 0 a 4.0, 5.0 ou 10.0.",
+    "cgpa-": "CGPA (Média Cumulativa de Pontuação de Notas)",
+    "usedInIndia": "Usada na Índia, Singapura e conselhos CBSE; fornece uma avaliação holística.",
+    "letterGrades": "Notas em Letras",
+    "usedInUSAndCanada": "Usada nos EUA e no Canadá, baseada em intervalos de percentagem.",
+    "numericalScale": "Escala Numérica",
+    "usedInRussiaLatinAmerica": "Usado em partes da Rússia e América Latina, variando de 1 a 10 ou de 1 a 5.",
+    "gradingScalesIntro": "As escalas de notas são avaliações padronizadas para categorizar o desempenho acadêmico em símbolos ou números, como notas de letras ou pontuações de GPA. Isso ajuda a comparar os relatórios acadêmicos dos alunos de forma consistente. Algumas das escalas de notas mais comuns são:",
+    "percentage-": "Porcentagem",
+    "percentageDescription": "Amplamente usado globalmente, variando de 0 a 100%, fornecendo insights precisos sobre o desempenho acadêmico.",
+    "-gpa": "GPA",
+    "gpaDescription": "Usado nos EUA e em outros países, variando de 0 a 4.0, 5.0 ou 10.0, mostrando o desempenho acumulado.",
+    "-cgpa": "CGPA",
+    "cgpaDescription": "Principalmente na Índia, Cingapura e nas tabelas CBSE, oferecendo uma visão holística, incluindo fatores como notas de créditos.",
+    "-letterGrades": "Notas de Letras",
+    "letterGradesDescription": "Praticado nos EUA e no Canadá, com cada letra representando uma faixa de porcentagem.",
+    "-numericalScale": "Escala Numérica",
+    "numericalScaleDescription": "Usado na Rússia e América Latina, com escalas como 1-10 ou 1-5 para fragmentar as avaliações de desempenho acadêmico.",
+    "universitiesChooseGradingScales": "As universidades escolhem escalas de notas com base em fatores como normas regionais, significância histórica e globalização. O sistema de honras do Reino Unido ou o sistema GPA dos EUA, por exemplo, ganharam força no início do século XX como sistemas padronizados.",
+    "modernGradingSystems": "Os sistemas de notas modernos geralmente incluem aspectos como realização relativa, domínio ou crescimento pessoal. Exemplos são o sistema de notas duplas, o processo de Bolonha e o Bacharelado Internacional. Essa abordagem facilita a compatibilidade internacional.",
+    "understandGradingPattern": "É essencial entender o padrão de notas de sua universidade e considerar serviços como World Education Services (WES) ou NARIC (Reino Unido) para conversões internacionais precisas, pois esses avaliadores usam tabelas de equivalência detalhadas.",
+    "multiplicationFactorTitle": "O que é um Fator de Multiplicação e Como Funciona?",
+    "multiplicationFactorIntro": "Um fator de multiplicação é um parâmetro para converter escalas de notas, como CGPA ou GPA para porcentagens. Esse fator é essencial para adaptar as notas a diferentes formatos ao se candidatar a instituições com sistemas de notas diferentes ou para empregos e exames.",
+    "multiplicationFactorExample": "Por exemplo, um fator de 9.5 é amplamente usado em algumas universidades para converter CGPA em porcentagem, desenvolvido para refletir com precisão o desempenho acadêmico dos alunos.",
+    "multiplicationFactorReference": "Para entender melhor as conversões de notas, estudantes internacionais devem consultar serviços oficiais como WES ou NARIC.",
+    "cgpaToPercentageConversionTitle": "Conversão de CGPA para Porcentagem para Diferentes Conselhos e Universidades",
+    "boardUniversity": "Conselho/Universidade",
+    "conversionFormula": "Fórmula de Conversão",
+    "cbseIndia": "CBSE (Índia)",
+    "icseIndia": "ICSE (Índia)",
+    "maharashtraStateBoardIndia": "Conselho Estadual de Maharashtra (Índia)",
+    "annaUniversityIndia": "Universidade Anna (Índia)",
+    "jawaharlalNehruTechnologicalUniversityIndia": "Universidade Tecnológica Jawaharlal Nehru (Índia)",
+    "visvesvarayaTechnologicalUniversityIndia": "Universidade Tecnológica Visvesvaraya (Índia)",
+    "gujaratTechnologicalUniversityIndia": "Universidade Tecnológica de Gujarat (Índia)",
+    "universityOfMumbaiIndia": "Universidade de Mumbai (Índia)",
+    "manipalAcademyOfHigherEducationIndia": "Academia Manipal de Educação Superior (Índia)",
+    "amityUniversityIndia": "Universidade Amity (Índia)",
+    "velloreInstituteOfTechnologyIndia": "Instituto de Tecnologia de Vellore (Índia)",
+    "savitribaiPhulePuneUniversityIndia": "Universidade Savitribai Phule Pune (Índia)",
+    "iitsIndia": "IITs (Índia)",
+    "nitsIndia": "NITs (Índia)",
+    "bitsPilaniIndia": "BITS Pilani (Índia)",
+    "delhiUniversityIndia": "Universidade de Delhi (Índia)",
+    "banarasHinduUniversityIndia": "Universidade Hindu Banaras (Índia)",
+    "osmaniaUniversityIndia": "Universidade Osmania (Índia)",
+    "punjabUniversityIndia": "Universidade Punjab (Índia)",
+    "srmInstituteOfScienceAndTechnologyIndia": "Instituto SRM de Ciência e Tecnologia (Índia)",
+    "percentageFormula-": "Porcentagem = CGPA × fator de multiplicação",
+    "international_institutions": "Instituições Internacionais",
+    "university_of_toronto": "Universidade de Toronto (Canadá)",
+    "university_of_toronto_details": "Escala GPA (4.0), sem conversão direta",
+    "university_of_british_columbia": "Universidade da Colúmbia Britânica (Canadá)",
+    "university_of_british_columbia_details": "Escala GPA: 4.33; orientação para conversão disponível",
+    "australian_national_university": "Universidade Nacional da Austrália (Austrália)",
+    "australian_national_university_details": "Conversão: CGPA * 7.1 para equivalência",
+    "university_of_sydney": "Universidade de Sydney (Austrália)",
+    "university_of_sydney_details": "Normalmente requer avaliação de credenciais",
+    "university_of_california": "Universidade da Califórnia (EUA)",
+    "university_of_california_details": "Escala GPA: 4.0; use a orientação de conversão WES",
+    "harvard_university": "Universidade Harvard (EUA)",
+    "harvard_university_details": "Usa o WES para conversão de CGPA/GPA",
+    "university_of_oxford": "Universidade de Oxford (Reino Unido)",
+    "university_of_oxford_details": "Classificação Honours do Reino Unido; conversão através de faixas de GPA",
+    "eth-zurich": "ETH Zurich (Suíça)",
+    "eth_zurich_details": "Escala suíça de 6 pontos; CGPA = 8.5 é competitivo",
+    "auckland_university_of_technology": "Universidade de Tecnologia de Auckland (AUT), Nova Zelândia",
+    "auckland_university_of_technology_details": "Escala de 4.3 pontos; GPA = : Requer avaliação internacional de CGPA; geralmente espera",
+    "national_taiwan_university": "Universidade Nacional de Taiwan (NTU), Taiwan",
+    "national_taiwan_university_details": "Escala de 9 pontos; CGPA = : Para CGPA indiano, usa frequentemente o fator de conversão 7.1 para alinhar com os padrões locais.",
+    "peking_university": "Universidade de Pequim, China",
+    "peking_university_details": "Escala de 4.0 pontos; GPA = : Pode solicitar conversão de CGPA através de serviços como",
+    "mcgill_university": "Universidade McGill, Canadá",
+    "mcgill_university_details": "Escala de 4.0 pontos; GPA = : A McGill usa WES ou serviços semelhantes para conversões de CGPA e geralmente considera 80%+ como competitivo.",
+    "university_of_cape_town": "Universidade do Cabo (África do Sul)",
+    "university_of_cape_town_details": "Percentagem e GPA = : Usa uma escala GPA de 4 pontos para estudantes internacionais e pode solicitar conversão de CGPA para alinhar com os padrões sul-africanos.",
+    "university_of_tokyo": "Universidade de Tóquio, Japão",
+    "university_of_tokyo_details": "Escala GPA japonesa de 4.0 = : Converte CGPA para GPA japonês com orientação do departamento de admissões. Frequentemente espera-se um CGPA acima de 8.0 para programas competitivos.",
+    "section_title": "Quais são os Impactos das Diferentes Escalas de Notas nos Estudantes?",
+    "content_paragraph": "Ter diferentes escalas de notas pode ter impactos variados nos estudantes. Isso pode afetar a mentalidade acadêmica dos estudantes, as perspectivas de carreira e até mesmo as dinâmicas sociais.",
+    "list_items": [
+        {
+            "title": "Aumento da Pressão entre os Colegas/Social",
+            "description": "Escalas precisas como percentagens podem aumentar a pressão entre os colegas ou socialmente entre os estudantes, enquanto escalas mais amplas como as de Notas podem resultar em menos pressão. Esta é também uma das muitas razões pelas quais várias instituições seguem escalas mais amplas, especialmente para classes mais baixas."
+        },
+        {
+            "title": "Oportunidades de Carreira",
+            "description": "As oportunidades de carreira também podem ser afetadas. Escalas de notas variadas podem aumentar as dificuldades para os estudantes passarem suas candidaturas para bolsas de estudo, admissões e até mesmo empregos. Recentemente, houve um caso com um amigo meu onde sua candidatura para um emprego foi colocada em espera porque o conselho de onde ele havia feito a matrícula não forneceu nenhum certificado adicional mencionando a percentagem. Em vez disso, eles fornecem apenas uma folha de notas com notas precisas. No entanto, o candidato foi alegado ter perdido o certificado de aprovação, embora ele não o tivesse no primeiro caso."
+        },
+        {
+            "title": "Perspectiva Acadêmica",
+            "description": "Escalas de notas variadas também podem impactar as perspectivas dos estudantes na vida acadêmica. Um estudante que estuda sob um sistema de notas preciso terá uma mentalidade diferente sobre os exames em comparação com um estudante que estuda sob um sistema de notas mais amplo. Os primeiros estudantes podem focar mais nos exames, enquanto os últimos podem priorizar o trabalho em projetos práticos em vez de exames, adquirindo assim melhor conhecimento prático. Essas variações podem gerar pressão desnecessária nos estudantes."
+        },
+        {
+            "title": "Considerações Finais",
+            "description": "Tentamos cobrir todas as informações essenciais que você deve saber sobre o sistema de notas, conversão de notas, cálculo de CGPA para percentagem, conversão de percentagem para CGPA e calculadora de CGPA. Além disso, projetamos nossa calculadora de CGPA para funcionar com precisão para qualquer escala de notas ou fator de multiplicação. No entanto, se você sentir que precisa de esclarecimentos sobre algum dos tópicos ou quiser dar sugestões sobre essa calculadora em particular, entre em contato conosco."
+        }
+    ],
+    "faq": {
+        "title": "Perguntas Frequentes relacionadas ao Calculadora CGPA",
+        "q1": {
+            "question": "Há diferença entre CGPA e GPA?",
+            "answer": "Sim, CGPA e GPA diferem em escopo. Enquanto o GPA representa o seu desempenho em um único semestre, o CGPA faz uma média dos scores de GPA ao longo de vários semestres, mostrando o desempenho acadêmico geral. Use uma calculadora de CGPA para ver a diferença nos valores e tente converter GPA para CGPA se sua instituição apoiar isso."
+        },
+        "q2": {
+            "question": "A fórmula de conversão de CGPA varia de instituição para instituição?",
+            "answer": "Absolutamente. Muitas instituições têm fórmulas únicas de conversão de CGPA. Por exemplo, algumas utilizam um fator de 9,5 para converter CGPA em porcentagem, enquanto outras aplicam multiplicadores diferentes. Verificar a fórmula usada pela sua instituição é importante para uma conversão precisa de CGPA para porcentagem. Uma calculadora de CGPA pode ser adaptada aos requisitos específicos da universidade."
+        },
+        "q3": {
+            "question": "Por que não estou obtendo uma porcentagem precisa a partir do CGPA?",
+            "answer": "Um resultado impreciso de CGPA para porcentagem pode decorrer do uso do fator ou fórmula de conversão errados. Diferentes instituições possuem métodos diferentes, então é essencial usar uma calculadora de CGPA para porcentagem projetada para sua instituição ou verificar o multiplicador aplicado. Calcular a porcentagem com precisão pode exigir uma calculadora especializada de CGPA."
+        },
+        "q4": {
+            "question": "Como converter CGPA em porcentagem?",
+            "answer": "Para converter CGPA em porcentagem, multiplique seu CGPA pelo fator específico da instituição (geralmente 9,5). Esse método simples funciona para muitos, mas uma calculadora de CGPA para porcentagem facilita isso. Se precisar reverter o processo, tente uma calculadora de porcentagem para CGPA."
+        },
+        "q5": {
+            "question": "Como converter um CGPA de 7,6 para porcentagem?",
+            "answer": "Para converter um CGPA de 7,6 para porcentagem, multiplique 7,6 pelo fator de conversão (geralmente 9,5). Isso resulta em 72,2%. Uma calculadora de CGPA para porcentagem automatiza isso e garante precisão."
+        },
+        "q6": {
+            "question": "Qual é o CGPA de 7,8 em porcentagem?",
+            "answer": "Usando o fator comum de 9,5, 7,8 de CGPA se traduz em 74,1% de porcentagem. Você pode verificar novamente com uma calculadora de CGPA para porcentagem para obter resultados rápidos."
+        },
+        "q7": {
+            "question": "O que é uma calculadora CGPA para porcentagem de 4?",
+            "answer": "Algumas universidades operam em uma escala de 4 pontos. Para converter CGPA para porcentagem em uma escala de 4, encontre seu GPA na escala de 4, depois use um fator de conversão apropriado. Calculadoras especializadas, como uma calculadora de CGPA para porcentagem de 4, podem fazer essa conversão por você."
+        },
+        "q8": {
+            "question": "Qual é a fórmula de CGPA para porcentagem do VTU?",
+            "answer": "A fórmula de CGPA para porcentagem do VTU é: Porcentagem = CGPA * 9,1 (pode variar por departamento)."
+        },
+        "q9": {
+            "question": "Como converter CGPA em porcentagem para Engenharia?",
+            "answer": "As faculdades de Engenharia podem usar fórmulas ou fatores de conversão diferentes. Estudantes de Engenharia devem verificar o método de sua faculdade ou usar uma calculadora específica de CGPA para converter CGPA em porcentagem com precisão."
+        },
+        "q10": {
+            "question": "A calculadora CGPA para porcentagem da DU é diferente?",
+            "answer": "Sim, a Universidade de Delhi (DU) usa sua própria fórmula. Estudantes da DU devem usar uma calculadora de CGPA para porcentagem específica da DU para resultados precisos e alinhamento com os padrões de avaliação da DU."
+        },
+        "q11": {
+            "question": "Como calcular a porcentagem a partir do CGPA?",
+            "answer": "Para calcular a porcentagem a partir do CGPA, multiplique o CGPA por um fator de conversão (geralmente 9,5). Uma calculadora de CGPA facilita isso, ou você pode tentar uma calculadora de porcentagem para CGPA se precisar da reversão."
+        },
+        "q12": {
+            "question": "Qual é a fórmula de cálculo de CGPA para porcentagem do SPPU?",
+            "answer": "A Savitribai Phule Pune University (SPPU) tem um método único de cálculo de CGPA para porcentagem. Você pode usar uma calculadora específica da SPPU ou consultar suas diretrizes para uma conversão precisa."
+        },
+        "q13": {
+            "question": "Qual é a fórmula da calculadora CGPA para porcentagem do Makaut?",
+            "answer": "Makaut é uma plataforma online. A fórmula da calculadora CGPA para porcentagem do Makaut é: Porcentagem = (CGPA – 0,75) * 10."
+        },
+        "q14": {
+            "question": "Qual é a fórmula de CGPA para porcentagem do GTU?",
+            "answer": "A fórmula de CGPA para porcentagem do GTU é: Porcentagem = (CGPA * 7,1) + 12."
+        },
+        "q15": {
+            "question": "Como encontrar a porcentagem a partir do CGPA?",
+            "answer": "Você pode calcular manualmente usando a fórmula fornecida acima ou usar esta calculadora para encontrar sua porcentagem."
+        }
+    },
+    "cgpa-Description": "CGPA, abreviação de Cumulative Grade Point Average, é uma avaliação geral do desempenho acadêmico de um aluno durante um período acadêmico definido. Embora algumas universidades e conselhos o considerem como a média de todos os pontos de grau de cada semestre alcançados por um aluno ao longo do curso, outros podem incluir um fator adicional, que são os Créditos, no cálculo.",
+    "title3": "Calculadora de CGPA para Percentagem",
+    "enterCGPA3": "Digite o CGPA",
+    "cgpaPlaceholder3": "Digite seu CGPA",
+    "chooseGradeScale3": "Escolha a Escala de Notas",
+    "multiplicationFactor": "Fator de Multiplicação",
+    "multiplicationFactorPlaceholder": "Digite o Fator de Multiplicação",
+    "error": "Erro",
+    "calculateButton3": "Calcular",
+    "resetButton3": "Redefinir",
+    "calculatedPercentage": "Sua Percentagem Calculada",
+    "percentagePlaceholder": "Percentagem:",
+    "downloadButton3": "Baixar",
+    "whatsappButton3": "WhatsApp",
+    "copyLinkButton3": "Copiar Link",
+    "linkCopied3": "Link Copiado!",
+    "calculationHistory3": "Histórico de Cálculos",
+    "sno": "Nº",
+    "cgpa": "CGPA",
+    "percentage": "Percentagem",
+    "scale4": "Escala 4.0",
+    "scale5": "Escala 5.0",
+    "scale10": "Escala 10.0",
+    "header": {
+        "calculator": "Calculadora",
+        "title": "Educacional",
+        "subtitle": "Resolvendo conversões simples como CGPA para Percentagem usando a calculadora de CGPA ou matemática avançada com uma Calculadora Científica?",
+        "cgpa_to_percentage": "CGPA para Percentagem"
+    },
+    "link": {
+        "text": "Lord Calculator",
+        "description": "ajudará você a enfrentar cálculos tediosos e complicados com facilidade. Deixe a melhor tecnologia impulsionar sua jornada educacional—porque você merece nada menos que o MELHOR."
+    },
+    "choose_lord_calculator": {
+        "title": "Por que escolher o Lord Calculator?",
+        "feature_1": {
+            "title": "Incrivelmente Rápido & Super Confiável",
+            "description": "Sim, nós garantimos ambos! Resolva até os cálculos mais complexos com precisão em um piscar de olhos. Sem espaço para erros!"
+        },
+        "feature_2": {
+            "title": "Simples & Fácil",
+            "description": "A única parte complexa serão suas equações. Com botões e medidores intuitivos, a navegação aqui é super fácil."
+        },
+        "feature_3": {
+            "title": "Baixar, Salvar ou Compartilhar",
+            "description": "Precisa salvar a equação resolvida? Não se preocupe, resolva uma vez e depois compartilhe ou salve seus cálculos para uso offline permanente."
+        }
+    },
+    "calculatorCards": [
+        {
+            "title": "Calculadora de CGPA para Percentagem",
+            "description": "Converta suas notas rapidamente usando a calculadora de CGPA para Percentagem! Você também pode baixar ou compartilhar seu relatório gratuitamente.",
+            "emoji": "➗"
+        },
+        {
+            "title": "Calculadora de Percentagem para CGPA",
+            "description": "A conversão de CGPA pode ser tediosa, mas não com a calculadora de Percentagem para CGPA. Compatível com a maioria das instituições ao redor do mundo.",
+            "emoji": "🔢"
+        },
+        {
+            "title": "Calculadora de GPA para CGPA",
+            "description": "Com um design minimalista, este conversor de GPA para CGPA ajudará você a economizar tempo. Útil para estudantes e educadores!",
+            "emoji": "💡"
+        },
+        {
+            "title": "Calculadora de CGPA para GPA",
+            "description": "Verificando a elegibilidade para sua universidade favorita no exterior? Converta suas notas rapidamente com o conversor de CGPA para GPA e compartilhe a boa notícia!",
+            "emoji": "📚"
+        }
+    ],
+    "tit": "Calculadora Educacional",
+    "des": "CGPA, GPA, Percentagem ou Calculadora Científica - diga-nos o que você precisa e aproveite gratuitamente, para sempre!",
+    "emoji5": "🧑‍🏫",
+    "section": {
+        "title": "Educação, Finanças ou Saúde—",
+        "highlightedText": "Lord Calculator",
+        "subtitle": "É Tudo o Que Você Precisa!",
+        "description": "De Saúde a Finanças e Construção a Educação - Uma plataforma para todas as suas tarefas. Obtenha todas as calculadoras de que você precisará.",
+        "additionalDescription": "Rápido como um raio & Preciso - Nenhuma margem para erro!"
+    },
+    "footer": {
+        "title": "Lord Calculator",
+        "location": "Localização:",
+        "contact": "Entre em contato: bhushanthakur04@gmail.com",
+        "categories": "Categorias",
+        "educational_calculators": "Calculadoras Educacionais",
+        "scientific_calculators": "Calculadoras Científicas",
+        "womens_calculators": "Calculadoras Femininas",
+        "pages": "Páginas",
+        "privacy_policy": "Política de Privacidade",
+        "terms_of_use": "Termos de Uso",
+        "about_us": "Sobre Nós",
+        "copyright": "© 2024 Lord Calculator. Todos os direitos reservados.",
+        "social_links": {
+            "facebook": "Facebook",
+            "instagram": "Instagram",
+            "twitter": "Twitter",
+            "whatsapp": "WhatsApp"
+        }
+    }
 }

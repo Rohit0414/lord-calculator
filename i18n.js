@@ -7,6 +7,10 @@ import hindiTranslations from "./utils/translations/hindi.json";
 import frenchTranslations from "./utils/translations/french.json";
 import germanTranslations from "./utils/translations/german.json";
 import italianTranslations from "./utils/translations/italian.json";
+import portugueseTranslations from "./utils/translations/portuguese.json";
+import bengaliTranslations from "./utils/translations/bengali.json";
+import koreanTranslations from "./utils/translations/korean.json";
+import russianTranslations from "./utils/translations/russian.json";
 
 const resources = {
   en: {
@@ -26,6 +30,18 @@ const resources = {
   },
   it:{
     translation: italianTranslations,
+  },
+  pt:{
+    translation: portugueseTranslations,
+  },
+  bn:{
+    translation: bengaliTranslations,
+  },
+  ru:{
+    translation: russianTranslations,
+  },
+  ko:{
+    translation: koreanTranslations,
   },
 };
 console.log(resources);

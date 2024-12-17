@@ -521,6 +521,31 @@ const Navbar = () => {
                         </div>
                       }
                     </div>
+                    <div
+                      class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
+                      onClick={() => {  handleLanguageChange('ar') }}
+                    >
+                      Arabic
+                      {
+                        i18n.language === 'ja' &&
+                        <div class="ml-16">
+                          <svg
+                            width="20"
+                            height="14"
+                            viewBox="0 0 20 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 0.998386L7.22492 14L0 6.64696L0.980991 5.64858L7.22492 12.0032L19.019 0L20 0.998386Z"
+                              class="fill-black dark:fill-white"
+                            ></path>
+                          </svg>
+                        </div>
+                      }
+                    </div>
                   </div>
                 </div>
               </div>

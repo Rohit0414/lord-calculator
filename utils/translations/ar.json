@@ -1,0 +1,1440 @@
+{
+  "navbar": {
+    "selectLanguage": "اختر اللغة"
+  },
+  "title": {
+    "": "1. أنظمة المعدل التراكمي المرجح"
+  },
+  "enter_gpa": "أدخل المعدل التراكمي",
+  "choose_gpa_scale": "اختر مقياس المعدل التراكمي",
+  "calculate": "احسب",
+  "reset": "إعادة ضبط",
+  "calculated_cgpa": "معدلك التراكمي المحسوب",
+  "calculation_history": "سجل الحسابات",
+  "download": "تحميل",
+  "whatsapp": "واتساب",
+  "copy_link": "نسخ الوصلة",
+  "gpa_to_cgpa_calculator": "حاسبة المعدل التراكمي إلى المعدل التراكمي",
+  "welcome_message": "مرحبًا بكم في آلة حاسبة تعليمية أخرى! في الآلات الحاسبة المعنية، نحسب",
+  "cgpa_to_percentage_link": "المعدل التراكمي إلى النسبة المئوية",
+  "gpa_to_cgpa_description": "(والعكس صحيح). بالإضافة إلى ذلك، استكشفنا بعض المفاهيم المتعلقة بمقاييس الدرجات هذه والسيناريوهات التي يتم فيها تطبيق التحويلات. تتبع معظم الدول الآسيوية وبعض الدول الأفريقية نظام المعدل التراكمي أو النسبة المئوية، بينما يستخدم نظام التعليم الغربي المعدل التراكمي",
+  "letter_grading_link": "نظام التصنيف بالحروف",
+  "institution_migration_message": "عند الانتقال من مؤسسة إلى أخرى، وخاصة عندما تتبع كلتا المؤسستين أنظمة تصنيف مختلفة، يصبح وجود حاسبة تحويل درجات موثوقة أمرًا بالغ الأهمية. يمكنك الاعتماد على حاسبة تحويل المعدل التراكمي إلى المعدل التراكمي من Lord Calculator، والتي تستخدم الصيغة الدولية الأكثر قبولًا للتحويل.",
+  "guide_message": "في هذا الدليل، سنستعرض الصيغة المستخدمة لتحويل المعدل التراكمي إلى المعدل التراكمي، والسيناريوهات التي قد تحتاج فيها إلى هذا التحويل، والاحتياطات التي يجب مراعاتها، والنقاط المهمة التي يجب وضعها في الاعتبار أثناء إجراء مثل هذه التحويلات.",
+  "Table of Contents": "جدول المحتويات",
+  "GPA to CGPA Calculator": "حاسبة المعدل التراكمي إلى المعدل التراكمي",
+  "GPA To CGPA Calculation Formula": "صيغة حساب المعدل التراكمي إلى المعدل التراكمي",
+  "How to Use Lord Calculator’s GPA to CGPA Calculator?": "كيفية استخدام حاسبة المعدل التراكمي لـ Lord Calculator لحاسبة المعدل التراكمي؟",
+  "How CGPA & GPA Are Different?": "ما هو الفرق بين المعدل التراكمي و المعدل التراكمي؟",
+  "International Standards and Certifications": "المعايير والشهادات الدولية",
+  "Most Common GPA to CGPA Conversion Scenarios": "السيناريوهات الأكثر شيوعًا لتحويل المعدل التراكمي إلى المعدل التراكمي",
+  "Summary": "ملخص",
+  "FAQs (Frequently Asked Questions)": "الأسئلة الشائعة",
+  "GPA To CGPA Calculation Formulas": "صيغة حساب المعدل التراكمي إلى المعدل التراكمي",
+  "Equivalent CGPA =": "المعدل التراكمي المكافئ =",
+  "GPA obtained": "المعدل التراكمي الذي تم الحصول عليه",
+  "Max GPA": "الحد الأقصى للمعدل التراكمي",
+  "Max CGPA": "الحد الأقصى للمعدل التراكمي",
+  "How to Calculate GPA?": "كيفية حساب المعدل التراكمي؟",
+  "GPA =": "المعدل التراكمي =",
+  "Total Quality Points for all terms": {
+    "": "مجموع نقاط الجودة لجميع الفصول."
+  },
+  "Total Credit Hours for all terms": {
+    "": "مجموع الساعات المعتمدة لجميع الفصول الدراسية."
+  },
+  "quality points": "حيث أن نقاط الجودة للفصل الدراسي = قيمة النقاط للتقدير الحرفي * عدد الساعات المعتمدة.",
+  "How-to Use Lord Calculator’s GPA to CGPA Calculator?": "كيفية استخدام حاسبة المعدل التراكمي لـ Lord Calculator لحاسبة المعدل التراكمي؟",
+  "Although we have made our calculator easy to use, still here is a guide to make the best out of it without losing yourself in the numerators and denominators of the grades calculations": {
+    " To convert your GPA into an equivalent CGPA, follow below given steps:": "على الرغم من أننا جعلنا استخدام الآلة الحاسبة سهلاً، إلا أننا نقدم لك هنا دليلاً للاستفادة منها قدر الإمكان دون أن تضيع في البسط والمقامات الخاصة بحساب الدرجات. لتحويل المعدل التراكمي الخاص بك إلى معدل تراكمي مكافئ، اتبع الخطوات الموضحة أدناه:"
+  },
+  "Step 1: Open GPA to CGPA calculator on Lord Calculator": {
+    "": "الخطوة 1: افتح حاسبة GPA إلى CGPA على حاسبة Lord."
+  },
+  "Step 2: In the very first field, titled Enter GPA, please enter your obtained GPA accurately": {
+    " Do ensure to include decimal points for accurate conversion": {
+      "": "الخطوة 2: في الحقل الأول بعنوان \"إدخال المعدل التراكمي\"، يرجى إدخال المعدل التراكمي الذي حصلت عليه بدقة. تأكد من تضمين النقاط العشرية لتحويل دقيق."
+    }
+  },
+  "Step 3: Now choose your GPA Scale": {
+    " This scale also indicates what could be the maximum GPA": {
+      "": "الخطوة 3: اختر الآن مقياس المعدل التراكمي الخاص بك. يشير هذا المقياس أيضًا إلى الحد الأقصى للمعدل التراكمي."
+    }
+  },
+  "Step 4: Once you have entered all the values correctly, hit the “Calculate” button": {
+    " And, that is all! Now you have an equivalent CGPA in front of view, also visualized by the CGPA meter": {
+      "": "الخطوة 4: بمجرد إدخال جميع القيم بشكل صحيح، اضغط على زر \"حساب\". وهذا كل شيء! الآن أصبح لديك معدل تراكمي مكافئ أمام ناظريك، والذي يمكن رؤيته أيضًا بواسطة مقياس المعدل التراكمي."
+    }
+  },
+  "Furthermore, you can also view any previous calculations done by you so that you can have a start comparison among them": {
+    " You can also export the converted CGPA as a PDF and share it with others": {
+      "": "علاوة على ذلك، يمكنك أيضًا عرض أي حسابات سابقة أجريتها حتى تتمكن من إجراء مقارنة مبدئية بينها. يمكنك أيضًا تصدير المعدل التراكمي المحول بتنسيق PDF ومشاركته مع الآخرين."
+    }
+  },
+  "How-CGPA & GPA Are Different?": "ما هو الفرق بين المعدل التراكمي و المعدل التراكمي؟",
+  "CGPA & GPA are different from many perspectives": {
+    " [Definition of both the terms] itself indicates the basic difference between them": {
+      " But let us talk about how they are different in their applications and usage": {
+        "": "يختلف المعدل التراكمي (CGPA) والمعدل التراكمي (GPA) من عدة جوانب. [تعريف المصطلحين] يشير في حد ذاته إلى الاختلاف الأساسي بينهما. ولكن دعونا نتحدث عن كيفية اختلافهما في تطبيقاتهما واستخداماتهما."
+      }
+    }
+  },
+  "Denomination": "فئة",
+  "As the name suggests, CGPA (Cumulative Grade Point Average) represents the cumulative or combined performance of a student during his academic session": {
+    " It usually represents the performance of multiple semesters in a concise manner": {
+      "": "كما يوحي الاسم، يمثل المعدل التراكمي للنقاط (CGPA) الأداء التراكمي أو المجمع للطالب خلال فصله الدراسي. وعادة ما يمثل أداء عدة فصول دراسية بشكل موجز."
+    }
+  },
+  "On the other hand, GPA (Grade Point Average) represents the academic performance of a particular semester, or say, a very specific term/semester": {
+    " Thus, in a way, CGPA is calculated by averaging the GPA scores from multiple semesters": {
+      "": "من ناحية أخرى، يمثل المعدل التراكمي الأداء الأكاديمي لفصل دراسي معين، أو لنقل فصل دراسي/فصل دراسي محدد للغاية. وبالتالي، يتم حساب المعدل التراكمي بطريقة ما من خلال حساب متوسط ​​درجات المعدل التراكمي من عدة فصول دراسية."
+    }
+  },
+  "Usage": "الاستخدام",
+  "Like denomination, the usage of both scales is also different": {
+    " CGPA is considered as overall academic performance of a student while GPA is considered for a specific semester or term": {
+      "": "كما هو الحال مع التسمية، فإن استخدام كلا المقياسين يختلف أيضًا. حيث يتم اعتبار المعدل التراكمي بمثابة الأداء الأكاديمي الإجمالي للطالب بينما يتم اعتبار المعدل التراكمي لفصل دراسي أو فصل دراسي محدد."
+    }
+  },
+  "GPA is mostly used to assess and chart out how a student is performing lately and helps to identify strong points and potential improvement areas": {
+    " Such grade scales are also used to determine what are the implications of a newly inducted course on the academic performance of the students": {
+      " But if we talk about applying for a job or higher studies, GPA may not be the ideal grade scale": {
+        "": "يُستخدم المعدل التراكمي في الغالب لتقييم ورسم مخطط لأداء الطالب مؤخرًا ويساعد في تحديد نقاط القوة ومجالات التحسين المحتملة. تُستخدم مقاييس الدرجات هذه أيضًا لتحديد الآثار المترتبة على الدورة التدريبية الجديدة على الأداء الأكاديمي للطلاب. ولكن إذا تحدثنا عن التقدم لوظيفة أو دراسات عليا، فقد لا يكون المعدل التراكمي مقياس الدرجات المثالي."
+      }
+    }
+  },
+  "In such scenarios, when a student is applying for higher studies or a job application, he/she is required to fill in his CGPA": {
+    " Thus, CGPA is shared with external bodies while GPA is mostly used in the internal assessment": {
+      "": "في مثل هذه السيناريوهات، عندما يتقدم الطالب للدراسات العليا أو طلب وظيفة، يتعين عليه ملء معدله التراكمي. وبالتالي، يتم مشاركة معدله التراكمي مع هيئات خارجية بينما يتم استخدام المعدل التراكمي في الغالب في التقييم الداخلي."
+    }
+  },
+  "To summarize, take a look at the below-given table:": "ولتلخيص ما سبق، ألقي نظرة على الجدول الموضح أدناه:",
+  "Feature": "ميزة",
+  "GPA": "المعدل التراكمي",
+  "CGPA": "المعدل التراكمي",
+  "Scope": "نِطَاق",
+  "Single Semester / Term": "فصل دراسي واحد / فصل دراسي واحد",
+  "Entire Academic Session": "الدورة الأكاديمية بأكملها",
+  "Calculation": "حساب",
+  "Grade Points for a semester": {
+    "": "نقاط الدرجات للفصل الدراسي."
+  },
+  "Cumulative Average of All semesters": {
+    "": "المعدل التراكمي لجميع الفصول الدراسية."
+  },
+  "Purpose": "غاية",
+  "Help to track and monitor the performance of a student": {
+    "": "المساعدة في تتبع ومراقبة أداء الطالب."
+  },
+  "Determines the overall performance of a student": {
+    "": "يحدد الأداء العام للطالب."
+  },
+  "International-Standards and Certifications": "المعايير والشهادات الدولية",
+  "As we discussed earlier, grading scales such as GPA are predominantly a part of Western education systems": {
+    " However, students planning to study abroad need to be aware of various international standards and certifications that are widely recognized across different educational frameworks": {
+      " Understanding these can help students navigate different grading systems and ensure smooth transitions when applying to schools or universities abroad": {
+        "": "كما ناقشنا سابقًا، فإن مقاييس التقييم مثل المعدل التراكمي تشكل جزءًا أساسيًا من أنظمة التعليم الغربية. ومع ذلك، يحتاج الطلاب الذين يخططون للدراسة في الخارج إلى معرفة المعايير والشهادات الدولية المختلفة المعترف بها على نطاق واسع في مختلف الأطر التعليمية. إن فهم هذه المعايير والشهادات يمكن أن يساعد الطلاب على التنقل بين أنظمة التقييم المختلفة وضمان انتقالات سلسة عند التقدم إلى المدارس أو الجامعات في الخارج."
+      }
+    }
+  },
+  "The International Baccalaureate (IB) is an internationally recognized educational framework designed for students aged 3 to 19": {
+    " Its goal is to foster critical thinking, intercultural understanding, and global compatibility": {
+      " The IB framework is divided into four main programs:": "البكالوريا الدولية (IB) هي إطار تعليمي معترف به دوليًا ومصمم للطلاب الذين تتراوح أعمارهم بين 3 إلى 19 عامًا. هدفها هو تعزيز التفكير النقدي والتفاهم بين الثقافات والتوافق العالمي. ينقسم إطار البكالوريا الدولية إلى أربعة برامج رئيسية:"
+    }
+  },
+  "Primary Years Programme (PYP)": "برنامج السنوات الابتدائية (PYP)",
+  "For students aged 3 to 12, focusing on developing academic and personal skills": {
+    "": "للطلاب من عمر 3 إلى 12 عامًا، مع التركيز على تطوير المهارات الأكاديمية والشخصية."
+  },
+  "Middle Years Programme (MYP)": "برنامج السنوات المتوسطة (MYP)",
+  "For students aged 11 to 16, preparing them for further study": {
+    "": "للطلاب الذين تتراوح أعمارهم بين 11 إلى 16 عامًا، لإعدادهم للدراسة الإضافية."
+  },
+  "Diploma Programme (DP)": "برنامج الدبلوم",
+  "For students aged 16 to 19, a rigorous program with a 1-7 grading scale": {
+    "": "للطلاب الذين تتراوح أعمارهم بين 16 إلى 19 عامًا، برنامج صارم بمقياس تصنيف يتراوح من 1 إلى 7."
+  },
+  "Career-related Programme (CP)": "برنامج مرتبط بالمهنة (CP)",
+  "Combines academic study with career-related learning for students aged 16 to 19": {
+    "": "يجمع بين الدراسة الأكاديمية والتعلم المرتبط بالمهنة للطلاب الذين تتراوح أعمارهم بين 16 و 19 عامًا."
+  },
+  "The IB system is recognized globally for its academic rigor and holistic approach to education": {
+    "": "يتميز نظام البكالوريا الدولية (IB) باعتراف عالمي بصرامته الأكاديمية ونهجه الشامل في التعليم."
+  },
+  "The Common Core State Standards (CCSS) were developed in the United States to standardize K-12 education in English Language Arts and Mathematics": {
+    " This framework is primarily implemented in U": {
+      "S": {
+        " schools and focuses on providing clear and consistent benchmarks for academic achievement": {
+          " The goal is to ensure students are prepared for college, careers, and global competitiveness by emphasizing critical thinking and problem-solving skills": {
+            "": "تم تطوير معايير الدولة الأساسية المشتركة (CCSS) في الولايات المتحدة لتوحيد معايير التعليم من رياض الأطفال حتى الصف الثاني عشر في فنون اللغة الإنجليزية والرياضيات. يتم تنفيذ هذا الإطار بشكل أساسي في المدارس الأمريكية ويركز على توفير معايير واضحة ومتسقة للإنجاز الأكاديمي. الهدف هو ضمان استعداد الطلاب للالتحاق بالجامعة والوظائف والقدرة التنافسية العالمية من خلال التأكيد على مهارات التفكير النقدي وحل المشكلات."
+          }
+        }
+      }
+    }
+  },
+  "The Bologna Process is an agreement among European countries to standardize higher education": {
+    " Its aim is to make academic qualifications and periods of study easily comparable and compatible across Europe": {
+      " This process facilitates the movement of students between universities in different countries, ensuring that students' qualifications are recognized internationally": {
+        "": "عملية بولونيا هي اتفاقية بين الدول الأوروبية لتوحيد معايير التعليم العالي. والهدف منها هو جعل المؤهلات الأكاديمية وفترات الدراسة قابلة للمقارنة والتوافق بسهولة في جميع أنحاء أوروبا. وتسهل هذه العملية تنقل الطلاب بين الجامعات في بلدان مختلفة، مما يضمن الاعتراف بمؤهلات الطلاب دوليًا."
+      }
+    }
+  },
+  "The European Credit Transfer and Accumulation System (ECTS) assigns credits to courses based on the amount of work required (usually 25-30 hours of study per credit)": {
+    " ECTS uses a letter grading system ranging from A to F, with F representing failure": {
+      "": "يقوم نظام التحويل والتراكم الأوروبي (ECTS) بتخصيص الاعتمادات للمقررات الدراسية بناءً على مقدار العمل المطلوب (عادةً ما يكون 25-30 ساعة دراسية لكل ساعة معتمدة). يستخدم نظام التحويل والتراكم الأوروبي نظام تصنيف بالحروف يتراوح من A إلى F، حيث يمثل F الرسوب."
+    }
+  },
+  "The Advanced Placement (AP) Program is a U": {
+    "S": {
+      "-based initiative offered by the College Board, enabling high school students to take college-level courses and exams": {
+        " These courses are equivalent to first-year college courses and are recognized internationally": {
+          " The grading scale for AP exams ranges from 1 to 5, with a score of 3 being considered passing": {
+            " AP is widely accepted by universities around the world, giving students the opportunity to earn college credits before completing high school": {
+              "": "برنامج التعيين المتقدم (AP) هو مبادرة مقرها الولايات المتحدة تقدمها هيئة الكليات، مما يتيح لطلاب المدارس الثانوية أخذ دورات وامتحانات على مستوى الكلية. هذه الدورات تعادل دورات الكلية في السنة الأولى وهي معترف بها دوليًا. يتراوح مقياس الدرجات لامتحانات AP من 1 إلى 5، حيث تعتبر الدرجة 3 بمثابة نجاح. يتم قبول برنامج AP على نطاق واسع من قبل الجامعات في جميع أنحاء العالم، مما يمنح الطلاب الفرصة لكسب الاعتمادات الجامعية قبل إكمال المدرسة الثانوية."
+            }
+          }
+        }
+      }
+    }
+  },
+  "The IGCSE is a globally recognized qualification offered by Cambridge Assessment International Education": {
+    " It uses a grading scale ranging from A to G, with U (ungraded) representing failure": {
+      " IGCSE is widely used by international schools and is known for its flexibility, allowing students to choose subjects that match their academic interests and career goals": {
+        "": "شهادة IGCSE هي مؤهل معترف به عالميًا تقدمه Cambridge Assessment International Education. وهي تستخدم مقياس درجات يتراوح من A إلى G، حيث يمثل U (غير مصنف) الفشل. تستخدم المدارس الدولية شهادة IGCSE على نطاق واسع وهي معروفة بمرونتها، مما يسمح للطلاب باختيار المواد التي تتوافق مع اهتماماتهم الأكاديمية وأهدافهم المهنية."
+      }
+    }
+  },
+  "The TEQSA framework is primarily followed in Australia": {
+    " It regulates higher education institutions and ensures that they meet national standards": {
+      " It aligns with the Australian Qualifications Framework (AQF), which describes the qualifications and courses offered by institutions in Australia": {
+        " While TEQSA is mainly followed in Australia, its recognition is global, ensuring that Australian degrees are respected internationally and enhancing students' mobility": {
+          "": "يتم اتباع إطار عمل TEQSA بشكل أساسي في أستراليا. فهو ينظم مؤسسات التعليم العالي ويضمن استيفائها للمعايير الوطنية. وهو يتماشى مع إطار المؤهلات الأسترالي (AQF)، الذي يصف المؤهلات والدورات التي تقدمها المؤسسات في أستراليا. وفي حين يتم اتباع إطار عمل TEQSA بشكل أساسي في أستراليا، فإن الاعتراف به عالمي، مما يضمن احترام الدرجات الأسترالية دوليًا وتعزيز تنقل الطلاب."
+        }
+      }
+    }
+  },
+  "The Programme for International Student Assessment (PISA) is an international survey conducted by the OECD": {
+    " Unlike the other frameworks, PISA does not provide a grading scale, but instead evaluates the effectiveness of education systems worldwide by assessing the academic performance of 15-year-old students": {
+      " The data gathered helps policymakers identify strengths and weaknesses in their education systems and make informed decisions to improve standards and align educational frameworks globally": {
+        "": "برنامج تقييم الطلاب الدولي (PISA) هو دراسة استقصائية دولية أجرتها منظمة التعاون الاقتصادي والتنمية. وعلى عكس الأطر الأخرى، لا يوفر برنامج PISA مقياسًا للدرجات، بل يقيم فعالية أنظمة التعليم في جميع أنحاء العالم من خلال تقييم الأداء الأكاديمي للطلاب الذين تبلغ أعمارهم 15 عامًا. تساعد البيانات التي تم جمعها صناع السياسات على تحديد نقاط القوة والضعف في أنظمتهم التعليمية واتخاذ قرارات مستنيرة لتحسين المعايير ومواءمة الأطر التعليمية على مستوى العالم."
+      }
+    }
+  },
+  "Most-Common GPA to CGPA Conversion Scenarios": "السيناريوهات الأكثر شيوعًا لتحويل المعدل التراكمي إلى المعدل التراكمي",
+  "The formula used is:": "الصيغة المستخدمة هي:",
+  "CGPA = GPA × 2": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "المعدل التراكمي = المعدل التراكمي × 2.5"
+  ],
+  "Thus, the conversions would look like:": "وبالتالي، فإن التحويلات سوف تبدو مثل:",
+  "Certain Indian institutions follow a different version of GPA (4": {
+    "0 scale) to CGPA (10 scale) conversion": {
+      " The formula used is:": "تتبع بعض المؤسسات الهندية نسخة مختلفة من تحويل المعدل التراكمي (مقياس 4.0) إلى المعدل التراكمي (مقياس 10). الصيغة المستخدمة هي:"
+    }
+  },
+  "CGPA = GPA × 2 + 1": "المعدل التراكمي = المعدل التراكمي × 2 + 1",
+  "Thus, the conversion would vary as:": "وبالتالي، فإن التحويل سوف يختلف على النحو التالي:",
+  "The-formula used is:": "الصيغة المستخدمة هي:",
+  "GPA- =": "المعدل التراكمي =",
+  "Therefore, the conversions would look like:": "لذلك، فإن التحويلات سوف تبدو مثل:",
+  "90% to GPA is 4": [
+    "90% إلى المعدل التراكمي هو 4.0"
+  ],
+  "75% to GPA is 3": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "75% إلى المعدل التراكمي هو 3.5"
+  ],
+  "60% to GPA is 3": [
+    "60% إلى المعدل التراكمي هو 3.0"
+  ],
+  "50% to GPA is 2": [
+    "50% من المعدل التراكمي هو 2.0"
+  ],
+  "Since the ECTS follows a letter grading system, their equivalent conversion looks like this:": "نظرًا لأن نظام ECTS يتبع نظام تصنيف بالحروف، فإن التحويل المكافئ له يبدو كما يلي:",
+  "A (Top 10%) → 4": {
+    "0 GPA / 9": {
+      "0-10": {
+        "0 CGPA": "أ (أعلى 10%) → 4.0 معدل تراكمي / 9.0-10.0 معدل تراكمي"
+      }
+    }
+  },
+  "B (Next 25%) → 3": {
+    "5 GPA / 7": {
+      "5-8": {
+        "9 CGPA": "ب (25٪ التالية) → 3.5 معدل تراكمي / 7.5-8.9 معدل تراكمي"
+      }
+    }
+  },
+  "C (Next 30%) → 3": {
+    "0 GPA / 6": {
+      "0-7": {
+        "4 CGPA": "ج (الـ 30% التالية) → 3.0 معدل تراكمي / 6.0-7.4 معدل تراكمي"
+      }
+    }
+  },
+  "D (Next 25%) → 2": {
+    "5 GPA / 5": {
+      "0-5": {
+        "9 CGPA": "د (25٪ التالية) → 2.5 GPA / 5.0-5.9 CGPA"
+      }
+    }
+  },
+  "E (Minimum Passing Grade) → 2": {
+    "0 GPA / 4": {
+      "0-4": {
+        "9 CGPA": "E (الحد الأدنى للنجاح) → 2.0 GPA / 4.0-4.9 CGPA"
+      }
+    }
+  },
+  "Please Note:": "يرجى الملاحظة:",
+  "These are general conversion case studies and may not apply universally": {
+    " Always refer to specific institutional guidelines before using these conversions": {
+      "": "هذه دراسات حالة عامة للتحويل وقد لا تنطبق على الجميع. راجع دائمًا الإرشادات المؤسسية المحددة قبل استخدام هذه التحويلات."
+    }
+  },
+  "Summary-": "ملخص",
+  "In this section, we discussed GPA and CGPA conversions, how they both differ from each other, and some of the international standards and frameworks followed around the globe": {
+    " While we have tried to cover all the major frameworks, it is not possible to include the formula and conversion of each and every institution": {
+      "": "في هذا القسم، ناقشنا تحويلات المعدل التراكمي والمعدل التراكمي، وكيف يختلفان عن بعضهما البعض، وبعض المعايير والأطر الدولية المتبعة في جميع أنحاء العالم. وبينما حاولنا تغطية جميع الأطر الرئيسية، فمن غير الممكن تضمين الصيغة والتحويل لكل مؤسسة على حدة."
+    }
+  },
+  "Therefore, we always advise you to check the official document of a specific institution before doing the conversion of your grades": {
+    "": "لذلك ننصحك دائمًا بالتحقق من الوثيقة الرسمية لمؤسسة معينة قبل القيام بتحويل درجاتك."
+  },
+  "FAQs": "الأسئلة الشائعة",
+  "Q1": {
+    " How can I convert GPA to CGPA?": "س1. كيف يمكنني تحويل المعدل التراكمي إلى المعدل التراكمي؟"
+  },
+  "Ans": {
+    " You can convert GPA to CGPA using the formula;": "الإجابة: يمكنك تحويل المعدل التراكمي إلى المعدل التراكمي باستخدام الصيغة؛",
+    " Indian CGPA to GPA calculator includes GPA conversion from CGPA and percentage": {
+      " Please refer to the below table:": "الإجابة: تتضمن حاسبة المعدل التراكمي إلى المعدل التراكمي في الهند تحويل المعدل التراكمي من المعدل التراكمي إلى النسبة المئوية. يُرجى الرجوع إلى الجدول أدناه:"
+    },
+    " To calculate CGPA from GPA, divide the GPA obtained by max": {
+      " GPA and then multiply by the target CGPA scale": {
+        " Mathematically,": "الإجابة: لحساب المعدل التراكمي من المعدل التراكمي، اقسم المعدل التراكمي الذي حصلت عليه على المعدل التراكمي الأقصى ثم اضربه في مقياس المعدل التراكمي المستهدف. رياضيًا،"
+      }
+    },
+    " As mentioned in Q2 above, you can divide the CGPA by 2": {
+      "5 factor and you will get an equivalent GPA": {
+        " A simplified calculation is given below,": "الإجابة: كما ذكرنا في السؤال الثاني أعلاه، يمكنك قسمة المعدل التراكمي على عامل 2.5 وستحصل على المعدل التراكمي المكافئ. فيما يلي حساب مبسط،"
+      }
+    },
+    " GPA to CGPA calculator Anna University formula includes credit scores": {
+      " The formula can be written as:": "الإجابة: حاسبة المعدل التراكمي إلى المعدل التراكمي تتضمن صيغة جامعة آنا درجات الائتمان. ويمكن كتابة الصيغة على النحو التالي:"
+    },
+    " CGPA to GPA calculation for Anna University is done the same as the formula mentioned at the top of this article i": {
+      "e": {
+        "": "الإجابة. يتم حساب المعدل التراكمي إلى المعدل التراكمي لجامعة آنا بنفس الصيغة المذكورة في أعلى هذه المقالة، أي:"
+      }
+    },
+    " SRM University uses a specific formula that includes a credit-weighted average to calculate GPA": {
+      " The concept of credit-weighted average is used to assign special weightage to certain subjects, such as major and minor subjects": {
+        "": "الإجابة. تستخدم جامعة SRM صيغة محددة تتضمن متوسطًا مرجحًا بالائتمان لحساب المعدل التراكمي. يُستخدم مفهوم المتوسط ​​المرجح بالائتمان لتعيين وزن خاص لمواد معينة، مثل المواد الرئيسية والفرعية."
+      }
+    },
+    " Certain engineering colleges assign higher credits to core courses than elective or general courses": {
+      " Thus, the weighted value for those core subjects might be higher than others": {
+        "": "الإجابة: تخصص بعض كليات الهندسة درجات أعلى للمقررات الأساسية مقارنة بالمقررات الاختيارية أو العامة. وبالتالي، قد تكون القيمة المرجحة لهذه المواد الأساسية أعلى من غيرها."
+      }
+    },
+    " Mathematically, YES, our CGPA to GPA calculator online is reliable": {
+      " However, many universities use a specific conversion method": {
+        " Since it is not feasible to include all those methods, it is best to check the official guidelines first": {
+          "": "الإجابة. من الناحية الحسابية، نعم، إن حاسبة المعدل التراكمي إلى المعدل التراكمي عبر الإنترنت موثوقة. ومع ذلك، تستخدم العديد من الجامعات طريقة تحويل محددة. ونظرًا لأنه من غير الممكن تضمين كل هذه الطرق، فمن الأفضل التحقق من الإرشادات الرسمية أولاً."
+        }
+      }
+    },
+    " To convert GPA to CGPA out of 4, use the below formula:": "الإجابة: لتحويل المعدل التراكمي إلى المعدل التراكمي من 4، استخدم الصيغة التالية:",
+    " On a 4-point GPA scale, your CGPA is 3": {
+      " But on a 10-point GPA scale, your CGPA is 1": [
+        {},
+        {},
+        {
+          "": "الإجابة: على مقياس المعدل التراكمي المكون من 4 نقاط، يكون المعدل التراكمي الخاص بك 3. ولكن على مقياس المعدل التراكمي المكون من 10 نقاط، يكون المعدل التراكمي الخاص بك 1.2."
+        }
+      ]
+    },
+    " If GPA is on a 4-point scale → 3": {
+      "3 CGPA": "الإجابة: إذا كان المعدل التراكمي على مقياس من 4 نقاط → 3.3 معدل تراكمي"
+    },
+    " A CGPA above 8": {
+      "0 is considered a good CGPA": {
+        " However, this varies depending on the institution and the course": {
+          "": "الإجابة: يعتبر المعدل التراكمي الذي يزيد عن 8.0 معدلًا تراكميًا جيدًا. ومع ذلك، يختلف هذا المعدل حسب المؤسسة والبرنامج الدراسي."
+        }
+      }
+    }
+  },
+  "-GPA =": "المعدل التراكمي =",
+  "CGPA Obtained": "تم الحصول على المعدل التراكمي",
+  "Maximum CGPA": "الحد الأقصى للمعدل التراكمي",
+  "Max-GPA": "الحد الأقصى للمعدل التراكمي",
+  "Q2": {
+    " What is Indian CGPA to GPA calculator?": "س2. ما هي حاسبة المعدل التراكمي الهندي (CGPA) إلى المعدل التراكمي (GPA)؟"
+  },
+  "Conversion Type": "نوع التحويل",
+  "Formula": "صيغة",
+  "CGPA to 4-point GPA": "معدل تراكمي يصل إلى 4 نقاط",
+  "Percentage to 4-point GPA": "النسبة المئوية لمتوسط ​​النقاط التراكمي 4 نقاط",
+  "Percentage to GPA (4": {
+    "3)": "النسبة المئوية للمعدل التراكمي (4.3)"
+  },
+  "Percentage to GPA (5": {
+    "0)": "النسبة المئوية للمعدل التراكمي (5.0)"
+  },
+  "GP-A =": "المعدل التراكمي =",
+  "CGPA-Obtained": "تم الحصول على المعدل التراكمي",
+  "Maximum-CGPA": "الحد الأقصى للمعدل التراكمي",
+  "× 2": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "× 2.5"
+  ],
+  "Percentage Obtained": "النسبة المئوية التي تم الحصول عليها",
+  "100": "100",
+  "× 4": "× 4",
+  "× 100": "× 100",
+  "20": "20",
+  "Q3": {
+    " How to calculate CGPA from GPA?": "س3. كيف يتم حساب المعدل التراكمي من المعدل التراكمي؟"
+  },
+  "CGPA =": "المعدل التراكمي =",
+  "GPA Obtained": "تم الحصول على المعدل التراكمي",
+  "Maximum GPA": "الحد الأقصى للمعدل التراكمي",
+  "× Target CGPA Scale": "× مقياس المعدل التراكمي المستهدف",
+  "Q4": {
+    " What is 10 point CGPA to 4 GPA calculator formula?": "س4. ما هي صيغة حساب المعدل التراكمي من 10 نقاط إلى 4 نقاط؟"
+  },
+  "G-PA =": "المعدل التراكمي =",
+  "Obtained CGPA": "حصل على المعدل التراكمي",
+  "10(for 10-point CGPA)": "10 (للمعدل التراكمي 10 نقاط)",
+  "×": null,
+  "= ": null,
+  "Q5": {
+    " What is the GPA to CGPA calculator Anna University Formula?": "س5. ما هي صيغة حساب المعدل التراكمي إلى المعدل التراكمي لجامعة آنا؟"
+  },
+  "": {
+    "GPA =": "المعدل التراكمي =",
+    "title": "2. أغطية الدرجات"
+  },
+  "Grade in Subject 1 × Credits Earned + Grade in Subject 2 × Credits Earned + Grade in Subject N × Credits Earned": "الصف في المادة 1 × الاعتمادات المكتسبة + الصف في المادة 2 × الاعتمادات المكتسبة + الصف في المادة ن × الاعتمادات المكتسبة",
+  "Sum of All Credits Earned in Each Subject": "مجموع كل الاعتمادات المكتسبة في كل مادة",
+  "Q6": {
+    " How to calculate CGPA from GPA in Anna University?": "س6. كيفية حساب المعدل التراكمي من المعدل التراكمي في جامعة آنا؟"
+  },
+  "CGPA- =": "المعدل التراكمي =",
+  "GPA-Obtained": "تم الحصول على المعدل التراكمي",
+  "Maximum-GPA": "الحد الأقصى للمعدل التراكمي",
+  "Target CGPA Scale": "مقياس المعدل التراكمي المستهدف",
+  "However, you can also go for detailed calculations as described in Q5": {
+    "": "ومع ذلك، يمكنك أيضًا إجراء حسابات مفصلة كما هو موضح في السؤال 5."
+  },
+  "Q7": {
+    " How SRM GPA to CGPA calculator is different?": "س7. ما الفرق بين حاسبة المعدل التراكمي لـ SRM وحاسبة المعدل التراكمي؟"
+  },
+  "Q8": {
+    " Is the GPA to CGPA calculator for engineering different?": "س8. هل تختلف حاسبة المعدل التراكمي عن المعدل التراكمي للهندسة؟"
+  },
+  "Q9": {
+    " Is CGPA to GPA calculator online reliable?": "س9. هل حاسبة المعدل التراكمي إلى المعدل التراكمي عبر الإنترنت موثوقة؟"
+  },
+  "Q10": {
+    " Convert GPA to CGPA out of 4": {
+      "": "س10. تحويل المعدل التراكمي إلى المعدل التراكمي من 4."
+    }
+  },
+  "CGPA (out of 4) =": "المعدل التراكمي (من 4) =",
+  "GPAObtained": "تم الحصول على المعدل التراكمي",
+  "Maximum GPA on your Scale": "الحد الأقصى للمعدل التراكمي على مقياسك",
+  "4": "لماذا نحتاج إلى تحويل المعدل التراكمي إلى المعدل التراكمي؟",
+  "Q11": {
+    " What is 3 GPA to CGPA?": "س11. ما هو معدل النقاط التراكمي 3 إلى المعدل التراكمي؟"
+  },
+  "Q12": {
+    " What is 3": {
+      "5 GPA to CGPA?": "س12. ما هو معدل 3.5 GPA إلى CGPA؟"
+    }
+  },
+  "But on a 10-point GPA scale, your CGPA is 1": [
+    {},
+    {},
+    {},
+    {},
+    {
+      "": "ولكن على مقياس المعدل التراكمي المكون من 10 نقاط، يكون معدلك التراكمي هو 1.4."
+    }
+  ],
+  "On a 7-point GPA scale, your CGPA is 2": {
+    "": "على مقياس المعدل التراكمي المكون من 7 نقاط، يكون المعدل التراكمي الخاص بك هو 2."
+  },
+  "Q13": {
+    " What is 3": {
+      "3 GPA to CGPA?": "س13. ما هو معدل 3.3 GPA إلى CGPA؟"
+    }
+  },
+  "If GPA is on a 10-point scale → 1": {
+    "32 CGPA": "إذا كان المعدل التراكمي على مقياس من 10 نقاط → 1.32 CGPA"
+  },
+  "If GPA is on a 7-point scale → 1": {
+    "89 CGPA": "إذا كان المعدل التراكمي على مقياس من 7 نقاط → 1.89 CGPA"
+  },
+  "Q14": {
+    " What is a good CGPA?": "س14. ما هو المعدل التراكمي الجيد؟"
+  },
+  "-title": "حاسبة المعدل التراكمي إلى المعدل التراكمي",
+  "enterCGPA": "أدخل المعدل التراكمي",
+  "cgpaPlaceholder": "أدخل معدلك التراكمي",
+  "chooseGPAScale": "اختر مقياس المعدل التراكمي",
+  "gpaScale4": "4.0 مقياس",
+  "gpaScale5": "مقياس 5.0",
+  "gpaScale10": "مقياس 10.0",
+  "customGpaScalePlaceholder": "أدخل مقياس المعدل التراكمي المخصص",
+  "cgpaPointScale": "مقياس النقاط التراكمية",
+  "cgpaPointScalePlaceholder": "أدخل مقياس النقاط التراكمي",
+  "calculateButton": "احسب",
+  "resetButton": "إعادة ضبط",
+  "yourGPA": "معدلك التراكمي المحسوب",
+  "gpaPlaceholder": "المعدل التراكمي:",
+  "downloadButton": "تحميل",
+  "whatsappButton": "واتساب",
+  "copyLinkButton": "نسخ الوصلة",
+  "linkCopied": "تم نسخ الرابط!",
+  "calculationHistory": "سجل الحسابات",
+  "sNo": "س.ن.ا",
+  "cgpa1": "المعدل التراكمي",
+  "gpa1": "المعدل التراكمي",
+  "Heading": "حاسبة المعدل التراكمي إلى المعدل التراكمي",
+  "Paragraph1": "غالبًا ما نواجه مواقف نحتاج فيها إلى تحويل درجاتنا إلى تنسيق مختلف. سواء كنت تتعامل مع قواعد بيانات درجات الطلاب أو تحتاج إلى تحويل درجاتك لتلبية متطلبات معينة، فإن وجود أداة موثوقة يجعل العملية أسهل كثيرًا.",
+  "Paragraph2": "تم تصميم حاسبة CGPA إلى GPA من Lord Calculator لمساعدتك على تحويل درجات CGPA الخاصة بك إلى تنسيق GPA بسرعة ودقة، حتى تتمكن من التركيز على ما يهم حقًا - أدائك!",
+  "Paragraph3": "تم تحسين الآلة الحاسبة لدينا لتحقيق السرعة والدقة، مما يضمن عدم وجود أخطاء في نتائجك. يمكنك أيضًا استخدام خيار مقياس الدرجات المخصص لتحويل درجاتك إلى أي مقياس درجات مستهدف من اختيارك.",
+  "Paragraph4": "في هذا الدليل، سنغطي العوامل الرئيسية التي تحتاج إلى معرفتها حول تحويل المعدل التراكمي إلى المعدل التراكمي، بما في ذلك المفاهيم الأساسية والمعايير الدولية.",
+  "section2": "صيغة تحويل المعدل التراكمي إلى المعدل التراكمي",
+  "formula": {
+    "title": "المعدل التراكمي المعادل",
+    "numerator": "تم الحصول على المعدل التراكمي",
+    "denominator": "الحد الأقصى للمعدل التراكمي",
+    "multiplier": "الحد الأقصى للمعدل التراكمي"
+  },
+  "tableOfContents": "جدول المحتويات",
+  "toggleButtonExpand": "يوسع",
+  "toggleButtonCollapse": "ينهار",
+  "1": "حاسبة المعدل التراكمي إلى المعدل التراكمي",
+  "2": "صيغة تحويل المعدل التراكمي إلى المعدل التراكمي",
+  "3": "ما هو الفرق بين المعدل التراكمي والمعدل التراكمي ولماذا نحتاج إلى التحويل؟",
+  "5": "كيف تتميز حاسبة المعدل التراكمي إلى المعدل التراكمي من Lord Calculator؟",
+  "6": "كيفية استخدام حاسبة المعدل التراكمي (CGPA)",
+  "7": "طرق تحويل المعدل التراكمي إلى معدل تراكمي",
+  "8": "تحويلات خاصة بالجامعة",
+  "9": "عامل التطبيع",
+  "10": "جدول تفصيلي لتحويل المعدل التراكمي إلى المعدل التراكمي",
+  "11": "حدود محول المعدل التراكمي إلى المعدل التراكمي",
+  "12": "نصائح للحصول على حساب دقيق للمعدل التراكمي إلى المعدل التراكمي",
+  "13": "خاتمة",
+  "14": "الأسئلة الشائعة حول تحويل المعدل التراكمي إلى المعدل التراكمي",
+  "cgpaToGpaNote": "يرجى ملاحظة أن هذه الصيغة هي الأكثر استخدامًا لتحويل المعدل التراكمي إلى المعدل التراكمي. ومع ذلك، قد تتبع بعض المؤسسات صيغة مختلفة، لذا فمن الأفضل دائمًا التحقق من الإرشادات الرسمية التي تقدمها مؤسستك أو مجلسك.",
+  "section3Title": "ما هو الفرق بين المعدل التراكمي والمعدل التراكمي ولماذا نحتاج إلى التحويل؟",
+  "section3Content": "قبل الخوض بشكل أعمق في عملية التحويل، دعونا أولاً نفهم الفرق بين المعدل التراكمي (CGPA) والمعدل التراكمي (GPA)، ولماذا قد يكون التحويل ضروريًا حتى لو كان مقياسا التصنيف معترفًا بهما على نطاق واسع.",
+  "understandingCGPAGPA": "فهم المعدل التراكمي والمعدل التراكمي",
+  "cgpaDefinition": "المعدل التراكمي للنقاط هو انعكاس شامل للأداء الأكاديمي للطالب عبر جميع الفصول الدراسية والمواد الدراسية خلال فترة زمنية محددة. وهو يوفر رؤية شاملة لأداء الطالب المتسق طوال فترة دراسته.",
+  "gpaDefinition": "من ناحية أخرى، يعتبر المعدل التراكمي (GPA) مقياسًا أكثر إيجازًا لتقييم أداء الطالب في دورات أو مواد فردية، وغالبًا ما يركز على الإنجازات الخاصة بالفصل الدراسي. يساعد المعدل التراكمي المؤسسات على تتبع الأداء على أساس كل فصل دراسي.",
+  "regionalUsage": "في حين أن المعدل التراكمي يستخدم بشكل أكثر شيوعًا في الدول الآسيوية، فإن المعدل التراكمي يُمارس على نطاق واسع في الدول الغربية مثل الولايات المتحدة وأوروبا. هذا الاختلاف في أنظمة الدرجات هو السبب وراء ضرورة تحويل المعدل التراكمي إلى المعدل التراكمي غالبًا، وخاصة للطلاب الدوليين أو المنقولين أكاديميًا.",
+  "learnMoreGradingSystems": "إذا كنت ترغب في معرفة المزيد حول المصطلحات المستخدمة في أنظمة التصنيف المختلفة،",
+  "whyNeedConversion": "لماذا نحتاج إلى تحويل المعدل التراكمي إلى المعدل التراكمي؟",
+  "conversionReason1": "الإجابة البسيطة على هذا السؤال تكمن في الفرص المتاحة. فعندما يخطط الطالب للدراسة في الخارج أو التقدم لوظيفة، فإنه يحتاج في كثير من الأحيان إلى الحصول على درجاته في صيغة معينة ــ صيغة قد تختلف عن صيغته الخاصة. وفي مثل هذه الحالات، يصبح تحويل الدرجات أمراً ضرورياً.",
+  "conversionReason2": "تخيل هذا: لقد طبقت الصيغ بعناية وكتبت المعادلة الرياضية بالكامل، ولكن بسبب خطأ بسيط في الفاصلة العشرية أو خطأ بسيط، انتهى بك الأمر إلى إعادة العملية. هنا تصبح الأدوات عبر الإنترنت لا تقدر بثمن. يمكنك زيارة موقع ويب على الفور وتحويل درجاتك أثناء التنقل - دون الحاجة إلى تنزيل أي تطبيقات تابعة لجهات خارجية!",
+  "conversionReason3": "هناك سبب آخر لضرورة التحويلات وهو الاختلافات بين مقاييس التصنيف. لمساعدتك على فهم كيفية اختلاف أنظمة التصنيف هذه، إليك جدول موجز يقارن بين المعدل التراكمي والمتوسط ​​التراكمي وأنظمة التصنيف الأخرى:",
+  "cgpaScale": "المعدل التراكمي (مقياس من 10 نقاط)",
+  "usGpaScale": "المعدل التراكمي الأمريكي (مقياس 4 نقاط)",
+  "usLetterGrade": "الدرجة الحرفية (الولايات المتحدة)",
+  "percentageScale": "النسبة المئوية (100%)",
+  "ukGrade": "الصف (المملكة المتحدة)",
+  "ukGrade1": "الدرجة الأولى (امتياز)",
+  "ukGrade2": "الدرجة الأولى (العليا)",
+  "ukGrade3": "الدرجة الأولى (العليا)",
+  "ukGrade4": "الصف الثاني العلوي (2:1)",
+  "ukGrade5": "الصف الثاني العلوي (2:1)",
+  "ukGrade6": "الثانية السفلى (2:2)",
+  "ukGrade7": "الثانية السفلى (2:2)",
+  "ukGrade8": "الدرجة الثالثة",
+  "ukGrade9": "يمر",
+  "ukGrade10": "يفشل",
+  "below_5_5": "أقل من 5.5",
+  "below_2_0": "أقل من 2.0",
+  "below": "أقل من 55",
+  "section5_title": "كيف تتميز حاسبة المعدل التراكمي إلى المعدل التراكمي من Lord Calculator؟",
+  "feature_1": "تتميز حاسبة CGPA إلى GPA من Lord Calculator بميزاتها المتقدمة وأدائها السريع. بفضل أحدث إطار عمل للويب، تقوم حاسبتنا بإجراء التحويلات بسرعة ملحوظة—حتى على الشبكات الأضعف.",
+  "feature_2": "تم تصميم واجهة المستخدم لسهولة التنقل، مما يضمن لك إمكانية إدخال قيمك بسرعة والحصول على النتائج دون أي متاعب. كما نقدم ميزات مثل التمثيل المتري، الذي يساعد في تصور الدرجات المحولة بشكل أكثر فعالية.",
+  "feature_3": "بالإضافة إلى ذلك، يمكنك حفظ سجل التحويل الخاص بك بتنسيق PDF أو مشاركته على وسائل التواصل الاجتماعي، مما يسهل عليك متابعة نتائجك ومشاركتها مع الآخرين.",
+  "feature_4": "تدعم الآلة الحاسبة لدينا أيضًا الصيغ المخصصة. على سبيل المثال، في حاسبة المعدل التراكمي إلى النسبة المئوية، يمكنك اختيار عامل ضرب مخصص ليتناسب مع مقياس الدرجات المحدد لمؤسستك.",
+  "section6_title": "كيفية استخدام حاسبة المعدل التراكمي (CGPA)",
+  "instruction_1": "إن استخدام حاسبة المعدل التراكمي إلى المعدل التراكمي أسهل من حل أي مسألة حسابية! ما عليك سوى اتباع الخطوات البسيطة التالية:",
+  "step_1": "انتقل إلى حاسبة اللورد للآلات الحاسبة التعليمية حاسبة المعدل التراكمي إلى المعدل التراكمي.",
+  "step_2": "في الحقل الأول، أدخل معدلك التراكمي. تأكد من تضمين أرقام دقيقة، بما في ذلك النقاط العشرية!",
+  "step_3": "حدد مقياس المعدل التراكمي الذي تريد تحويل درجاتك إليه.",
+  "step_4": "أدخل الحد الأقصى للمعدل التراكمي الذي يسمح به نظام التصنيف الخاص بك (هذه هي قيمة مقياس المعدل التراكمي).",
+  "step_5": "بعد ملء جميع الحقول بشكل صحيح، اضغط على زر \"حساب\"، وهكذا تكون قد انتهيت من تحويل معدلك التراكمي.",
+  "step_6": "يمكنك أيضًا مشاركة نتائجك مع الأصدقاء أو حفظها بتنسيق PDF للرجوع إليها في المستقبل!",
+  "section7_title": "طرق تحويل المعدل التراكمي إلى معدل تراكمي",
+  "paragraph_1": "إن تحويل المعدل التراكمي إلى متوسط ​​درجات ليس عملية واحدة تناسب الجميع. تتبع المؤسسات المختلفة أنظمة تصنيف مختلفة، وحتى تلك التي تستخدم نفس المقياس قد تطبق عوامل ضرب مختلفة. لذلك، من الضروري استخدام الطريقة الصحيحة لمؤسستك.",
+  "paragraph_2": "في حاسبتنا، استخدمنا الصيغة الأكثر شيوعًا لتحويل المعدل التراكمي إلى متوسط ​​درجات. ومع ذلك، فمن الأفضل دائمًا التحقق من المستندات الرسمية التي تقدمها مؤسستك للحصول على إرشادات تحويل محددة.",
+  "paragraph_3": "الصيغة المستخدمة على نطاق واسع لتحويل المعدل التراكمي إلى المعدل التراكمي هي كما يلي:",
+  "formula_title": "المعدل التراكمي المكافئ =",
+  "formula_1": "تم الحصول على المعدل التراكمي",
+  "formula_2": "الحد الأقصى للمعدل التراكمي",
+  "formula_3": "× الحد الأقصى للمعدل التراكمي",
+  "example_title": "مثال:",
+  "example_description": "فلنقل:",
+  "example_list_item_1": "المعدل التراكمي للطالب هو",
+  "bold": "8.5 (من 10)",
+  "example_list_item_2": "مقياس المعدل التراكمي المستهدف هو",
+  "bold1": "4.0",
+  "conversion_description": "سوف يبدو التحويل مثل هذا:",
+  "maxcgpa": "الحد الأقصى للمعدل التراكمي",
+  "maxgpa": "الحد الأقصى للمعدل التراكمي",
+  "university_specific_conversions": "تحويلات خاصة بالجامعة",
+  "university_specific_paragraph1": "قد تتبع مؤسستك معيار تحويل مختلفًا. في هذه الحالة، تحتاج إلى الرجوع إلى الصيغة الخاصة بجامعتك. ينشأ هذا السيناريو عادةً عندما تقوم مؤسسة معينة بتعيين أوزان مختلفة للمواد الفردية. يجب بعد ذلك تعديل صيغة التحويل وفقًا لذلك.",
+  "university_specific_paragraph2": "من الأمثلة الشائعة على ذلك جامعة هارفارد، التي تطلب مخطط توزيع الدرجات التفصيلي مع المعدل التراكمي المحول لمراعاة صعوبة التقييم. ونتيجة لهذا، فإن المعدل التراكمي 8.5، كما هو موضح في المثال أعلاه، قد يساوي 3.7 بدلاً من 3.4.",
+  "normalization_factor": "عامل التطبيع",
+  "normalization_factor_paragraph1": "عندما يتقدم الطلاب بطلبات للدراسة في الخارج، يجب تقييم أدائهم السابق بشكل عادل. ولتحقيق العدالة، غالبًا ما تضيف الجامعات عامل تطبيع لضمان حصول الجميع على نفس المستوى من الفرص.",
+  "normalization_factor_paragraph2": "على سبيل المثال، لنفترض أن الطالب يتم تقييمه على أساس نسبة مئوية بينما يتم تحديد أداء طالب آخر باستخدام مقياس درجات بمعدل تراكمي 5.0. ولإزالة مثل هذه الاختلافات، تضمن المجالس أقصى قدر من الدقة العلمية من خلال تعديل مقاييسها. ومن الممارسات الشائعة التحويل النسبي.",
+  "cgpa_to_gpa_table_title": "جدول تفصيلي لتحويل المعدل التراكمي إلى المعدل التراكمي",
+  "cgpa_to_gpa_table_paragraph": "يمكنك هنا العثور على القيم المقابلة لدرجاتك في المعدل التراكمي على مقاييس المعدل التراكمي المختلفة. يمكنك الحصول بسرعة على الدرجات المحولة دون حسابها.",
+  "cgpa_column": "المعدل التراكمي",
+  "us_gpa_column": "المعدل التراكمي الأمريكي (مقياس 4.0)",
+  "gpa_4_3_column": "المعدل التراكمي (4.3 مقياس)",
+  "gpa_5_0_column": "المعدل التراكمي (5.0)",
+  "gpa_7_0_column": "المعدل التراكمي (مقياس 7.0)",
+  "below-2_0": "أقل من 2.0",
+  "below_2_5": "أقل من 2.5",
+  "below_3_0": "أقل من 3.0",
+  "below_3_5": "أقل من 3.5",
+  "title-": "حدود محول المعدل التراكمي إلى المعدل التراكمي",
+  "description": {
+    "": "على الرغم من أن حاسبات تحويل الدرجات عبر الإنترنت تعد أدوات مريحة، إلا أنها تأتي مع بعض القيود. دعنا نستكشف هذه القيود والعوامل التي يجب مراعاتها عند استخدام مثل هذه الحاسبات."
+  },
+  "description-": "تستخدم العديد من الجامعات نظام المعدل التراكمي المرجح حيث يتم منح نقاط إضافية للمقررات الدراسية المتميزة والمتقدمة. في مثل هذه الحالات، تكون صيغة التحويل الأكثر تفصيلاً ضرورية للحفاظ على التحويلات النسبية عبر جميع المواد.",
+  "-description": "تفرض بعض المؤسسات حدًا أقصى للدرجات. على سبيل المثال، على مقياس 10 درجات تراكمية، لا يمكن للطالب تحقيق أكثر من 9.5 درجات تراكمية كحد أقصى. في مثل هذه الحالات، قد لا تكون الآلات الحاسبة عبر الإنترنت دقيقة أو قابلة للتطبيق، لأنها لا تأخذ في الاعتبار هذه القيود.",
+  "section3": {
+    "title": "3. افتراضات العالمية",
+    "description": "غالبًا ما تولد الآلات الحاسبة عبر الإنترنت نتائج يفترض المستخدمون أنها مقبولة عالميًا. ومع ذلك، من المهم ملاحظة أن المؤسسات المختلفة قد يكون لها معايير تحويل خاصة بها. استشر دائمًا المستندات الرسمية أو مؤسستك الأكاديمية قبل المضي قدمًا في التحويل."
+  },
+  "keyTakeaways": {
+    "title": "النقاط الرئيسية",
+    "description": "هذه هي القيود النموذجية عند استخدام حاسبات المعدل التراكمي إلى المعدل التراكمي وأدوات أخرى مماثلة. ومع ذلك، مع الاهتمام الدقيق بالتفاصيل، يمكنك ضمان تحويلات أكثر دقة. تذكر أن الأدوات المتوفرة عبر الإنترنت مخصصة فقط لمساعدتك في عملية الحساب — الإشراف البشري ضروري دائمًا."
+  },
+  "section12": {
+    "title": "نصائح للحصول على حساب دقيق للمعدل التراكمي إلى المعدل التراكمي",
+    "description": "لتقديم الأداء الأكاديمي بشكل فعال، تأكد من أنك على دراية بهذه النصائح حتى إذا كنت تستخدم آلات حاسبة CGPA عبر الإنترنت:",
+    "subsection1": {
+      "title": "1. فهم مقاييس التصنيف المستهدفة",
+      "description": "تأكد دائمًا من تمثيل مقياس الدرجات المستهدف من المستندات الرسمية. في حين تستخدم بعض المؤسسات مقياس 4.0، قد تستخدم مؤسسات أخرى مقياس 4.3 أو 5.0. يجب تعديل حساب المعدل التراكمي وفقًا لذلك ليناسب مقياس الدرجات المستهدف."
+    },
+    "subsection2": {
+      "title": "2. مراعاة صرامة التصنيف",
+      "description": "إذا كانت مؤسستك معروفة بمعايير التقييم الأكثر صرامة، فتأكد من ذكر ذلك في نموذج الطلب الخاص بك. غالبًا ما تعتبر الجامعات، مثل جامعة هارفارد، هذا عاملًا حاسمًا في تقييم الأداء الأكاديمي."
+    }
+  },
+  "section13": {
+    "subsection1": {
+      "title": "3. التحقق من صيغة التحويل",
+      "description": "إذا لم تتمكن من العثور على صيغة التحويل في المستندات الرسمية، فلا تتردد في استشارة المستشارين الأكاديميين للحصول على مزيد من المساعدة. يمكنهم المساعدة في ضمان دقة التحويل."
+    },
+    "subsection2": {
+      "title": "4. مراعاة الأداء الخاص بالموضوع",
+      "description": "تفرق بعض المؤسسات بين المواد الرئيسية والمواد الثانوية، حيث تحصل المواد الرئيسية غالبًا على نقاط إضافية. ضع ذلك في الاعتبار عند ملء نماذج الطلبات حيث تكون الدرجات المحولة مطلوبة."
+    },
+    "subsection3": {
+      "title": "5. مواكبة أحدث المعايير",
+      "description": "تقوم الجامعات بشكل متكرر بتحديث معايير التصنيف وصيغ التحويل لتحسين المزامنة مع المعايير الدولية. تأكد من اتباع أحدث الإرشادات لتجنب الأساليب القديمة."
+    },
+    "conclusion": {
+      "title": "خاتمة",
+      "description": "مع تزايد الحراك التعليمي العالمي، من الضروري أن تكون على دراية جيدة بكل من الأساسيات والمعايير الدولية التي ناقشناها. ورغم أن عملية التحويل قد تبدو بسيطة، إلا أن هناك العديد من العوامل الخفية. باتباع النصائح الخاصة بالتحويل الدقيق، نؤكد لك أنك ستحقق تحويلًا موثوقًا به من المعدل التراكمي إلى المعدل التراكمي."
+    }
+  },
+  "faq": {
+    "title": "الأسئلة الشائعة المتعلقة بحاسبة المعدل التراكمي",
+    "q1": {
+      "question": "هل هناك فرق بين المعدل التراكمي و المعدل التراكمي؟",
+      "answer": "نعم، يختلف المعدل التراكمي عن المعدل التراكمي في النطاق. ففي حين يمثل المعدل التراكمي أداءك في فصل دراسي واحد، فإن المعدل التراكمي يحسب متوسط ​​درجات المعدل التراكمي عبر عدة فصول دراسية، مما يوضح الأداء الأكاديمي الإجمالي. استخدم حاسبة المعدل التراكمي لمعرفة الفرق في القيم، وحاول تحويل المعدل التراكمي إلى المعدل التراكمي إذا كانت مؤسستك تدعم ذلك."
+    },
+    "q2": {
+      "question": "هل تختلف صيغة تحويل المعدل التراكمي حسب المؤسسة؟",
+      "answer": "بالتأكيد. العديد من المؤسسات لديها صيغ فريدة لتحويل المعدل التراكمي. على سبيل المثال، يستخدم البعض عامل 9.5 لتحويل المعدل التراكمي إلى نسبة مئوية، بينما يستخدم البعض الآخر مضاعفات مختلفة. يعد التحقق من الصيغة المستخدمة من قبل مؤسستك أمرًا مهمًا لتحويل المعدل التراكمي إلى نسبة مئوية بدقة. يمكن تخصيص حاسبة المعدل التراكمي وفقًا لمتطلبات الجامعة المحددة."
+    },
+    "q3": {
+      "question": "لماذا لا أحصل على نسبة دقيقة من المعدل التراكمي؟",
+      "answer": "قد تنجم نتيجة غير دقيقة لتحويل المعدل التراكمي إلى نسبة مئوية عن استخدام عامل تحويل أو صيغة خاطئة. تتبع المؤسسات المختلفة طرقًا مختلفة، لذا من الضروري استخدام حاسبة تحويل المعدل التراكمي إلى نسبة مئوية مصممة لمؤسستك أو التحقق من المضاعف المطبق. قد يتطلب حساب النسبة المئوية بدقة حاسبة متخصصة لتحويل المعدل التراكمي إلى نسبة مئوية."
+    },
+    "q4": {
+      "question": "كيفية تحويل المعدل التراكمي إلى نسبة مئوية؟",
+      "answer": "لتحويل المعدل التراكمي إلى نسبة مئوية، اضرب المعدل التراكمي الخاص بك في العامل الخاص بالمؤسسة (غالبًا 9.5). هذه الطريقة البسيطة تعمل مع العديد من الأشخاص، ولكن حاسبة المعدل التراكمي إلى النسبة المئوية تبسط الأمر. إذا كنت بحاجة إلى عكس العملية، فجرب حاسبة النسبة المئوية إلى المعدل التراكمي."
+    },
+    "q5": {
+      "question": "كيف تقوم بتحويل المعدل التراكمي 7.6 إلى نسبة مئوية؟",
+      "answer": "لتحويل معدل تراكمي 7.6 إلى نسبة مئوية، اضرب 7.6 في عامل التحويل (عادةً 9.5). هذا يعطي نتيجة 72.2%. تقوم حاسبة معدل تراكمي إلى نسبة مئوية بأتمتة هذه العملية وتضمن الدقة."
+    },
+    "q6": {
+      "question": "ما هو 7.8 CGPA بالنسبة المئوية؟",
+      "answer": "باستخدام العامل المشترك 9.5، فإن 7.8 CGPA يترجم إلى 74.1% كنسبة مئوية. يمكنك التحقق مرة أخرى باستخدام حاسبة CGPA إلى نسبة مئوية للحصول على نتائج سريعة."
+    },
+    "q7": {
+      "question": "ما هو معدل المعدل التراكمي إلى النسبة المئوية من 4؟",
+      "answer": "تعمل بعض الجامعات على مقياس من 4 نقاط. لتحويل المعدل التراكمي إلى نسبة مئوية من 4، ابحث عن المعدل التراكمي الخاص بك على مقياس 4، ثم استخدم عامل تحويل مناسب. يمكن للحاسبات المتخصصة، مثل حاسبة المعدل التراكمي إلى النسبة المئوية من 4، إجراء هذا التحويل نيابةً عنك."
+    },
+    "q8": {
+      "question": "ما هو معدل المعدل التراكمي لجامعة VTU إلى النسبة المئوية؟",
+      "answer": "صيغة تحويل المعدل التراكمي إلى النسبة المئوية للجامعة هي النسبة المئوية = المعدل التراكمي * 9.1 (قد يختلف حسب القسم)."
+    },
+    "q9": {
+      "question": "كيفية تحويل المعدل التراكمي إلى نسبة مئوية للهندسة؟",
+      "answer": "قد تستخدم كليات الهندسة صيغًا أو عوامل تحويل مختلفة. يجب على طلاب الهندسة التحقق من طريقة كليتهم أو استخدام حاسبة معدل النقاط التراكمي الخاصة بالهندسة لتحويل معدل النقاط التراكمي إلى نسبة مئوية بدقة."
+    },
+    "q10": {
+      "question": "هل يختلف المعدل التراكمي عن حاسبة النسبة المئوية DU؟",
+      "answer": "نعم، تستخدم جامعة دلهي (DU) صيغتها الخاصة. يجب على طلاب DU استخدام حاسبة النسبة المئوية لمعدل الدرجات التراكمي الخاصة بالجامعة للحصول على نتائج دقيقة ومتوافقة مع معايير الدرجات الخاصة بالجامعة."
+    },
+    "q11": {
+      "question": "كيفية حساب النسبة المئوية من المعدل التراكمي؟",
+      "answer": "لحساب النسبة المئوية من المعدل التراكمي، اضرب المعدل التراكمي في عامل تحويل (غالبًا 9.5). تبسط حاسبة المعدل التراكمي هذه العملية، أو يمكنك تجربة حاسبة النسبة المئوية إلى المعدل التراكمي إذا كنت بحاجة إلى العكس."
+    },
+    "q12": {
+      "question": "ما هي صيغة حساب المعدل التراكمي SPPU إلى النسبة المئوية؟",
+      "answer": "تستخدم جامعة Savitribai Phule Pune (SPPU) طريقة فريدة لحساب المعدل التراكمي إلى النسبة المئوية. يمكنك استخدام حاسبة المعدل التراكمي الخاصة بجامعة SPPU أو الرجوع إلى إرشاداتها لتحويل دقيق."
+    },
+    "q13": {
+      "question": "ما هي صيغة حساب المعدل التراكمي في ماكاوت إلى النسبة المئوية؟",
+      "answer": "ماكاوت عبارة عن منصة إلكترونية. صيغة حاسبة المعدل التراكمي إلى النسبة المئوية في ماكاوت هي النسبة المئوية = (المعدل التراكمي – 0.75) * 10."
+    },
+    "q14": {
+      "question": "ما هو الفرق بين المعدل التراكمي والنسبة المئوية لمعادلة GTU؟",
+      "answer": "صيغة تحويل المعدل التراكمي إلى نسبة مئوية هي النسبة المئوية = (المعدل التراكمي * 7.1) + 12."
+    },
+    "q15": {
+      "question": "كيفية العثور على النسبة المئوية من المعدل التراكمي؟",
+      "answer": "يمكنك إما الحساب يدويًا باستخدام الصيغة المذكورة أعلاه أو استخدام هذه الآلة الحاسبة للعثور على النسبة المئوية الخاصة بك."
+    }
+  },
+  "faq1": {
+    "q1": "س: كيفية تحويل المعدل التراكمي إلى المعدل التراكمي؟",
+    "a1": {
+      "label": "أ:",
+      "text": "الصيغة القياسية لتحويل المعدل التراكمي إلى المعدل التراكمي هي:"
+    },
+    "formula": {
+      "gpa": "المعدل التراكمي =",
+      "cgpaObtained": "تم الحصول على المعدل التراكمي",
+      "maxCgpa": "الحد الأقصى للمعدل التراكمي",
+      "maxGpa": "× الحد الأقصى للمعدل التراكمي"
+    }
+  },
+  "faq2": {
+    "q2": "س: كيفية حساب المعدل التراكمي من المعدل التراكمي؟",
+    "a2": {
+      "label": "أ:",
+      "text": "لحساب المعدل التراكمي من صيغة المعدل التراكمي:"
+    },
+    "formula": {
+      "cgpa": "المعدل التراكمي =",
+      "gpaObtained": "تم الحصول على المعدل التراكمي",
+      "maxGpa": "الحد الأقصى للمعدل التراكمي",
+      "maxCgpa": "× الحد الأقصى للمعدل التراكمي"
+    }
+  },
+  "faq3": {
+    "q3": "س: كيفية تحويل GPA إلى CGPA؟",
+    "a3": {
+      "label": "أ:",
+      "text": "إن تحويل المعدل التراكمي إلى المعدل التراكمي هو عملية عكسية لتحويل المعدل التراكمي إلى المعدل التراكمي، إذا كنت تعرف المعدل التراكمي الخاص بك وتريد حساب المعدل التراكمي الخاص بك، فإن الصيغة هي:"
+    },
+    "formula": {
+      "gpaObtained": "تم الحصول على المعدل التراكمي",
+      "maxGpa": "الحد الأقصى للمعدل التراكمي",
+      "maxCgpa": "× الحد الأقصى للمعدل التراكمي"
+    }
+  },
+  "faq4": {
+    "q4": "س: معدل المعدل التراكمي الهندي مقابل المعدل التراكمي الأمريكي؟",
+    "a4": {
+      "label": "أ:",
+      "text": "تستخدم الجامعات الأمريكية مقياس المعدل التراكمي 4.0، بينما تستخدم الجامعات الهندية مقياسًا من 10 نقاط. لتحويل المعدل التراكمي الهندي إلى المعدل التراكمي الأمريكي، استخدم عامل ضرب 4/10 مع المعدل التراكمي الذي حصلت عليه."
+    }
+  },
+  "faq5": {
+    "q5": "س: معدل المعدل التراكمي الهندي مقابل المعدل التراكمي الألماني؟",
+    "a5": {
+      "label": "أ:",
+      "text": "تستخدم المعاهد الألمانية الصيغة البافارية المعدلة للتحويل. الصيغة المستخدمة لحساب المعدل التراكمي الألماني هي:",
+      "formula": "1 + 3 × (الدرجة القصوى - المعدل التراكمي الذي تم الحصول عليه) / (الدرجة القصوى - الحد الأدنى لدرجة النجاح)"
+    }
+  },
+  "faq6": {
+    "q6": "س: حاسبة المعدل التراكمي إلى المعدل التراكمي لجامعة ANNA؟",
+    "a6": {
+      "label": "أ:",
+      "text": "صيغة تحويل المعدل التراكمي إلى المعدل التراكمي هي:",
+      "formula1": "تم الحصول على المعدل التراكمي",
+      "formula2": "الحد الأقصى للمعدل التراكمي",
+      "formula3": "× الحد الأقصى للمعدل التراكمي"
+    }
+  },
+  "faq7": {
+    "q7": "س: معدل VIT CGPA إلى المعدل التراكمي الأمريكي؟",
+    "a7": {
+      "label": "أ:",
+      "text": "يتبع اختبار VIT مقياس تصنيف مكون من 10 نقاط. لتحويله إلى المعدل التراكمي الأمريكي، استخدم مقياس 2.5 أو 4/10 للتقريب."
+    },
+    "q8": "س: معدل المعدل التراكمي الهندي مقارنة بالمعدل التراكمي في المملكة المتحدة؟",
+    "a8": {
+      "label": "أ:",
+      "text": "لتحويل المعدل التراكمي الهندي إلى المعدل التراكمي في المملكة المتحدة، راجع إرشادات الجامعة المحددة، حيث تقوم المؤسسات في المملكة المتحدة بتحويل المعدل التراكمي الهندي إلى نظام الشرف في فئتها (الأول والثاني والثالث والمزيد)."
+    }
+  },
+  "faq8": {
+    "q9": "س: حاسبة المعدل التراكمي SRM إلى المعدل التراكمي؟",
+    "a9": {
+      "label": "أ:",
+      "text": "لحساب المعدل التراكمي لـ SRM إلى المعدل التراكمي، تحتاج إلى إجمالي الساعات المعتمدة وإجمالي النقاط التراكمية التي حصلت عليها. ومع ذلك، يمكنك استخدام الصيغة القياسية للتحويل:",
+      "formula": {
+        "gpa": "تم الحصول على المعدل التراكمي",
+        "maxGpa": "الحد الأقصى للمعدل التراكمي",
+        "maxCgpa": "× الحد الأقصى للمعدل التراكمي"
+      }
+    }
+  },
+  "faq9": {
+    "q10": "س: حاسبة المعدل التراكمي لـ WES؟",
+    "a10": {
+      "label": "أ:",
+      "text": "تقوم WES (خدمات التعليم العالمية) بتقييم السجلات الأكاديمية، ويتم تعيين المعدل التراكمي للتحقق من المؤهلات من خلال النظر في مقياس الدرجات والنتائج المطلقة في الدورات الفردية."
+    }
+  },
+  "section1_title": "حاسبة النسبة المئوية للمعدل التراكمي",
+  "section1_paragraph": "مرحبًا بكم أيها الزملاء المتعلمون والأكاديميون! كما تعلمون جميعًا، تلعب المعدلات التراكمية والنسب المئوية دورًا مهمًا في النظام التعليمي. غالبًا ما نتعرض لمواقف حيث نحتاج إلى استخدامهما بالتبادل، لذلك تقدم لك Lord Calculator حاسبة النسبة المئوية إلى المعدل التراكمي الأكثر موثوقية وسرعة لمساعدتك في حساب نسبتك المئوية أثناء التنقل! فيما يلي دليل مفصل حول كيفية عمل حاسبة النسبة المئوية إلى المعدل التراكمي، وطرق تحويل النسبة المئوية إلى المعدل التراكمي، وصيغ مختلفة للنسبة المئوية إلى المعدل التراكمي.",
+  "section2_title": "النسبة المئوية لصيغة المعدل التراكمي",
+  "cgpa_title": "المعدل التراكمي =",
+  "percentage_achieved": "النسبة المئوية المحققة",
+  "multiplication_factor": "عامل الضرب الذي تعطيه الجامعات",
+  "table_of_contents": "جدول المحتويات",
+  "expand_button_text": "يوسع",
+  "collapse_button_text": "ينهار",
+  "percentage_to_cgpa_calculator": "حاسبة النسبة المئوية للمعدل التراكمي",
+  "percentage_to_cgpa_formula": "النسبة المئوية لصيغة المعدل التراكمي",
+  "lord_calculator_percentage_to_cgpa": "حاسبة النسبة المئوية للمعدل التراكمي لـ Lord Calculator ولماذا تستخدمها؟",
+  "how_to_use_lord_calculator": "كيفية استخدام النسبة المئوية لحاسبة اللورد في حاسبة المعدل التراكمي؟",
+  "what_is_percentage": "ما هي النسبة المئوية وكيف تختلف عن المعدل التراكمي؟",
+  "what_is_cgpa": "ما هو المعدل التراكمي وكيف يتم حسابه؟",
+  "when_to_use_lord_calculator": "متى تستخدم حاسبة النسبة المئوية إلى المعدل التراكمي من Lord Calculator؟",
+  "common_mistakes": "الأخطاء الشائعة التي يجب تجنبها عند حساب النسبة المئوية للمعدل التراكمي بدقة",
+  "why_different_grading_scales": "لماذا تتبع المؤسسات المختلفة مقاييس تصنيف وصيغ تحويل مختلفة؟",
+  "percentage_to_cgpa_for_boards": "تحويل النسبة المئوية إلى المعدل التراكمي لمختلف الهيئات والجامعات.",
+  "pros_and_cons_of_calculators": "إيجابيات وسلبيات استخدام النسبة المئوية في حاسبات المعدل التراكمي عبر الإنترنت",
+  "frequently_asked_questions": "الأسئلة الشائعة",
+  "cgpa_formula": "المعدل التراكمي = النسبة المئوية المحققة / عامل الضرب الذي تمنحه الجامعة",
+  "example_text": "مثال: لنفترض أنك حققت نسبة نجاح كبيرة تزيد عن 92.4%. والآن تريد تحويلها إلى معدل تراكمي. مقياس الدرجات الذي تتبعه جامعتك هو مقياس الدرجات المكون من 10 درجات مع عامل ضرب 9.5. عندئذٍ سيتم حساب معدلك التراكمي على النحو التالي:",
+  "section3_title": "حاسبة النسبة المئوية للمعدل التراكمي لـ Lord Calculator ولماذا تستخدمها؟",
+  "section3_text1": "لقد قمنا بتصميم الآلة الحاسبة الخاصة بنا بحيث تكون مناسبة لجميع أنظمة التصنيف. سواء كانت مؤسستك تتبع مقياس تصنيف بأربع درجات أو مقياس تصنيف بخمس درجات أو مقياس تصنيف بعشر درجات، فكل ما عليك فعله هو اختيار مقياس التصنيف والمضي قدمًا في الحساب. ولكن ضع في اعتبارك أنه بالنسبة لمقاييس التصنيف الافتراضية هذه، فقد استخدمنا عوامل الضرب القياسية. فيما يلي عوامل الضرب القياسية لأنظمة التصنيف المختلفة:",
+  "multiplication_factors": {
+    "4_scale": "عامل الضرب لمقياس الدرجات الأربعة: 25",
+    "5_scale": "عامل الضرب لمقياس الدرجات 5: 20",
+    "10_scale": "عامل الضرب لمقياس الدرجات 10: 9.5"
+  },
+  "section3_text2": "يرجى ملاحظة أن مؤسستك قد تتبع مقياس تصنيف قياسيًا، أي مقياس تصنيف 10 ولكن بعامل ضرب مختلف. على سبيل المثال: تتبع CBSE وICSE وJNTU (جامعة جواهر لال نهرو التقنية) مقياس تصنيف مشتركًا من 10 ولكن باستخدام عوامل ضرب مختلفة. تعتبر CBSE الرقم 9.5 عامل ضرب لجميع حسابات التحويل، بينما تستخدم ICSE الرقم 9.8 كعامل ضرب لها، وتستخدم JNTU الرقم 10 كعامل ضرب لحسابات المعدل التراكمي إلى النسبة المئوية أو النسبة المئوية إلى المعدل التراكمي.",
+  "section4_title": "كيفية استخدام النسبة المئوية لحاسبة اللورد في حاسبة المعدل التراكمي؟",
+  "section4_text1": "قبل أن نبدأ في التعمق في المفاهيم الأساسية التي يجب أن تكون على دراية بها حول نظام الدرجات وتحويل الدرجات، اسمحوا لي أن أرشدك إلى كيفية استخدام حاسبة النسبة المئوية إلى المعدل التراكمي من Lord Calculator للحصول على نتائج دقيقة.",
+  "section4_steps": {
+    "step1": "افتح <span class='font-semibold'>حاسبة النسبة المئوية للمعدل التراكمي</span> ضمن الحاسبات التعليمية.",
+    "step2": "في الحقل الأول، يُطلب منك إدخال النسبة المئوية الخاصة بك. يرجى التأكد من إدخال النسبة المئوية بدقة بما في ذلك النقاط العشرية للحصول على تحويل دقيق.",
+    "step3": "الآن اختر مقياس الدرجات الذي تتبعه مؤسستك. إذا كان مختلفًا عن المقاييس القياسية، أي مقياس الدرجات 4 أو 5 أو 10، فأنت بحاجة إلى إدخال عامل الضرب مباشرةً.",
+    "step4": "في كلتا الحالتين، سواء أدخلت مقياس الدرجات أو اخترت عامل الضرب، فتأكد من عامل الضرب الموضح في الحقل التالي. وكما ذكرنا سابقًا، قد يحدث أن تتبع مؤسستك مقياس تصنيف قياسيًا ولكنها تستخدم عوامل ضرب مختلفة. لذا في هذه الحالات، تحتاج إلى تعديل عامل الضرب وفقًا لذلك وإلا فلن يكون تحويل النسبة المئوية إلى المعدل التراكمي دقيقًا."
+  },
+  "section4_text2": "بمجرد ملء كافة المعلومات، اضغط على زر \"حساب\". ستظهر لك النسبة المئوية الخاصة بك محولة إلى المعدل التراكمي أمام شاشتك.",
+  "section5-title": "ما هي النسبة المئوية وكيف تختلف عن المعدل التراكمي؟",
+  "section5_percentage_title": "نسبة مئوية",
+  "section5_percentage_text": "النسبة المئوية هي انعكاس دقيق للدرجات التي تم الحصول عليها أثناء الامتحانات. وهي عبارة عن تمثيل موحد للدرجات من أصل 100.",
+  "section5_cgpa_title": "المعدل التراكمي",
+  "section5_cgpa_text": "المعدل التراكمي هو المعدل التراكمي للنقاط التراكمية التي تم الحصول عليها، ويستخدم كمتوسط ​​تقريبي للأداء الأكاديمي.",
+  "section6-title": "ما هو المعدل التراكمي وكيف يتم حسابه؟",
+  "section6_description": "المعدل التراكمي للنقاط (CGPA) هو تقييم شامل للأداء الأكاديمي للطالب خلال فترة أكاديمية محددة. تحسب بعض الجامعات هذا المعدل على أنه متوسط ​​جميع نقاط الدرجات الفصلية، بينما تدرج جامعات أخرى أيضًا الاعتمادات في الحساب.",
+  "section6_formula_title": "طريقة حساب المعدل التراكمي 1",
+  "section6_formula_description": "إحدى طرق حساب المعدل التراكمي هي إيجاد متوسط ​​جميع المعدلات التراكمية (نقاط الدرجات الفصلية) على مدار الفصول الدراسية. الصيغة هي:",
+  "section6_formula_sgpas": "SGPA لـ sem.1 + SGPA لـ sem.2 + SGPA لـ sem.3 +.........+ SGPA لـ sem. ن",
+  "section6_formula_divisor": "إجمالي عدد الفصول الدراسية",
+  "section6_example_title": "مثال:",
+  "section6_example": "حقق رام معدلات تراكمية بلغت 6 و8.5 و7 و9.5 في 4 فصول دراسية. وسيكون معدله التراكمي:",
+  "section_method2_title": "طريقة حساب المعدل التراكمي 2",
+  "section_method2_description": "هناك طريقة أخرى وهي حساب مجموع حاصل ضرب المعدل التراكمي والاعتمادات المكتسبة ثم القسمة على العدد الإجمالي للاعتمادات. الصيغة هي:",
+  "section_method2_formula_sgpa": "(المعدل التراكمي للفصل الدراسي الأول × الاعتمادات المكتسبة في الفصل الدراسي الأول) + (المعدل التراكمي للفصل الدراسي الثاني × الاعتمادات المكتسبة في الفصل الدراسي الثاني) + ...... + (المعدل التراكمي للفصل الدراسي التاسع × الاعتمادات المكتسبة في الفصل الدراسي التاسع)",
+  "section_method2_formula_divisor": "مجموع الاعتمادات",
+  "section_method2_example_title": "مثال:",
+  "section_method2_example": "حقق شيام قيمًا في المعدل التراكمي 7.2 و6.5 و8.9 و9.6 مع رصيد مقابل 4 و3 و3 و5. سيكون معدله التراكمي:",
+  "section_percentage_formula_title": "صيغة حساب النسبة المئوية",
+  "section_percentage_formula_description": "يتم حساب النسبة المئوية عن طريق قسمة مجموع العلامات التي تم الحصول عليها في المواد/الفصول الدراسية المختلفة على مجموع العلامات الإجمالي، ثم ضرب النتيجة في 100. الصيغة هي:",
+  "section_percentage_formula_equation": "النسبة المئوية =",
+  "section_percentage_formula_numerator": "مجموع الدرجات التي حصل عليها في جميع المواد/الفصول الدراسية",
+  "section_percentage_formula_multiplier": "* 100",
+  "section_percentage_formula_denominator": "مجموع العلامات الإجمالية المخصصة لجميع المواد/الفصول الدراسية",
+  "example_percentage_title": "مثال:",
+  "example_percentage_description": "حصل غانشيام على 295 من 300 في الفصل الدراسي الأول، و265 من 300 في الفصل الدراسي الثاني، و273 من 300 في الفصل الدراسي الثالث، و264 من 300 في الفصل الدراسي الرابع. ستكون نسبته المئوية:",
+  "example_percentage_equation": "النسبة المئوية =",
+  "cgpa_to_percentage_note": "يختلف التحويل من المعدل التراكمي إلى النسبة المئوية لأن كل مؤسسة تستخدم أنظمة ومقاييس مختلفة للتصنيف. تلعب عوامل مثل عدد الفصول الدراسية ومقاييس التصنيف وأنظمة الاعتماد أيضًا دورًا في كيفية حساب المعدل التراكمي وتحويله.",
+  "calculators_usage_title": "متى يمكن أن تكون حاسبات المعدل التراكمي والنسبة المئوية مفيدة؟",
+  "calculators_usage_description": "تُعد هذه الآلات الحاسبة مفيدة بشكل خاص عندما تحتاج إلى تحويل معدلك التراكمي إلى نسبة مئوية أو العكس بسرعة، خاصة عند التقدم للحصول على دراسات إضافية أو فرص عمل أو إعداد المستندات الأكاديمية.",
+  "confusion_about_terms_title": "هل أنت مرتبك بشأن المصطلحات أو الاختصارات؟",
+  "confusion_about_terms_description": "إذا لم تكن متأكدًا من أي من المصطلحات أو الاختصارات المذكورة،",
+  "confusion_about_terms_link_text": "انقر هنا",
+  "percentage_to_cgpa_tool_intro": "تُعد حاسبة النسبة المئوية إلى المعدل التراكمي من Lord Calculator مفيدة في السيناريوهات التي تحتاج فيها إلى تحويل درجاتك بين التنسيقات بسرعة ودقة. فهي تساعد في التخلص من الارتباك الناتج عن الحسابات العشرية المعقدة وتضمن تحويلات دقيقة في كل مرة. لذا، متى تحتاج إلى استخدام هذه الأداة؟",
+  "percentage_to_cgpa_tool_usage_title": "متى تستخدم حاسبة النسبة المئوية إلى المعدل التراكمي من Lord Calculator؟",
+  "percentage_to_cgpa_tool_usage_description": "هذه الأداة مثالية لأي موقف تحتاج فيه إلى التبديل بين الدرجات بتنسيقات مختلفة بسلاسة. دعنا نستكشف بعض السيناريوهات الشائعة:",
+  "usage_higher_studies_title": "أثناء تعبئة نموذج الدراسات العليا",
+  "usage_higher_studies_description1": "عند التقدم للدراسات العليا، وخاصة للمؤسسات الدولية، قد يُطلب منك إدخال درجاتك بتنسيق مختلف. تساعدك هذه الآلة الحاسبة على تحويل درجاتك بسرعة ودقة إلى التنسيق المطلوب، مما يجنبك خطر ارتكاب أي أخطاء قد تؤدي إلى إلغاء طلبك.",
+  "usage_higher_studies_description2": "سواء كنت بحاجة إلى حساب المعدل التراكمي من SGPA، أو المعدل التراكمي إلى النسبة المئوية، أو المعدل التراكمي إلى GPA، فإن هذه الآلة الحاسبة تغطي كل ذلك، مما يضمن حصولك على درجاتك بالتنسيق الصحيح دون أي متاعب.",
+  "usage_competitive_exams_title": "أثناء ملء النماذج للامتحانات التنافسية",
+  "usage_competitive_exams_description": "في العديد من الاختبارات التنافسية، يُطلب منك ملء النسبة المئوية الخاصة بك. ومع ذلك، تفضل بعض مؤسسات الهندسة نظام المعدل التراكمي. في مثل هذه الحالات، تتيح لك الآلة الحاسبة الخاصة بنا تحويل المعدل التراكمي إلى نسبة مئوية أو العكس بسرعة ودقة، مما يساعدك على تلبية متطلبات التنسيق الخاصة بطلبات الاختبار.",
+  "usage_comparative_measurement_title": "القياس المقارن من قبل المعلمين",
+  "usage_comparative_measurement_description": "غالبًا ما يحتاج المعلمون إلى مقارنة درجات العديد من الطلاب وتبسيطها. بدلاً من حساب التحويلات يدويًا، تقدم هذه الآلة الحاسبة عبر الإنترنت حلاً سريعًا ودقيقًا، مما يوفر الكثير من الوقت ويقضي على فرصة حدوث أخطاء.",
+  "usage_conclusion": "في كل هذه الحالات، فإن استخدام حاسبة النسبة المئوية إلى المعدل التراكمي من Lord Calculator يضمن الدقة والكفاءة، سواء كنت تتقدم للدراسات العليا، أو تملأ نماذج الامتحانات، أو تقارن الدرجات لعدد كبير من الطلاب.",
+  "common_mistakes_title": "الأخطاء الشائعة التي يجب تجنبها عند حساب النسبة المئوية للمعدل التراكمي بدقة",
+  "common_mistakes_intro": "على الرغم من أن صيغة تحويل النسبة المئوية إلى المعدل التراكمي تبدو بسيطة للغاية، إلا أن العديد من الطلاب ما زالوا يحصلون على نتائج غير صحيحة. أحد الأخطاء الأكثر شيوعًا هو عدم معرفة عامل الضرب الدقيق. سنناقش عامل الضرب بالتفصيل في العنوان الفرعي القادم. أولاً، ألق نظرة على جميع الأخطاء الشائعة التي يجب تجنبها أثناء حساب النسبة المئوية إلى المعدل التراكمي بدقة.",
+  "mistake_decimal_points": "غالبًا ما نقوم بتقريب الأرقام العشرية قبل الأوان في الحسابات. وقد تؤدي هذه الأرقام المقربة إلى تغييرات طفيفة في النتائج. ومن الأفضل عدم تقريب الأرقام العشرية حتى الخطوة الأخيرة من الحساب. ومع ذلك، بمجرد الحصول على النتيجة، يمكنك تقريب الأرقام إذا أردت ذلك.",
+  "mistake_grading_scale": "هناك خطأ شائع آخر وهو عدم معرفة صيغة مؤسستك. إذا كانت مؤسستك تتبع مقياس تصنيف مختلفًا وكنت تحسب درجاتك باستخدام مقياس تصنيف مختلف، فلن يكون التحويل دقيقًا أبدًا. أيضًا، في حالة مقياس التصنيف نفسه، قد يختلف عامل الضرب! يُنصح بالتحقق مرة أخرى من عامل الضرب.",
+  "mistake_conversion_formula": "هل حصلت على عامل الضرب بشكل صحيح ولكنك لا تزال تحصل على تحويلات غير دقيقة؟ في هذه الحالة، تحتاج إلى التحقق من صيغة التحويل الخاصة بمؤسستك. العديد من الجامعات، مثل جامعة مومباي، لديها صيغ تحويل خاصة بها تختلف عن صيغة التحويل القياسية. على سبيل المثال، صيغة حساب المعدل التراكمي لجامعة مومباي هي: النسبة المئوية = (المعدل التراكمي × 7.25) + 11. وبالتالي، تحتاج إلى التأكد من هذه العوامل، خاصة إذا كنت تقوم بحساب النسبة المئوية إلى المعدل التراكمي.",
+  "mistake_other_conversions": "هناك أيضًا مشكلات أخرى، ولكنها تتعلق بتحويلات أخرى مثل تحويل المعدل التراكمي إلى المعدل التراكمي وتحويل المعدل التراكمي إلى المعدل التراكمي. وقد ناقشنا هذه المشكلات في الأقسام الخاصة بكل منها.",
+  "grading_scales_title": "لماذا تتبع المؤسسات المختلفة مقاييس تصنيف وصيغ تحويل مختلفة؟",
+  "grading_scales_intro": "لقد ذكرنا عدة مرات مع أمثلة أن العديد من المؤسسات تتبع مقاييس تصنيف مختلفة. ولكن لماذا؟ قد تكون الأسباب كثيرة! دعونا نلقي نظرة على كل منها على حدة:",
+  "reason_historical_cultural": "الاختلافات التاريخية والثقافية: تتبع بلدان مختلفة أنظمة التقييم التقليدية الخاصة بها. ونتيجة لهذا، نرى مقاييس تقييم مختلفة بناءً على الموقع الجغرافي. على سبيل المثال، تتبع المؤسسات الأمريكية مقياس تقييم من 4 نقاط، بينما تتبع المؤسسات الهندية وغيرها من المؤسسات الآسيوية مقياس تقييم من 10 نقاط.",
+  "reason_assessment_approach": "نهج مختلف لتقييم الطلاب: مع تقدم تحديث التعليم، تتطور أيضًا أساليب تقييم الطلاب. في الآونة الأخيرة، ركزت المؤسسات بشكل أكبر على التقييمات الشاملة بدلاً من التقييمات البسيطة القائمة على الدرجات للأداء الأكاديمي. ونتيجة لذلك، أصبحت أنظمة المعدل التراكمي والمتوسط ​​التراكمي أكثر انتشارًا.",
+  "reason_international_standards": "التوافق مع المعايير الدولية: أصبحت الدراسة في الخارج مفهومًا شائعًا. تتبنى العديد من المؤسسات المعايير الدولية حتى يتمكن الطلاب من تجنب الإجراءات الشكلية الإضافية. على سبيل المثال، تتبع العديد من المؤسسات في أوروبا نظام ECTS (نظام التحويل والتراكم الأوروبي) للتوافق مع المؤسسات الأخرى في جميع أنحاء القارة.",
+  "reason_universal_standard": "صعوبة تحقيق معيار تقييم عالمي: في حين يبدو اتباع معيار تقييم عالمي منطقيًا وعادلاً، إلا أنه يمثل تحديًا عمليًا. نظرًا لأن المؤسسات تتبع مقاييس تقييم مختلفة، فإنها تحتاج إلى صيغ تحويل قياسية لتوفير رؤية غير متحيزة للأداء الأكاديمي للطلاب عبر الجامعات والمدارس.",
+  "conversion_title": "تحويل النسبة المئوية إلى المعدل التراكمي للمجالس والجامعات المختلفة",
+  "table_heading_institution": "مؤسسة",
+  "table_heading_formula": "صيغة",
+  "cbse1": "CBSE (المجلس المركزي للتعليم الثانوي)، الهند",
+  "icse1": "ICSE (شهادة التعليم الثانوي الهندية)، الهند",
+  "maharashtra1": "مجلس ولاية ماهاراشترا، الهند",
+  "anna_university1": "جامعة آنا، تاميل نادو، الهند",
+  "jntu1": "جامعة جواهر لال نهرو التكنولوجية (JNTU)، تيلانجانا وأندرا براديش، الهند",
+  "vtu1": "جامعة فيسفيسفارايا التكنولوجية (VTU)، كارناتاكا، الهند",
+  "gtu1": "جامعة جوجارات للتكنولوجيا (GTU)، جوجارات، الهند",
+  "mu1": "جامعة مومباي، ماهاراشترا، الهند",
+  "mahe1": "أكاديمية مانيبال للتعليم العالي (MAHE)، كارناتاكا، الهند",
+  "amity1": "جامعة أميتي، الهند",
+  "vit1": "معهد فيلور للتكنولوجيا (VIT)، تاميل نادو، الهند",
+  "sppu1": "جامعة سافيتريباي فول بيون (SPPU)، ماهاراشترا، الهند",
+  "iit1": "المعاهد الهندية للتكنولوجيا (IITs)، الهند",
+  "nit1": "المعاهد الوطنية للتكنولوجيا (NITs)، الهند",
+  "bits_pilani1": "معهد بيرلا للتكنولوجيا والعلوم، بيلاني، الهند",
+  "du1": "جامعة دلهي (DU)، الهند",
+  "bhu1": "جامعة باناراس الهندوسية (BHU)، الهند",
+  "osmania1": "جامعة عثمانية، تيلانجانا، الهند",
+  "pu1": "جامعة البنجاب، البنجاب، الهند",
+  "srm1": "معهد SRM للعلوم والتكنولوجيا (SRMIST)، تاميل نادو، الهند",
+  "toronto1": "جامعة تورنتو، كندا",
+  "ubc1": "جامعة كولومبيا البريطانية (UBC)، كندا",
+  "anu1": "الجامعة الوطنية الأسترالية (ANU)، أستراليا",
+  "sydney1": "جامعة سيدني، أستراليا",
+  "melbourne1": "جامعة ملبورن، أستراليا",
+  "uc_system1": "جامعة كاليفورنيا (UCLA، UC Berkeley، إلخ)، الولايات المتحدة الأمريكية",
+  "harvard1": "جامعة هارفارد، الولايات المتحدة الأمريكية",
+  "oxford1": "جامعة أكسفورد، المملكة المتحدة",
+  "cambridge1": "جامعة كامبريدج، المملكة المتحدة",
+  "nus1": "الجامعة الوطنية في سنغافورة (NUS)، سنغافورة",
+  "hku1": "جامعة هونج كونج (HKU)، هونج كونج",
+  "tum1": "الجامعة التقنية في ميونخ (TUM)، ألمانيا",
+  "eth_zurich1": "المعهد الفيدرالي السويسري للتكنولوجيا في زيورخ",
+  "tokyo1": "جامعة طوكيو، اليابان",
+  "cape_town1": "جامعة كيب تاون، جنوب أفريقيا",
+  "mcgill1": "جامعة ماكجيل، كندا",
+  "peking1": "جامعة بكين، الصين",
+  "ntu1": "جامعة تايوان الوطنية (NTU)، تايوان",
+  "aut1": "جامعة أوكلاند للتكنولوجيا (AUT)، نيوزيلندا",
+  "cbse": "الصيغة: المعدل التراكمي = النسبة المئوية / 9.5",
+  "icse": "الصيغة: المعدل التراكمي = النسبة المئوية / 9.8 (قد يختلف حسب المدرسة)",
+  "maharashtra": "الصيغة: المعدل التراكمي = النسبة المئوية / 9.5",
+  "anna_university": "الصيغة: المعدل التراكمي = النسبة المئوية / 10",
+  "jntu": "الصيغة: المعدل التراكمي = النسبة المئوية / 10",
+  "vtu": "الصيغة: المعدل التراكمي = النسبة المئوية / 9.1 (قد يختلف حسب القسم)",
+  "gtu": "الصيغة: المعدل التراكمي = (النسبة المئوية - 12) / 7.1",
+  "mu": "الصيغة: المعدل التراكمي = (النسبة المئوية - 11) / 7.25",
+  "mahe": "الصيغة: المعدل التراكمي = النسبة المئوية / 10",
+  "amity": "الصيغة: المعدل التراكمي = النسبة المئوية / 9",
+  "vit": "الصيغة: المعدل التراكمي = النسبة المئوية / 9.5 (يختلف حسب البرنامج)",
+  "sppu": "الصيغة: المعدل التراكمي = النسبة المئوية / 6.3",
+  "iit": "الصيغة: المعدل التراكمي = النسبة المئوية / 10 (قد تستخدم بعض معاهد التكنولوجيا الهندية مقاييس فريدة لبعض الدورات الدراسية)",
+  "nit": "الصيغة: المعدل التراكمي = النسبة المئوية / 10",
+  "bits_pilani": "الصيغة: المعدل التراكمي = النسبة المئوية / 10",
+  "du": "الصيغة: المعدل التراكمي = النسبة المئوية / 9.5 (قد يختلف حساب المعدل التراكمي لجامعة DU حسب البرنامج)",
+  "bhu": "الصيغة: المعدل التراكمي = النسبة المئوية / 10",
+  "osmania": "الصيغة: المعدل التراكمي = النسبة المئوية / 10",
+  "pu": "الصيغة: المعدل التراكمي = النسبة المئوية / 9.5",
+  "srm": "الصيغة: المعدل التراكمي = النسبة المئوية / 10",
+  "toronto": "مقياس الدرجات: مقياس المعدل التراكمي 4.0؛ ملاحظة: لا توجد صيغة تحويل مباشرة؛ يستخدم المتقدمون جداول معادلة المعدل التراكمي أو مقيمون من جهات خارجية.",
+  "ubc": "مقياس الدرجات: مقياس المعدل التراكمي 4.33؛ ملاحظة: لا يوجد تحويل محدد للمعدل التراكمي؛ استشر جامعة كولومبيا البريطانية للحصول على تفاصيل المعادلة.",
+  "anu": "مقياس الدرجات: مقياس من 7 نقاط؛ الصيغة (المبادئ التوجيهية العامة): المعدل التراكمي = النسبة المئوية / 7.1 للمعادلة على مقياسهم.",
+  "sydney": "مقياس الدرجات: نظام المعدل التراكمي المكون من 7 نقاط؛ الصيغة (المبادئ التوجيهية العامة): المعدل التراكمي = النسبة المئوية / 7.5 (قد يتطلب تقييم المؤهلات للتحويل الدقيق).",
+  "melbourne": "مقياس الدرجات: مقياس المعدل التراكمي من 7 نقاط؛ ملاحظة: راجع قسم القبول لمعرفة معادلة المعدل التراكمي؛ لا توجد صيغة مباشرة.",
+  "uc_system": "مقياس الدرجات: مقياس المعدل التراكمي 4.0؛ ملاحظة: لا توجد صيغة عالمية للمعدل التراكمي؛ استخدم WES أو أدوات تقييم مماثلة للتحويلات.",
+  "harvard": "مقياس الدرجات: مقياس المعدل التراكمي 4.0؛ ملاحظة: يستخدم خدمات الطرف الثالث (على سبيل المثال، WES) لتحويل المعدل التراكمي إلى المعدل التراكمي.",
+  "oxford": "مقياس الدرجات: تصنيف مرتبة الشرف في المملكة المتحدة (الأول، الثاني العلوي، إلخ)؛ ملاحظة: لا توجد صيغة مباشرة للمعدل التراكمي؛ غالبًا ما يُعتبر المعدل التراكمي 8.5-10 (من 10) من الدرجة الأولى.",
+  "cambridge": "مقياس الدرجات: مرتبة الشرف في المملكة المتحدة؛ يتم تعيين النسبة المئوية على أساس أسماء الفئات؛ لا توجد صيغة مباشرة لتحويل المعدل التراكمي.",
+  "nus": "مقياس الدرجات: مقياس المعدل التراكمي 5.0؛ لا توجد صيغة تحويل مباشرة؛ استخدم جداول معادلة NUS.",
+  "hku": "مقياس الدرجات: مقياس المعدل التراكمي 4.3؛ لا توجد صيغة محددة لتحويل المعدل التراكمي.",
+  "tum": "مقياس الدرجات: مقياس سويسري مكون من 6 نقاط ملاحظة: المعدل التراكمي 8.5+ تنافسي؛ لا توجد صيغة تحويل ثابتة.",
+  "eth_zurich": "مقياس الدرجات: مقياس سويسري مكون من 6 نقاط ملاحظة: المعدل التراكمي 8.5+ تنافسي؛ لا توجد صيغة تحويل ثابتة.",
+  "tokyo": "مقياس الدرجات: مقياس المعدل التراكمي الياباني 4.0 ملاحظة: من المتوقع عادةً الحصول على معدل تراكمي 8.0+ للمتقدمين التنافسيين.",
+  "cape_town": "مقياس الدرجات: مقياس المعدل التراكمي المكون من 4 نقاط ونظام النسبة المئوية ملاحظة: قد يتطلب تحويل المعدل التراكمي بناءً على المعايير في جنوب إفريقيا.",
+  "mcgill": "مقياس الدرجات: مقياس المعدل التراكمي 4.0 ملاحظة: غالبًا ما تكون هناك حاجة إلى خدمات WES أو خدمات مماثلة للتحويل الدقيق.",
+  "peking": "مقياس الدرجات: مقياس المعدل التراكمي 4.0 ملاحظة: يتطلب تحويل المعدل التراكمي الرسمي؛ ويتوقع بشكل عام معدل تراكمي 8.0+.",
+  "ntu": "مقياس الدرجات: مقياس المعدل التراكمي 4.3 ملاحظة: عادةً ما يكون المعدل التراكمي أعلى من 8.0 مطلوبًا للمتقدمين التنافسيين.",
+  "aut": "مقياس الدرجات: مقياس المعدل التراكمي من 9 نقاط الصيغة (المبادئ التوجيهية العامة): المعدل التراكمي = النسبة المئوية / 7.1 لتتوافق مع مقياس المعدل التراكمي في نيوزيلندا.",
+  "title--": "إيجابيات وسلبيات استخدام النسبة المئوية في حاسبات المعدل التراكمي عبر الإنترنت",
+  "pros_title": "إيجابيات حاسبة النسبة المئوية للمعدل التراكمي",
+  "pros_1": "قم بتحويل درجاتك أثناء التنقل. تحتوي الآلات الحاسبة عبر الإنترنت على قيم ومعادلات محددة مسبقًا. لذلك، لا داعي للقلق بشأن وضع القيم في المكان الصحيح في المعادلة. ما عليك سوى إدخال القيم في الحقل المشار إليه وستحصل على نتائجك دون إهدار أي وقت أو جهد.",
+  "pros_2": "تتميز الآلات الحاسبة عبر الإنترنت بواجهات تفاعلية وبسيطة. بالإضافة إلى ذلك، توفر العناصر المرئية مثل مقياس الدرجات لدينا تصورًا أفضل لدرجاتك.",
+  "pros_3": "في الآلات الحاسبة التقليدية، تحتاج إلى تسجيل كل البيانات المحسوبة إذا كنت تريد حساب تاريخ الدرجات. تحدث مثل هذه السيناريوهات عندما يحتاج المعلم إلى تتبع درجات الطلاب من جامعات مختلفة بتنسيق عالمي. ولكن على آلة حاسبة Lord، يمكنك عرض تاريخ جميع الدرجات المحسوبة بتنسيق جدولي أسفل حقل \"النتيجة\". بالإضافة إلى ذلك، يمكنك حتى تصدير التاريخ بتنسيق PDF وحفظه لأي غرض مستقبلي.",
+  "pros_4": "كما تعمل الآلات الحاسبة عبر الإنترنت على التخلص من احتمالات الخطأ البشري الذي قد يحدث، مثل أثناء تشكيل المعادلات على الآلات الحاسبة الافتراضية، أو أثناء إجراء الحسابات يدويًا باستخدام القلم والورق.",
+  "cons_title": "سلبيات حاسبة النسبة المئوية للمعدل التراكمي",
+  "cons_1": "عامل الضرب المتغير: لاحظنا أن الجامعات المختلفة تتبع عوامل ضرب مختلفة حتى في ظل نفس مقياس الدرجات. وبالتالي، في مثل هذه السيناريوهات، لا تستطيع الآلات الحاسبة عبر الإنترنت تلبية متطلبات جميع الجامعات. يجب عليك تعديل عامل الضرب يدويًا للحصول على تحويل دقيق.",
+  "cons_2": "صيغ تحويل مختلفة: لقد رأينا أيضًا جامعات مثل جامعة مومباي تستخدم صيغًا مختلفة تمامًا لتحويل المعدل التراكمي إلى نسبة مئوية. على سبيل المثال، صيغة تحويل المعدل التراكمي إلى نسبة مئوية لجامعة مومباي هي المعدل التراكمي = (النسبة المئوية - 11) / 7.25. في هذه الحالات، لا يمكن للحاسبات عبر الإنترنت إضافة عوامل تشغيل إضافية تلقائيًا أو يدويًا. أثناء مثل هذه التحويلات، تحتاج إلى الرجوع إلى الطرق التقليدية لحساب الدرجات.",
+  "summary_title": "باختصار",
+  "summary_1": "حتى الآن، تعلمنا عن مفاهيم النسبة المئوية والمعدل التراكمي، وكيفية تحويلهما واستخدامهما بالتبادل، وما هي المواقف المحتملة التي قد يُطلب منك فيها تغيير درجاتك، وكيف تعتمد الجامعات/المجالس المختلفة على مقاييس التصنيف المختلفة وصيغ التحويل.",
+  "summary_2": "لدينا أيضًا حاسبات مماثلة بما في ذلك حاسبة المعدل التراكمي إلى النسبة المئوية، وحاسبة المعدل التراكمي إلى المعدل التراكمي، وحاسبة المعدل التراكمي إلى المعدل التراكمي، وحاسبة المعدل التراكمي إلى المعدل التراكمي، وحاسبة المعدل التراكمي. إذا كنت بحاجة إلى معرفة أي مفهوم محدد يتعلق بهذه الحاسبات، فاقرأ وصف الحاسبة المعنية. لقد قمنا بتغطية كل التفاصيل الأساسية في وصفها.",
+  "faq_title": "الأسئلة الشائعة",
+  "faq_1_question": "س1. ما هي النسبة المئوية لحاسبة المعدل التراكمي؟",
+  "faq_1_answer": "تتيح لك حاسبة النسبة المئوية إلى المعدل التراكمي تحويل نسبتك المئوية إلى المعدل التراكمي بسهولة. كل ما عليك فعله هو إدخال النسبة المئوية وعامل الضرب.",
+  "faq_2_question": "س2. كيفية تحويل النسبة المئوية إلى المعدل التراكمي؟",
+  "faq_2_answer": "لتحويل نسبتك المئوية إلى المعدل التراكمي، يمكنك إما استخدام حاسبة عبر الإنترنت مثل Lord Calculator أو الحساب يدويًا باستخدام الصيغة أدناه:",
+  "faq_2_formula": "المعدل التراكمي = (النسبة المئوية - 50) / 10",
+  "faq_3_question": "س3. كيف أستخدم حاسبة النسبة المئوية إلى المعدل التراكمي من Lord Calculator؟",
+  "faq_3_answer": "لاستخدام حاسبة النسبة المئوية إلى المعدل التراكمي من Lord Calculator، اتبع الخطوات التالية:",
+  "faq_3_step_1": "أدخل نسبتك المئوية في الحقل الأول.",
+  "faq_3_step_2": "اختر مقياس التصنيف أو أدخل عامل الضرب يدويًا.",
+  "faq_3_step_3": "تأكد مرة أخرى من أنك أدخلت عامل الضرب بشكل صحيح.",
+  "faq_3_step_4": "اضغط على زر \"حساب\" لرؤية معدلك التراكمي في حقل النتيجة.",
+  "faq_4_question": "س4. كيفية تحويل المعدل التراكمي حسب الجامعات الدولية؟",
+  "faq_4_answer": "تستخدم الجامعات الدولية المختلفة أنظمة تحويل مختلفة. وللتعرف على نظام معين،",
+  "faq_4_link": "انقر هنا",
+  "faq_5_question": "س5. ما هي الأخطاء الشائعة التي يجب تجنبها عند حساب درجاتي؟",
+  "faq_5_answer": "تتضمن الأخطاء الشائعة ما يلي:",
+  "faq_5_mistake_1": "تجنب تقريب النقاط العشرية في بداية العمليات الحسابية.",
+  "faq_5_mistake_2": "تأكد من إدخال عامل الضرب الخاص بمعهدك بشكل صحيح.",
+  "faq_5_mistake_3": "تأكد من أن جامعتك تتبع طريقة الحساب القياسية.",
+  "faq_6_question": "س6. هل تختلف حاسبة النسبة المئوية للمعدل التراكمي للهندسة؟",
+  "faq_6_answer": "تستخدم العديد من جامعات الهندسة صيغ تحويل مختلفة. ورغم أن هذا قد لا يختلف من قسم إلى آخر، فقد تتبع جامعات مختلفة صيغ تحويل قياسية خاصة بها، وقد لا تتطابق مع صيغ أخرى.",
+  "faq_7_question": "س7. ما هي صيغة حساب النسبة المئوية إلى المعدل التراكمي VTU؟",
+  "faq_7_answer": "تختلف صيغة حساب النسبة المئوية إلى المعدل التراكمي لجامعة فيسفيسفارايا للتكنولوجيا عن الصيغ الأخرى. ويمكن تمثيلها على النحو التالي:",
+  "faq_7_example": "المعدل التراكمي = (النسبة المئوية - 50) / 10 مثال: إذا حصلت على 80%، فإن المعدل التراكمي الخاص بك وفقًا لـ VTU سيكون: المعدل التراكمي = 8 + 0.75 = 8.75",
+  "faqs": [
+    {
+      "question": "س8. ما هي صيغة حساب النسبة المئوية لمتوسط ​​المعدل التراكمي CBSE؟",
+      "answer": "الإجابة. صيغة تحويل النسبة المئوية إلى المعدل التراكمي في CBSE هي:",
+      "formula": "المعدل التراكمي = (النسبة المئوية - 50) / 9.5"
+    },
+    {
+      "question": "س9. ما هو معدل 70% في المعدل التراكمي؟",
+      "answer": "الإجابة: صيغة التحويل المستخدمة هي:",
+      "details": [
+        "70% في المعدل التراكمي = 7.37 (حسب معامل الضرب 9.5)",
+        "70% في المعدل التراكمي = 3.5 (وفقًا لمقياس الدرجات المكون من 5 درجات)",
+        "70% في المعدل التراكمي = 2.8 (وفقًا لمقياس الدرجات المكون من 4 درجات)"
+      ]
+    }
+  ],
+  "faqa": [
+    {
+      "question": "س10. ما هو معدل 75% في المعدل التراكمي؟",
+      "answer": "الإجابة. باستخدام نفس الصيغة الواردة في السؤال 9، فإن 75% في المعدل التراكمي هي:",
+      "details": [
+        "75% في المعدل التراكمي = 7.89 (حسب معامل الضرب 9.5)",
+        "75% في المعدل التراكمي = 3.75 (وفقًا لمقياس الدرجات المكون من 5 درجات)",
+        "75% في المعدل التراكمي = 3 (وفقًا لمقياس الدرجات المكون من 4 درجات)"
+      ]
+    },
+    {
+      "question": "س11. ما هو معدل 80% في المعدل التراكمي؟",
+      "answer": "الإجابة. باستخدام نفس الصيغة الواردة في السؤال 9، فإن 80% في المعدل التراكمي هي:",
+      "details": [
+        "80% في المعدل التراكمي = 8.42 (حسب معامل الضرب 9.5)",
+        "80% في المعدل التراكمي = 4 (وفقًا لمقياس الدرجات المكون من 5 درجات)",
+        "80% في المعدل التراكمي = 3.2 (وفقًا لمقياس الدرجات المكون من 4 درجات)"
+      ]
+    },
+    {
+      "question": "س12. ما هو معدل 95.4% في المعدل التراكمي؟",
+      "answer": "الإجابة. باستخدام نفس الصيغة الواردة في السؤال 9، فإن 95.4% في المعدل التراكمي هو:",
+      "details": [
+        "95.4% في المعدل التراكمي = 10 (وفقًا لمقياس الدرجات 9.5، لاحظ أن جميع النسب المئوية التي تزيد عن 95% تُحسب على أنها 10 في المعدل التراكمي)",
+        "95.4% في المعدل التراكمي = 4.77 (وفقًا لمقياس الدرجات المكون من 5 درجات)",
+        "95.4% في المعدل التراكمي = 3.81 (وفقًا لمقياس الدرجات المكون من 4 درجات)"
+      ]
+    }
+  ],
+  "note": "ملحوظة: تختلف صيغ التحويل بين المؤسسات.",
+  "--title": "حاسبة النسبة المئوية للمعدل التراكمي",
+  "enterPercentage": "أدخل النسبة المئوية",
+  "placeholderPercentage": "أدخل نسبتك المئوية",
+  "chooseGradeScale": "اختر مقياس الدرجة",
+  "scale4": "4.0 مقياس",
+  "scale5": "مقياس 5.0",
+  "scale10": "مقياس 10.0",
+  "setMultiplicationFactor": "تعيين عامل الضرب",
+  "placeholderFactor": "أدخل عامل",
+  "-calculateButton": "احسب",
+  "-resetButton": "إعادة ضبط",
+  "errorMessage": "خطأ: إدخال غير صالح",
+  "calculatedCGPATitle": "معدلك التراكمي المحسوب",
+  "placeholderCGPA": "نسبة مئوية:",
+  "-downloadButton": "تحميل",
+  "-whatsappButton": "واتساب",
+  "-copyLinkButton": "نسخ الوصلة",
+  "-linkCopied": "تم نسخ الرابط!",
+  "historyTitle": "سجل الحسابات",
+  "tableSNo": "س.ن.ا",
+  "tablePercentage": "نسبة مئوية",
+  "tableCGPA": "المعدل التراكمي",
+  "percentageContent": "نسبة المحتوى",
+  "section1": "حاسبة المعدل التراكمي إلى النسبة المئوية",
+  "intro_paragraph": "مرحبًا بكم أيها المتعلمون والأكاديميون! كما تعلمون جميعًا، تلعب المعدلات التراكمية والنسب المئوية دورًا مهمًا في النظام التعليمي بأكمله. غالبًا ما نتعرض لمواقف حيث نحتاج إلى استخدامهما بالتبادل، لذلك تقدم لك Lord Calculator حاسبة المعدل التراكمي إلى النسبة المئوية الأكثر موثوقية وسرعة لمساعدتك في حساب الدرجات أثناء التنقل! إليك دليل مفصل حول كيفية عمل حاسبة المعدل التراكمي لدينا متبوعًا بشرح لنظام الدرجات المستخدم من قبل الجامعات المختلفة. لقد أدرجنا أيضًا صيغة المعدل التراكمي إلى النسبة المئوية وفقًا لأنظمة الدرجات المختلفة المتبعة.",
+  "-section2": "صيغة تحويل المعدل التراكمي إلى نسبة مئوية",
+  "-formula": "النسبة المئوية = المعدل التراكمي × عامل الضرب",
+  "-table_of_contents": "جدول المحتويات",
+  "cgpa_to_percentage_calculator": "حاسبة المعدل التراكمي إلى النسبة المئوية",
+  "cgpa_to_percentage_formula": "صيغة تحويل المعدل التراكمي إلى نسبة مئوية",
+  "lord_calculator_tool": "حاسبة معدل النقاط التراكمي إلى النسبة المئوية من لورد كالكتولتر",
+  "how_to_use_tool": "كيفية استخدام حاسبة المعدل التراكمي للدرجات في برنامج Lord Calculator لتقدير النسبة المئوية",
+  "-what_is_cgpa": "ما هو المعدل التراكمي وكيف يتم حسابه؟",
+  "important_terms": "تعريف المصطلحات المهمة التي يجب عليك معرفتها",
+  "why_convert_cgpa": "لماذا تحويل المعدل التراكمي إلى نسبة مئوية أو النسبة المئوية إلى المعدل التراكمي؟",
+  "calculate_percentage": "كيفية حساب النسبة المئوية من المعدل التراكمي",
+  "common_pitfalls": "الأخطاء الشائعة أثناء تحويل المعدل التراكمي إلى نسبة مئوية",
+  "cgpa_in_10_point": "المعدل التراكمي إلى النسبة المئوية في نظام النقاط العشر",
+  "cgpa_in_5_point": "المعدل التراكمي إلى النسبة المئوية في مقياس الصف الخامس",
+  "cgpa_in_4_point": "المعدل التراكمي إلى النسبة المئوية في مقياس الصفوف الأربعة",
+  "grading_scale": "ما هو مقياس الدرجات وكيف تختار الجامعات مقياسها القياسي؟",
+  "-multiplication_factor": "ما هو عامل الضرب وكيف يعمل؟",
+  "different_boards": "تحويل المعدل التراكمي إلى نسبة مئوية لمختلف الهيئات والجامعات",
+  "grading_scale_impacts": "ما هي تأثيرات مقاييس التقييم المختلفة على الطلاب؟",
+  "-faqs": "الأسئلة الشائعة المتعلقة بحاسبة المعدل التراكمي",
+  "lord_calculator_cgpa_calculator": "حاسبة معدل النقاط التراكمي إلى النسبة المئوية من لورد كالكتولتر",
+  "cgpa_calculator_description": "تم تصميم حاسبة المعدل التراكمي لدينا مع وضع عاملين رئيسيين في الاعتبار: سهولة الاستخدام والحسابات السريعة.",
+  "cgpa_calculator_description_expanded": "على الرغم من أن حسابات الدرجات تتضمن عوامل مختلفة، فقد قمنا بدمج جميع المكونات الأساسية لحساب درجاتك أو نسبك المئوية بدقة. تستخدم الجامعات المختلفة مقاييس تصنيف وعوامل ضرب مختلفة (لا تقلق، سنشرح هذه المصطلحات أدناه). ولراحتك، قمنا بتضمين مقياس الدرجات وعامل الضرب اليدوي.",
+  "how_to_use_heading": "كيفية استخدام حاسبة المعدل التراكمي للدرجات في برنامج Lord Calculator لتقدير النسبة المئوية",
+  "how_to_use_description": "ما عليك سوى إدخال الحقول المطلوبة في حاسبة المعدل التراكمي لدينا، ثم الضغط على \"حساب\"، وستظهر لك النسبة المئوية الخاصة بك مع مقياس الدرجات الخاص بنا. الأمر بهذه البساطة. ولكن دعني أشرح لك بسرعة الحقول والبيانات التي نحتاجها منك لحساب درجاتك ونسبك المئوية بدقة.",
+  "how_to_use_step1": "توجه إلى",
+  "how_to_use_step1_link": "https://lordcalculator.com/educational-calculator/cgpa-to-percentage-calculator",
+  "how_to_use_step2": "في الحقل الأول، أدخل معدلك التراكمي. تأكد من إدخاله بدقة، بما في ذلك أي نقاط عشرية.",
+  "how_to_use_step3": "اختر مقياس الدرجات الذي تستخدمه جامعتك. مقاييس الدرجات الشائعة هي 4 و5 و10. بدلاً من ذلك، يمكنك إدخال عامل الضرب يدويًا والضغط على زر \"حساب\". بمجرد إدخال جميع القيم، انقر فوق \"حساب\" للحصول على النسبة المئوية الخاصة بك. ستتمكن أيضًا من التحقق من أدائك على مقياس الدرجات. بالإضافة إلى ذلك، يمكنك الحصول على شهادة تحويل المعدل التراكمي إلى نسبة مئوية منا (لاحظ أن هذه شهادة تمثيلية).",
+  "tip_heading": "نصائح لحساب المعدل التراكمي للنقاط المئوية",
+  "tip_description1": "قد تستخدم جامعات مختلفة عوامل ضرب مختلفة (تُعرف أيضًا بعوامل التحويل)، حتى في ظل نفس مقياس الدرجات. على سبيل المثال، قد تستخدم الجامعة X مقياس درجات بنقطة واحدة مع عامل ضرب قياسي 9.5، بينما قد تستخدم جامعة أخرى عامل 9.7 أو 9.8. لذا، من المهم التحقق مرة أخرى من عامل الضرب الذي تدخله في حاسبة تحويل المعدل التراكمي إلى نسبة مئوية قبل الضغط على زر \"حساب\".",
+  "tip_description2": "إذا لم تكن متأكدًا من مقياس الدرجات أو عامل الضرب في جامعتك، فلا تقلق! لقد أدرجنا",
+  "tip_description2_link": "تحويل المعدل التراكمي إلى نسبة مئوية لمختلف الهيئات والجامعات",
+  "tip_description3": "هل أنت غير متأكد من مقياس الدرجات أو عامل الضرب في جامعتك؟ لا تقلق! لقد قدمنا ​​لك جداول تحويل المعدل التراكمي إلى نسبة مئوية لمختلف الهيئات والجامعات هنا لتسهيل عملية الحساب.",
+  "what_is_cgpa_heading": "ما هو المعدل التراكمي وكيف يتم حسابه؟",
+  "cgpa_formula_method_1_title": "طريقة حساب المعدل التراكمي 1:",
+  "cgpa_formula_method_1_description": "إحدى طرق حساب المعدل التراكمي هي إيجاد المتوسط. بعد ذلك، تكون صيغة حساب المعدل التراكمي هي مجموع نقاط الدرجات في جميع الفصول الدراسية مقسومًا على عدد الفصول الدراسية. رياضيًا، يمكن تمثيل صيغة المعدل التراكمي على النحو التالي:",
+  "cgpa_formula_method_1_formula": "المعدل التراكمي =",
+  "cgpa_formula_method_1_numerator": "SGPA لـ sem.1 + SGPA لـ sem.2 + SGPA لـ sem.3 +.........+ SGPA لـ sem. \"ن\"",
+  "cgpa_formula_method_1_denominator": "إجمالي عدد الفصول الدراسية",
+  "cgpa_example_description": "مثال: رام، صديقنا من مقال \"أفضل صديق لي\"، قد تخرج أخيرًا من المدرسة والتحق بالكلية. هناك حقق معدل تراكمي في 4 فصول دراسية: 6+8.5+7+9.5، وبالتالي فإن معدله التراكمي سيكون:",
+  "cgpa_example_formula_1": "المعدل التراكمي =",
+  "cgpa_example_numerator": "(6 + 8.5 + 7 + 9.5)",
+  "cgpa_example_denominator": "4",
+  "cgpa_example_result": "المعدل التراكمي =",
+  "cgpa_example_final_numerator": "31",
+  "cgpa_example_final_denominator": "4",
+  "cgpa_example_final_result": "= 7.75",
+  "cgpa_formula_method_2_title": "طريقة حساب المعدل التراكمي 2:",
+  "cgpa_formula_method_2_description": "الآن هناك صيغة أخرى لحساب المعدل التراكمي، وهي أيضًا في الممارسة العملية، وهي إيجاد مجموع حاصل ضرب المعدل التراكمي والاعتمادات المكتسبة مقسومًا على عدد الاعتمادات المكتسبة. رياضيًا، يمكن تمثيل صيغة حساب المعدل التراكمي هذه على النحو التالي:",
+  "cgpa_formula_method_2_formula": "المعدل التراكمي =",
+  "cgpa_formula_method_2_numerator": "(المعدل التراكمي للفصل الدراسي الأول × الاعتمادات المكتسبة في الفصل الدراسي الأول) + (المعدل التراكمي للفصل الدراسي الثاني × الاعتمادات المكتسبة في الفصل الدراسي الثاني) + ...... + (المعدل التراكمي للفصل الدراسي \"N\" × الاعتمادات المكتسبة في الفصل الدراسي \"N\")",
+  "cgpa_formula_method_2_denominator": "إجمالي عدد الاعتمادات المكتسبة",
+  "cgpa_exampletitle": "مثال:",
+  "cgpa_exampledescription": "انضم شيام، وهو صديق آخر من مقال أفضل صديق لي، إلى كلية أخرى. وهناك حصل على معدل تراكمي في 4 فصول دراسية: 7.2+6.5+8.9+9.6 مع رصيد نقاط حصل عليه 4+3+3+5، وبالتالي فإن معدله التراكمي سيكون:",
+  "cgpa_examplecalculation": "المعدل التراكمي =",
+  "cgpa_examplenumerator": "(7.2×4 + 6.5×3 + 8.9×3 + 9.6×5)",
+  "cgpa_exampledenominator": "(4 + 3 + 3 + 5)",
+  "cgpa_examplefinal_numerator": "28.8 + 19.5 + 26.7 + 48",
+  "cgpa_examplefinal_denominator": "15",
+  "cgpa_examplefinal_result": "المعدل التراكمي = 8.2",
+  "important_terms_title": "تعريف المصطلحات المهمة التي يجب عليك معرفتها",
+  "important_terms_description": "أثناء تصفحك لوثيقة رسمية أو نموذج أو حتى شهادة، قد تلاحظ بعض المصطلحات والاختصارات التي يتم استخدامها بشكل متكرر. دعنا نستعرضها سريعًا قبل الانتقال إلى كيفية تحديد الهيئات/الجامعات المختلفة لصيغة التحويل الخاصة بها.",
+  "grade_points": {
+    "title": "نقاط الصف",
+    "description": "نقاط الدرجات هي القيم الرقمية المقابلة المعينة لدرجة حرفية معينة. تقوم الجامعات المختلفة بتعديل نطاق نقاط الدرجات وفقًا لدرجاتها الحرفية. على سبيل المثال، قد يكون لدى جامعة معينة 10 نقاط درجات للدرجة A بينما قد تستخدم جامعة أخرى O (ممتاز) لـ 10 نقاط درجات."
+  },
+  "gpa": {
+    "title": "المعدل التراكمي",
+    "description": "يُختصر بمتوسط ​​النقاط الدراسية. وهو يمثل متوسط ​​النقاط الدراسية التي حصل عليها الطالب في فصل دراسي واحد أو دورة دراسية واحدة."
+  },
+  "cgpa": "المعدل التراكمي",
+  "sgpa": {
+    "title": "SGPA",
+    "description": "SGPA هو اختصار لـ Semester Grade Point Average. وهو يشير إلى متوسط ​​درجات جميع المواد في فصل دراسي معين. تلعب الساعات المعتمدة المكتسبة والساعات المعتمدة دورًا مهمًا في حساب SGPA."
+  },
+  "letter_grade": {
+    "title": "درجة الحرف",
+    "description": "هذه هي حروف الدرجات المخصصة للقيمة العددية المقابلة لنسبة مئوية أو درجات تم تسجيلها، أو المعدل التراكمي. تتبع الأنظمة التعليمية المختلفة تنسيقات مختلفة للدرجات بالحروف. على سبيل المثال، تتبع الولايات المتحدة الأمريكية نظام الدرجات بالحروف التقليدية من A إلى F بينما تتبع الأنظمة التعليمية الاسكتلندية، وحتى بعض الأنظمة التعليمية الهندية، أشكالًا أخرى مثل \"O\" للتميز، و\"S\" للتفوق، وهكذا!"
+  },
+  "credit_hours": {
+    "title": "ساعات معتمدة",
+    "description": "الساعات المعتمدة هي عدد الساعات التي يقضيها الطالب في فصل دراسي معين في الأسبوع/الفصل الدراسي. وقد تختلف هذه الساعات حسب المواد الدراسية. فقد تحتوي المواد الدراسية الأساسية على عدد أكبر من الساعات المعتمدة، بينما قد تحتوي المواد الدراسية الاختيارية على عدد أقل من الساعات."
+  },
+  "credit_points": {
+    "title": "نقاط الائتمان",
+    "description": "يتم حساب نقاط الائتمان عن طريق ضرب نقاط الدرجة في ساعات الائتمان، أي نقاط الائتمان = نقاط الدرجة × ساعات الائتمان."
+  },
+  "weighted_average": {
+    "title": "المتوسط ​​المرجح",
+    "description": "يصور المتوسط ​​المرجح الأداء الأكاديمي الإجمالي للطالب. في المتوسط ​​المرجح، يتم تعيين قيم لجميع التقييمات وفقًا لوزنها، ثم يتم استخدام الدرجات المرجحة لحساب الدرجة النهائية."
+  },
+  "normalization": {
+    "title": "تطبيع",
+    "description": "التطبيع هو عملية تعديل الدرجات لمواجهة الاختلاف في الصعوبة بين الاختبارات أو المواد المختلفة. يمكن رؤية تأثير التطبيع أثناء مقارنة المعدل التراكمي أو المعدل التراكمي بين الجامعات المختلفة."
+  },
+  "cumulative_average": {
+    "title": "المعدل التراكمي",
+    "description": "إنه متوسط ​​جميع النقاط التراكمية أو المعدلات التراكمية التي تم الحصول عليها خلال الدورات الأكاديمية حتى الآن."
+  },
+  "whyConvertTitle": "لماذا تحويل المعدل التراكمي إلى نسبة مئوية أو النسبة المئوية إلى المعدل التراكمي؟",
+  "whyConvertExplanation": "الآن بعد أن تعرفت على كل المصطلحات ذات الصلة، ينشأ السؤال: لماذا نحتاج إلى التحويلات أو الحسابات مثل تحويل المعدل التراكمي إلى نسبة مئوية، أو حتى النسبة المئوية إلى المعدل التراكمي؟ حسنًا، قد تختلف الأسباب من شخص لآخر.",
+  "boardsUniversitiesTitle": "متطلبات المجالس/الجامعات",
+  "boardsUniversitiesText1": "تتطلب بعض النماذج والإجراءات الأكاديمية من الطلاب تقديم النسب المئوية مع معدلهم التراكمي. في هذه الحالة، لن يكون لديك خيار سوى التوجه بسرعة إلى مواقع مثل Lord Calculator التي يمكنها تقديم درجاتك بأي تنسيق مطلوب في غضون أجزاء من الثانية. يمكنك تحويل المعدل التراكمي إلى نسبة مئوية ببضع نقرات فقط.",
+  "boardsUniversitiesText2": "بالإضافة إلى ذلك، عند تغيير مجلسك/جامعتك، قد يُطلب منك ملء درجاتك السابقة وفقًا لتنسيق المجلس/الجامعة الجديد.",
+  "boardsUniversitiesText3": "هناك سبب آخر وهو أنه أثناء ملء النماذج للامتحانات التنافسية مثل GATE أو CAT أو UPSC، يتعين على المرشحين تقديم درجاتهم بتنسيق عالمي، مثل النسبة المئوية. ونحن جميعًا نعلم أن خطأً بسيطًا يمكن أن يؤدي إلى رفض النموذج الخاص بك. في مثل هذه الحالات، تكون الأداة الموثوقة التي يمكنها تحويل معدلك التراكمي بدقة إلى التنسيق المطلوب مفيدة وتوفر لك الوقت والجهد.",
+  "internationalRelevanceTitle": "الأهمية الدولية",
+  "internationalRelevanceText1": "هناك موقف آخر شائع في الحياة الواقعية لاستخدام حاسبة المعدل التراكمي وهو عندما تتقدم بطلب للالتحاق بدورات دراسية في الخارج. على سبيل المثال، إذا كنت طالبًا هنديًا تخطط للدراسة في الخارج، فإن أنظمة الدرجات داخل الهند تختلف على نطاق واسع. يختلف حساب الدرجات في جامعة دلهي عن حسابها في المعهد الهندي للتكنولوجيا. تستخدم الجامعات/المجالس المختلفة عوامل ضرب مختلفة. في مثل هذه السيناريوهات، تحدد الجامعات الأجنبية معلمة عالمية، مثل النسبة المئوية، للحصول على رؤية عادلة وغير متحيزة للأداء الأكاديمي للمتقدم. وبالتالي، يُطلب منك تحويل درجاتك، مثل النسبة المئوية إلى المعدل التراكمي أو المعدل التراكمي إلى نسبة مئوية، باستخدام الطريقة التي وضعتها جامعتك.",
+  "internationalRelevanceText2": "وينطبق الشيء نفسه على مجالس المدارس مثل CBSE وICSE والمجالس الحكومية والمعايير المتبعة في الولايات المتحدة أو الاتحاد الأوروبي.",
+  "howToCalculatePercentageTitle": "كيفية حساب النسبة المئوية من المعدل التراكمي",
+  "howToCalculatePercentageText1": "الآن بعد أن فهمت أهمية وضرورة تحويل المعدل التراكمي إلى نسبة مئوية، دعنا نستكشف كيف يمكنك تحديد النسبة المئوية بدقة من المعدل التراكمي. هناك طريقتان للقيام بذلك: الطريقة اليدوية أو استخدام حاسبة المعدل التراكمي عبر الإنترنت. تتضمن الطريقة اليدوية كتابة معادلة وحسابها خطوة بخطوة، بينما يمكن للحاسبة عبر الإنترنت تحويل درجاتك على الفور بأقل جهد! لا تقلق، سنناقش كلتا الطريقتين حتى تتمكن من اختيار الطريقة التي تناسبك بشكل أفضل.",
+  "manualMethodTitle": "الطريقة اليدوية",
+  "manualMethodText1": "لتحويل المعدل التراكمي إلى نسبة مئوية (أو العكس)، ستحتاج إلى فهم مقياس الدرجات، ودرجات الائتمان، وعامل الضرب المستخدم من قبل مجلسك/جامعتك. بمجرد حصولك على هذه المعلومات، يمكنك تطبيق الصيغة التالية:",
+  "percentageFormula": "النسبة المئوية = المعدل التراكمي × عامل الضرب",
+  "manualMethodText2": "بعد تطبيق الصيغة، تكون قد انتهيت من ربع الطريق. إذا كنت موهوبًا في الحسابات أو على دراية بالرياضيات الفيدية، فيجب أن يكون من السهل القسمة والضرب باستخدام نقاط عشرية دقيقة للحصول على التحويل الصحيح. ومع ذلك، لتجنب الأخطاء، يوصى بشدة باستخدام الآلة الحاسبة.",
+  "manualMethodText3": "ولكن لماذا لا توفر على نفسك بعض الوقت والجهد باستخدام طريقة آلية، خاصة إذا كنت تستخدم الآلة الحاسبة بالفعل؟ فهذا سيجعل العملية برمتها أسرع وأكثر دقة.",
+  "automaticMethodTitle": "الطريقة التلقائية",
+  "automaticMethodText1": "الطريقة التلقائية بسيطة وخالية من الأخطاء. لتحويل المعدل التراكمي إلى نسبة مئوية (أو العكس) باستخدام الطريقة التلقائية، ما عليك سوى إدخال القيم المطلوبة في الحقول المناسبة في حاسبة المعدل التراكمي. حدد مقياس الدرجات الخاص بك أو أدخل عامل الضرب يدويًا، ثم اضغط على زر \"حساب\". هذا كل شيء! تتم عملية التحويل في لحظة.",
+  "automaticMethodText2": "إذا كنت تستخدم حاسبة المعدل التراكمي من LordCalculator، فيمكنك حتى تصدير سجل التحويل الخاص بك بتنسيق PDF وحفظه للرجوع إليه في المستقبل. كما نقدم شهادة تحويل المعدل التراكمي إلى نسبة مئوية مخصصة.",
+  "automaticMethodText3": "من خلال استخدام الطريقة التلقائية، يمكنك التخلص من احتمالية حدوث أخطاء، مثل إدخال قيم غير صحيحة عن طريق الخطأ أثناء الحساب اليدوي. وهذا مفيد بشكل خاص عند استخدام الآلات الحاسبة الأساسية، والتي قد تؤدي أحيانًا إلى أخطاء في الضرب والقسمة.",
+  "commonPitfallsTitle": "الأخطاء الشائعة أثناء تحويل المعدل التراكمي إلى نسبة مئوية",
+  "commonPitfallsIntro": "الآن بعد أن تعرفت على كيفية تحويل المعدل التراكمي إلى نسبة مئوية، هناك بعض الأشياء التي يجب عليك مراعاتها بعناية لضمان الحصول على نتائج دقيقة. فيما يلي الأخطاء الأكثر شيوعًا التي يرتكبها الطلاب أثناء حساب نسبتهم المئوية من المعدل التراكمي (أو العكس). تأكد من تجنب هذه الأخطاء الشائعة.",
+  "misinterpretingFormula": "سوء تفسير الصيغة:",
+  "misinterpretingFormulaDesc": "يفسر بعض الطلاب الصيغة عن طريق الخطأ باستخدام المضاعف الخاطئ، على سبيل المثال، استخدام 10 بدلاً من 9.5. من المهم أن نفهم أنه على الرغم من أن الجامعات المختلفة قد تستخدم نفس مقياس الدرجات، إلا أنها قد تطبق عوامل ضرب مختلفة لتحويل المعدل التراكمي إلى نسبة مئوية أو النسبة المئوية إلى المعدل التراكمي. على سبيل المثال، تستخدم CBSE وICSE وجامعة جواهر لال نهرو للتكنولوجيا (JNTU) وجامعة سافيتريباي فولي (SPPU) مقياس تصنيف من 10 نقاط، ولكن لكل منها عامل ضرب خاص بها. تستخدم CBSE 9.5، وتستخدم ICSE 9.8، وتستخدم JNTU 10، وتستخدم SPPU 6.3. لذلك، من المهم معرفة عامل الضرب الدقيق لمجلسك أو جامعتك لتجنب الأخطاء، حتى عند استخدام حاسبات المعدل التراكمي عبر الإنترنت.",
+  "notKnowingBoardsFormula": "عدم معرفة صيغة المجلس:",
+  "notKnowingBoardsFormulaDesc": "هناك فخ آخر شائع وهو عدم إدراك أن الجامعات المختلفة تستخدم صيغًا مختلفة. وكما ذكرنا سابقًا، تطبق JNTU أو SPPU عوامل الضرب مباشرة لتحويل المعدل التراكمي إلى نسبة مئوية. ومع ذلك، تستخدم جامعات مثل جامعة مومباي أو جامعة جوجارات للتكنولوجيا (GTU) نهجًا مختلفًا. فهم أولاً يضربون المعدل التراكمي بعامل ضرب محدد (7.25 لجامعة مومباي أو 7.1 لجامعة جوجارات للتكنولوجيا) ثم يضيفون قيمة ثابتة (11 لجامعة مومباي أو 12 لجامعة جوجارات للتكنولوجيا) إلى المنتج لتحديد النسبة المئوية. سنناقش عوامل التحويل هذه للجامعات والمجالس المختلفة في قسم لاحق من هذه المقالة.",
+  "overRelianceOnCalculators": "الاعتماد المفرط على حاسبات المعدل التراكمي عبر الإنترنت:",
+  "overRelianceOnCalculatorsDesc": "في حين توفر الآلات الحاسبة عبر الإنترنت حلاً سريعًا وموثوقًا به لتحويل الدرجات، إلا أنها ليست دقيقة بنسبة 100% دائمًا. قد لا تأخذ الآلات الحاسبة عبر الإنترنت في الاعتبار جميع الحالات الخاصة التي ناقشناها، مثل تلك الخاصة بجامعة مومباي أو GTU. في حين تسعى LordCalculator إلى تضمين جميع المعلمات المحتملة، لا يُنصح بالاعتماد فقط على الآلات الحاسبة عبر الإنترنت للتحويلات. من الجيد دائمًا التحقق من قيمك والطريقة المستخدمة من قبل جامعتك أو مجلسك.",
+  "cgpaToPercentage10GradePoints": "المعدل التراكمي إلى النسبة المئوية في نظام النقاط العشر",
+  "cgpaToPercentage5GradeScale": "المعدل التراكمي إلى النسبة المئوية في مقياس الصف الخامس",
+  "cgpaToPercentage4GradeScale": "المعدل التراكمي إلى النسبة المئوية في مقياس الصفوف الأربعة",
+  "gradingScaleAndUniversitiesChoice": "ما هو مقياس الدرجات وكيف تختار الجامعات مقياسها القياسي؟",
+  "gradingScaleDescription": "مقياس الدرجات هو عامل تقييمي للأداء الأكاديمي للطالب. فكر فيه كنسبة مئوية - فهو يعطي فهمًا عامًا للأداء الأكاديمي. تصنف مقاييس الدرجات إنجازات الطلاب في صيغة سهلة الفهم، مثل الدرجات بالحروف (A، B، C...) أو المعدل التراكمي أو النسبة المئوية.",
+  "commonGradingScales": "تتضمن بعض مقاييس التصنيف الأكثر شيوعًا ما يلي:",
+  "percentage": "نسبة مئوية",
+  "usedWorldwide": "مستخدمة في جميع أنحاء العالم، بنسب تتراوح من 0 إلى 100%.",
+  "gpa-": "المعدل التراكمي (GPA)",
+  "primarilyInUSA": "يستخدم بشكل أساسي في الولايات المتحدة الأمريكية، ويتراوح من 0 إلى 4.0، أو 5.0، أو 10.0.",
+  "cgpa-": "المعدل التراكمي للنقاط",
+  "usedInIndia": "يتم استخدامه في الهند وسنغافورة ومجالس CBSE، ويوفر تقييمًا شاملاً.",
+  "letterGrades": "الدرجات بالحروف",
+  "usedInUSAndCanada": "يتم استخدامه في الولايات المتحدة الأمريكية وكندا، استنادًا إلى نطاقات النسبة المئوية.",
+  "numericalScale": "المقياس العددي",
+  "usedInRussiaLatinAmerica": "تُستخدم في أجزاء من روسيا وأمريكا اللاتينية، وتتراوح من 1 إلى 10 أو من 1 إلى 5.",
+  "gradingScalesIntro": "مقاييس الدرجات هي تقييمات موحدة لتصنيف الأداء الأكاديمي بالرموز أو الأرقام، مثل الدرجات بالحروف أو درجات المعدل التراكمي. يساعد هذا في مقارنة التقارير الأكاديمية للطلاب بشكل متسق. بعض مقاييس الدرجات الأكثر شيوعًا هي:",
+  "percentage-": "نسبة مئوية",
+  "percentageDescription": "يستخدم على نطاق واسع عالميًا، ويتراوح من 0 إلى 100%، مما يوفر رؤى دقيقة للأداء الأكاديمي.",
+  "-gpa": "المعدل التراكمي",
+  "gpaDescription": "يتم استخدامه في الولايات المتحدة الأمريكية ودول أخرى، ويتراوح من 0 إلى 4.0، أو 5.0، أو 10.0، مما يدل على الأداء التراكمي.",
+  "-cgpa": "المعدل التراكمي",
+  "cgpaDescription": "معظمها في الهند وسنغافورة ومجالس CBSE، وتقدم رؤية شاملة تتضمن عوامل مثل درجات الائتمان.",
+  "-letterGrades": "الدرجات بالحروف",
+  "letterGradesDescription": "يتم ممارستها في الولايات المتحدة الأمريكية وكندا، حيث يمثل كل حرف نطاقًا مئويًا.",
+  "-numericalScale": "المقياس العددي",
+  "numericalScaleDescription": "يتم استخدامه في روسيا وأميركا اللاتينية، بمقاييس مثل 1-10 أو 1-5 لتجزئة تقييمات الأداء الأكاديمي.",
+  "universitiesChooseGradingScales": "تختار الجامعات مقاييس التقييم على أساس عوامل مثل المعايير الإقليمية، والأهمية التاريخية، والعولمة. على سبيل المثال، اكتسب نظام الشرف في المملكة المتحدة أو نظام المعدل التراكمي في الولايات المتحدة زخمًا في أوائل القرن العشرين كأنظمة موحدة.",
+  "modernGradingSystems": "غالبًا ما تتضمن أنظمة التقييم الحديثة جوانب مثل الإنجاز النسبي، أو الإتقان، أو النمو الشخصي. ومن الأمثلة على ذلك نظام التقييم المزدوج، وعملية بولونيا، والبكالوريا الدولية. ويسهل هذا النهج التوافق الدولي.",
+  "understandGradingPattern": "من الضروري فهم نمط التصنيف الخاص بجامعتك والنظر في خدمات مثل World Education Services (WES) أو NARIC (المملكة المتحدة) للحصول على تحويلات دولية دقيقة، حيث يستخدم هؤلاء المقيمون جداول معادلة مفصلة.",
+  "multiplicationFactorTitle": "ما هو عامل الضرب وكيف يعمل؟",
+  "multiplicationFactorIntro": "عامل الضرب هو أحد المعايير المستخدمة لتحويل مقاييس الدرجات، مثل المعدل التراكمي أو المعدل التراكمي إلى نسب مئوية. وهذا العامل ضروري لتكييف الدرجات مع صيغ مختلفة عند التقدم إلى مؤسسات ذات أنظمة درجات مختلفة أو للوظائف والامتحانات.",
+  "multiplicationFactorExample": "على سبيل المثال، يتم استخدام عامل 9.5 على نطاق واسع في بعض الجامعات لتحويل المعدل التراكمي إلى نسبة مئوية، تم تطويرها لتعكس الأداء الأكاديمي للطلاب بدقة.",
+  "multiplicationFactorReference": "لفهم تحويلات الدرجات بشكل أفضل، يجب على الطلاب الدوليين الرجوع إلى الخدمات الرسمية مثل WES أو NARIC.",
+  "cgpaToPercentageConversionTitle": "تحويل المعدل التراكمي إلى نسبة مئوية لمختلف الهيئات والجامعات",
+  "boardUniversity": "مجلس/جامعة",
+  "conversionFormula": "صيغة التحويل",
+  "cbseIndia": "المجلس المركزي للتعليم الثانوي (الهند)",
+  "icseIndia": "ICSE (الهند)",
+  "maharashtraStateBoardIndia": "مجلس ولاية ماهاراشترا (الهند)",
+  "annaUniversityIndia": "جامعة آنا (الهند)",
+  "jawaharlalNehruTechnologicalUniversityIndia": "جامعة جواهر لال نهرو للتكنولوجيا (الهند)",
+  "visvesvarayaTechnologicalUniversityIndia": "جامعة فيسفيسفارايا للتكنولوجيا (الهند)",
+  "gujaratTechnologicalUniversityIndia": "جامعة جوجارات للتكنولوجيا (الهند)",
+  "universityOfMumbaiIndia": "جامعة مومباي (الهند)",
+  "manipalAcademyOfHigherEducationIndia": "أكاديمية مانيبال للتعليم العالي (الهند)",
+  "amityUniversityIndia": "جامعة أميتي (الهند)",
+  "velloreInstituteOfTechnologyIndia": "معهد فيلور للتكنولوجيا (الهند)",
+  "savitribaiPhulePuneUniversityIndia": "جامعة سافيتريباي فول بيون (الهند)",
+  "iitsIndia": "معاهد التكنولوجيا الهندية (الهند)",
+  "nitsIndia": "NITs (الهند)",
+  "bitsPilaniIndia": "بيتس بيلاني (الهند)",
+  "delhiUniversityIndia": "جامعة دلهي (الهند)",
+  "banarasHinduUniversityIndia": "جامعة باناراس الهندوسية (الهند)",
+  "osmaniaUniversityIndia": "جامعة عثمانية (الهند)",
+  "punjabUniversityIndia": "جامعة البنجاب (الهند)",
+  "srmInstituteOfScienceAndTechnologyIndia": "معهد SRM للعلوم والتكنولوجيا (الهند)",
+  "percentageFormula-": "النسبة المئوية = المعدل التراكمي × عامل الضرب",
+  "international_institutions": "المؤسسات الدولية",
+  "university_of_toronto": "جامعة تورنتو (كندا)",
+  "university_of_toronto_details": "مقياس المعدل التراكمي (4.0)، بدون تحويل مباشر",
+  "university_of_british_columbia": "جامعة كولومبيا البريطانية (كندا)",
+  "university_of_british_columbia_details": "مقياس المعدل التراكمي: 4.33؛ إرشادات التحويل متاحة",
+  "australian_national_university": "الجامعة الوطنية الأسترالية (أستراليا)",
+  "australian_national_university_details": "التحويل: المعدل التراكمي * 7.1 للمعادلة",
+  "university_of_sydney": "جامعة سيدني (أستراليا)",
+  "university_of_sydney_details": "يتطلب عادة تقييم الاعتماد",
+  "university_of_california": "جامعة كاليفورنيا (الولايات المتحدة الأمريكية)",
+  "university_of_california_details": "مقياس المعدل التراكمي: 4.0؛ استخدم إرشادات تحويل WES",
+  "harvard_university": "جامعة هارفارد (الولايات المتحدة الأمريكية)",
+  "harvard_university_details": "يستخدم WES لتحويل المعدل التراكمي/المعدل التراكمي",
+  "university_of_oxford": "جامعة أكسفورد (المملكة المتحدة)",
+  "university_of_oxford_details": "تصنيف الشرف في المملكة المتحدة؛ التحويل من خلال نطاقات المعدل التراكمي",
+  "eth-zurich": "المعهد الفيدرالي السويسري للتكنولوجيا في زيورخ (سويسرا)",
+  "eth_zurich_details": "مقياس سويسري من 6 نقاط؛ المعدل التراكمي = 8.5 تنافسي",
+  "auckland_university_of_technology": "جامعة أوكلاند للتكنولوجيا (AUT)، نيوزيلندا",
+  "auckland_university_of_technology_details": "مقياس 4.3 نقطة؛ المعدل التراكمي =: يتطلب تقييم المعدل التراكمي الدولي؛ ويتوقع عادةً",
+  "national_taiwan_university": "جامعة تايوان الوطنية (NTU)، تايوان",
+  "national_taiwan_university_details": "مقياس من 9 نقاط؛ المعدل التراكمي = : بالنسبة للمعدل التراكمي الهندي، غالبًا ما يستخدم عامل التحويل 7.1 للتوافق مع المعايير المحلية.",
+  "peking_university": "جامعة بكين، الصين",
+  "peking_university_details": "مقياس 4.0 نقطة؛ المعدل التراكمي = : يمكن طلب تحويل المعدل التراكمي من خلال خدمات مثل",
+  "mcgill_university": "جامعة ماكجيل، كندا",
+  "mcgill_university_details": "مقياس 4.0 نقاط؛ المعدل التراكمي =: تستخدم جامعة ماكجيل خدمات WES أو خدمات مماثلة لتحويلات المعدل التراكمي وتعتبر بشكل عام أن 80٪ + هو معدل تنافسي.",
+  "university_of_cape_town": "جامعة كيب تاون، جنوب أفريقيا",
+  "university_of_cape_town_details": "النسبة المئوية ومعدل النقاط التراكمي =: يستخدم مقياس معدل النقاط التراكمي المكون من 4 نقاط للطلاب الدوليين وقد يطلب تحويل معدل النقاط التراكمي ليتوافق مع المعايير في جنوب إفريقيا.",
+  "university_of_tokyo": "جامعة طوكيو، اليابان",
+  "university_of_tokyo_details": "مقياس المعدل التراكمي الياباني 4.0 = : يحول المعدل التراكمي إلى المعدل التراكمي الياباني بإرشادات من قسم القبول. غالبًا ما يتوقع معدل تراكمي أعلى من 8.0 للبرامج التنافسية.",
+  "section_title": "ما هي تأثيرات مقاييس التقييم المختلفة على الطلاب؟",
+  "content_paragraph": "إن وجود مقاييس تقييم مختلفة قد يكون له تأثيرات مختلفة على الطلاب. فقد يؤثر على عقلية الطلاب الأكاديمية، وآفاقهم المهنية، وحتى ديناميكياتهم الاجتماعية.",
+  "list_items": [
+    {
+      "title": "زيادة الضغط الاجتماعي/الأقران",
+      "description": "إن المقاييس الدقيقة مثل النسب المئوية قد تزيد من الضغوط الاجتماعية أو الضغوط التي يتعرض لها الطلاب، في حين أن المقاييس الأوسع مثل الدرجات الحرفية قد تؤدي إلى تقليل الضغوط. وهذا أيضًا أحد الأسباب العديدة التي تجعل العديد من المؤسسات تتبع مقاييس أوسع، وخاصة للصفوف الدنيا."
+    },
+    {
+      "title": "فرص العمل",
+      "description": "وقد تتأثر فرص العمل أيضًا. فقد تؤدي مقاييس الدرجات المتباينة إلى زيادة الصعوبات التي يواجهها الطلاب في الحصول على الموافقة على طلباتهم للحصول على المنح الدراسية والقبول وحتى الوظائف. ومؤخرًا، كانت هناك حالة مع أحد أصدقائي حيث تم تعليق طلبه للحصول على وظيفة لأن المجلس الذي حصل منه على شهادة الثانوية العامة لم يقدم أي شهادة إضافية تشير إلى النسبة المئوية. وبدلاً من ذلك، قدموا فقط ورقة درجات تحتوي على الدرجات الدقيقة. ومع ذلك، زُعم أن المرشح فقد شهادة النجاح على الرغم من أنه لم يكن لديه أي شهادة في الحالة الأولى."
+    },
+    {
+      "title": "الآفاق الأكاديمية",
+      "description": "إن مقاييس التقييم المتباينة قد تؤثر أيضًا على آفاق الطلاب في الحياة الأكاديمية. فالطالب الذي يدرس في ظل نظام تقييم دقيق سيكون لديه عقلية مختلفة بشأن الامتحانات عن الطالب الذي يدرس في ظل نظام تقييم أوسع. وقد يركز الطلاب السابقون بشكل أكبر على الامتحانات، بينما قد يعطي الطلاب اللاحقون الأولوية للعمل على المشاريع العملية على الامتحانات، وبالتالي الحصول على معرفة عملية أفضل. ويمكن أن تؤدي مثل هذه الاختلافات إلى زيادة الضغوط غير الضرورية على الطلاب."
+    },
+    {
+      "title": "كلمة الختام",
+      "description": "لقد حاولنا تغطية جميع المعلومات الأساسية التي يجب أن تعرفها عن نظام الدرجات، وتحويل الدرجات، وحساب المعدل التراكمي إلى نسبة مئوية، والنسبة المئوية إلى المعدل التراكمي، وحاسبة المعدل التراكمي. كما قمنا بتصميم حاسبة المعدل التراكمي لدينا لتعمل بدقة مع أي مقياس درجات أو عامل ضرب. ومع ذلك، إذا شعرت أنك بحاجة إلى توضيح بشأن أي من الموضوعات أو كنت ترغب في تقديم اقتراحات حول هذه الحاسبة على وجه الخصوص، فيرجى الاتصال بنا."
+    }
+  ],
+  "cgpa-Description": "CGPA، هو اختصار لـ Cumulative Grade Point Average، وهو تقييم شامل للأداء الأكاديمي للطالب خلال فترة أكاديمية محددة. وفي حين تعتبره بعض الجامعات والمجالس بمثابة متوسط ​​جميع نقاط الدرجات الفصلية التي حصل عليها الطالب طوال الدورة، فإن البعض الآخر قد يضيف عاملًا إضافيًا، وهو الاعتمادات، إلى الحساب.",
+  "title3": "حاسبة المعدل التراكمي إلى النسبة المئوية",
+  "enterCGPA3": "أدخل المعدل التراكمي",
+  "cgpaPlaceholder3": "أدخل معدلك التراكمي",
+  "chooseGradeScale3": "اختر مقياس الدرجة",
+  "multiplicationFactor": "عامل الضرب",
+  "multiplicationFactorPlaceholder": "أدخل عامل الضرب",
+  "error": "خطأ",
+  "calculateButton3": "احسب",
+  "resetButton3": "إعادة ضبط",
+  "calculatedPercentage": "النسبة المئوية المحسوبة",
+  "percentagePlaceholder": "نسبة مئوية:",
+  "downloadButton3": "تحميل",
+  "whatsappButton3": "واتساب",
+  "copyLinkButton3": "نسخ الوصلة",
+  "linkCopied3": "تم نسخ الرابط!",
+  "calculationHistory3": "سجل الحسابات",
+  "sno": "س.ن.ا",
+  "header": {
+    "calculator": "آلة حاسبة",
+    "title": "تعليمي",
+    "subtitle": "حل التحويلات البسيطة مثل المعدل التراكمي إلى النسبة المئوية باستخدام حاسبة المعدل التراكمي أو الرياضيات المتقدمة باستخدام الآلة الحاسبة العلمية؟",
+    "cgpa_to_percentage": "المعدل التراكمي إلى النسبة المئوية"
+  },
+  "link": {
+    "text": "حاسبة الرب",
+    "description": "سيساعدك هذا التطبيق على التعامل مع الحسابات المملة والمرهقة بسهولة. دع أفضل التقنيات تعزز رحلتك التعليمية - لأنك لا تستحق سوى الأفضل."
+  },
+  "choose_lord_calculator": {
+    "title": "لماذا تختار حاسبة اللورد؟",
+    "feature_1": {
+      "title": "وميض سريع وموثوق للغاية",
+      "description": "نعم، لقد ضمنّا لك كليهما! حل حتى أكثر الحسابات تعقيدًا بدقة في لمح البصر. لا مجال للخطأ!"
+    },
+    "feature_2": {
+      "title": "بسيطة وسهلة",
+      "description": "الجزء المعقد الوحيد هنا هو المعادلات. بفضل الأزرار والمقاييس البديهية، يصبح التنقل هنا سهلاً للغاية."
+    },
+    "feature_3": {
+      "title": "تنزيل أو حفظ أو مشاركة",
+      "description": "هل تحتاج إلى حفظ المعادلة المحلولة؟ لا تقلق، قم بحلها مرة واحدة ثم شاركها أو احفظ حساباتك لاستخدامها مدى الحياة دون اتصال بالإنترنت."
+    }
+  },
+  "calculatorCards": [
+    {
+      "title": "حاسبة المعدل التراكمي إلى النسبة المئوية",
+      "description": "قم بتحويل درجاتك أثناء التنقل باستخدام حاسبة المعدل التراكمي إلى نسبة مئوية! يمكنك أيضًا تنزيل تقريرك أو مشاركته مجانًا.",
+      "emoji": null
+    },
+    {
+      "title": "حاسبة النسبة المئوية للمعدل التراكمي",
+      "description": "قد يكون تحويل المعدل التراكمي أمرًا مرهقًا، ولكن ليس باستخدام حاسبة النسبة المئوية إلى المعدل التراكمي. متوافقة مع معظم المؤسسات في جميع أنحاء العالم.",
+      "emoji": null
+    },
+    {
+      "title": "حاسبة المعدل التراكمي إلى المعدل التراكمي",
+      "description": "بفضل تصميمه البسيط، سيساعدك محول المعدل التراكمي إلى المعدل التراكمي هذا على توفير الوقت. مفيد للطلاب والمعلمين على حد سواء!",
+      "emoji": null
+    },
+    {
+      "title": "حاسبة المعدل التراكمي إلى المعدل التراكمي",
+      "description": "هل تريد التحقق من أهليتك للالتحاق بجامعتك المفضلة في الخارج؟ قم بتحويل درجاتك بسرعة باستخدام محول المعدل التراكمي إلى المعدل التراكمي وشارك الأخبار السعيدة!",
+      "emoji": null
+    }
+  ],
+  "tit": "حاسبة تعليمية",
+  "des": "المعدل التراكمي، المعدل التراكمي، النسبة المئوية، أو الآلة الحاسبة العلمية - أخبرنا بما تحتاجه واستمتع بها مجانًا إلى الأبد!",
+  "emoji5": null,
+  "section": {
+    "title": "التعليم أو التمويل أو الصحة",
+    "highlightedText": "حاسبة الرب",
+    "subtitle": "كل ما تحتاجه!",
+    "description": "من الصحة إلى التمويل والبناء إلى التعليم - منصة واحدة لجميع مهامك. احصل على كل آلة حاسبة ستحتاجها على الإطلاق.",
+    "additionalDescription": "سريع للغاية ودقيق - لا يوجد به ذرة خطأ!"
+  },
+  "footer": {
+    "title": "حاسبة الرب",
+    "location": "موقع:",
+    "contact": "اتصل بنا: bhushanthakur04@gmail.com",
+    "categories": "فئات",
+    "educational_calculators": "الآلات الحاسبة التعليمية",
+    "scientific_calculators": "الحاسبات العلمية",
+    "womens_calculators": "آلات حاسبة للسيدات",
+    "pages": "الصفحات",
+    "privacy_policy": "سياسة الخصوصية",
+    "terms_of_use": "شروط الاستخدام",
+    "about_us": "معلومات عنا",
+    "copyright": "© 2024 Lord Calculator. جميع الحقوق محفوظة.",
+    "social_links": {
+      "facebook": "فيسبوك",
+      "instagram": "انستجرام",
+      "twitter": "تغريد",
+      "whatsapp": "واتساب"
+    }
+  }
+}

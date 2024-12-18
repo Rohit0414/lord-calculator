@@ -20,16 +20,13 @@ const Navbar = () => {
   const categoryRef = useRef(null);
   const profileRef = useRef(null);
   const { t, i18n } = useTranslation();
-
+  const { locale } = router;
 
   const handleLanguageChange = (language) => {
     i18n.changeLanguage(language);
-    setSelectedLanguage(language);
-    setIsLanguageOpen(false);
-    console.log('Language changed to', language);
-    console.log(selectedLanguage);
+    const { pathname, query, asPath } = router;
+    router.push({ pathname, query }, asPath, { locale: language });
   };
-
   const closeDropdowns = (event) => {
     if (categoryRef.current && !categoryRef.current.contains(event.target)) {
       setIsCategoryOpen(false);

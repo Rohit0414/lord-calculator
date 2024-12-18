@@ -1,0 +1,1440 @@
+{
+  "navbar": {
+    "selectLanguage": "言語を選択"
+  },
+  "title": {
+    "": "1. 加重GPAシステム"
+  },
+  "enter_gpa": "GPAを入力",
+  "choose_gpa_scale": "GPAスケールを選択",
+  "calculate": "計算する",
+  "reset": "リセット",
+  "calculated_cgpa": "計算されたCGPA",
+  "calculation_history": "計算履歴",
+  "download": "ダウンロード",
+  "whatsapp": "ワッツアップ",
+  "copy_link": "リンクをコピー",
+  "gpa_to_cgpa_calculator": "GPA から CGPA への計算機",
+  "welcome_message": "教育用計算機へようこそ！それぞれの計算機では、",
+  "cgpa_to_percentage_link": "CGPAからパーセンテージ",
+  "gpa_to_cgpa_description": "（そしてその逆も同様です）。さらに、これらの評価尺度に関連する特定の概念と、変換が適用されるシナリオについても調査しました。ほとんどのアジア諸国と一部のアフリカ諸国はCGPAまたはパーセンテージシステムを採用していますが、西洋の教育システムではGPAを使用しています。",
+  "letter_grading_link": "文字評価システム",
+  "institution_migration_message": "ある機関から別の機関に移行する場合、特に両方の機関が異なる成績評価システムを採用している場合は、信頼性の高い成績変換計算機が重要になります。変換には、最も一般的に受け入れられている国際式を使用する Lord Calculator の GPA から CGPA への計算機を利用できます。",
+  "guide_message": "このガイドでは、GPA から CGPA への変換に使用される式、この変換が必要になる可能性があるシナリオ、考慮すべき注意事項、およびこのような変換を実行する際に留意すべき重要なポイントについて説明します。",
+  "Table of Contents": "目次",
+  "GPA to CGPA Calculator": "GPA から CGPA への計算機",
+  "GPA To CGPA Calculation Formula": "GPAからCGPAへの計算式",
+  "How to Use Lord Calculator’s GPA to CGPA Calculator?": "Lord Calculator の GPA から CGPA への計算機の使い方は?",
+  "How CGPA & GPA Are Different?": "CGPA と GPA の違いは何ですか?",
+  "International Standards and Certifications": "国際規格と認証",
+  "Most Common GPA to CGPA Conversion Scenarios": "最も一般的なGPAからCGPAへの変換シナリオ",
+  "Summary": "まとめ",
+  "FAQs (Frequently Asked Questions)": "FAQ（よくある質問）",
+  "GPA To CGPA Calculation Formulas": "GPAからCGPAへの計算式",
+  "Equivalent CGPA =": "同等のCGPA =",
+  "GPA obtained": "取得したGPA",
+  "Max GPA": "最高GPA",
+  "Max CGPA": "最大CGPA",
+  "How to Calculate GPA?": "GPAを計算するには？",
+  "GPA =": "成績平均点 =",
+  "Total Quality Points for all terms": {
+    "": "すべての用語の合計品質ポイント。"
+  },
+  "Total Credit Hours for all terms": {
+    "": "全学期の合計履修単位数。"
+  },
+  "quality points": "ここで、学期の品質ポイント = レターグレードのポイント値 * 単位数。",
+  "How-to Use Lord Calculator’s GPA to CGPA Calculator?": "Lord Calculator の GPA から CGPA への計算機の使い方は?",
+  "Although we have made our calculator easy to use, still here is a guide to make the best out of it without losing yourself in the numerators and denominators of the grades calculations": {
+    " To convert your GPA into an equivalent CGPA, follow below given steps:": "当社の計算機は使いやすいように作られていますが、成績計算の分子と分母に惑わされることなく計算機を最大限に活用するためのガイドがここにあります。GPA を同等の CGPA に変換するには、以下の手順に従ってください。"
+  },
+  "Step 1: Open GPA to CGPA calculator on Lord Calculator": {
+    "": "ステップ 1: Lord Calculator で GPA から CGPA への計算機を開きます。"
+  },
+  "Step 2: In the very first field, titled Enter GPA, please enter your obtained GPA accurately": {
+    " Do ensure to include decimal points for accurate conversion": {
+      "": "ステップ 2: 最初のフィールド「GPA を入力」に、取得した GPA を正確に入力してください。正確な変換を行うために、小数点も必ず含めてください。"
+    }
+  },
+  "Step 3: Now choose your GPA Scale": {
+    " This scale also indicates what could be the maximum GPA": {
+      "": "ステップ 3: GPA スケールを選択します。このスケールは、最大 GPA が何になるかを示します。"
+    }
+  },
+  "Step 4: Once you have entered all the values correctly, hit the “Calculate” button": {
+    " And, that is all! Now you have an equivalent CGPA in front of view, also visualized by the CGPA meter": {
+      "": "ステップ 4: すべての値を正しく入力したら、「計算」ボタンを押します。これで完了です。これで、CGPA メーターによって視覚化された同等の CGPA が目の前に表示されます。"
+    }
+  },
+  "Furthermore, you can also view any previous calculations done by you so that you can have a start comparison among them": {
+    " You can also export the converted CGPA as a PDF and share it with others": {
+      "": "さらに、以前に行った計算も表示できるので、比較を始めることができます。変換した CGPA を PDF としてエクスポートし、他の人と共有することもできます。"
+    }
+  },
+  "How-CGPA & GPA Are Different?": "CGPA と GPA の違いは何ですか?",
+  "CGPA & GPA are different from many perspectives": {
+    " [Definition of both the terms] itself indicates the basic difference between them": {
+      " But let us talk about how they are different in their applications and usage": {
+        "": "CGPA と GPA は多くの観点から異なります。[両方の用語の定義] 自体がそれらの基本的な違いを示しています。しかし、それらのアプリケーションと使用法の違いについて説明しましょう。"
+      }
+    }
+  },
+  "Denomination": "宗派",
+  "As the name suggests, CGPA (Cumulative Grade Point Average) represents the cumulative or combined performance of a student during his academic session": {
+    " It usually represents the performance of multiple semesters in a concise manner": {
+      "": "名前が示すように、CGPA (累積成績平均点) は、学生の学期中の累積または総合的な成績を表します。通常、複数学期の成績を簡潔に表します。"
+    }
+  },
+  "On the other hand, GPA (Grade Point Average) represents the academic performance of a particular semester, or say, a very specific term/semester": {
+    " Thus, in a way, CGPA is calculated by averaging the GPA scores from multiple semesters": {
+      "": "一方、GPA (Grade Point Average) は、特定の学期、つまり非常に特定の期間/学期の学業成績を表します。つまり、ある意味では、CGPA は複数の学期の GPA スコアを平均して計算されます。"
+    }
+  },
+  "Usage": "使用法",
+  "Like denomination, the usage of both scales is also different": {
+    " CGPA is considered as overall academic performance of a student while GPA is considered for a specific semester or term": {
+      "": "単位と同様に、両方の尺度の使用法も異なります。CGPA は学生の総合的な学業成績として考慮され、GPA は特定の学期または学期として考慮されます。"
+    }
+  },
+  "GPA is mostly used to assess and chart out how a student is performing lately and helps to identify strong points and potential improvement areas": {
+    " Such grade scales are also used to determine what are the implications of a newly inducted course on the academic performance of the students": {
+      " But if we talk about applying for a job or higher studies, GPA may not be the ideal grade scale": {
+        "": "GPA は主に、学生の最近の成績を評価し図表化するために使用され、長所と改善の余地がある領域を特定するのに役立ちます。このような成績尺度は、新しく導入されたコースが学生の学業成績にどのような影響を与えるかを判断するためにも使用されます。しかし、就職や高等教育への応募について話す場合、GPA は理想的な成績尺度ではない可能性があります。"
+      }
+    }
+  },
+  "In such scenarios, when a student is applying for higher studies or a job application, he/she is required to fill in his CGPA": {
+    " Thus, CGPA is shared with external bodies while GPA is mostly used in the internal assessment": {
+      "": "このようなシナリオでは、学生が高等教育や就職を申請する際に、CGPA を記入する必要があります。したがって、CGPA は外部機関と共有され、GPA は主に内部評価に使用されます。"
+    }
+  },
+  "To summarize, take a look at the below-given table:": "要約すると、以下の表をご覧ください。",
+  "Feature": "特徴",
+  "GPA": "成績平均点",
+  "CGPA": "平均得点",
+  "Scope": "範囲",
+  "Single Semester / Term": "単学期 / 学期",
+  "Entire Academic Session": "学期全体",
+  "Calculation": "計算",
+  "Grade Points for a semester": {
+    "": "学期ごとの成績ポイント。"
+  },
+  "Cumulative Average of All semesters": {
+    "": "全学期の累積平均。"
+  },
+  "Purpose": "目的",
+  "Help to track and monitor the performance of a student": {
+    "": "生徒の成績を追跡および監視するのに役立ちます。"
+  },
+  "Determines the overall performance of a student": {
+    "": "生徒の全体的なパフォーマンスを決定します。"
+  },
+  "International-Standards and Certifications": "国際規格と認証",
+  "As we discussed earlier, grading scales such as GPA are predominantly a part of Western education systems": {
+    " However, students planning to study abroad need to be aware of various international standards and certifications that are widely recognized across different educational frameworks": {
+      " Understanding these can help students navigate different grading systems and ensure smooth transitions when applying to schools or universities abroad": {
+        "": "先ほど説明したように、GPA などの成績評価基準は主に西洋の教育システムの一部です。ただし、留学を計画している学生は、さまざまな教育フレームワークで広く認められているさまざまな国際基準と認定について知っておく必要があります。これらを理解することで、学生はさまざまな成績評価システムを理解し、海外の学校や大学に出願する際にスムーズに移行できるようになります。"
+      }
+    }
+  },
+  "The International Baccalaureate (IB) is an internationally recognized educational framework designed for students aged 3 to 19": {
+    " Its goal is to foster critical thinking, intercultural understanding, and global compatibility": {
+      " The IB framework is divided into four main programs:": "国際バカロレア (IB) は、3 歳から 19 歳の生徒を対象に設計された、国際的に認められた教育フレームワークです。その目標は、批判的思考、異文化理解、グローバルな適応力を養うことです。IB フレームワークは、4 つの主要なプログラムに分かれています。"
+    }
+  },
+  "Primary Years Programme (PYP)": "初等教育プログラム (PYP)",
+  "For students aged 3 to 12, focusing on developing academic and personal skills": {
+    "": "3 歳から 12 歳までの生徒を対象とし、学業と個人のスキルの育成に重点を置いています。"
+  },
+  "Middle Years Programme (MYP)": "中等教育プログラム（MYP）",
+  "For students aged 11 to 16, preparing them for further study": {
+    "": "11 歳から 16 歳までの生徒を対象に、さらなる学習に向けて準備します。"
+  },
+  "Diploma Programme (DP)": "ディプロマプログラム（DP）",
+  "For students aged 16 to 19, a rigorous program with a 1-7 grading scale": {
+    "": "16 歳から 19 歳の学生を対象とした、1 ～ 7 段階の評価基準による厳格なプログラムです。"
+  },
+  "Career-related Programme (CP)": "キャリア関連プログラム（CP）",
+  "Combines academic study with career-related learning for students aged 16 to 19": {
+    "": "16 歳から 19 歳の学生を対象に、学術研究とキャリア関連の学習を組み合わせます。"
+  },
+  "The IB system is recognized globally for its academic rigor and holistic approach to education": {
+    "": "IB システムは、その学問的厳格さと教育に対する総合的なアプローチにより世界的に認められています。"
+  },
+  "The Common Core State Standards (CCSS) were developed in the United States to standardize K-12 education in English Language Arts and Mathematics": {
+    " This framework is primarily implemented in U": {
+      "S": {
+        " schools and focuses on providing clear and consistent benchmarks for academic achievement": {
+          " The goal is to ensure students are prepared for college, careers, and global competitiveness by emphasizing critical thinking and problem-solving skills": {
+            "": "Common Core State Standards (CCSS) は、米国で開発されたもので、K-12 教育における英語と数学の標準化を目的としています。このフレームワークは主に米国の学校で導入されており、学業成績の明確で一貫したベンチマークを提供することに重点を置いています。目標は、批判的思考力と問題解決能力を重視して、学生が大学、職業、およびグローバルな競争力に備えられるようにすることです。"
+          }
+        }
+      }
+    }
+  },
+  "The Bologna Process is an agreement among European countries to standardize higher education": {
+    " Its aim is to make academic qualifications and periods of study easily comparable and compatible across Europe": {
+      " This process facilitates the movement of students between universities in different countries, ensuring that students' qualifications are recognized internationally": {
+        "": "ボローニャ・プロセスは、高等教育を標準化するためのヨーロッパ諸国間の合意です。その目的は、ヨーロッパ全体で学歴と学習期間を容易に比較し、互換性を持たせることです。このプロセスにより、異なる国の大学間での学生の移動が容易になり、学生の資格が国際的に認められるようになります。"
+      }
+    }
+  },
+  "The European Credit Transfer and Accumulation System (ECTS) assigns credits to courses based on the amount of work required (usually 25-30 hours of study per credit)": {
+    " ECTS uses a letter grading system ranging from A to F, with F representing failure": {
+      "": "欧州単位互換・累積制度 (ECTS) では、必要な学習量 (通常、1 単位あたり 25 ～ 30 時間の学習) に基づいてコースに単位を割り当てます。ECTS では、A から F までの文字による評価システムを使用しており、F は不合格を表します。"
+    }
+  },
+  "The Advanced Placement (AP) Program is a U": {
+    "S": {
+      "-based initiative offered by the College Board, enabling high school students to take college-level courses and exams": {
+        " These courses are equivalent to first-year college courses and are recognized internationally": {
+          " The grading scale for AP exams ranges from 1 to 5, with a score of 3 being considered passing": {
+            " AP is widely accepted by universities around the world, giving students the opportunity to earn college credits before completing high school": {
+              "": "アドバンスト プレースメント (AP) プログラムは、米国を拠点とするカレッジ ボードによるプログラムで、高校生が大学レベルのコースと試験を受けることができます。これらのコースは大学 1 年目のコースに相当し、国際的に認められています。AP 試験の採点基準は 1 ～ 5 で、3 点を取ると合格となります。AP は世界中の大学で広く受け入れられており、高校を卒業する前に大学の単位を取得する機会を学生に与えています。"
+            }
+          }
+        }
+      }
+    }
+  },
+  "The IGCSE is a globally recognized qualification offered by Cambridge Assessment International Education": {
+    " It uses a grading scale ranging from A to G, with U (ungraded) representing failure": {
+      " IGCSE is widely used by international schools and is known for its flexibility, allowing students to choose subjects that match their academic interests and career goals": {
+        "": "IGCSE は、ケンブリッジ アセスメント インターナショナル エデュケーションが提供する世界的に認められた資格です。A から G までの評価スケールを使用しており、U (評価なし) は不合格を表します。IGCSE はインターナショナル スクールで広く使用されており、柔軟性が高く、生徒が自分の学問的関心やキャリア目標に合った科目を選択できることで知られています。"
+      }
+    }
+  },
+  "The TEQSA framework is primarily followed in Australia": {
+    " It regulates higher education institutions and ensures that they meet national standards": {
+      " It aligns with the Australian Qualifications Framework (AQF), which describes the qualifications and courses offered by institutions in Australia": {
+        " While TEQSA is mainly followed in Australia, its recognition is global, ensuring that Australian degrees are respected internationally and enhancing students' mobility": {
+          "": "TEQSA フレームワークは、主にオーストラリアで採用されています。高等教育機関を規制し、国家基準を満たすようにしています。オーストラリアの教育機関が提供する資格とコースを規定するオーストラリア資格フレームワーク (AQF) と一致しています。TEQSA は主にオーストラリアで採用されていますが、その認知度は世界的であり、オーストラリアの学位が国際的に尊重され、学生の流動性が向上します。"
+        }
+      }
+    }
+  },
+  "The Programme for International Student Assessment (PISA) is an international survey conducted by the OECD": {
+    " Unlike the other frameworks, PISA does not provide a grading scale, but instead evaluates the effectiveness of education systems worldwide by assessing the academic performance of 15-year-old students": {
+      " The data gathered helps policymakers identify strengths and weaknesses in their education systems and make informed decisions to improve standards and align educational frameworks globally": {
+        "": "国際学習到達度調査 (PISA) は、OECD が実施する国際調査です。他の枠組みとは異なり、PISA は採点基準を提供しませんが、15 歳の生徒の学業成績を評価することで、世界中の教育システムの有効性を評価します。収集されたデータは、政策立案者が教育システムの長所と短所を特定し、基準を改善して教育フレームワークを世界的に調整するための情報に基づいた決定を下すのに役立ちます。"
+      }
+    }
+  },
+  "Most-Common GPA to CGPA Conversion Scenarios": "最も一般的なGPAからCGPAへの変換シナリオ",
+  "The formula used is:": "使用される式は次のとおりです。",
+  "CGPA = GPA × 2": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "CGPA = GPA × 2.5"
+  ],
+  "Thus, the conversions would look like:": "したがって、変換は次のようになります。",
+  "Certain Indian institutions follow a different version of GPA (4": {
+    "0 scale) to CGPA (10 scale) conversion": {
+      " The formula used is:": "インドの一部の教育機関では、GPA (4.0 スケール) から CGPA (10 スケール) への変換に異なるバージョンを採用しています。使用される計算式は次のとおりです。"
+    }
+  },
+  "CGPA = GPA × 2 + 1": "CGPA = GPA × 2 + 1",
+  "Thus, the conversion would vary as:": "したがって、変換は次のように変化します。",
+  "The-formula used is:": "使用される式は次のとおりです。",
+  "GPA- =": "成績平均点 =",
+  "Therefore, the conversions would look like:": "したがって、変換は次のようになります。",
+  "90% to GPA is 4": [
+    "90%からGPAは4.0"
+  ],
+  "75% to GPA is 3": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "75%のGPAは3.5"
+  ],
+  "60% to GPA is 3": [
+    "GPAの60%は3.0"
+  ],
+  "50% to GPA is 2": [
+    "GPAの50%は2.0"
+  ],
+  "Since the ECTS follows a letter grading system, their equivalent conversion looks like this:": "ECTS は文字による評価システムに従っているため、同等の変換は次のようになります。",
+  "A (Top 10%) → 4": {
+    "0 GPA / 9": {
+      "0-10": {
+        "0 CGPA": "A (上位 10%) → 4.0 GPA / 9.0-10.0 CGPA"
+      }
+    }
+  },
+  "B (Next 25%) → 3": {
+    "5 GPA / 7": {
+      "5-8": {
+        "9 CGPA": "B (次の 25%) → 3.5 GPA / 7.5-8.9 CGPA"
+      }
+    }
+  },
+  "C (Next 30%) → 3": {
+    "0 GPA / 6": {
+      "0-7": {
+        "4 CGPA": "C (次の 30%) → 3.0 GPA / 6.0-7.4 CGPA"
+      }
+    }
+  },
+  "D (Next 25%) → 2": {
+    "5 GPA / 5": {
+      "0-5": {
+        "9 CGPA": "D (次の 25%) → 2.5 GPA / 5.0-5.9 CGPA"
+      }
+    }
+  },
+  "E (Minimum Passing Grade) → 2": {
+    "0 GPA / 4": {
+      "0-4": {
+        "9 CGPA": "E (最低合格点) → 2.0 GPA / 4.0-4.9 CGPA"
+      }
+    }
+  },
+  "Please Note:": "ご注意ください：",
+  "These are general conversion case studies and may not apply universally": {
+    " Always refer to specific institutional guidelines before using these conversions": {
+      "": "これらは一般的な変換ケーススタディであり、普遍的に適用できるとは限りません。これらの変換を使用する前に、必ず特定の機関のガイドラインを参照してください。"
+    }
+  },
+  "Summary-": "まとめ",
+  "In this section, we discussed GPA and CGPA conversions, how they both differ from each other, and some of the international standards and frameworks followed around the globe": {
+    " While we have tried to cover all the major frameworks, it is not possible to include the formula and conversion of each and every institution": {
+      "": "このセクションでは、GPA と CGPA の変換、両者の違い、そして世界中で採用されている国際基準とフレームワークについて説明しました。主要なフレームワークをすべて網羅しようとしましたが、すべての機関の計算式と変換を網羅することは不可能です。"
+    }
+  },
+  "Therefore, we always advise you to check the official document of a specific institution before doing the conversion of your grades": {
+    "": "したがって、成績の変換を行う前に、特定の機関の公式文書を確認することを常にお勧めします。"
+  },
+  "FAQs": "FAQ（よくある質問）",
+  "Q1": {
+    " How can I convert GPA to CGPA?": "Q1. GPA を CGPA に変換するにはどうすればいいですか?"
+  },
+  "Ans": {
+    " You can convert GPA to CGPA using the formula;": "回答: 次の式を使用して GPA を CGPA に変換できます。",
+    " Indian CGPA to GPA calculator includes GPA conversion from CGPA and percentage": {
+      " Please refer to the below table:": "回答: インドの CGPA から GPA への計算機には、CGPA とパーセンテージからの GPA 変換が含まれています。以下の表を参照してください。"
+    },
+    " To calculate CGPA from GPA, divide the GPA obtained by max": {
+      " GPA and then multiply by the target CGPA scale": {
+        " Mathematically,": "答え: GPAからCGPAを計算するには、得られたGPAを最高GPAで割り、目標CGPAスケールを掛けます。数学的には、"
+      }
+    },
+    " As mentioned in Q2 above, you can divide the CGPA by 2": {
+      "5 factor and you will get an equivalent GPA": {
+        " A simplified calculation is given below,": "回答：上記のQ2で述べたように、CGPAを2.5倍にすると、同等のGPAが得られます。簡略化した計算を以下に示します。"
+      }
+    },
+    " GPA to CGPA calculator Anna University formula includes credit scores": {
+      " The formula can be written as:": "回答: GPA から CGPA への計算機 Anna University の計算式にはクレジット スコアが含まれます。計算式は次のように記述できます。"
+    },
+    " CGPA to GPA calculation for Anna University is done the same as the formula mentioned at the top of this article i": {
+      "e": {
+        "": "回答: アンナ大学の CGPA から GPA への計算は、この記事の冒頭で述べた式と同じように行われます。"
+      }
+    },
+    " SRM University uses a specific formula that includes a credit-weighted average to calculate GPA": {
+      " The concept of credit-weighted average is used to assign special weightage to certain subjects, such as major and minor subjects": {
+        "": "回答: SRM 大学では、GPA を計算するために、単位加重平均を含む特定の計算式を使用しています。単位加重平均の概念は、主専攻科目や副専攻科目などの特定の科目に特別な重みを割り当てるために使用されます。"
+      }
+    },
+    " Certain engineering colleges assign higher credits to core courses than elective or general courses": {
+      " Thus, the weighted value for those core subjects might be higher than others": {
+        "": "回答：一部の工科大学では、選択科目や一般科目よりもコア科目に高い単位を割り当てています。そのため、コア科目の加重値は他の科目よりも高くなる可能性があります。"
+      }
+    },
+    " Mathematically, YES, our CGPA to GPA calculator online is reliable": {
+      " However, many universities use a specific conversion method": {
+        " Since it is not feasible to include all those methods, it is best to check the official guidelines first": {
+          "": "回答：数学的には、はい、当社のオンライン CGPA から GPA への計算機は信頼できます。ただし、多くの大学では特定の変換方法を使用しています。これらすべての方法を含めることは現実的ではないため、まず公式ガイドラインを確認することをお勧めします。"
+        }
+      }
+    },
+    " To convert GPA to CGPA out of 4, use the below formula:": "回答: GPA を 4 段階評価の CGPA に変換するには、次の式を使用します。",
+    " On a 4-point GPA scale, your CGPA is 3": {
+      " But on a 10-point GPA scale, your CGPA is 1": [
+        {},
+        {},
+        {
+          "": "回答: 4 点 GPA スケールでは、CGPA は 3 です。ただし、10 点 GPA スケールでは、CGPA は 1.2 です。"
+        }
+      ]
+    },
+    " If GPA is on a 4-point scale → 3": {
+      "3 CGPA": "答え: GPAが4段階評価の場合 → 3.3 CGPA"
+    },
+    " A CGPA above 8": {
+      "0 is considered a good CGPA": {
+        " However, this varies depending on the institution and the course": {
+          "": "回答: 8.0 を超える CGPA は良好な CGPA と見なされます。ただし、これは機関とコースによって異なります。"
+        }
+      }
+    }
+  },
+  "-GPA =": "成績平均点 =",
+  "CGPA Obtained": "取得したCGPA",
+  "Maximum CGPA": "最大CGPA",
+  "Max-GPA": "最高GPA",
+  "Q2": {
+    " What is Indian CGPA to GPA calculator?": "Q2. インドの CGPA から GPA への計算機とは何ですか?"
+  },
+  "Conversion Type": "変換タイプ",
+  "Formula": "式",
+  "CGPA to 4-point GPA": "CGPAから4ポイントGPAへ",
+  "Percentage to 4-point GPA": "4ポイントGPAに対する割合",
+  "Percentage to GPA (4": {
+    "3)": "GPAに対する割合（4.3）"
+  },
+  "Percentage to GPA (5": {
+    "0)": "GPAに対する割合（5.0）"
+  },
+  "GP-A =": "成績平均点 =",
+  "CGPA-Obtained": "取得したCGPA",
+  "Maximum-CGPA": "最大CGPA",
+  "× 2": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "× 2.5"
+  ],
+  "Percentage Obtained": "取得率",
+  "100": "100",
+  "× 4": "× 4",
+  "× 100": "× 100",
+  "20": "20",
+  "Q3": {
+    " How to calculate CGPA from GPA?": "Q3. GPAからCGPAを計算するにはどうすればいいですか?"
+  },
+  "CGPA =": "CGPA =",
+  "GPA Obtained": "取得したGPA",
+  "Maximum GPA": "最高GPA",
+  "× Target CGPA Scale": "× 目標CGPAスケール",
+  "Q4": {
+    " What is 10 point CGPA to 4 GPA calculator formula?": "Q4. 10 ポイント CGPA から 4 ポイント GPA への計算式は何ですか?"
+  },
+  "G-PA =": "成績平均点 =",
+  "Obtained CGPA": "CGPAを取得",
+  "10(for 10-point CGPA)": "10（10ポイントCGPAの場合）",
+  "×": null,
+  "= ": null,
+  "Q5": {
+    " What is the GPA to CGPA calculator Anna University Formula?": "Q5. Anna University の GPA から CGPA への計算式は何ですか?"
+  },
+  "": {
+    "GPA =": "成績平均点 =",
+    "title": "2. グレードキャップ"
+  },
+  "Grade in Subject 1 × Credits Earned + Grade in Subject 2 × Credits Earned + Grade in Subject N × Credits Earned": "科目 1 の成績 × 取得単位数 + 科目 2 の成績 × 取得単位数 + 科目 N の成績 × 取得単位数",
+  "Sum of All Credits Earned in Each Subject": "各科目で取得した単位の合計",
+  "Q6": {
+    " How to calculate CGPA from GPA in Anna University?": "Q6. アンナ大学でGPAからCGPAを計算するにはどうすればいいですか?"
+  },
+  "CGPA- =": "CGPA =",
+  "GPA-Obtained": "取得したGPA",
+  "Maximum-GPA": "最高GPA",
+  "Target CGPA Scale": "目標CGPAスケール",
+  "However, you can also go for detailed calculations as described in Q5": {
+    "": "ただし、Q5 で説明したように詳細な計算を行うこともできます。"
+  },
+  "Q7": {
+    " How SRM GPA to CGPA calculator is different?": "Q7. SRM GPA から CGPA への計算機はどのように違うのですか?"
+  },
+  "Q8": {
+    " Is the GPA to CGPA calculator for engineering different?": "Q8. 工学部の GPA から CGPA への計算機は異なりますか?"
+  },
+  "Q9": {
+    " Is CGPA to GPA calculator online reliable?": "Q9. オンラインの CGPA から GPA への計算機は信頼できますか?"
+  },
+  "Q10": {
+    " Convert GPA to CGPA out of 4": {
+      "": "Q10. GPA を 4 点満点で CGPA に変換してください。"
+    }
+  },
+  "CGPA (out of 4) =": "CGPA（4点満点）=",
+  "GPAObtained": "取得したGPA",
+  "Maximum GPA on your Scale": "あなたのスケールの最高GPA",
+  "4": "CGPA から GPA への変換がなぜ必要なのでしょうか?",
+  "Q11": {
+    " What is 3 GPA to CGPA?": "Q11. 3GPAからCGPAとは何ですか?"
+  },
+  "Q12": {
+    " What is 3": {
+      "5 GPA to CGPA?": "Q12. 3.5 GPA から CGPA に換算すると何になりますか?"
+    }
+  },
+  "But on a 10-point GPA scale, your CGPA is 1": [
+    {},
+    {},
+    {},
+    {},
+    {
+      "": "しかし、10 点満点の GPA スケールでは、あなたの CGPA は 1.4 です。"
+    }
+  ],
+  "On a 7-point GPA scale, your CGPA is 2": {
+    "": "7 段階の GPA スケールでは、CGPA は 2 です。"
+  },
+  "Q13": {
+    " What is 3": {
+      "3 GPA to CGPA?": "Q13. 3.3 GPA から CGPA に換算すると何になりますか?"
+    }
+  },
+  "If GPA is on a 10-point scale → 1": {
+    "32 CGPA": "GPAが10点満点の場合 → 1.32 CGPA"
+  },
+  "If GPA is on a 7-point scale → 1": {
+    "89 CGPA": "GPAが7段階評価の場合 → 1.89 CGPA"
+  },
+  "Q14": {
+    " What is a good CGPA?": "Q14. 良い CGPA とは何ですか?"
+  },
+  "-title": "CGPA から GPA への計算機",
+  "enterCGPA": "CGPAを入力",
+  "cgpaPlaceholder": "CGPAを入力してください",
+  "chooseGPAScale": "GPAスケールを選択",
+  "gpaScale4": "4.0 スケール",
+  "gpaScale5": "5.0 スケール",
+  "gpaScale10": "10.0 スケール",
+  "customGpaScalePlaceholder": "カスタムGPAスケールを入力",
+  "cgpaPointScale": "CGPAポイントスケール",
+  "cgpaPointScalePlaceholder": "CGPAポイントスケールを入力",
+  "calculateButton": "計算する",
+  "resetButton": "リセット",
+  "yourGPA": "計算されたGPA",
+  "gpaPlaceholder": "成績平均点:",
+  "downloadButton": "ダウンロード",
+  "whatsappButton": "ワッツアップ",
+  "copyLinkButton": "リンクをコピー",
+  "linkCopied": "リンクをコピーしました!",
+  "calculationHistory": "計算履歴",
+  "sNo": "番号",
+  "cgpa1": "平均得点",
+  "gpa1": "成績平均点",
+  "Heading": "CGPA から GPA への計算機",
+  "Paragraph1": "成績を別の形式に変換する必要がある状況に遭遇することはよくあります。生徒の成績データベースを扱う場合でも、特定の要件を満たすために成績を変換する必要がある場合でも、信頼できるツールがあればプロセスがはるかに簡単になります。",
+  "Paragraph2": "Lord Calculator の CGPA から GPA への計算機は、CGPA の成績を GPA 形式に迅速かつ正確に変換できるように設計されているため、本当に重要なパフォーマンスに集中できます。",
+  "Paragraph3": "当社の計算機は速度と精度に最適化されており、結果にエラーがまったく発生しません。カスタム グレード スケール オプションを使用して、任意の目標グレード スケールに成績を変換することもできます。",
+  "Paragraph4": "このガイドでは、基本的な概念や国際基準など、CGPA から GPA への変換について知っておく必要のある重要な要素について説明します。",
+  "section2": "CGPAからGPAへの変換式",
+  "formula": {
+    "title": "同等のGPA",
+    "numerator": "取得したCGPA",
+    "denominator": "最大CGPA",
+    "multiplier": "最高GPA"
+  },
+  "tableOfContents": "目次",
+  "toggleButtonExpand": "拡大する",
+  "toggleButtonCollapse": "崩壊",
+  "1": "CGPA から GPA への計算機",
+  "2": "CGPAからGPAへの変換式",
+  "3": "CGPA と GPA の違いと変換が必要な理由",
+  "5": "Lord Calculator の CGPA から GPA への計算機の優れた点は何ですか?",
+  "6": "CGPA から GPA への計算機の使い方",
+  "7": "CGPAをGPAに変換する方法",
+  "8": "大学固有の変換",
+  "9": "正規化係数",
+  "10": "CGPAからGPAへの詳細な変換表",
+  "11": "CGPA から GPA へのコンバーターの制限",
+  "12": "CGPAからGPAへの正確な計算を行うためのヒント",
+  "13": "結論",
+  "14": "CGPA から GPA へのコンバーターに関するよくある質問",
+  "cgpaToGpaNote": "この計算式は、CGPA から GPA への変換に最も一般的に使用されていることに注意してください。ただし、一部の機関では異なる計算式が使用される可能性があるため、機関または委員会が提供する公式ガイドラインを常に確認することをお勧めします。",
+  "section3Title": "CGPA と GPA の違いと変換が必要な理由",
+  "section3Content": "変換プロセスを詳しく説明する前に、まず CGPA と GPA の違いを理解し、両方の評価基準が広く認知されている場合でも変換が必要になる可能性がある理由を理解しましょう。",
+  "understandingCGPAGPA": "CGPAとGPAを理解する",
+  "cgpaDefinition": "CGPA (累積成績平均点) は、特定の期間におけるすべての学期と科目にわたる学生の学業成績を総合的に反映したものです。コース全体を通じて学生の一貫した成績を総合的に把握できます。",
+  "gpaDefinition": "一方、GPA (Grade Point Average) は、個々のコースや科目における学生の成績を評価する、より簡潔な指標であり、多くの場合、学期ごとの成績に重点が置かれます。GPA は、教育機関が学期ごとに成績を追跡するのに役立ちます。",
+  "regionalUsage": "CGPA はアジア諸国でより一般的に使用されていますが、GPA は米国やヨーロッパなどの西洋諸国で広く実践されています。この成績評価システムの違いにより、特に留学生や編入生の場合、CGPA から GPA への変換が頻繁に必要になります。",
+  "learnMoreGradingSystems": "さまざまな評価システムで使用される用語について詳しく知りたい場合は、",
+  "whyNeedConversion": "CGPA から GPA への変換がなぜ必要なのでしょうか?",
+  "conversionReason1": "この質問に対する簡単な答えは、機会にあります。学生が留学や就職を計画しているときは、自分の成績とは異なる特定の形式の成績が必要になることがよくあります。そのような場合、成績の変換は不可欠です。",
+  "conversionReason2": "想像してみてください。数式を注意深く適用し、数式全体を書き出したものの、小さな小数点の誤りや些細なミスにより、プロセスをやり直さなければならなくなったとします。ここでオンライン ツールが役に立ちます。Web サイトにアクセスして、外出先ですぐに成績を変換できます。サードパーティのアプリをダウンロードする必要はありません。",
+  "conversionReason3": "変換が必要なもう 1 つの理由は、評価基準の違いです。これらの評価システムの違いを理解しやすくするために、CGPA、GPA、およびその他の評価システムを比較した簡単な表を以下に示します。",
+  "cgpaScale": "CGPA（10点満点）",
+  "usGpaScale": "米国のGPA（4点スケール）",
+  "usLetterGrade": "レターグレード（米国）",
+  "percentageScale": "割合（100%）",
+  "ukGrade": "グレード（英国）",
+  "ukGrade1": "ファーストクラス（優秀）",
+  "ukGrade2": "ファーストクラス（上級）",
+  "ukGrade3": "ファーストクラス（上級）",
+  "ukGrade4": "上位2位（2:1）",
+  "ukGrade5": "上位2位（2:1）",
+  "ukGrade6": "下二番目（2:2）",
+  "ukGrade7": "下二番目（2:2）",
+  "ukGrade8": "三等",
+  "ukGrade9": "合格",
+  "ukGrade10": "失敗",
+  "below_5_5": "5.5未満",
+  "below_2_0": "2.0未満",
+  "below": "55歳以下",
+  "section5_title": "Lord Calculator の CGPA から GPA への計算機の優れた点は何ですか?",
+  "feature_1": "Lord Calculator の CGPA から GPA への計算機は、高度な機能と超高速パフォーマンスが特徴です。最新の Web フレームワークのおかげで、当社の計算機は、弱いネットワークでも驚異的な速度で変換を実行します。",
+  "feature_2": "ユーザー インターフェイスは簡単に操作できるように設計されており、値をすばやく入力して手間をかけずに結果を得ることができます。また、変換されたグレードをより効果的に視覚化するのに役立つメトリック表現などの機能も提供しています。",
+  "feature_3": "さらに、変換履歴を PDF として保存したり、ソーシャル メディアで共有したりできるため、結果を追跡して他のユーザーと共有することが簡単になります。",
+  "feature_4": "当社の計算機はカスタム計算式もサポートしています。たとえば、CGPA からパーセンテージへの計算機では、所属機関の特定の評価基準に合わせてカスタム乗算係数を選択できます。",
+  "section6_title": "CGPA から GPA への計算機の使い方",
+  "instruction_1": "CGPA から GPA への計算機を使用するのは、微積分の問題を解くよりも簡単です。次の簡単な手順に従ってください。",
+  "step_1": "Lord Calculator 教育用計算機の CGPA から GPA への計算機にアクセスしてください。",
+  "step_2": "最初のフィールドに CGPA を入力します。小数点を含む正確な数字を必ず入力してください。",
+  "step_3": "成績を変換する GPA スケールを選択します。",
+  "step_4": "評価システムで許可される最大 CGPA を入力します (これが CGPA スケール値です)。",
+  "step_5": "すべてのフィールドを正しく入力したら、「計算」ボタンを押すと、GPA 変換が完了します。",
+  "step_6": "結果を友達と共有したり、将来の参照用に PDF として保存したりすることもできます。",
+  "section7_title": "CGPAをGPAに変換する方法",
+  "paragraph_1": "CGPA を GPA に変換する方法は、一律ではありません。機関によって評価システムは異なり、同じスケールを使用する機関でも異なる乗算係数が適用される場合があります。したがって、自分の機関に適した方法を使用することが重要です。",
+  "paragraph_2": "当社の計算機では、CGPA を GPA に変換するために最も一般的な計算式を使用しています。ただし、具体的な変換ガイドラインについては、所属機関が提供する公式文書を確認することをお勧めします。",
+  "paragraph_3": "広く使用されている CGPA から GPA への変換式は次のとおりです。",
+  "formula_title": "同等のGPA =",
+  "formula_1": "取得したCGPA",
+  "formula_2": "最大CGPA",
+  "formula_3": "× 最高GPA",
+  "example_title": "例：",
+  "example_description": "例えば:",
+  "example_list_item_1": "学生のCGPAは",
+  "bold": "8.5（10点満点中）",
+  "example_list_item_2": "目標GPAスケールは",
+  "bold1": "4.0",
+  "conversion_description": "変換は次のようになります。",
+  "maxcgpa": "最大CGPA",
+  "maxgpa": "最高GPA",
+  "university_specific_conversions": "大学固有の変換",
+  "university_specific_paragraph1": "所属機関が別の変換基準に従っている場合があります。その場合は、所属大学の特定の計算式を参照する必要があります。このシナリオは通常、特定の機関が個々の科目に異なる重み付けを割り当てている場合に発生します。その場合、変換式をそれに応じて調整する必要があります。",
+  "university_specific_paragraph2": "一般的な例としては、ハーバード大学が挙げられます。同大学では、成績評価の難しさを考慮するために、変換された GPA とともに詳細な成績分布表を要求しています。その結果、上記の例で説明した CGPA 8.5 は、3.4 ではなく 3.7 になる可能性があります。",
+  "normalization_factor": "正規化係数",
+  "normalization_factor_paragraph1": "学生が海外留学プログラムに応募する場合、これまでの成績を公平に評価する必要があります。公平性を実現するために、大学は多くの場合、全員が同じ条件で競争できるように正規化係数を追加します。",
+  "normalization_factor_paragraph2": "たとえば、ある学生はパーセンテージに基づいて評価され、別の学生の成績は 5.0 CGPA 評価スケールを使用して決定されているとします。このような違いをなくすために、委員会はスケールを調整して最大限の科学的正確性を確保します。一般的な方法の 1 つは比例変換です。",
+  "cgpa_to_gpa_table_title": "CGPAからGPAへの詳細な変換表",
+  "cgpa_to_gpa_table_paragraph": "ここでは、さまざまな GPA スケールにおける CGPA 成績の対応する値を見つけることができます。計算せずに、変換された成績をすばやく取得できます。",
+  "cgpa_column": "平均年収",
+  "us_gpa_column": "米国のGPA（4.0スケール）",
+  "gpa_4_3_column": "GPA（4.3スケール）",
+  "gpa_5_0_column": "GPA（5.0スケール）",
+  "gpa_7_0_column": "GPA（7.0スケール）",
+  "below-2_0": "2.0未満",
+  "below_2_5": "2.5未満",
+  "below_3_0": "3.0未満",
+  "below_3_5": "3.5未満",
+  "title-": "CGPA から GPA へのコンバーターの制限",
+  "description": {
+    "": "オンラインの成績変換計算機は便利なツールですが、一定の制限があります。これらの制限と、このような計算機を使用する際に考慮すべき要素について見ていきましょう。"
+  },
+  "description-": "多くの大学では、優等コースや上級コースに追加ポイントが付与される加重 GPA システムを採用しています。このような場合、すべての科目にわたって比例変換を維持するために、より詳細な変換式が必要です。",
+  "-description": "一部の教育機関では、成績の上限を定めています。たとえば、10 CGPA スケールでは、学生は最大 9.5 CGPA しか達成できません。このような場合、オンライン計算機はこれらの制限を考慮していないため、正確でなかったり、適用できなかったりする可能性があります。",
+  "section3": {
+    "title": "3. 普遍性の仮定",
+    "description": "オンライン計算機は、ユーザーが普遍的に受け入れられていると想定する結果を生成することがよくあります。ただし、機関によって変換基準が異なる場合がありますので、注意してください。変換を進める前に、必ず公式文書または学術機関を参照してください。"
+  },
+  "keyTakeaways": {
+    "title": "重要なポイント",
+    "description": "これらは、CGPA から GPA への計算機やその他の同様のツールを使用する際の一般的な制約です。ただし、細部に注意することで、より正確な変換を確実に行うことができます。オンライン ツールは計算プロセスを支援することのみを目的としており、常に人間の監視が必要であることを忘れないでください。"
+  },
+  "section12": {
+    "title": "CGPAからGPAへの正確な計算を行うためのヒント",
+    "description": "学業成績を効果的に提示するには、オンラインの CGPA から GPA への計算機を使用している場合でも、次のヒントに注意してください。",
+    "subsection1": {
+      "title": "1. 目標評価尺度を理解する",
+      "description": "常に公式文書から目標評価スケールの表現をクロスチェックしてください。一部の機関では 4.0 スケールを使用していますが、他の機関では 4.3 または 5.0 スケールを使用している場合があります。CGPA の計算は、目標評価スケールに合わせて調整する必要があります。"
+    },
+    "subsection2": {
+      "title": "2. 採点の厳しさを考慮する",
+      "description": "あなたの通う学校が厳しい成績評価基準で知られている場合は、出願書類にその旨を必ず記載してください。ハーバード大学などの大学では、成績評価においてこれを重要な要素とみなすことが多いです。"
+    }
+  },
+  "section13": {
+    "subsection1": {
+      "title": "3. 変換式の検証",
+      "description": "公式文書に変換式が見つからない場合は、遠慮なくアカデミックカウンセラーに相談して、正確な変換が行えるように支援してもらってください。"
+    },
+    "subsection2": {
+      "title": "4. 科目別のパフォーマンスを考慮する",
+      "description": "一部の教育機関では、主科目と副科目を区別しており、主科目では追加ポイントが付与されることがよくあります。換算された成績が必要な願書に記入する際は、この点に留意してください。"
+    },
+    "subsection3": {
+      "title": "5. 進化する標準を常に把握する",
+      "description": "大学は、国際基準との同期を改善するために、成績評価基準と変換式を頻繁に更新します。時代遅れの方法を避けるため、最新のガイドラインに従っていることを確認してください。"
+    },
+    "conclusion": {
+      "title": "結論",
+      "description": "世界的な教育の流動性が増すにつれ、これまで説明した基礎と国際基準の両方に精通することが不可欠になります。変換プロセスは単純に思えるかもしれませんが、隠れた要素が数多くあります。正確な変換のヒントに従うことで、CGPA から GPA への信頼性の高い変換が実現できることを保証します。"
+    }
+  },
+  "faq": {
+    "title": "CGPA Calculatorに関するよくある質問",
+    "q1": {
+      "question": "CGPA と GPA には違いがありますか?",
+      "answer": "はい、CGPA と GPA は範囲が異なります。GPA は 1 学期の成績を表しますが、CGPA は複数の学期の GPA スコアの平均で、全体的な学業成績を示します。CGPA 計算機を使用して値の違いを確認し、所属機関がサポートしている場合は GPA を CGPA に変換してみてください。"
+    },
+    "q2": {
+      "question": "CGPA 変換式は機関によって異なりますか?",
+      "answer": "もちろんです。多くの教育機関には独自の CGPA 変換式があります。たとえば、CGPA をパーセンテージに変換するのに 9.5 の係数を使用する機関もあれば、異なる乗数を適用する機関もあります。教育機関が使用する式を確認することは、CGPA からパーセンテージへの正確な変換に重要です。CGPA 計算機は、特定の大学の要件に合わせてカスタマイズできます。"
+    },
+    "q3": {
+      "question": "CGPA から正確なパーセンテージが得られないのはなぜですか?",
+      "answer": "CGPA からパーセンテージへの変換結果が不正確になる原因としては、間違った変換係数や計算式の使用が考えられます。機関によって変換方法が異なるため、自分の機関向けに設計された CGPA からパーセンテージへの変換計算機を使用するか、適用された乗数を確認することが重要です。パーセンテージを正確に計算するには、専用の CGPA 計算機が必要になる場合があります。"
+    },
+    "q4": {
+      "question": "CGPA をパーセンテージに変換するにはどうすればいいですか?",
+      "answer": "CGPA をパーセンテージに変換するには、CGPA に機関固有の係数 (通常は 9.5) を掛けます。この簡単な方法は多くの場合有効ですが、CGPA からパーセンテージへの計算機を使用するとさらに簡単になります。逆のプロセスが必要な場合は、パーセンテージから CGPA への計算機を試してください。"
+    },
+    "q5": {
+      "question": "7.6 CGPA をパーセンテージに変換するにはどうすればよいでしょうか?",
+      "answer": "7.6 の CGPA をパーセンテージに変換するには、7.6 に変換係数 (通常は 9.5) を掛けます。結果は 72.2% になります。CGPA からパーセンテージへの計算機はこれを自動化し、正確性を保証します。"
+    },
+    "q6": {
+      "question": "7.8 CGPA はパーセンテージで何ですか?",
+      "answer": "共通因数 9.5 を使用すると、7.8 CGPA はパーセンテージで 74.1% になります。結果をすばやく得るには、CGPA からパーセンテージへの計算機で再確認できます。"
+    },
+    "q7": {
+      "question": "CGPA を 4 点満点でパーセンテージ計算すると何になりますか?",
+      "answer": "一部の大学では、4 段階評価を採用しています。CGPA を 4 段階評価のパーセンテージに変換するには、4 段階評価で GPA を調べ、適切な変換係数を使用します。CGPA から 4 段階評価のパーセンテージへの変換計算機などの専用計算機を使用すると、この変換を処理できます。"
+    },
+    "q8": {
+      "question": "VTU CGPA をパーセンテージに変換する計算式は何ですか?",
+      "answer": "CGPA から VTU のパーセンテージへの変換式は、パーセンテージ = CGPA * 9.1 です (部門によって異なる場合があります)。"
+    },
+    "q9": {
+      "question": "エンジニアリングの CGPA をパーセンテージに変換するにはどうすればいいですか?",
+      "answer": "工学部では異なる計算式や変換係数が使用される場合があります。工学部の学生は、自分の大学の方法を確認するか、工学部専用の CGPA 計算機を使用して CGPA を正確にパーセンテージに変換する必要があります。"
+    },
+    "q10": {
+      "question": "CGPA からパーセンテージへの計算機 DU は異なりますか?",
+      "answer": "はい、デリー大学 (DU) は独自の計算式を使用しています。DU の学生は、正確な結果を得るために、DU 固有の CGPA からパーセンテージへの計算機を使用し、DU の成績評価基準に合わせる必要があります。"
+    },
+    "q11": {
+      "question": "CGPA からパーセンテージを計算するにはどうすればいいですか?",
+      "answer": "CGPA からパーセンテージを計算するには、CGPA に変換係数 (通常は 9.5) を掛けます。CGPA 計算機を使用すると、この計算が簡単になります。また、逆の計算が必要な場合は、パーセンテージから CGPA への計算機を試すこともできます。"
+    },
+    "q12": {
+      "question": "SPPU CGPA からパーセンテージへの計算式は何ですか?",
+      "answer": "サヴィトリバイ・プーレ・プネ大学 (SPPU) には、CGPA からパーセンテージへの計算方法が独自にあります。正確な変換については、SPPU 固有の CGPA 計算機を使用するか、ガイドラインを参照してください。"
+    },
+    "q13": {
+      "question": "Makaut CGPA からパーセンテージへの計算式は何ですか?",
+      "answer": "Makaut はオンライン プラットフォームです。Makaut の CGPA からパーセンテージへの計算機の計算式は、パーセンテージ = (CGPA – 0.75) * 10 です。"
+    },
+    "q14": {
+      "question": "CGPA から GTU パーセンテージへの計算式は何ですか?",
+      "answer": "CGPA からパーセンテージ GTU への計算式は、パーセンテージ = (CGPA * 7.1) + 12 です。"
+    },
+    "q15": {
+      "question": "CGPA からパーセンテージを見つけるにはどうすればいいですか?",
+      "answer": "上記の式を使用して手動で計算するか、この計算機を使用してパーセンテージを調べることができます。"
+    }
+  },
+  "faq1": {
+    "q1": "Q: CGPA を GPA に変換するにはどうすればいいですか?",
+    "a1": {
+      "label": "答え:",
+      "text": "CGPA を GPA に変換するための標準的な式は次のとおりです。"
+    },
+    "formula": {
+      "gpa": "成績平均点 =",
+      "cgpaObtained": "取得したCGPA",
+      "maxCgpa": "最大CGPA",
+      "maxGpa": "× 最高GPA"
+    }
+  },
+  "faq2": {
+    "q2": "Q: GPA から CGPA を計算するにはどうすればいいですか?",
+    "a2": {
+      "label": "答え:",
+      "text": "GPA から CGPA を計算する式は次のとおりです。"
+    },
+    "formula": {
+      "cgpa": "CGPA =",
+      "gpaObtained": "取得したGPA",
+      "maxGpa": "最高GPA",
+      "maxCgpa": "× 最高CGPA"
+    }
+  },
+  "faq3": {
+    "q3": "Q: GPA を CGPA に変換するにはどうすればいいですか?",
+    "a3": {
+      "label": "答え:",
+      "text": "GPA を CGPA に変換するのは、CGPA を GPA に変換するのと逆のプロセスです。GPA がわかっていて CGPA を計算したい場合、式は次のようになります。"
+    },
+    "formula": {
+      "gpaObtained": "取得したGPA",
+      "maxGpa": "最高GPA",
+      "maxCgpa": "× 最高CGPA"
+    }
+  },
+  "faq4": {
+    "q4": "Q: インドの CGPA は米国の GPA に換算できますか?",
+    "a4": {
+      "label": "答え:",
+      "text": "米国の大学では 4.0 の GPA スケールが使用され、インドの大学では 10 点スケールが使用されます。インドの CGPA を米国の GPA に変換するには、スコアされた CGPA に 4/10 の乗数を使用します。"
+    }
+  },
+  "faq5": {
+    "q5": "Q: インドの CGPA はドイツの GPA に相当しますか?",
+    "a5": {
+      "label": "答え:",
+      "text": "ドイツの教育機関は、変換に修正バイエルン式を使用します。ドイツの GPA を計算する式は次のとおりです。",
+      "formula": "1 + 3 × (最高成績 - 取得した CGPA) / (最高成績 - 最低合格成績)"
+    }
+  },
+  "faq6": {
+    "q6": "Q: GPA から CGPA への計算機 ANNA University?",
+    "a6": {
+      "label": "答え:",
+      "text": "GPA を CGPA に変換する式は次のとおりです。",
+      "formula1": "取得したGPA",
+      "formula2": "最高GPA",
+      "formula3": "× 最高CGPA"
+    }
+  },
+  "faq7": {
+    "q7": "Q: VIT CGPA を米国の GPA に変換できますか?",
+    "a7": {
+      "label": "答え:",
+      "text": "VIT は 10 段階評価スケールに従います。これを米国の GPA に変換するには、近似値として 2.5 または 4/10 スケールを使用します。"
+    },
+    "q8": "Q: インドの CGPA を英国の GPA に変換できますか?",
+    "a8": {
+      "label": "答え:",
+      "text": "インドの CGPA を英国の GPA に変換するには、特定の大学のガイドラインを参照してください。英国の教育機関は、インドの CGPA を自国のクラス優等生システム (第 1、第 2、第 3 など) に変換します。"
+    }
+  },
+  "faq8": {
+    "q9": "Q: SRM GPA から CGPA への計算機はありますか?",
+    "a9": {
+      "label": "答え:",
+      "text": "SRM GPA から CGPA を計算するには、総単位時間と総成績点数が必要です。ただし、変換には標準の式を使用できます。",
+      "formula": {
+        "gpa": "取得したGPA",
+        "maxGpa": "最高GPA",
+        "maxCgpa": "× 最高CGPA"
+      }
+    }
+  },
+  "faq9": {
+    "q10": "Q: WES CGPA から GPA への計算機はありますか?",
+    "a10": {
+      "label": "答え:",
+      "text": "WES (World Education Services) が成績証明書を評価し、個々のコースの評価基準と絶対スコアを考慮して資格確認のために GPA が割り当てられます。"
+    }
+  },
+  "section1_title": "CGPA へのパーセンテージ計算機",
+  "section1_paragraph": "学習者や学者の皆さん、ようこそ！ 皆さんご存知のとおり、CGPA とパーセンテージは教育システムで重要な役割を果たしています。 多くの場合、これらを互換的に使用する必要がある状況に陥ります。そこで、Lord Calculator は、外出先でパーセンテージを計算できるように、最も信頼性が高く、非常に高速なパーセンテージから CGPA への計算機を提供します。 ここでは、パーセンテージから CGPA への計算機の仕組み、パーセンテージから CGPA への変換方法、およびさまざまなパーセンテージから CGPA への計算式に関する詳細なガイドを示します。",
+  "section2_title": "CGPA のパーセンテージの計算式",
+  "cgpa_title": "CGPA =",
+  "percentage_achieved": "達成率",
+  "multiplication_factor": "大学が示す乗数",
+  "table_of_contents": "目次",
+  "expand_button_text": "拡大する",
+  "collapse_button_text": "崩壊",
+  "percentage_to_cgpa_calculator": "CGPA へのパーセンテージ計算機",
+  "percentage_to_cgpa_formula": "CGPA のパーセンテージの計算式",
+  "lord_calculator_percentage_to_cgpa": "Lord Calculator の CGPA に対するパーセンテージ計算機とその使用理由",
+  "how_to_use_lord_calculator": "Lord Calculator の CGPA パーセンテージ計算機を使用する方法は?",
+  "what_is_percentage": "パーセンテージとは何ですか? CGPA とどう違うのですか?",
+  "what_is_cgpa": "CGPA とは何ですか? また、どのように計算されますか?",
+  "when_to_use_lord_calculator": "Lord Calculator の CGPA パーセンテージ計算機はいつ使用すればよいですか?",
+  "common_mistakes": "CGPA のパーセンテージを正確に計算する際に避けるべきよくある間違い",
+  "why_different_grading_scales": "なぜさまざまな機関が異なる評価基準と変換式を採用するのか",
+  "percentage_to_cgpa_for_boards": "さまざまな委員会および大学のパーセンテージから CGPA への変換。",
+  "pros_and_cons_of_calculators": "CGPA にパーセンテージを使用するオンライン計算機の長所と短所",
+  "frequently_asked_questions": "よくある質問（FAQ）",
+  "cgpa_formula": "CGPA = 達成率 / 大学が指定した倍率",
+  "example_text": "例: 92.4% を超える好成績を達成したとします。これを CGPA に変換します。大学が採用している評価基準は、乗数 9.5 の 10 段階評価です。CGPA は次のように計算されます。",
+  "section3_title": "Lord Calculator の CGPA に対するパーセンテージ計算機とその使用理由",
+  "section3_text1": "当社の計算機は、あらゆる評価システムに対応しています。あなたの機関が 4 段階評価スケール、5 段階評価スケール、または 10 段階評価スケールのいずれを採用しているかに関係なく、評価スケールを選択して計算を進めるだけです。ただし、これらのデフォルトの評価スケールには、標準の乗算係数を使用していることに注意してください。さまざまな評価システムの標準の乗算係数は次のとおりです。",
+  "multiplication_factors": {
+    "4_scale": "4 段階評価スケールの乗数: 25",
+    "5_scale": "5段階評価スケールの乗数: 20",
+    "10_scale": "10 段階評価スケールの乗数: 9.5"
+  },
+  "section3_text2": "所属機関が標準の評価尺度、つまり 10 段階評価尺度に従っていても、乗数が異なっている場合があることに注意してください。たとえば、CBSE、ICSE、JNTU (Jawahar Lal Nehru Technical University) は共通の 10 段階評価尺度に従いますが、乗数は異なります。CBSE はすべての変換計算の乗数として 9.5 を考慮しますが、ICSE は乗数として 9.8 を使用し、JNTU は CGPA からパーセンテージへの計算またはパーセンテージから CGPA への計算の乗数として 10 を使用します。",
+  "section4_title": "Lord Calculator の CGPA パーセンテージ計算機を使用する方法は?",
+  "section4_text1": "評価システムと成績変換について知っておくべき重要な概念を掘り下げる前に、正確な結果を得るために Lord Calculator のパーセンテージから CGPA への計算機を使用する方法を説明します。",
+  "section4_steps": {
+    "step1": "教育用計算機の下にある <span class='font-semibold'>CGPA へのパーセンテージ計算機</span> を開きます。",
+    "step2": "最初のフィールドでは、パーセンテージを入力するよう求められます。正確な変換を行うために、小数点を含むパーセンテージを正確に入力してください。",
+    "step3": "次に、所属機関が採用している評価尺度を選択します。標準尺度以外の場合、つまり 4、5、または 10 の評価尺度の場合は、乗数を直接入力する必要があります。",
+    "step4": "どちらの場合も、評価尺度を入力したか、乗算係数を選択したかにかかわらず、次のフィールドに表示される乗算係数を再確認してください。前述のように、教育機関が標準の評価尺度に従っていても、異なる乗算係数を使用している可能性があります。そのため、そのような場合は乗算係数を適宜調整する必要があります。そうしないと、パーセンテージから CGPA への変換が正確になりません。"
+  },
+  "section4_text2": "すべての情報を入力したら、「計算」ボタンを押します。画面にパーセンテージが CGPA に変換されて表示されます。",
+  "section5-title": "パーセンテージとは何ですか? CGPA とどう違うのですか?",
+  "section5_percentage_title": "パーセンテージ",
+  "section5_percentage_text": "パーセンテージは、試験中に獲得した成績を正確に反映しています。これは、100 点満点の成績を標準化して表したものです。",
+  "section5_cgpa_title": "平均得点",
+  "section5_cgpa_text": "CGPA は、達成された SGPA の累積平均であり、学業成績の丸められた平均として使用されます。",
+  "section6-title": "CGPA とは何ですか? また、どのように計算されますか?",
+  "section6_description": "CGPA (累積成績平均点) は、定められた学業期間における学生の学業成績の総合評価です。大学によっては、全学期の成績平均点として計算するところもあれば、単位も計算に含めるところもあります。",
+  "section6_formula_title": "CGPA計算式 方法1",
+  "section6_formula_description": "CGPA を計算する方法の 1 つは、学期全体の SGPA (Semester Grade Points) の平均を求めることです。計算式は次のとおりです。",
+  "section6_formula_sgpas": "sem.1 の SGPA + sem.2 の SGPA + sem.3 の SGPA +......................+ sem.3 の SGPA N",
+  "section6_formula_divisor": "合計学期数",
+  "section6_example_title": "例：",
+  "section6_example": "ラムは 4 学期で SGPA 値 6、8.5、7、9.5 を達成しました。彼の CGPA は次のようになります。",
+  "section_method2_title": "CGPA計算式方法2",
+  "section_method2_description": "もう 1 つの方法は、SGPA と取得単位数の積の合計を計算し、それを合計単位数で割ることです。式は次のとおりです。",
+  "section_method2_formula_sgpa": "(セメスター 1 の SGPA × セメスター 1 で取得した単位) + (セメスター 2 の SGPA × セメスター 2 で取得した単位) + ...... + (セメスター N の SGPA × セメスター N で取得した単位)",
+  "section_method2_formula_divisor": "合計クレジット",
+  "section_method2_example_title": "例：",
+  "section_method2_example": "Shyam は、SGPA 値が 7.2、6.5、8.9、9.6 で、対応する単位は 4、3、3、5 でした。彼の CGPA は次のようになります。",
+  "section_percentage_formula_title": "パーセンテージ計算式",
+  "section_percentage_formula_description": "パーセンテージは、さまざまな科目/学期で獲得した点数の合計を総点数の合計で割り、その結果に 100 を掛けて計算されます。計算式は次のとおりです。",
+  "section_percentage_formula_equation": "パーセンテージ =",
+  "section_percentage_formula_numerator": "全科目/学期の得点の合計",
+  "section_percentage_formula_multiplier": "* 100",
+  "section_percentage_formula_denominator": "すべての科目/学期に割り当てられた合計点数",
+  "example_percentage_title": "例：",
+  "example_percentage_description": "ガンシャムは、第 1 学期に 300 点満点中 295 点、第 2 学期に 300 点満点中 265 点、第 3 学期に 300 点満点中 273 点、第 4 学期に 300 点満点中 264 点を獲得しました。彼のパーセンテージは次のようになります。",
+  "example_percentage_equation": "パーセンテージ =",
+  "cgpa_to_percentage_note": "CGPA からパーセンテージへの変換は、各教育機関が異なる評価システムとスケールを使用しているため異なります。学期数、評価スケール、単位システムなどの要素も、CGPA の計算方法と変換方法に影響します。",
+  "calculators_usage_title": "CGPA とパーセンテージの計算機はいつ役立つのでしょうか?",
+  "calculators_usage_description": "これらの計算機は、特に、さらなる研究、就職の機会に応募する場合、または学術文書を準備する場合に、CGPA をパーセンテージに、またはその逆へすばやく変換する必要がある場合に特に便利です。",
+  "confusion_about_terms_title": "用語や略語について混乱していませんか?",
+  "confusion_about_terms_description": "記載されている用語や略語について不明な点がある場合は、",
+  "confusion_about_terms_link_text": "ここをクリック",
+  "percentage_to_cgpa_tool_intro": "Lord Calculator のパーセンテージから CGPA への計算機は、成績をさまざまな形式間で迅速かつ正確に変換する必要がある場合に役立ちます。複雑な小数点計算による混乱をなくし、毎回正確な変換を保証します。では、このツールはいつ使用する必要がありますか?",
+  "percentage_to_cgpa_tool_usage_title": "Lord Calculator の CGPA パーセンテージ計算機はいつ使用すればよいですか?",
+  "percentage_to_cgpa_tool_usage_description": "このツールは、異なる形式の成績をシームレスに切り替える必要があるあらゆる状況に最適です。いくつかの一般的なシナリオを見てみましょう。",
+  "usage_higher_studies_title": "高等教育の申請書を記入する際",
+  "usage_higher_studies_description1": "高等教育機関、特に国際機関に出願する場合、成績を異なる形式で入力する必要がある場合があります。この計算機を使用すると、成績を必要な形式に迅速かつ正確に変換できるため、出願を取り消すような間違いを犯すリスクを回避できます。",
+  "usage_higher_studies_description2": "SGPA から CGPA を計算する必要がある場合でも、CGPA からパーセンテージを計算する必要がある場合でも、CGPA から GPA を計算する必要がある場合でも、この計算機はすべてをカバーし、手間をかけずに適切な形式で成績を取得できるようにします。",
+  "usage_competitive_exams_title": "競争試験の申込書を記入する際",
+  "usage_competitive_exams_description": "多くの競争試験では、パーセンテージを入力する必要があります。ただし、一部の工学教育機関では CGPA システムを好みます。そのような場合、当社の計算機を使用すると、CGPA をパーセンテージに、またはその逆に迅速かつ正確に変換できるため、試験申請書の形式要件を満たすことができます。",
+  "usage_comparative_measurement_title": "教育者による比較測定",
+  "usage_comparative_measurement_description": "教育者は、多くの生徒の成績を比較して合理化する必要に迫られることがよくあります。手動で変換を計算する代わりに、このオンライン計算機は高速で正確なソリューションを提供し、時間を大幅に節約し、間違いの可能性を排除します。",
+  "usage_conclusion": "これらすべてのケースにおいて、高等教育への応募、試験用紙の記入、または多数の学生の成績の比較のいずれの場合でも、Lord Calculator の Percentage to CGPA Calculator を使用すると、正確性と効率性が確保されます。",
+  "common_mistakes_title": "CGPA のパーセンテージを正確に計算する際に避けるべきよくある間違い",
+  "common_mistakes_intro": "パーセンテージから CGPA への変換式は非常にシンプルに見えますが、多くの学生は依然として間違った結果を得ています。最も一般的な間違いの 1 つは、正確な乗算係数を知らないことです。乗算係数については、次のサブ見出しで詳しく説明します。まず、パーセンテージから CGPA を正確に計算する際に避けるべき一般的な間違いをすべて見てみましょう。",
+  "mistake_decimal_points": "計算では、小数点を早めに切り上げてしまうことがよくあります。このように切り上げられた数値は、結果にわずかな変化をもたらす可能性があります。計算の最後のステップまで小数点を切り上げない方がよいでしょう。ただし、結果が出た後は、必要に応じて数値を切り上げることができます。",
+  "mistake_grading_scale": "よくあるもう 1 つの間違いは、所属機関の計算式を認識していないことです。所属機関が別の評価基準に従っており、別の評価基準を使用して成績を計算している場合、変換は正確ではありません。また、同じ評価基準の場合でも、乗算係数は異なる場合があります。乗算係数を再確認することをお勧めします。",
+  "mistake_conversion_formula": "乗算係数は正しいのに、変換結果が不正確ですか? この場合は、所属機関の変換式を確認する必要があります。ムンバイ大学などの多くの大学では、標準の変換式とは異なる独自の変換式を採用しています。たとえば、ムンバイ大学の CGPA 計算式は、パーセンテージ = (CGPA × 7.25) + 11 です。したがって、パーセンテージから CGPA への計算を行う場合は特に、これらの係数を確認する必要があります。",
+  "mistake_other_conversions": "他にも落とし穴はありますが、それらは SGPA から CGPA への変換や GPA から CGPA への変換など、他の変換に関連しています。それらについてはそれぞれのセクションで説明しました。",
+  "grading_scales_title": "なぜさまざまな機関が異なる評価基準と変換式を採用するのか",
+  "grading_scales_intro": "これまで何度も例を挙げて、いくつかの機関が異なる評価基準に従っていることを述べてきました。しかし、なぜそうなるのでしょうか? 理由はさまざま考えられます。それぞれを一つずつ見ていきましょう。",
+  "reason_historical_cultural": "歴史的および文化的な違い: さまざまな国が伝統的な評価システムを採用しています。その結果、地理的な場所に基づいて異なる評価基準が見られます。たとえば、アメリカの教育機関は 4 段階評価基準に従いますが、インドやその他のアジアの教育機関は 10 段階評価基準に従います。",
+  "reason_assessment_approach": "学生を評価するための異なるアプローチ: 教育の近代化が進むにつれて、学生を評価する方法も進化しています。最近では、教育機関は単純な成績評価ではなく、総合的な評価に重点を置いています。その結果、CGPA および GPA システムが普及しつつあります。",
+  "reason_international_standards": "国際基準への適合: 留学は一般的な概念となっています。多くの教育機関は、学生が追加の手続きを省けるよう国際基準を採用しています。たとえば、ヨーロッパの多くの教育機関は、大陸全体の他の教育機関と足並みを揃えるために、ECTS (欧州単位互換制度) に従っています。",
+  "reason_universal_standard": "普遍的な成績評価基準の達成の難しさ: 普遍的な成績評価基準に従うことは論理的で公平であるように思われますが、実際には困難です。教育機関は異なる成績評価基準に従っているため、大学や学校全体で学生の学業成績を公平に評価するには、標準的な変換式が必要です。",
+  "conversion_title": "さまざまな委員会と大学のパーセンテージから CGPA への変換",
+  "table_heading_institution": "機関",
+  "table_heading_formula": "式",
+  "cbse1": "CBSE（インド中央中等教育委員会）",
+  "icse1": "ICSE（インド中等教育証明書）、インド",
+  "maharashtra1": "マハラシュトラ州委員会、インド",
+  "anna_university1": "アンナ大学、タミル・ナードゥ州、インド",
+  "jntu1": "ジャワハルラール ネルー工科大学 (JNTU)、テランガーナおよびアンドラ プラデーシュ州、インド",
+  "vtu1": "ヴィスベスバラヤ工科大学 (VTU)、カルナータカ州、インド",
+  "gtu1": "グジャラート工科大学（GTU）、グジャラート州、インド",
+  "mu1": "ムンバイ大学、マハラシュトラ州、インド",
+  "mahe1": "マニパル高等教育アカデミー（MAHE）、カルナタカ州、インド",
+  "amity1": "アミティ大学（インド）",
+  "vit1": "ヴェルール工科大学（VIT）、タミル・ナードゥ州、インド",
+  "sppu1": "サビトリバイ プーレ プネ大学 (SPPU)、マハラシュトラ州、インド",
+  "iit1": "IIT（インド工科大学）、インド",
+  "nit1": "NIT（インド国立工科大学）",
+  "bits_pilani1": "BITSピラニ（ビルラ工科大学）、インド",
+  "du1": "デリー大学（DU）、インド",
+  "bhu1": "バナーラス・ヒンドゥー大学（BHU）、インド",
+  "osmania1": "オスマニア大学、テランガナ州、インド",
+  "pu1": "パンジャブ大学、インド、パンジャブ州",
+  "srm1": "SRM科学技術研究所（SRMIST）、タミル・ナードゥ州、インド",
+  "toronto1": "トロント大学（カナダ）",
+  "ubc1": "ブリティッシュコロンビア大学（UBC）、カナダ",
+  "anu1": "オーストラリア国立大学（ANU）、オーストラリア",
+  "sydney1": "シドニー大学（オーストラリア）",
+  "melbourne1": "メルボルン大学（オーストラリア）",
+  "uc_system1": "カリフォルニア大学システム（UCLA、UCバークレーなど）、米国",
+  "harvard1": "ハーバード大学（米国）",
+  "oxford1": "オックスフォード大学（イギリス）",
+  "cambridge1": "ケンブリッジ大学（イギリス）",
+  "nus1": "シンガポール国立大学（NUS）、シンガポール",
+  "hku1": "香港大学 (HKU)、香港",
+  "tum1": "ミュンヘン工科大学（TUM）、ドイツ",
+  "eth_zurich1": "スイス連邦工科大学チューリッヒ校",
+  "tokyo1": "東京大学",
+  "cape_town1": "ケープタウン大学（南アフリカ）",
+  "mcgill1": "マギル大学（カナダ）",
+  "peking1": "北京大学（中国）",
+  "ntu1": "国立台湾大学（NTU）、台湾",
+  "aut1": "オークランド工科大学（AUT）、ニュージーランド",
+  "cbse": "計算式: CGPA = パーセンテージ / 9.5",
+  "icse": "計算式: CGPA = パーセンテージ / 9.8 (学校によって異なる場合があります)",
+  "maharashtra": "計算式: CGPA = パーセンテージ / 9.5",
+  "anna_university": "計算式: CGPA = パーセンテージ / 10",
+  "jntu": "計算式: CGPA = パーセンテージ / 10",
+  "vtu": "計算式: CGPA = パーセンテージ / 9.1 (学部によって異なる場合があります)",
+  "gtu": "計算式: CGPA = (パーセンテージ - 12) / 7.1",
+  "mu": "計算式: CGPA = (パーセンテージ - 11) / 7.25",
+  "mahe": "計算式: CGPA = パーセンテージ / 10",
+  "amity": "計算式: CGPA = パーセンテージ / 9",
+  "vit": "計算式: CGPA = パーセンテージ / 9.5 (プログラムによって異なります)",
+  "sppu": "計算式: CGPA = パーセンテージ / 6.3",
+  "iit": "計算式: CGPA = パーセンテージ / 10 (一部の IIT では、特定のコースに独自のスケールが使用される場合があります)",
+  "nit": "計算式: CGPA = パーセンテージ / 10",
+  "bits_pilani": "計算式: CGPA = パーセンテージ / 10",
+  "du": "計算式: CGPA = パーセンテージ / 9.5 (DU の CGPA 計算はプログラムによって異なる場合があります)",
+  "bhu": "計算式: CGPA = パーセンテージ / 10",
+  "osmania": "計算式: CGPA = パーセンテージ / 10",
+  "pu": "計算式: CGPA = パーセンテージ / 9.5",
+  "srm": "計算式: CGPA = パーセンテージ / 10",
+  "toronto": "評価基準: 4.0 GPA スケール。注意: 直接的な変換式はありません。申請者は GPA 相当表またはサードパーティの評価者を使用します。",
+  "ubc": "評価基準: 4.33 GPA スケール。注意: 特定の CGPA 変換はありません。同等性の詳細については UBC にお問い合わせください。",
+  "anu": "評価基準: 7 段階評価。計算式 (一般的なガイドライン): CGPA = パーセンテージ / 7.1 (各評価基準の同等性)。",
+  "sydney": "評価基準: 7 段階 GPA システム。計算式 (一般的なガイドライン): CGPA = パーセンテージ / 7.5 (正確な変換には資格評価が必要な場合があります)。",
+  "melbourne": "評価基準: 7 段階 GPA スケール。注意: CGPA 相当については入学担当に問い合わせてください。直接的な計算式はありません。",
+  "uc_system": "評価基準: 4.0 GPA スケール。注意: 普遍的な CGPA 計算式はありません。変換には WES または同様の評価ツールを使用します。",
+  "harvard": "評価基準: 4.0 GPA スケール。注: CGPA から GPA への変換にはサードパーティのサービス (例: WES) を使用します。",
+  "oxford": "評価基準: 英国優等クラス名称 (First、Upper Second など)。注: 直接的な CGPA 計算式はありません。CGPA 8.5 ～ 10 (10 点満点) は First クラスとみなされることが多いです。",
+  "cambridge": "評価基準: UK Honours。パーセンテージはクラス名にマッピングされます。CGPA 変換の直接的な式はありません。",
+  "nus": "評価基準: 5.0 GPA スケール。直接変換式はありません。NUS 同等表を使用します。",
+  "hku": "評価基準: 4.3 GPA スケール。特定の CGPA 変換式はありません。",
+  "tum": "評価基準: スイスの 6 段階評価 注: CGPA 8.5 以上は競争力があり、固定の変換式はありません。",
+  "eth_zurich": "評価基準: スイスの 6 段階評価 注: CGPA 8.5 以上は競争力があり、固定の変換式はありません。",
+  "tokyo": "評価基準: 日本の 4.0 GPA スケール 注: 通常、競争力のある応募者には CGPA 8.0 以上が求められます。",
+  "cape_town": "評価基準: 4 段階 GPA スケールとパーセンテージ システム 注: 南アフリカの基準に基づいて CGPA 変換が必要になる場合があります。",
+  "mcgill": "評価基準: 4.0 GPA スケール 注: 正確な変換には、WES または同様のサービスが必要になることがよくあります。",
+  "peking": "評価基準: 4.0 GPA スケール 注: 公式の CGPA 変換が必要です。通常は 8.0 以上の CGPA が求められます。",
+  "ntu": "評価基準: 4.3 GPA スケール 注: 競争力のある応募者の場合、通常 8.0 を超える CGPA が必要です。",
+  "aut": "評価基準: 9 段階 GPA スケール 計算式 (一般的なガイドライン): CGPA = パーセンテージ / 7.1 (ニュージーランドの GPA スケールに準拠)。",
+  "title--": "CGPA にパーセンテージを使用するオンライン計算機の長所と短所",
+  "pros_title": "パーセンテージから CGPA への計算機の利点",
+  "pros_1": "外出先で成績を変換します。オンライン計算機には、定義済みの値と方程式があります。したがって、方程式の正しい場所に値を入れる必要はありません。指定されたフィールドに値を入力するだけで、時間や労力を無駄にすることなく結果が得られます。",
+  "pros_2": "オンライン計算機にはインタラクティブでシンプルなインターフェースが備わっています。さらに、成績メーターなどの視覚的な要素により、成績をよりわかりやすく視覚化できます。",
+  "pros_3": "従来の計算機では、成績の履歴を計算するには、計算したすべてのデータを記録する必要があります。このようなシナリオは、教育者がさまざまな大学の学生の成績をユニバーサル形式で追跡する必要がある場合に発生します。しかし、Lord Calculator では、計算されたすべての成績の履歴を「結果」フィールドの下の表形式で表示できます。さらに、履歴を PDF としてエクスポートして、将来の目的のために保存することもできます。",
+  "pros_4": "オンライン計算機を使用すると、デフォルトの計算機で方程式を作成するときや、ペンと紙で手動で計算するときに発生する可能性のある人為的エラーの可能性も排除されます。",
+  "cons_title": "パーセンテージ対CGPA計算機の短所",
+  "cons_1": "さまざまな乗算係数: 同じ評価基準であっても、大学によって乗算係数が異なることがわかっています。したがって、このようなシナリオでは、オンライン計算機はすべての大学の要件を満たすことができません。正確な変換を行うには、乗算係数を手動で変更する必要があります。",
+  "cons_2": "異なる変換式: ムンバイ大学などの大学では、CGPA からパーセンテージへの変換にまったく異なる式を使用していることもあります。たとえば、ムンバイ大学の CGPA からパーセンテージへの変換式は、CGPA = (パーセンテージ - 11) / 7.25 です。このような場合、オンライン計算機では追加の演算子を自動または手動で追加することはできません。このような変換を行うときは、成績を計算する従来の方法を参照する必要があります。",
+  "summary_title": "まとめ",
+  "summary_1": "これまで、パーセンテージと CGPA の概念、それらを変換して相互に使用する方法、成績の変更が必要になる可能性のある状況、さまざまな大学/委員会がさまざまな評価基準と変換式にどのように依存しているかについて学習しました。",
+  "summary_2": "また、CGPA からパーセンテージへの計算機、GPA から CGPA への計算機、CGPA から GPA への計算機、SGPA への計算機など、同様の計算機もリストしています。これらの計算機に関連する特定の概念を知る必要がある場合は、それぞれの計算機の説明をお読みください。説明には、すべての重要な詳細が記載されています。",
+  "faq_title": "よくある質問（FAQ）",
+  "faq_1_question": "Q1. CGPA のパーセンテージ計算機とは何ですか?",
+  "faq_1_answer": "パーセンテージから CGPA への計算機を使用すると、パーセンテージを CGPA に簡単に変換できます。必要なのは、パーセンテージと乗数を入力することだけです。",
+  "faq_2_question": "Q2.パーセントをCGPAに変換するにはどうすればいいですか?",
+  "faq_2_answer": "パーセントを CGPA に変換するには、Lord Calculator などのオンライン計算機を使用するか、以下の式を使用して手動で計算します。",
+  "faq_2_formula": "CGPA = (パーセンテージ - 50) / 10",
+  "faq_3_question": "Q3.Lord Calculator の CGPA に対するパーセンテージ計算機はどのように使用すればよいですか?",
+  "faq_3_answer": "Lord Calculator の CGPA に対するパーセンテージ計算機を使用するには、次の手順に従います。",
+  "faq_3_step_1": "最初のフィールドにパーセンテージを入力します。",
+  "faq_3_step_2": "評価スケールを選択するか、乗数を手動で入力します。",
+  "faq_3_step_3": "乗数を正確に入力したか再確認してください。",
+  "faq_3_step_4": "「計算」ボタンを押すと、結果フィールドに CGPA が表示されます。",
+  "faq_4_question": "Q4. 国際大学に従って CGPA を変換するにはどうすればよいですか?",
+  "faq_4_answer": "国際大学によってさまざまな変換システムを採用しています。特定の変換システムについて詳しくは、",
+  "faq_4_link": "ここをクリック",
+  "faq_5_question": "Q5.成績を計算するときに避けるべきよくある間違いは何ですか?",
+  "faq_5_answer": "よくある間違いは次のとおりです:",
+  "faq_5_mistake_1": "計算の早い段階で小数点を切り上げないようにしてください。",
+  "faq_5_mistake_2": "所属機関の乗数を正しく入力したことを確認してください。",
+  "faq_5_mistake_3": "あなたの大学が標準的な計算方法に従っているかどうかを確認してください。",
+  "faq_6_question": "Q6.エンジニアリングのCGPAに対するパーセンテージの計算機は異なりますか?",
+  "faq_6_answer": "多くの工学系大学では、異なる変換式を使用しています。学部間では変わらないかもしれませんが、大学によって独自の標準変換式が採用されている場合があり、他の大学とは一致しない可能性があります。",
+  "faq_7_question": "Q7.CGPA 計算のパーセンテージ VTU 式とは何ですか?",
+  "faq_7_answer": "VTU (Visvesvaraya Technological University) の CGPA に対するパーセンテージの計算式は、他の式とは異なります。次のように表すことができます。",
+  "faq_7_example": "CGPA = (パーセンテージ - 50) / 10 例: 80% のスコアを獲得した場合、VTU に基づくそれぞれの CGPA は次のようになります: CGPA = 8 + 0.75 = 8.75",
+  "faqs": [
+    {
+      "question": "Q8. CBSE の CGPA 計算式におけるパーセンテージとは何ですか?",
+      "answer": "回答: CBSE におけるパーセンテージから CGPA への変換式は次のとおりです。",
+      "formula": "CGPA = (パーセンテージ - 50) / 9.5"
+    },
+    {
+      "question": "Q9. CGPA の 70% とは何ですか?",
+      "answer": "回答: 使用される変換式は次のとおりです。",
+      "details": [
+        "CGPA 70% = 7.37 (9.5 乗数による)",
+        "CGPA 70% = 3.5（5段階評価）",
+        "CGPA 70% = 2.8 (4段階評価スケールによる)"
+      ]
+    }
+  ],
+  "faqa": [
+    {
+      "question": "Q10. CGPA の 75% とは何ですか?",
+      "answer": "回答 Q9 と同じ式を使用すると、CGPA の 75% は次のようになります。",
+      "details": [
+        "CGPA 75% = 7.89 (9.5 乗数による)",
+        "CGPA 75% = 3.75 (5段階評価スケールによる)",
+        "CGPA 75% = 3（4段階評価スケールによる）"
+      ]
+    },
+    {
+      "question": "Q11. CGPAの80%とは何ですか?",
+      "answer": "回答 Q9 と同じ式を使用すると、CGPA の 80% は次のようになります。",
+      "details": [
+        "CGPA 80% = 8.42 (9.5 乗数による)",
+        "CGPA 80% = 4（5段階評価スケールによる）",
+        "CGPA 80% = 3.2 (4段階評価スケールによる)"
+      ]
+    },
+    {
+      "question": "Q12. CGPA の 95.4% とは何ですか?",
+      "answer": "回答 Q9 と同じ式を使用すると、CGPA の 95.4% は次のようになります。",
+      "details": [
+        "CGPA 95.4% = 10 (9.5 評価スケールに従って、95% を超えるパーセンテージはすべて 10 CGPA としてカウントされることに注意してください)",
+        "CGPA 95.4% = 4.77 (5段階評価による)",
+        "CGPA 95.4% = 3.81 (4段階評価スケールによる)"
+      ]
+    }
+  ],
+  "note": "注意: 変換式は機関によって異なります。",
+  "--title": "CGPA へのパーセンテージ計算機",
+  "enterPercentage": "パーセンテージを入力",
+  "placeholderPercentage": "パーセンテージを入力してください",
+  "chooseGradeScale": "グレードスケールを選択",
+  "scale4": "4.0 スケール",
+  "scale5": "5.0 スケール",
+  "scale10": "10.0 スケール",
+  "setMultiplicationFactor": "乗算係数を設定する",
+  "placeholderFactor": "係数を入力してください",
+  "-calculateButton": "計算する",
+  "-resetButton": "リセット",
+  "errorMessage": "エラー: 無効な入力",
+  "calculatedCGPATitle": "計算されたCGPA",
+  "placeholderCGPA": "割合:",
+  "-downloadButton": "ダウンロード",
+  "-whatsappButton": "ワッツアップ",
+  "-copyLinkButton": "リンクをコピー",
+  "-linkCopied": "リンクをコピーしました!",
+  "historyTitle": "計算履歴",
+  "tableSNo": "番号",
+  "tablePercentage": "パーセンテージ",
+  "tableCGPA": "平均年収",
+  "percentageContent": "含有率",
+  "section1": "CGPA からパーセンテージへの計算機",
+  "intro_paragraph": "学習仲間や学者の皆さん、ようこそ！皆さんご存知のとおり、CGPA とパーセンテージは教育システム全体で重要な役割を果たしています。私たちは、これらを互換的に使用する必要がある状況に陥ることがよくあります。そこで、Lord Calculator は、外出先で成績を計算するのに役立つ、最も信頼性が高く、超高速な CGPA からパーセンテージへの計算機を提供します。ここでは、CGPA 計算機の仕組みに関する詳細なガイドと、さまざまな大学で使用されている評価システムについて説明します。また、さまざまな評価システムに従って、CGPA からパーセンテージへの計算式もリストしています。",
+  "-section2": "CGPAからパーセンテージへの変換式",
+  "-formula": "パーセンテージ = CGPA × 乗数",
+  "-table_of_contents": "目次",
+  "cgpa_to_percentage_calculator": "CGPA からパーセンテージへの計算機",
+  "cgpa_to_percentage_formula": "CGPAからパーセンテージへの変換式",
+  "lord_calculator_tool": "Lord Calculator の CGPA からパーセンテージへの計算機",
+  "how_to_use_tool": "Lord Calculator の CGPA からパーセンテージへの計算方法",
+  "-what_is_cgpa": "CGPA とは何ですか? また、どのように計算されますか?",
+  "important_terms": "知っておくべき重要な用語の定義",
+  "why_convert_cgpa": "CGPA をパーセンテージに変換したり、パーセンテージを CGPA に変換したりする理由は何ですか?",
+  "calculate_percentage": "CGPAからパーセンテージを計算する方法",
+  "common_pitfalls": "CGPAからパーセンテージへの変換時によくある落とし穴",
+  "cgpa_in_10_point": "10 グレード ポイント システムにおける CGPA のパーセンテージ",
+  "cgpa_in_5_point": "CGPA を 5 段階評価のパーセンテージで表す",
+  "cgpa_in_4_point": "CGPA を 4 段階評価のパーセンテージで表す",
+  "grading_scale": "評価基準とは何ですか? 大学はどのようにして標準評価基準を選択するのですか?",
+  "-multiplication_factor": "乗算係数とは何ですか? また、どのように機能しますか?",
+  "different_boards": "さまざまな委員会や大学の CGPA からパーセンテージへの変換",
+  "grading_scale_impacts": "異なる評価基準は学生にどのような影響を与えますか?",
+  "-faqs": "CGPA Calculatorに関するよくある質問",
+  "lord_calculator_cgpa_calculator": "Lord Calculator の CGPA からパーセンテージへの計算機",
+  "cgpa_calculator_description": "当社の CGPA 計算機は、使いやすさと超高速計算という 2 つの主な要素を念頭に置いて設計されています。",
+  "cgpa_calculator_description_expanded": "成績の計算にはさまざまな要素が関係しますが、成績やパーセンテージを正確に計算するために必要な要素はすべて組み込まれています。大学によって使用する成績評価基準や乗算係数は異なります (心配しないでください。これらの用語については以下で説明します)。利便性を考慮して、成績評価基準と手動乗算係数の両方を組み込んでいます。",
+  "how_to_use_heading": "Lord Calculator の CGPA からパーセンテージへの計算方法",
+  "how_to_use_description": "CGPA 計算機に必要なフィールドを入力し、「計算」をクリックするだけで、あなたのパーセンテージが成績メーターとともに表示されます。とても簡単です。ただし、成績とパーセンテージを正確に計算するために必要なフィールドとデータについて簡単に説明させてください。",
+  "how_to_use_step1": "へお越しください",
+  "how_to_use_step1_link": "https://lordcalculator.com/educational-calculator/cgpa-to-percentage-calculator",
+  "how_to_use_step2": "最初のフィールドに CGPA を入力します。小数点も含め、正確に入力してください。",
+  "how_to_use_step3": "大学で使用されている評価尺度を選択します。一般的な評価尺度は 4、5、10 です。または、手動で乗算係数を入力し、計算ボタンを押すこともできます。すべての値を入力したら、「計算」をクリックしてパーセンテージを取得します。また、評価メーターでパフォーマンスを確認することもできます。さらに、CGPA からパーセンテージへの変換証明書を当社から取得できます (これは代表的な証明書であることに注意してください)。",
+  "tip_heading": "CGPA からパーセンテージを計算するためのヒント",
+  "tip_description1": "同じ評価基準であっても、大学によって乗算係数 (変換係数とも呼ばれます) が異なる場合があります。たとえば、大学 X では 1 ポイントの評価基準で標準乗算係数 9.5 が使用されているのに対し、別の大学では係数 9.7 または 9.8 が使用されている場合があります。そのため、「計算」ボタンを押す前に、CGPA からパーセンテージへの計算機に入力する乗算係数を再確認することが重要です。",
+  "tip_description2": "大学の成績評価基準や倍率がわからない場合は、心配しないでください。",
+  "tip_description2_link": "さまざまな委員会や大学のCGPAからパーセンテージへの変換",
+  "tip_description3": "大学の成績評価基準や倍率がわからないですか? 心配はいりません! 計算を簡単にするために、さまざまな委員会や大学の CGPA からパーセンテージへの変換表をここに用意しました。",
+  "what_is_cgpa_heading": "CGPA とは何ですか? また、どのように計算されますか?",
+  "cgpa_formula_method_1_title": "CGPA計算式方法1:",
+  "cgpa_formula_method_1_description": "CGPA を計算する方法の 1 つは、平均を求めることです。この場合、CGPA の計算式は、すべての学期の成績ポイントの合計を学期数で割ったものになります。数学的には、CGPA の式は次のように表すことができます。",
+  "cgpa_formula_method_1_formula": "CGPA =",
+  "cgpa_formula_method_1_numerator": "sem.1 の SGPA + sem.2 の SGPA + sem.3 の SGPA +......................+ sem.3 の SGPA 「ん」",
+  "cgpa_formula_method_1_denominator": "学期数",
+  "cgpa_example_description": "例: 「私の親友」のエッセイに出てくる友人の Ram は、ついに学校を卒業して大学に入学しました。そこで彼は 4 学期で SGPA 6+8.5+7+9.5 を達成しました。したがって、彼の CGPA は次のようになります。",
+  "cgpa_example_formula_1": "CGPA =",
+  "cgpa_example_numerator": "（6 + 8.5 + 7 + 9.5）",
+  "cgpa_example_denominator": "4",
+  "cgpa_example_result": "CGPA =",
+  "cgpa_example_final_numerator": "31",
+  "cgpa_example_final_denominator": "4",
+  "cgpa_example_final_result": "= 7.75",
+  "cgpa_formula_method_2_title": "CGPA計算式方法2:",
+  "cgpa_formula_method_2_description": "実際に使用されているもう 1 つの CGPA 計算式は、SGPA と取得単位数の積の合計を取得単位数で割るというものです。数学的には、この CGPA 計算式は次のように表すことができます。",
+  "cgpa_formula_method_2_formula": "CGPA =",
+  "cgpa_formula_method_2_numerator": "(セメスター 1 の SGPA × セメスター 1 で取得した単位) + (セメスター 2 の SGPA × セメスター 2 で取得した単位) + ...... + (セメスター「N」の SGPA × セメスター「N」で取得した単位)",
+  "cgpa_formula_method_2_denominator": "取得単位数合計",
+  "cgpa_exampletitle": "例：",
+  "cgpa_exampledescription": "「私の親友」のエッセイに出てくるもう一人の友人、シャムも別の大学に入学しました。そこで彼は 4 学期で SGPA 7.2+6.5+8.9+9.6 を達成し、単位は 4+3+3+5 でした。すると彼の CGPA は次のようになります。",
+  "cgpa_examplecalculation": "CGPA =",
+  "cgpa_examplenumerator": "(7.2×4 + 6.5×3 + 8.9×3 + 9.6×5)",
+  "cgpa_exampledenominator": "（4 + 3 + 3 + 5）",
+  "cgpa_examplefinal_numerator": "28.8 + 19.5 + 26.7 + 48",
+  "cgpa_examplefinal_denominator": "15",
+  "cgpa_examplefinal_result": "CGPA = 8.2",
+  "important_terms_title": "知っておくべき重要な用語の定義",
+  "important_terms_description": "公式文書、フォーム、または証明書を確認すると、繰り返し使用される特定の用語や略語が見つかります。さまざまな委員会や大学が変換式をどのように設定しているかを説明する前に、それらについて簡単に確認しましょう。",
+  "grade_points": {
+    "title": "成績ポイント",
+    "description": "成績ポイントは、特定の成績評価に割り当てられる対応する数値です。大学によって、成績評価に応じて成績ポイントの範囲が調整されます。たとえば、ある大学では A 成績に 10 の成績ポイントが使用されるのに対し、別の大学では 10 の成績ポイントに O (優秀) が使用される場合があります。"
+  },
+  "gpa": {
+    "title": "成績平均点",
+    "description": "Grade Point Average の略。学生が 1 学期または 1 学期に獲得した成績点の平均を表します。"
+  },
+  "cgpa": "平均得点",
+  "sgpa": {
+    "title": "SGPA",
+    "description": "SGPA は、Semester Grade Point Average の略です。特定の学期における全科目の平均成績点を示します。取得した単位数と単位時間は、SGPA の計算において重要な役割を果たします。"
+  },
+  "letter_grade": {
+    "title": "文字等級",
+    "description": "これらは、パーセンテージまたは得点の数値、または CGPA に割り当てられた成績の文字です。教育システムによって、文字による成績評価の形式は異なります。たとえば、米国では従来の A ～ F の文字による成績評価が採用されていますが、スコットランドや一部のインドの教育システムでは、優秀は「O」、優秀は「S」など、他の表記が採用されています。"
+  },
+  "credit_hours": {
+    "title": "単位数",
+    "description": "単位数とは、学生が週/学期ごとに特定の授業に費やす時間数です。この時間は科目によって異なる場合があります。主要科目の単位数はより多く、選択科目の単位数はより少なくなる場合があります。"
+  },
+  "credit_points": {
+    "title": "クレジットポイント",
+    "description": "クレジット ポイントは、成績ポイントとクレジット時間を掛けて計算されます。つまり、クレジット ポイント = 成績ポイント x クレジット時間です。"
+  },
+  "weighted_average": {
+    "title": "加重平均",
+    "description": "加重平均は、生徒の全体的な学業成績を表します。加重平均では、すべての評価に重みに応じて値が割り当てられ、加重された成績を使用して最終成績が計算されます。"
+  },
+  "normalization": {
+    "title": "正規化",
+    "description": "正規化とは、さまざまな試験や科目の難易度の違いを補うためにスコアを調整するプロセスです。正規化の影響は、異なる大学間の GPA または CGPA を比較するときに確認できます。"
+  },
+  "cumulative_average": {
+    "title": "累積平均",
+    "description": "これは、これまでの学期を通じて獲得したすべての成績ポイントまたは GPA の平均です。"
+  },
+  "whyConvertTitle": "CGPA をパーセンテージに変換したり、パーセンテージを CGPA に変換したりする理由は何ですか?",
+  "whyConvertExplanation": "関連する用語をすべて理解したところで、次のような疑問が生じます。なぜ CGPA からパーセンテージ、あるいはパーセンテージから CGPA への変換や計算が必要なのでしょうか。理由は人によって異なるかもしれません。",
+  "boardsUniversitiesTitle": "委員会/大学の要件",
+  "boardsUniversitiesText1": "特定の学術フォームや手順では、学生は CGPA とともにパーセンテージを提出する必要があります。その場合、Lord Calculator などの Web サイトにすぐにアクセスして、必要な形式で瞬時に成績を取得する以外に選択肢はありません。数回クリックするだけで、CGPA をパーセンテージに変換できます。",
+  "boardsUniversitiesText2": "さらに、委員会/大学を変更する場合は、新しい委員会/大学の形式に従って以前の成績を記入する必要がある場合があります。",
+  "boardsUniversitiesText3": "もう 1 つの理由は、GATE、CAT、UPSC などの競争試験のフォームに記入する際、受験者は成績をパーセンテージなどの一般的な形式で提出する必要があることです。そして、小さな間違いが 1 つあるだけでフォームが拒否される可能性があることは誰もが知っています。このような場合、CGPA を要求された形式に正確に変換できる信頼できるツールが役に立ち、時間と労力を節約できます。",
+  "internationalRelevanceTitle": "国際的重要性",
+  "internationalRelevanceText1": "CGPA 計算機を使用するもう 1 つの一般的な実際の状況は、海外のコースに申し込むときです。たとえば、インド人学生が海外留学を計画している場合、インド国内の成績評価システムは大きく異なります。デリー大学の成績計算は IIT のものと異なります。大学/委員会が異なれば、乗算係数も異なります。このようなシナリオでは、海外の大学は、申請者の学業成績を公平かつ偏りなく評価するために、パーセンテージなどの普遍的なパラメーターを設定します。したがって、パーセンテージから CGPA または CGPA からパーセンテージなど、大学が確立した方法を使用して成績を変換する必要があります。",
+  "internationalRelevanceText2": "同じことが、CBSE、ICSE、州の教育委員会、および米国や欧州連合で遵守されている基準などの教育委員会にも当てはまります。",
+  "howToCalculatePercentageTitle": "CGPAからパーセンテージを計算する方法",
+  "howToCalculatePercentageText1": "CGPA をパーセンテージに変換することの重要性と関連性を理解したところで、CGPA からパーセンテージを正確に決定する方法を見てみましょう。これを行うには、手動の方法とオンラインの CGPA 計算機を使用する方法の 2 つの方法があります。手動の方法では方程式を書いて段階的に計算しますが、オンライン計算機では最小限の労力で成績を瞬時に変換できます。心配しないでください。両方の方法について説明して、自分に最適な方法を選択してください。",
+  "manualMethodTitle": "手動の方法",
+  "manualMethodText1": "CGPA をパーセンテージに変換するには (またはその逆)、委員会/大学が使用する評価基準、クレジット スコア、乗数を理解する必要があります。この情報を入手したら、次の式を適用できます。",
+  "percentageFormula": "パーセンテージ = CGPA × 乗数",
+  "manualMethodText2": "公式を適用すると、4分の1の作業は完了です。計算が得意な方やヴェーダ数学に精通している方であれば、正確な小数点を使って除算や乗算を行い、正しい変換値を得るのは簡単です。ただし、間違いを避けるために、計算機の使用を強くお勧めします。",
+  "manualMethodText3": "しかし、特にすでに計算機を使用している場合は、自動化された方法を使用して時間と労力を節約してみませんか? プロセス全体がより迅速かつ正確になります。",
+  "automaticMethodTitle": "自動方式",
+  "automaticMethodText1": "自動方法はシンプルで間違いがありません。自動方法を使用して CGPA をパーセンテージに変換するには (またはその逆)、CGPA 計算機の適切なフィールドに必要な値を入力するだけです。評価基準を選択するか、手動で乗算係数を入力して、[計算] ボタンを押します。これで完了です。変換は瞬時に完了します。",
+  "automaticMethodText2": "LordCalculator の CGPA 計算機を使用している場合は、変換履歴を PDF としてエクスポートし、将来の参照用に保存することもできます。カスタマイズされた CGPA からパーセンテージへの変換証明書も提供しています。",
+  "automaticMethodText3": "自動方式を使用すると、手動計算中に誤って間違った値を入力するなどのエラーの可能性がなくなります。これは、乗算や除算で間違いが発生することがある基本的な計算機を使用する場合に特に役立ちます。",
+  "commonPitfallsTitle": "CGPAからパーセンテージへの変換時によくある落とし穴",
+  "commonPitfallsIntro": "CGPA をパーセンテージに変換する方法がわかったところで、正確な結果を得るために慎重に考慮すべきことがいくつかあります。以下は、CGPA からパーセンテージを計算する際 (またはその逆) に学生が犯す最も一般的な間違いです。これらのよくある間違いを避けるようにしてください。",
+  "misinterpretingFormula": "式の誤解:",
+  "misinterpretingFormulaDesc": "学生の中には、9.5 の代わりに 10 を使用するなど、間違った乗数を使用して式を誤って解釈する人もいます。さまざまな大学が同じ評価基準を使用している場合でも、CGPA からパーセンテージ、またはパーセンテージから CGPA への変換に異なる乗数を適用する場合があることを理解することが重要です。たとえば、CBSE、ICSE、ジャワハルラール・ネルー工科大学 (JNTU)、サヴィトリバイ・プーレ大学 (SPPU) はすべて 10 段階評価基準を使用していますが、それぞれ独自の乗数があります。CBSE は 9.5、ICSE は 9.8、JNTU は 10、SPPU は 6.3 を使用します。したがって、オンラインの CGPA 計算機を使用する場合でも、間違いを避けるために、委員会または大学の正確な乗数を知っておくことが重要です。",
+  "notKnowingBoardsFormula": "取締役会の公式を知らない:",
+  "notKnowingBoardsFormulaDesc": "よくある落とし穴は、大学によって計算式が異なることに気付いていないことです。前述のように、JNTU や SPPU は乗算係数を直接適用して CGPA をパーセンテージに変換します。ただし、ムンバイ大学やグジャラート工科大学 (GTU) などの大学では、別のアプローチを採用しています。まず、CGPA に特定の乗算係数 (ムンバイ大学の場合は 7.25、GTU の場合は 7.1) を掛け、次にその積に固定値 (ムンバイ大学の場合は 11、GTU の場合は 12) を加えてパーセンテージを決定します。さまざまな大学や委員会のこれらの変換係数については、この記事の後半で説明します。",
+  "overRelianceOnCalculators": "オンライン CGPA 計算機への過度の依存:",
+  "overRelianceOnCalculatorsDesc": "オンライン計算機は成績変換のための迅速で信頼性の高いソリューションを提供しますが、常に 100% 正確であるとは限りません。オンライン計算機は、ムンバイ大学や GTU などの、ここで説明したすべての特殊なケースを考慮していない可能性があります。LordCalculator は、考えられるすべてのパラメーターを含めるよう努めていますが、変換にオンライン計算機のみに頼ることはお勧めしません。自分の値と、大学または委員会が使用する方法を常に再確認することをお勧めします。",
+  "cgpaToPercentage10GradePoints": "10 グレード ポイント システムにおける CGPA のパーセンテージ",
+  "cgpaToPercentage5GradeScale": "CGPA を 5 段階評価のパーセンテージで表す",
+  "cgpaToPercentage4GradeScale": "CGPA を 4 段階評価のパーセンテージで表す",
+  "gradingScaleAndUniversitiesChoice": "評価基準とは何ですか? 大学はどのようにして標準評価基準を選択するのですか?",
+  "gradingScaleDescription": "評価尺度は、学生の学業成績を評価する要素です。パーセンテージのようなもので、学業成績を大まかに把握できます。評価尺度は、文字による成績 (A、B、C など)、GPA、パーセンテージなど、わかりやすい形式で学生の成績を分類します。",
+  "commonGradingScales": "最も一般的な評価基準には以下のものがあります。",
+  "percentage": "パーセンテージ",
+  "usedWorldwide": "世界中で使用されており、範囲は 0 ～ 100% です。",
+  "gpa-": "GPA（成績平均点）",
+  "primarilyInUSA": "主に米国で使用され、範囲は 0 から 4.0、5.0、または 10.0 です。",
+  "cgpa-": "CGPA（累積成績平均点）",
+  "usedInIndia": "インド、シンガポール、CBSE の委員会で使用され、総合的な評価を提供します。",
+  "letterGrades": "文字による成績",
+  "usedInUSAndCanada": "パーセンテージの範囲に基づいて、米国とカナダで使用されます。",
+  "numericalScale": "数値スケール",
+  "usedInRussiaLatinAmerica": "ロシアとラテンアメリカの一部で使用され、範囲は 1 から 10 または 1 から 5 です。",
+  "gradingScalesIntro": "評価基準は、文字による成績や GPA スコアなどの記号や数字で学業成績を分類する標準化された評価です。これにより、学生の学業レポートを一貫して比較できます。最も一般的な評価基準は次のとおりです。",
+  "percentage-": "パーセンテージ",
+  "percentageDescription": "世界中で広く使用されており、0～100% の範囲で正確な学業成績の洞察を提供します。",
+  "-gpa": "成績平均点",
+  "gpaDescription": "米国およびその他の国で使用され、0 から 4.0、5.0、または 10.0 の範囲で累積的なパフォーマンスを示します。",
+  "-cgpa": "平均得点",
+  "cgpaDescription": "主にインド、シンガポール、CBSE の委員会で、信用スコアなどの要素を含む総合的な視点を提供します。",
+  "-letterGrades": "文字による成績",
+  "letterGradesDescription": "米国とカナダで実践されており、各文字はパーセンテージの範囲を表します。",
+  "-numericalScale": "数値スケール",
+  "numericalScaleDescription": "ロシアとラテンアメリカでは、1～10 や 1～5 などの尺度を使用して学業成績を細分化して評価します。",
+  "universitiesChooseGradingScales": "大学は、地域的基準、歴史的重要性、グローバル化などの要素に基づいて成績評価基準を選択します。たとえば、英国の優等生制度や米国のGPA制度は、標準化されたシステムとして20世紀初頭に勢いを増しました。",
+  "modernGradingSystems": "現代の成績評価システムには、相対的な達成度、習熟度、個人の成長といった側面が含まれることがよくあります。例としては、二重成績評価システム、ボローニャプロセス、国際バカロレアなどがあります。このアプローチは国際的な互換性を促進します。",
+  "understandGradingPattern": "大学の成績評価パターンを理解し、正確な国際換算のために World Education Services (WES) や NARIC (UK) などのサービスを検討することが重要です。これらの評価機関は詳細な等価表を使用しているためです。",
+  "multiplicationFactorTitle": "乗算係数とは何ですか? また、どのように機能しますか?",
+  "multiplicationFactorIntro": "乗算係数は、CGPA や GPA などの成績評価尺度をパーセンテージに変換するためのパラメータです。この係数は、異なる成績評価システムを持つ機関に応募する場合や、就職や試験に応募する場合に、成績をさまざまな形式に適応させるために不可欠です。",
+  "multiplicationFactorExample": "たとえば、9.5 という係数は、学生の学業成績を正確に反映するために開発されたもので、一部の大学では CGPA をパーセンテージに変換するために広く使用されています。",
+  "multiplicationFactorReference": "成績変換をよりよく理解するために、留学生は WES や NARIC などの公式サービスを参照する必要があります。",
+  "cgpaToPercentageConversionTitle": "さまざまな委員会や大学の CGPA からパーセンテージへの変換",
+  "boardUniversity": "理事会/大学",
+  "conversionFormula": "変換式",
+  "cbseIndia": "CBSE（インド）",
+  "icseIndia": "ICSE（インド）",
+  "maharashtraStateBoardIndia": "マハラシュトラ州委員会（インド）",
+  "annaUniversityIndia": "アンナ大学（インド）",
+  "jawaharlalNehruTechnologicalUniversityIndia": "ジャワハルラール・ネルー工科大学（インド）",
+  "visvesvarayaTechnologicalUniversityIndia": "ヴィシュヴェシュワラヤ工科大学（インド）",
+  "gujaratTechnologicalUniversityIndia": "グジャラート工科大学（インド）",
+  "universityOfMumbaiIndia": "ムンバイ大学（インド）",
+  "manipalAcademyOfHigherEducationIndia": "マニパル高等教育アカデミー（インド）",
+  "amityUniversityIndia": "アミティ大学（インド）",
+  "velloreInstituteOfTechnologyIndia": "ヴェルール工科大学（インド）",
+  "savitribaiPhulePuneUniversityIndia": "サビトリバイ・プーレ・プネー大学（インド）",
+  "iitsIndia": "IIT（インド）",
+  "nitsIndia": "NIT（インド）",
+  "bitsPilaniIndia": "BITSピラニ（インド）",
+  "delhiUniversityIndia": "デリー大学（インド）",
+  "banarasHinduUniversityIndia": "バナーラス・ヒンドゥー大学（インド）",
+  "osmaniaUniversityIndia": "オスマニア大学（インド）",
+  "punjabUniversityIndia": "パンジャブ大学（インド）",
+  "srmInstituteOfScienceAndTechnologyIndia": "SRM科学技術研究所（インド）",
+  "percentageFormula-": "パーセンテージ = CGPA × 乗数",
+  "international_institutions": "国際機関",
+  "university_of_toronto": "トロント大学（カナダ）",
+  "university_of_toronto_details": "GPAスケール（4.0）、直接変換なし",
+  "university_of_british_columbia": "ブリティッシュコロンビア大学（カナダ）",
+  "university_of_british_columbia_details": "GPAスケール: 4.33; 変換ガイダンスあり",
+  "australian_national_university": "オーストラリア国立大学（オーストラリア）",
+  "australian_national_university_details": "換算: CGPA * 7.1 相当",
+  "university_of_sydney": "シドニー大学（オーストラリア）",
+  "university_of_sydney_details": "通常、資格評価が必要",
+  "university_of_california": "カリフォルニア大学（米国）",
+  "university_of_california_details": "GPAスケール: 4.0; WES変換ガイダンスを使用",
+  "harvard_university": "ハーバード大学（アメリカ）",
+  "harvard_university_details": "CGPA/GPA変換にWESを使用する",
+  "university_of_oxford": "オックスフォード大学（英国）",
+  "university_of_oxford_details": "英国優等学位の分類; GPA バンドによる変換",
+  "eth-zurich": "ETHチューリッヒ（スイス）",
+  "eth_zurich_details": "スイスの6段階評価。CGPA = 8.5が競争力がある",
+  "auckland_university_of_technology": "オークランド工科大学（AUT）、ニュージーランド",
+  "auckland_university_of_technology_details": "4.3点スケール; GPA = : 国際CGPA評価が必要; 通常は",
+  "national_taiwan_university": "国立台湾大学（NTU）、台湾",
+  "national_taiwan_university_details": "9 段階評価。CGPA = : インドの CGPA の場合、現地の基準に合わせるために変換係数 7.1 がよく使用されます。",
+  "peking_university": "北京大学（中国）",
+  "peking_university_details": "4.0点満点; GPA = : CGPA変換を次のようなサービスを通じてリクエストできます",
+  "mcgill_university": "マギル大学（カナダ）",
+  "mcgill_university_details": "4.0 ポイントスケール、GPA = : マギル大学は CGPA 変換に WES または同様のサービスを使用しており、通常 80% 以上を競争力があると見なします。",
+  "university_of_cape_town": "ケープタウン大学（南アフリカ）",
+  "university_of_cape_town_details": "パーセンテージと GPA = :留学生には 4 段階の GPA スケールを使用し、南アフリカの基準に合わせて CGPA の変換を要求する場合があります。",
+  "university_of_tokyo": "東京大学",
+  "university_of_tokyo_details": "日本の 4.0 GPA スケール = :入学課のガイダンスに従って CGPA を日本の GPA に変換します。競争力のあるプログラムでは、通常 8.0 を超える CGPA が求められます。",
+  "section_title": "異なる評価基準は学生にどのような影響を与えますか?",
+  "content_paragraph": "異なる成績評価基準があると、生徒にさまざまな影響を与える可能性があります。生徒の学業に対する考え方、キャリアの見通し、さらには社会的動向にも影響を与える可能性があります。",
+  "list_items": [
+    {
+      "title": "仲間や社会からのプレッシャーの増加",
+      "description": "パーセンテージのような厳密な尺度は、学生間の仲間や社会からのプレッシャーを増大させる可能性がありますが、レターグレーディングのようなより広範な尺度は、プレッシャーを軽減する可能性があります。これは、多くの教育機関が、特に低学年に対してより広範な尺度を採用している多くの理由の 1 つでもあります。"
+    },
+    {
+      "title": "キャリアチャンス",
+      "description": "就職の機会にも影響が出る可能性があります。成績評価基準が変わると、奨学金、入学、さらには就職の申請が通るのが難しくなります。最近、友人の就職活動が保留になったケースがありました。入学した​​委員会が、パーセンテージを記載した追加の証明書を発行しなかったためです。代わりに、正確な点数を記したマークシートのみが発行されました。しかし、最初のケースでは合格証明書を持っていなかったにもかかわらず、合格証明書を紛失したと申し立てられました。"
+    },
+    {
+      "title": "学術的展望",
+      "description": "成績評価基準のばらつきは、学生の学業生活の見通しにも影響を与える可能性があります。厳密な成績評価システムで勉強している学生と、より広範な成績評価システムで勉強している学生では、試験に対する考え方が異なります。以前の学生は試験に重点を置いているかもしれませんが、後期の学生は試験よりも実践的なプロジェクトに取り組むことを優先し、より実践的な知識を身に付けるかもしれません。このようなばらつきは、学生に不必要なプレッシャーを与える可能性があります。"
+    },
+    {
+      "title": "閉会の辞",
+      "description": "成績評価システム、成績変換、CGPA からパーセンテージへの計算、パーセンテージから CGPA、CGPA 計算機について知っておくべき重要な情報をすべて網羅するよう努めました。また、当社の CGPA 計算機は、あらゆる成績評価スケールや乗算係数に対して正確に機能するように設計されています。ただし、いずれかのトピックに関して説明が必要と思われる場合や、この特定の計算機について提案がある場合は、当社までご連絡ください。"
+    }
+  ],
+  "cgpa-Description": "CGPA は、Cumulative Grade Point Average の略で、定められた学業期間における学生の学業成績の総合評価です。一部の大学や委員会では、これを学生がコースを通じて獲得した全学期の成績点の平均と見なしていますが、他の大学や委員会では、計算に単位という追加の要素を含める場合があります。",
+  "title3": "CGPA からパーセンテージへの計算機",
+  "enterCGPA3": "CGPAを入力",
+  "cgpaPlaceholder3": "CGPAを入力してください",
+  "chooseGradeScale3": "グレードスケールを選択",
+  "multiplicationFactor": "乗算係数",
+  "multiplicationFactorPlaceholder": "乗算係数を入力",
+  "error": "エラー",
+  "calculateButton3": "計算する",
+  "resetButton3": "リセット",
+  "calculatedPercentage": "計算されたパーセンテージ",
+  "percentagePlaceholder": "割合:",
+  "downloadButton3": "ダウンロード",
+  "whatsappButton3": "ワッツアップ",
+  "copyLinkButton3": "リンクをコピー",
+  "linkCopied3": "リンクをコピーしました!",
+  "calculationHistory3": "計算履歴",
+  "sno": "番号",
+  "header": {
+    "calculator": "電卓",
+    "title": "教育",
+    "subtitle": "CGPA 計算機を使用して CGPA からパーセンテージへの変換などの簡単な変換を解決したり、科学計算機を使用して高度な計算を解決したりしますか?",
+    "cgpa_to_percentage": "CGPAからパーセンテージ"
+  },
+  "link": {
+    "text": "ロード・カリキュレーター",
+    "description": "面倒で困難な計算を簡単にこなすのに役立ちます。最高のテクノロジーであなたの学習の旅を加速させましょう。あなたには最高のものしかふさわしくないのですから。"
+  },
+  "choose_lord_calculator": {
+    "title": "Lord Calculator を選ぶ理由",
+    "feature_1": {
+      "title": "高速点滅と超信頼性",
+      "description": "はい、その両方を実現しました。最も複雑な計算も瞬時に正確に解決します。間違いは許されません。"
+    },
+    "feature_2": {
+      "title": "シンプルで簡単",
+      "description": "複雑な部分は方程式だけです。直感的なボタンとメーターにより、ここでのナビゲーションは非常に簡単です。"
+    },
+    "feature_3": {
+      "title": "ダウンロード、保存、共有",
+      "description": "解いた方程式を保存する必要がありますか? 心配しないでください。一度解いてから計算を共有したり保存したりして、オフラインで一生使用できます。"
+    }
+  },
+  "calculatorCards": [
+    {
+      "title": "CGPA からパーセンテージへの計算機",
+      "description": "CGPA からパーセンテージへの計算機を使用して、外出先で成績を変換できます。レポートを無料でダウンロードまたは共有することもできます。",
+      "emoji": null
+    },
+    {
+      "title": "CGPA へのパーセンテージ計算機",
+      "description": "CGPA の変換は面倒かもしれませんが、パーセンテージから CGPA への計算機を使えば簡単です。世界中のほとんどの教育機関と互換性があります。",
+      "emoji": null
+    },
+    {
+      "title": "GPA から CGPA への計算機",
+      "description": "シンプルなデザインのこの GPA から CGPA へのコンバーターは、時間を節約するのに役立ちます。学生にも教育者にも便利です。",
+      "emoji": null
+    },
+    {
+      "title": "CGPA から GPA への計算機",
+      "description": "海外の希望する大学への入学資格を確認していますか? CGPA から GPA へのコンバーターを使用して成績をすばやく変換し、嬉しいニュースを共有しましょう!",
+      "emoji": null
+    }
+  ],
+  "tit": "教育用電卓",
+  "des": "CGPA、GPA、パーセンテージ、科学計算ツールなど、必要なものをお知らせいただければ、無料で永久にご利用いただけます。",
+  "emoji5": null,
+  "section": {
+    "title": "教育、金融、健康—",
+    "highlightedText": "ロード・カリキュレーター",
+    "subtitle": "必要なのはこれだけです!",
+    "description": "健康から金融、建設、教育まで、すべてのタスクを 1 つのプラットフォームで実行できます。必要なすべての計算機を入手できます。",
+    "additionalDescription": "超高速かつ正確 - わずかなエラーも発生しません。"
+  },
+  "footer": {
+    "title": "ロード・カリキュレーター",
+    "location": "位置：",
+    "contact": "お問い合わせ: bhushanthakur04@gmail.com",
+    "categories": "カテゴリー",
+    "educational_calculators": "教育用電卓",
+    "scientific_calculators": "科学計算用計算機",
+    "womens_calculators": "女性用電卓",
+    "pages": "ページ",
+    "privacy_policy": "プライバシーポリシー",
+    "terms_of_use": "利用規約",
+    "about_us": "私たちについて",
+    "copyright": "© 2024 Lord Calculator。無断複写・転載を禁じます。",
+    "social_links": {
+      "facebook": "フェイスブック",
+      "instagram": "インスタグラム",
+      "twitter": "ツイッター",
+      "whatsapp": "ワッツアップ"
+    }
+  }
+}

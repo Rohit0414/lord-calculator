@@ -14,6 +14,7 @@ import russianTranslations from "./utils/translations/russian.json";
 import tamilTranslations from "./utils/translations/tamil.json";
 import malayalamTranslations from "./utils/translations/malayalam.json";
 import arabicTranslations from "./utils/translations/arabic.json";
+import japneaseTranslations from './utils/translations/japnease.json';
 
 const resources = {
   en: {
@@ -54,6 +55,9 @@ const resources = {
   },
   ar:{
     translation: arabicTranslations,
+  },
+  ja:{
+    translation: japneaseTranslations,
   },
 };
 console.log(resources);

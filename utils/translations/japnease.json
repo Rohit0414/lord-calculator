@@ -22,7 +22,7 @@
   "institution_migration_message": "ある機関から別の機関に移行する場合、特に両方の機関が異なる成績評価システムを採用している場合は、信頼性の高い成績変換計算機が重要になります。変換には、最も一般的に受け入れられている国際式を使用する Lord Calculator の GPA から CGPA への計算機を利用できます。",
   "guide_message": "このガイドでは、GPA から CGPA への変換に使用される式、この変換が必要になる可能性があるシナリオ、考慮すべき注意事項、およびこのような変換を実行する際に留意すべき重要なポイントについて説明します。",
   "Table of Contents": "目次",
-  "GPA to CGPA Calculator": "GPA から CGPA への計算機",
+  "title": "GPA から CGPA への計算機",
   "GPA To CGPA Calculation Formula": "GPAからCGPAへの計算式",
   "How to Use Lord Calculator’s GPA to CGPA Calculator?": "Lord Calculator の GPA から CGPA への計算機の使い方は?",
   "How CGPA & GPA Are Different?": "CGPA と GPA の違いは何ですか?",

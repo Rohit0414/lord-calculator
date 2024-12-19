@@ -12,7 +12,7 @@ const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("");
+  const [selectedLanguage, setSelectedLanguage] = useState('');
   const [searchInput, setSearchInput] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [isProfileOpen, setIsProfileOpen] = useState(false);

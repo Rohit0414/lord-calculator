@@ -1178,5 +1178,13 @@
     "cgpa_to_percentage": "सीजीपीए से प्रतिशत कैलकुलेटर",
     "percentage_to_cgpa": "प्रतिशत से सीजीपीए कैलकुलेटर",
     "gpa_to_cgpa": "जीपीए से सीजीपीए कैलकुलेटर",
-    "cgpa_to_gpa": "सीजीपीए से जीपीए कैलकुलेटर"
+    "cgpa_to_gpa": "सीजीपीए से जीपीए कैलकुलेटर",
+    "home": "मुख्य पृष्ठ",
+    "categories": "श्रेणियाँ",
+    "educational_calculator": "शैक्षिक कैलकुलेटर",
+    "scientific_calculator": "वैज्ञानिक कैलकुलेटर",
+    "womens_calculator": "महिलाओं के लिए कैलकुलेटर",
+    "search_placeholder": "खोजें...",
+    "search_button": "खोजें",
+    "search_results": "खोज परिणाम"
 }

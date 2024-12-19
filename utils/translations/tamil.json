@@ -1177,5 +1177,13 @@
     "cgpa_to_percentage": "CGPA முதல் சதவிகிதம் கணிப்பி",
     "percentage_to_cgpa": "சதவிகிதம் முதல் CGPA கணிப்பி",
     "gpa_to_cgpa": "GPA முதல் CGPA கணிப்பி",
-    "cgpa_to_gpa": "CGPA முதல் GPA கணிப்பி"
+    "cgpa_to_gpa": "CGPA முதல் GPA கணிப்பி",
+    "home": "முகப்பு",
+    "categories": "பிரிவுகள்",
+    "educational_calculator": "கல்வி கணிப்பான்",
+    "scientific_calculator": "அரிவியல் கணிப்பான்",
+    "womens_calculator": "பெண்களுக்கு கணிப்பான்",
+    "search_placeholder": "தேடல்...",
+    "search_button": "தேடல்",
+    "search_results": "தேடல் முடிவுகள்"
 }

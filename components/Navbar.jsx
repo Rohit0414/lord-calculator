@@ -12,7 +12,7 @@ const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("english");
+  const [selectedLanguage, setSelectedLanguage] = useState("");
   const [searchInput, setSearchInput] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -110,14 +110,14 @@ const Navbar = () => {
               type="text"
               value={searchInput}
               onChange={handleSearchInputChange}
-              placeholder="Search..."
+              placeholder={t("search_placeholder")}
               className="border px-3 py-1 rounded-l-md w-full dark:bg-gray-700 dark:text-white"
             />
             <button
               type="submit"
               className="bg-blue-500 text-white px-3 py-1 rounded-r-md hover:bg-blue-600"
             >
-              Search
+               {t("search_button")}
             </button>
 
 
@@ -135,7 +135,7 @@ const Navbar = () => {
 
 
           <Link href="/" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
-            Home
+          {t("home")}
           </Link>
 
 
@@ -144,7 +144,7 @@ const Navbar = () => {
               onClick={() => setIsCategoryOpen(!isCategoryOpen)}
               className="flex items-center px-4 py-2 text-black dark:text-white hover:text-[#009688] rounded-md transition duration-300"
             >
-              Categories
+              {t("categories")}
               <FaChevronDown
                 className={`ml-2 transition-transform duration-300 ${isCategoryOpen ? "rotate-180" : "rotate-0"}`}
               />
@@ -154,13 +154,13 @@ const Navbar = () => {
                 }`}
             >
               <Link href="/educational-calculator" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
-                Educational Calculator
+              {t("educational_calculator")}
               </Link>
               <Link href="/scientific-calculator" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
-                Scientific Calculator
+              {t("scientific_calculator")}
               </Link>
               <Link href="/womens-calculator" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
-                Womens Calculator
+              {t("womens_calculator")}
               </Link>
             </div>
           </div>

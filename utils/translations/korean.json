@@ -1177,5 +1177,13 @@
     "cgpa_to_percentage": "CGPA에서 백분율로 계산기",
     "percentage_to_cgpa": "백분율에서 CGPA로 계산기",
     "gpa_to_cgpa": "GPA에서 CGPA로 계산기",
-    "cgpa_to_gpa": "CGPA에서 GPA로 계산기"
+    "cgpa_to_gpa": "CGPA에서 GPA로 계산기",
+    "home": "홈",
+    "categories": "카테고리",
+    "educational_calculator": "교육 계산기",
+    "scientific_calculator": "과학 계산기",
+    "womens_calculator": "여성용 계산기",
+    "search_placeholder": "검색...",
+    "search_button": "검색",
+    "search_results": "검색 결과"
 }

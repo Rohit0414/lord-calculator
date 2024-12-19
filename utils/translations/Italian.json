@@ -1173,9 +1173,17 @@
             "whatsapp": "WhatsApp"
         }
     },
-    "educational_calculators_title": "Calcolatrici educative",
+    "educational_calculators_title": "Calcolatori educativi",
     "cgpa_to_percentage": "Calcolatrice da CGPA a Percentuale",
     "percentage_to_cgpa": "Calcolatrice da Percentuale a CGPA",
     "gpa_to_cgpa": "Calcolatrice da GPA a CGPA",
-    "cgpa_to_gpa": "Calcolatrice da CGPA a GPA"
+    "cgpa_to_gpa": "Calcolatrice da CGPA a GPA",
+    "home": "Home",
+    "categories": "Categorie",
+    "educational_calculator": "Calcolatrice Educativa",
+    "scientific_calculator": "Calcolatrice Scientifica",
+    "womens_calculator": "Calcolatrice per Donne",
+    "search_placeholder": "Cerca...",
+    "search_button": "Cerca",
+    "search_results": "Risultati della ricerca"
 }

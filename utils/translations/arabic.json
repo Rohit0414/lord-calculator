@@ -1441,5 +1441,13 @@
   "cgpa_to_percentage": "حاسبة تحويل المعدل التراكمي إلى النسبة المئوية",
   "percentage_to_cgpa": "حاسبة تحويل النسبة المئوية إلى المعدل التراكمي",
   "gpa_to_cgpa": "حاسبة تحويل المعدل التراكمي إلى المعدل الجامعي",
-  "cgpa_to_gpa": "حاسبة تحويل المعدل التراكمي إلى النقاط"
+  "cgpa_to_gpa": "حاسبة تحويل المعدل التراكمي إلى النقاط",
+  "home": "الصفحة الرئيسية",
+  "categories": "الفئات",
+  "educational_calculator": "حاسبة تعليمية",
+  "scientific_calculator": "حاسبة علمية",
+  "womens_calculator": "حاسبة للنساء",
+  "search_placeholder": "ابحث...",
+  "search_button": "ابحث",
+  "search_results": "نتائج البحث"
 }

@@ -1177,5 +1177,13 @@
     "cgpa_to_percentage": "CGPA-യിൽ നിന്ന് ശതമാനത്തിലേക്ക് കാൽക്കുലേറ്റർ",
     "percentage_to_cgpa": "ശതമാനത്തിൽ നിന്ന് CGPA-ലേക്ക് കാൽക്കുലേറ്റർ",
     "gpa_to_cgpa": "GPA-യിൽ നിന്ന് CGPA-ലേക്ക് കാൽക്കുലേറ്റർ",
-    "cgpa_to_gpa": "CGPA-യിൽ നിന്ന് GPA-ലേക്ക് കാൽക്കുലേറ്റർ"
+    "cgpa_to_gpa": "CGPA-യിൽ നിന്ന് GPA-ലേക്ക് കാൽക്കുലേറ്റർ",
+    "home": "ഹോം",
+    "categories": "വിഭാഗങ്ങൾ",
+    "educational_calculator": "വിദ്യാഭ്യാസ കാൽക്കുലേറ്റർ",
+    "scientific_calculator": "ശാസ്ത്രീയ കാൽക്കുലേറ്റർ",
+    "womens_calculator": "സ്ത്രീകൾക്കുള്ള കാൽക്കുലേറ്റർ",
+    "search_placeholder": "ശോധന...",
+    "search_button": "ശോധിക്കുക",
+    "search_results": "ശോധന ഫലങ്ങൾ"
 }

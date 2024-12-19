@@ -1441,5 +1441,13 @@
   "cgpa_to_percentage": "CGPAからパーセンテージへの計算機",
   "percentage_to_cgpa": "パーセンテージからCGPAへの計算機",
   "gpa_to_cgpa": "GPAからCGPAへの計算機",
-  "cgpa_to_gpa": "CGPAからGPAへの計算機"
+  "cgpa_to_gpa": "CGPAからGPAへの計算機",
+  "home": "ホーム",
+  "categories": "カテゴリ",
+  "educational_calculator": "教育計算機",
+  "scientific_calculator": "科学計算機",
+  "womens_calculator": "女性用計算機",
+  "search_placeholder": "検索...",
+  "search_button": "検索",
+  "search_results": "検索結果"
 }

@@ -1178,5 +1178,13 @@
   "cgpa_to_percentage": "Calculadora de CGPA a porcentaje",
   "percentage_to_cgpa": "Calculadora de porcentaje a CGPA",
   "gpa_to_cgpa": "Calculadora de GPA a CGPA",
-  "cgpa_to_gpa": "Calculadora de CGPA a GPA"
+  "cgpa_to_gpa": "Calculadora de CGPA a GPA",
+  "home": "Inicio",
+  "categories": "Categorías",
+  "educational_calculator": "Calculadora Educativa",
+  "scientific_calculator": "Calculadora Científica",
+  "womens_calculator": "Calculadora Femenina",
+  "search_placeholder": "Buscar...",
+  "search_button": "Buscar",
+  "search_results": "Resultados de búsqueda"
 }

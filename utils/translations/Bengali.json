@@ -1177,5 +1177,13 @@
     "cgpa_to_percentage": "সিজিপিএ থেকে শতাংশ ক্যালকুলেটর",
     "percentage_to_cgpa": "শতাংশ থেকে সিজিপিএ ক্যালকুলেটর",
     "gpa_to_cgpa": "জিপিএ থেকে সিজিপিএ ক্যালকুলেটর",
-    "cgpa_to_gpa": "সিজিপিএ থেকে জিপিএ ক্যালকুলেটর"
+    "cgpa_to_gpa": "সিজিপিএ থেকে জিপিএ ক্যালকুলেটর",
+    "home": "হোম",
+    "categories": "বিভাগসমূহ",
+    "educational_calculator": "শিক্ষামূলক ক্যালকুলেটর",
+    "scientific_calculator": "বৈজ্ঞানিক ক্যালকুলেটর",
+    "womens_calculator": "মহিলাদের ক্যালকুলেটর",
+    "search_placeholder": "খুঁজুন...",
+    "search_button": "খুঁজুন",
+    "search_results": "অনুসন্ধান ফলাফল"
 }

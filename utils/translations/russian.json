@@ -1177,5 +1177,13 @@
     "cgpa_to_percentage": "Калькулятор CGPA в процент",
     "percentage_to_cgpa": "Калькулятор процента в CGPA",
     "gpa_to_cgpa": "Калькулятор GPA в CGPA",
-    "cgpa_to_gpa": "Калькулятор CGPA в GPA"
+    "cgpa_to_gpa": "Калькулятор CGPA в GPA",
+    "home": "Главная",
+    "categories": "Категории",
+    "educational_calculator": "Образовательный калькулятор",
+    "scientific_calculator": "Научный калькулятор",
+    "womens_calculator": "Калькулятор для женщин",
+    "search_placeholder": "Поиск...",
+    "search_button": "Поиск",
+    "search_results": "Результаты поиска"
 }

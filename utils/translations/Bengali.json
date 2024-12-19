@@ -1172,5 +1172,10 @@
             "twitter": "টুইটার",
             "whatsapp": "WhatsApp"
         }
-    }
+    },
+    "educational_calculators_title": "শিক্ষা সম্পর্কিত ক্যালকুলেটর",
+    "cgpa_to_percentage": "সিজিপিএ থেকে শতাংশ ক্যালকুলেটর",
+    "percentage_to_cgpa": "শতাংশ থেকে সিজিপিএ ক্যালকুলেটর",
+    "gpa_to_cgpa": "জিপিএ থেকে সিজিপিএ ক্যালকুলেটর",
+    "cgpa_to_gpa": "সিজিপিএ থেকে জিপিএ ক্যালকুলেটর"
 }

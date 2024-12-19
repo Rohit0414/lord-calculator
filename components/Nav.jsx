@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from 'next/router';
+import { Translation, useTranslation } from "react-i18next";
 
 
 
@@ -8,6 +9,7 @@ function Nav() {
     const router = useRouter();
     const { filter } = router.query; 
     const [filters, SetFilters] = useState(''); 
+    const {t} = useTranslation();
 
     useEffect(() => {
         
@@ -37,7 +39,7 @@ function Nav() {
                             : 'rounded-sm dark:text-white border-t-0 border-l-0 border-r-0 hover:border-[#009688] hover:text-[#009688]'
                     }`}
                 >
-                    CGPA to Percentage
+                   {t('cgpa_to_percentage')}
                 </div>
 
                
@@ -49,7 +51,7 @@ function Nav() {
                             : 'rounded-sm dark:text-white border-t-0 border-l-0 border-r-0 hover:border-[#009688] hover:text-[#009688]'
                     }`}
                 >
-                    Percentage To CGPA
+                   {t('percentage_to_cgpa')}
                 </div>
 
                
@@ -61,7 +63,7 @@ function Nav() {
                             : 'rounded-sm dark:text-white border-t-0 border-l-0 border-r-0 hover:border-[#009688] hover:text-[#009688]'
                     }`}
                 >
-                    GPA To CGPA
+                   {t('gpa_to_cgpa')}
                 </div>
 
                
@@ -73,7 +75,7 @@ function Nav() {
                             : 'rounded-sm dark:text-white border-t-0 border-l-0 border-r-0 hover:border-[#009688] hover:text-[#009688]'
                     }`}
                 >
-                    CGPA to GPA
+                    {t('cgpa_to_gpa')}
                 </div>
             </div>
 

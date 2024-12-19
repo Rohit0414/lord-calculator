@@ -1172,5 +1172,10 @@
             "twitter": "ട്വിറ്റർ",
             "whatsapp": "WhatsApp"
         }
-    }
+    },
+    "educational_calculators_title": "ശിക്ഷണവുമായി ബന്ധപ്പെട്ട കാൽക്കുലേറ്ററുകൾ",
+    "cgpa_to_percentage": "CGPA-യിൽ നിന്ന് ശതമാനത്തിലേക്ക് കാൽക്കുലേറ്റർ",
+    "percentage_to_cgpa": "ശതമാനത്തിൽ നിന്ന് CGPA-ലേക്ക് കാൽക്കുലേറ്റർ",
+    "gpa_to_cgpa": "GPA-യിൽ നിന്ന് CGPA-ലേക്ക് കാൽക്കുലേറ്റർ",
+    "cgpa_to_gpa": "CGPA-യിൽ നിന്ന് GPA-ലേക്ക് കാൽക്കുലേറ്റർ"
 }

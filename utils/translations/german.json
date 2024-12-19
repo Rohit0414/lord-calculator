@@ -1172,5 +1172,10 @@
             "twitter": "Twitter",
             "whatsapp": "WhatsApp"
         }
-    }
+    },
+    "educational_calculators_title": "Bildungsrechner",
+    "cgpa_to_percentage": "CGPA-zu-Prozent-Rechner",
+    "percentage_to_cgpa": "Prozent-zu-CGPA-Rechner",
+    "gpa_to_cgpa": "GPA-zu-CGPA-Rechner",
+    "cgpa_to_gpa": "CGPA-zu-GPA-Rechner"
 }

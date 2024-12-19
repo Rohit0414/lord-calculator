@@ -1172,5 +1172,10 @@
             "twitter": "ட்விட்டர்",
             "whatsapp": "வாட்ஸ்அப்"
         }
-    }
+    },
+    "educational_calculators_title": "கல்வி தொடர்பான கணிப்பிகள்",
+    "cgpa_to_percentage": "CGPA முதல் சதவிகிதம் கணிப்பி",
+    "percentage_to_cgpa": "சதவிகிதம் முதல் CGPA கணிப்பி",
+    "gpa_to_cgpa": "GPA முதல் CGPA கணிப்பி",
+    "cgpa_to_gpa": "CGPA முதல் GPA கணிப்பி"
 }

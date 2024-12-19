@@ -1109,7 +1109,7 @@
   "choose_lord_calculator": {
     "title": "Why Choose Lord Calculator?",
     "feature_1": {
-      "title": "Blinking Fast & Super Reliable",  
+      "title": "Blinking Fast & Super Reliable",
       "description": "Yes, we have ensured both! Solve even the most complex calculations accurately within a blink of an eye. No room for errors!"
     },
     "feature_2": {
@@ -1172,5 +1172,10 @@
       "twitter": "Twitter",
       "whatsapp": "WhatsApp"
     }
-  }
+  },
+  "educational_calculators_title": "Educational related Calculators",
+  "cgpa_to_percentage": "CGPA to Percentage Calculator",
+  "percentage_to_cgpa": "Percentage to CGPA Calculator",
+  "gpa_to_cgpa": "GPA to CGPA Calculator",
+  "cgpa_to_gpa": "CGPA to GPA Calculator"
 }

@@ -490,15 +490,15 @@ const Cgpatogpa = () => {
 
                         <div className="bg-gray-50 h-[60vh] rounded-xl shadow-xl translate-x-[-60px] p-6 sticky top-28 dark:bg-gray-900">
                             <h1 className="text-2xl font-semibold mb-6 text-center text-gray-700 border-b-2 border-gray-300 pb-3 dark:text-gray-200 dark:border-gray-700">
-                                Educational related Calculators
+                                {t('educational_calculators_title')}
                             </h1>
-                            <ul className="space-y-5 ">
+                            <ul className="space-y-5">
                                 <li>
                                     <Link
                                         href="/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage"
                                         className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
                                     >
-                                        ➗ <span className="ml-3">CGPA to Percentage Calculator</span>
+                                        ➗ <span className="ml-3">{t('cgpa_to_percentage')}</span>
                                     </Link>
                                 </li>
                                 <li>
@@ -506,7 +506,7 @@ const Cgpatogpa = () => {
                                         href="/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA"
                                         className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
                                     >
-                                        🔢 <span className="ml-3">Percentage to CGPA Calculator</span>
+                                        🔢 <span className="ml-3">{t('percentage_to_cgpa')}</span>
                                     </Link>
                                 </li>
                                 <li>
@@ -514,7 +514,7 @@ const Cgpatogpa = () => {
                                         href="/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA"
                                         className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
                                     >
-                                        💡 <span className="ml-3">GPA to CGPA Calculator</span>
+                                        💡 <span className="ml-3">{t('gpa_to_cgpa')}</span>
                                     </Link>
                                 </li>
                                 <li>
@@ -522,7 +522,7 @@ const Cgpatogpa = () => {
                                         href="/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA"
                                         className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
                                     >
-                                        📚 <span className="ml-3">CGPA to GPA Calculator</span>
+                                        📚 <span className="ml-3">{t('cgpa_to_gpa')}</span>
                                     </Link>
                                 </li>
                             </ul>

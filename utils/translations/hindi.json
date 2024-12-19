@@ -1173,5 +1173,10 @@
             "twitter": "ट्विटर",
             "whatsapp": "व्हाट्सएप"
         }
-    }
+    },
+    "educational_calculators_title": "शैक्षणिक कैलकुलेटर",
+    "cgpa_to_percentage": "सीजीपीए से प्रतिशत कैलकुलेटर",
+    "percentage_to_cgpa": "प्रतिशत से सीजीपीए कैलकुलेटर",
+    "gpa_to_cgpa": "जीपीए से सीजीपीए कैलकुलेटर",
+    "cgpa_to_gpa": "सीजीपीए से जीपीए कैलकुलेटर"
 }

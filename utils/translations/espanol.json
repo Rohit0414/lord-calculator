@@ -1173,5 +1173,10 @@
       "twitter": "Twitter",
       "whatsapp": "WhatsApp"
     }
-  }
+  },
+  "educational_calculators_title": "Calculadoras relacionadas con la educación",
+  "cgpa_to_percentage": "Calculadora de CGPA a porcentaje",
+  "percentage_to_cgpa": "Calculadora de porcentaje a CGPA",
+  "gpa_to_cgpa": "Calculadora de GPA a CGPA",
+  "cgpa_to_gpa": "Calculadora de CGPA a GPA"
 }

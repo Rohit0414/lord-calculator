@@ -1172,5 +1172,10 @@
             "twitter": "Twitter",
             "whatsapp": "WhatsApp"
         }
-    }
+    },
+    "educational_calculators_title": "Образовательные калькуляторы",
+    "cgpa_to_percentage": "Калькулятор CGPA в процент",
+    "percentage_to_cgpa": "Калькулятор процента в CGPA",
+    "gpa_to_cgpa": "Калькулятор GPA в CGPA",
+    "cgpa_to_gpa": "Калькулятор CGPA в GPA"
 }

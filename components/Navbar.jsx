@@ -26,6 +26,7 @@ const Navbar = () => {
     i18n.changeLanguage(language);
     const { pathname, query, asPath } = router;
     router.push({ pathname, query }, asPath, { locale: language });
+    setIsLanguageOpen(false)
   };
   const closeDropdowns = (event) => {
     if (categoryRef.current && !categoryRef.current.contains(event.target)) {
@@ -194,7 +195,7 @@ const Navbar = () => {
                   <div class="grid grid-cols-2 gap-4 text-[15px]">
                     <div
                       class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 false text-left"
-                      onClick={() => {  handleLanguageChange('en') }}
+                      onClick={() => { handleLanguageChange('en') }}
                     >
                       English
                       {
@@ -220,7 +221,7 @@ const Navbar = () => {
                     </div>
                     <div
                       class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
-                      onClick={() => {  handleLanguageChange('es') }}
+                      onClick={() => { handleLanguageChange('es') }}
                     >
                       Español
                       {
@@ -245,7 +246,7 @@ const Navbar = () => {
                     </div>
                     <div
                       class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
-                      onClick={() => {  handleLanguageChange('fr') }}
+                      onClick={() => { handleLanguageChange('fr') }}
                     >
                       Français
                       {
@@ -270,7 +271,7 @@ const Navbar = () => {
                     </div>
                     <div
                       class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
-                      onClick={() => {  handleLanguageChange('it') }}
+                      onClick={() => { handleLanguageChange('it') }}
                     >
                       Italiano
                       {
@@ -295,7 +296,7 @@ const Navbar = () => {
                     </div>
                     <div
                       class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
-                      onClick={() => {  handleLanguageChange('de') }}
+                      onClick={() => { handleLanguageChange('de') }}
                     >
                       Deutsch
                       {
@@ -320,7 +321,7 @@ const Navbar = () => {
                     </div>
                     <div
                       class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
-                      onClick={() => {  handleLanguageChange('pt') }}
+                      onClick={() => { handleLanguageChange('pt') }}
                     >
                       Português
                       {
@@ -345,7 +346,7 @@ const Navbar = () => {
                     </div>
                     <div
                       class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
-                      onClick={() => {  handleLanguageChange('bn') }}
+                      onClick={() => { handleLanguageChange('bn') }}
                     >
                       বাংলা
                       {
@@ -370,7 +371,7 @@ const Navbar = () => {
                     </div>
                     <div
                       class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
-                      onClick={() => {  handleLanguageChange('ko') }}
+                      onClick={() => { handleLanguageChange('ko') }}
                     >
                       한국어
                       {
@@ -395,7 +396,7 @@ const Navbar = () => {
                     </div>
                     <div
                       class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
-                      onClick={() => {  handleLanguageChange('hi') }}
+                      onClick={() => { handleLanguageChange('hi') }}
                     >
                       हिन्दी
                       {
@@ -420,7 +421,7 @@ const Navbar = () => {
                     </div>
                     <div
                       class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
-                      onClick={() => {  handleLanguageChange('ru') }}
+                      onClick={() => { handleLanguageChange('ru') }}
                     >
                       Русский
                       {
@@ -445,7 +446,7 @@ const Navbar = () => {
                     </div>
                     <div
                       class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
-                      onClick={() => {  handleLanguageChange('ta') }}
+                      onClick={() => { handleLanguageChange('ta') }}
                     >
                       தமிழ்
                       {
@@ -470,7 +471,7 @@ const Navbar = () => {
                     </div>
                     <div
                       class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
-                      onClick={() => {  handleLanguageChange('ml') }}
+                      onClick={() => { handleLanguageChange('ml') }}
                     >
                       മലയാളം
                       {
@@ -495,7 +496,7 @@ const Navbar = () => {
                     </div>
                     <div
                       class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
-                      onClick={() => {  handleLanguageChange('ja') }}
+                      onClick={() => { handleLanguageChange('ja') }}
                     >
                       日本語
                       {
@@ -520,7 +521,7 @@ const Navbar = () => {
                     </div>
                     <div
                       class="cursor-pointer flex justify-between items-center border-b border-b-[#E0E0E0] py-2 pl-2 pr-16 false text-left"
-                      onClick={() => {  handleLanguageChange('ar') }}
+                      onClick={() => { handleLanguageChange('ar') }}
                     >
                       Arabic
                       {

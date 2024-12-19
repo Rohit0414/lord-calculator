@@ -1172,5 +1172,10 @@
             "twitter": "트위터",
             "whatsapp": "WhatsApp"
         }
-    }
+    },
+    "educational_calculators_title": "교육 관련 계산기",
+    "cgpa_to_percentage": "CGPA에서 백분율로 계산기",
+    "percentage_to_cgpa": "백분율에서 CGPA로 계산기",
+    "gpa_to_cgpa": "GPA에서 CGPA로 계산기",
+    "cgpa_to_gpa": "CGPA에서 GPA로 계산기"
 }

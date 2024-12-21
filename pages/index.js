@@ -13,27 +13,27 @@ export default function Home() {
 
   const image = {
     src: "/book-svgrepo-com.svg",
-    width: 70,
+    width: 60,
     height: 70,
   };
   const image1 = {
     src: "/bulb.svg",
-    width: 70,
+    width: 60,
     height: 70,
   };
   const image2 = {
     src: "/calculator.svg",
-    width: 70,
+    width: 60,
     height: 70,
   };
   const image3 = {
     src: "/divide.svg",
-    width: 70,
+    width: 60,
     height: 70,
   };
   const image4 ={
     src:"/teacher.svg",
-    width: 70,
+    width: 60,
     height: 70,
   }
 

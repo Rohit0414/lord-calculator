@@ -10,7 +10,7 @@ import { PDFDocument, rgb } from 'pdf-lib';
 import Link from 'next/link';
 import PercentageContent from '@/components/PercentageContent';
 import { useTranslation } from 'react-i18next';
-
+import Image from 'next/image';
 
 
 const Percentagetocgpa = () => {
@@ -27,7 +27,29 @@ const Percentagetocgpa = () => {
     const router = useRouter();
     const [copied, setCopied] = useState(false);
     const [showScroll, setShowScroll] = useState(false);
-    const { t } = useTranslation(); 
+    const { t } = useTranslation();
+
+    const image = {
+        src: "/book-svgrepo-com.svg",
+        width: 30,
+        height: 30,
+    };
+    const image1 = {
+        src: "/bulb.svg",
+        width: 30,
+        height: 30,
+    };
+    const image2 = {
+        src: "/calculator.svg",
+        width: 30,
+        height: 30,
+    };
+    const image3 = {
+        src: "/divide.svg",
+        width: 30,
+        height: 30,
+    };
+
 
     const checkScrollTop = () => {
         if (!showScroll && window.pageYOffset > 300) {
@@ -94,63 +116,63 @@ const Percentagetocgpa = () => {
 
     useEffect(() => {
         if (!isClient) return;
-    
+
         const { query } = router;
-    
+
         const generateAndDownloadPDF = async () => {
             if (isDownloading) return;
             setIsDownloading(true);
-    
+
             try {
                 const pdfDoc = await PDFDocument.create();
                 let page = pdfDoc.addPage([600, 500]);
                 const margin = 50;
-    
+
                 if (query.percentage && query.gradingscale && query.factor) {
                     setPercentage(query.percentage);
                     document.getElementById('percentage').value = parseFloat(query.percentage);
                     handleScaleChange(query.gradingscale);
                     setMultiplicationFactor(query.factor);
-    
+
                     const cgpaValue = query.percentage / query.factor;
                     const cgpaFormatted = `${cgpaValue.toFixed(2)}`;
                     const his = [...history, { percentage: query.percentage, cgpa: cgpaFormatted }];
-    
+
                     const headerText = "Calculation History";
                     const headerFontSize = 24;
                     const textWidth = headerFontSize * 0.6 * headerText.length;
                     const centerX = (600 - textWidth) / 2;
-    
+
                     page.drawText(headerText, {
                         x: centerX,
                         y: 450,
                         size: headerFontSize,
                         color: rgb(0, 0.53, 0.71),
                     });
-    
+
                     page.drawLine({
                         start: { x: margin, y: 440 },
                         end: { x: 600 - margin, y: 440 },
                         thickness: 1,
                         color: rgb(0.8, 0.8, 0.8),
                     });
-    
+
                     let yPosition = 420;
                     const lineHeight = 20;
-    
+
                     page.drawText("No.", { x: margin, y: yPosition, size: 14, color: rgb(0, 0, 0) });
                     page.drawText("Percentage", { x: 200, y: yPosition, size: 14, color: rgb(0, 0, 0) });
                     page.drawText("CGPA", { x: 300, y: yPosition, size: 14, color: rgb(0, 0, 0) });
-    
+
                     page.drawLine({
                         start: { x: margin, y: yPosition - 10 },
                         end: { x: 600 - margin, y: yPosition - 10 },
                         thickness: 0.5,
                         color: rgb(0.8, 0.8, 0.8),
                     });
-    
+
                     yPosition -= 30;
-    
+
                     his.forEach((entry, index) => {
                         if (yPosition < 50) {
                             page = pdfDoc.addPage([600, 500]);
@@ -167,40 +189,40 @@ const Percentagetocgpa = () => {
                                 thickness: 1,
                                 color: rgb(0.8, 0.8, 0.8),
                             });
-    
+
                             yPosition -= 40;
-    
+
                             page.drawText("No.", { x: margin, y: yPosition, size: 14, color: rgb(0, 0, 0) });
                             page.drawText("Percentage", { x: 200, y: yPosition, size: 14, color: rgb(0, 0, 0) });
                             page.drawText("CGPA", { x: 300, y: yPosition, size: 14, color: rgb(0, 0, 0) });
-    
+
                             page.drawLine({
                                 start: { x: margin, y: yPosition - 10 },
                                 end: { x: 600 - margin, y: yPosition - 10 },
                                 thickness: 0.5,
                                 color: rgb(0.8, 0.8, 0.8),
                             });
-    
+
                             yPosition -= 30;
                         }
-    
+
                         const roundedCgpa = !isNaN(entry.cgpa) ? parseFloat(entry.cgpa).toFixed(2) : 'N/A';
                         const roundedPercentage = !isNaN(entry.percentage) ? parseFloat(entry.percentage).toFixed(2) : 'N/A';
-    
+
                         page.drawText(`${index + 1}`, { x: margin, y: yPosition, size: 12, color: rgb(0, 0, 0) });
                         page.drawText(`${roundedPercentage}%`, { x: 200, y: yPosition, size: 12, color: rgb(0, 0, 0) });
                         page.drawText(`${roundedCgpa}`, { x: 300, y: yPosition, size: 12, color: rgb(0, 0, 0) });
-    
+
                         yPosition -= lineHeight;
                     });
-    
+
                     page.drawText("Generated by Percentage to CGPA Calculator", {
                         x: margin,
                         y: 30,
                         size: 10,
                         color: rgb(0.5, 0.5, 0.5),
                     });
-    
+
                     const pdfBytes = await pdfDoc.save();
                     const blob = new Blob([pdfBytes], { type: "application/pdf" });
                     const link = document.createElement("a");
@@ -215,15 +237,15 @@ const Percentagetocgpa = () => {
                 setIsDownloading(false);
             }
         };
-    
+
         if (Object.keys(query).length > 0) {
             generateAndDownloadPDF();
         }
     }, [isClient, router.query, history]);
-    
-    
-    
-   
+
+
+
+
 
     const handleCopyLink = () => {
         const currentURL = window.location.href;
@@ -237,115 +259,115 @@ const Percentagetocgpa = () => {
             });
     };
 
-   const downloadHistoryAsPDF = async () => {
-    try {
-        const pdfDoc = await PDFDocument.create();
-        let page = pdfDoc.addPage([600, 500]);
-        const margin = 50;
-        const headerText = "Calculation History";
-        const headerFontSize = 24;
-        const textWidth = headerFontSize * 0.6 * headerText.length;
-        const centerX = (600 - textWidth) / 2;
+    const downloadHistoryAsPDF = async () => {
+        try {
+            const pdfDoc = await PDFDocument.create();
+            let page = pdfDoc.addPage([600, 500]);
+            const margin = 50;
+            const headerText = "Calculation History";
+            const headerFontSize = 24;
+            const textWidth = headerFontSize * 0.6 * headerText.length;
+            const centerX = (600 - textWidth) / 2;
 
-        // Draw the header
-        page.drawText(headerText, {
-            x: centerX,
-            y: 450,
-            size: headerFontSize,
-            color: rgb(0, 0.53, 0.71),
-        });
+            // Draw the header
+            page.drawText(headerText, {
+                x: centerX,
+                y: 450,
+                size: headerFontSize,
+                color: rgb(0, 0.53, 0.71),
+            });
 
-        // Draw line below header
-        page.drawLine({
-            start: { x: margin, y: 440 },
-            end: { x: 600 - margin, y: 440 },
-            thickness: 1,
-            color: rgb(0.8, 0.8, 0.8),
-        });
+            // Draw line below header
+            page.drawLine({
+                start: { x: margin, y: 440 },
+                end: { x: 600 - margin, y: 440 },
+                thickness: 1,
+                color: rgb(0.8, 0.8, 0.8),
+            });
 
-        let yPosition = 420;
-        const lineHeight = 20;
+            let yPosition = 420;
+            const lineHeight = 20;
 
-        // Draw column headers
-        page.drawText("No.", { x: margin, y: yPosition, size: 14, color: rgb(0, 0, 0) });
-        page.drawText("Percentage", { x: 250, y: yPosition, size: 14, color: rgb(0, 0, 0) });  // Centered for Percentage
-        page.drawText("CGPA", { x: 400, y: yPosition, size: 14, color: rgb(0, 0, 0) });  // For CGPA
+            // Draw column headers
+            page.drawText("No.", { x: margin, y: yPosition, size: 14, color: rgb(0, 0, 0) });
+            page.drawText("Percentage", { x: 250, y: yPosition, size: 14, color: rgb(0, 0, 0) });  // Centered for Percentage
+            page.drawText("CGPA", { x: 400, y: yPosition, size: 14, color: rgb(0, 0, 0) });  // For CGPA
 
-        // Draw line below headers
-        page.drawLine({
-            start: { x: margin, y: yPosition - 10 },
-            end: { x: 600 - margin, y: yPosition - 10 },
-            thickness: 0.5,
-            color: rgb(0.8, 0.8, 0.8),
-        });
+            // Draw line below headers
+            page.drawLine({
+                start: { x: margin, y: yPosition - 10 },
+                end: { x: 600 - margin, y: yPosition - 10 },
+                thickness: 0.5,
+                color: rgb(0.8, 0.8, 0.8),
+            });
 
-        yPosition -= 30;
+            yPosition -= 30;
 
-        // Loop through history entries and add them to the PDF
-        history.forEach((entry, index) => {
-            if (yPosition < 50) {
-                page = pdfDoc.addPage([600, 500]);
-                yPosition = 450;
+            // Loop through history entries and add them to the PDF
+            history.forEach((entry, index) => {
+                if (yPosition < 50) {
+                    page = pdfDoc.addPage([600, 500]);
+                    yPosition = 450;
 
-                page.drawText(headerText, {
-                    x: centerX,
-                    y: yPosition,
-                    size: headerFontSize,
-                    color: rgb(0, 0.53, 0.71),
-                });
+                    page.drawText(headerText, {
+                        x: centerX,
+                        y: yPosition,
+                        size: headerFontSize,
+                        color: rgb(0, 0.53, 0.71),
+                    });
 
-                page.drawLine({
-                    start: { x: margin, y: yPosition - 10 },
-                    end: { x: 600 - margin, y: yPosition - 10 },
-                    thickness: 1,
-                    color: rgb(0.8, 0.8, 0.8),
-                });
+                    page.drawLine({
+                        start: { x: margin, y: yPosition - 10 },
+                        end: { x: 600 - margin, y: yPosition - 10 },
+                        thickness: 1,
+                        color: rgb(0.8, 0.8, 0.8),
+                    });
 
-                yPosition -= 40;
-                page.drawText("No.", { x: margin, y: yPosition, size: 14, color: rgb(0, 0, 0) });
-                page.drawText("Percentage", { x: 250, y: yPosition, size: 14, color: rgb(0, 0, 0) });
-                page.drawText("CGPA", { x: 400, y: yPosition, size: 14, color: rgb(0, 0, 0) });
+                    yPosition -= 40;
+                    page.drawText("No.", { x: margin, y: yPosition, size: 14, color: rgb(0, 0, 0) });
+                    page.drawText("Percentage", { x: 250, y: yPosition, size: 14, color: rgb(0, 0, 0) });
+                    page.drawText("CGPA", { x: 400, y: yPosition, size: 14, color: rgb(0, 0, 0) });
 
-                page.drawLine({
-                    start: { x: margin, y: yPosition - 10 },
-                    end: { x: 600 - margin, y: yPosition - 10 },
-                    thickness: 0.5,
-                    color: rgb(0.8, 0.8, 0.8),
-                });
+                    page.drawLine({
+                        start: { x: margin, y: yPosition - 10 },
+                        end: { x: 600 - margin, y: yPosition - 10 },
+                        thickness: 0.5,
+                        color: rgb(0.8, 0.8, 0.8),
+                    });
 
-                yPosition -= 30;
-            }
+                    yPosition -= 30;
+                }
 
-            const roundedPercentage = entry.percentage.toFixed(2);
-            const roundedCgpa = entry.cgpa.toFixed(2);
+                const roundedPercentage = entry.percentage.toFixed(2);
+                const roundedCgpa = entry.cgpa.toFixed(2);
 
-            page.drawText(`${index + 1}`, { x: margin, y: yPosition, size: 12, color: rgb(0, 0, 0) });
-            page.drawText(`${roundedPercentage}%`, { x: 250, y: yPosition, size: 12, color: rgb(0, 0, 0) }); // Centered for Percentage
-            page.drawText(`${roundedCgpa}`, { x: 400, y: yPosition, size: 12, color: rgb(0, 0, 0) });
+                page.drawText(`${index + 1}`, { x: margin, y: yPosition, size: 12, color: rgb(0, 0, 0) });
+                page.drawText(`${roundedPercentage}%`, { x: 250, y: yPosition, size: 12, color: rgb(0, 0, 0) }); // Centered for Percentage
+                page.drawText(`${roundedCgpa}`, { x: 400, y: yPosition, size: 12, color: rgb(0, 0, 0) });
 
-            yPosition -= lineHeight;
-        });
+                yPosition -= lineHeight;
+            });
 
-        page.drawText("Generated by Lord Calculator", {
-            x: margin,
-            y: 30,
-            size: 10,
-            color: rgb(0.5, 0.5, 0.5),
-        });
+            page.drawText("Generated by Lord Calculator", {
+                x: margin,
+                y: 30,
+                size: 10,
+                color: rgb(0.5, 0.5, 0.5),
+            });
 
-        const pdfBytes = await pdfDoc.save();
-        const blob = new Blob([pdfBytes], { type: "application/pdf" });
-        const link = document.createElement("a");
-        link.href = URL.createObjectURL(blob);
-        link.download = "calculation_history.pdf";
-        link.click();
-        URL.revokeObjectURL(link.href);
-    } catch (error) {
-        console.error("Error generating PDF:", error);
-    }
-};
+            const pdfBytes = await pdfDoc.save();
+            const blob = new Blob([pdfBytes], { type: "application/pdf" });
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "calculation_history.pdf";
+            link.click();
+            URL.revokeObjectURL(link.href);
+        } catch (error) {
+            console.error("Error generating PDF:", error);
+        }
+    };
 
-    
+
 
     const shareOnWhatsApp = () => {
         const currentURL = window.location.href;
@@ -374,7 +396,7 @@ const Percentagetocgpa = () => {
                                     type="number"
                                     value={percentage}
                                     onChange={(e) => setPercentage(e.target.value)}
-                                    placeholder= {t("placeholderPercentage")}
+                                    placeholder={t("placeholderPercentage")}
                                     className="w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] dark:bg-[#3a4a52] dark:border-[#7d8d95] rounded text-center"
                                 />
                             </div>
@@ -386,13 +408,13 @@ const Percentagetocgpa = () => {
                                         onClick={() => handleScaleChange(4.0)}
                                         className={`${gradingScale === 4.0 ? 'bg-[#29582b]' : 'bg-[#105045] dark:bg-[#4f5b56]'} text-white w-3/4 py-2 mr-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]`}
                                     >
-                                       {t("scale4")}
+                                        {t("scale4")}
                                     </button>
                                     <button
                                         onClick={() => handleScaleChange(5.0)}
                                         className={`${gradingScale === 5.0 ? 'bg-[#29582b]' : 'bg-[#105045] dark:bg-[#4f5b56]'} text-white w-3/4 py-2 mr-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]`}
                                     >
-                                       {t("scale5")}
+                                        {t("scale5")}
                                     </button>
                                     <button
                                         onClick={() => handleScaleChange(10.0)}
@@ -425,7 +447,7 @@ const Percentagetocgpa = () => {
                                 <Meter percentage={cgpa ? parseFloat(cgpa) : 0} />
                                 <div className="flex flex-col justify-center items-center mb-4 ">
                                     <label className="text-3xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">{t("calculatedCGPATitle")}</label>
-                                    <input type="text" value={cgpa} placeholder= {t("placeholderCGPA")} readOnly className="w-3/4 p-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center ml-2" />
+                                    <input type="text" value={cgpa} placeholder={t("placeholderCGPA")} readOnly className="w-3/4 p-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center ml-2" />
                                 </div>
                             </div>
 
@@ -471,46 +493,77 @@ const Percentagetocgpa = () => {
                             </div>
                         </div>
 
-                        <div className="bg-gray-50 h-[60vh] rounded-xl shadow-xl translate-x-[-60px] p-6 sticky top-28 dark:bg-gray-900">
-                            <h1 className="text-2xl font-semibold mb-6 text-center text-gray-700 border-b-2 border-gray-300 pb-3 dark:text-gray-200 dark:border-gray-700">
-                                {t('educational_calculators_title')}
-                            </h1>
-                            <ul className="space-y-5">
-                                <li>
-                                    <Link
-                                        href="/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage"
-                                        className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
-                                    >
-                                        ➗ <span className="ml-3">{t('cgpa_to_percentage')}</span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href="/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA"
-                                        className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
-                                    >
-                                        🔢 <span className="ml-3">{t('percentage_to_cgpa')}</span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href="/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA"
-                                        className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
-                                    >
-                                        💡 <span className="ml-3">{t('gpa_to_cgpa')}</span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href="/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA"
-                                        className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
-                                    >
-                                        📚 <span className="ml-3">{t('cgpa_to_gpa')}</span>
-                                    </Link>
-                                </li>
+                        <div className="bg-gray-50 h-[64vh] w-[64vh] rounded-xl shadow-xl translate-x-[-60px] p-6 sticky top-28 dark:bg-gray-900">
+                            <div className=''>
+                                <h1 className="text-2xl font-semibold mb-6 text-center text-gray-700 border-b-2 border-gray-300 pb-3 dark:text-gray-200 dark:border-gray-700">
+                                    {t('educational_calculators_title')}
+                                </h1>
+                            </div>
+                            <ul className="space-y-5 ">
+                                <div className='h-18 overflow-y-auto'>
+                                    <li>
+                                        <Link
+                                            href="/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage"
+                                            className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                                        >
+
+                                            <Image
+                                                src={image3.src}
+                                                height={image3.height}
+                                                width={image3.width}
+                                                alt="image description"
+                                            />
+                                            <span className="ml-3">{t('cgpa_to_percentage')}</span>
+                                        </Link>
+                                    </li>
+                                </div>
+                                <div className='h-18 overflow-y-auto'>
+                                    <li>
+                                        <Link
+                                            href="/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA"
+                                            className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                                        >
+                                            <Image
+                                                src={image2.src}
+                                                height={image2.height}
+                                                width={image2.width}
+                                                alt="image description"
+                                            /><span className="ml-3">{t('percentage_to_cgpa')}</span>
+                                        </Link>
+                                    </li>
+                                </div>
+                                <div className='h-16 overflow-y-auto'>
+                                    <li>
+                                        <Link
+                                            href="/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA"
+                                            className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                                        >
+                                            <Image
+                                                src={image1.src}
+                                                height={image1.height}
+                                                width={image1.width}
+                                                alt="image description"
+                                            /> <span className="ml-3">{t('gpa_to_cgpa')}</span>
+                                        </Link>
+                                    </li>
+                                </div>
+                                <div className='h-16 overflow-y-auto'>
+                                    <li>
+                                        <Link
+                                            href="/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA"
+                                            className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                                        >
+                                            <Image
+                                                src={image.src}
+                                                height={image.height}
+                                                width={image.width}
+                                                alt="image description"
+                                            /> <span className="ml-3">{t('cgpa_to_gpa')}</span>
+                                        </Link>
+                                    </li>
+                                </div>
                             </ul>
                         </div>
-
                     </div>
 
                 </div>

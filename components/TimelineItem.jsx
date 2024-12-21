@@ -2,38 +2,87 @@ import { useTheme } from '@/context/ThemeContext';
 import { FcCalculator } from "react-icons/fc";
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
+import Image from 'next/image';
 
 const TimelineItem = () => {
     const { theme } = useTheme();
     const {t} =useTranslation();
+    const image = {
+        src: "/book-svgrepo-com.svg",
+        width: 50,
+        height: 50,
+      };
+      const image1 = {
+        src: "/bulb.svg",
+        width: 50,
+        height: 50,
+      };
+      const image2 = {
+        src: "/calculator.svg",
+        width: 50,
+        height: 50,
+      };
+      const image3 = {
+        src: "/divide.svg",
+        width: 50,
+        height: 50,
+      };
     const calculatorCards = [
         {
           title: t('calculatorCards.0.title'),
           description: t('calculatorCards.0.description'),
-          emoji: "➗",
           href: "/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage",
           backgroundColor: theme === "dark" ? "bg-[#20a971]" : "bg-[#20a971]",
+          Image: (
+            <Image
+              src={image3.src}
+              height={image3.height}
+              width={image3.width}
+              alt="image description"
+            />
+          ),
         },
         {
           title: t('calculatorCards.1.title'),
           description: t('calculatorCards.1.description'),
-          emoji: "🔢",
           href: "/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA",
           backgroundColor: theme === "dark" ? "bg-[#4285f4]" : "bg-[#4285f4]",
+          Image: (
+            <Image
+              src={image2.src}
+              height={image2.height}
+              width={image2.width}
+              alt="image description"
+            />
+          ),
         },
         {
           title: t('calculatorCards.2.title'),
           description: t('calculatorCards.2.description'),
-          emoji: "💡",
           href: "/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA",
           backgroundColor: theme === "dark" ? "bg-[#cf8408]" : "bg-[#cf8408]",
+          Image: (
+            <Image
+              src={image1.src}
+              height={image1.height}
+              width={image1.width}
+              alt="image description"
+            />
+          ),
         },
         {
           title: t('calculatorCards.3.title'),
           description: t('calculatorCards.3.description'),
-          emoji: "📚",
           href: "/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA",
           backgroundColor: theme === "dark" ? "bg-[#5865f2]" : "bg-[#5865f2]",
+          Image: (
+            <Image
+              src={image.src}
+              height={image.height}
+              width={image.width}
+              alt="image description"
+            />
+          ),
         },
       ];
     
@@ -84,7 +133,7 @@ const TimelineItem = () => {
                     >
 
                         <Link href={card.href}>
-                            <div className=" text-left mb-4 text-4xl">{card.emoji}</div>
+                            <div className=" text-left mb-4 text-4xl">{card.Image}</div>
                             <div className="align-items-center text-left">
                                 <h3 className="text-xxl font-bold group-hover:text-white text-black dark:text-gray-100 drop-shadow-sm">
                                     {card.title}

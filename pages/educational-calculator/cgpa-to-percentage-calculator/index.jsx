@@ -9,8 +9,28 @@ import { PDFDocument, rgb } from 'pdf-lib';
 import CgpaContent from '@/components/CgpaContent';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
+import Image from 'next/image';
 
-
+const image = {
+    src: "/book-svgrepo-com.svg",
+    width: 30,
+    height: 30,
+};
+const image1 = {
+    src: "/bulb.svg",
+    width: 30,
+    height: 30,
+};
+const image2 = {
+    src: "/calculator.svg",
+    width: 30,
+    height: 30,
+};
+const image3 = {
+    src: "/divide.svg",
+    width: 30,
+    height: 30,
+};
 
 const Cgpatopercentage = () => {
     const { theme } = useTheme();
@@ -457,43 +477,75 @@ const Cgpatopercentage = () => {
                             </div>
                         </div>
 
-                        <div className="bg-gray-50 h-[60vh] rounded-xl shadow-xl translate-x-[-60px] p-6 sticky top-28 dark:bg-gray-900">
-                            <h1 className="text-2xl font-semibold mb-6 text-center text-gray-700 border-b-2 border-gray-300 pb-3 dark:text-gray-200 dark:border-gray-700">
-                                {t('educational_calculators_title')}
-                            </h1>
-                            <ul className="space-y-5">
-                                <li>
-                                    <Link
-                                        href="/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage"
-                                        className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
-                                    >
-                                        ➗ <span className="ml-3">{t('cgpa_to_percentage')}</span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href="/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA"
-                                        className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
-                                    >
-                                        🔢 <span className="ml-3">{t('percentage_to_cgpa')}</span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href="/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA"
-                                        className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
-                                    >
-                                        💡 <span className="ml-3">{t('gpa_to_cgpa')}</span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href="/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA"
-                                        className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
-                                    >
-                                        📚 <span className="ml-3">{t('cgpa_to_gpa')}</span>
-                                    </Link>
-                                </li>
+                        <div className="bg-gray-50 h-[64vh] w-[64vh] rounded-xl shadow-xl translate-x-[-60px] p-6 sticky top-28 dark:bg-gray-900">
+                            <div className=''>
+                                <h1 className="text-2xl font-semibold mb-6 text-center text-gray-700 border-b-2 border-gray-300 pb-3 dark:text-gray-200 dark:border-gray-700">
+                                    {t('educational_calculators_title')}
+                                </h1>
+                            </div>
+                            <ul className="space-y-5 ">
+                                <div className='h-18 overflow-y-auto'>
+                                    <li>
+                                        <Link
+                                            href="/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage"
+                                            className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                                        >
+
+                                            <Image
+                                                src={image3.src}
+                                                height={image3.height}
+                                                width={image3.width}
+                                                alt="image description"
+                                            />
+                                            <span className="ml-3">{t('cgpa_to_percentage')}</span>
+                                        </Link>
+                                    </li>
+                                </div>
+                                <div className='h-18 overflow-y-auto'>
+                                    <li>
+                                        <Link
+                                            href="/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA"
+                                            className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                                        >
+                                            <Image
+                                                src={image2.src}
+                                                height={image2.height}
+                                                width={image2.width}
+                                                alt="image description"
+                                            /><span className="ml-3">{t('percentage_to_cgpa')}</span>
+                                        </Link>
+                                    </li>
+                                </div>
+                                <div className='h-16 overflow-y-auto'>
+                                    <li>
+                                        <Link
+                                            href="/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA"
+                                            className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                                        >
+                                            <Image
+                                                src={image1.src}
+                                                height={image1.height}
+                                                width={image1.width}
+                                                alt="image description"
+                                            /> <span className="ml-3">{t('gpa_to_cgpa')}</span>
+                                        </Link>
+                                    </li>
+                                </div>
+                                <div className='h-16 overflow-y-auto'>
+                                    <li>
+                                        <Link
+                                            href="/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA"
+                                            className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                                        >
+                                            <Image
+                                                src={image.src}
+                                                height={image.height}
+                                                width={image.width}
+                                                alt="image description"
+                                            /> <span className="ml-3">{t('cgpa_to_gpa')}</span>
+                                        </Link>
+                                    </li>
+                                </div>
                             </ul>
                         </div>
                     </div>

@@ -1185,5 +1185,52 @@
     "womens_calculator": "Calcolatrice per Donne",
     "search_placeholder": "Cerca...",
     "search_button": "Cerca",
-    "search_results": "Risultati della ricerca"
+    "search_results": "Risultati della ricerca",
+    "privacyPolicy": {
+        "title": "Politica sulla Privacy",
+        "welcomeMessage": "Benvenuto su Lord Calculator! Rispettiamo la tua privacy e siamo impegnati a proteggere qualsiasi informazione personale che puoi fornire mentre utilizzi il nostro sito web. Questa Politica sulla Privacy descrive i tipi di informazioni che possiamo raccogliere da te e come le utilizziamo e le proteggiamo.",
+        "section1": {
+            "title": "1. Informazioni che non raccogliamo",
+            "content": "Il nostro sito web è un sito di calcolatori statici e non raccogliamo, archiviamo o richiediamo attivamente alcuna informazione personale dai nostri utenti. Puoi utilizzare i nostri calcolatori senza condividere alcuna informazione identificabile con noi."
+        },
+        "section2": {
+            "title": "2. Informazioni raccolte automaticamente",
+            "content": "Come molti altri siti web, possiamo utilizzare strumenti di analisi di base (come Google Analytics) per aiutarci a comprendere le interazioni degli utenti con il nostro sito. Queste informazioni sono anonime e comprendono dati non identificabili come:",
+            "list": {
+                "deviceType": "Tipo di dispositivo e tipo di browser",
+                "operatingSystem": "Sistema operativo",
+                "visitDate": "Data e ora della visita",
+                "pagesVisited": "Pagine visitate e tempo trascorso su ogni pagina"
+            },
+            "note": "Questi dati ci aiutano a migliorare la funzionalità del nostro sito e l'esperienza dell'utente, ma non ci consentono di identificare utenti individuali."
+        },
+        "section3": {
+            "title": "3. Cookie",
+            "content": "Il nostro sito web non utilizza cookie per tracciare o archiviare dati personali. Tuttavia, se vengono integrati strumenti di analisi di terze parti, questi potrebbero utilizzare i cookie per raccogliere statistiche sull'uso in modo anonimo. Puoi gestire o disabilitare i cookie attraverso le impostazioni del tuo browser, se lo desideri."
+        },
+        "section4": {
+            "title": "4. Link di terze parti",
+            "content": "Il nostro sito web potrebbe includere link a siti esterni. Questi siti di terze parti hanno politiche sulla privacy proprie e non siamo responsabili per i loro contenuti o pratiche. Ti incoraggiamo a rivedere le politiche sulla privacy di qualsiasi sito tu visiti tramite i nostri link."
+        },
+        "section5": {
+            "title": "5. Sicurezza dei dati",
+            "content": "Anche se non raccogliamo informazioni personali, diamo la priorità al mantenimento di un ambiente sicuro per i nostri utenti. Utilizziamo un hosting sicuro e aggiorniamo regolarmente il nostro sito per proteggere da vulnerabilità."
+        },
+        "section6": {
+            "title": "6. Privacy dei bambini",
+            "content": "Il nostro sito web è adatto a utenti di tutte le età, ma non è rivolto ai bambini sotto i 13 anni. Poiché non raccogliamo dati personali, rispettiamo il Children's Online Privacy Protection Act (COPPA)."
+        },
+        "section7": {
+            "title": "7. Modifiche a questa politica sulla privacy",
+            "content": "Potremmo aggiornare la nostra Politica sulla Privacy di tanto in tanto. Le modifiche verranno pubblicate su questa pagina e la data \"Ultimo aggiornamento\" in cima rifletterà la versione più recente. Ti incoraggiamo a rivedere questa pagina periodicamente per rimanere informato su eventuali aggiornamenti."
+        },
+        "section8": {
+            "title": "8. Contattaci",
+            "content": "Se hai domande su questa Politica sulla Privacy, contattaci all'indirizzo:",
+            "contactDetails": {
+                "name": "Lord Calculator",
+                "email": "bhushanthakur04@gmail.com"
+            }
+        }
+    }
 }

@@ -22,6 +22,7 @@ const Navbar = () => {
   const { t, i18n } = useTranslation();
   const { locale } = router;
 
+
   const handleLanguageChange = (language) => {
     i18n.changeLanguage(language);
     const { pathname, query, asPath } = router;
@@ -36,6 +37,22 @@ const Navbar = () => {
       setIsProfileOpen(false);
     }
   };
+
+  const image4 = {
+    src: "/teacher.svg",
+    width: 20,
+    height: 20,
+  };
+  const image1 = {
+    src: "/testtube.svg",
+    width: 20,
+    height: 20,
+  };
+  const image = {
+    src: "/women.svg",
+    width: 20,
+    height: 20,
+  }
 
   useEffect(() => {
     document.addEventListener("mousedown", closeDropdowns);
@@ -111,14 +128,32 @@ const Navbar = () => {
               value={searchInput}
               onChange={handleSearchInputChange}
               placeholder={t("search_placeholder")}
-              className="border px-3 py-1 rounded-l-md w-full dark:bg-gray-700 dark:text-white"
+              className="border px-2 py-1.5 rounded-l-md w-full dark:bg-gray-700 dark:text-white"
             />
             <button
               type="submit"
-              className="bg-blue-500 text-white px-3 py-1 rounded-r-md hover:bg-blue-600"
+              className="relative group px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md overflow-hidden shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-200"
             >
-               {t("search_button")}
+              <span className="absolute inset-0 w-0 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+              <span className="relative flex items-center justify-center space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M10 14l2-2m0 0l2-2m-2 2H6"
+                  />
+                </svg>
+                <span>{t("search_button")}</span>
+              </span>
             </button>
+
 
 
             {searchResults.length > 0 && searchInput && (
@@ -135,7 +170,7 @@ const Navbar = () => {
 
 
           <Link href="/" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
-          {t("home")}
+            {t("home")}
           </Link>
 
 
@@ -150,17 +185,46 @@ const Navbar = () => {
               />
             </button>
             <div
-              className={`absolute mt-2 bg-[#fafafc] dark:bg-gray-700 shadow-lg rounded-md w-[180px] transition-all duration-300 ease-out ${isCategoryOpen ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none"
+              className={`absolute mt-2 bg-[#fafafc] dark:bg-gray-700 shadow-lg rounded-md w-[240px] transition-all duration-300 ease-out ${isCategoryOpen ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none"
                 }`}
             >
-              <Link href="/educational-calculator" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
-              {t("educational_calculator")}
+              <Link
+                href="/educational-calculator"
+                className="block px-4 py-2 text-black dark:text-white hover:text-[#009688] flex items-center space-x-2"
+              >
+                <Image
+                  src={image4.src}
+                  height={image4.height}
+                  width={image4.width}
+                  alt="image description"
+                  className="flex-shrink-0"
+                />
+                <span>{t("educational_calculator")}</span>
               </Link>
-              <Link href="/scientific-calculator" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
-              {t("scientific_calculator")}
+
+              <Link
+                href="/scientific-calculator"
+                className="block px-4 py-2 text-black dark:text-white hover:text-[#009688] flex items-center space-x-2"
+              >
+                <Image
+                  src={image1.src}
+                  height={image1.height}
+                  width={image1.width}
+                  alt="image description"
+                />
+                <span> {t("scientific_calculator")}</span>
               </Link>
-              <Link href="/womens-calculator" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
-              {t("womens_calculator")}
+              <Link
+                href="/scientific-calculator"
+                className="block px-4 py-2 text-black dark:text-white hover:text-[#009688] flex items-center space-x-2"
+              >
+                <Image
+                  src={image.src}
+                  height={image.height}
+                  width={image.width}
+                  alt="image description"
+                />
+                <span> {t("womens_calculator")}</span>
               </Link>
             </div>
           </div>

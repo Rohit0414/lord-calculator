@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/2 xl:w-1/2 mb-4 md:mb-0">
             <div className="flex flex-col p-2">
-              <h2 className="uppercase font-bold mb-4 text-3xl">
+              <h2 className=" font-bold mb-4 text-3xl">
                 {t('footer.title')}
               </h2>
               <div>

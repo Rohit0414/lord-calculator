@@ -1185,5 +1185,52 @@
     "womens_calculator": "Rechner für Frauen",
     "search_placeholder": "Suchen...",
     "search_button": "Suchen",
-    "search_results": "Suchergebnisse"
+    "search_results": "Suchergebnisse",
+    "privacyPolicy": {
+        "title": "Datenschutzerklärung",
+        "welcomeMessage": "Willkommen bei Lord Calculator! Wir respektieren Ihre Privatsphäre und verpflichten uns, alle persönlichen Informationen, die Sie uns beim Nutzen unserer Website zur Verfügung stellen, zu schützen. Diese Datenschutzerklärung beschreibt, welche Arten von Informationen wir von Ihnen sammeln können und wie wir diese verwenden und schützen.",
+        "section1": {
+            "title": "1. Informationen, die wir nicht sammeln",
+            "content": "Unsere Website ist eine statische Rechner-Seite, und wir sammeln, speichern oder benötigen keine persönlichen Informationen von unseren Nutzern. Sie können unsere Rechner nutzen, ohne uns irgendwelche identifizierbaren Informationen mitzuteilen."
+        },
+        "section2": {
+            "title": "2. Automatisch gesammelte Informationen",
+            "content": "Wie viele andere Websites können wir grundlegende Analysetools (wie Google Analytics) verwenden, um uns zu helfen, die Interaktionen der Nutzer mit unserer Website zu verstehen. Diese Informationen werden anonymisiert und beinhalten nicht-identifizierbare Daten wie:",
+            "list": {
+                "deviceType": "Gerätetyp und Browser-Typ",
+                "operatingSystem": "Betriebssystem",
+                "visitDate": "Besuchsdatum und -zeit",
+                "pagesVisited": "Besuchte Seiten und die auf jeder Seite verbrachte Zeit"
+            },
+            "note": "Diese Daten helfen uns, die Funktionalität unserer Website und das Benutzererlebnis zu verbessern, ermöglichen uns jedoch nicht, einzelne Nutzer zu identifizieren."
+        },
+        "section3": {
+            "title": "3. Cookies",
+            "content": "Unsere Website verwendet keine Cookies, um persönliche Daten zu verfolgen oder zu speichern. Falls jedoch Drittanbieter-Analysetools integriert sind, können diese Cookies verwenden, um anonymisierte Nutzungsstatistiken zu sammeln. Sie können Cookies über die Einstellungen Ihres Browsers verwalten oder deaktivieren, wenn Sie dies wünschen."
+        },
+        "section4": {
+            "title": "4. Drittanbieter-Links",
+            "content": "Unsere Website kann Links zu externen Seiten enthalten. Diese Drittanbieter-Websites haben ihre eigenen Datenschutzrichtlinien, und wir sind nicht verantwortlich für deren Inhalte oder Praktiken. Wir empfehlen den Nutzern, die Datenschutzerklärungen der Websites zu überprüfen, die sie über unsere Links besuchen."
+        },
+        "section5": {
+            "title": "5. Datensicherheit",
+            "content": "Obwohl wir keine persönlichen Informationen sammeln, legen wir großen Wert darauf, eine sichere Umgebung für unsere Nutzer zu gewährleisten. Wir verwenden sichere Hosting-Dienste und aktualisieren regelmäßig unsere Website, um Schwachstellen zu vermeiden."
+        },
+        "section6": {
+            "title": "6. Datenschutz für Kinder",
+            "content": "Unsere Website ist für Nutzer jeden Alters geeignet, richtet sich jedoch nicht an Kinder unter 13 Jahren. Da wir keine persönlichen Daten sammeln, halten wir uns an das Gesetz zum Schutz der Privatsphäre von Kindern online (COPPA)."
+        },
+        "section7": {
+            "title": "7. Änderungen dieser Datenschutzerklärung",
+            "content": "Wir können unsere Datenschutzerklärung gelegentlich aktualisieren. Änderungen werden auf dieser Seite veröffentlicht, und das Datum \"Zuletzt aktualisiert\" oben zeigt die letzte Überarbeitung an. Wir empfehlen den Nutzern, diese Seite regelmäßig zu überprüfen, um über Änderungen informiert zu bleiben."
+        },
+        "section8": {
+            "title": "8. Kontaktieren Sie uns",
+            "content": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte unter:",
+            "contactDetails": {
+                "name": "Lord Calculator",
+                "email": "bhushanthakur04@gmail.com"
+            }
+        }
+    }
 }

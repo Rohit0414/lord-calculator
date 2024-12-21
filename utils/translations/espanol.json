@@ -1186,5 +1186,52 @@
   "womens_calculator": "Calculadora Femenina",
   "search_placeholder": "Buscar...",
   "search_button": "Buscar",
-  "search_results": "Resultados de búsqueda"
+  "search_results": "Resultados de búsqueda",
+  "privacyPolicy": {
+    "title": "Política de privacidad",
+    "welcomeMessage": "¡Bienvenido a Lord Calculator! Respetamos su privacidad y estamos comprometidos a proteger cualquier información personal que pueda proporcionar al utilizar nuestro sitio web. Esta Política de Privacidad describe los tipos de información que podemos recopilar de usted y cómo la usamos y protegemos.",
+    "section1": {
+      "title": "1. Información que no recopilamos",
+      "content": "Nuestro sitio web es un sitio de calculadora estática, y no recopilamos, almacenamos ni requerimos activamente ninguna información personal de nuestros usuarios. Puede utilizar nuestras calculadoras sin compartir ninguna información identificable con nosotros."
+    },
+    "section2": {
+      "title": "2. Información recopilada automáticamente",
+      "content": "Como muchos sitios web, podemos utilizar herramientas básicas de análisis (como Google Analytics) para ayudarnos a comprender las interacciones de los usuarios con nuestro sitio. Esta información es anonimizada e incluye datos no identificables, como:",
+      "list": {
+        "deviceType": "Tipo de dispositivo y tipo de navegador",
+        "operatingSystem": "Sistema operativo",
+        "visitDate": "Fecha y hora de la visita",
+        "pagesVisited": "Páginas visitadas y el tiempo dedicado a cada página"
+      },
+      "note": "Estos datos nos ayudan a mejorar la funcionalidad de nuestro sitio web y la experiencia del usuario, pero no nos permiten identificar a los usuarios individuales."
+    },
+    "section3": {
+      "title": "3. Cookies",
+      "content": "Nuestro sitio web no utiliza cookies para rastrear o almacenar datos personales. Sin embargo, si se integran herramientas de análisis de terceros, pueden utilizar cookies para recopilar estadísticas de uso anonimizado. Puede administrar o desactivar las cookies a través de la configuración de su navegador si lo desea."
+    },
+    "section4": {
+      "title": "4. Enlaces de terceros",
+      "content": "Nuestro sitio web puede incluir enlaces a sitios externos. Estos sitios de terceros tienen sus propias políticas de privacidad, y no somos responsables de su contenido ni de sus prácticas. Alentamos a los usuarios a revisar las políticas de privacidad de los sitios que visitan a través de nuestros enlaces."
+    },
+    "section5": {
+      "title": "5. Seguridad de los datos",
+      "content": "Aunque no recopilamos información personal, damos prioridad a mantener un entorno seguro para nuestros usuarios. Usamos alojamiento seguro y actualizamos regularmente nuestro sitio web para protegerlo contra vulnerabilidades."
+    },
+    "section6": {
+      "title": "6. Privacidad de los niños",
+      "content": "Nuestro sitio web es adecuado para usuarios de todas las edades, pero no está dirigido a niños menores de 13 años. Dado que no recopilamos datos personales, cumplimos con la Ley de Protección de la Privacidad Infantil en Internet (COPPA)."
+    },
+    "section7": {
+      "title": "7. Cambios en esta política de privacidad",
+      "content": "Podemos actualizar nuestra Política de Privacidad ocasionalmente. Los cambios se publicarán en esta página, y la fecha de \"Última actualización\" en la parte superior reflejará la última versión. Alentamos a los usuarios a revisar esta página periódicamente para mantenerse informados sobre cualquier actualización."
+    },
+    "section8": {
+      "title": "8. Contáctenos",
+      "content": "Si tiene preguntas sobre esta Política de Privacidad, por favor contáctenos en:",
+      "contactDetails": {
+        "name": "Lord Calculator",
+        "email": "bhushanthakur04@gmail.com"
+      }
+    }
+  }
 }

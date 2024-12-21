@@ -1185,5 +1185,52 @@
     "womens_calculator": "Calculatrice pour femmes",
     "search_placeholder": "Rechercher...",
     "search_button": "Rechercher",
-    "search_results": "Résultats de recherche"
+    "search_results": "Résultats de recherche",
+    "privacyPolicy": {
+        "title": "Politique de confidentialité",
+        "welcomeMessage": "Bienvenue sur Lord Calculator ! Nous respectons votre vie privée et nous nous engageons à protéger toute information personnelle que vous pourriez fournir lors de l'utilisation de notre site Web. Cette politique de confidentialité décrit les types d'informations que nous pouvons collecter auprès de vous et comment nous les utilisons et les protégeons.",
+        "section1": {
+            "title": "1. Informations que nous ne collectons pas",
+            "content": "Notre site Web est un site de calculatrice statique, et nous ne collectons, ne stockons ni ne nécessitons activement aucune information personnelle de nos utilisateurs. Vous pouvez utiliser nos calculateurs sans partager aucune information identifiable avec nous."
+        },
+        "section2": {
+            "title": "2. Informations collectées automatiquement",
+            "content": "Comme de nombreux sites Web, nous pouvons utiliser des outils d'analyse de base (tels que Google Analytics) pour nous aider à comprendre les interactions des utilisateurs avec notre site. Ces informations sont anonymisées et comprennent des données non identifiables, telles que :",
+            "list": {
+                "deviceType": "Type d'appareil et type de navigateur",
+                "operatingSystem": "Système d'exploitation",
+                "visitDate": "Date et heure de la visite",
+                "pagesVisited": "Pages visitées et le temps passé sur chaque page"
+            },
+            "note": "Ces données nous aident à améliorer la fonctionnalité de notre site Web et l'expérience de l'utilisateur, mais elles ne nous permettent pas d'identifier les utilisateurs individuels."
+        },
+        "section3": {
+            "title": "3. Cookies",
+            "content": "Notre site Web n'utilise pas de cookies pour suivre ou stocker des données personnelles. Cependant, si des outils d'analyse tiers sont intégrés, ils peuvent utiliser des cookies pour collecter des statistiques d'utilisation anonymisées. Vous pouvez gérer ou désactiver les cookies via les paramètres de votre navigateur si vous le souhaitez."
+        },
+        "section4": {
+            "title": "4. Liens tiers",
+            "content": "Notre site Web peut inclure des liens vers des sites externes. Ces sites tiers ont leurs propres politiques de confidentialité et nous ne sommes pas responsables de leur contenu ni de leurs pratiques. Nous encourageons les utilisateurs à consulter les politiques de confidentialité des sites qu'ils visitent via nos liens."
+        },
+        "section5": {
+            "title": "5. Sécurité des données",
+            "content": "Bien que nous ne collections pas d'informations personnelles, nous accordons la priorité à maintenir un environnement sécurisé pour nos utilisateurs. Nous utilisons un hébergement sécurisé et mettons régulièrement à jour notre site Web pour le protéger contre les vulnérabilités."
+        },
+        "section6": {
+            "title": "6. Confidentialité des enfants",
+            "content": "Notre site Web convient aux utilisateurs de tous âges, mais il n'est pas destiné aux enfants de moins de 13 ans. Comme nous ne collectons pas de données personnelles, nous respectons la loi sur la protection de la vie privée des enfants en ligne (COPPA)."
+        },
+        "section7": {
+            "title": "7. Modifications de cette politique de confidentialité",
+            "content": "Nous pouvons mettre à jour notre politique de confidentialité occasionnellement. Les modifications seront publiées sur cette page et la date de \"Dernière mise à jour\" en haut reflétera la dernière révision. Nous encourageons les utilisateurs à consulter cette page périodiquement pour rester informés de toute mise à jour."
+        },
+        "section8": {
+            "title": "8. Contactez-nous",
+            "content": "Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à :",
+            "contactDetails": {
+                "name": "Lord Calculator",
+                "email": "bhushanthakur04@gmail.com"
+            }
+        }
+    }
 }

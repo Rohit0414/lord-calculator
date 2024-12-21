@@ -2,9 +2,7 @@
   "navbar": {
     "selectLanguage": "اختر اللغة"
   },
-  "title": {
-    "": "1. أنظمة المعدل التراكمي المرجح"
-  },
+  "title": "أنظمة المعدل التراكمي المرجح",
   "enter_gpa": "أدخل المعدل التراكمي",
   "choose_gpa_scale": "اختر مقياس المعدل التراكمي",
   "calculate": "احسب",
@@ -108,6 +106,17 @@
       "": "في مثل هذه السيناريوهات، عندما يتقدم الطالب للدراسات العليا أو طلب وظيفة، يتعين عليه ملء معدله التراكمي. وبالتالي، يتم مشاركة معدله التراكمي مع هيئات خارجية بينما يتم استخدام المعدل التراكمي في الغالب في التقييم الداخلي."
     }
   },
+  "1. International Baccalaureate (IB)": "البكالوريا الدولية (IB)",
+  "2. Common Core State Standards (CCSS)": "معايير الدولة الأساسية المشتركة (CCSS)",
+  "3. Bologna Process and European Credit Transfer and Accumulation System (ECTS)": "عملية بولونيا ونظام تحويل وتجميع الساعات الأوروبي (ECTS)",
+  "4. Advanced Placement (AP) Program": "برنامج المستوى المتقدم (AP)",
+  "5. International General Certificate of Secondary Education (IGCSE)": "الشهادة الدولية العامة للتعليم الثانوي (IGCSE)",
+  "6. Tertiary Education Quality and Standards Agency (TEQSA)": "وكالة جودة ومعايير التعليم العالي (TEQSA)",
+  "7. Programme for International Student Assessment (PISA)": "برنامج تقييم الطلاب الدولي (PISA)",
+  "1. U.S. GPA to CGPA Conversion (4.0 Scale)": "تحويل المعدل التراكمي الأمريكي GPA إلى CGPA (مقياس 4.0)",
+  "2. U.S. GPA to CGPA (Indian) Conversion": "تحويل المعدل التراكمي الأمريكي GPA إلى المعدل التراكمي CGPA الهندي",
+  "3. Indian Percentage to U.S. GPA Conversion (4.0 Scale)": "تحويل النسبة المئوية الهندية إلى المعدل التراكمي الأمريكي (مقياس 4.0)",
+  "4. ECTS Grading to GPA/CGPA": "تحويل التقديرات من نظام ECTS إلى المعدل التراكمي GPA/CGPA",
   "To summarize, take a look at the below-given table:": "ولتلخيص ما سبق، ألقي نظرة على الجدول الموضح أدناه:",
   "Feature": "ميزة",
   "GPA": "المعدل التراكمي",

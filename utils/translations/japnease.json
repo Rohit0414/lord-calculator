@@ -108,6 +108,17 @@
       "": "このようなシナリオでは、学生が高等教育や就職を申請する際に、CGPA を記入する必要があります。したがって、CGPA は外部機関と共有され、GPA は主に内部評価に使用されます。"
     }
   },
+  "1. International Baccalaureate (IB)": "国際バカロレア (IB)",
+  "2. Common Core State Standards (CCSS)": "共通コア州基準 (CCSS)",
+  "3. Bologna Process and European Credit Transfer and Accumulation System (ECTS)": "ボローニャプロセスと欧州単位移転・蓄積システム (ECTS)",
+  "4. Advanced Placement (AP) Program": "アドバンスト・プレースメント (AP) プログラム",
+  "5. International General Certificate of Secondary Education (IGCSE)": "国際一般中等教育証明書 (IGCSE)",
+  "6. Tertiary Education Quality and Standards Agency (TEQSA)": "高等教育の質と基準機関 (TEQSA)",
+  "7. Programme for International Student Assessment (PISA)": "国際学生評価プログラム (PISA)",
+  "1. U.S. GPA to CGPA Conversion (4.0 Scale)": "アメリカのGPAをCGPAに変換（4.0スケール）",
+  "2. U.S. GPA to CGPA (Indian) Conversion": "アメリカのGPAをインディアのCGPAに変換",
+  "3. Indian Percentage to U.S. GPA Conversion (4.0 Scale)": "インドのパーセンテージをアメリカのGPAに変換（4.0スケール）",
+  "4. ECTS Grading to GPA/CGPA": "ECTSの評価をGPA/CGPAに変換",
   "To summarize, take a look at the below-given table:": "要約すると、以下の表をご覧ください。",
   "Feature": "特徴",
   "GPA": "成績平均点",

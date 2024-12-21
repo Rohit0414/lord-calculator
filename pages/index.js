@@ -118,7 +118,7 @@ export default function Home() {
               <Link href={card.href}>
                 <div className=" text-left mb-2 text-4xl">{card.emoji}</div>
 
-                <div className="align-items-center text-left">
+                <div className="align-items-center text-left h-32 overflow-y-auto">
                   <h2 className="text-xxl font-bold mb-2 group-hover:text-white text-black dark:text-gray-100 drop-shadow-sm">
                     {card.title}
                   </h2>

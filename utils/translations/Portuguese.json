@@ -1232,5 +1232,58 @@
                 "email": "bhushanthakur04@gmail.com"
             }
         }
+    },
+    "termsOfUse": {
+        "title": "Termos de Uso",
+        "welcomeMessage": "Bem-vindo ao Lord Calculator! Ao acessar e utilizar o Lord Calculator, você concorda em cumprir estes Termos de Uso. Por favor, leia atentamente estes termos, pois eles estabelecem as regras e regulamentos para o uso do nosso site. Se você não concordar com estes termos, por favor, não utilize o nosso site.",
+        "sections": {
+            "acceptanceOfTerms": {
+                "title": "1. Aceitação dos Termos",
+                "content": "Ao acessar o Lord Calculator, você aceita e concorda em estar vinculado a estes Termos de Uso e à nossa Política de Privacidade. Estes termos se aplicam a todos os visitantes, usuários e outros que acessam ou utilizam o site."
+            },
+            "useOfWebsite": {
+                "title": "2. Uso do Nosso Site",
+                "content": "Você recebe uma licença limitada, não exclusiva, intransferível e revogável para usar nosso site exclusivamente para fins pessoais e não comerciais. Você concorda em não usar o site para fins ilegais, incluindo, mas não se limitando a:",
+                "list": [
+                    "Tentar invadir ou prejudicar a funcionalidade do site",
+                    "Fazer upload ou distribuir vírus ou códigos prejudiciais",
+                    "Tentar acessar partes não autorizadas do site",
+                    "Usar nossas calculadoras para atividades ilegais"
+                ]
+            },
+            "intellectualProperty": {
+                "title": "3. Propriedade Intelectual",
+                "content": "Todo o conteúdo deste site, incluindo, mas não se limitando a, textos, gráficos, logotipos e calculadoras, é propriedade intelectual do Lord Calculator ou seus licenciadores. Você não pode reproduzir, distribuir ou explorar qualquer parte do nosso conteúdo para fins comerciais sem nossa permissão expressa por escrito."
+            },
+            "disclaimerOfWarranties": {
+                "title": "4. Isenção de Garantias",
+                "content": "Nosso site e seu conteúdo são fornecidos 'como estão' e 'conforme disponível', sem garantias de qualquer tipo, expressas ou implícitas. Embora nos esforcemos para garantir a precisão, o Lord Calculator não oferece garantia de que:",
+                "list": [
+                    "As calculadoras estarão livres de erros ou completas",
+                    "O site estará livre de interrupções ou problemas técnicos"
+                ]
+            },
+            "limitationOfLiability": {
+                "title": "5. Limitação de Responsabilidade",
+                "content": "Na máxima extensão permitida por lei, o Lord Calculator não será responsável por quaisquer danos resultantes do uso ou da impossibilidade de uso do nosso site, incluindo, mas não se limitando a, danos indiretos, incidentais, punitivos ou consequenciais."
+            },
+            "thirdPartyLinks": {
+                "title": "6. Links de Terceiros",
+                "content": "Nosso site pode incluir links para sites de terceiros para sua conveniência. Não temos controle e não assumimos responsabilidade pelo conteúdo, políticas de privacidade ou práticas de sites de terceiros. O acesso a esses links é por sua conta e risco, e recomendamos que você revise os termos e políticas de privacidade de qualquer site de terceiros que visitar."
+            },
+            "modificationsToTerms": {
+                "title": "7. Modificações aos Termos",
+                "content": "O Lord Calculator se reserva o direito de modificar estes Termos de Uso a qualquer momento. As alterações serão postadas nesta página, com a data de 'Última atualização' indicando a revisão mais recente. O uso contínuo do site após as alterações serem postadas indica sua aceitação dos novos termos."
+            },
+            "governingLaw": {
+                "title": "8. Lei Aplicável",
+                "content": "Estes Termos de Uso serão regidos e interpretados de acordo com as leis de sua jurisdição/estado/país, sem considerar seus princípios de conflitos de leis. Quaisquer disputas resultantes destes termos serão resolvidas exclusivamente nos tribunais."
+            },
+            "contactUs": {
+                "title": "9. Contate-nos",
+                "content": "Se você tiver dúvidas sobre estes Termos de Uso, entre em contato conosco através do seguinte e-mail:",
+                "email": "bhuvibhai786@gmail.com"
+            }
+        }
     }
 }

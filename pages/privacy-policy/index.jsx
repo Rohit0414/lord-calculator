@@ -77,7 +77,7 @@ export default function PrivacyPolicy() {
                             <p>
                                 <Link href="/">
                                     <strong>{t('privacyPolicy.section8.contactDetails.name')}</strong><br />
-                                    Email: {t('privacyPolicy.section8.contactDetails.email')}
+                                    Email: bhuvibhai786@gmail.com
                                 </Link>
                             </p>
                         </div>

@@ -1232,5 +1232,58 @@
                 "email": "bhushanthakur04@gmail.com"
             }
         }
+    },
+    "termsOfUse": {
+        "title": "Termini di utilizzo",
+        "welcomeMessage": "Benvenuto su Lord Calculator! Accedendo e utilizzando Lord Calculator, accetti di rispettare questi Termini di utilizzo. Ti invitiamo a leggere attentamente questi termini, poiché definiscono le regole e le normative per l'uso del nostro sito web. Se non accetti questi termini, ti preghiamo di non utilizzare il nostro sito.",
+        "sections": {
+            "acceptanceOfTerms": {
+                "title": "1. Accettazione dei termini",
+                "content": "Accedendo a Lord Calculator, accetti e ti impegni a rispettare questi Termini di utilizzo e la nostra Privacy Policy. Questi termini si applicano a tutti i visitatori, gli utenti e altri che accedono o utilizzano il sito."
+            },
+            "useOfWebsite": {
+                "title": "2. Utilizzo del nostro sito web",
+                "content": "Ti viene concesso un diritto limitato, non esclusivo, non trasferibile e revocabile di utilizzare il nostro sito web esclusivamente per scopi personali e non commerciali. Accetti di non utilizzare il sito per scopi illegali, inclusi ma non limitati a:",
+                "list": [
+                    "Tentare di hackerare o interrompere il funzionamento del sito",
+                    "Caricare o distribuire virus o codici dannosi",
+                    "Tentare di ottenere accesso non autorizzato a qualsiasi parte del sito",
+                    "Utilizzare i nostri calcolatori per attività illegali"
+                ]
+            },
+            "intellectualProperty": {
+                "title": "3. Proprietà intellettuale",
+                "content": "Tutti i contenuti di questo sito web, inclusi ma non limitati a testi, grafica, loghi e calcolatori, sono di proprietà intellettuale di Lord Calculator o dei suoi licenziatari. Non puoi riprodurre, distribuire o sfruttare alcuna parte del nostro contenuto per scopi commerciali senza il nostro esplicito permesso scritto."
+            },
+            "disclaimerOfWarranties": {
+                "title": "4. Esclusione di garanzie",
+                "content": "Il nostro sito web e i suoi contenuti sono forniti 'così come sono' e 'come disponibili' senza alcuna garanzia di alcun tipo, espressa o implicita. Pur cercando di garantire l'accuratezza, Lord Calculator non offre alcuna garanzia che:",
+                "list": [
+                    "I calcolatori siano privi di errori o completi",
+                    "Il sito sarà privo di interruzioni o problemi tecnici"
+                ]
+            },
+            "limitationOfLiability": {
+                "title": "5. Limitazione di responsabilità",
+                "content": "Nella misura massima consentita dalla legge, Lord Calculator non sarà responsabile per alcun danno derivante dall'uso o dall'incapacità di utilizzare il nostro sito, inclusi ma non limitati a danni indiretti, incidentali, punitivi o consequenziali."
+            },
+            "thirdPartyLinks": {
+                "title": "6. Link di terze parti",
+                "content": "Il nostro sito web può includere link a siti web di terze parti per tua comodità. Non abbiamo il controllo su e non ci assumiamo alcuna responsabilità per il contenuto, le politiche sulla privacy o le pratiche di tali siti di terze parti. L'accesso a questi link è a tuo rischio, e ti consigliamo di rivedere i termini e le politiche sulla privacy di qualsiasi sito di terze parti che visiti."
+            },
+            "modificationsToTerms": {
+                "title": "7. Modifiche ai termini",
+                "content": "Lord Calculator si riserva il diritto di modificare questi Termini di utilizzo in qualsiasi momento. Le modifiche saranno pubblicate su questa pagina, con la data dell' 'Ultimo aggiornamento' che indica la revisione più recente. L'uso continuato del sito dopo che le modifiche sono state pubblicate implica l'accettazione dei nuovi termini."
+            },
+            "governingLaw": {
+                "title": "8. Legge applicabile",
+                "content": "Questi Termini di utilizzo saranno regolati e interpretati in conformità con le leggi della tua giurisdizione/stato/paese, senza considerare i suoi conflitti di legge. Eventuali controversie derivanti da questi termini saranno risolte esclusivamente nei tribunali competenti."
+            },
+            "contactUs": {
+                "title": "9. Contattaci",
+                "content": "Se hai domande riguardanti questi Termini di utilizzo, ti preghiamo di contattarci al:",
+                "email": "bhuvibhai786@gmail.com"
+            }
+        }
     }
 }

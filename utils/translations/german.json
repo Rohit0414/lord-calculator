@@ -1232,5 +1232,58 @@
                 "email": "bhushanthakur04@gmail.com"
             }
         }
+    },
+    "termsOfUse": {
+        "title": "Nutzungsbedingungen",
+        "welcomeMessage": "Willkommen bei Lord Calculator! Durch den Zugriff auf Lord Calculator und die Nutzung dieser Seite erklären Sie sich mit diesen Nutzungsbedingungen einverstanden. Bitte lesen Sie diese Bedingungen sorgfältig durch, da sie die Regeln und Vorschriften für die Nutzung unserer Website festlegen. Wenn Sie mit diesen Bedingungen nicht einverstanden sind, nutzen Sie bitte unsere Seite nicht.",
+        "sections": {
+            "acceptanceOfTerms": {
+                "title": "1. Akzeptanz der Bedingungen",
+                "content": "Durch den Zugriff auf Lord Calculator akzeptieren und erklären Sie sich damit einverstanden, an diese Nutzungsbedingungen und unsere Datenschutzrichtlinie gebunden zu sein. Diese Bedingungen gelten für alle Besucher, Benutzer und andere, die auf die Seite zugreifen oder diese nutzen."
+            },
+            "useOfWebsite": {
+                "title": "2. Nutzung unserer Website",
+                "content": "Ihnen wird eine begrenzte, nicht ausschließliche, nicht übertragbare und widerrufbare Lizenz erteilt, unsere Website ausschließlich für persönliche und nicht kommerzielle Zwecke zu nutzen. Sie stimmen zu, die Seite nicht für illegale Zwecke zu verwenden, einschließlich, aber nicht beschränkt auf:",
+                "list": [
+                    "Versuch, die Funktionalität der Website zu hacken oder zu stören",
+                    "Hochladen oder Verteilen von Viren oder schadhafter Software",
+                    "Versuch, unbefugten Zugriff auf einen Teil der Seite zu erlangen",
+                    "Nutzung unserer Rechner für illegale Aktivitäten"
+                ]
+            },
+            "intellectualProperty": {
+                "title": "3. Geistiges Eigentum",
+                "content": "Alle Inhalte auf dieser Website, einschließlich, aber nicht beschränkt auf Texte, Grafiken, Logos und Rechner, sind geistiges Eigentum von Lord Calculator oder seinen Lizenzgebern. Sie dürfen keinen Teil unseres Inhalts für kommerzielle Zwecke ohne unsere ausdrückliche schriftliche Genehmigung reproduzieren, verteilen oder ausbeuten."
+            },
+            "disclaimerOfWarranties": {
+                "title": "4. Haftungsausschluss",
+                "content": "Unsere Website und ihr Inhalt werden 'wie sie sind' und 'nach Verfügbarkeit' ohne jegliche Garantien, weder ausdrücklich noch stillschweigend, bereitgestellt. Obwohl wir bestrebt sind, Genauigkeit zu gewährleisten, gibt Lord Calculator keine Garantie dafür, dass:",
+                "list": [
+                    "Die Rechner fehlerfrei oder vollständig sind",
+                    "Die Seite frei von Unterbrechungen oder technischen Problemen ist"
+                ]
+            },
+            "limitationOfLiability": {
+                "title": "5. Haftungsbeschränkung",
+                "content": "Im größtmöglichen Umfang, der gesetzlich zulässig ist, haftet Lord Calculator nicht für Schäden, die aus der Nutzung oder der Unfähigkeit zur Nutzung unserer Seite entstehen, einschließlich, aber nicht beschränkt auf indirekte, zufällige, strafende oder Folgeschäden."
+            },
+            "thirdPartyLinks": {
+                "title": "6. Links zu Drittanbieterseiten",
+                "content": "Unsere Website kann Links zu Websites Dritter enthalten, die Ihnen zur Verfügung gestellt werden. Wir haben keine Kontrolle über und übernehmen keine Verantwortung für den Inhalt, die Datenschutzrichtlinien oder Praktiken von Drittanbieter-Websites. Der Zugriff auf diese Links erfolgt auf eigenes Risiko, und wir empfehlen, die Bedingungen und Datenschutzrichtlinien der besuchten Drittanbieter-Websites zu überprüfen."
+            },
+            "modificationsToTerms": {
+                "title": "7. Änderungen der Bedingungen",
+                "content": "Lord Calculator behält sich das Recht vor, diese Nutzungsbedingungen jederzeit zu ändern. Änderungen werden auf dieser Seite veröffentlicht, wobei das Datum 'Zuletzt aktualisiert' die jüngste Überarbeitung anzeigt. Die fortgesetzte Nutzung der Website nach der Veröffentlichung von Änderungen bedeutet Ihre Zustimmung zu den neuen Bedingungen."
+            },
+            "governingLaw": {
+                "title": "8. Anwendbares Recht",
+                "content": "Diese Nutzungsbedingungen unterliegen den Gesetzen Ihrer Gerichtsbarkeit/Ihres Bundesstaates/Ihres Landes und sind gemäß diesen auszulegen, ohne dass dessen Kollisionsnormen Anwendung finden. Streitigkeiten, die aus diesen Bedingungen entstehen, werden ausschließlich vor den Gerichten entschieden."
+            },
+            "contactUs": {
+                "title": "9. Kontaktieren Sie uns",
+                "content": "Wenn Sie Fragen zu diesen Nutzungsbedingungen haben, kontaktieren Sie uns bitte unter:",
+                "email": "bhuvibhai786@gmail.com"
+            }
+        }
     }
 }

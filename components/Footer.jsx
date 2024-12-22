@@ -19,7 +19,7 @@ const Footer = () => {
                   <h5 className="uppercase font-bold">{t('footer.location')}</h5>
                 </div>
                 <div>
-                  <h5 className="font-light">{t('footer.contact')}</h5>
+                  <h5 className="font-light"> Contact Us: bhuvibhai786@gmail.com</h5>
                 </div>
               </div>
             </div>

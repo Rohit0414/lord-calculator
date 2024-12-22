@@ -10,6 +10,7 @@ import GpaContent from '@/components/GpaContent';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
+import Head from 'next/head';
 
 
 const Gpatocgpa = () => {
@@ -48,7 +49,7 @@ const Gpatocgpa = () => {
         width: 30,
         height: 30,
     };
-    
+
 
     const checkScrollTop = () => {
         if (!showScroll && window.pageYOffset > 300) {
@@ -336,11 +337,6 @@ const Gpatocgpa = () => {
         }
     };
 
-
-
-
-
-
     const shareOnWhatsApp = () => {
         const currentURL = window.location.href;
         const message = `Check out my CGPA calculation: GPA: ${gpa}, CGPA: ${cgpa}. You can view it here: ${currentURL}`;
@@ -351,6 +347,10 @@ const Gpatocgpa = () => {
 
     return (
         <div className={`transition-all duration-300 bg-[#fafafc] ease-in-out ${theme === "dark" ? "dark" : "light"}`}>
+            <Head>
+                <title>Lord Calculator – GPA to CGPA Calculator</title>
+                <meta name="description" content="Just write GPA here and let Lord Calculator’s GPA to CGPA Calculator handle it, also you can share your calculated report with your buddies." />
+            </Head>
             <Navbar />
             <Nav />
             <div className="container  max-h-full flex-col w-full border-r-8 justify-center dark:bg-gray-800 ">
@@ -358,7 +358,7 @@ const Gpatocgpa = () => {
                     <div className="flex  w-full">
 
                         <div className=" p-5 mx-auto text-black  w-full">
-                            <h2 className="text-4xl font-bold mb-4 text-center text-[#308d46] bg-clip-text bg-transparent dark:bg-teal-950 drop-shadow-lg">{t( "title")}</h2>
+                            <h2 className="text-4xl font-bold mb-4 text-center text-[#308d46] bg-clip-text bg-transparent dark:bg-teal-950 drop-shadow-lg">{t("title")}</h2>
 
                             <div className="flex mb-4 justify-center items-center flex-col">
                                 <h3 className="text-2xl font-bold mb-4 text-[#105045] drop-shadow-lg mt-2 dark:text-[#b3e0e6]">{t("enter_gpa")}</h3>

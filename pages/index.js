@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Head from "next/head";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -31,8 +32,8 @@ export default function Home() {
     width: 60,
     height: 70,
   };
-  const image4 ={
-    src:"/teacher.svg",
+  const image4 = {
+    src: "/teacher.svg",
     width: 60,
     height: 70,
   }
@@ -122,6 +123,10 @@ export default function Home() {
 
   return (
     <div className={`transition-all duration-300 ease-in-out ${theme === "dark" ? "dark" : "light"}`}>
+      <Head>
+        <title>Lord Calculator – Free A to Z Calculators</title>
+        <meta name="description" content="Lord Calculator, only platform with highly accurate A to Z calculators. Scientific calculator, CGPA to Percentage and many more with reports What’s App sharing feature" />
+      </Head>
       <Navbar />
       <div className="relative flex flex-col justify-center items-center bg-[#fafafc] dark:bg-gray-800">
         <div className="absolute -z-51 w-full h-[500px] md:h-[500px] lg:h-[580px] top-0">

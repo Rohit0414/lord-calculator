@@ -11,6 +11,7 @@ import Link from 'next/link';
 import PercentageContent from '@/components/PercentageContent';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
+import Head from 'next/head';
 
 
 const Percentagetocgpa = () => {
@@ -269,7 +270,6 @@ const Percentagetocgpa = () => {
             const textWidth = headerFontSize * 0.6 * headerText.length;
             const centerX = (600 - textWidth) / 2;
 
-            // Draw the header
             page.drawText(headerText, {
                 x: centerX,
                 y: 450,
@@ -277,7 +277,6 @@ const Percentagetocgpa = () => {
                 color: rgb(0, 0.53, 0.71),
             });
 
-            // Draw line below header
             page.drawLine({
                 start: { x: margin, y: 440 },
                 end: { x: 600 - margin, y: 440 },
@@ -288,12 +287,10 @@ const Percentagetocgpa = () => {
             let yPosition = 420;
             const lineHeight = 20;
 
-            // Draw column headers
             page.drawText("No.", { x: margin, y: yPosition, size: 14, color: rgb(0, 0, 0) });
-            page.drawText("Percentage", { x: 250, y: yPosition, size: 14, color: rgb(0, 0, 0) });  // Centered for Percentage
-            page.drawText("CGPA", { x: 400, y: yPosition, size: 14, color: rgb(0, 0, 0) });  // For CGPA
+            page.drawText("Percentage", { x: 250, y: yPosition, size: 14, color: rgb(0, 0, 0) });
+            page.drawText("CGPA", { x: 400, y: yPosition, size: 14, color: rgb(0, 0, 0) });
 
-            // Draw line below headers
             page.drawLine({
                 start: { x: margin, y: yPosition - 10 },
                 end: { x: 600 - margin, y: yPosition - 10 },
@@ -303,7 +300,7 @@ const Percentagetocgpa = () => {
 
             yPosition -= 30;
 
-            // Loop through history entries and add them to the PDF
+
             history.forEach((entry, index) => {
                 if (yPosition < 50) {
                     page = pdfDoc.addPage([600, 500]);
@@ -380,6 +377,10 @@ const Percentagetocgpa = () => {
 
     return (
         <div className={`transition-all duration-300 bg-[#fafafc] ease-in-out ${theme === "dark" ? "dark" : "light"}`}>
+            <Head>
+                <title>Lord Calculator – Percentage to CGPA Calculator</title>
+                <meta name="description" content="Percentage to CGPA converter is essential for many students. Lord Calculator offers you the best percentage to CGPA calculator with high precision and error-free calculations." />
+            </Head>
             <Navbar />
             <Nav />
             <div className="container  max-h-full flex-col w-full border-r-8 justify-center dark:bg-gray-800 ">

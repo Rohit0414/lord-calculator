@@ -10,6 +10,7 @@ import CgpaContent from '@/components/CgpaContent';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const image = {
     src: "/book-svgrepo-com.svg",
@@ -351,6 +352,10 @@ const Cgpatopercentage = () => {
 
     return (
         <div className={`relative min-h-screen transition-all duration-300  bg-[#fafafc] ease-in-out ${theme === "dark" ? "dark" : "light"}`}>
+            <Head>
+                <title>Lord Calculator – Free CGPA to Percentage Calculator</title>
+                <meta name="description" content="Lord Calculator’s CGPA to Percentage Calculator is the best, accurate, verified and trustworthy calculator over the internet. Just put CGPA and percentage will be calculated before you blink eye." />
+            </Head>
             <Navbar />
             <Nav />
 

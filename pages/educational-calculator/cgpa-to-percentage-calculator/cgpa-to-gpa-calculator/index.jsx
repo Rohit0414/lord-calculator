@@ -10,6 +10,7 @@ import Link from 'next/link';
 import CgpaToGpaContent from '@/components/CgpaToGpaContent';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const Cgpatogpa = () => {
     const { theme } = useTheme();
@@ -277,7 +278,6 @@ const Cgpatogpa = () => {
             const textWidth = headerFontSize * 0.6 * headerText.length;
             const centerX = (600 - textWidth) / 2;
 
-            // Draw the header
             page.drawText(headerText, {
                 x: centerX,
                 y: 450,
@@ -285,7 +285,6 @@ const Cgpatogpa = () => {
                 color: rgb(0, 0.53, 0.71),
             });
 
-            // Draw line below header
             page.drawLine({
                 start: { x: margin, y: 440 },
                 end: { x: 600 - margin, y: 440 },
@@ -296,12 +295,9 @@ const Cgpatogpa = () => {
             let yPosition = 420;
             const lineHeight = 20;
 
-            // Draw column headers
             page.drawText("No.", { x: margin, y: yPosition, size: 14, color: rgb(0, 0, 0) });
-            page.drawText("CGPA", { x: 250, y: yPosition, size: 14, color: rgb(0, 0, 0) });  // Centered for CGPA
-            page.drawText("GPA", { x: 400, y: yPosition, size: 14, color: rgb(0, 0, 0) });  // For GPA
-
-            // Draw line below headers
+            page.drawText("CGPA", { x: 250, y: yPosition, size: 14, color: rgb(0, 0, 0) });
+            page.drawText("GPA", { x: 400, y: yPosition, size: 14, color: rgb(0, 0, 0) });
             page.drawLine({
                 start: { x: margin, y: yPosition - 10 },
                 end: { x: 600 - margin, y: yPosition - 10 },
@@ -310,8 +306,6 @@ const Cgpatogpa = () => {
             });
 
             yPosition -= 30;
-
-            // Loop through history entries and add them to the PDF
             history.forEach((entry, index) => {
                 if (yPosition < 50) {
                     page = pdfDoc.addPage([600, 500]);
@@ -375,25 +369,24 @@ const Cgpatogpa = () => {
         }
     };
 
-
-
     const handleCustomGpaScaleChange = (e) => {
         const value = e.target.value;
         setGpaScale(value);
     };
-
-
 
     const shareOnWhatsApp = () => {
         const currentURL = window.location.href;
         const message = `Check out my CGPA to GPA calculation: CGPA: ${cgpa}, GPA: ${gpa}. You can view it here: ${currentURL}`;
         window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
     };
-
     if (!isClient) return null;
 
     return (
         <div className={`transition-all duration-300 bg-[#fafafc] ease-in-out ${theme === "dark" ? "dark" : "light"}`}>
+            <Head>
+                <title>Lord Calculator – CGPA to GPA Calculator</title>
+                <meta name="description" content="Lord Calculator’s CGPA to GPA Converter is free to use, highly accurate and allows you to maintain calculation history with report sharing features." />
+            </Head>
             <Navbar />
             <Nav />
             <div className="container  max-h-full flex-col w-full border-r-8 justify-center dark:bg-gray-800 ">

@@ -4,21 +4,26 @@ import TimelineItem from '@/components/TimelineItem';
 import React from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import Head from 'next/head';
 
 export default function EducationalCalculator() {
     const { t, i18n } = useTranslation();
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
-        setLoaded(true); 
+        setLoaded(true);
     }, []);
 
-    if (!loaded) return <div>Loading...</div>; 
+    if (!loaded) return <div>Loading...</div>;
 
 
     return (
         <div>
+            <Head>
+                <title>Lord Calculator – Free Educational Calculator</title>
+                <meta name="description" content="Lord Calculator is free educational calculators which offers speed, easy interface for use. Calculate CGPA, Grade, Percentage and use scientific calculator and more for free." />
+            </Head>
             <Navbar />
             <div className="relative overflow-hidden bg-[#fafafc] dark:bg-gray-800">
 

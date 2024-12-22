@@ -1285,5 +1285,15 @@
                 "email": "bhuvibhai786@gmail.com"
             }
         }
+    },
+    "aboutUs": {
+        "title": "Sobre nós",
+        "description": "Oi, amantes de cálculos! Sou um desenvolvedor de software, pai, marido e filho—se me chamarem de homem de família, seria perfeito. A principal motivação por trás do desenvolvimento do Lord Calculator vem de experiências reais.",
+        "storyTitle": "Minha história",
+        "story": [
+            "Desde a escola, tive dificuldades com cálculos de matemática, e mesmo após a graduação, isso continuou sendo um desafio. Eu frequentemente recorria a ferramentas online para cálculos.",
+            "Após completar meu curso em Ciência da Computação, me inspirei a criar este projeto, que agora você vê diante de si.",
+            "Desenvolvi (e continuo desenvolvendo) calculadoras que são realmente úteis para as pessoas. Espero que você goste do meu trabalho e ajude os outros compartilhando essas calculadoras com amigos, colegas e alunos. Muito obrigado por escolher o meu site."
+        ]
     }
 }

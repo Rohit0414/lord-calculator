@@ -1285,5 +1285,15 @@
         "email": "bhuvibhai786@gmail.com"
       }
     }
+  },
+  "aboutUs": {
+    "title": "About Us",
+    "description": "Hi, calculation lovers! I'm a software developer, father, husband, and son—if you call me a family man, it would be perfect. The main motivation behind developing Lord Calculator comes from real-life experiences.",
+    "storyTitle": "My Story",
+    "story": [
+      "Since school, I struggled with mathematics calculations, and even after graduation, this remained a challenge. I often relied on online tools for calculations.",
+      "After completing my degree in Computer Science, I was inspired to create this project, which you now see in front of you.",
+      "I’ve developed (and continue to develop) calculators that are genuinely useful to people. I hope you enjoy my work and help others by sharing these calculators with friends, colleagues, and students. Thank you very much for choosing my website."
+    ]
   }
 }

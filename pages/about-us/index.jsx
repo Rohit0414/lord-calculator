@@ -1,13 +1,30 @@
-import React from 'react';
-import Footer from '@/components/Footer';
+import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export default function AboutUs() {
+    const { t, i18n } = useTranslation();
+    const [isReady, setIsReady] = useState(false);
+
+    useEffect(() => {
+        if (i18n.isInitialized) {
+            setIsReady(true);
+        } else {
+            i18n.on('initialized', () => setIsReady(true));
+        }
+    }, [i18n]);
+
+    if (!isReady) {
+        return null;  // Wait until translations are loaded
+    }
+
+    const story = t('aboutUs.story', { returnObjects: true });
+
     return (
         <div className="min-h-screen flex flex-col relative">
             <Navbar />
             <div className="flex-grow flex flex-col justify-center bg-gradient-to-b from-[#f0f4fc] to-[#e2e8f0] dark:from-gray-900 dark:to-gray-800 py-4 relative overflow-hidden">
-               
                 <svg
                     className="absolute inset-0 h-full w-full -z-51 dark:hidden"
                     viewBox="0 0 100 100"
@@ -22,19 +39,18 @@ export default function AboutUs() {
                     <div className="text-center py-4">
                         <div className="mb-2 p-5 mt-4">
                             <h1 className="text-5xl cursor-pointer font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-blue-500 drop-shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                                About Us
+                                {t('aboutUs.title')}
                             </h1>
                         </div>
                         <div className="space-y-6 p-5 text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                            <p>
-                                Hi, calculation lovers! I'm a software developer, father, husband, and son—if you call me a family man, it would be perfect. The main motivation behind developing Lord Calculator comes from real-life experiences.
-                            </p>
-                            <p>
-                                Since school, I struggled with mathematics calculations, and even after graduation, this remained a challenge. I often relied on online tools for calculations. After completing my degree in Computer Science, I was inspired to create this project, which you now see in front of you.
-                            </p>
-                            <p>
-                                I’ve developed (and continue to develop) calculators that are genuinely useful to people. I hope you enjoy my work and help others by sharing these calculators with friends, colleagues, and students. Thank you very much for choosing my website.
-                            </p>
+                            <p>{t('aboutUs.description')}</p>
+
+                            <h2 className="text-xl font-semibold mt-4">{t('aboutUs.storyTitle')}</h2>
+                            <ul className="list-disc list-inside">
+                                <li>{story[0]}</li>
+                                <li>{story[1]}</li>
+                                <li>{story[2]}</li>
+                            </ul>
                         </div>
                     </div>
                 </main>

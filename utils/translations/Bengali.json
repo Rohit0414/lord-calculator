@@ -1,7 +1,5 @@
 {
-    "navbar": {
-        "selectLanguage": "ভাষা নির্বাচন করুন"
-    },
+    "selectLanguage": "ভাষা নির্বাচন করুন",
     "title": "GPA থেকে CGPA ক্যালকুলেটর",
     "enter_gpa": "GPA লিখুন",
     "choose_gpa_scale": "GPA স্কেল নির্বাচন করুন",

@@ -135,7 +135,7 @@ const CgpaContent = () => {
                                         src="/Lord-Calculator_s-CGPA-to-Percentage-Calculator.jpg"
                                         alt="CGPA to Percentage Calculator"
                                         className="mx-auto mb-6"
-                                        width={600}
+                                        width={1000}
                                         height={400}
                                     />
                                 </p>
@@ -340,7 +340,7 @@ const CgpaContent = () => {
                                 src="/CGPA-to-Percentage-Conversion-for-different-Boards-and-Universities.jpg"
                                 alt="CGPA to Percentage Calculator"
                                 className="mx-auto mb-6"
-                                width={600}  
+                                width={1000}  
                                 height={400} 
                             />
                             <p className="text-lg text-gray-700 dark:text-gray-300">

@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import Navbar from '@/components/Navbar';
 import Meter from '@/components/Meter';
 import Nav from '@/components/Nav';
@@ -27,6 +27,7 @@ const Gpatocgpa = () => {
     const router = useRouter();
     const [copied, setCopied] = useState(false);
     const [showScroll, setShowScroll] = useState(false);
+    const [cgpaScale, setCgpaScale] = useState(null);
     const { t } = useTranslation();
 
     const image = {
@@ -51,13 +52,14 @@ const Gpatocgpa = () => {
     };
 
 
-    const checkScrollTop = () => {
+    const checkScrollTop = useCallback(() => {
         if (!showScroll && window.pageYOffset > 300) {
             setShowScroll(true);
         } else if (showScroll && window.pageYOffset <= 300) {
             setShowScroll(false);
         }
-    };
+    }, [showScroll]);
+
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -69,8 +71,7 @@ const Gpatocgpa = () => {
     useEffect(() => {
         window.addEventListener("scroll", checkScrollTop);
         return () => window.removeEventListener("scroll", checkScrollTop);
-    }, [showScroll]);
-
+    }, [checkScrollTop]);
 
     useEffect(() => {
         setIsClient(true);
@@ -114,63 +115,83 @@ const Gpatocgpa = () => {
         setError('');
     };
 
+
     useEffect(() => {
         if (!isClient || !router.isReady) return;
         console.log("isClient is true, executing useEffect");
-
+    
+        // Extract query parameters from the router
         const { query } = router;
-        const { gpa: queryGPA, gradingscale: querygradingscale, cgpascale: queryCGPA } = query;
-
+        const { gpa: queryGPA, gradingscale: queryGradingScale, cgpascale: queryCGPAScale } = query;
+    
         console.log('query parameters:', query);
-        if (!queryGPA || !querygradingscale || !queryCGPA) {
+        if (!queryGPA || !queryGradingScale || !queryCGPAScale) {
             console.error('Missing query parameters');
             return;
         }
-        setGpa(queryGPA);
-        setGradingScale(querygradingscale);
-
-        console.log('Generating PDF with GPA:', queryGPA, 'Grading Scale:', querygradingscale, 'CGPA:', queryCGPA);
-
+    
+        // Parse values to ensure they're numbers
+        const gpaValue = parseFloat(queryGPA);
+        const gradingScale = parseFloat(queryGradingScale);
+        const cgpaScale = parseFloat(queryCGPAScale);
+    
+        // Check that parsed values are numbers
+        if (isNaN(gpaValue) || isNaN(gradingScale) || isNaN(cgpaScale)) {
+            console.error('One or more query parameters are invalid numbers');
+            return;
+        }
+    
+        // Set state with the parsed values
+        setGpa(gpaValue);
+        setGradingScale(gradingScale);
+        setCgpaScale(cgpaScale);
+    
+        console.log('Generating PDF with GPA:', gpaValue, 'Grading Scale:', gradingScale, 'CGPA Scale:', cgpaScale);
+    
         const generateAndDownloadPDF = async () => {
-            console.log('Generating PDF...');
-            if (isDownloading) return;
+            if (isDownloading) return; // Prevent multiple downloads
             setIsDownloading(true);
-
+    
             try {
+                // Create a new PDF document
                 const pdfDoc = await PDFDocument.create();
                 let page = pdfDoc.addPage([600, 500]);
                 const margin = 50;
-                const gpa = queryGPA;
-                const gradingscale = querygradingscale;
-                const cgpa = queryCGPA;
-
-                const gpaValue = parseFloat(gpa);
-                const cgpaScale = parseFloat(cgpa);
-                const cgpaValue = (gpaValue / gradingscale) * cgpaScale;
-                const cgpaFormatted = cgpaValue.toFixed(2);
-                const his = [...history, { gpa: gpaValue, cgpa: cgpaFormatted }];
-
+    
+                // Calculate CGPA from GPA and scales
+                const cgpaValue = (gpaValue / gradingScale) * cgpaScale;
+    
+                // Ensure cgpaValue is a valid number
+                const cgpaFormatted = !isNaN(cgpaValue) ? cgpaValue.toFixed(2) : "N/A";
+    
+                // Update history state with the new calculation (make sure history does not trigger useEffect again)
+                setHistory((prevHistory) => [
+                    ...prevHistory,
+                    { gpa: gpaValue, cgpa: cgpaFormatted },
+                ]);
+    
                 const headerText = "Calculation History";
                 const headerFontSize = 24;
                 const textWidth = headerFontSize * 0.6 * headerText.length;
                 const centerX = (600 - textWidth) / 2;
+    
                 page.drawText(headerText, {
                     x: centerX,
                     y: 450,
                     size: headerFontSize,
                     color: rgb(0, 0.53, 0.71),
                 });
-
+    
                 page.drawLine({
                     start: { x: margin, y: 440 },
                     end: { x: 600 - margin, y: 440 },
                     thickness: 1,
                     color: rgb(0.8, 0.8, 0.8),
                 });
-
+    
                 let yPosition = 420;
                 const lineHeight = 20;
-
+    
                 page.drawText("No.", { x: margin, y: yPosition, size: 14, color: rgb(0, 0, 0) });
                 page.drawText("GPA", { x: 200, y: yPosition, size: 14, color: rgb(0, 0, 0) });
                 page.drawText("CGPA", { x: 320, y: yPosition, size: 14, color: rgb(0, 0, 0) });
@@ -180,45 +201,55 @@ const Gpatocgpa = () => {
                     thickness: 0.5,
                     color: rgb(0.8, 0.8, 0.8),
                 });
-
+    
                 yPosition -= 30;
-
-                his.forEach((entry, index) => {
-                    const roundedGPA = entry.gpa.toFixed(2);
-                    const roundedCGPA = entry.cgpa;
-
+    
+                // Ensure history is processed correctly
+                const processedHistory = [...history, { gpa: gpaValue, cgpa: cgpaFormatted }];
+                processedHistory.forEach((entry, index) => {
+                    console.log('History entry:', entry); // Debugging line
+    
+                    // Safely ensure the GPA is a valid number before calling toFixed
+                    const roundedGPA = entry.gpa && !isNaN(entry.gpa) ? entry.gpa.toFixed(2) : "N/A";
+    
+                    // Safely ensure CGPA is a valid number
+                    const cgpaValue = parseFloat(entry.cgpa);
+                    const roundedCGPA = entry.cgpa
+    
+                    console.log(`Rounded GPA: ${roundedGPA}, Rounded CGPA: ${roundedCGPA}`); // Debugging output
+    
                     page.drawText(`${index + 1}`, { x: margin, y: yPosition, size: 12, color: rgb(0, 0, 0) });
                     page.drawText(`${roundedGPA}`, { x: 200, y: yPosition, size: 12, color: rgb(0, 0, 0) });
                     page.drawText(`${roundedCGPA}`, { x: 320, y: yPosition, size: 12, color: rgb(0, 0, 0) });
-
+    
                     yPosition -= lineHeight;
                 });
-
+    
                 page.drawText("Generated by Lord Calculator", {
                     x: margin,
                     y: 30,
                     size: 10,
                     color: rgb(0.5, 0.5, 0.5),
                 });
-
+    
                 const pdfBytes = await pdfDoc.save();
                 const blob = new Blob([pdfBytes], { type: "application/pdf" });
                 const link = document.createElement("a");
                 link.href = URL.createObjectURL(blob);
                 link.download = "calculation_history.pdf";
-                link.click();  // Directly trigger the click here
+                link.click();  // Directly trigger the download
             } catch (error) {
                 console.error("Error generating PDF:", error);
             }
-
-            setIsDownloading(false);
+    
+            setIsDownloading(true);
         };
-
-        generateAndDownloadPDF();
-
-    }, [isClient, router.query, history]);
-
-
+    
+        if (Object.keys(query).length > 0 && queryGPA && queryGradingScale && queryCGPAScale) {
+            generateAndDownloadPDF();
+        }
+    }, [isClient, router,history, isDownloading]);  
+    
 
     const handleCopyLink = () => {
         const currentURL = window.location.href;
@@ -465,7 +496,8 @@ const Gpatocgpa = () => {
                                                 <tr key={index}>
                                                     <td className="border border-gray-300 p-2 font-semibold">{index + 1}</td>
                                                     <td className="border border-gray-300 p-2">{entry.gpa.toFixed(2)}</td>
-                                                    <td className="border border-gray-300 p-2">{entry.cgpa.toFixed(2)}</td>
+                                                    <td className="border border-gray-300 p-2">entry.cgpa</td>
+
                                                 </tr>
                                             ))}
                                         </tbody>

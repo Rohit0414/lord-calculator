@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect,useCallback } from 'react';
 import Navbar from '@/components/Navbar';
 import Meter from '@/components/Meter';
 import { useTheme } from '@/context/ThemeContext';
@@ -49,13 +49,14 @@ const Cgpatopercentage = () => {
     const [showScroll, setShowScroll] = useState(false);
     const { t } = useTranslation();
 
-    const checkScrollTop = () => {
+    const checkScrollTop = useCallback(() => {
         if (!showScroll && window.pageYOffset > 300) {
             setShowScroll(true);
         } else if (showScroll && window.pageYOffset <= 300) {
             setShowScroll(false);
         }
-    };
+    }, [showScroll]);
+    
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -67,7 +68,7 @@ const Cgpatopercentage = () => {
     useEffect(() => {
         window.addEventListener("scroll", checkScrollTop);
         return () => window.removeEventListener("scroll", checkScrollTop);
-    }, [showScroll]);
+    }, [checkScrollTop]);
 
     useEffect(() => {
         setIsClient(true);
@@ -225,7 +226,7 @@ const Cgpatopercentage = () => {
         if (Object.keys(query).length > 0) {
             generateAndDownloadPDF();
         }
-    }, [isClient, router.query, history]);
+    }, [isClient, router,isDownloading,history]);
 
 
     const handleCopyLink = () => {

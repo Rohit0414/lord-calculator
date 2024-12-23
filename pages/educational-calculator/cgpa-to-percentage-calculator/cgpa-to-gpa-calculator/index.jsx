@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect,useCallback } from 'react';
 import Navbar from '@/components/Navbar';
 import Meter from '@/components/Meter';
 import Nav from '@/components/Nav';
@@ -50,13 +50,14 @@ const Cgpatogpa = () => {
     };
 
 
-    const checkScrollTop = () => {
+    const checkScrollTop = useCallback(() => {
         if (!showScroll && window.pageYOffset > 300) {
             setShowScroll(true);
         } else if (showScroll && window.pageYOffset <= 300) {
             setShowScroll(false);
         }
-    };
+    }, [showScroll]);
+    
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -68,7 +69,8 @@ const Cgpatogpa = () => {
     useEffect(() => {
         window.addEventListener("scroll", checkScrollTop);
         return () => window.removeEventListener("scroll", checkScrollTop);
-    }, [showScroll]);
+    }, [checkScrollTop]);
+    
 
 
     useEffect(() => {
@@ -117,15 +119,15 @@ const Cgpatogpa = () => {
 
     useEffect(() => {
         if (!isClient) return;
-
+    
         const { query } = router;
+    
         const generateAndDownloadPDF = async () => {
-            if (isDownloading) return;
+            if (isDownloading) return; // Prevent multiple downloads at once
             setIsDownloading(true);
             try {
-
                 console.log('Query:', query);
-
+    
                 const pdfDoc = await PDFDocument.create();
                 let page = pdfDoc.addPage([600, 500]);
                 const margin = 50;
@@ -133,106 +135,98 @@ const Cgpatogpa = () => {
                 const headerFontSize = 24;
                 const textWidth = headerFontSize * 0.6 * headerText.length;
                 const centerX = (600 - textWidth) / 2;
-
-
+    
                 page.drawText(headerText, {
                     x: centerX,
                     y: 450,
                     size: headerFontSize,
                     color: rgb(0, 0.53, 0.71),
                 });
-
-
+    
                 page.drawLine({
                     start: { x: margin, y: 440 },
                     end: { x: 600 - margin, y: 440 },
                     thickness: 1,
                     color: rgb(0.8, 0.8, 0.8),
                 });
-
+    
                 let yPosition = 420;
                 const lineHeight = 20;
-
-
+    
                 page.drawText("No.", { x: margin, y: yPosition, size: 14, color: rgb(0, 0, 0) });
                 page.drawText("CGPA", { x: 250, y: yPosition, size: 14, color: rgb(0, 0, 0) });
                 page.drawText("GPA", { x: 400, y: yPosition, size: 14, color: rgb(0, 0, 0) });
-
-
+    
                 page.drawLine({
                     start: { x: margin, y: yPosition - 10 },
                     end: { x: 600 - margin, y: yPosition - 10 },
                     thickness: 0.5,
                     color: rgb(0.8, 0.8, 0.8),
                 });
-
+    
                 yPosition -= 30;
-
-
+    
                 if (query.cgpa && query.gpascale && query.cgpascale) {
                     console.log('CGPA:', query.cgpa, 'GPA Scale:', query.gpascale, 'CGPA Scale:', query.cgpascale);
                     setCgpa(query.cgpa);
                     setCgpaPointScale(query.cgpascale);
                     setGpaScale(query.gpascale);
-
+    
                     const gpaValue = (query.cgpa / query.cgpascale) * query.gpascale;
                     const gpaFormatted = `${gpaValue.toFixed(2)}`;
-
-
+    
                     const his = [...history, { cgpa: query.cgpa, gpa: gpaFormatted }];
                     console.log('Updated History:', his);
-
-
+    
                     his.forEach((entry, index) => {
                         if (yPosition < 50) {
                             page = pdfDoc.addPage([600, 500]);
                             yPosition = 450;
-
+    
                             page.drawText(headerText, {
                                 x: centerX,
                                 y: yPosition,
                                 size: headerFontSize,
                                 color: rgb(0, 0.53, 0.71),
                             });
-
+    
                             page.drawLine({
                                 start: { x: margin, y: yPosition - 10 },
                                 end: { x: 600 - margin, y: yPosition - 10 },
                                 thickness: 1,
                                 color: rgb(0.8, 0.8, 0.8),
                             });
-
+    
                             yPosition -= 40;
                             page.drawText("No.", { x: margin, y: yPosition, size: 14, color: rgb(0, 0, 0) });
                             page.drawText("CGPA", { x: 250, y: yPosition, size: 14, color: rgb(0, 0, 0) });
                             page.drawText("GPA", { x: 400, y: yPosition, size: 14, color: rgb(0, 0, 0) });
-
+    
                             page.drawLine({
                                 start: { x: margin, y: yPosition - 10 },
                                 end: { x: 600 - margin, y: yPosition - 10 },
                                 thickness: 0.5,
                                 color: rgb(0.8, 0.8, 0.8),
                             });
-
+    
                             yPosition -= 30;
                         }
-
-
+    
                         page.drawText(`${index + 1}`, { x: margin, y: yPosition, size: 12, color: rgb(0, 0, 0) });
                         page.drawText(`${entry.cgpa}`, { x: 250, y: yPosition, size: 12, color: rgb(0, 0, 0) });
                         page.drawText(`${entry.gpa}`, { x: 400, y: yPosition, size: 12, color: rgb(0, 0, 0) });
-
+    
                         yPosition -= lineHeight;
                     });
                 }
-
+    
                 page.drawText("Generated by Lord Calculator", {
                     x: margin,
                     y: 30,
                     size: 10,
                     color: rgb(0.5, 0.5, 0.5),
                 });
-
+    
                 const pdfBytes = await pdfDoc.save();
                 const blob = new Blob([pdfBytes], { type: 'application/pdf' });
                 const link = document.createElement('a');
@@ -240,19 +234,20 @@ const Cgpatogpa = () => {
                 link.download = 'calculation_history.pdf';
                 link.click();
                 URL.revokeObjectURL(link.href);
-            }
-            catch (error) {
+            } catch (error) {
                 console.error('Error creating or downloading the PDF:', error);
-            }
-            finally {
+            } finally {
                 setIsDownloading(false);
             }
         };
-
+    
         if (Object.keys(query).length > 0 && query.cgpa && query.gpascale && query.cgpascale) {
             generateAndDownloadPDF();
         }
-    }, [isClient, router.query, history]);
+    }, [isClient, router, history, isDownloading]);
+    
+    
+    
 
 
 

@@ -48,7 +48,7 @@ const SearchPage = () => {
       </form>
 
       {/* Search Results */}
-      <h2 className="text-2xl font-bold">Search Results for "{query}"</h2>
+      <h2 className="text-2xl font-bold">Search Results for {query}</h2>
       {results.length > 0 ? (
         <ul className="mt-4">
           {results.map((result) => (
@@ -60,7 +60,7 @@ const SearchPage = () => {
           ))}
         </ul>
       ) : (
-        <p className="mt-4">No results found for "{query}".</p>
+        <p className="mt-4">No results found for {query}</p>
       )}
     </div>
   );

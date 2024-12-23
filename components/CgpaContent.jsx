@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useTheme } from '@/context/ThemeContext';
 import { useTranslation } from 'react-i18next';
+import Image from 'next/image';
+
 
 
 
@@ -129,10 +131,12 @@ const CgpaContent = () => {
                                     {t("lord_calculator_cgpa_calculator")}
                                 </h2>
                                 <p>
-                                    <img
+                                    <Image
                                         src="/Lord-Calculator_s-CGPA-to-Percentage-Calculator.jpg"
                                         alt="CGPA to Percentage Calculator"
                                         className="mx-auto mb-6"
+                                        width={600}
+                                        height={400}
                                     />
                                 </p>
 
@@ -332,10 +336,12 @@ const CgpaContent = () => {
                                 {t('whyConvertTitle')}
                             </h2>
 
-                            <img
+                            <Image
                                 src="/CGPA-to-Percentage-Conversion-for-different-Boards-and-Universities.jpg"
                                 alt="CGPA to Percentage Calculator"
                                 className="mx-auto mb-6"
+                                width={600}  
+                                height={400} 
                             />
                             <p className="text-lg text-gray-700 dark:text-gray-300">
                                 {t('whyConvertExplanation')}

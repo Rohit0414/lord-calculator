@@ -17,11 +17,12 @@ import arabicTranslations from "./utils/translations/arabic.json";
 import japneaseTranslations from './utils/translations/japnease.json';
 
 const resources = {
-  en: {
-    translation: englishTranslations,
-  },
+
   es: {
     translation: espanolTranslations,
+  },
+  en: {
+    translation: englishTranslations,
   },
   hi: {
     translation: hindiTranslations,
@@ -29,34 +30,34 @@ const resources = {
   fr: {
     translation: frenchTranslations,
   },
-  de:{
+  de: {
     translation: germanTranslations,
   },
-  it:{
+  it: {
     translation: italianTranslations,
   },
-  pt:{
+  pt: {
     translation: portugueseTranslations,
   },
-  bn:{
+  bn: {
     translation: bengaliTranslations,
   },
-  ru:{
+  ru: {
     translation: russianTranslations,
   },
-  ko:{
+  ko: {
     translation: koreanTranslations,
   },
-  ta:{
+  ta: {
     translation: tamilTranslations,
   },
-  ml:{
+  ml: {
     translation: malayalamTranslations,
   },
-  ar:{
+  ar: {
     translation: arabicTranslations,
   },
-  ja:{
+  ja: {
     translation: japneaseTranslations,
   },
 };

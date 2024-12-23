@@ -19,46 +19,46 @@ import japneaseTranslations from './utils/translations/japnease.json';
 const resources = {
 
   es: {
-    translation: espanolTranslations,
+    translation: espanolTranslations || {} ,
   },
   en: {
-    translation: englishTranslations,
+    translation: englishTranslations || {},
   },
   hi: {
-    translation: hindiTranslations,
+    translation: hindiTranslations || {},
   },
   fr: {
-    translation: frenchTranslations,
+    translation: frenchTranslations || {},
   },
   de: {
-    translation: germanTranslations,
+    translation: germanTranslations || {},
   },
   it: {
-    translation: italianTranslations,
+    translation: italianTranslations || {},
   },
   pt: {
-    translation: portugueseTranslations,
+    translation: portugueseTranslations || {},
   },
   bn: {
-    translation: bengaliTranslations,
+    translation: bengaliTranslations || {},
   },
   ru: {
-    translation: russianTranslations,
+    translation: russianTranslations || {},
   },
   ko: {
-    translation: koreanTranslations,
+    translation: koreanTranslations || {},
   },
   ta: {
-    translation: tamilTranslations,
+    translation: tamilTranslations || {},
   },
   ml: {
-    translation: malayalamTranslations,
+    translation: malayalamTranslations || {},
   },
   ar: {
-    translation: arabicTranslations,
+    translation: arabicTranslations || {},
   },
   ja: {
-    translation: japneaseTranslations,
+    translation: japneaseTranslations || {},
   },
 };
 console.log(resources);

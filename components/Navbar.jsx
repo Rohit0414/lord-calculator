@@ -105,8 +105,7 @@ const Navbar = () => {
 
   return (
     <nav className="dark:bg-gray-800 dark:border-gray-700 shadow-lg">
-      <div className="flex w-full h-[60px] z-[9999] fixed top-0 items-center px-5 justify-between bg-[#F6F5F2] dark:bg-gray-900">
-
+      <div className="flex w-full h-[60px] z-[9999] fixed top-0 items-center px-5 justify-between bg-[#F6F5F2] dark:bg-gray-900 md:h-[70px] sm:h-[50px] sm:px-3">
         <Link href="/" className="flex items-center">
           <Image
             src={calculatorImage}
@@ -115,14 +114,17 @@ const Navbar = () => {
             height={80}
             className="mr-2"
           />
-          <span className=" translate-x-[-34px] self-center text-2xl font-bold whitespace-nowrap bg-clip-text bg-gradient-to-r from-blue-700 to-purple-600 text-transparent drop-shadow-lg">
+          <span className="translate-x-[-34px] self-center text-xl sm:text-lg md:text-2xl font-bold whitespace-nowrap bg-clip-text bg-gradient-to-r from-blue-700 to-purple-600 text-transparent drop-shadow-lg">
             Lord Calculator
           </span>
         </Link>
 
+       
         <div className="flex items-center ml-auto space-x-2">
-
-          <form onSubmit={handleSearch} className="flex dark:text-white dark:bg-gray-800 items-center space-x-2 relative">
+          <form
+            onSubmit={handleSearch}
+            className="hidden lg:flex dark:text-white dark:bg-gray-800 items-center space-x-2 relative"
+          >
             <input
               type="text"
               value={searchInput}
@@ -153,13 +155,10 @@ const Navbar = () => {
                 <span>{t("search_button")}</span>
               </span>
             </button>
-
-
-
             {searchResults.length > 0 && searchInput && (
-              <ul className="absolute top-7 right-[1.5px] bg-white dark:text-white dark:bg-gray-800 rounded-2xl  shadow-lg w-full mt-2 z-10">
+              <ul className="absolute top-7 right-[1.5px] bg-white dark:text-white dark:bg-gray-800 rounded-2xl shadow-lg w-full mt-2 z-10">
                 {searchResults.map((result) => (
-                  <li key={result.id} className="px-4 py-2 rounded-2xl hover:bg-gray-200 dark:hover:[#000]">
+                  <li key={result.id} className="px-4 py-2 rounded-2xl hover:bg-gray-200 dark:hover:bg-gray-900">
                     <Link href={result.link} className="block">{result.title}</Link>
                   </li>
                 ))}
@@ -167,13 +166,12 @@ const Navbar = () => {
             )}
           </form>
 
-
-
+          
           <Link href="/" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
             {t("home")}
           </Link>
 
-
+          
           <div className="relative" ref={categoryRef}>
             <button
               onClick={() => setIsCategoryOpen(!isCategoryOpen)}
@@ -188,55 +186,38 @@ const Navbar = () => {
               className={`absolute mt-2 bg-[#fafafc] dark:bg-gray-700 shadow-lg rounded-md w-[240px] transition-all duration-300 ease-out ${isCategoryOpen ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none"
                 }`}
             >
+             
               <Link
                 href="/educational-calculator"
                 className="block px-4 py-2 text-black dark:text-white hover:text-[#009688] flex items-center space-x-2"
               >
-                <Image
-                  src={image4.src}
-                  height={image4.height}
-                  width={image4.width}
-                  alt="image description"
-                  className="flex-shrink-0"
-                />
+                <Image src={image4.src} height={image4.height} width={image4.width} alt="Educational Calculator" />
                 <span>{t("educational_calculator")}</span>
               </Link>
-
               <Link
                 href="/scientific-calculator"
                 className="block px-4 py-2 text-black dark:text-white hover:text-[#009688] flex items-center space-x-2"
               >
-                <Image
-                  src={image1.src}
-                  height={image1.height}
-                  width={image1.width}
-                  alt="image description"
-                />
-                <span> {t("scientific_calculator")}</span>
+                <Image src={image1.src} height={image1.height} width={image1.width} alt="Scientific Calculator" />
+                <span>{t("scientific_calculator")}</span>
               </Link>
               <Link
                 href="/scientific-calculator"
                 className="block px-4 py-2 text-black dark:text-white hover:text-[#009688] flex items-center space-x-2"
               >
-                <Image
-                  src={image.src}
-                  height={image.height}
-                  width={image.width}
-                  alt="image description"
-                />
-                <span> {t("womens_calculator")}</span>
+                <Image src={image.src} height={image.height} width={image.width} alt="Women's Calculator" />
+                <span>{t("womens_calculator")}</span>
               </Link>
             </div>
           </div>
 
-
+      
           <button
             onClick={toggleTheme}
             className="p-2 rounded-md transition duration-300 text-black dark:text-white"
           >
             {theme === "light" ? <FaSun size={20} /> : <FaMoon size={20} />}
           </button>
-
 
           <div className="relative">
             <button
@@ -613,9 +594,11 @@ const Navbar = () => {
               </div>
             )}
           </div>
+
         </div>
       </div>
     </nav>
+
   );
 };
 

@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect,useCallback } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import Navbar from '@/components/Navbar';
 import Meter from '@/components/Meter';
 import { useTheme } from '@/context/ThemeContext';
@@ -56,7 +56,7 @@ const Cgpatopercentage = () => {
             setShowScroll(false);
         }
     }, [showScroll]);
-    
+
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -226,7 +226,7 @@ const Cgpatopercentage = () => {
         if (Object.keys(query).length > 0) {
             generateAndDownloadPDF();
         }
-    }, [isClient, router,isDownloading,history]);
+    }, [isClient, router, isDownloading, history]);
 
 
     const handleCopyLink = () => {
@@ -358,32 +358,34 @@ const Cgpatopercentage = () => {
                 <meta name="description" content="Lord Calculator’s CGPA to Percentage Calculator is the best, accurate, verified and trustworthy calculator over the internet. Just put CGPA and percentage will be calculated before you blink eye." />
             </Head>
             <Navbar />
-            <Nav />
-
+            <div className=''>
+                <Nav />
+            </div>
             <div className="container  max-h-full flex-col w-full border-r-8 justify-center dark:bg-gray-800 ">
                 <div className="w-full flex flex-col items-center p-4 bg-white dark:bg-gray-800 dark:text-white">
                     <div className="flex  w-full">
 
-                        <div className="p-5 mx-auto text-black w-full  dark:text-white">
-                            <h1 className="text-4xl font-bold mb-4 text-center text-[#308d46] drop-shadow-lg dark:bg-teal-950  bg-transparent bg-clip-text">
+                        <div className="p-5 mx-auto text-black w-full dark:text-white">
+                            <h1 className="text-4xl font-bold mb-4 text-center text-[#308d46] drop-shadow-lg dark:bg-teal-950 bg-transparent bg-clip-text">
                                 {t("title3")}
                             </h1>
                             <div className="flex mb-4 justify-center items-center flex-col">
                                 <h3 className="text-2xl font-bold mb-4 text-[#105045] drop-shadow-lg mt-2 dark:text-[#b3e0e6]">
                                     {t("enterCGPA3")}
                                 </h3>
-                                <input id='cgpa'
+                                <input
+                                    id='cgpa'
                                     type="number"
                                     value={cgpa}
                                     onChange={(e) => setCgpa(e.target.value)}
                                     placeholder={t("cgpaPlaceholder3")}
-                                    className="w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white"
+                                    className="w-full sm:w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white"
                                 />
                             </div>
 
                             <div className="flex mb-4 justify-center items-center flex-col">
                                 <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">{t("chooseGradeScale3")}</label>
-                                <div className="flex justify-center w-1/2 mb-4 p-2">
+                                <div className="flex justify-center w-full sm:w-1/2 mb-4 p-2">
                                     <button
                                         onClick={() => handleScaleChange(4.0)}
                                         className={`${gradingScale === 4.0 ? 'bg-[#29582b]' : 'bg-[#105045] dark:bg-[#4f5b56]'} text-white w-3/4 py-2 mr-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]`}
@@ -412,14 +414,14 @@ const Cgpatopercentage = () => {
                                     value={multiplicationFactor}
                                     onChange={(e) => setMultiplicationFactor(parseFloat(e.target.value))}
                                     placeholder={t("multiplicationFactorPlaceholder")}
-                                    className="w-3/4 p-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white"
+                                    className="w-full sm:w-3/4 p-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white"
                                 />
                             </div>
 
                             {error && <div className="text-red-500 mb-2 text-center">{error}</div>}
 
-                            <div className="flex justify-center space-x-32 mb-4">
-                                <button onClick={convertCGPAtoPercentage} className="bg-[#105045] dark:bg-[#4f5b56] text-white w-32 py-2 rounded hover:bg-[#29582b]  dark:hover:bg-[#29582b]">
+                            <div className="flex justify-center space-x-8 sm:space-x-32 mb-4">
+                                <button onClick={convertCGPAtoPercentage} className="bg-[#105045] dark:bg-[#4f5b56] text-white w-32 py-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]">
                                     {t("calculateButton3")}
                                 </button>
                                 <button onClick={resetFields} className="bg-[#105045] text-white w-32 py-2 rounded hover:bg-[#29582b] dark:bg-[#4f5b56] dark:hover:bg-[#29582b]">
@@ -433,11 +435,17 @@ const Cgpatopercentage = () => {
                                     <label className="text-3xl font-bold mb-2 text-[#105045] drop-shadow-lg mt-2 dark:text-[#b3e0e6]">
                                         {t("calculatedPercentage")}
                                     </label>
-                                    <input type="text" value={percentage} placeholder={t("percentagePlaceholder")} readOnly className="w-3/4 p-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center ml-2 dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white" />
+                                    <input
+                                        type="text"
+                                        value={percentage}
+                                        placeholder={t("percentagePlaceholder")}
+                                        readOnly
+                                        className="w-full sm:w-3/4 p-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center ml-2 dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white"
+                                    />
                                 </div>
                             </div>
 
-                            <div className="mt-4 flex justify-center space-x-32 mb-4">
+                            <div className="mt-4 flex justify-center space-x-8 sm:space-x-32 mb-4">
                                 <button onClick={downloadHistoryAsPDF} className="bg-[#105045] text-white w-32 py-2 rounded hover:bg-[#29582b] dark:bg-[#4f5b56] dark:hover:bg-[#29582b]">
                                     {t("downloadButton3")}
                                 </button>
@@ -453,12 +461,12 @@ const Cgpatopercentage = () => {
                             </div>
 
                             <div className="flex justify-center">
-                                <div className="history-container mb-4 text-center w-60">
+                                <div className="history-container mb-4 text-center w-full sm:w-60">
                                     <b>{t("calculationHistory3")}</b>
                                     <table className="min-w-full border border-gray-300 mt-2 mx-auto dark:border-gray-700">
                                         <thead>
                                             <tr className="bg-gray-100 dark:bg-gray-800">
-                                                <th className="border border-gray-300 p-2 dark:border-gray-700"> {t("sno")}</th>
+                                                <th className="border border-gray-300 p-2 dark:border-gray-700">{t("sno")}</th>
                                                 <th className="border border-gray-300 p-2 dark:border-gray-700">{t("cgpa")}</th>
                                                 <th className="border border-gray-300 p-2 dark:border-gray-700">{t("percentage")}</th>
                                             </tr>
@@ -476,27 +484,26 @@ const Cgpatopercentage = () => {
                                 </div>
                             </div>
 
-                            <div className="w-full min-h-screen  blur-[px] flex justify-center p-5">
+                            <div className="w-full min-h-screen blur-[px] flex justify-center p-5">
                                 <div className="max-w-4xl w-full text-justify mx-auto">
                                     <CgpaContent />
                                 </div>
                             </div>
                         </div>
 
-                        <div className="bg-gray-50 h-[64vh] w-[64vh] rounded-xl shadow-xl translate-x-[-60px] p-6 sticky top-28 dark:bg-gray-900">
-                            <div className=''>
+                        <div className="bg-gray-50 h-[64vh] w-[64vh] rounded-xl shadow-xl translate-x-[-60px] p-6 sticky top-28 dark:bg-gray-900 hidden md:block">
+                            <div>
                                 <h1 className="text-2xl font-semibold mb-6 text-center text-gray-700 border-b-2 border-gray-300 pb-3 dark:text-gray-200 dark:border-gray-700">
                                     {t('educational_calculators_title')}
                                 </h1>
                             </div>
-                            <ul className="space-y-5 ">
-                                <div className='h-18 overflow-y-auto'>
+                            <ul className="space-y-5">
+                                <div className="h-18 overflow-y-auto">
                                     <li>
                                         <Link
                                             href="/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage"
                                             className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
                                         >
-
                                             <Image
                                                 src={image3.src}
                                                 height={image3.height}
@@ -507,7 +514,7 @@ const Cgpatopercentage = () => {
                                         </Link>
                                     </li>
                                 </div>
-                                <div className='h-18 overflow-y-auto'>
+                                <div className="h-18 overflow-y-auto">
                                     <li>
                                         <Link
                                             href="/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA"
@@ -518,11 +525,12 @@ const Cgpatopercentage = () => {
                                                 height={image2.height}
                                                 width={image2.width}
                                                 alt="image description"
-                                            /><span className="ml-3">{t('percentage_to_cgpa')}</span>
+                                            />
+                                            <span className="ml-3">{t('percentage_to_cgpa')}</span>
                                         </Link>
                                     </li>
                                 </div>
-                                <div className='h-16 overflow-y-auto'>
+                                <div className="h-16 overflow-y-auto">
                                     <li>
                                         <Link
                                             href="/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA"
@@ -533,11 +541,12 @@ const Cgpatopercentage = () => {
                                                 height={image1.height}
                                                 width={image1.width}
                                                 alt="image description"
-                                            /> <span className="ml-3">{t('gpa_to_cgpa')}</span>
+                                            />
+                                            <span className="ml-3">{t('gpa_to_cgpa')}</span>
                                         </Link>
                                     </li>
                                 </div>
-                                <div className='h-16 overflow-y-auto'>
+                                <div className="h-16 overflow-y-auto">
                                     <li>
                                         <Link
                                             href="/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA"
@@ -548,12 +557,14 @@ const Cgpatopercentage = () => {
                                                 height={image.height}
                                                 width={image.width}
                                                 alt="image description"
-                                            /> <span className="ml-3">{t('cgpa_to_gpa')}</span>
+                                            />
+                                            <span className="ml-3">{t('cgpa_to_gpa')}</span>
                                         </Link>
                                     </li>
                                 </div>
                             </ul>
                         </div>
+
                     </div>
                 </div>
             </div>

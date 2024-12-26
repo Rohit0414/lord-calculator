@@ -104,8 +104,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="dark:bg-gray-800 dark:border-gray-700 shadow-lg">
-      <div className="flex w-full h-[60px] z-[9999] fixed top-0 items-center px-5 justify-between bg-[#F6F5F2] dark:bg-gray-900 md:h-[70px] sm:h-[50px] sm:px-3">
+    <nav className="dark:bg-gray-800 dark:border-gray-700 shadow-lg fixed top-0 w-full z-[9999]">
+      <div className="flex h-[60px] items-center px-5 justify-between bg-[#F6F5F2] dark:bg-gray-900 md:h-[70px] sm:h-[50px] sm:px-3">
+        {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
             src={calculatorImage}
@@ -119,8 +120,17 @@ const Navbar = () => {
           </span>
         </Link>
 
-       
-        <div className="flex items-center ml-auto space-x-2">
+        {/* Hamburger Menu for Mobile */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="block md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+        >
+          <FaBars className="text-black dark:text-white" size={20} />
+        </button>
+
+        {/* Desktop Menu */}
+        <div className={`flex-col md:flex-row md:flex ${isMenuOpen ? "flex" : "hidden"} md:items-center space-y-2 md:space-y-0 md:space-x-4`}>
+          {/* Search */}
           <form
             onSubmit={handleSearch}
             className="hidden lg:flex dark:text-white dark:bg-gray-800 items-center space-x-2 relative"
@@ -134,45 +144,19 @@ const Navbar = () => {
             />
             <button
               type="submit"
-              className="relative group px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md overflow-hidden shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-200"
+              className="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
             >
-              <span className="absolute inset-0 w-0 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
-              <span className="relative flex items-center justify-center space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10 14l2-2m0 0l2-2m-2 2H6"
-                  />
-                </svg>
-                <span>{t("search_button")}</span>
-              </span>
+              {t("search_button")}
             </button>
-            {searchResults.length > 0 && searchInput && (
-              <ul className="absolute top-7 right-[1.5px] bg-white dark:text-white dark:bg-gray-800 rounded-2xl shadow-lg w-full mt-2 z-10">
-                {searchResults.map((result) => (
-                  <li key={result.id} className="px-4 py-2 rounded-2xl hover:bg-gray-200 dark:hover:bg-gray-900">
-                    <Link href={result.link} className="block">{result.title}</Link>
-                  </li>
-                ))}
-              </ul>
-            )}
           </form>
 
-          
+          {/* Links */}
           <Link href="/" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
             {t("home")}
           </Link>
 
-          
-          <div className="relative" ref={categoryRef}>
+          {/* Categories Dropdown */}
+          <div className="relative">
             <button
               onClick={() => setIsCategoryOpen(!isCategoryOpen)}
               className="flex items-center px-4 py-2 text-black dark:text-white hover:text-[#009688] rounded-md transition duration-300"
@@ -186,32 +170,19 @@ const Navbar = () => {
               className={`absolute mt-2 bg-[#fafafc] dark:bg-gray-700 shadow-lg rounded-md w-[240px] transition-all duration-300 ease-out ${isCategoryOpen ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none"
                 }`}
             >
-             
-              <Link
-                href="/educational-calculator"
-                className="block px-4 py-2 text-black dark:text-white hover:text-[#009688] flex items-center space-x-2"
-              >
-                <Image src={image4.src} height={image4.height} width={image4.width} alt="Educational Calculator" />
-                <span>{t("educational_calculator")}</span>
+              <Link href="/educational-calculator" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
+                {t("educational_calculator")}
               </Link>
-              <Link
-                href="/scientific-calculator"
-                className="block px-4 py-2 text-black dark:text-white hover:text-[#009688] flex items-center space-x-2"
-              >
-                <Image src={image1.src} height={image1.height} width={image1.width} alt="Scientific Calculator" />
-                <span>{t("scientific_calculator")}</span>
+              <Link href="/scientific-calculator" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
+                {t("scientific_calculator")}
               </Link>
-              <Link
-                href="/scientific-calculator"
-                className="block px-4 py-2 text-black dark:text-white hover:text-[#009688] flex items-center space-x-2"
-              >
-                <Image src={image.src} height={image.height} width={image.width} alt="Women's Calculator" />
-                <span>{t("womens_calculator")}</span>
+              <Link href="/womens-calculator" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">
+                {t("womens_calculator")}
               </Link>
             </div>
           </div>
 
-      
+          {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
             className="p-2 rounded-md transition duration-300 text-black dark:text-white"
@@ -594,7 +565,6 @@ const Navbar = () => {
               </div>
             )}
           </div>
-
         </div>
       </div>
     </nav>
@@ -603,3 +573,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

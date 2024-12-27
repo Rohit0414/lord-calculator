@@ -35,37 +35,49 @@ const CgpaContent = () => {
 
 
     return (
-        <div className={`mx-auto relative bg-white text-justify p-6  leading-relaxed ${theme === "dark" ? "dark" : "light"} dark:bg-gray-900 dark:text-white  `}>
+        <div className={`mx-auto relative bg-white text-justify py-4  leading-relaxed ${theme === "dark" ? "dark" : "light"} dark:bg-gray-900 dark:text-white  `}>
             <div className="">
-                <div className="dark:bg-gray-900">
-                    <h1 id="section1" className="text-4xl font-bold text-blue-500 drop-shadow-md mt-4 mb-4">
+                <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
+                    <h1
+                        id="section1"
+                        className="text-3xl sm:text-4xl font-bold text-blue-500 drop-shadow-md mt-4 mb-4"
+                    >
                         {t("section1")}
                     </h1>
-                    <p className="text-lg mb-4 text-gray-700 leading-snug dark:text-gray-300">
+                    <p className="text-base sm:text-lg mb-4 text-gray-700 leading-snug dark:text-gray-300">
                         {t("intro_paragraph")}
                     </p>
-                    <h2 id="section2" className="text-2xl font-bold mb-2 text-blue-500 drop-shadow-sm">
+                    <h2
+                        id="section2"
+                        className="text-xl sm:text-2xl font-bold mb-2 text-blue-500 drop-shadow-sm"
+                    >
                         {t("-section2")}
                     </h2>
-                    <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
+                    <p className="text-base sm:text-lg text-gray-700 mb-4 dark:text-gray-300">
                         <strong>{t("-formula")}</strong>
                     </p>
                 </div>
-                <div className="bg-white rounded-lg shadow-lg max-w-4xl mx-auto border-t-4 mt-8 mb-4 dark:bg-gray-800 dark:border-blue-400">
-                    <div className="flex justify-between items-center">
-                        <h3 className="text-xl p-4 font-semibold text-blue-600 dark:text-blue-400">
+
+                <div className="bg-white rounded-lg shadow-md max-w-3xl mx-auto border-t-4 mt-8 mb-4 dark:bg-gray-800 dark:border-blue-400">
+                    <div className="flex justify-between items-center px-4 sm:px-6 md:px-8">
+                        <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 dark:text-blue-400">
                             {t("-table_of_contents")}
                         </h3>
                         <button
                             onClick={() => setIsExpanded(!isExpanded)}
                             className="text-blue-600 hover:text-blue-800 font-medium focus:outline-none transition-all duration-300 dark:text-blue-400"
                         >
-                            {isExpanded ? <span className="mr-4">&#9650;</span> : <span className="mr-4">&#9660;</span>}
+                            {isExpanded ? (
+                                <span className="mr-4">&#9650;</span>
+                            ) : (
+                                <span className="mr-4">&#9660;</span>
+                            )}
                         </button>
                     </div>
+
                     {isExpanded && (
-                        <div className="grid grid-cols-2 gap-x-6">
-                            <ol className="space-y-3 p-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-4">
+                            <ol className="space-y-3">
                                 {[
                                     t("cgpa_to_percentage_calculator"),
                                     t("cgpa_to_percentage_formula"),
@@ -90,7 +102,8 @@ const CgpaContent = () => {
                                     </li>
                                 ))}
                             </ol>
-                            <ol className="space-y-3 p-4">
+
+                            <ol className="space-y-3">
                                 {[
                                     t("cgpa_in_10_point"),
                                     t("cgpa_in_5_point"),
@@ -121,12 +134,12 @@ const CgpaContent = () => {
                     )}
                 </div>
 
+
                 {isMainExpanded && (
                     <>
-                        <div className="mx-auto px-2 py-8 bg-white rounded-lg dark:bg-gray-900 dark:text-white">
+                         <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
 
-
-                            <div className=''>
+                            <div className="">
                                 <h2 id="section3" className="text-2xl text-blue-600 drop-shadow-sm mt-6 mb-6">
                                     {t("lord_calculator_cgpa_calculator")}
                                 </h2>
@@ -291,14 +304,15 @@ const CgpaContent = () => {
                             </div>
 
                         </div>
-                        <div className=''>
-                            <h2 id="section6" className="text-2xl font-semibold text-blue-600 mb-4">
+
+                        <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
+                            <h2 id="section6" className="text-2xl font-semibold text-blue-600 mb-4 text-center sm:text-left">
                                 {t("important_terms_title")}
                             </h2>
-                            <p className="text-lg mb-4">
+                            <p className="text-lg mb-4 text-center sm:text-left">
                                 {t("important_terms_description")}
                             </p>
-                            <ul className="list-disc pl-6">
+                            <ul className="list-disc pl-6 space-y-3 text-lg text-gray-700 dark:text-gray-300">
                                 <li>
                                     <strong>{t("grade_points.title")}:</strong> {t("grade_points.description")}
                                 </li>
@@ -331,7 +345,8 @@ const CgpaContent = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className='mb-4'>
+
+                        <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
                             <h2 id="section7" className="text-2xl font-semibold text-blue-400 mt-6 mb-4">
                                 {t('whyConvertTitle')}
                             </h2>
@@ -340,8 +355,8 @@ const CgpaContent = () => {
                                 src="/CGPA-to-Percentage-Conversion-for-different-Boards-and-Universities.jpg"
                                 alt="CGPA to Percentage Calculator"
                                 className="mx-auto mb-6"
-                                width={1000}  
-                                height={400} 
+                                width={1000}
+                                height={400}
                             />
                             <p className="text-lg text-gray-700 dark:text-gray-300">
                                 {t('whyConvertExplanation')}
@@ -349,7 +364,7 @@ const CgpaContent = () => {
 
                         </div>
 
-                        <div className=" mb-4 ">
+                        <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
                             <h4 className="text-xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mb-2 dark:text-white">
                                 {t('boardsUniversitiesTitle')}
                             </h4>
@@ -365,7 +380,7 @@ const CgpaContent = () => {
                         </div>
 
 
-                        <div className="mb-4">
+                        <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
                             <h4 className="text-xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mb-2 dark:text-white">
                                 {t('internationalRelevanceTitle')}
                             </h4>
@@ -378,7 +393,7 @@ const CgpaContent = () => {
                         </div>
 
 
-                        <div className=''>
+                        <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
                             <h2 id='section8' className="text-2xl font-semibold text-blue-500 mt-6 mb-4 dark:text-white">
                                 {t('howToCalculatePercentageTitle')}
                             </h2>
@@ -414,14 +429,14 @@ const CgpaContent = () => {
 
                         </div>
 
-                        <div className="">
+                        <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
                             <h2 id="section9" className="text-2xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mt-6 mb-4 dark:text-white">
                                 {t('commonPitfallsTitle')}
                             </h2>
                             <p className="text-lg mb-4 text-gray-700 dark:text-gray-300">
                                 {t('commonPitfallsIntro')}
                             </p>
-                            <ul className="list-decimal pl-6 mb-6">
+                            <ul className="list-decimal  mb-6">
                                 <li className="text-gray-700 dark:text-gray-300">
                                     <strong>{t('misinterpretingFormula')}</strong> {t('misinterpretingFormulaDesc')}
                                 </li>
@@ -435,7 +450,7 @@ const CgpaContent = () => {
                         </div>
 
 
-                        <div class="container mx-auto p-4">
+                        <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
                             <h2 id="section10" className="text-2xl font-semibold text-blue-400 mt-6 mb-4">
                                 {t('cgpaToPercentage10GradePoints')}
                             </h2>
@@ -1454,7 +1469,7 @@ const CgpaContent = () => {
 
 
 
-                        <div class="container mx-auto p-4">
+                        <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
                             <h2 id="section11" className="text-xl font-bold text-left text-blue-400 mb-4">
                                 {t('cgpaToPercentage5GradeScale')}
                             </h2>
@@ -1865,7 +1880,7 @@ const CgpaContent = () => {
                         </div>
 
 
-                        <div className="container mx-auto p-4">
+                        <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
                             <div>
                                 <h2 id="section12" className="text-xl font-bold text-blue-400 mb-4">
                                     {t('cgpaToPercentage4GradeScale')}
@@ -2242,8 +2257,8 @@ const CgpaContent = () => {
                             </div>
                         </div>
 
-                        <section className="grading-scale-info p-6 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
-                            <div>
+                        <section className="grading-scale-info mt-4 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+                        <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
                                 <h2 id="section13" className="text-2xl font-semibold text-blue-400 mb-4">
                                     {t('gradingScaleAndUniversitiesChoice')}
                                 </h2>
@@ -2255,7 +2270,7 @@ const CgpaContent = () => {
                                     {t('commonGradingScales')}
                                 </p>
 
-                                <ul className="list-disc pl-6 mb-4">
+                                <ul className="list-disc  mb-4">
                                     <li><strong>{t('percentage')}</strong>: {t('usedWorldwide')}</li>
                                     <li><strong>{t('gpa-')}</strong>: {t('primarilyInUSA')}</li>
                                     <li><strong>{t('cgpa-')}</strong>: {t('usedInIndia')}</li>
@@ -2267,7 +2282,7 @@ const CgpaContent = () => {
                                     {t('gradingScalesIntro')}
                                 </p>
 
-                                <ul className="list-disc pl-6 mb-4">
+                                <ul className="list-disc  mb-4">
                                     <li><strong>{t('percentage-')}</strong>: {t('percentageDescription')}</li>
                                     <li><strong>{t('-gpa')}</strong>: {t('gpaDescription')}</li>
                                     <li><strong>{t('-cgpa')}</strong>: {t('cgpaDescription')}</li>
@@ -2305,7 +2320,7 @@ const CgpaContent = () => {
 
                             </div>
 
-                            <div>
+                            <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
                                 <h3
                                     id="section15"
                                     className="text-xl font-semibold text-blue-400 mt-6 mb-4"
@@ -2464,14 +2479,14 @@ const CgpaContent = () => {
                                     </tbody>
                                 </table>
                             </div >
-                            <div>
+                            <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
                                 <h3 id="section16" className="text-xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mt-6 mb-4">
                                     {t('section_title')}
                                 </h3>
                                 <p className="mb-4">
                                     {t('content_paragraph')}
                                 </p>
-                                <ul className="list-disc pl-6 mb-4">
+                                <ul className="list-disc  mb-4">
                                     <li>
                                         <strong>{t('list_items.0.title')}:</strong> {t('list_items.0.description')}
                                     </li>
@@ -2489,7 +2504,7 @@ const CgpaContent = () => {
 
 
 
-                            <div>
+                            <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
                                 <h3 id="section17" className="text-xl font-semibold bg-gradient-to-r from-blue-700 to-purple-950 bg-clip-text text-transparent mt-6 mb-4">
                                     {t('faq.title')}
                                 </h3>

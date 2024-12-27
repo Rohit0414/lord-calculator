@@ -17,7 +17,7 @@ const Navbar = () => {
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState('');
-  const [searchInput, setSearchInput] = useState("");
+  const [searchInput, setSearchInput] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const router = useRouter();
@@ -177,6 +177,20 @@ const Navbar = () => {
                   </button>
                 </form>
 
+                {searchResults.length > 0 && (
+                  <ul className="mt-4">
+                    {searchResults.map((result) => (
+                      <li key={result.id}>
+                        <a href={result.link} className="text-blue-600 hover:underline">
+                          {result.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+
+
                 <Link href="/" className="block px-6 py-4 text-black dark:text-white hover:text-[#009688]">
                   {t("home")}
                 </Link>
@@ -238,7 +252,7 @@ const Navbar = () => {
                     <span className="ml-2">{selectedLanguage}</span>
                   </button>
                   {isLanguageOpen && (
-                  <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[9999]">
+                    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[9999]">
                       <div className="relative bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 w-[90%] max-w-md text-center">
                         <button
                           onClick={() => setIsLanguageOpen(false)}
@@ -300,24 +314,45 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className={`flex-col md:flex-row md:flex ${isMenuOpen ? "flex" : "hidden"} md:items-center space-y-2 md:space-y-0 md:space-x-4`}>
           {/* Search */}
-          <form
-            onSubmit={handleSearch}
-            className="hidden lg:flex dark:text-white dark:bg-gray-800 items-center space-x-2 relative"
-          >
-            <input
-              type="text"
-              value={searchInput}
-              onChange={handleSearchInputChange}
-              placeholder={t("search_placeholder")}
-              className="border px-2 py-1.5 rounded-l-md w-full dark:bg-gray-700 dark:text-white"
-            />
-            <button
-              type="submit"
-              className="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
-            >
-              {t("search_button")}
-            </button>
-          </form>
+          <div className="px-2 py-4">
+            <form onSubmit={handleSearch} className="flex items-center space-x-2 py-4 px-2 w-full">
+              <input
+                type="text"
+                value={searchInput}
+                onChange={handleSearchInputChange}
+                placeholder={t("search_placeholder")}
+                className="border px-3 py-2 rounded-md w-full dark:bg-gray-700 dark:text-white"
+              />
+              <button
+                type="submit"
+                className="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              >
+                {t("search_button")}
+              </button>
+            </form>
+
+            {/* Display search results below the form */}
+            <div className="relative">
+              <div className="absolute top-0 left-0 right-0 max-h-[300px] overflow-y-auto">
+                {searchResults.length > 0 && (
+                  <ul>
+                    {searchResults.map((result) => (
+                      <li key={result.id}>
+                        <a href={result.link} className="text-blue-600 hover:underline">
+                          {result.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
+          </div>
+
+
+
+
+
 
           {/* Links */}
           <Link href="/" className="block px-4 py-2 text-black dark:text-white hover:text-[#009688]">

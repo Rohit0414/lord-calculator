@@ -6,7 +6,6 @@ export default function SGPAtoCGPA() {
   const [cgpa, setCgpa] = useState(null);
   const [error, setError] = useState('');
 
-  // Function to calculate CGPA from SGPA
   const calculateCGPA = () => {
     setError('');
     if (!sgpa || !totalCredits) {

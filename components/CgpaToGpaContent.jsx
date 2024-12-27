@@ -26,8 +26,8 @@ const CgpaToGpaContent = () => {
     }, [isMainExpanded]);
 
     return (
-        <div className={`mx-auto relative bg-white text-justify p-6  leading-relaxed ${theme === "dark" ? "dark" : "light"} dark:bg-gray-900 dark:text-white  `}>
-            <div className="space-y-6 mb-4 p-4">
+        <div className={`mx-auto relative bg-white text-justify  leading-relaxed ${theme === "dark" ? "dark" : "light"} dark:bg-gray-900 dark:text-white  `}>
+            <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
                 <h2 id="section1" className="text-3xl font-bold  dark:text-white mb-6 text-blue-500">{t("Heading")}</h2>
 
                 <p className="text-lg text-gray-800 dark:text-gray-200">

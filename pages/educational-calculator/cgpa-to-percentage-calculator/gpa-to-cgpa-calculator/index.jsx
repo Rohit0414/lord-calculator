@@ -384,7 +384,7 @@ const Gpatocgpa = () => {
             </Head>
             <Navbar />
             <Nav />
-            <div className="container  max-h-full flex-col w-full border-r-8 justify-center dark:bg-gray-800 ">
+            <div className="container  max-h-full flex-col max-w-full border-r-8 justify-center dark:bg-gray-800 ">
                 <div className="w-full flex flex-col items-center p-4 bg-white dark:bg-gray-800 dark:text-white">
                     <div className="flex  w-full">
 
@@ -452,7 +452,12 @@ const Gpatocgpa = () => {
                             </div>
 
                             <div ref={resultRef}>
-                                <Meter percentage={cgpa ? parseFloat(cgpa) : 0} />
+                                 <div className="flex justify-center items-center w-full">
+                                    <Meter
+                                        className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] mx-auto"
+                                        percentage={cgpa ? parseFloat(cgpa) : 0}
+                                    />
+                                </div>
                                 <div className="flex flex-col justify-center items-center mb-4">
                                     <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">
                                         {t("calculated_cgpa")}
@@ -496,7 +501,7 @@ const Gpatocgpa = () => {
                                                 <tr key={index}>
                                                     <td className="border border-gray-300 p-2 font-semibold">{index + 1}</td>
                                                     <td className="border border-gray-300 p-2">{entry.gpa.toFixed(2)}</td>
-                                                    <td className="border border-gray-300 p-2">entry.cgpa</td>
+                                                    <td className="border border-gray-300 p-2">{entry.cgpa}</td>
 
                                                 </tr>
                                             ))}
@@ -504,7 +509,7 @@ const Gpatocgpa = () => {
                                     </table>
                                 </div>
                             </div>
-                            <div className="w-full min-h-screen flex  justify-center p-5">
+                            <div className="w-full min-h-screen flex  justify-center ">
                                 <div className="max-w-4xl w-full text-justify mx-auto ">
                                     <GpaContent />
                                 </div>

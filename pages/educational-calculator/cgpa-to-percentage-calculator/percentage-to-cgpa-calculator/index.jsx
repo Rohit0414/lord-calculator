@@ -383,7 +383,7 @@ const Percentagetocgpa = () => {
             </Head>
             <Navbar />
             <Nav />
-            <div className="container  max-h-full flex-col w-full border-r-8 justify-center dark:bg-gray-800 ">
+            <div className="container  max-h-full flex-col max-w-full border-r-8 justify-center dark:bg-gray-800 ">
                 <div className="w-full flex flex-col items-center p-4 bg-white dark:bg-gray-800 dark:text-white">
                     <div className="flex  w-full">
 
@@ -445,7 +445,13 @@ const Percentagetocgpa = () => {
                             {error && <div className="text-red-500 mb-2 text-center">{t("errorMessage")}</div>}
 
                             <div ref={resultRef}>
-                                <Meter percentage={cgpa ? parseFloat(cgpa) : 0} />
+                                <div className="flex justify-center items-center w-full">
+                                    <Meter
+                                        className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] mx-auto"
+                                        percentage={cgpa ? parseFloat(cgpa) : 0}
+                                    />
+                                </div>
+
                                 <div className="flex flex-col justify-center items-center mb-4 ">
                                     <label className="text-3xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">{t("calculatedCGPATitle")}</label>
                                     <input type="text" value={cgpa} placeholder={t("placeholderCGPA")} readOnly className="w-full sm:w-3/4 p-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center ml-2" />
@@ -487,7 +493,7 @@ const Percentagetocgpa = () => {
                                 </div>
                             </div>
 
-                            <div className="w-full min-h-screen flex justify-center p-5">
+                            <div className="w-full min-h-screen flex justify-center ">
                                 <div className="max-w-4xl w-full text-justify mx-auto ">
                                     <PercentageContent />
                                 </div>

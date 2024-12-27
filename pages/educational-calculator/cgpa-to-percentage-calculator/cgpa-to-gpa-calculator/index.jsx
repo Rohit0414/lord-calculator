@@ -384,7 +384,7 @@ const Cgpatogpa = () => {
             </Head>
             <Navbar />
             <Nav />
-            <div className="container  max-h-full flex-col w-full border-r-8 justify-center dark:bg-gray-800 ">
+            <div className="container  max-h-full flex-col max-w-full border-r-8 justify-center dark:bg-gray-800 ">
                 <div className="w-full flex flex-col items-center p-4 bg-white dark:bg-gray-800 dark:text-white">
                     <div className="flex  w-full">
 
@@ -452,7 +452,13 @@ const Cgpatogpa = () => {
                             </div>
 
                             <div ref={resultRef}>
-                                <Meter percentage={gpa ? parseFloat(gpa) : 0} />
+                                <div className="flex justify-center items-center w-full">
+                                    <Meter
+                                        className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] mx-auto"
+                                        percentage={gpa ? parseFloat(gpa) : 0}
+                                    />
+                                </div>
+
                                 <div className="flex flex-col justify-center items-center mb-4">
                                     <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">{t("yourGPA")}</label>
                                     <input type="text" value={gpa} placeholder={t("gpaPlaceholder")} readOnly className="w-full sm:w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white" />
@@ -494,7 +500,7 @@ const Cgpatogpa = () => {
                                 </div>
                             </div>
 
-                            <div className="w-full min-h-screen flex justify-center p-5">
+                            <div className="w-full min-h-screen flex justify-center ">
                                 <div className="max-w-4xl w-full text-justify mx-auto">
                                     <CgpaToGpaContent />
                                 </div>

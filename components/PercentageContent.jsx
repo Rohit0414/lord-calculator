@@ -1,3 +1,4 @@
+import { useTheme } from 'next-themes';
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -5,6 +6,7 @@ const PercentageContent = () => {
     const [isExpanded, setIsExpanded] = useState(true);
     const [isMainExpanded, setIsMainExpanded] = useState(false);
     const { t } = useTranslation();
+    const {theme} = useTheme
 
 
     const toggleMainExpand = () => {
@@ -25,19 +27,21 @@ const PercentageContent = () => {
 
 
     return (
-        <div className=" relative p-6 max-w-screen-lg mx-auto bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
-            <h2 id="section1" className="text-3xl font-bold mb-4 text-blue-600">
-                {t('section1_title')}
-            </h2>
-            <p className="mb-6 text-lg leading-relaxed">
-                {t('section1_paragraph').split("Lord Calculator")[0]}
-                <span className="font-bold">Lord Calculator</span>
-                {t('section1_paragraph').split("Lord Calculator")[1]}
-            </p>
+        <div className={`mx-auto relative bg-white text-justify py-4  leading-relaxed ${theme === "dark" ? "dark" : "light"} dark:bg-gray-900 dark:text-white  `}>
+            <div className="dark:bg-gray-900  sm:px-6 md:px-8 lg:px-10 xl:px-12">
+                <h2 id="section1" className="text-3xl font-bold mb-4 text-blue-600">
+                    {t('section1_title')}
+                </h2>
+                <p className="mb-6 text-lg leading-relaxed">
+                    {t('section1_paragraph').split("Lord Calculator")[0]}
+                    <span className="font-bold">Lord Calculator</span>
+                    {t('section1_paragraph').split("Lord Calculator")[1]}
+                </p>
 
-            <h2 id="section2" className="text-2xl font-semibold mb-4 text-blue-500">
-                {t('section2_title')}
-            </h2>
+                <h2 id="section2" className="text-2xl font-semibold mb-4 text-blue-500">
+                    {t('section2_title')}
+                </h2>
+            </div>
             <div className="mt-4 text-center">
                 <div className="text-blue-600 font-bold inline-block align-middle mr-2">
                     {t('cgpa_title')}

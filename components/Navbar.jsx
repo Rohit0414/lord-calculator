@@ -181,7 +181,7 @@ const Navbar = () => {
                   {t("home")}
                 </Link>
 
-                <div className="relative">
+                <div className="relative" ref={categoryRef}>
                   <button
                     onClick={() => setIsCategoryOpen(!isCategoryOpen)}
                     className="flex items-center px-6 py-4 text-black dark:text-white hover:text-[#009688] rounded-md transition duration-300"
@@ -325,7 +325,7 @@ const Navbar = () => {
           </Link>
 
           {/* Categories Dropdown */}
-          <div className="relative">
+          <div className="relative" ref={categoryRef}>
             <button
               onClick={() => setIsCategoryOpen(!isCategoryOpen)}
               className="flex items-center px-4 py-2 text-black dark:text-white hover:text-[#009688] rounded-md transition duration-300"

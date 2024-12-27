@@ -193,7 +193,7 @@ const Navbar = () => {
                     />
                   </button>
                   <div
-                    className={`absolute mt-4 bg-[#fafafc] dark:bg-gray-700 shadow-lg rounded-md w-[240px] transition-all duration-300 ease-out ${isCategoryOpen ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none"
+                    className={`absolute  bg-[#fafafc] dark:bg-gray-700 shadow-lg rounded-md w-[240px] transition-all duration-300 ease-out ${isCategoryOpen ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none"
                       }`}
                   >
                     <Link
@@ -229,7 +229,7 @@ const Navbar = () => {
                 >
                   {theme === "light" ? <FaSun size={20} /> : <FaMoon size={20} />}
                 </button>
-                <div className="relative py-2 px-2">
+                <div className="py-2 px-2 ">
                   <button
                     onClick={() => setIsLanguageOpen(!isLanguageOpen)}
                     className="flex items-center px-4 py-2 text-black dark:text-white rounded-md transition duration-300"

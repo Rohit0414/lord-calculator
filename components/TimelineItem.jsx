@@ -45,7 +45,7 @@ const TimelineItem = () => {
         {
           title: t('calculatorCards.1.title'),
           description: t('calculatorCards.1.description'),
-          href: "/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA",
+          href: "/educational-calculator/sgpa-to-cgpa-calculator",
           backgroundColor: theme === "dark" ? "bg-[#4285f4]" : "bg-[#4285f4]",
           Image: (
             <Image

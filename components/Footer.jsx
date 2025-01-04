@@ -29,7 +29,7 @@ const Footer = () => {
           <div className="w-full md:w-1/2">
             <div className="flex flex-wrap">
               {/* Categories Section */}
-              <div className="w-full sm:w-1/2 md:w-1/3 mb-8 sm:mb-0 p-4">
+              <div className="w-full sm:w-1/2 md:w-1/2 mb-8 sm:mb-0 p-4">
                 <h5 className="uppercase font-bold mb-2">
                   {t('footer.categories')}
                 </h5>
@@ -55,7 +55,7 @@ const Footer = () => {
                 </ul>
               </div>
              
-              <div className="w-full sm:w-1/2  md:w-1/3 mb-8 sm:mb-0 p-4">
+              <div className="w-full sm:w-1/2  md:w-1/2 mb-8 sm:mb-0 p-4">
                 <h5 className="uppercase font-bold mb-2">
                   {t('footer.pages')}
                 </h5>

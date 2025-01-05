@@ -11,6 +11,7 @@ import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import Head from 'next/head';
+import { FcRefresh } from 'react-icons/fc';
 
 const image = {
     src: "/book-svgrepo-com.svg",
@@ -91,17 +92,17 @@ const Cgpatopercentage = () => {
         setHistory((prevHistory) => [...prevHistory, { cgpa: cgpaValue, percentage: percentageValue }]);
         setError('');
 
-        router.push({
-            pathname: router.pathname,
-            query: {
-                cgpa: cgpaValue,
-                gradingscale: gradingScale,
-                factor: multiplicationFactor,
-            }
-        }, undefined, { shallow: true });
-        if (isDownloading) return;
-        setIsDownloading(true);
-        resultRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // router.push({
+        //     pathname: router.pathname,
+        //     query: {
+        //         cgpa: cgpaValue,
+        //         gradingscale: gradingScale,
+        //         factor: multiplicationFactor,
+        //     }
+        // }, undefined, { shallow: true });
+        // if (isDownloading) return;
+        // setIsDownloading(true);
+        // resultRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
     };
 
     const resetFields = () => {
@@ -338,6 +339,27 @@ const Cgpatopercentage = () => {
         } catch (error) {
             console.error("Error generating PDF:", error);
         }
+        const cgpaValue = parseFloat(cgpa);
+        if (cgpaValue > gradingScale) {
+            setError(`CGPA cannot be greater than the selected grading scale (${gradingScale})`);
+            return;
+        }
+        const percentageValue = cgpaValue * multiplicationFactor;
+        setPercentage(`${percentageValue.toFixed(2)}%`);
+        setHistory((prevHistory) => [...prevHistory, { cgpa: cgpaValue, percentage: percentageValue }]);
+        setError('');
+          router.push({
+            pathname: router.pathname,
+            query: {
+                cgpa: cgpaValue,
+                gradingscale: gradingScale,
+                factor: multiplicationFactor,
+            }
+        }, undefined, { shallow: false });
+        if (isDownloading) return;
+        setIsDownloading(true);
+        resultRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        router.reload();
     };
 
 

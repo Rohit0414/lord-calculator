@@ -56,8 +56,8 @@ const PercentageContent = () => {
                     </span>
                 </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg max-w-4xl mx-auto border-t-4 mt-8 mb-4 dark:bg-gray-800 dark:border-blue-400">
-                <div className="flex justify-between items-center">
+            <div className="bg-white  rounded-lg shadow-lg max-w-3xl mx-auto border-t-4 mt-8 mb-4 dark:bg-gray-800 dark:border lue-400">
+            <div className="flex justify-between items-center">
                     <h2 className="text-xl p-4 font-semibold text-blue-600 dark:text-blue-400">{t('table_of_contents')}</h2>
                     <button
                         onClick={() => setIsExpanded(!isExpanded)}

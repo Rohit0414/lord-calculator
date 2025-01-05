@@ -89,6 +89,7 @@ const Navbar = () => {
         { id: 8, title: "About us", link: "/about-us" },
         { id: 9, title: "GPA to CGPA Calculator", link: "/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA" },
         { id: 10, title: "CGPA to GPA Calculator", link: "/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA" },
+        { id: 11, title: "Home", link: "/" },
       ].filter((item) =>
         item.title.toLowerCase().includes(searchInput.toLowerCase())
       );
@@ -98,13 +99,19 @@ const Navbar = () => {
     }
   }, [searchInput]);
 
+ 
   const handleSearch = (e) => {
     e.preventDefault();
-    if (searchInput.trim()) {
-      router.push(`/search?query=${encodeURIComponent(searchInput)}`);
+  
+    if (searchInput.trim() && searchResults.length > 0) {
+      const result = searchResults[0]; 
+      router.push(result.link);
+    } else {
+      alert("No results found. Please try a different search term.");
     }
   };
-
+  
+  // Handle input change
   const handleSearchInputChange = (e) => {
     setSearchInput(e.target.value);
   };
@@ -161,33 +168,50 @@ const Navbar = () => {
 
               {/* Menu Content */}
               <div className="md:hidden flex flex-col px-2 mt-12 py-4">
-                <form onSubmit={handleSearch} className="flex items-center space-x-2 py-4 px-2">
+                <form onSubmit={handleSearch} className="flex items-center space-x-4 py-4 px-4  dark:bg-gray-800 rounded-lg shadow-lg max-w-lg mx-auto transition-all duration-300">
                   <input
                     type="text"
                     value={searchInput}
                     onChange={handleSearchInputChange}
                     placeholder={t("search_placeholder")}
-                    className="border px-3 py-2 rounded-md w-full dark:bg-gray-700 dark:text-white"
+                    className="border border-gray-300 dark:border-gray-600 px-6 py-2 rounded-md w-full dark:bg-gray-700 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
                   />
                   <button
                     type="submit"
-                    className="px-2 py-2 text-sm font-medium text-white bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    disabled={searchResults.length === 0}
+                    className={`p-2 rounded-lg ${
+                      searchResults.length > 0 ? "bg-blue-500 hover:bg-blue-600 text-white" : "bg-gray-400 text-gray-200 cursor-not-allowed"
+                    } focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-300`}
                   >
-                    {t("search_button")}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-5 h-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M11 3a8 8 0 111.714 15.672l5.39 5.39a1 1 0 11-1.414 1.414l-5.39-5.39A7.963 7.963 0 0111 19a8 8 0 110-16z"
+                      />
+                    </svg>
                   </button>
                 </form>
 
                 {searchResults.length > 0 && (
-                  <ul className="mt-4">
+                  <ul className="mt-4 bg-white dark:bg-gray-800 rounded-lg shadow-md max-w-lg mx-auto p-4">
                     {searchResults.map((result) => (
-                      <li key={result.id}>
-                        <a href={result.link} className="text-blue-600 hover:underline">
+                      <li key={result.id} className="mb-4">
+                        <a href={result.link} className="text-lg text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-all duration-300">
                           {result.title}
                         </a>
                       </li>
                     ))}
                   </ul>
                 )}
+
 
 
 
@@ -314,43 +338,56 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className={`flex-col md:flex-row md:flex ${isMenuOpen ? "flex" : "hidden"} md:items-center space-y-2 md:space-y-0 md:space-x-4`}>
           {/* Search */}
-          <div className="px-2 py-4">
-            <form onSubmit={handleSearch} className="flex items-center space-x-2 py-4 px-2 w-full">
+          <div className="relative">
+            <form
+              onSubmit={handleSearch}
+              className="flex items-center space-x-2 py-2 px-4 dark:bg-gray-800 rounded-lg max-w-4xl mx-auto transition-all duration-300"
+            >
               <input
                 type="text"
                 value={searchInput}
                 onChange={handleSearchInputChange}
                 placeholder={t("search_placeholder")}
-                className="border px-3 py-2 rounded-md w-full dark:bg-gray-700 dark:text-white"
+                className="border border-gray-300 dark:border-gray-600 px-4 py-2 rounded-lg w-full dark:bg-gray-700 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#009688] transition-all duration-300 text-md"
               />
               <button
                 type="submit"
-                className="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className={`p-2 rounded-lg ${
+                  searchResults.length > 0 ? "bg-[#009688] hover:bg-blue-600 text-white" : "bg-gray-400 text-gray-200 cursor-not-allowed"
+                } focus:outline-none focus:ring-2 focus:ring-[#009688] transition-all duration-300`}
               >
-                {t("search_button")}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M11 3a8 8 0 111.714 15.672l5.39 5.39a1 1 0 11-1.414 1.414l-5.39-5.39A7.963 7.963 0 0111 19a8 8 0 110-16z"
+                  />
+                </svg>
               </button>
             </form>
 
-            {/* Display search results below the form */}
-            <div className="relative">
-              <div className="absolute top-0 left-0 right-0 max-h-[300px] overflow-y-auto">
-                {searchResults.length > 0 && (
-                  <ul>
-                    {searchResults.map((result) => (
-                      <li key={result.id}>
-                        <a href={result.link} className="text-blue-600 hover:underline">
-                          {result.title}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            </div>
+            {searchResults.length > 0 && (
+              <ul className="mt-2 ml-2 bg-white absolute dark:bg-gray-800 rounded-lg shadow-md max-w-4xl mx-auto p-4 space-y-6">
+                {searchResults.map((result) => (
+                  <li key={result.id}>
+                    <a
+                      href={result.link}
+                      className="text-md text-black hover:text-[#009688] dark:text-white dark:hover:text-blue-300 transition-all duration-300"
+                    >
+                      {result.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
-
-
-
 
 
 

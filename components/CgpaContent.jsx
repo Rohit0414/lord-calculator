@@ -58,7 +58,7 @@ const CgpaContent = () => {
                     </p>
                 </div>
 
-                <div className="bg-white rounded-lg shadow-md max-w-3xl mx-auto border-t-4 mt-8 mb-4 dark:bg-gray-800 dark:border-blue-400">
+                <div className="bg-white  rounded-lg shadow-lg max-w-3xl mx-auto border-t-4 mt-8 mb-4 dark:bg-gray-800 dark:border lue-400">
                     <div className="flex justify-between items-center px-4 sm:px-6 md:px-8">
                         <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 dark:text-blue-400">
                             {t("-table_of_contents")}

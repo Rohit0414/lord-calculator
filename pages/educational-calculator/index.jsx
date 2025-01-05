@@ -27,9 +27,9 @@ export default function EducationalCalculator() {
             <Navbar />
             <div className="relative overflow-hidden bg-[#fafafc] dark:bg-gray-800">
 
-                <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
+                <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
                     <div className="mt-5 max-w-2xl text-center mx-auto">
-                        <h1 className="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-neutral-200">
+                        <h1 className="block font-bold text-gray-800 text-3xl sm:text-4xl md:text-5xl lg:text-6xl dark:text-neutral-200">
                             {t('header.title')}{' '}
                             <span className="bg-clip-text bg-gradient-to-tl from-blue-600 to-violet-600 text-transparent">
                                 {t('header.calculator')}
@@ -53,12 +53,12 @@ export default function EducationalCalculator() {
                     </div>
                 </div>
 
-                <div className="relative mx-auto py-10 px-4 sm:px-6 lg:px-8 bg-transparent max-w-6xl z-10 mt-4  mb-6">
+                <div className="relative mx-auto py-10 px-4 sm:px-6 lg:px-8 bg-transparent max-w-full sm:max-w-6xl z-10 mt-4 mb-6">
                     <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-neutral-400 mb-8">
                         {t('choose_lord_calculator.title')}
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6 mb-4">
-                        <div className="p-6 bg-blue-50 rounded-lg  dark:bg-gray-800  shadow-md">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-4">
+                        <div className="p-6 bg-blue-50 rounded-lg dark:bg-gray-800 shadow-md">
                             <h3 className="font-semibold text-lg text-indigo-600">
                                 {t('choose_lord_calculator.feature_1.title')}
                             </h3>
@@ -66,7 +66,7 @@ export default function EducationalCalculator() {
                                 {t('choose_lord_calculator.feature_1.description')}
                             </p>
                         </div>
-                        <div className="p-6 bg-blue-50 rounded-lg dark:bg-gray-800  shadow-md">
+                        <div className="p-6 bg-blue-50 rounded-lg dark:bg-gray-800 shadow-md">
                             <h3 className="font-semibold text-lg text-indigo-600">
                                 {t('choose_lord_calculator.feature_2.title')}
                             </h3>
@@ -74,7 +74,7 @@ export default function EducationalCalculator() {
                                 {t('choose_lord_calculator.feature_2.description')}
                             </p>
                         </div>
-                        <div className="p-6 bg-blue-50 rounded-lg dark:bg-gray-800  shadow-md">
+                        <div className="p-6 bg-blue-50 rounded-lg dark:bg-gray-800 shadow-md">
                             <h3 className="font-semibold text-lg text-indigo-600">
                                 {t('choose_lord_calculator.feature_3.title')}
                             </h3>
@@ -89,5 +89,6 @@ export default function EducationalCalculator() {
             </div>
             <Footer />
         </div>
+
     );
 }

@@ -344,31 +344,48 @@ const Cgpatopercentage = () => {
             setError(`CGPA cannot be greater than the selected grading scale (${gradingScale})`);
             return;
         }
-        const percentageValue = cgpaValue * multiplicationFactor;
-        setPercentage(`${percentageValue.toFixed(2)}%`);
-        setHistory((prevHistory) => [...prevHistory, { cgpa: cgpaValue, percentage: percentageValue }]);
-        setError('');
-          router.push({
-            pathname: router.pathname,
-            query: {
-                cgpa: cgpaValue,
-                gradingscale: gradingScale,
-                factor: multiplicationFactor,
-            }
-        }, undefined, { shallow: false });
-        if (isDownloading) return;
-        setIsDownloading(true);
-        resultRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        router.reload();
+
     };
 
 
 
     const shareOnWhatsApp = () => {
+        const cgpaValue = parseFloat(cgpa);
+        if (isNaN(cgpaValue)) {
+            setError('Please enter a valid CGPA value.');
+            return;
+        }
+        if (cgpaValue > gradingScale) {
+            setError(`CGPA cannot be greater than the selected grading scale (${gradingScale})`);
+            return;
+        }
+        
+        const percentageValue = cgpaValue * multiplicationFactor;
+        setPercentage(`${percentageValue.toFixed(2)}%`);
+        setHistory((prevHistory) => [...prevHistory, { cgpa: cgpaValue, percentage: percentageValue }]);
+        setError('');
+    
+        router.push({
+            pathname: router.pathname,
+            query: {
+                cgpa: cgpaValue,
+                gradingscale: gradingScale,
+                factor: multiplicationFactor,
+            },
+        }, undefined, { shallow: false });
+    
+        if (isDownloading) return;
+        
+        setIsDownloading(true);
+        resultRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
         const currentURL = window.location.href;
-        const message = `Check out my CGPA calculation: Percentage: ${percentage}, CGPA: ${cgpa}. You can view it here: ${currentURL}`;
+        const message = `Check out my CGPA calculation: Percentage: ${percentageValue.toFixed(2)}%, CGPA: ${cgpaValue}. You can view it here: ${currentURL}`;
+
         window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
     };
+    
+    
     if (!isClient) return null;
 
 

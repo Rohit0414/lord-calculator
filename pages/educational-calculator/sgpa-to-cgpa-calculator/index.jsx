@@ -162,6 +162,9 @@ const SGPAtoCGPA = () => {
             </div>
 
           ))}
+          <div className="flex justify-center">
+            <button onClick={addSemester} className="px-4 py-2 bg-blue-500 text-white rounded">+ Add Semester</button>
+          </div>
 
           <div className="flex justify-center mt-4">
             <Meter sgpa={cgpa} />
@@ -176,7 +179,6 @@ const SGPAtoCGPA = () => {
             />
           </div>
           <div className="flex justify-center gap-2 mt-4">
-            <button onClick={addSemester} className="px-4 py-2 bg-blue-500 text-white rounded">+ Add Semester</button>
             <button onClick={calculateCGPA} className="px-4 py-2 bg-green-500 text-white rounded">Calculate CGPA</button>
             <button onClick={resetCalculator} className="px-4 py-2 bg-red-500 text-white rounded">Reset</button>
             <button onClick={downloadHistoryAsPDF} className="px-4 py-2 bg-purple-500 text-white rounded">Download PDF</button>

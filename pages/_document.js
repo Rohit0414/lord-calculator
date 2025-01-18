@@ -5,19 +5,17 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* Google Site Verification */}
         <meta
           name="google-site-verification"
           content="0WCJSxDdqg3mGH8r1s0akINRCAXjC-C3toX39MmnS-Q"
         />
 
-        {/* Google Analytics using next/script */}
-        <Script 
-          strategy="afterInteractive" 
-          src="https://www.googletagmanager.com/gtag/js?id=G-Y6991S01P3" 
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-Y6991S01P3"
         />
-        <Script 
-          id="google-analytics" 
+        <Script
+          id="google-analytics"
           strategy="afterInteractive"
         >
           {`

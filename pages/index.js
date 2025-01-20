@@ -133,9 +133,9 @@ export default function Home() {
         </Head>
         <Navbar />
         <div className="relative flex flex-col justify-center items-center bg-[#fafafc] dark:bg-gray-800 flex-grow">
-          <div className="absolute -z-51 w-full h-[300px] sm:h-[400px] md:h-[472px] lg:h-[550px] xl:h-[570px] top-0 ">
+          <div className="absolute -z-51 w-full  top-0 ">
             <svg
-              className="w-full h-full dark:hidden"
+              className="w-full h-auto sm:h-[400px] md:h-[472px] lg:h-[550px] xl:h-[570px] dark:hidden"
               viewBox="0 0 1440 320"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -158,6 +158,7 @@ export default function Home() {
                 opacity="0.2"
               />
             </svg>
+
           </div>
         </div>
         <div className="py-8 mt-4 flex justify-center mx-auto dark:text-white text-center flex-grow">

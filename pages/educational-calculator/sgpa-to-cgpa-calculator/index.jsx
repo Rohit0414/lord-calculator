@@ -3,7 +3,7 @@ import { useTheme } from "next-themes";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Meter from "@/components/MeterForSgpa";
-import { PDFDocument, rgb,StandardFonts  } from "pdf-lib"; // Added import for PDF generation
+import { PDFDocument, rgb, StandardFonts } from "pdf-lib"; // Added import for PDF generation
 
 
 const SGPAtoCGPA = () => {
@@ -127,10 +127,10 @@ const SGPAtoCGPA = () => {
     window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
   };
   return (
-    <div className={`relative transition-all bg-white dark:from-gray-900 dark:to-gray-800 ${theme === "dark" ? "dark" : "light"}`}>
+    <div className={`relative transition-all ${theme === "dark" ? "bg-gray-900 dark:from-gray-900 dark:to-gray-800 text-white" : "bg-white text-black"}`}>
       <Navbar />
       <div className="flex justify-center mt-8 items-center min-h-screen py-10">
-        <div className="w-full max-w-3xl mt-4 border rounded-md shadow-md p-6  bg-gradient-to-b from-[#f0f4f8] to-[#d9e2ec] dark:bg-gray-800 dark:border-gray-600">
+        <div className={`w-full max-w-3xl mt-4 border rounded-md shadow-md p-6 ${theme === "dark" ? "bg-gray-800 dark:border-gray-600" : "bg-gradient-to-b from-[#f0f4f8] to-[#d9e2ec]"}`}>
           <h1 className="text-4xl mt-4 font-bold mb-4 text-center text-[#308d46]">
             SGPA to CGPA Calculator
           </h1>
@@ -174,7 +174,6 @@ const SGPAtoCGPA = () => {
                 </button>
               </div>
             </div>
-
           ))}
           <div className="flex justify-center">
             <button onClick={addSemester} className="px-4 py-2 bg-blue-500 text-white rounded">+ Add Semester</button>
@@ -184,7 +183,7 @@ const SGPAtoCGPA = () => {
             <Meter sgpa={cgpa} />
           </div>
           <div className="flex justify-center mb-4 ">
-            <h3 className="text-2xl  mt-4 font-bold mb-4 text-center text-[#308d46]">Your Calculated CGPA = </h3>
+            <h3 className="text-2xl mt-4 font-bold mb-4 text-center text-[#308d46]">Your Calculated CGPA = </h3>
             <input
               type="number"
               placeholder="Calculated cgpa"
@@ -199,7 +198,7 @@ const SGPAtoCGPA = () => {
             <button onClick={WhatsApp} className="px-4 py-2 bg-purple-500 text-white rounded">WhatsApp</button>
           </div>
 
-          <div className=" mt-4 flex justify-center">
+          <div className="mt-4 flex justify-center">
             <div className="history-container mb-4 text-center w-full sm:w-60">
               <b>Calculation History</b>
               <table className="min-w-full border border-gray-300 mt-2 mx-auto dark:border-gray-700">
@@ -221,10 +220,11 @@ const SGPAtoCGPA = () => {
             </div>
           </div>
         </div>
-
       </div>
       <Footer />
     </div>
+
+
   );
 };
 

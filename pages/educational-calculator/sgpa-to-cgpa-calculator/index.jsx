@@ -111,12 +111,16 @@ const SGPAtoCGPA = () => {
       console.error("Error generating PDF:", error);
     }
   };
-
+  const WhatsApp = async () => {
+    const currentURL = window.location.href;
+    const message = `Check out my CGPA calculation: Percentage: ${cgpaValue.toFixed(2)}%, CGPA: ${cgpaValue}. You can view it here: ${currentURL}`;
+    window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
+  }
   return (
-    <div className={`relative transition-all bg-gradient-to-b from-[#f0f4f8] to-[#d9e2ec] dark:from-gray-900 dark:to-gray-800 ${theme === "dark" ? "dark" : "light"}`}>
+    <div className={`relative transition-all bg-white dark:from-gray-900 dark:to-gray-800 ${theme === "dark" ? "dark" : "light"}`}>
       <Navbar />
       <div className="flex justify-center mt-8 items-center min-h-screen py-10">
-        <div className="w-full max-w-3xl mt-4 border rounded-md shadow-md p-6 bg-white dark:bg-gray-800 dark:border-gray-600">
+        <div className="w-full max-w-3xl mt-4 border rounded-md shadow-md p-6  bg-gradient-to-b from-[#f0f4f8] to-[#d9e2ec] dark:bg-gray-800 dark:border-gray-600">
           <h1 className="text-4xl mt-4 font-bold mb-4 text-center text-[#308d46]">
             SGPA to CGPA Calculator
           </h1>
@@ -182,6 +186,7 @@ const SGPAtoCGPA = () => {
             <button onClick={calculateCGPA} className="px-4 py-2 bg-green-500 text-white rounded">Calculate CGPA</button>
             <button onClick={resetCalculator} className="px-4 py-2 bg-red-500 text-white rounded">Reset</button>
             <button onClick={downloadHistoryAsPDF} className="px-4 py-2 bg-purple-500 text-white rounded">Download PDF</button>
+            <button onClick={WhatsApp} className="px-4 py-2 bg-purple-500 text-white rounded">WhatsApp</button>
           </div>
 
           <div className=" mt-4 flex justify-center">

@@ -171,13 +171,13 @@ const SGPAtoCGPA = () => {
   }, [semesters, calculationMethod, router, history]);
 
   return (
-    <div className={`relative transition-all ${mounted ? (theme === "dark" ? "bg-gray-900 text-white" : "bg-white text-black") : ""}`}>
+    <div className={`relative  transition-all ${mounted ? (theme === "dark" ? "bg-gray-900 text-white" : "bg-white text-black") : ""}`}>
     <Navbar />
-    <main className="flex flex-col items-center min-h-screen pt-8 mt-20 pb-10 px-4">
-      <section className={`w-full max-w-3xl border rounded-md shadow-lg p-6 space-y-6 transition-colors
+    <main className="flex flex-col items-center pt-24 min-h-screen justify-center dark:bg-gray-800 pb-10 px-4">
+      <section className={`w-full max-w-3xl border dark:bg-gray-800 rounded-md shadow-lg p-6 space-y-6 transition-colors
         ${mounted ? (theme === "dark" ? "bg-gray-800 border-gray-600" : "bg-gray-50 border-gray-200") : ""}`}
       >
-        <header className="text-center space-y-2">
+        <header className="text-center  space-y-2">
           <h1 className="text-4xl font-bold text-emerald-600 dark:text-emerald-400">
             SGPA to CGPA Calculator
           </h1>
@@ -246,7 +246,7 @@ const SGPAtoCGPA = () => {
   
                 <button
                   onClick={() => removeSemester(index)}
-                  className="self-end sm:self-center px-3 py-2 bg-red-500 text-white rounded-lg 
+                  className="self-end sm:self-center px-3 mt-7 py-2 bg-red-500 text-white rounded-lg 
                     hover:bg-red-600 transition-colors shadow-sm"
                   aria-label={`Remove semester ${index + 1}`}
                 >
@@ -297,28 +297,28 @@ const SGPAtoCGPA = () => {
                 className="px-4 py-3 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 
                   transition-colors shadow-md font-medium"
               >
-                Calculate CGPA
+                Calculate
               </button>
               <button 
                 onClick={resetCalculator}
                 className="px-4 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 
                   transition-colors shadow-md font-medium"
               >
-                Reset Calculator
+                Reset
               </button>
               <button 
                 onClick={downloadHistoryAsPDF}
                 className="px-4 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 
                   transition-colors shadow-md font-medium"
               >
-                Download PDF Report
+                Download
               </button>
               <button 
                 onClick={WhatsApp}
                 className="px-4 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 
                   transition-colors shadow-md font-medium"
               >
-                Share via WhatsApp
+                WhatsApp
               </button>
             </div>
   

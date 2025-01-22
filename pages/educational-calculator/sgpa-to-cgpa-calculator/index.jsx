@@ -130,7 +130,7 @@ const SGPAtoCGPA = () => {
     <div className={`relative transition-all ${theme === "dark" ? "bg-gray-900 dark:from-gray-900 dark:to-gray-800 text-white" : "bg-white text-black"}`}>
       <Navbar />
       <div className="flex justify-center mt-8 items-center min-h-screen py-10">
-        <div className={`w-full max-w-3xl mt-4 border rounded-md shadow-md p-6 ${theme === "dark" ? "bg-gray-800 dark:border-gray-600" : "bg-gradient-to-b from-[#f0f4f8] to-[#d9e2ec]"}`}>
+        <div className={`w-full max-w-3xl mt-4 border rounded-md shadow-md p-6 ${theme === "dark" ? "bg-gray-800 dark:border-gray-600" : "bg-gray-100"}`}>
           <h1 className="text-4xl mt-4 font-bold mb-4 text-center text-[#308d46]">
             SGPA to CGPA Calculator
           </h1>

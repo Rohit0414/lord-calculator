@@ -364,8 +364,6 @@ const Percentagetocgpa = () => {
         }
     };
 
-
-
     const shareOnWhatsApp = () => {
         const currentURL = window.location.href;
         const message = `Check out my CGPA calculation: CGPA: ${cgpa}, Percentage: ${percentage}. You can view it here: ${currentURL}`;

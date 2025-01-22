@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useCallback, useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Meter from "@/components/MeterForSgpa";
 import { PDFDocument, rgb, StandardFonts } from "pdf-lib"; // Added import for PDF generation
+import { useRouter } from "next/router"; // Correct import for useRouter
 
 
 const SGPAtoCGPA = () => {
@@ -13,6 +14,7 @@ const SGPAtoCGPA = () => {
   const [cgpa, setCgpa] = useState(null);
   const [error, setError] = useState("");
   const [history, setHistory] = useState([]);
+  const router = useRouter();  // Corrected useRouter
 
   const addSemester = () => {
     setSemesters([...semesters, { sgpa: "", credits: "" }]);
@@ -60,10 +62,11 @@ const SGPAtoCGPA = () => {
     setSemesters([{ sgpa: "", credits: "" }]);
     setCgpa(null);
     setError("");
+    setCgpa('');
     setCalculationMethod("weighted");
   };
 
-  const downloadHistoryAsPDF = async () => {
+  const downloadHistoryAsPDF = useCallback(async () => {
     try {
       const pdfDoc = await PDFDocument.create();
       let page = pdfDoc.addPage([600, 500]);
@@ -79,7 +82,7 @@ const SGPAtoCGPA = () => {
         y: 460,
         size: headerFontSize,
         color: rgb(0, 0.53, 0.71),
-        font: await pdfDoc.embedFont(StandardFonts.HelveticaBold)
+        font: await pdfDoc.embedFont(StandardFonts.HelveticaBold),
       });
 
       page.drawLine({
@@ -96,8 +99,18 @@ const SGPAtoCGPA = () => {
           yPosition = 450;
         }
 
-        page.drawText(`Serial No: ${index + 1}`, { x: margin, y: yPosition, size: 14, color: rgb(0, 0, 0) });
-        page.drawText(`CGPA: ${entry.cgpa}`, { x: 300, y: yPosition, size: 14, color: rgb(0, 0, 0) });
+        page.drawText(`Serial No: ${index + 1}`, {
+          x: margin,
+          y: yPosition,
+          size: 14,
+          color: rgb(0, 0, 0),
+        });
+        page.drawText(`CGPA: ${entry.cgpa}`, {
+          x: 300,
+          y: yPosition,
+          size: 14,
+          color: rgb(0, 0, 0),
+        });
         yPosition -= 30;
       });
 
@@ -106,7 +119,7 @@ const SGPAtoCGPA = () => {
         y: 30,
         size: 12,
         color: rgb(0.5, 0.5, 0.5),
-        font: await pdfDoc.embedFont(StandardFonts.HelveticaOblique)
+        font: await pdfDoc.embedFont(StandardFonts.HelveticaOblique),
       });
 
       const pdfBytes = await pdfDoc.save();
@@ -119,13 +132,57 @@ const SGPAtoCGPA = () => {
     } catch (error) {
       console.error("Error generating PDF:", error);
     }
-  };
+  }, [history]);
 
-  const WhatsApp = async () => {
+  useEffect(() => {
+    const { cgpa } = router.query;
+    if (cgpa) {
+      setCgpa(cgpa);
+      downloadHistoryAsPDF();
+    }
+  }, [router.query, downloadHistoryAsPDF]);
+
+  const WhatsApp = useCallback(async () => {
+    if (semesters.some(({ sgpa, credits }) => !sgpa || (calculationMethod === "weighted" && !credits))) {
+      setError("Please fill all fields.");
+      return;
+    }
+
+    let cgpaValue = 0;
+    if (calculationMethod === "weighted") {
+      let totalCredits = 0;
+      let weightedSum = 0;
+      semesters.forEach(({ sgpa, credits }) => {
+        totalCredits += parseFloat(credits);
+        weightedSum += parseFloat(sgpa) * parseFloat(credits);
+      });
+      cgpaValue = weightedSum / totalCredits;
+    } else if (calculationMethod === "average") {
+      const totalSGPA = semesters.reduce((sum, { sgpa }) => sum + parseFloat(sgpa), 0);
+      cgpaValue = totalSGPA / semesters.length;
+    }
+
+    const finalCgpa = cgpaValue.toFixed(2);
+    setCgpa(finalCgpa);
+    setHistory([...history, { semesters: [...semesters], cgpa: finalCgpa }]);
+    setError("");
+
+    // Update URL with calculated CGPA
+    const params = new URLSearchParams();
+    params.set("cgpa", finalCgpa);
+    router.push(`?${params.toString()}`, undefined, { shallow: true });
+
+    // Generate WhatsApp share message
     const currentURL = window.location.href;
-    const message = `Check out my CGPA calculation CGPA: ${cgpa}. You can view it here: ${currentURL}`;
-    window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
-  };
+    const message = `Check out my CGPA calculation. CGPA: ${finalCgpa}. You can view it here: ${currentURL}`;
+
+    // Wait until the URL is updated before opening WhatsApp
+    setTimeout(() => {
+      window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
+    }, 200); // Allow some time for the URL to update
+  }, [semesters, calculationMethod, router, history]); // Dependencies for useCallback
+
+
   return (
     <div className={`relative transition-all ${theme === "dark" ? "bg-gray-900 dark:from-gray-900 dark:to-gray-800 text-white" : "bg-white text-black"}`}>
       <Navbar />
@@ -188,6 +245,7 @@ const SGPAtoCGPA = () => {
               type="number"
               placeholder="Calculated cgpa"
               value={cgpa}
+              onChange={(e) => setCgpa(e.target.value)}
               className="py-2 px-4 mt-3 mb-4 ml-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white"
             />
           </div>

@@ -92,6 +92,7 @@ const Cgpatopercentage = () => {
         setHistory((prevHistory) => [...prevHistory, { cgpa: cgpaValue, percentage: percentageValue }]);
         setError('');
 
+        resultRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
         // router.push({
         //     pathname: router.pathname,
         //     query: {
@@ -377,7 +378,6 @@ const Cgpatopercentage = () => {
         if (isDownloading) return;
         
         setIsDownloading(true);
-        resultRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
         
         const currentURL = window.location.href;
         const message = `Check out my CGPA calculation: Percentage: ${percentageValue.toFixed(2)}%, CGPA: ${cgpaValue}. You can view it here: ${currentURL}`;

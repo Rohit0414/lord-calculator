@@ -363,9 +363,7 @@ const Percentagetocgpa = () => {
             console.error("Error generating PDF:", error);
         }
     };
-
-
-
+``
     const shareOnWhatsApp = () => {
         const currentURL = window.location.href;
         const message = `Check out my CGPA calculation: CGPA: ${cgpa}, Percentage: ${percentage}. You can view it here: ${currentURL}`;

@@ -130,6 +130,7 @@ export default function Home() {
             name="description"
             content="Lord Calculator, only platform with highly accurate A to Z calculators. Scientific calculator, CGPA to Percentage and many more with reports What’s App sharing feature"
           />
+          <link rel="calculator" href="/calculator.png" />
         </Head>
         <Navbar />
         <div className="relative flex flex-col justify-center items-center bg-[#fafafc] dark:bg-gray-800 flex-grow">

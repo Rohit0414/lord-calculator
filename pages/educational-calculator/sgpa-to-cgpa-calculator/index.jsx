@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useCallback, useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Meter from "@/components/MeterForSgpa";
-import { PDFDocument, rgb, StandardFonts } from "pdf-lib"; // Added import for PDF generation
-
+import { PDFDocument, rgb, StandardFonts } from "pdf-lib";
+import { useRouter } from "next/router";
 
 const SGPAtoCGPA = () => {
   const { theme } = useTheme();
@@ -13,6 +13,13 @@ const SGPAtoCGPA = () => {
   const [cgpa, setCgpa] = useState(null);
   const [error, setError] = useState("");
   const [history, setHistory] = useState([]);
+  const router = useRouter();
+  const [mounted, setMounted] = useState(false);
+
+  // Add useEffect to track mount state
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const addSemester = () => {
     setSemesters([...semesters, { sgpa: "", credits: "" }]);
@@ -63,7 +70,7 @@ const SGPAtoCGPA = () => {
     setCalculationMethod("weighted");
   };
 
-  const downloadHistoryAsPDF = async () => {
+  const downloadHistoryAsPDF = useCallback(async () => {
     try {
       const pdfDoc = await PDFDocument.create();
       let page = pdfDoc.addPage([600, 500]);
@@ -79,7 +86,7 @@ const SGPAtoCGPA = () => {
         y: 460,
         size: headerFontSize,
         color: rgb(0, 0.53, 0.71),
-        font: await pdfDoc.embedFont(StandardFonts.HelveticaBold)
+        font: await pdfDoc.embedFont(StandardFonts.HelveticaBold),
       });
 
       page.drawLine({
@@ -96,8 +103,18 @@ const SGPAtoCGPA = () => {
           yPosition = 450;
         }
 
-        page.drawText(`Serial No: ${index + 1}`, { x: margin, y: yPosition, size: 14, color: rgb(0, 0, 0) });
-        page.drawText(`CGPA: ${entry.cgpa}`, { x: 300, y: yPosition, size: 14, color: rgb(0, 0, 0) });
+        page.drawText(`Serial No: ${index + 1}`, {
+          x: margin,
+          y: yPosition,
+          size: 14,
+          color: rgb(0, 0, 0),
+        });
+        page.drawText(`CGPA: ${entry.cgpa}`, {
+          x: 300,
+          y: yPosition,
+          size: 14,
+          color: rgb(0, 0, 0),
+        });
         yPosition -= 30;
       });
 
@@ -106,7 +123,7 @@ const SGPAtoCGPA = () => {
         y: 30,
         size: 12,
         color: rgb(0.5, 0.5, 0.5),
-        font: await pdfDoc.embedFont(StandardFonts.HelveticaOblique)
+        font: await pdfDoc.embedFont(StandardFonts.HelveticaOblique),
       });
 
       const pdfBytes = await pdfDoc.save();
@@ -119,112 +136,229 @@ const SGPAtoCGPA = () => {
     } catch (error) {
       console.error("Error generating PDF:", error);
     }
-  };
+  }, [history]);
 
-  const WhatsApp = async () => {
-    const currentURL = window.location.href;
-    const message = `Check out my CGPA calculation CGPA: ${cgpa}. You can view it here: ${currentURL}`;
+  const WhatsApp = useCallback(async () => {
+    if (semesters.some(({ sgpa, credits }) => !sgpa || (calculationMethod === "weighted" && !credits))) {
+      setError("Please fill all fields.");
+      return;
+    }
+
+    let cgpaValue = 0;
+    if (calculationMethod === "weighted") {
+      let totalCredits = 0;
+      let weightedSum = 0;
+      semesters.forEach(({ sgpa, credits }) => {
+        totalCredits += parseFloat(credits);
+        weightedSum += parseFloat(sgpa) * parseFloat(credits);
+      });
+      cgpaValue = weightedSum / totalCredits;
+    } else if (calculationMethod === "average") {
+      const totalSGPA = semesters.reduce((sum, { sgpa }) => sum + parseFloat(sgpa), 0);
+      cgpaValue = totalSGPA / semesters.length;
+    }
+
+    const finalCgpa = cgpaValue.toFixed(2);
+    setCgpa(finalCgpa);
+    setHistory([...history, { semesters: [...semesters], cgpa: finalCgpa }]);
+    setError("");
+
+    // Direct URL construction for sharing
+    const currentURL = `${window.location.origin}${router.pathname}?cgpa=${finalCgpa}`;
+    const message = `Check out my CGPA calculation. CGPA: ${finalCgpa}. View details: ${currentURL}`;
+
     window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
-  };
+  }, [semesters, calculationMethod, router, history]);
+
   return (
-    <div className={`relative transition-all ${theme === "dark" ? "bg-gray-900 dark:from-gray-900 dark:to-gray-800 text-white" : "bg-white text-black"}`}>
-      <Navbar />
-      <div className="flex justify-center mt-8 items-center min-h-screen py-10">
-        <div className={`w-full max-w-3xl mt-4 border rounded-md shadow-md p-6 ${theme === "dark" ? "bg-gray-800 dark:border-gray-600" : "bg-gradient-to-b from-[#f0f4f8] to-[#d9e2ec]"}`}>
-          <h1 className="text-4xl mt-4 font-bold mb-4 text-center text-[#308d46]">
+    <div className={`relative  transition-all ${mounted ? (theme === "dark" ? "bg-gray-900 text-white" : "bg-white text-black") : ""}`}>
+    <Navbar />
+    <main className="flex flex-col items-center pt-24 min-h-screen justify-center dark:bg-gray-800 pb-10 px-4">
+      <section className={`w-full max-w-3xl border dark:bg-gray-800 rounded-md shadow-lg p-6 space-y-6 transition-colors
+        ${mounted ? (theme === "dark" ? "bg-gray-800 border-gray-600" : "bg-gray-50 border-gray-200") : ""}`}
+      >
+        <header className="text-center  space-y-2">
+          <h1 className="text-4xl font-bold text-emerald-600 dark:text-emerald-400">
             SGPA to CGPA Calculator
           </h1>
-
-          <div className="flex gap-2 justify-center mt-4 mb-4">
+          <p className="text-gray-600 dark:text-gray-300">Calculate your cumulative GPA with precision</p>
+        </header>
+  
+        <div className="space-y-4">
+          <fieldset className="flex flex-wrap gap-2 justify-center">
+            <legend className="sr-only">Calculation Method</legend>
             {['weighted', 'average'].map((method) => (
               <button
                 key={method}
                 onClick={() => setCalculationMethod(method)}
-                className={`px-4 py-2 rounded ${calculationMethod === method ? "bg-blue-600 text-white" : "bg-gray-200 dark:bg-gray-700"}`}
+                className={`px-4 py-2 rounded-lg transition-colors ${
+                  calculationMethod === method 
+                    ? "bg-blue-600 text-white shadow-md"
+                    : "bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600"
+                }`}
+                aria-pressed={calculationMethod === method}
               >
                 {method.charAt(0).toUpperCase() + method.slice(1)} Method
               </button>
             ))}
-          </div>
-
-          {semesters.map((semester, index) => (
-            <div key={index} className="flex justify-center gap-2 mt-2">
-              <input
-                type="number"
-                placeholder={`SGPA ${index + 1}`}
-                value={semester.sgpa}
-                onChange={(e) => handleInputChange(index, "sgpa", e.target.value)}
-                className="p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white"
-              />
-              {calculationMethod === "weighted" && (
-                <input
-                  type="number"
-                  placeholder="Credits"
-                  value={semester.credits}
-                  onChange={(e) => handleInputChange(index, "credits", e.target.value)}
-                  className="p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white"
-                />
-              )}
-              <div>
+          </fieldset>
+  
+          <div className="space-y-4">
+            {semesters.map((semester, index) => (
+              <div key={index} className="flex flex-col sm:flex-row gap-3 items-center">
+                <div className="flex-1 w-full sm:w-auto space-y-1">
+                  <label htmlFor={`sgpa-${index}`} className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                    SGPA {index + 1}
+                  </label>
+                  <input
+                    id={`sgpa-${index}`}
+                    type="number"
+                    placeholder="Enter SGPA"
+                    value={semester.sgpa}
+                    onChange={(e) => handleInputChange(index, "sgpa", e.target.value)}
+                    className="w-full p-2 border-2 border-emerald-100 bg-white rounded-lg text-center 
+                      dark:bg-gray-700 dark:border-gray-600 focus:ring-2 focus:ring-emerald-400"
+                    min="0"
+                    max="10"
+                    step="0.01"
+                    aria-describedby="sgpa-help"
+                  />
+                </div>
+  
+                {calculationMethod === "weighted" && (
+                  <div className="flex-1 w-full sm:w-auto space-y-1">
+                    <label htmlFor={`credits-${index}`} className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                      Credits
+                    </label>
+                    <input
+                      id={`credits-${index}`}
+                      type="number"
+                      placeholder="Enter Credits"
+                      value={semester.credits}
+                      onChange={(e) => handleInputChange(index, "credits", e.target.value)}
+                      className="w-full p-2 border-2 border-emerald-100 bg-white rounded-lg text-center 
+                        dark:bg-gray-700 dark:border-gray-600 focus:ring-2 focus:ring-emerald-400"
+                      min="1"
+                      step="1"
+                    />
+                  </div>
+                )}
+  
                 <button
                   onClick={() => removeSemester(index)}
-                  className="px-4 py-2 bg-red-500 text-white rounded flex items-center justify-center text-lg"
+                  className="self-end sm:self-center px-3 mt-7 py-2 bg-red-500 text-white rounded-lg 
+                    hover:bg-red-600 transition-colors shadow-sm"
+                  aria-label={`Remove semester ${index + 1}`}
                 >
                   ✕
                 </button>
               </div>
-            </div>
-          ))}
-          <div className="flex justify-center">
-            <button onClick={addSemester} className="px-4 py-2 bg-blue-500 text-white rounded">+ Add Semester</button>
+            ))}
           </div>
-
-          <div className="flex justify-center mt-4">
-            <Meter sgpa={cgpa} />
-          </div>
-          <div className="flex justify-center mb-4 ">
-            <h3 className="text-2xl mt-4 font-bold mb-4 text-center text-[#308d46]">Your Calculated CGPA = </h3>
-            <input
-              type="number"
-              placeholder="Calculated cgpa"
-              value={cgpa}
-              className="py-2 px-4 mt-3 mb-4 ml-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white"
-            />
-          </div>
-          <div className="flex justify-center gap-2 mt-4">
-            <button onClick={calculateCGPA} className="px-4 py-2 bg-green-500 text-white rounded">Calculate CGPA</button>
-            <button onClick={resetCalculator} className="px-4 py-2 bg-red-500 text-white rounded">Reset</button>
-            <button onClick={downloadHistoryAsPDF} className="px-4 py-2 bg-purple-500 text-white rounded">Download PDF</button>
-            <button onClick={WhatsApp} className="px-4 py-2 bg-purple-500 text-white rounded">WhatsApp</button>
-          </div>
-
-          <div className="mt-4 flex justify-center">
-            <div className="history-container mb-4 text-center w-full sm:w-60">
-              <b>Calculation History</b>
-              <table className="min-w-full border border-gray-300 mt-2 mx-auto dark:border-gray-700">
-                <thead>
-                  <tr className="bg-gray-100 dark:bg-gray-800">
-                    <th className="border border-gray-300 p-2 dark:border-gray-700">SNO</th>
-                    <th className="border border-gray-300 p-2 dark:border-gray-700">CGPA</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {history.map((entry, index) => (
-                    <tr key={index} className="dark:bg-gray-700">
-                      <td className="border border-gray-300 p-2 font-semibold dark:border-gray-700">{index + 1}</td>
-                      <td className="border border-gray-300 p-2 dark:border-gray-700">{entry.cgpa}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+  
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button 
+              onClick={addSemester}
+              className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 
+                transition-transform transform hover:scale-105 shadow-md"
+            >
+              + Add Semester
+            </button>
           </div>
         </div>
-      </div>
-      <Footer />
-    </div>
-
-
+  
+        {mounted && (
+          <div className="space-y-6">
+            <div className="flex flex-col items-center">
+              <Meter sgpa={cgpa ? parseFloat(cgpa) : null} />
+              <div className="mt-4 flex items-center gap-2">
+                <h2 className="text-2xl font-bold text-emerald-600 dark:text-emerald-400">
+                  Calculated CGPA:
+                </h2>
+                <output 
+                  className="px-4 py-2 bg-emerald-50 dark:bg-gray-700 rounded-lg text-lg font-mono 
+                    text-emerald-700 dark:text-emerald-300"
+                  aria-live="polite"
+                >
+                  {cgpa || "0.00"}
+                </output>
+              </div>
+            </div>
+  
+            {error && (
+              <div className="text-center p-3 bg-red-50 dark:bg-red-900/20 rounded-lg">
+                <p className="text-red-600 dark:text-red-400 font-medium">{error}</p>
+              </div>
+            )}
+  
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <button 
+                onClick={calculateCGPA}
+                className="px-4 py-3 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 
+                  transition-colors shadow-md font-medium"
+              >
+                Calculate
+              </button>
+              <button 
+                onClick={resetCalculator}
+                className="px-4 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 
+                  transition-colors shadow-md font-medium"
+              >
+                Reset
+              </button>
+              <button 
+                onClick={downloadHistoryAsPDF}
+                className="px-4 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 
+                  transition-colors shadow-md font-medium"
+              >
+                Download
+              </button>
+              <button 
+                onClick={WhatsApp}
+                className="px-4 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 
+                  transition-colors shadow-md font-medium"
+              >
+                WhatsApp
+              </button>
+            </div>
+  
+            <section aria-labelledby="history-heading" className="space-y-3">
+              <h2 id="history-heading" className="text-xl font-semibold text-center text-gray-700 dark:text-gray-300">
+                Calculation History
+              </h2>
+              <div className="overflow-x-auto rounded-lg border dark:border-gray-600">
+                <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-600">
+                  <thead className="bg-gray-50 dark:bg-gray-700">
+                    <tr>
+                      <th className="px-4 py-3 text-left text-sm font-medium text-gray-700 dark:text-gray-300">
+                        Semester
+                      </th>
+                      <th className="px-4 py-3 text-right text-sm font-medium text-gray-700 dark:text-gray-300">
+                        CGPA
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-600">
+                    {history.map((entry, index) => (
+                      <tr key={index}>
+                        <td className="px-4 py-2 text-sm font-medium text-gray-900 dark:text-gray-200">
+                          #{index + 1}
+                        </td>
+                        <td className="px-4 py-2 text-sm text-right font-mono text-emerald-600 dark:text-emerald-400">
+                          {entry.cgpa}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        )}
+      </section>
+    </main>
+    <Footer />
+  </div>
   );
 };
 

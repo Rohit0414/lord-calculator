@@ -1,5 +1,4 @@
 // next.config.js
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   i18n: {
@@ -7,27 +6,6 @@ const nextConfig = {
     defaultLocale: 'en',
     localeDetection: false,
   },
-  async rewrites() {
-    return [
-      {
-        source: '/:path*.webmanifest',
-        destination: '/favicon/site.webmanifest',
-      }
-    ]
-  },
-  async headers() {
-    return [
-      {
-        source: '/:path*.webmanifest',
-        headers: [
-          {
-            key: 'Content-Type',
-            value: 'application/manifest+json'
-          }
-        ]
-      }
-    ]
-  }
 };
 
 export default nextConfig;

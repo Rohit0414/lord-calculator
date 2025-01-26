@@ -94,15 +94,6 @@ const Percentagetocgpa = () => {
         setHistory((prevHistory) => [...prevHistory, { percentage: percentageValue, cgpa: cgpaValue }]);
         setError('');
 
-        router.push({
-            pathname: router.pathname,
-            query: {
-                percentage: percentageValue,
-                gradingscale: gradingScale,
-                factor: multiplicationFactor,
-            },
-        }, undefined, { shallow: true });
-
         if (isDownloading) return;
         setIsDownloading(true);
         resultRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -112,6 +103,7 @@ const Percentagetocgpa = () => {
         setPercentage('');
         setCgpa('');
         setError('');
+        setMultiplicationFactor('');
     };
 
 
@@ -365,6 +357,24 @@ const Percentagetocgpa = () => {
     };
 ``
     const shareOnWhatsApp = () => {
+        const percentageValue = parseFloat(percentage);
+        if (isNaN(percentageValue) || percentageValue < 0 || percentageValue > 100) {
+            setError('Enter a valid percentage');
+            return;
+        }
+        const cgpaValue = percentageValue / multiplicationFactor;
+        setCgpa(`${cgpaValue.toFixed(2)}`);
+        setHistory((prevHistory) => [...prevHistory, { percentage: percentageValue, cgpa: cgpaValue }]);
+        setError('');
+
+        router.push({
+            pathname: router.pathname,
+            query: {
+                percentage: percentageValue,
+                gradingscale: gradingScale,
+                factor: multiplicationFactor,
+            },
+        }, undefined, { shallow: true });
         const currentURL = window.location.href;
         const message = `Check out my CGPA calculation: CGPA: ${cgpa}, Percentage: ${percentage}. You can view it here: ${currentURL}`;
         window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');

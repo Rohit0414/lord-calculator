@@ -96,14 +96,6 @@ const Cgpatogpa = () => {
         setGpa(gpaValue.toFixed(2));
         setHistory((prevHistory) => [...prevHistory, { cgpa: cgpaValue, gpa: gpaValue }]);
 
-        router.push({
-            pathname: router.pathname,
-            query: {
-                cgpa: cgpaValue,
-                cgpascale: cgpaPointScale,
-                gpascale: gpaScale
-            },
-        }, undefined, { shallow: true });
 
         if (isDownloading) return;
         setIsDownloading(true);
@@ -115,6 +107,8 @@ const Cgpatogpa = () => {
         setCgpa('');
         setGpa('');
         setError('');
+        setCgpaPointScale('');
+        setGpaScale('');
     };
 
     useEffect(() => {
@@ -370,6 +364,29 @@ const Cgpatogpa = () => {
     };
 
     const shareOnWhatsApp = () => {
+        const cgpaValue = parseFloat(cgpa);
+
+        if (isNaN(cgpaValue) || cgpaValue < 0) {
+            setError('Enter a valid CGPA');
+            return;
+        }
+        if (cgpaValue > cgpaPointScale) {
+            setError(`CGPA cannot be greater than the selected CGPA point scale (${cgpaPointScale})`);
+            return;
+        }
+
+        const gpaValue = (cgpaValue / cgpaPointScale) * gpaScale;
+        setGpa(gpaValue.toFixed(2));
+        setHistory((prevHistory) => [...prevHistory, { cgpa: cgpaValue, gpa: gpaValue }]);
+
+        router.push({
+            pathname: router.pathname,
+            query: {
+                cgpa: cgpaValue,
+                cgpascale: cgpaPointScale,
+                gpascale: gpaScale
+            },
+        }, undefined, { shallow: true });
         const currentURL = window.location.href;
         const message = `Check out my CGPA to GPA calculation: CGPA: ${cgpa}, GPA: ${gpa}. You can view it here: ${currentURL}`;
         window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');

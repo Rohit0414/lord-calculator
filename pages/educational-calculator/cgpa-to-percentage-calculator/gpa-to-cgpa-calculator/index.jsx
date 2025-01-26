@@ -95,15 +95,7 @@ const Gpatocgpa = () => {
         setCgpa(cgpaValue.toFixed(2));
         setHistory((prevHistory) => [...prevHistory, { gpa: gpaValue, cgpa: cgpaValue }]);
 
-        router.push({
-            pathname: router.pathname,
-            query: {
-                gpa: gpaValue,
-                gradingscale: gradingScale,
-                cgpascale: cgpaPointScale
-            },
-        }, undefined, { shallow: true });
-
+      
         if (isDownloading) return;
         setIsDownloading(true);
         resultRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -113,6 +105,8 @@ const Gpatocgpa = () => {
         setGpa('');
         setCgpa('');
         setError('');
+        setGradingScale('');
+        setCgpaPointScale('');
     };
 
 
@@ -369,6 +363,30 @@ const Gpatocgpa = () => {
     };
 
     const shareOnWhatsApp = () => {
+        const gpaValue = parseFloat(gpa);
+
+        if (isNaN(gpaValue) || gpaValue < 0) {
+            setError('Enter a valid GPA');
+            return;
+        }
+        if (gpaValue > gradingScale) {
+            setError(`GPA cannot be greater than the selected GPA scale (${gradingScale})`);
+            return;
+        }
+
+        const cgpaValue = (gpaValue / gradingScale) * cgpaPointScale;
+        setCgpa(cgpaValue.toFixed(2));
+        setHistory((prevHistory) => [...prevHistory, { gpa: gpaValue, cgpa: cgpaValue }]);
+
+        router.push({
+            pathname: router.pathname,
+            query: {
+                gpa: gpaValue,
+                gradingscale: gradingScale,
+                cgpascale: cgpaPointScale
+            },
+        }, undefined, { shallow: true });
+
         const currentURL = window.location.href;
         const message = `Check out my CGPA calculation: GPA: ${gpa}, CGPA: ${cgpa}. You can view it here: ${currentURL}`;
         window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
@@ -501,7 +519,7 @@ const Gpatocgpa = () => {
                                                 <tr key={index}>
                                                     <td className="border border-gray-300 p-2 font-semibold">{index + 1}</td>
                                                     <td className="border border-gray-300 p-2">{entry.gpa.toFixed(2)}</td>
-                                                    <td className="border border-gray-300 p-2">{entry.cgpa}</td>
+                                                    <td className="border border-gray-300 p-2">{entry.cgpa.toFixed(2)}</td>
 
                                                 </tr>
                                             ))}

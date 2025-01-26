@@ -110,6 +110,7 @@ const Cgpatopercentage = () => {
         setCgpa('');
         setPercentage('');
         setError('');
+        setMultiplicationFactor('');
     };
 
     useEffect(() => {

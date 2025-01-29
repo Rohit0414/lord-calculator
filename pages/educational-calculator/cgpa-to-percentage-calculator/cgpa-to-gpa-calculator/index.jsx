@@ -465,7 +465,7 @@ const Cgpatogpa = () => {
 
                             <div className="flex justify-center space-x-8 sm:space-x-32 mb-4">
                                 <button onClick={convertCGPAtoGPA} className="bg-[#105045] dark:bg-[#4f5b56] text-white w-32 py-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]">{t("calculateButton")}</button>
-                                <button onClick={resetFields} className="bg-[#105045] dark:bg-[#4f5b56] text-white w-32 py-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]">{t("resetButton")}</button>
+                                <button onClick={resetFields} className="bg-red-500 dark:bg-[#4f5b56] text-white w-32 py-2 rounded hover:bg-red-600 dark:hover:bg-[#29582b]">{t("resetButton")}</button>
                             </div>
 
                             <div ref={resultRef}>

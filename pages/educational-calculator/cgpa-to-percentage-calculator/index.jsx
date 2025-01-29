@@ -464,7 +464,7 @@ const Cgpatopercentage = () => {
                                 <button onClick={convertCGPAtoPercentage} className="bg-[#105045] dark:bg-[#4f5b56] text-white w-32 py-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]">
                                     {t("calculateButton3")}
                                 </button>
-                                <button onClick={resetFields} className="bg-[#105045] text-white w-32 py-2 rounded hover:bg-[#29582b] dark:bg-[#4f5b56] dark:hover:bg-[#29582b]">
+                                <button onClick={resetFields} className="bg-red-500  text-white w-32 py-2 rounded hover:bg-red-600  dark:bg-[#4f5b56] dark:hover:bg-[#29582b]">
                                     {t("resetButton3")}
                                 </button>
                             </div>

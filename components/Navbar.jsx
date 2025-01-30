@@ -12,6 +12,7 @@ import { FaTimes } from "react-icons/fa";
 
 
 
+
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
@@ -90,6 +91,7 @@ const Navbar = () => {
         { id: 9, title: "GPA to CGPA Calculator", link: "/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA" },
         { id: 10, title: "CGPA to GPA Calculator", link: "/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA" },
         { id: 11, title: "Home", link: "/" },
+        { id: 12, title: "sgpa to cgpa calculator", link: "/educational"}
       ].filter((item) =>
         item.title.toLowerCase().includes(searchInput.toLowerCase())
       );

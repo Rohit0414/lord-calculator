@@ -20,7 +20,7 @@ const Footer = () => {
                   {t('footer.location')}
                 </h5>
                 <h5 className="font-light">
-                  Contact Us: bhuvibhai786@gmail.com
+                  Contact Us:<Link href="https://mail.google.com/mail/?view=cm&fs=1&to=bhuvibhai786@gmail.com" target="_blank" rel="noopener noreferrer">bhuvibhai786@gmail.com</Link>
                 </h5>
               </div>
             </div>

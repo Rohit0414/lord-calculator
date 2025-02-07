@@ -457,7 +457,7 @@ const Gpatocgpa = () => {
                                     type="number"
                                     value={cgpaPointScale}
                                     onChange={(e) => setCgpaPointScale(parseFloat(e.target.value))}
-                                    placeholder={t('choose_gpa_scale')}
+                                    placeholder={t('choose_cgpa_scale')}
                                     className="w-full sm:w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white"
                                 />
                             </div>

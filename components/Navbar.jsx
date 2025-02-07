@@ -82,7 +82,7 @@ const Navbar = () => {
       const results = [
         { id: 1, title: "CGPA to Percentage Calculator", link: "/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage" },
         { id: 2, title: "Percentage to CGPA Calculator", link: "/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA" },
-        { id: 3, title: "Scientific Calculator", link: "/educational-calculator/scientific-calculator" },
+        { id: 3, title: "Scientific Calculator", link: "/scientific-calculator" },
         { id: 4, title: "Educational Calculator", link: "/educational-calculator/" },
         { id: 5, title: "Lord Calculator, Home", link: "/" },
         { id: 6, title: "Privacy policy", link: "/privacy-policy" },
@@ -91,7 +91,8 @@ const Navbar = () => {
         { id: 9, title: "GPA to CGPA Calculator", link: "/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA" },
         { id: 10, title: "CGPA to GPA Calculator", link: "/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA" },
         { id: 11, title: "Home", link: "/" },
-        { id: 12, title: "sgpa to cgpa calculator", link: "/educational-calculator/sgpa-to-cgpa-calculator"}
+        { id: 12, title: "sgpa to cgpa calculator", link: "/educational-calculator/sgpa-to-cgpa-calculator"},
+        { id: 13, title: "women's calculator", link: "/womens-calculator"}
       ].filter((item) =>
         item.title.toLowerCase().includes(searchInput.toLowerCase())
       );

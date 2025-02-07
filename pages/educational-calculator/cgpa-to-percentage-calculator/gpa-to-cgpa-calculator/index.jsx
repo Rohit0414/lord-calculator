@@ -452,12 +452,12 @@ const Gpatocgpa = () => {
                             </div>
 
                             <div className="flex mb-4 justify-center items-center flex-col">
-                                <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">{t('choose_gpa_scale')}</label>
+                                <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">{t('choose_cgpa_scale')}</label>
                                 <input
                                     type="number"
                                     value={cgpaPointScale}
                                     onChange={(e) => setCgpaPointScale(parseFloat(e.target.value))}
-                                    placeholder={t('choose_cgpa_scale')}
+                                    placeholder={t('choose_cgpa_scale-')}
                                     className="w-full sm:w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95] dark:text-white"
                                 />
                             </div>

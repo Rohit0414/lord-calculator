@@ -5,6 +5,8 @@
   "title": "GPA to CGPA Calculator",
   "enter_gpa": "Enter GPA",
   "choose_gpa_scale": "Choose GPA Scale",
+  "choose_cgpa_scale": "Choose CGPA Scale",
+  "choose_cgpa_scale-":"Enter CGPA",
   "calculate": "Calculate",
   "reset": "Reset",
   "calculated_cgpa": "Your Calculated CGPA",

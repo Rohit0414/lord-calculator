@@ -1,5 +1,5 @@
 
-import { useState, useRef, useEffect,useCallback } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import Navbar from '@/components/Navbar';
 import Meter from '@/components/Meter';
 import { useTheme } from '@/context/ThemeContext';
@@ -58,7 +58,7 @@ const Percentagetocgpa = () => {
             setShowScroll(false);
         }
     }, [showScroll]);
-    
+
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -94,15 +94,6 @@ const Percentagetocgpa = () => {
         setHistory((prevHistory) => [...prevHistory, { percentage: percentageValue, cgpa: cgpaValue }]);
         setError('');
 
-        router.push({
-            pathname: router.pathname,
-            query: {
-                percentage: percentageValue,
-                gradingscale: gradingScale,
-                factor: multiplicationFactor,
-            },
-        }, undefined, { shallow: true });
-
         if (isDownloading) return;
         setIsDownloading(true);
         resultRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -112,6 +103,7 @@ const Percentagetocgpa = () => {
         setPercentage('');
         setCgpa('');
         setError('');
+        setMultiplicationFactor('');
     };
 
 
@@ -242,7 +234,7 @@ const Percentagetocgpa = () => {
         if (Object.keys(query).length > 0) {
             generateAndDownloadPDF();
         }
-    }, [isClient, router,isDownloading, history]);
+    }, [isClient, router, isDownloading, history]);
 
 
 
@@ -363,10 +355,26 @@ const Percentagetocgpa = () => {
             console.error("Error generating PDF:", error);
         }
     };
-
-
-
+``
     const shareOnWhatsApp = () => {
+        const percentageValue = parseFloat(percentage);
+        if (isNaN(percentageValue) || percentageValue < 0 || percentageValue > 100) {
+            setError('Enter a valid percentage');
+            return;
+        }
+        const cgpaValue = percentageValue / multiplicationFactor;
+        setCgpa(`${cgpaValue.toFixed(2)}`);
+        setHistory((prevHistory) => [...prevHistory, { percentage: percentageValue, cgpa: cgpaValue }]);
+        setError('');
+
+        router.push({
+            pathname: router.pathname,
+            query: {
+                percentage: percentageValue,
+                gradingscale: gradingScale,
+                factor: multiplicationFactor,
+            },
+        }, undefined, { shallow: true });
         const currentURL = window.location.href;
         const message = `Check out my CGPA calculation: CGPA: ${cgpa}, Percentage: ${percentage}. You can view it here: ${currentURL}`;
         window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
@@ -383,11 +391,11 @@ const Percentagetocgpa = () => {
             </Head>
             <Navbar />
             <Nav />
-            <div className="container  max-h-full flex-col w-full border-r-8 justify-center dark:bg-gray-800 ">
+            <div className="container  max-h-full flex-col max-w-full border-r-8 justify-center dark:bg-gray-800 ">
                 <div className="w-full flex flex-col items-center p-4 bg-white dark:bg-gray-800 dark:text-white">
                     <div className="flex  w-full">
 
-                        <div className=" p-5 mx-auto text-black  w-full">
+                        <div className="p-5 mx-auto text-black w-full">
                             <h2 className="text-4xl font-bold mb-4 text-center text-[#308d46] bg-clip-text bg-transparent dark:bg-teal-950 drop-shadow-lg">{t("--title")}</h2>
 
                             <div className="flex mb-4 justify-center items-center flex-col">
@@ -398,28 +406,28 @@ const Percentagetocgpa = () => {
                                     value={percentage}
                                     onChange={(e) => setPercentage(e.target.value)}
                                     placeholder={t("placeholderPercentage")}
-                                    className="w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] dark:bg-[#3a4a52] dark:border-[#7d8d95] rounded text-center"
+                                    className="w-full sm:w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] dark:bg-[#3a4a52] dark:border-[#7d8d95] rounded text-center"
                                 />
                             </div>
 
                             <div className="flex justify-center items-center flex-col mb-4">
-                                <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]"> {t("chooseGradeScale")}</label>
-                                <div className="flex justify-center w-1/2 mb-4 p-2">
+                                <label className="text-2xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">{t("chooseGradeScale")}</label>
+                                <div className="flex justify-center w-full sm:w-1/2 mb-4 p-2">
                                     <button
                                         onClick={() => handleScaleChange(4.0)}
-                                        className={`${gradingScale === 4.0 ? 'bg-[#29582b]' : 'bg-[#105045] dark:bg-[#4f5b56]'} text-white w-3/4 py-2 mr-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]`}
+                                        className={`${gradingScale === 4.0 ? 'bg-[#29582b]' : 'bg-[#105045] dark:bg-[#4f5b56]'} text-white sm:w-3/4 py-2 mr-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]`}
                                     >
                                         {t("scale4")}
                                     </button>
                                     <button
                                         onClick={() => handleScaleChange(5.0)}
-                                        className={`${gradingScale === 5.0 ? 'bg-[#29582b]' : 'bg-[#105045] dark:bg-[#4f5b56]'} text-white w-3/4 py-2 mr-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]`}
+                                        className={`${gradingScale === 5.0 ? 'bg-[#29582b]' : 'bg-[#105045] dark:bg-[#4f5b56]'} text-white sm:w-3/4 py-2 mr-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]`}
                                     >
                                         {t("scale5")}
                                     </button>
                                     <button
                                         onClick={() => handleScaleChange(10.0)}
-                                        className={`${gradingScale === 10.0 ? 'bg-[#29582b]' : 'bg-[#105045] dark:bg-[#4f5b56]'} text-white w-3/4 py-2 mr-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]`}
+                                        className={`${gradingScale === 10.0 ? 'bg-[#29582b]' : 'bg-[#105045] dark:bg-[#4f5b56]'} text-white sm:w-3/4 py-2 mr-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]`}
                                     >
                                         {t("scale10")}
                                     </button>
@@ -433,26 +441,32 @@ const Percentagetocgpa = () => {
                                     value={multiplicationFactor}
                                     onChange={(e) => setMultiplicationFactor(e.target.value)}
                                     placeholder={t("placeholderFactor")}
-                                    className="w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95]"
+                                    className="w-full sm:w-3/4 p-2 mb-4 border border-[#94d197] bg-[#e8f8f5] rounded text-center dark:bg-[#3a4a52] dark:border-[#7d8d95]"
                                 />
                             </div>
 
-                            <div className="flex justify-center space-x-32 mb-4">
-                                <button onClick={convertPercentageToCGPA} className="bg-[#105045] dark:bg-[#4f5b56] text-white w-32 py-2 rounded hover:bg-[#29582b]  dark:hover:bg-[#29582b]">{t("-calculateButton")}</button>
-                                <button onClick={resetFields} className="bg-[#105045] dark:bg-[#4f5b56] text-white w-32 py-2 rounded hover:bg-[#29582b]  dark:hover:bg-[#29582b]">{t("-resetButton")}</button>
+                            <div className="flex justify-center space-x-10 sm:space-x-32 mb-4">
+                                <button onClick={convertPercentageToCGPA} className="bg-[#105045] dark:bg-[#4f5b56] text-white w-32 py-2 rounded hover:bg-[#29582b] dark:hover:bg-[#29582b]">{t("-calculateButton")}</button>
+                                <button onClick={resetFields} className="bg-red-500 dark:bg-[#4f5b56] text-white w-32 py-2 rounded hover:bg-red-600 dark:hover:bg-[#29582b]">{t("-resetButton")}</button>
                             </div>
 
                             {error && <div className="text-red-500 mb-2 text-center">{t("errorMessage")}</div>}
 
                             <div ref={resultRef}>
-                                <Meter percentage={cgpa ? parseFloat(cgpa) : 0} />
+                                <div className="flex justify-center items-center w-full">
+                                    <Meter
+                                        className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] mx-auto"
+                                        percentage={cgpa ? parseFloat(cgpa) : 0}
+                                    />
+                                </div>
+
                                 <div className="flex flex-col justify-center items-center mb-4 ">
                                     <label className="text-3xl font-bold mb-2 text-[#105045] drop-shadow-lg dark:text-[#b3e0e6]">{t("calculatedCGPATitle")}</label>
-                                    <input type="text" value={cgpa} placeholder={t("placeholderCGPA")} readOnly className="w-3/4 p-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center ml-2" />
+                                    <input type="text" value={cgpa} placeholder={t("placeholderCGPA")} readOnly className="w-full sm:w-3/4 p-2 border border-[#94d197] bg-[#e8f8f5] rounded text-center ml-2" />
                                 </div>
                             </div>
 
-                            <div className="mt-4 flex justify-center space-x-32 mb-4">
+                            <div className="mt-4 flex justify-center space-x-10 sm:space-x-32 mb-4">
                                 <button onClick={downloadHistoryAsPDF} className="bg-[#105045] text-white w-32 py-2 rounded hover:bg-[#29582b]">{t("-downloadButton")}</button>
                                 <button onClick={shareOnWhatsApp} className="bg-green-500 text-white w-32 py-2 rounded">WhatsApp</button>
                                 <button
@@ -463,9 +477,8 @@ const Percentagetocgpa = () => {
                                 </button>
                             </div>
 
-
-                            <div className="flex justify-center ">
-                                <div className="history-container mb-4 text-center w-60">
+                            <div className="flex justify-center">
+                                <div className="history-container mb-4 text-center w-full sm:w-60">
                                     <b className='dark:text-white'>{t("historyTitle")}</b>
                                     <table className="min-w-full border border-gray-300 mt-2 mx-auto">
                                         <thead>
@@ -487,84 +500,87 @@ const Percentagetocgpa = () => {
                                     </table>
                                 </div>
                             </div>
-                            <div className="w-full min-h-screen flex  justify-center p-5">
+
+                            <div className="w-full min-h-screen flex justify-center ">
                                 <div className="max-w-4xl w-full text-justify mx-auto ">
                                     <PercentageContent />
                                 </div>
                             </div>
                         </div>
 
-                        <div className="bg-gray-50 h-[64vh] w-[64vh] rounded-xl shadow-xl translate-x-[-60px] p-6 sticky top-28 dark:bg-gray-900">
-                            <div className=''>
-                                <h1 className="text-2xl font-semibold mb-6 text-center text-gray-700 border-b-2 border-gray-300 pb-3 dark:text-gray-200 dark:border-gray-700">
+                        <div className="bg-gray-50 max-h-[calc(80vh-4rem)] md:max-h-[calc(70vh-4rem)] lg:max-h-[calc(50vh-4rem)] xl:max-h-[calc(70vh-4rem)] w-full xl:w-[64vh] rounded-xl shadow-xl p-6 sticky top-24 xl:right-16 dark:bg-gray-900 hidden md:block overflow-y-auto custom-height">
+                            <div>
+                                <h1 className="text-lg md:text-2xl font-semibold mb-4 text-center text-gray-700 border-b border-gray-300 pb-2 dark:text-gray-200 dark:border-gray-700">
                                     {t('educational_calculators_title')}
                                 </h1>
                             </div>
-                            <ul className="space-y-5 ">
-                                <div className='h-18 overflow-y-auto'>
-                                    <li>
-                                        <Link
-                                            href="/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage"
-                                            className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
-                                        >
+                            <ul className="space-y-8">
+                                {/* CGPA to Percentage */}
+                                <li>
+                                    <Link
+                                        href="/educational-calculator/cgpa-to-percentage-calculator?filter=CGPA+to+percentage"
+                                        className="flex items-center text-sm md:text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-3 py-2 shadow-sm hover:bg-gray-200 dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                                    >
+                                        <Image
+                                            src={image3.src}
+                                            height={24}
+                                            width={24}
+                                            alt="CGPA to Percentage"
+                                        />
+                                        <span className="ml-3">{t('cgpa_to_percentage')}</span>
+                                    </Link>
+                                </li>
 
-                                            <Image
-                                                src={image3.src}
-                                                height={image3.height}
-                                                width={image3.width}
-                                                alt="image description"
-                                            />
-                                            <span className="ml-3">{t('cgpa_to_percentage')}</span>
-                                        </Link>
-                                    </li>
-                                </div>
-                                <div className='h-18 overflow-y-auto'>
-                                    <li>
-                                        <Link
-                                            href="/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA"
-                                            className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
-                                        >
-                                            <Image
-                                                src={image2.src}
-                                                height={image2.height}
-                                                width={image2.width}
-                                                alt="image description"
-                                            /><span className="ml-3">{t('percentage_to_cgpa')}</span>
-                                        </Link>
-                                    </li>
-                                </div>
-                                <div className='h-16 overflow-y-auto'>
-                                    <li>
-                                        <Link
-                                            href="/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA"
-                                            className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
-                                        >
-                                            <Image
-                                                src={image1.src}
-                                                height={image1.height}
-                                                width={image1.width}
-                                                alt="image description"
-                                            /> <span className="ml-3">{t('gpa_to_cgpa')}</span>
-                                        </Link>
-                                    </li>
-                                </div>
-                                <div className='h-16 overflow-y-auto'>
-                                    <li>
-                                        <Link
-                                            href="/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA"
-                                            className="flex items-center text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-4 py-3 shadow-sm transition-all duration-200 hover:bg-gray-200 hover:shadow-md dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
-                                        >
-                                            <Image
-                                                src={image.src}
-                                                height={image.height}
-                                                width={image.width}
-                                                alt="image description"
-                                            /> <span className="ml-3">{t('cgpa_to_gpa')}</span>
-                                        </Link>
-                                    </li>
-                                </div>
+                                {/* Percentage to CGPA */}
+                                <li>
+                                    <Link
+                                        href="/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator?filter=Percentage+to+CGPA"
+                                        className="flex items-center text-sm md:text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-3 py-2 shadow-sm hover:bg-gray-200 dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                                    >
+                                        <Image
+                                            src={image2.src}
+                                            height={24}
+                                            width={24}
+                                            alt="Percentage to CGPA"
+                                        />
+                                        <span className="ml-3">{t('percentage_to_cgpa')}</span>
+                                    </Link>
+                                </li>
+
+                                {/* GPA to CGPA */}
+                                <li>
+                                    <Link
+                                        href="/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator?filter=GPA+to+CGPA"
+                                        className="flex items-center text-sm md:text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-3 py-2 shadow-sm hover:bg-gray-200 dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                                    >
+                                        <Image
+                                            src={image1.src}
+                                            height={24}
+                                            width={24}
+                                            alt="GPA to CGPA"
+                                        />
+                                        <span className="ml-3">{t('gpa_to_cgpa')}</span>
+                                    </Link>
+                                </li>
+
+                                {/* CGPA to GPA */}
+                                <li>
+                                    <Link
+                                        href="/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator?filter=CGPA+to+GPA"
+                                        className="flex items-center text-sm md:text-base font-medium text-gray-800 bg-gray-100 rounded-lg px-3 py-2 shadow-sm hover:bg-gray-200 dark:text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                                    >
+                                        <Image
+                                            src={image.src}
+                                            height={24}
+                                            width={24}
+                                            alt="CGPA to GPA"
+                                        />
+                                        <span className="ml-3">{t('cgpa_to_gpa')}</span>
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
+
                     </div>
 
                 </div>
@@ -618,6 +634,13 @@ const Percentagetocgpa = () => {
                 </div>
             </div>
             <Footer />
+            <style jsx>{`
+      @media (max-width: 1024px) and (max-height: 600px) {
+        .custom-height {
+          max-height: calc(80vh - 4rem); 
+        }
+      }
+    `}</style>
         </div>
     );
 };

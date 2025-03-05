@@ -1,0 +1,62 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://lordcalculator.com/</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- High Priority URLs -->
+  <url>
+    <loc>https://lordcalculator.com/educational-calculator</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lordcalculator.com/educational-calculator/cgpa-to-percentage-calculator</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lordcalculator.com/educational-calculator/cgpa-to-percentage-calculator/percentage-to-cgpa-calculator</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lordcalculator.com/educational-calculator/cgpa-to-percentage-calculator/gpa-to-cgpa-calculator</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lordcalculator.com/educational-calculator/cgpa-to-percentage-calculator/cgpa-to-gpa-calculator</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Low Priority URLs -->
+  <url>
+    <loc>https://lordcalculator.com/privacy-policy</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://lordcalculator.com/terms-of-use</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://lordcalculator.com/about-us</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+  </url>
+</urlset>
+
